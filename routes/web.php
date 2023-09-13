@@ -15,9 +15,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+    return Inertia::render('Home');
 })->name('home');
 
 Route::get('/team', function () {
     return Inertia::render('Team');
 })->name('team');
+
+Route::get('/canvas', function () {
+    return Inertia::render('Canvas');
+})->name('product.canvas');

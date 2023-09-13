@@ -1,12 +1,14 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
+import Dropdown from '@/Components/Dropdown.vue';
+import DropdownLink from '@/Components/DropdownLink.vue';
 </script>
 
 <template>
-    <Head title="Home" />
+    <Head title="Canvases" />
 
     <PrimaryLayout>
-        Primary layout
+        Canvases
     </PrimaryLayout>
 </template>

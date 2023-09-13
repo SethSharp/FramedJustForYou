@@ -45,8 +45,8 @@ const open = ref(false);
 </script>
 
 <template>
-    <div class="relative">
-        <div @click="open = !open">
+    <div class="relative text-2xl inline-flex items-center px-1 pt-1">
+        <div @click="open = !open" class="">
             <slot name="trigger" />
         </div>
 
@@ -63,7 +63,7 @@ const open = ref(false);
         >
             <div
                 v-show="open"
-                class="absolute z-50 mt-2 rounded-md shadow-lg"
+                class="absolute z-50 mt-24 rounded-md shadow-lg"
                 :class="[widthClass, alignmentClasses]"
                 style="display: none"
                 @click="open = false"

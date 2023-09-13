@@ -12,17 +12,17 @@ export default {
     ],
 
     theme: {
-        colors: {
-            primary: {
-                500: colors.pink[500],
-                600: colors.pink[600],
-                700: colors.pink[700],
-                800: colors.pink[800],
-            }
-        },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                primary: {
+                    500: colors.pink[500],
+                    600: colors.pink[600],
+                    700: colors.pink[700],
+                    800: colors.pink[800],
+                }
             },
         },
     },
