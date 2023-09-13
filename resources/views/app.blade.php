@@ -6,11 +6,11 @@
 
         <title inertia>{{ config('app.name', 'Framed Just 4 You') }}</title>
 
-        @vite('resources/css/app.css')
-
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        @vite('resources/css/app.css')
 
         <!-- Scripts -->
         @routes

@@ -4,9 +4,9 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 </script>
 
 <template>
-    <Head title="Home" />
+    <Head title="Team" />
 
     <PrimaryLayout>
-        Primary layout
+        Team
     </PrimaryLayout>
 </template>
