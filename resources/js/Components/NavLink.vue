@@ -14,8 +14,8 @@ const props = defineProps({
 
 const classes = computed(() =>
     props.active
-        ? 'text-2xl inline-flex items-center px-1 pt-1 underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in ease-out'
-        : 'text-2xl inline-flex items-center px-1 pt-1 hover:underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in ease-out'
+        ? 'text-white text-2xl inline-flex items-center px-1 pt-1 underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in-out'
+        : 'text-white text-2xl inline-flex items-center px-1 pt-1 hover:underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in-out'
 );
 </script>
 

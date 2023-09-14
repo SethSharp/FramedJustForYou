@@ -16,6 +16,19 @@ const products = [
     }
 ]
 
+const framingOptions = [
+    {
+        name: "Custom Framing",
+        href: "product.canvas",
+        active: "active.*"
+    },
+    {
+        name: "Memorabilia Framing",
+        href: "product.canvas",
+        active: "active.*"
+    }
+]
+
 const links = [
     {
         name: "Home",
@@ -65,6 +78,20 @@ const links = [
                                             :active="route().current(product.href)"
                                             :href="route(product.href)">
                                             {{ product.name }}
+                                        </DropdownLink>
+                                    </template>
+                                </Dropdown>
+
+                                <Dropdown>
+                                    <template #trigger>
+                                        <div class="cursor-pointer"> Framing </div>
+                                    </template>
+                                    <template #content>
+                                        <DropdownLink
+                                            v-for="framing in framingOptions"
+                                            :active="route().current(framing.href)"
+                                            :href="route(framing.href)">
+                                            {{ framing.name }}
                                         </DropdownLink>
                                     </template>
                                 </Dropdown>

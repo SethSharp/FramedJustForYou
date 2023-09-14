@@ -1,5 +1,9 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue';
+import {
+    ChevronDownIcon,
+    ChevronUpIcon
+} from "@heroicons/vue/20/solid/index.js";
 
 const props = defineProps({
     align: {
@@ -46,8 +50,10 @@ const open = ref(false);
 
 <template>
     <div class="relative text-2xl inline-flex items-center px-1 pt-1">
-        <div @click="open = !open" class="">
+        <div @click="open = !open" class="text-white flex cursor-pointer hover:underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in-out">
             <slot name="trigger" />
+            <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1 animation duration-300 ease-in-out" />
+            <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1 animation duration-300 ease-in-out" />
         </div>
 
         <!-- Full Screen Dropdown Overlay -->
@@ -63,7 +69,7 @@ const open = ref(false);
         >
             <div
                 v-show="open"
-                class="absolute z-50 mt-24 rounded-md shadow-lg"
+                class="absolute z-50 mt-28 rounded-md shadow-lg"
                 :class="[widthClass, alignmentClasses]"
                 style="display: none"
                 @click="open = false"
