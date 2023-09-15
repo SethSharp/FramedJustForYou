@@ -6,38 +6,79 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import { Link } from '@inertiajs/vue3';
 
-const showingNavigationDropdown = ref(false);
+let showingNavigationDropdown = ref(false);
 
-const products = [
-    {
-        name: "Canvases",
-        href: "product.canvas",
-        active: "active.*"
-    }
-]
 
-const framingOptions = [
-    {
-        name: "Custom Framing",
-        href: "product.canvas",
-        active: "active.*"
-    },
-    {
-        name: "Memorabilia Framing",
-        href: "product.canvas",
-        active: "active.*"
-    }
-]
+/* FRAMING
+* Custom
+* Memorabilia
+* Mirror
+* Jersey
+* */
+
+
+/* Other Services (In links)
+(Not going to be a drop-down but going to go to a
+grid of services with a dedicated page for each, maybe some grouping)
+* Floating frames
+* Canvas
+* Custom Printing
+* Fabric Framing
+* Blank Canvases
+* Fine art
+* Needle works (other options)
+* */
+
+/* Canvas, also on links
+* Canvases
+* Stretching
+* Photos on Canvas
+* */
 
 const links = [
     {
+        // Include the team here
         name: "Home",
         href: "home"
     },
     {
-        name: "The Team",
+        name: "Services",
         href: "team"
     },
+    {
+        name: "Canvas",
+        href: "team"
+    },
+    {
+        name: "Framing",
+        href: "team",
+        options: [
+            {
+                name: "Custom",
+                href: "home",
+            },
+            {
+                name: "Memorabilia",
+                href: "home",
+            },
+            {
+                name: "Mirror",
+                href: "home",
+            },
+            {
+                name: "Jersey",
+                href: "home",
+            }
+        ]
+    },
+    {
+        name: "Get in touch",
+        href: "team"
+    },
+    {
+        name: "Portfolio",
+        href: "team"
+    }
 ]
 </script>
 
@@ -47,8 +88,8 @@ const links = [
             <nav>
                 <!-- Primary Navigation Menu -->
                 <div class="px-4 sm:px-6 lg:px-8 bg-primary-600">
-                    <div class="flex h-16">
-                        <div class="flex">
+                    <div class="flex h-16 h-fit py-4">
+                        <div class="flex h-fit w-full">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('home')">
@@ -59,42 +100,31 @@ const links = [
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full">
+                                <div
                                     v-for="link in links"
-                                    :href="route(link.href)"
-                                    :active="route().current(link.href)"
-                                    class="animation duration-300"
+                                    class="animation duration-300 my-auto"
                                 >
-                                    {{ link.name }}
-                                </NavLink>
-                                <Dropdown>
-                                    <template #trigger>
-                                        <div class="cursor-pointer"> Products </div>
-                                    </template>
-                                    <template #content>
-                                        <DropdownLink
-                                            v-for="product in products"
-                                            :active="route().current(product.href)"
-                                            :href="route(product.href)">
-                                            {{ product.name }}
-                                        </DropdownLink>
-                                    </template>
-                                </Dropdown>
-
-                                <Dropdown>
-                                    <template #trigger>
-                                        <div class="cursor-pointer"> Framing </div>
-                                    </template>
-                                    <template #content>
-                                        <DropdownLink
-                                            v-for="framing in framingOptions"
-                                            :active="route().current(framing.href)"
-                                            :href="route(framing.href)">
-                                            {{ framing.name }}
-                                        </DropdownLink>
-                                    </template>
-                                </Dropdown>
+                                    <div v-if="! link.options">
+                                        <NavLink :href="route(link.href)">
+                                            {{ link.name }}
+                                        </NavLink>
+                                    </div>
+                                    <div v-else>
+                                        <Dropdown>
+                                            <template #trigger>
+                                                Framing
+                                            </template>
+                                            <template #content>
+                                                <DropdownLink
+                                                    v-for="item in link.options"
+                                                    :href="route(item.href)">
+                                                    {{ item.name }}
+                                                </DropdownLink>
+                                            </template>
+                                        </Dropdown>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

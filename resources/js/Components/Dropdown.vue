@@ -49,35 +49,38 @@ const open = ref(false);
 </script>
 
 <template>
-    <div class="relative text-2xl inline-flex items-center px-1 pt-1">
-        <div @click="open = !open" class="text-white flex cursor-pointer hover:underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in-out">
-            <slot name="trigger" />
-            <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1 animation duration-300 ease-in-out" />
-            <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1 animation duration-300 ease-in-out" />
+    <div class="relative text-lg inline-flex items-center px-1 pt-1">
+        <div @click="open = !open" class="text-gray-200 cursor-pointer hover:underline decoration-primary-500 underline-offset-4 decoration-6 animation duration-300 ease-in-out">
+            <div class="flex">
+                <slot name="trigger" />
+                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-0.5 animation duration-300 ease-in-out" />
+                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-0.5 animation duration-300 ease-in-out" />
+            </div>
+
+            <Transition
+                enter-active-class="transition ease-out duration-200"
+                enter-from-class="opacity-0 scale-95"
+                enter-to-class="opacity-100 scale-100"
+                leave-active-class="transition ease-in duration-75"
+                leave-from-class="opacity-100 scale-100"
+                leave-to-class="opacity-0 scale-95"
+            >
+                <div
+                    v-show="open"
+                    class="absolute z-50 rounded-md shadow-lg"
+                    :class="[widthClass, alignmentClasses]"
+                    style="display: none"
+                    @click="open = false"
+                >
+                    <div class="rounded-md ring-1 ring-black ring-opacity-5" :class="contentClasses">
+                        <slot name="content" />
+                    </div>
+                </div>
+            </Transition>
         </div>
 
         <!-- Full Screen Dropdown Overlay -->
         <div v-show="open" class="fixed inset-0 z-40" @click="open = false"></div>
 
-        <Transition
-            enter-active-class="transition ease-out duration-200"
-            enter-from-class="opacity-0 scale-95"
-            enter-to-class="opacity-100 scale-100"
-            leave-active-class="transition ease-in duration-75"
-            leave-from-class="opacity-100 scale-100"
-            leave-to-class="opacity-0 scale-95"
-        >
-            <div
-                v-show="open"
-                class="absolute z-50 mt-28 rounded-md shadow-lg"
-                :class="[widthClass, alignmentClasses]"
-                style="display: none"
-                @click="open = false"
-            >
-                <div class="rounded-md ring-1 ring-black ring-opacity-5" :class="contentClasses">
-                    <slot name="content" />
-                </div>
-            </div>
-        </Transition>
     </div>
 </template>
