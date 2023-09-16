@@ -41,10 +41,10 @@ const teamMembers = [
     <Head title="Home" />
 
     <PrimaryLayout>
-        <div>
+        <div class="mb-20">
             <Carousel />
         </div>
-        <div id="team-member">
+        <div id="team-member" class="mt-20">
             <Section>
                 <template #header>
                     <span> Meet the Team!</span>

@@ -118,7 +118,7 @@ const socialLinks = [
         <div class="min-h-screen bg-gray-100">
             <nav>
                 <!-- Primary Navigation Menu -->
-                <div class="px-4 md:px-4 lg:px-8 bg-primary-600">
+                <div class="px-4 md:px-4 lg:px-8 bg-primary-700">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden md:flex flex h-fit w-full">
                             <!-- Logo -->
