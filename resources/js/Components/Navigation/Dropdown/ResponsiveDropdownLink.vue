@@ -1,5 +1,5 @@
 <script setup>
-import NavLink from "@/Components/NavLink.vue";
+import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
 
 defineProps({
     href: {
@@ -14,11 +14,11 @@ defineProps({
 </script>
 
 <template>
-    <NavLink
+    <ResponsiveNavLink
         :href="href"
         :active="active"
-        class="!text-black block w-full text-right text-md py-2"
+        class="!text-black block w-full text-left py-2 my-1"
     >
         <slot />
-    </NavLink>
+    </ResponsiveNavLink>
 </template>

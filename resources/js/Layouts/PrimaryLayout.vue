@@ -1,12 +1,11 @@
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import Dropdown from '@/Components/Dropdown.vue';
-import DropdownLink from '@/Components/DropdownLink.vue';
-import NavLink from '@/Components/NavLink.vue';
-import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
-import ResponsiveDropdown from "@/Components/ResponsiveDropdown.vue";
-import ResponsiveDropdownLink from "@/Components/ResponsiveDropdownLink.vue";
+import Dropdown from '@/Components/Navigation/Dropdown/Dropdown.vue';
+import DropdownLink from '@/Components/Navigation/Dropdown/DropdownLink.vue';
+import NavLink from '@/Components/Navigation/NavLink.vue';
+import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
+import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
 import { Link } from '@inertiajs/vue3';
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
 let showingNavigationDropdown = ref(false);
@@ -75,7 +74,7 @@ const links = [
         ]
     },
     {
-        name: "Get in touch",
+        name: "Contact",
         href: "team"
     },
     {
@@ -90,7 +89,7 @@ const links = [
         <div class="min-h-screen bg-gray-100">
             <nav>
                 <!-- Primary Navigation Menu -->
-                <div class="px-4 sm:px-6 lg:px-8 bg-primary-600">
+                <div class="px-4 md:px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden md:flex flex h-fit w-full">
                             <!-- Logo -->
@@ -103,7 +102,7 @@ const links = [
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full">
+                            <div class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full">
                                 <div
                                     v-for="link in links"
                                     class="animation duration-300 my-auto"
