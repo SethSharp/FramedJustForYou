@@ -1,0 +1,7 @@
+<template>
+    <!--  Become a SVG so we can do text-white or whatever colour we want  -->
+    <img
+        src="/images/instagram-logo.png"
+        class="w-auto h-10"
+    />
+</template>

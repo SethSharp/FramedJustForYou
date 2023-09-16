@@ -1,43 +1,105 @@
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import Dropdown from '@/Components/Dropdown.vue';
-import DropdownLink from '@/Components/DropdownLink.vue';
-import NavLink from '@/Components/NavLink.vue';
+import Dropdown from '@/Components/Navigation/Dropdown/Dropdown.vue';
+import DropdownLink from '@/Components/Navigation/Dropdown/DropdownLink.vue';
+import NavLink from '@/Components/Navigation/NavLink.vue';
+import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
+import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
+import * as SocialIcons from "@/Components/Icons/Social";
 import { Link } from '@inertiajs/vue3';
+import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
+let showingNavigationDropdown = ref(false);
 
-const showingNavigationDropdown = ref(false);
 
-const products = [
-    {
-        name: "Canvases",
-        href: "product.canvas",
-        active: "active.*"
-    }
-]
+/* FRAMING
+* Custom
+* Memorabilia
+* Mirror
+* Jersey
+* */
 
-const framingOptions = [
-    {
-        name: "Custom Framing",
-        href: "product.canvas",
-        active: "active.*"
-    },
-    {
-        name: "Memorabilia Framing",
-        href: "product.canvas",
-        active: "active.*"
-    }
-]
+
+/* Other Services (In links)
+(Not going to be a drop-down but going to go to a
+grid of services with a dedicated page for each, maybe some grouping)
+* Floating frames
+* Canvas
+* Custom Printing
+* Fabric Framing
+* Blank Canvases
+* Fine art
+* Needle works (other options)
+* */
+
+/* Canvas, also on links
+* Canvases
+* Stretching
+* Photos on Canvas
+* */
 
 const links = [
     {
+        // Include the team here
         name: "Home",
         href: "home"
     },
     {
-        name: "The Team",
+        name: "Services",
         href: "team"
     },
+    {
+        name: "Canvas",
+        href: "team"
+    },
+    {
+        name: "Framing",
+        href: "team",
+        options: [
+            {
+                name: "Custom",
+                href: "home",
+            },
+            {
+                name: "Mirror",
+                href: "home",
+            },
+            {
+                name: "Jersey",
+                href: "home",
+            },
+            {
+                name: "Memorabilia",
+                href: "home",
+            },
+        ]
+    },
+    {
+        name: "Contact",
+        href: "team"
+    },
+    {
+        name: "Portfolio",
+        href: "team"
+    }
+]
+
+const socialLinks = [
+    {
+        name: "Instagram",
+        link: "https://www.instagram.com/framedjust4u/",
+        icon: "Instagram"
+    },
+    {
+        name: "Facebook",
+        link: "https://www.facebook.com/framedjustforyou/",
+        icon: "Facebook"
+    },
+    {
+        name: "Shopify",
+        link: "https://www.facebook.com/framedjustforyou/",
+        icon: "Shopify"
+    }
 ]
 </script>
 
@@ -46,87 +108,99 @@ const links = [
         <div class="min-h-screen bg-gray-100">
             <nav>
                 <!-- Primary Navigation Menu -->
-                <div class="px-4 sm:px-6 lg:px-8 bg-primary-600">
-                    <div class="flex h-16">
-                        <div class="flex">
+                <div class="px-4 md:px-4 lg:px-8 bg-primary-600">
+                    <div class="flex h-16 h-fit py-4">
+                        <div class="hidden md:flex flex h-fit w-full">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('home')">
                                     <ApplicationLogo
-                                        class="block h-9 w-auto"
+                                        class="block"
                                     />
                                 </Link>
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <NavLink
+                            <div class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full">
+                                <div
                                     v-for="link in links"
-                                    :href="route(link.href)"
-                                    :active="route().current(link.href)"
-                                    class="animation duration-300"
+                                    class="animation duration-300 my-auto"
                                 >
-                                    {{ link.name }}
-                                </NavLink>
-                                <Dropdown>
-                                    <template #trigger>
-                                        <div class="cursor-pointer"> Products </div>
-                                    </template>
-                                    <template #content>
-                                        <DropdownLink
-                                            v-for="product in products"
-                                            :active="route().current(product.href)"
-                                            :href="route(product.href)">
-                                            {{ product.name }}
-                                        </DropdownLink>
-                                    </template>
-                                </Dropdown>
-
-                                <Dropdown>
-                                    <template #trigger>
-                                        <div class="cursor-pointer"> Framing </div>
-                                    </template>
-                                    <template #content>
-                                        <DropdownLink
-                                            v-for="framing in framingOptions"
-                                            :active="route().current(framing.href)"
-                                            :href="route(framing.href)">
-                                            {{ framing.name }}
-                                        </DropdownLink>
-                                    </template>
-                                </Dropdown>
+                                    <div v-if="! link.options">
+                                        <NavLink :href="route(link.href)">
+                                            {{ link.name }}
+                                        </NavLink>
+                                    </div>
+                                    <div v-else>
+                                        <Dropdown>
+                                            <template #trigger>
+                                                <NavLink>
+                                                    {{ link.name }}
+                                                </NavLink>
+                                            </template>
+                                            <template #content>
+                                                <DropdownLink
+                                                    v-for="item in link.options"
+                                                    :href="route(item.href)">
+                                                    {{ item.name }}
+                                                </DropdownLink>
+                                            </template>
+                                        </Dropdown>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 flex items-center sm:hidden">
-                            <button
+                        <div class="-mr-2 flex items-center md:hidden">
+                            <Bars3Icon
+                                v-if="!showingNavigationDropdown"
                                 @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                            >
-                                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                    <path
-                                        :class="{
-                                            hidden: showingNavigationDropdown,
-                                            'inline-flex': !showingNavigationDropdown,
-                                        }"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
-                                    <path
-                                        :class="{
-                                            hidden: !showingNavigationDropdown,
-                                            'inline-flex': showingNavigationDropdown,
-                                        }"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
+                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                            />
+                            <XMarkIcon
+                                v-if="showingNavigationDropdown"
+                                @click="showingNavigationDropdown = !showingNavigationDropdown"
+                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Navigation Menu -->
+                <div
+                    :class="{
+                        block: showingNavigationDropdown,
+                        hidden: !showingNavigationDropdown,
+                    }"
+                    class="md:hidden"
+                >
+                    <div class="pt-2 pb-3 space-y-1">
+                        <div v-for="link in links">
+                            <div v-if="! link.options">
+                                <ResponsiveNavLink
+                                    :href="route(link.href)"
+                                    :active="route().current(link.href)"
+                                >
+                                    {{ link.name }}
+                                </ResponsiveNavLink>
+                            </div>
+                            <div v-else>
+                                <ResponsiveDropdown>
+                                    <template #trigger>
+                                        <ResponsiveNavLink :active="route().current(link.href)">
+                                            {{ link.name }}
+                                        </ResponsiveNavLink>
+                                    </template>
+                                    <template #content>
+                                        <ResponsiveNavLink
+                                            v-for="item in link.options"
+                                            :href="route(item.href)">
+                                            {{ item.name }}
+                                        </ResponsiveNavLink>
+                                    </template>
+                                </ResponsiveDropdown>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,9 +220,18 @@ const links = [
                 </div>
             </main>
 
-            <footer class="bg-primary-500 shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    Footer
+            <footer class="bg-primary-500">
+                <div class="justify-center mx-auto w-1/2 pt-4 text-center">
+                    <div v-for="social in socialLinks" class="inline-flex justify-center">
+                        <a :href="social.link">
+                            <component
+                                :is="SocialIcons[social.icon]"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="py-4 text-center text-white font-medium">
+                    © 2023 FramedJust4You. All rights reserved.
                 </div>
             </footer>
         </div>

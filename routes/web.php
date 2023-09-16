@@ -14,14 +14,16 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-})->name('home');
+// Grouped by header
+Route::get('/', function () { return Inertia::render('Home'); })->name('home');
 
-Route::get('/team', function () {
-    return Inertia::render('Team');
-})->name('team');
+Route::get('/team', function () { return Inertia::render('Team'); })->name('team');
 
-Route::get('/canvas', function () {
-    return Inertia::render('Canvas');
-})->name('product.canvas');
+
+// Add a group so framing.jersey, framing.memo
+
+// Framing
+Route::get('/canvas', function () { return Inertia::render('Canvas'); })->name('product.canvas');
+
+
+// Services
