@@ -6,6 +6,7 @@ import DropdownLink from '@/Components/Navigation/Dropdown/DropdownLink.vue';
 import NavLink from '@/Components/Navigation/NavLink.vue';
 import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
 import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
+import * as SocialIcons from "@/Components/Icons/Social";
 import { Link } from '@inertiajs/vue3';
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
 let showingNavigationDropdown = ref(false);
@@ -80,6 +81,24 @@ const links = [
     {
         name: "Portfolio",
         href: "team"
+    }
+]
+
+const socialLinks = [
+    {
+        name: "Instagram",
+        link: "https://www.instagram.com/framedjust4u/",
+        icon: "Instagram"
+    },
+    {
+        name: "Facebook",
+        link: "https://www.facebook.com/framedjustforyou/",
+        icon: "Facebook"
+    },
+    {
+        name: "Shopify",
+        link: "https://www.facebook.com/framedjustforyou/",
+        icon: "Shopify"
     }
 ]
 </script>
@@ -199,11 +218,18 @@ const links = [
                 </div>
             </main>
 
-            <footer class="bg-primary-500 shadow text-gray-200">
-                <div class="text-center">
-                    <div class="mt-4">
-                        © 2023 FramedJust4You. All rights reserved.
+            <footer class="bg-primary-500">
+                <div class="justify-center mx-auto w-1/2 pt-4 text-center">
+                    <div v-for="social in socialLinks" class="inline-flex justify-center">
+                        <a :href="social.link">
+                            <component
+                                :is="SocialIcons[social.icon]"
+                            />
+                        </a>
                     </div>
+                </div>
+                <div class="py-4 text-center text-white font-medium">
+                    © 2023 FramedJust4You. All rights reserved.
                 </div>
             </footer>
         </div>
