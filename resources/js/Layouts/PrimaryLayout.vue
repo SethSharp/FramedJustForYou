@@ -232,7 +232,7 @@ const socialLinks = [
 
             <!-- Page Content -->
             <main>
-                <div class="mx-10 mt-10 bg-gray-200 min-h-screen">
+                <div class="mx-10 mt-10 min-h-screen">
                     <slot />
                 </div>
             </main>
