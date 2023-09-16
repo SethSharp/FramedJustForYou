@@ -2,6 +2,6 @@
     <img
         alt="FramedJust4YouLogo"
         src="/images/dummylogo.jpeg"
-        class="w-42 h-32"
+        class="md:w-42 md:h-32"
     />
 </template>

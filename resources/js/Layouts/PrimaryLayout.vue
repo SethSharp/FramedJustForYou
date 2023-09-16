@@ -4,8 +4,11 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
+import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
+import ResponsiveDropdown from "@/Components/ResponsiveDropdown.vue";
+import ResponsiveDropdownLink from "@/Components/ResponsiveDropdownLink.vue";
 import { Link } from '@inertiajs/vue3';
-
+import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
 let showingNavigationDropdown = ref(false);
 
 
@@ -89,12 +92,12 @@ const links = [
                 <!-- Primary Navigation Menu -->
                 <div class="px-4 sm:px-6 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
-                        <div class="flex h-fit w-full">
+                        <div class="hidden md:flex flex h-fit w-full">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('home')">
                                     <ApplicationLogo
-                                        class="block h-9 w-auto"
+                                        class="block"
                                     />
                                 </Link>
                             </div>
@@ -113,7 +116,7 @@ const links = [
                                     <div v-else>
                                         <Dropdown>
                                             <template #trigger>
-                                                Framing
+                                                {{ link.name }}
                                             </template>
                                             <template #content>
                                                 <DropdownLink
@@ -129,34 +132,55 @@ const links = [
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 flex items-center sm:hidden">
-                            <button
+                        <div class="-mr-2 flex items-center md:hidden">
+                            <Bars3Icon
+                                v-if="!showingNavigationDropdown"
                                 @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                            >
-                                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                    <path
-                                        :class="{
-                                            hidden: showingNavigationDropdown,
-                                            'inline-flex': !showingNavigationDropdown,
-                                        }"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
-                                    <path
-                                        :class="{
-                                            hidden: !showingNavigationDropdown,
-                                            'inline-flex': showingNavigationDropdown,
-                                        }"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
+                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                            />
+                            <XMarkIcon
+                                v-if="showingNavigationDropdown"
+                                @click="showingNavigationDropdown = !showingNavigationDropdown"
+                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Navigation Menu -->
+                <div
+                    :class="{
+                        block: showingNavigationDropdown,
+                        hidden: !showingNavigationDropdown,
+                    }"
+                    class="md:hidden"
+                >
+                    <div class="pt-2 pb-3 space-y-1">
+                        <div v-for="link in links">
+                            <div v-if="! link.options">
+                                <ResponsiveNavLink
+                                    :href="route(link.href)"
+                                    :active="route().current(link.href)"
+                                >
+                                    {{ link.name }}
+                                </ResponsiveNavLink>
+                            </div>
+                            <div v-else>
+                                <ResponsiveDropdown>
+                                    <template #trigger>
+                                        <ResponsiveNavLink :active="route().current(link.href)">
+                                            {{ link.name }}
+                                        </ResponsiveNavLink>
+                                    </template>
+                                    <template #content>
+                                        <ResponsiveNavLink
+                                            v-for="item in link.options"
+                                            :href="route(item.href)">
+                                            {{ item.name }}
+                                        </ResponsiveNavLink>
+                                    </template>
+                                </ResponsiveDropdown>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,9 +200,11 @@ const links = [
                 </div>
             </main>
 
-            <footer class="bg-primary-500 shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    Footer
+            <footer class="bg-primary-500 shadow text-gray-200">
+                <div class="text-center">
+                    <div class="mt-4">
+                        © 2023 FramedJust4You. All rights reserved.
+                    </div>
                 </div>
             </footer>
         </div>
