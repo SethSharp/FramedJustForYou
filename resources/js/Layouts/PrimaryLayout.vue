@@ -42,45 +42,55 @@ const links = [
     {
         // Include the team here
         name: "Home",
-        href: "home"
+        href: "home",
+        active: "home",
     },
     {
         name: "Services",
-        href: "team"
+        href: "services",
+        active: "services",
     },
     {
         name: "Canvas",
-        href: "team"
+        href: "canvas",
+        active: "canvas",
     },
     {
         name: "Framing",
-        href: "team",
+        href: "framing",
+        active: "framing.*",
         options: [
             {
                 name: "Custom",
-                href: "home",
+                href: "framing.custom",
+                active: "framing.custom",
             },
             {
                 name: "Mirror",
-                href: "home",
+                href: "framing.mirror",
+                active: "framing.mirror",
             },
             {
                 name: "Jersey",
-                href: "home",
+                href: "framing.jersey",
+                active: "framing.jersey",
             },
             {
                 name: "Memorabilia",
-                href: "home",
+                href: "framing.memorabilia",
+                active: "framing.memorabilia",
             },
         ]
     },
     {
         name: "Contact",
-        href: "team"
+        href: "contact",
+        active: "contact",
     },
     {
         name: "Portfolio",
-        href: "team"
+        href: "portfolio",
+        active: "portfolio",
     }
 ]
 
@@ -127,21 +137,26 @@ const socialLinks = [
                                     class="animation duration-300 my-auto"
                                 >
                                     <div v-if="! link.options">
-                                        <NavLink :href="route(link.href)">
+                                        <NavLink
+                                            :href="route(link.href)"
+                                            :active="route().current(link.active)"
+                                        >
                                             {{ link.name }}
                                         </NavLink>
                                     </div>
                                     <div v-else>
                                         <Dropdown>
                                             <template #trigger>
-                                                <NavLink>
+                                                <NavLink :active="route().current(link.active)">
                                                     {{ link.name }}
                                                 </NavLink>
                                             </template>
                                             <template #content>
                                                 <DropdownLink
                                                     v-for="item in link.options"
-                                                    :href="route(item.href)">
+                                                    :href="route(item.href)"
+                                                    :active="route().current(item.active)"
+                                                >
                                                     {{ item.name }}
                                                 </DropdownLink>
                                             </template>
@@ -180,7 +195,7 @@ const socialLinks = [
                             <div v-if="! link.options">
                                 <ResponsiveNavLink
                                     :href="route(link.href)"
-                                    :active="route().current(link.href)"
+                                    :active="route().current(link.active)"
                                 >
                                     {{ link.name }}
                                 </ResponsiveNavLink>
@@ -188,14 +203,16 @@ const socialLinks = [
                             <div v-else>
                                 <ResponsiveDropdown>
                                     <template #trigger>
-                                        <ResponsiveNavLink :active="route().current(link.href)">
+                                        <ResponsiveNavLink :active="route().current(link.active)">
                                             {{ link.name }}
                                         </ResponsiveNavLink>
                                     </template>
                                     <template #content>
                                         <ResponsiveNavLink
                                             v-for="item in link.options"
-                                            :href="route(item.href)">
+                                            :href="route(item.href)"
+                                            :active="route().current(item.active)"
+                                        >
                                             {{ item.name }}
                                         </ResponsiveNavLink>
                                     </template>

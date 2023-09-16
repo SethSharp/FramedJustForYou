@@ -16,14 +16,15 @@ use Inertia\Inertia;
 
 // Grouped by header
 Route::get('/', function () { return Inertia::render('Home'); })->name('home');
-
-Route::get('/team', function () { return Inertia::render('Team'); })->name('team');
-
-
-// Add a group so framing.jersey, framing.memo
+Route::get('/services', function () { return Inertia::render('Services'); })->name('services');
+Route::get('/canvas', function () { return Inertia::render('Canvas'); })->name('canvas');
+Route::get('/contact', function () { return Inertia::render('Contact'); })->name('contact');
+Route::get('/portfolio', function () { return Inertia::render('Portfolio'); })->name('portfolio');
 
 // Framing
-Route::get('/canvas', function () { return Inertia::render('Canvas'); })->name('product.canvas');
-
-
-// Services
+Route::prefix('framing')->name('framing.')->group(function () {
+    Route::get('/custom', function () { return Inertia::render('Framing/Custom'); })->name('custom');
+    Route::get('/mirror', function () { return Inertia::render('Framing/Mirror'); })->name('mirror');
+    Route::get('/jersey', function () { return Inertia::render('Framing/Jersey'); })->name('jersey');
+    Route::get('/memorabilia', function () { return Inertia::render('Framing/Memorabilia'); })->name('memorabilia');
+});

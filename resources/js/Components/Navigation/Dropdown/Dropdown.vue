@@ -50,8 +50,8 @@ const open = ref(false);
 
 <template>
     <div class="relative text-lg inline-flex items-center">
-        <div @click="open = !open" class="text-gray-200 cursor-pointer">
-            <div class="flex">
+        <div @click="open = !open" class="cursor-pointer">
+            <div class="flex text-gray-200 ">
                 <slot name="trigger" />
                 <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1.5 animation duration-300 ease-in-out" />
                 <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1.5 animation duration-300 ease-in-out" />
