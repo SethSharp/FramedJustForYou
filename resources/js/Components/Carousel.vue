@@ -3,26 +3,18 @@ import {Splide, SplideSlide} from "@splidejs/vue-splide";
 import '@splidejs/vue-splide/css';
 
 const options = {
-    rewind: false,
-    type: 'loop',
-    perPage: 2,
-    perMove: 1,
     focus: 'center',
-    autoPlay: true,
-    drag: 'free',
+    type: 'fade',
+    perPage: 1,
+    autoplay: true,
+    height: '20rem',
 }
 </script>
 
 <template>
     <Splide :options="options" aria-label="Vue Splide Example">
-        <SplideSlide>
+        <SplideSlide v-for="x in 10">
             <img src="/images/dummylogo.jpeg" alt="Sample 1">
-        </SplideSlide>
-        <SplideSlide>
-            <img src="/images/dummylogo.jpeg" alt="Sample 2">
-        </SplideSlide>
-        <SplideSlide>
-            <img src="/images/dummylogo.jpeg" alt="Sample 2">
         </SplideSlide>
     </Splide>
 </template>
