@@ -1,7 +1,8 @@
 <script setup>
-import NavLink from "@/Components/Navigation/NavLink.vue";
+import { Link } from "@inertiajs/vue3";
+import {computed} from "vue";
 
-defineProps({
+const props = defineProps({
     href: {
         type: String,
         required: true,
@@ -11,14 +12,20 @@ defineProps({
         default: false,
     },
 });
+
+const classes = computed(() =>
+    props.active
+        ? 'text-black block w-full text-lg inline-flex items-right px-4 py-1 underline decoration-white underline-offset-4 decoration-6 animation duration-300 ease-in-out'
+        : 'text-black block w-full text-lg inline-flex items-right px-4 py-1 hover:underline decoration-gray-200 underline-offset-4 decoration-6 animation duration-300 ease-in-out'
+);
 </script>
 
 <template>
-    <NavLink
+    <Link
         :href="href"
         :active="active"
-        class="!text-black block w-full text-right text-md py-2"
+        :class="classes"
     >
         <slot />
-    </NavLink>
+    </Link>
 </template>

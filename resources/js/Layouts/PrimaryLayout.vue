@@ -61,17 +61,17 @@ const links = [
                 href: "home",
             },
             {
-                name: "Memorabilia",
-                href: "home",
-            },
-            {
                 name: "Mirror",
                 href: "home",
             },
             {
                 name: "Jersey",
                 href: "home",
-            }
+            },
+            {
+                name: "Memorabilia",
+                href: "home",
+            },
         ]
     },
     {
@@ -134,7 +134,9 @@ const socialLinks = [
                                     <div v-else>
                                         <Dropdown>
                                             <template #trigger>
-                                                {{ link.name }}
+                                                <NavLink>
+                                                    {{ link.name }}
+                                                </NavLink>
                                             </template>
                                             <template #content>
                                                 <DropdownLink
