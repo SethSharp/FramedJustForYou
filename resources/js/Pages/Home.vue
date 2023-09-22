@@ -1,7 +1,7 @@
 <script setup>
-import { Head, Link } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import TeamMember from "@/Components/Card/TeamMember.vue";
+import * as TeamMemberCards from "@/Components/Card/Team";
 import Section from "@/Components/Section.vue";
 import Carousel from "@/Components/Carousel.vue";
 import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
@@ -12,28 +12,32 @@ const teamMembers = [
         position: "Founder",
         description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
         image: "/images/team/dianne-temp.jpeg",
-        side: false
+        side: false,
+        component: 'RightTeamMember'
     },
     {
         name: "Karen",
         position: "Senior Framer",
         description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
         image: "/images/team/dianne-temp.jpeg",
-        side: false
+        side: false,
+        component: 'LeftTeamMember'
     },
     {
         name: "John",
         position: "Senior Framer",
         description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
         image: "/images/team/dianne-temp.jpeg",
-        side: false
+        side: false,
+        component: 'RightTeamMember'
     },
     {
         name: "Bethany",
         position: "Junior Framer",
         description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
         image: "/images/team/dianne-temp.jpeg",
-        side: false
+        side: false,
+        component: 'LeftTeamMember'
     },
 ]
 </script>
@@ -93,10 +97,11 @@ const teamMembers = [
                     <span> Meet the Team!</span>
                 </template>
                 <template #content>
-                    <TeamMember
+                    <component
                         v-for="teamMember in teamMembers"
                         v-bind="teamMember"
                         :test="true"
+                        :is="TeamMemberCards[teamMember.component]"
                     />
                 </template>
             </Section>
