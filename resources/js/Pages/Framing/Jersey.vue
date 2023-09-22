@@ -4,7 +4,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 </script>
 
 <template>
-    <Head title="Home" />
+    <Head title="Jersey" />
 
     <PrimaryLayout>
         Jersey

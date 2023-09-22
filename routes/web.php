@@ -20,6 +20,7 @@ Route::get('/services', function () { return Inertia::render('Services'); })->na
 Route::get('/canvas', function () { return Inertia::render('Canvas'); })->name('canvas');
 Route::get('/contact', function () { return Inertia::render('Contact'); })->name('contact');
 Route::get('/portfolio', function () { return Inertia::render('Portfolio'); })->name('portfolio');
+Route::get('/find', function () { return Inertia::render('Find'); })->name('find');
 
 // Framing
 Route::prefix('framing')->name('framing.')->group(function () {
