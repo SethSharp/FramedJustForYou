@@ -20,7 +20,7 @@ const props = defineProps({
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
     >
-        <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex">
+        <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex my-6">
             <div class="w-1/2 bg-gray-200 rounded-l-lg bg-opacity-50 flex">
                 <img
                     class="mx-auto my-10"
