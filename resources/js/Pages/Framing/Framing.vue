@@ -11,36 +11,36 @@ const config = [
         header: "Custom",
         description: "More than 1000 frames to choose from, friendly reliable service and over 25 years custom picture framing experience on the Gold Coast.",
         button: "Click here",
-        href: "#test",
+        href: "#custom",
         border: "red-600"
-    },
-    {
-        header: "Mirror",
-        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
-        button: "Click here",
-        href: "#test",
-        border: "amber-600"
     },
     {
         header: "Jersey",
         description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
         button: "Click here",
-        href: "#test",
+        href: "#jersey",
         border: "yellow-400"
     },
     {
         header: "Memorabilia",
         description: "We are your memorabilia framing specialists on the Gold Coast. Providing conservation framing methods, bespoke solutions and attention to detail.",
         button: "Click here",
-        href: "#test",
+        href: "#memorabilia",
         border: "green-500"
     },
     {
         header: "Jigsaw Puzzle",
         description: "Our jigsaw puzzle framing process ensures your jigsaw puzzle is preserved, fade resistent, easily maintained and ready to hang.",
         button: "Click here",
-        href: "#test",
+        href: "#jig-saw",
         border: "blue-500"
+    },
+    {
+        header: "Mirror",
+        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
+        button: "Click here",
+        href: "#mirror",
+        border: "amber-600"
     },
 ]
 </script>
@@ -75,6 +75,26 @@ const config = [
                     </Info>
                 </div>
             </template>
+        </Section>
+
+        <Section id="custom">
+            <template #header> Custom </template>
+        </Section>
+
+        <Section id="jersey">
+            <template #header> Jersey </template>
+        </Section>
+
+        <Section id="memorabilia">
+            <template #header> Memorabilia </template>
+        </Section>
+
+        <Section id="jig-saw">
+            <template #header> Jigsaw Puzzles </template>
+        </Section>
+
+        <Section id="mirror">
+            <template #header> Mirror </template>
         </Section>
     </PrimaryLayout>
 </template>

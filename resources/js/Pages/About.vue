@@ -3,13 +3,12 @@ import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import * as TeamMemberCards from "@/Components/Card/Team";
 import Section from "@/Components/Section.vue";
-import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 
 const teamMembers = [
     {
         name: "Diane",
         position: "Director",
-        description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
+        description: "Diane started framing in 1993 and opened her own business in 1998 on Oxley Drive. In 2000 she moved the store to 142 Brisbane Road where it remained for the next 20 Years. In August 2019 another move to 122 Brisbane Road where it is currently located. She is heading towards 30 years experience in the picture framing industry.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'RightTeamMember'
