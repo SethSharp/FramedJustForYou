@@ -40,18 +40,17 @@ grid of services with a dedicated page for each, maybe some grouping)
 
 const links = [
     {
-        // Include the team here
         name: "Home",
         href: "home",
         active: "home",
     },
     {
-        name: "Services",
-        href: "services",
-        active: "services",
+        name: "About",
+        href: "about",
+        active: "about",
     },
     {
-        name: "Canvas",
+        name: "Printing",
         href: "canvas",
         active: "canvas",
     },
@@ -83,9 +82,9 @@ const links = [
         ]
     },
     {
-        name: "Contact",
-        href: "contact",
-        active: "contact",
+        name: "Other Services",
+        href: "services",
+        active: "services",
     },
     {
         name: "Portfolio",

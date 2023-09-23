@@ -7,6 +7,6 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <Head title="Canvases" />
 
     <PrimaryLayout>
-        Canvases
+        See Bethany
     </PrimaryLayout>
 </template>

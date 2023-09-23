@@ -16,9 +16,10 @@ use Inertia\Inertia;
 
 // Grouped by header
 Route::get('/', function () { return Inertia::render('Home'); })->name('home');
-Route::get('/services', function () { return Inertia::render('Services'); })->name('services');
+Route::get('/about', function () { return Inertia::render('About'); })->name('about');
 Route::get('/canvas', function () { return Inertia::render('Canvas'); })->name('canvas');
 Route::get('/contact', function () { return Inertia::render('Contact'); })->name('contact');
+Route::get('/other-services', function () { return Inertia::render('Services'); })->name('services');
 Route::get('/portfolio', function () { return Inertia::render('Portfolio'); })->name('portfolio');
 Route::get('/find', function () { return Inertia::render('Find'); })->name('find');
 
