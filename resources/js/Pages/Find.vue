@@ -21,7 +21,7 @@ import {
             <template #content>
                 <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
                     <div class="w-full p-4">
-                        <p> Want to get in contact? </p>
+                        <p class=" text-gray-600"> Want to get in contact? </p>
                         <div class="my-2">
                             <div class="flex gap-x-2">
                                 <DevicePhoneMobileIcon class="w-8 h-8" />
@@ -40,7 +40,7 @@ import {
                                 <span> framedjust4u@bigpond.com </span>
                             </div>
                         </div>
-                        <p class="mt-6"> Below you can find our conveniently located store: </p>
+                        <p class="mt-6 text-gray-600"> Below you can find our conveniently located store: </p>
                         <div class="my-2">
                             <div class="flex gap-x-2">
                                 <BuildingStorefrontIcon class="w-8 h-8" />
