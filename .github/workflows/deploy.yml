@@ -45,6 +45,10 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
 
+      - name: Debug GitHub SHA
+        run:
+          echo "GitHub SHA: ${{ github.sha }}"
+
       - name: Deploy to Elastic Beanstalk
         if: github.ref == 'refs/heads/main'
         uses: einaregilsson/beanstalk-deploy@v18
