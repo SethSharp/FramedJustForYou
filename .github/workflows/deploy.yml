@@ -43,10 +43,10 @@ jobs:
 
       - name: Clear Cache
         run: |
-          php artisan cache clear
-          php artisan route clear
-          php artisan view clear
-          php artisan config clear
+          php artisan cache:clear
+          php artisan route:clear
+          php artisan view:clear
+          php artisan config:clear
 
       - name: Build ZIP Deployment Package
         if: github.ref == 'refs/heads/main'
