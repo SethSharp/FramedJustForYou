@@ -16,7 +16,7 @@ const teamMembers = [
     {
         name: "Karen",
         position: "Senior Framer",
-        description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
+        description: "Karen has been framing for over 20 years and has been with us for about 3. Her awesome artistic touch allows her to easily help our customers make tough decisions and bringing an amazing product back to them.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'LeftTeamMember'
@@ -24,7 +24,7 @@ const teamMembers = [
     {
         name: "John",
         position: "Senior Framer",
-        description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
+        description: "John has been with the team for over 6 months now and contributes a lot to our team. John started his own picture framing business back in the day giving him about 6 years experience and with a background in engineering he is a great asset to FramedJust4You.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'RightTeamMember'
@@ -32,7 +32,7 @@ const teamMembers = [
     {
         name: "Bethany",
         position: "Junior Framer",
-        description: "Aliqua aute velit aliquip anim duis minim consectetur eiusmod minim pariatur ex irure. Nisi eiusmod ipsum consequat veniam dolor adipisicing Lorem voluptate. Dolore id consectetur consectetur ad. Ex velit aute ut amet aute enim culpa nulla. Ex et cillum enim. Esse minim aliqua laborum cupidatat esse do reprehenderit anim sunt sint elit eu quis laboris.",
+        description: "Bethany is the newest member of the team. She currently balances uni and picture framing and couldn't be happier. She has already progressed so much as a framer producing some awesome work.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'LeftTeamMember'
@@ -47,7 +47,7 @@ const teamMembers = [
         <div id="intro">
             <Section>
                 <template #header>
-                    <span> FramedJust4You </span>
+                    <span> Framed Just 4 You </span>
                 </template>
                 <template #subtitle>
                     <span> Nothing but passion </span>
@@ -70,7 +70,7 @@ const teamMembers = [
                     <span> Meet the Team </span>
                 </template>
                 <template #subtitle>
-                    <span> with 40 years of experience </span>
+                    <span> with over 30 years of experience </span>
                 </template>
                 <template #content>
                     <component

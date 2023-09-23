@@ -1,11 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import Dropdown from '@/Components/Navigation/Dropdown/Dropdown.vue';
-import DropdownLink from '@/Components/Navigation/Dropdown/DropdownLink.vue';
 import NavLink from '@/Components/Navigation/NavLink.vue';
 import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
-import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
 import * as SocialIcons from "@/Components/Icons/Social";
 import { Link } from '@inertiajs/vue3';
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
@@ -51,8 +48,8 @@ const links = [
     },
     {
         name: "Printing",
-        href: "canvas",
-        active: "canvas",
+        href: "printing",
+        active: "printing",
     },
     {
         name: "Framing",
@@ -82,7 +79,7 @@ const links = [
         ]
     },
     {
-        name: "Other Services",
+        name: "Other",
         href: "services",
         active: "services",
     },
@@ -124,7 +121,7 @@ const socialLinks = [
                 <!-- Primary Navigation Menu -->
                 <div class="px-4 md:px-4 lg:px-8 bg-primary-700">
                     <div class="flex h-16 h-fit py-4">
-                        <div class="hidden md:flex flex h-fit w-full">
+                        <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('home')">
@@ -171,17 +168,22 @@ const socialLinks = [
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 flex items-center md:hidden">
-                            <Bars3Icon
-                                v-if="!showingNavigationDropdown"
-                                @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
-                            />
-                            <XMarkIcon
-                                v-if="showingNavigationDropdown"
-                                @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
-                            />
+                        <div class="-mr-2 w-full flex justify-end lg:hidden">
+                            <div class="w-1/2">
+                                <ApplicationLogo class="block"/>
+                            </div>
+                            <div class="w-1/2 my-auto flex justify-end">
+                                <Bars3Icon
+                                    v-if="!showingNavigationDropdown"
+                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
+                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                                />
+                                <XMarkIcon
+                                    v-if="showingNavigationDropdown"
+                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
+                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,11 +194,11 @@ const socialLinks = [
                         block: showingNavigationDropdown,
                         hidden: !showingNavigationDropdown,
                     }"
-                    class="md:hidden"
+                    class="lg:hidden"
                 >
                     <div class="pt-2 pb-3 space-y-1">
                         <div v-for="link in links">
-                            <div>
+                            <div class="border-b-2">
                                 <ResponsiveNavLink
                                     :href="route(link.href)"
                                     :active="route().current(link.active)"

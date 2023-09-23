@@ -10,7 +10,7 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
             Don't hesitate to get in contact with us, take a further look at our services
             or browse our online store for ready to hang frames.
         </p>
-        <div class="flex-wrap sm:flex gap-x-2 w-full sm:w-3/4 justify-center mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-2 sm:w-3/4 justify-center mx-auto">
             <PrimaryButton :href="route('find')">
                 Contact Us
             </PrimaryButton>

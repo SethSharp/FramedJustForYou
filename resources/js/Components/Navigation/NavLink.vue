@@ -13,8 +13,8 @@ const props = defineProps({
 
 const classes = computed(() =>
     props.active
-        ? 'text-gray-200 text-lg inline-flex items-center px-1 pt-1 underline decoration-white underline-offset-4 decoration-6 animation duration-300 ease-in-out'
-        : 'text-gray-200 text-lg inline-flex items-center px-1 pt-1 hover:underline decoration-gray-200 underline-offset-4 decoration-6 animation duration-300 ease-in-out'
+        ? 'underline decoration-white'
+        : 'hover:underline decoration-gray-200'
 );
 </script>
 
@@ -26,7 +26,7 @@ const classes = computed(() =>
             </span>
         </div>
         <div v-else>
-            <Link :href="href" :class="classes">
+            <Link :href="href" :class="classes" class="text-gray-200 text-lg inline-flex items-center px-1 pt-1 decoration-6 underline-offset-4 transition duration-300 ease-in-out">
                 <slot />
             </Link>
         </div>

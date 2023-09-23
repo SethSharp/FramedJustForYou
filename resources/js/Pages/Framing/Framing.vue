@@ -61,7 +61,11 @@ const config = [
             </template>
             <template #content>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
-                    <Info v-for="item in config" :href="item.href" :border="item.border">
+                    <Info
+                        v-for="item in config"
+                        :href="item.href"
+                        class="border-primary-600"
+                    >
                         <template #header> {{ item.header }} </template>
                         {{ item.description }}
                         <template #button>

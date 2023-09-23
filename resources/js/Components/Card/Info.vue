@@ -2,12 +2,11 @@
 defineProps({
     location: String,
     href: String,
-    border: String
 })
 </script>
 
 <template>
-    <div class="bg-gray-200 border border-4 sm:border-8" :class="'border-'+border">
+    <div class="bg-gray-200 border border-4 sm:border-8">
         <div class="h-3/4">
             <div class="text-2xl text-gray-600 font-bold p-6">
                 <slot name="header" />
