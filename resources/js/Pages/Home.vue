@@ -46,9 +46,11 @@ const teamMembers = [
     <Head title="Home" />
 
     <PrimaryLayout>
-        <div class="mb-20">
-            <Carousel />
-        </div>
+        <Section>
+            <template #content>
+                <Carousel />
+            </template>
+        </Section>
         <div id="intro">
             <Section>
                 <template #header>
