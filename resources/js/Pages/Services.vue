@@ -7,6 +7,6 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <Head title="Services" />
 
     <PrimaryLayout>
-        Services
+        Art studio
     </PrimaryLayout>
 </template>
