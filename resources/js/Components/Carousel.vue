@@ -7,8 +7,6 @@ const options = {
     type: 'loop',
     perPage: 1,
     autoplay: true,
-    duration: 3000,
-    height: '30rem',
 }
 
 const images = [

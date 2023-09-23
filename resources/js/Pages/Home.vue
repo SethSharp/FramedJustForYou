@@ -4,6 +4,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 import Section from "@/Components/Section.vue";
 import Carousel from "@/Components/Carousel.vue";
+import Contact from "@/Components/Card/Home/Contact.vue";
 
 </script>
 
@@ -46,25 +47,7 @@ import Carousel from "@/Components/Carousel.vue";
                     </div>
 
                     <div class="my-12 text-center justify-center">
-                        <div class="bg-gray-200 rounded-xl py-6 sm:w-3/4 mx-auto px-6">
-                            <h1 class="text-gray-700 text-2xl font-medium mb-3"> Lets turn your idea into reality! </h1>
-                            <p class="mb-12">
-                                We other many services and if we don't mention it here, we probably forgot to add it.
-                                Don't hesitate to get in contact with us, take a further look at our services
-                                or browse our online store for ready to hang frames.
-                            </p>
-                            <div class="flex-wrap sm:flex gap-x-2 w-full sm:w-3/4 justify-center mx-auto">
-                                <PrimaryButton :href="route('find')">
-                                    Contact Us
-                                </PrimaryButton>
-                                <PrimaryButton :href="route('find')">
-                                    Online Store
-                                </PrimaryButton>
-                                <PrimaryButton :href="route('find')">
-                                    Portfolio
-                                </PrimaryButton>
-                            </div>
-                        </div>
+                        <Contact/>
                     </div>
                 </template>
             </Section>

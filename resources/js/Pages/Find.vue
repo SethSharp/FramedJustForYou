@@ -44,7 +44,7 @@ import {
                         <div class="my-2">
                             <div class="flex gap-x-2">
                                 <BuildingStorefrontIcon class="w-8 h-8" />
-                                <span> 122 Brisbane Road, Labrador 4215 </span>
+                                <span> Unit 1-2, 122 Brisbane Road, Labrador 4215 </span>
                             </div>
                         </div>
                     </div>
