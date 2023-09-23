@@ -46,7 +46,7 @@ const teamMembers = [
     <Head title="Home" />
 
     <PrimaryLayout>
-        <div>
+        <div class="mb-20">
             <Carousel />
         </div>
         <div id="intro">
