@@ -57,7 +57,7 @@ const links = [
     {
         name: "Framing",
         href: "framing",
-        active: "framing.*",
+        active: "framing",
         options: [
             {
                 name: "Custom",
@@ -140,7 +140,7 @@ const socialLinks = [
                                     v-for="link in links"
                                     class="animation duration-300 my-auto"
                                 >
-                                    <div v-if="! link.options">
+                                    <div>
                                         <NavLink
                                             :href="route(link.href)"
                                             :active="route().current(link.active)"
@@ -148,24 +148,24 @@ const socialLinks = [
                                             {{ link.name }}
                                         </NavLink>
                                     </div>
-                                    <div v-else>
-                                        <Dropdown>
-                                            <template #trigger>
-                                                <NavLink :active="route().current(link.active)">
-                                                    {{ link.name }}
-                                                </NavLink>
-                                            </template>
-                                            <template #content>
-                                                <DropdownLink
-                                                    v-for="item in link.options"
-                                                    :href="route(item.href)"
-                                                    :active="route().current(item.active)"
-                                                >
-                                                    {{ item.name }}
-                                                </DropdownLink>
-                                            </template>
-                                        </Dropdown>
-                                    </div>
+<!--                                    <div v-else>-->
+<!--                                        <Dropdown>-->
+<!--                                            <template #trigger>-->
+<!--                                                <NavLink :active="route().current(link.active)">-->
+<!--                                                    {{ link.name }}-->
+<!--                                                </NavLink>-->
+<!--                                            </template>-->
+<!--                                            <template #content>-->
+<!--                                                <DropdownLink-->
+<!--                                                    v-for="item in link.options"-->
+<!--                                                    :href="route(item.href)"-->
+<!--                                                    :active="route().current(item.active)"-->
+<!--                                                >-->
+<!--                                                    {{ item.name }}-->
+<!--                                                </DropdownLink>-->
+<!--                                            </template>-->
+<!--                                        </Dropdown>-->
+<!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ const socialLinks = [
                 >
                     <div class="pt-2 pb-3 space-y-1">
                         <div v-for="link in links">
-                            <div v-if="! link.options">
+                            <div>
                                 <ResponsiveNavLink
                                     :href="route(link.href)"
                                     :active="route().current(link.active)"
@@ -204,24 +204,24 @@ const socialLinks = [
                                     {{ link.name }}
                                 </ResponsiveNavLink>
                             </div>
-                            <div v-else>
-                                <ResponsiveDropdown>
-                                    <template #trigger>
-                                        <ResponsiveNavLink :active="route().current(link.active)">
-                                            {{ link.name }}
-                                        </ResponsiveNavLink>
-                                    </template>
-                                    <template #content>
-                                        <ResponsiveNavLink
-                                            v-for="item in link.options"
-                                            :href="route(item.href)"
-                                            :active="route().current(item.active)"
-                                        >
-                                            {{ item.name }}
-                                        </ResponsiveNavLink>
-                                    </template>
-                                </ResponsiveDropdown>
-                            </div>
+<!--                            <div v-else>-->
+<!--                                <ResponsiveDropdown>-->
+<!--                                    <template #trigger>-->
+<!--                                        <ResponsiveNavLink :active="route().current(link.active)">-->
+<!--                                            {{ link.name }}-->
+<!--                                        </ResponsiveNavLink>-->
+<!--                                    </template>-->
+<!--                                    <template #content>-->
+<!--                                        <ResponsiveNavLink-->
+<!--                                            v-for="item in link.options"-->
+<!--                                            :href="route(item.href)"-->
+<!--                                            :active="route().current(item.active)"-->
+<!--                                        >-->
+<!--                                            {{ item.name }}-->
+<!--                                        </ResponsiveNavLink>-->
+<!--                                    </template>-->
+<!--                                </ResponsiveDropdown>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>

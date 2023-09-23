@@ -23,10 +23,12 @@ Route::get('/other-services', function () { return Inertia::render('Services'); 
 Route::get('/portfolio', function () { return Inertia::render('Portfolio'); })->name('portfolio');
 Route::get('/find', function () { return Inertia::render('Find'); })->name('find');
 
-// Framing
-Route::prefix('framing')->name('framing.')->group(function () {
-    Route::get('/custom', function () { return Inertia::render('Framing/Custom'); })->name('custom');
-    Route::get('/mirror', function () { return Inertia::render('Framing/Mirror'); })->name('mirror');
-    Route::get('/jersey', function () { return Inertia::render('Framing/Jersey'); })->name('jersey');
-    Route::get('/memorabilia', function () { return Inertia::render('Framing/Memorabilia'); })->name('memorabilia');
-});
+
+Route::get('/custom-framing', function () { return Inertia::render('Framing/Framing'); })->name('framing');
+
+//Route::prefix('framing')->name('framing.')->group(function () {
+//    Route::get('/custom', function () { return Inertia::render('Framing/Custom'); })->name('custom');
+//    Route::get('/mirror', function () { return Inertia::render('Framing/Mirror'); })->name('mirror');
+//    Route::get('/jersey', function () { return Inertia::render('Framing/Jersey'); })->name('jersey');
+//    Route::get('/memorabilia', function () { return Inertia::render('Framing/Memorabilia'); })->name('memorabilia');
+//});
