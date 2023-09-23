@@ -8,32 +8,25 @@ import NavButton from "@/Components/Button/NavButton.vue";
 
 const config = [
     {
-        header: "Printing on Canvas",
-        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
-        button: "Click here",
-        href: "printing-on-canvas",
-        border: "red-600"
-    },
-    {
         header: "Photos on Canvas",
-        description: "Let us turn your digital images into artworks! Our photos on canvas are competitively priced and available in a wide range of sizes.",
+        description: "Our canvas photo printing service brings your cherished moments to life in a beautiful and lasting way. We carefully transforms your photos onto canvas, creating stunning art pieces that capture the essence of your memories",
         button: "Click here",
         href: "photos-on-canvas",
-        border: "amber-600"
+        border: "red-500"
     },
     {
         header: "Custom made Canvases",
-        description: "Our artist's supplies include canvases made to order, canvas off the roll, matboards by the sheet or cut to size, framing hardware and more.",
+        description: "With a variety of options and sizes to choose from, our goal is to bring your vision to life on canvas. Whether it's a favorite movie scene, a gaming masterpiece, or a breathtaking outdoor landscape.",
         button: "Click here",
         href: "custom-made-canvases",
-        border: "yellow-400"
+        border: "amber-600"
     },
     {
         header: "Printing on Canvas",
-        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
+        description: "Our canvas printing service offers a personalized touch to your favorite images, turning them into beautiful art pieces. With various options and sizes available, we ensure your memories and moments are preserved on canvas with precision and care, making them ready to display and cherish.",
         button: "Click here",
         href: "printing-on-canvas",
-        border: "green-500"
+        border: "yellow-300"
     },
 ]
 </script>

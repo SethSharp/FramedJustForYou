@@ -70,7 +70,7 @@ const teamMembers = [
                     <span> Meet the Team </span>
                 </template>
                 <template #subtitle>
-                    <span> with over 30 years of experience </span>
+                    <span> with over 55 years of experience </span>
                 </template>
                 <template #content>
                     <component
