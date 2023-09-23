@@ -20,21 +20,21 @@ const props = defineProps({
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
     >
-        <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex">
-            <div class="w-1/2 bg-gray-200 rounded-l-lg bg-opacity-50 flex">
-                <img
-                    class="mx-auto my-10"
-                    :src="image"
-                />
-            </div>
-            <div class="w-1/2 flex bg-gray-300 bg-opacity-50">
-                <div class="mx-8 mt-20 rounded-r-lg hover:scale-105 transition duration-700">
+        <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden">
+            <div class="w-full sm:w-1/2 flex bg-gray-300 bg-opacity-50">
+                <div class="mx-8 my-10 rounded-l-xl transition duration-700">
                     <h1 class="text-4xl text-gray-600"> {{ name}} </h1>
                     <span class="text-2xl text-gray-500"> {{ position }} </span>
                     <p class="mt-4 text-gray-400">
                         {{ description }}
                     </p>
                 </div>
+            </div>
+            <div class="w-full sm:w-1/2 bg-gray-200 bg-opacity-50 flex">
+                <img
+                    class="object-cover w-full"
+                    :src="image"
+                />
             </div>
         </div>
     </Transition>

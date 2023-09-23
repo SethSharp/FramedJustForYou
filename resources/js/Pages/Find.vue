@@ -4,9 +4,9 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 </script>
 
 <template>
-    <Head title="Contact" />
+    <Head title="Find us" />
 
     <PrimaryLayout>
-        Contact
+        Find us
     </PrimaryLayout>
 </template>

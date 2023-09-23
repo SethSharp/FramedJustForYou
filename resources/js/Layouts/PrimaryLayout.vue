@@ -91,6 +91,11 @@ const links = [
         name: "Portfolio",
         href: "portfolio",
         active: "portfolio",
+    },
+    {
+        name: "Find us",
+        href: "find",
+        active: "find"
     }
 ]
 
@@ -238,13 +243,20 @@ const socialLinks = [
             </main>
 
             <footer class="bg-primary-500">
-                <div class="justify-center mx-auto w-1/2 pt-4 text-center">
-                    <div v-for="social in socialLinks" class="inline-flex justify-center">
-                        <a :href="social.link">
-                            <component
-                                :is="SocialIcons[social.icon]"
-                            />
-                        </a>
+                <div class="w-full flex text-center">
+                    <div class="inline-flex w-full sm:w-1/2 py-5">
+                        <div class="flex ml-10">
+                            <div v-for="social in socialLinks">
+                                <a :href="social.link">
+                                    <component
+                                        :is="SocialIcons[social.icon]"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 text-white py-5">
+                        <p> Location: Some address here</p>
                     </div>
                 </div>
                 <div class="py-4 text-center text-white font-medium">
