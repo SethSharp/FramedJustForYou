@@ -170,7 +170,11 @@ const socialLinks = [
                         <!-- Hamburger -->
                         <div class="-mr-2 w-full flex justify-end lg:hidden">
                             <div class="w-1/2">
-                                <ApplicationLogo class="block"/>
+                                <Link :href="route('home')">
+                                    <ApplicationLogo
+                                        class="block"
+                                    />
+                                </Link>
                             </div>
                             <div class="w-1/2 my-auto flex justify-end">
                                 <Bars3Icon
@@ -245,18 +249,19 @@ const socialLinks = [
 
             <footer class="bg-primary-500">
                 <div class="inline-flex w-full justify-center py-5">
-                    <div class="flex ml-10">
+                    <div class="flex">
                         <div v-for="social in socialLinks">
                             <a :href="social.link">
                                 <component
+                                    class="mx-1"
                                     :is="SocialIcons[social.icon]"
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="py-4 text-center text-white font-medium text-lg">
-                    © 2023 FramedJust4You. All rights reserved.
+                <div class="py-4 px-4 text-center text-white font-medium text-lg">
+                    © 2023 FramedJustForYou. All rights reserved.
                 </div>
             </footer>
         </div>

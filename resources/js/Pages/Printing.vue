@@ -1,38 +1,38 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import SecondaryButton from "@/Components/Button/SecondaryButton.vue";
 import Section from "@/Components/Section.vue";
 import {ArrowDownIcon} from "@heroicons/vue/20/solid/index.js";
 import Info from "@/Components/Card/Info.vue";
+import NavButton from "@/Components/Button/NavButton.vue";
 
 const config = [
     {
         header: "Printing on Canvas",
         description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
         button: "Click here",
-        href: "#test",
+        href: "printing-on-canvas",
         border: "red-600"
     },
     {
         header: "Photos on Canvas",
         description: "Let us turn your digital images into artworks! Our photos on canvas are competitively priced and available in a wide range of sizes.",
         button: "Click here",
-        href: "#test",
+        href: "photos-on-canvas",
         border: "amber-600"
     },
     {
         header: "Custom made Canvases",
         description: "Our artist's supplies include canvases made to order, canvas off the roll, matboards by the sheet or cut to size, framing hardware and more.",
         button: "Click here",
-        href: "#test",
+        href: "custom-made-canvases",
         border: "yellow-400"
     },
     {
         header: "Printing on Canvas",
         description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
         button: "Click here",
-        href: "#test",
+        href: "printing-on-canvas",
         border: "green-500"
     },
 ]
@@ -62,28 +62,31 @@ const config = [
                         <template #header> {{ item.header }} </template>
                         {{ item.description }}
                         <template #button>
-                            <SecondaryButton
+                            <NavButton
                                 class="hover:-translate-y-2"
                                 :href="item.href"
                             >
                                 {{ item.button }}
-                            </SecondaryButton>
+                            </NavButton>
                         </template>
                     </Info>
                 </div>
             </template>
         </Section>
-        <Section>
-            <template #header> Services </template>
-            <template #content>
-                <div id="test">
-                    Test service down here aye
-                </div>
+        <Section id="printing-on-canvas">
+            <template #header> Jersey </template>
+        </Section>
 
-                <div id="test-2">
-                    Test service down here aye
-                </div>
-            </template>
+        <Section id="photos-on-canvas">
+            <template #header> Memorabilia </template>
+        </Section>
+
+        <Section id="custom-made-canvases">
+            <template #header> Jigsaw Puzzles </template>
+        </Section>
+
+        <Section id="printing-on-canvas">
+            <template #header> Mirror </template>
         </Section>
     </PrimaryLayout>
 </template>

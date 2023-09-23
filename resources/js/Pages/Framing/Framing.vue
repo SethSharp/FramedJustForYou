@@ -4,42 +4,42 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
 import { ArrowDownIcon } from "@heroicons/vue/20/solid/index.js";
 import Info from "@/Components/Card/Info.vue";
-import SecondaryButton from "@/Components/Button/SecondaryButton.vue";
+import NavButton from "@/Components/Button/NavButton.vue";
 
 const config = [
     {
         header: "Custom",
         description: "More than 1000 frames to choose from, friendly reliable service and over 25 years custom picture framing experience on the Gold Coast.",
         button: "Click here",
-        href: "#custom",
+        href: "custom",
         border: "red-600"
     },
     {
         header: "Jersey",
         description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
         button: "Click here",
-        href: "#jersey",
+        href: "jersey",
         border: "yellow-400"
     },
     {
         header: "Memorabilia",
         description: "We are your memorabilia framing specialists on the Gold Coast. Providing conservation framing methods, bespoke solutions and attention to detail.",
         button: "Click here",
-        href: "#memorabilia",
+        href: "memorabilia",
         border: "green-500"
     },
     {
         header: "Jigsaw Puzzle",
         description: "Our jigsaw puzzle framing process ensures your jigsaw puzzle is preserved, fade resistent, easily maintained and ready to hang.",
         button: "Click here",
-        href: "#jig-saw",
+        href: "jig-saw",
         border: "blue-500"
     },
     {
         header: "Mirror",
         description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
         button: "Click here",
-        href: "#mirror",
+        href: "mirror",
         border: "amber-600"
     },
 ]
@@ -63,18 +63,17 @@ const config = [
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
                     <Info
                         v-for="item in config"
-                        :href="item.href"
                         class="border-primary-600"
                     >
                         <template #header> {{ item.header }} </template>
                         {{ item.description }}
                         <template #button>
-                            <SecondaryButton
+                            <NavButton
                                 class="hover:-translate-y-2"
                                 :href="item.href"
                             >
                                 {{ item.button }}
-                            </SecondaryButton>
+                            </NavButton>
                         </template>
                     </Info>
                 </div>

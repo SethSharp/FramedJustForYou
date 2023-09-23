@@ -17,7 +17,7 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
             <PrimaryButton :href="route('find')">
                 Online Store
             </PrimaryButton>
-            <PrimaryButton :href="route('find')">
+            <PrimaryButton :href="route('portfolio')">
                 Portfolio
             </PrimaryButton>
         </div>

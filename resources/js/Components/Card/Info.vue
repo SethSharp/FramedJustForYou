@@ -1,10 +1,3 @@
-<script setup>
-defineProps({
-    location: String,
-    href: String,
-})
-</script>
-
 <template>
     <div class="bg-gray-200 border border-4 sm:border-8">
         <div class="h-3/4">
