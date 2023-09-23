@@ -74,19 +74,19 @@ const config = [
             </template>
         </Section>
         <Section id="printing-on-canvas">
-            <template #header> Jersey </template>
+            <template #header> Printing on Canvas </template>
         </Section>
 
         <Section id="photos-on-canvas">
-            <template #header> Memorabilia </template>
+            <template #header> Photos on Canvas </template>
         </Section>
 
         <Section id="custom-made-canvases">
-            <template #header> Jigsaw Puzzles </template>
+            <template #header> Custom made Canvases </template>
         </Section>
 
         <Section id="printing-on-canvas">
-            <template #header> Mirror </template>
+            <template #header> Printing on Canvas </template>
         </Section>
     </PrimaryLayout>
 </template>

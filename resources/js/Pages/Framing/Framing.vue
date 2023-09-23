@@ -9,35 +9,35 @@ import NavButton from "@/Components/Button/NavButton.vue";
 const config = [
     {
         header: "Custom",
-        description: "More than 1000 frames to choose from, friendly reliable service and over 25 years custom picture framing experience on the Gold Coast.",
+        description: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project. ",
         button: "Click here",
         href: "custom",
         border: "red-600"
     },
     {
         header: "Jersey",
-        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
+        description: "Our team understands the value of your sports memorabilia, and we frame jerseys with precision and expertise. Whether it's your favorite football jersey or a piece of sporting history, we'll ensure it's beautifully showcased.",
         button: "Click here",
         href: "jersey",
         border: "yellow-400"
     },
     {
         header: "Memorabilia",
-        description: "We are your memorabilia framing specialists on the Gold Coast. Providing conservation framing methods, bespoke solutions and attention to detail.",
+        description: "Whether it's movie posters, gaming collectibles, or outdoor adventure keepsakes, we approach each piece with dedication. We will frame your memorabilia with the utmost care, ensuring it stands as a testament to your passions and experiences for years to come.",
         button: "Click here",
         href: "memorabilia",
         border: "green-500"
     },
     {
         header: "Jigsaw Puzzle",
-        description: "Our jigsaw puzzle framing process ensures your jigsaw puzzle is preserved, fade resistent, easily maintained and ready to hang.",
+        description: "team ensures that your jigsaw puzzle is not only preserved but also made fade-resistant, easy to maintain, and ready to hang. We treat each puzzle as a unique masterpiece, ensuring it stands the test of time and becomes a cherished part of your collection.",
         button: "Click here",
         href: "jig-saw",
         border: "blue-500"
     },
     {
         header: "Mirror",
-        description: "Culpa aliquip aliqua deserunt esse ullamco esse duis cillum. Nisi aliquip ipsum Lorem magna. Id minim excepteur magna commodo nisi exercitation aliquip amet. Ad esse qui eu ipsum proident dolor tempor.",
+        description: "Much like our other work, we mirror our dedication to craftsmanship in mirror framing. We take the reflection of your style seriously. We frame mirrors with precision and flair, ensuring they not only reflect your image but also your unique taste.",
         button: "Click here",
         href: "mirror",
         border: "amber-600"

@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-200 border border-4 sm:border-8">
-        <div class="h-3/4">
-            <div class="text-2xl text-gray-600 font-bold p-6">
+        <div class="h-3/4 py-4">
+            <div class="text-2xl text-gray-600 font-bold p-4">
                 <slot name="header" />
             </div>
             <div class="px-4">
