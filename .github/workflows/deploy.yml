@@ -3,7 +3,7 @@ name: Laravel
 on: [ push ]
 
 jobs:
-  laravel-tests:
+  deployment:
 
     runs-on: ubuntu-20.04
 
