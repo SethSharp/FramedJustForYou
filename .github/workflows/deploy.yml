@@ -1,0 +1,59 @@
+name: Laravel
+
+on: [ push ]
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: zip, sqlite3
+          coverage: none
+
+      - name: Check composer compatability
+        run: composer check-platform-reqs
+
+      - name: Install composer dependencies
+        run: composer install --no-cache --no-ansi --no-interaction --no-progress
+
+      - name: Install node dependencies
+        run: npm ci
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Build frontend
+        run: |
+          npm run build
+
+      - name: Build ZIP Deployment Package
+        if: github.ref == 'refs/heads/main'
+        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
+
+      - name: Deploy to Elastic Beanstalk
+        if: github.ref == 'refs/heads/main'
+        uses: einaregilsson/beanstalk-deploy@v18
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          application_name: "FramedJust4You"
+          environment_name: FramedJust4You-env
+          existing_bucket_name: elasticbeanstalk-ap-southeast-2-921105766319
+          region: ap-southeast-2
+          version_label: ${{ github.sha }}
+          deployment_package: deploy.zip
