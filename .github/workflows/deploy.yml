@@ -47,7 +47,7 @@ jobs:
 
       - name: Debug GitHub SHA
         run:
-          echo "GitHub SHA: ${{ github.sha }}"
+          echo github.sha
 
       - name: Deploy to Elastic Beanstalk
         if: github.ref == 'refs/heads/main'
