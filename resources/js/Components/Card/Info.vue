@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gray-200 border border-4 sm:border-8">
-        <div class="h-4/5 py-4">
+        <div class="hw py-4">
             <div class="text-2xl text-gray-600 font-bold p-4">
                 <slot name="header" />
             </div>

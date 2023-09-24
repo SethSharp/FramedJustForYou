@@ -47,7 +47,7 @@ const teamMembers = [
         <div id="intro">
             <Section>
                 <template #header>
-                    <span> Framed Just 4 You </span>
+                    <span> Framed Just For You </span>
                 </template>
                 <template #subtitle>
                     <span> Nothing but passion </span>

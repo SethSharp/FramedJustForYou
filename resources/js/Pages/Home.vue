@@ -5,7 +5,13 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 import Section from "@/Components/Section.vue";
 import Carousel from "@/Components/Carousel.vue";
 import Contact from "@/Components/Card/Home/Contact.vue";
+import { SplideSlide } from "@splidejs/vue-splide";
 
+const images = [
+    "/images/dianne-temp 1.png",
+    "/images/dummylogo.jpeg",
+    "/images/art-studio.jpeg",
+]
 </script>
 
 <template>
@@ -14,7 +20,11 @@ import Contact from "@/Components/Card/Home/Contact.vue";
     <PrimaryLayout>
         <Section>
             <template #content>
-                <Carousel />
+                <Carousel>
+                    <SplideSlide v-for="img in images">
+                        <img :src="img" alt="image">
+                    </SplideSlide>
+                </Carousel>
             </template>
         </Section>
         <div id="intro">

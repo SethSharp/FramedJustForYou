@@ -79,7 +79,7 @@ const links = [
         ]
     },
     {
-        name: "Other",
+        name: "Art Studio",
         href: "services",
         active: "services",
     },
