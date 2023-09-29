@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <!-- Meta related -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'Framed Just 4 You') }}</title>
+        <meta name="keywords" content="FramedJust4You, custom frames, picture framing, Gold Coast framing, framing services">
+        <meta name="description" content="FramedJust4You is Gold Coasts best Picture framing business. We have been locally owned and operated for over 20 years and produce amazing results for our clients all over the Gold Coast and the country.">
+
+        <title inertia>{{ config('app.name', 'Framed Just For You') }}</title>
+
+{{--        <link rel="canonical" href="https://www.framedjustforyou.com/">--}}
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

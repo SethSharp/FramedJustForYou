@@ -8,7 +8,7 @@ const teamMembers = [
     {
         name: "Diane",
         position: "Director",
-        description: "Diane started framing in 1993 and opened her own business in 1998 on Oxley Drive. In 2000 she moved the store to 142 Brisbane Road where it remained for the next 20 Years. In August 2019 another move to 122 Brisbane Road where it is currently located. She is heading towards 30 years experience in the picture framing industry.",
+        description: "Diane, our founder, embarked on her picture framing journey in 1993. In 1998, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'RightTeamMember'
@@ -16,7 +16,7 @@ const teamMembers = [
     {
         name: "Karen",
         position: "Senior Framer",
-        description: "Karen has been framing for over 20 years and has been with us for about 3. Her awesome artistic touch allows her to easily help our customers make tough decisions and bringing an amazing product back to them.",
+        description: "With over two decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'LeftTeamMember'
@@ -24,7 +24,7 @@ const teamMembers = [
     {
         name: "John",
         position: "Senior Framer",
-        description: "John has been with the team for over 6 months now and contributes a lot to our team. John started his own picture framing business back in the day giving him about 6 years experience and with a background in engineering he is a great asset to FramedJust4You.",
+        description: "John has been a valuable addition to our team for more than half a year, making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise and is a valuable asset to FramedJustForYou.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'RightTeamMember'
@@ -32,7 +32,7 @@ const teamMembers = [
     {
         name: "Bethany",
         position: "Junior Framer",
-        description: "Bethany is the newest member of the team. She currently balances uni and picture framing and couldn't be happier. She has already progressed so much as a framer producing some awesome work.",
+        description: "Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.",
         image: "/images/team/dianne-temp.jpeg",
         side: false,
         component: 'LeftTeamMember'
@@ -56,9 +56,7 @@ const teamMembers = [
                     <div class="my-6">
                         <h1 class="text-gray-700 text-2xl font-medium mb-3"> How did it all start? </h1>
                         <p>
-                            Eu et sit aliqua. Ullamco officia nostrud adipisicing labore velit eu dolor eiusmod fugiat. Dolor amet veniam eiusmod proident enim. Excepteur magna ullamco mollit quis proident do do. Deserunt voluptate sunt dolor velit in qui adipisicing ullamco est id magna. Sint duis magna sint deserunt commodo ullamco tempor labore esse labore magna excepteur reprehenderit proident. Ad proident amet amet sit ex ipsum tempor reprehenderit esse commodo.
-
-                            Ea est eiusmod incididunt Lorem culpa. Tempor officia ut non nulla enim ut labore et laboris voluptate. Commodo est ullamco sint incididunt do consequat. Id et enim in velit ullamco mollit proident cupidatat est. Dolore et non amet consequat cupidatat.
+                            Picture framing commenced in 1993, leading to the establishment of a dedicated framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142 Brisbane Road, where it served the community for the subsequent two decades. A significant move took place in August 2019, bringing the business to its current location at 122 Brisbane Road. With nearly 60 years of collective experience in the picture framing industry, the journey continues.
                         </p>
                     </div>
                 </template>

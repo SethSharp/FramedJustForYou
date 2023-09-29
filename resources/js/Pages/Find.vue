@@ -6,8 +6,40 @@ import {
     DevicePhoneMobileIcon,
     PhoneIcon,
     EnvelopeIcon,
-    BuildingStorefrontIcon
+    BuildingStorefrontIcon,
+    ArrowRightOnRectangleIcon
 } from "@heroicons/vue/20/solid/index.js";
+
+let openingHoursConfig = [
+    {
+        day: "Monday",
+        hours: "8:30-5:00"
+    },
+    {
+        day: "Tuesday",
+        hours: "8:30-5:00"
+    },
+    {
+        day: "Wednesday",
+        hours: "8:30-5:00"
+    },
+    {
+        day: "Thursday",
+        hours: "8:30-5:00"
+    },
+    {
+        day: "Friday",
+        hours: "8:30-5:00"
+    },
+    {
+        day: "Saturday",
+        hours: "9:00-4:00"
+    },
+    {
+        day: "Sunday",
+        hours: "Closed"
+    }
+]
 </script>
 
 <template>
@@ -20,27 +52,48 @@ import {
             </template>
             <template #content>
                 <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
+                    <div class="w-full p-4 flex-wrap md:flex">
+                        <div class="w-full md:w-3/5">
+                            <p class=" text-gray-600"> Want to get in contact? </p>
+                            <div class="my-2">
+                                <div class="flex gap-x-2">
+                                    <DevicePhoneMobileIcon class="w-8 h-8" />
+                                    <span> 0412 068 330 </span>
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <div class="flex gap-x-2">
+                                    <PhoneIcon class="w-8 h-8" />
+                                    <span> 07 5563 9799 </span>
+                                </div>
+                            </div>
+                            <div class="my-2">
+                                <div class="flex gap-x-2">
+                                    <EnvelopeIcon class="w-8 h-8" />
+                                    <span class="my-auto text-sm sm:text-xl"> framedjust4u@bigpond.com </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/5">
+                            <p class=" text-gray-600"> Opening Hours </p>
+                            <div class="my-2">
+                                <div class="flex gap-x-2">
+                                    <ArrowRightOnRectangleIcon class="w-8 h-8" />
+                                    <div class="grid grid-cols-1">
+                                        <div
+                                            v-for="day in openingHoursConfig"
+                                            :class="openingHoursConfig[new Date().getDay()-1].day === day.day ? 'font-bold' : ''"
+                                        >
+                                            <span> {{ day.day }}: </span>
+                                            <span> {{ day.hours }} </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="w-full p-4">
-                        <p class=" text-gray-600"> Want to get in contact? </p>
-                        <div class="my-2">
-                            <div class="flex gap-x-2">
-                                <DevicePhoneMobileIcon class="w-8 h-8" />
-                                <span> 0412 068 330 </span>
-                            </div>
-                        </div>
-                        <div class="my-2">
-                            <div class="flex gap-x-2">
-                                <PhoneIcon class="w-8 h-8" />
-                                <span> 07 5563 9799 </span>
-                            </div>
-                        </div>
-                        <div class="my-2">
-                            <div class="flex gap-x-2">
-                                <EnvelopeIcon class="w-8 h-8" />
-                                <span> framedjust4u@bigpond.com </span>
-                            </div>
-                        </div>
-                        <p class="mt-6 text-gray-600"> Below you can find our conveniently located store: </p>
+                        <p class="text-gray-600"> Below you can find our conveniently located store: </p>
                         <div class="my-2">
                             <div class="flex gap-x-2">
                                 <BuildingStorefrontIcon class="w-8 h-8" />
