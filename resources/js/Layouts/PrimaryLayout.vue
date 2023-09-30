@@ -3,9 +3,9 @@ import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import NavLink from '@/Components/Navigation/NavLink.vue';
 import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
-import * as SocialIcons from "@/Components/Icons/Social";
 import { Link } from '@inertiajs/vue3';
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
+import Footer from "@/Layouts/Footer.vue";
 let showingNavigationDropdown = ref(false);
 
 
@@ -72,24 +72,6 @@ const links = [
         active: "find"
     }
 ]
-
-const socialLinks = [
-    {
-        name: "Instagram",
-        link: "https://www.instagram.com/framedjust4u/",
-        icon: "Instagram"
-    },
-    {
-        name: "Facebook",
-        link: "https://www.facebook.com/framedjustforyou/",
-        icon: "Facebook"
-    },
-    {
-        name: "Shopify",
-        link: "https://www.facebook.com/framedjustforyou/",
-        icon: "Shopify"
-    }
-]
 </script>
 
 <template>
@@ -97,7 +79,7 @@ const socialLinks = [
         <div class="min-h-screen bg-gray-100">
             <nav>
                 <!-- Primary Navigation Menu -->
-                <div class="px-4 md:px-4 lg:px-8 bg-primary-700">
+                <div class="px-4 md:px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
@@ -225,23 +207,7 @@ const socialLinks = [
                 </div>
             </main>
 
-            <footer class="bg-primary-500">
-                <div class="inline-flex w-full justify-center py-5">
-                    <div class="flex">
-                        <div v-for="social in socialLinks">
-                            <a :href="social.link">
-                                <component
-                                    class="mx-1"
-                                    :is="SocialIcons[social.icon]"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-4 px-4 text-center text-white font-medium text-lg">
-                    © 2023 FramedJustForYou. All rights reserved.
-                </div>
-            </footer>
+            <Footer />
         </div>
     </div>
 </template>

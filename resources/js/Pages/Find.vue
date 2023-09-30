@@ -3,43 +3,10 @@ import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
 import {
-    DevicePhoneMobileIcon,
-    PhoneIcon,
-    EnvelopeIcon,
     BuildingStorefrontIcon,
-    ArrowRightOnRectangleIcon
 } from "@heroicons/vue/20/solid/index.js";
-
-let openingHoursConfig = [
-    {
-        day: "Monday",
-        hours: "8:30-5:00"
-    },
-    {
-        day: "Tuesday",
-        hours: "8:30-5:00"
-    },
-    {
-        day: "Wednesday",
-        hours: "8:30-5:00"
-    },
-    {
-        day: "Thursday",
-        hours: "8:30-5:00"
-    },
-    {
-        day: "Friday",
-        hours: "8:30-5:00"
-    },
-    {
-        day: "Saturday",
-        hours: "9:00-4:00"
-    },
-    {
-        day: "Sunday",
-        hours: "Closed"
-    }
-]
+import OpeningHours from "@/Components/OpeningHours.vue";
+import ContactDetails from "@/Components/ContactDetails.vue";
 </script>
 
 <template>
@@ -54,42 +21,12 @@ let openingHoursConfig = [
                 <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
                     <div class="w-full p-4 flex-wrap md:flex">
                         <div class="w-full md:w-3/5">
-                            <p class=" text-gray-600"> Want to get in contact? </p>
-                            <div class="my-2">
-                                <div class="flex gap-x-2">
-                                    <DevicePhoneMobileIcon class="w-8 h-8" />
-                                    <span> 0412 068 330 </span>
-                                </div>
-                            </div>
-                            <div class="my-2">
-                                <div class="flex gap-x-2">
-                                    <PhoneIcon class="w-8 h-8" />
-                                    <span> 07 5563 9799 </span>
-                                </div>
-                            </div>
-                            <div class="my-2">
-                                <div class="flex gap-x-2">
-                                    <EnvelopeIcon class="w-8 h-8" />
-                                    <span class="my-auto text-sm sm:text-xl"> framedjust4u@bigpond.com </span>
-                                </div>
-                            </div>
+                            <p class="text-gray-600"> Want to get in contact? </p>
+                            <ContactDetails />
                         </div>
                         <div class="w-full md:w-2/5">
-                            <p class=" text-gray-600"> Opening Hours </p>
-                            <div class="my-2">
-                                <div class="flex gap-x-2">
-                                    <ArrowRightOnRectangleIcon class="w-8 h-8" />
-                                    <div class="grid grid-cols-1">
-                                        <div
-                                            v-for="day in openingHoursConfig"
-                                            :class="openingHoursConfig[new Date().getDay()-1].day === day.day ? 'font-bold' : ''"
-                                        >
-                                            <span> {{ day.day }}: </span>
-                                            <span> {{ day.hours }} </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="text-gray-600"> Opening Hours </p>
+                            <OpeningHours />
                         </div>
                     </div>
                     <div class="w-full p-4">
