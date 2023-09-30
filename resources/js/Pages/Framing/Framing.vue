@@ -51,7 +51,7 @@ const splideContentCards = [
     {
         image: "/images/framing/flinders.png",
         title: "Our Approach",
-        content: "Some approach wording",
+        content: "Our approach is simple, whether your custom framing project is a valuable artwork by a renowned artist or your grandchild's arts and crafts project it will receive the highest attention to detail while being finished to the finest standards.",
     },
     {
         image: "/images/framing/selection.png",
@@ -61,17 +61,22 @@ const splideContentCards = [
     {
         image: "/images/framing/glassChoices.png",
         title: "Glassing Options",
-        content: "Some high quality glass",
+        content: "We offer a comprehensive selection of glass types to compliment your custom frame: Clear Glass, " +
+            "UV Clear Glass 97% Non Fading, " +
+            "Non Reflective Glass, " +
+            "Conservation Non reflective Glass 97% Non Fading, " +
+            "Museum Glass, " +
+            "Ultraview",
     },
     {
         image: "/images/framing/matboards.png",
         title: "Matboards and Cutting",
-        content: "Cutting and such",
+        content: "Our mat boards are top quality and acid free. We use Crescent - Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique conservation, Archival rag and Museum mats",
     },
     {
     image: "/images/framing/framing.png",
         title: "Frames",
-        content: "Some high quality glass",
+        content: "At Framed Just For You we use all quality wood and metal picture frames, no synthetics are used. Frames are sourced from all over the world and we have over 1000 samples to choose from. Our huge selection of custom frames include brands such as Larson-Juhl and Antons Mouldings.",
     }
 ]
 
@@ -84,7 +89,7 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
     <PrimaryLayout>
         <Section>
             <template #header>
-                <span> Custom Framing </span>
+                <span> Framing </span>
             </template>
             <template #subtitle>
                 <div
@@ -120,7 +125,7 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
         </Section>
 
         <Section id="custom">
-            <template #header> Custom Framing </template>
+            <template #header> Custom </template>
             <template #content>
                 <Carousel type="fade" :autoPlay="false">
                     <CardContent

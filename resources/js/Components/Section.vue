@@ -2,7 +2,7 @@
 defineProps({
     showSubtitle: {
         type: Boolean,
-        default: false
+        default: true
     }
 })
 </script>
@@ -15,7 +15,7 @@ defineProps({
                 <slot name="subtitle"/>
             </div>
         </div>
-        <div class="text-md sm:text-xl leading-relaxed text-gray-500 my-5">
+        <div class="text-md sm:text-xl leading-relaxed text-gray-500 my-3">
             <slot name="content" />
         </div>
     </div>
