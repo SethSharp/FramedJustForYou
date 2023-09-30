@@ -79,7 +79,7 @@ const links = [
         <div class="min-h-screen bg-gray-100">
             <nav>
                 <!-- Primary Navigation Menu -->
-                <div class="px-4 md:px-4 lg:px-8 bg-primary-600">
+                <div class="md:px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
@@ -202,7 +202,7 @@ const links = [
 
             <!-- Page Content -->
             <main>
-                <div class="mx-10 mt-10 min-h-screen">
+                <div class="mx-4 mt-10 min-h-screen">
                     <slot />
                 </div>
             </main>

@@ -23,8 +23,8 @@ const socialLinks = [
 </script>
 
 <template>
-    <footer class="bg-primary-600 p-6 text-white font-medium">
-        <div class="grid grid-cols-1 sm:grid-cols-2 mx-5 sm:mx-10 space-y-4">
+    <footer class="bg-primary-600 p-6 text-white font-medium text-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 mx-5 sm:mx-10 space-y-4">
             <div class="grid grid-cols-2 sm:grid-cols-3">
                 <div>
                     <h1 class="text-2xl"> General </h1>
@@ -49,10 +49,13 @@ const socialLinks = [
                 <div>
                     <h1 class="text-2xl"> Printing </h1>
                     <ul class="list-none list-inside text-gray-200 space-y-1">
+                        <li> <a href="/printing">Photos</a> </li>
+                        <li> <a href="/printing">Custom</a> </li>
+                        <li> <a href="/printing">Printing</a> </li>
                     </ul>
                 </div>
             </div>
-            <div class="!text-gray-200 mx-auto flex-wrap sm:flex">
+            <div class="!text-gray-200 mx-auto justify-center flex-wrap sm:flex">
                 <ContactDetails />
                 <OpeningHours />
             </div>
