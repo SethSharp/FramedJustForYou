@@ -156,5 +156,9 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
         <Section id="mirror">
             <template #header> Mirror </template>
         </Section>
+
+        <Section id="embroidery">
+            <template #header> Embroidery </template>
+        </Section>
     </PrimaryLayout>
 </template>
