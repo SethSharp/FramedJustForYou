@@ -2,11 +2,22 @@
 import { Splide } from "@splidejs/vue-splide";
 import '@splidejs/vue-splide/css';
 
+const props = defineProps({
+    type: {
+        type: String,
+        default: 'loop'
+    },
+    autoPlay: {
+        type: Boolean,
+        default: true
+    }
+})
+
 const options = {
     focus: 'center',
-    type: 'loop',
+    type: props.type,
     perPage: 1,
-    autoplay: true,
+    autoplay: props.autoPlay,
 }
 
 </script>

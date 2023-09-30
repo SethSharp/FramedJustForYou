@@ -5,11 +5,14 @@ import Section from "@/Components/Section.vue";
 import { ArrowDownIcon } from "@heroicons/vue/20/solid/index.js";
 import Info from "@/Components/Card/Info.vue";
 import NavButton from "@/Components/Button/NavButton.vue";
+import { SplideSlide } from "@splidejs/vue-splide";
+import Carousel from "@/Components/Carousel.vue";
+import CardContent from "@/Components/Splide/CardContent.vue";
 
 const config = [
     {
         header: "Custom",
-        description: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project. ",
+        description: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project.",
         button: "Click here",
         href: "custom",
         border: "red-600"
@@ -43,6 +46,36 @@ const config = [
         border: "amber-600"
     },
 ]
+
+const splideContentCards = [
+    {
+        image: "/images/framing/flinders.png",
+        title: "Our Approach",
+        content: "Some approach wording",
+    },
+    {
+        image: "/images/framing/selection.png",
+        title: "Selection",
+        content: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project.",
+    },
+    {
+        image: "/images/framing/glassChoices.png",
+        title: "Glassing Options",
+        content: "Some high quality glass",
+    },
+    {
+        image: "/images/framing/matboards.png",
+        title: "Matboards and Cutting",
+        content: "Cutting and such",
+    },
+    {
+    image: "/images/framing/framing.png",
+        title: "Frames",
+        content: "Some high quality glass",
+    }
+]
+
+const scrollToContent = () => document.getElementById('custom').scrollIntoView({ behavior: "smooth" })
 </script>
 
 <template>
@@ -54,34 +87,48 @@ const config = [
                 <span> Custom Framing </span>
             </template>
             <template #subtitle>
-                <div class="flex">
+                <div
+                    @click="scrollToContent()"
+                    class="flex cursor-pointer"
+                >
                     <span> View our broad range </span>
                     <ArrowDownIcon class="w-8 h-8" />
                 </div>
             </template>
             <template #content>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
-                    <Info
-                        v-for="item in config"
-                        class="border-primary-600"
-                    >
-                        <template #header> {{ item.header }} </template>
-                        {{ item.description }}
-                        <template #button>
-                            <NavButton
-                                class="hover:-translate-y-2"
-                                :href="item.href"
-                            >
-                                {{ item.button }}
-                            </NavButton>
-                        </template>
-                    </Info>
+                <div class="mb-6">
+                    At Framed Just For You, we specialize in custom framing that transforms your cherished memories into timeless works of art. Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve the essence of your precious moments. Whether it's artwork, photographs, memorabilia, or more, we provide personalized framing solutions that elevate the beauty and significance of your keepsakes.
                 </div>
+<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
+<!--                    <Info-->
+<!--                        v-for="item in config"-->
+<!--                        class="border-primary-600"-->
+<!--                    >-->
+<!--                        <template #header> {{ item.header }} </template>-->
+<!--                        {{ item.description }}-->
+<!--                        <template #button>-->
+<!--                            <NavButton-->
+<!--                                class="hover:-translate-y-2"-->
+<!--                                :href="item.href"-->
+<!--                            >-->
+<!--                                {{ item.button }}-->
+<!--                            </NavButton>-->
+<!--                        </template>-->
+<!--                    </Info>-->
+<!--                </div>-->
             </template>
         </Section>
 
         <Section id="custom">
-            <template #header> Custom </template>
+            <template #header> Custom Framing </template>
+            <template #content>
+                <Carousel type="fade" :autoPlay="false">
+                    <CardContent
+                        v-for="spliceContentCard in splideContentCards"
+                        v-bind="spliceContentCard"
+                    />
+                </Carousel>
+            </template>
         </Section>
 
         <Section id="jersey">

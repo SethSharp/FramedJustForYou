@@ -6,7 +6,10 @@ import { SplideSlide } from "@splidejs/vue-splide";
 import Carousel from "@/Components/Carousel.vue";
 
 const images = [
-    "/images/art-studio.jpeg",
+    {
+        src: "/images/art-studio.jpeg",
+        alt: "Art Class "
+    },
 ]
 </script>
 
@@ -20,7 +23,7 @@ const images = [
             <template #content>
                 <Carousel>
                     <SplideSlide v-for="img in images">
-                        <img :src="img" alt="image">
+                        <img :src="img.src" :alt="img.alt">
                     </SplideSlide>
                 </Carousel>
                 <div>

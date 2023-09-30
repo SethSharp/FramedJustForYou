@@ -47,36 +47,14 @@ const links = [
         active: "about",
     },
     {
-        name: "Printing",
-        href: "printing",
-        active: "printing",
-    },
-    {
         name: "Framing",
         href: "framing",
         active: "framing",
-        options: [
-            {
-                name: "Custom",
-                href: "framing.custom",
-                active: "framing.custom",
-            },
-            {
-                name: "Mirror",
-                href: "framing.mirror",
-                active: "framing.mirror",
-            },
-            {
-                name: "Jersey",
-                href: "framing.jersey",
-                active: "framing.jersey",
-            },
-            {
-                name: "Memorabilia",
-                href: "framing.memorabilia",
-                active: "framing.memorabilia",
-            },
-        ]
+    },
+    {
+        name: "Printing",
+        href: "printing",
+        active: "printing",
     },
     {
         name: "Art Studio",

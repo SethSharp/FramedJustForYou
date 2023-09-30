@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="keywords" content="FramedJust4You, custom frames, picture framing, Gold Coast framing, framing services">
-        <meta name="description" content="FramedJust4You is Gold Coasts best Picture framing business. We have been locally owned and operated for over 20 years and produce amazing results for our clients all over the Gold Coast and the country.">
+        <meta name="keywords" content="FramedJust4You, Framed Just For you, custom frames, picture framing, Gold Coast framing, framing services">
+        <meta name="description" content="Framed Just For You is Gold Coasts best Picture framing business. We have been locally owned and operated for over 20 years and produce amazing results for our clients all over the Gold Coast and the country.">
 
         <title inertia>{{ config('app.name', 'Framed Just For You') }}</title>
 
