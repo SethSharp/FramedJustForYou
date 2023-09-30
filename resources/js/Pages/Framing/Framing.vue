@@ -7,43 +7,16 @@ import Info from "@/Components/Card/Info.vue";
 import NavButton from "@/Components/Button/NavButton.vue";
 import { SplideSlide } from "@splidejs/vue-splide";
 import Carousel from "@/Components/Carousel.vue";
-import CardContent from "@/Components/Splide/CardContent.vue";
+import SplideContent from "@/Components/Splide/SplideContent.vue";
+import SplideSlider from "@/Components/Splide/SplideSlider.vue";
 
 const config = [
-    {
-        header: "Custom",
-        description: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project.",
-        button: "Click here",
-        href: "custom",
-        border: "red-600"
-    },
-    {
-        header: "Jersey",
-        description: "Our team understands the value of your sports memorabilia, and we frame jerseys with precision and expertise. Whether it's your favorite football jersey or a piece of sporting history, we'll ensure it's beautifully showcased.",
-        button: "Click here",
-        href: "jersey",
-        border: "yellow-400"
-    },
     {
         header: "Memorabilia",
         description: "Whether it's movie posters, gaming collectibles, or outdoor adventure keepsakes, we approach each piece with dedication. We will frame your memorabilia with the utmost care, ensuring it stands as a testament to your passions and experiences for years to come.",
         button: "Click here",
         href: "memorabilia",
         border: "green-500"
-    },
-    {
-        header: "Jigsaw Puzzle",
-        description: "team ensures that your jigsaw puzzle is not only preserved but also made fade-resistant, easy to maintain, and ready to hang. We treat each puzzle as a unique masterpiece, ensuring it stands the test of time and becomes a cherished part of your collection.",
-        button: "Click here",
-        href: "jig-saw",
-        border: "blue-500"
-    },
-    {
-        header: "Mirror",
-        description: "Much like our other work, we mirror our dedication to craftsmanship in mirror framing. We take the reflection of your style seriously. We frame mirrors with precision and flair, ensuring they not only reflect your image but also your unique taste.",
-        button: "Click here",
-        href: "mirror",
-        border: "amber-600"
     },
 ]
 
@@ -128,7 +101,7 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
             <template #header> Custom </template>
             <template #content>
                 <Carousel type="fade" :autoPlay="false">
-                    <CardContent
+                    <SplideContent
                         v-for="spliceContentCard in splideContentCards"
                         v-bind="spliceContentCard"
                     />
@@ -138,14 +111,46 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
 
         <Section id="jersey">
             <template #header> Jersey </template>
-        </Section>
-
-        <Section id="memorabilia">
-            <template #header> Memorabilia </template>
+            <template #content>
+                <SplideSlider>
+                    <template #content>
+                        Jersey Framing is something we take pride in, we love our sports and love to represent your teams jersey in an amazing frame.
+                    </template>
+                    <template #slides>
+                        <SplideSlide>
+                            <img src="/images/framing/matboards.png" />
+                        </SplideSlide>
+                    </template>
+                </SplideSlider>
+            </template>
         </Section>
 
         <Section id="jig-saw">
             <template #header> Jigsaw Puzzles </template>
+            <template #content>
+                <Carousel type="fade" :autoPlay="false">
+                    <SplideContent
+                        image="/images/framing/framing.png"
+                        title="Enjoy Forever"
+                        content="Jigsaw puzzles are fun, relaxing and provide enjoyment for the whole family. Once complete, there is no better way to preserve and display your jigsaw puzzle than by having it professionally framed, allowing you to hang it on your wall like an artwork."
+                    />
+                    <SplideContent
+                        image="/images/framing/framing.png"
+                        title=""
+                        content="With over 1000 picture frames to choose from you will have no shortage of choice when picking the perfect frame for your jigsaw puzzle. Here at Framed Just For You we take a conservation framing approach to all of our work and our process for jigsaw puzzle framing is no exception."
+                    />
+                    <SplideContent
+                        image="/images/framing/framing.png"
+                        title="The Process"
+                        content="Each step of our jigsaw puzzle framing is completed in house using the best materials and equipment, guaranteeing it is finished to the highest standards. Your jigsaw puzzle is adhered to the backboard using a pH neutral dry mount acid free adhesive. Then we apply an artshield uv heatseal overlay which is put in our heat press at 97 degrees."
+                    />
+                    <SplideContent
+                        image="/images/framing/framing.png"
+                        title="The Results"
+                        content="The result of this process ensures your framed jigsaw puzzle is fade resistant, preserved and easily maintained by simply wiping clean."
+                    />
+                </Carousel>
+            </template>
         </Section>
 
         <Section id="mirror">

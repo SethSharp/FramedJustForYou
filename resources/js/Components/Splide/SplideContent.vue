@@ -9,9 +9,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <SplideSlide class="flex-wrap sm:flex px-10">
-        <img class="sm:w-1/2" :src="image" alt="Framing wall #2">
-        <div class="sm:w-1/2 p-6">
+    <SplideSlide class="flex-wrap lg:flex">
+        <img class="lg:w-1/2" :src="image" alt="Framing wall #2">
+        <div class="lg:w-1/2 p-6">
             <h1 class="text-xl font-bold"> {{ title }} </h1>
             <p>
                 {{ content }}

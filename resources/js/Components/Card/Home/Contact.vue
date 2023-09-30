@@ -9,14 +9,14 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
             We offer numerous services, and if you don't see a specific service mentioned here, it's possible we may have inadvertently left it out. Please feel free to reach out to us for more information, explore our extensive range of services, or peruse our online store for pre-assembled frames ready to adorn your space.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-2 sm:w-3/4 justify-center mx-auto">
+            <PrimaryButton :href="route('framing')">
+                Framing
+            </PrimaryButton>
             <PrimaryButton :href="route('find')">
                 Find Us
             </PrimaryButton>
             <PrimaryButton :href="route('find')">
                 Online Store
-            </PrimaryButton>
-            <PrimaryButton :href="route('portfolio')">
-                Portfolio
             </PrimaryButton>
         </div>
     </div>

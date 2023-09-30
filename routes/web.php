@@ -25,6 +25,7 @@ Route::get('/find', function () { return Inertia::render('Find'); })->name('find
 
 
 Route::get('/custom-framing', function () { return Inertia::render('Framing/Framing'); })->name('framing');
+Route::get('/custom-framing/memorabilia', function () { return Inertia::render('Framing/Memorabilia'); })->name('memorabilia');
 
 //Route::prefix('framing')->name('framing.')->group(function () {
 //    Route::get('/custom', function () { return Inertia::render('Framing/Custom'); })->name('custom');

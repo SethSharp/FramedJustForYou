@@ -52,6 +52,11 @@ const links = [
         active: "framing",
     },
     {
+        name: "Memorabilia",
+        href: "memorabilia",
+        active: "memorabilia",
+    },
+    {
         name: "Printing",
         href: "printing",
         active: "printing",
@@ -60,11 +65,6 @@ const links = [
         name: "Art Studio",
         href: "services",
         active: "services",
-    },
-    {
-        name: "Portfolio",
-        href: "portfolio",
-        active: "portfolio",
     },
     {
         name: "Find us",
