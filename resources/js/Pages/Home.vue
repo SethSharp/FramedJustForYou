@@ -40,21 +40,21 @@ import { SplideSlide } from "@splidejs/vue-splide"
                 </template>
                 <template #content>
                     <div class="my-6">
-                        <h1 class="text-gray-700 text-2xl font-medium mb-3"> Who are we? </h1>
+                        <h1 class="text-gray-500 text-2xl font-medium mb-3"> Who are we? </h1>
                         <p>
                             At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast. Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
                         </p>
                     </div>
 
                     <div class="my-6">
-                        <h1 class="text-gray-700 text-2xl font-medium mb-3"> What are we up to now? </h1>
+                        <h1 class="text-gray-500 text-2xl font-medium mb-3"> What are we up to now? </h1>
                         <p>
                             In our ever-evolving journey, Framed Just For You continues to embrace innovation and creativity in the world of custom framing. We understand that art and design are constantly evolving, and we strive to stay at the forefront of industry trends. Recently, we've expanded our range of services to offer not just traditional framing but also cutting-edge digital printing and custom acrylic mounting. This means we can provide you with even more options to showcase your artwork and photographs in unique and contemporary ways. Additionally, we are excited to introduce an online design tool, making it easier than ever for our customers to visualize and customize their framing projects from the comfort of their homes. We're dedicated to enhancing your experience with us, providing unmatched quality, and continuing to be your trusted partner for all things framing on the Gold Coast.
                         </p>
                     </div>
 
                     <div class="my-12 text-center justify-center">
-                        <Contact/>
+                        <Contact />
                     </div>
                 </template>
             </Section>

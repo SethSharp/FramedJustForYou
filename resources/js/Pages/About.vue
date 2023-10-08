@@ -47,28 +47,26 @@ const teamMembers = [
         <div id="intro">
             <Section>
                 <template #header>
-                    <span> Framed Just For You </span>
+                    Framed Just For You
                 </template>
                 <template #subtitle>
-                    <span> Nothing but passion </span>
+                    Nothing but passion
+                </template>
+                <template #title>
+                    How did it all start?
                 </template>
                 <template #content>
-                    <div class="my-6">
-                        <h1 class="text-gray-700 text-2xl font-medium mb-3"> How did it all start? </h1>
-                        <p>
-                            Picture framing commenced in 1993, leading to the establishment of a dedicated framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142 Brisbane Road, where it served the community for the subsequent two decades. A significant move took place in August 2019, bringing the business to its current location at 122 Brisbane Road. With nearly 60 years of collective experience in the picture framing industry, the journey continues.
-                        </p>
-                    </div>
+                    Picture framing commenced in 1993, leading to the establishment of a dedicated framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142 Brisbane Road, where it served the community for the subsequent two decades. A significant move took place in August 2019, bringing the business to its current location at 122 Brisbane Road. With nearly 60 years of collective experience in the picture framing industry, the journey continues.
                 </template>
             </Section>
         </div>
         <div id="team-member">
             <Section>
                 <template #header>
-                    <span> Meet the Team </span>
+                    Meet the Team
                 </template>
                 <template #subtitle>
-                    <span> with over 55 years of experience </span>
+                    ...with over 55 years of experience
                 </template>
                 <template #content>
                     <component

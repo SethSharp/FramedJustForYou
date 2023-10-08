@@ -4,7 +4,7 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 
 <template>
     <div class="bg-gray-200 rounded-xl py-6 sm:w-3/4 mx-auto px-6">
-        <h1 class="text-gray-700 text-2xl font-medium mb-3"> Lets turn your idea into reality! </h1>
+        <h1 class="text-gray-600 text-2xl font-medium mb-3"> Lets turn your idea into reality! </h1>
         <p class="mb-12">
             We offer numerous services, and if you don't see a specific service mentioned here, it's possible we may have inadvertently left it out. Please feel free to reach out to us for more information, explore our extensive range of services, or peruse our online store for pre-assembled frames ready to adorn your space.
         </p>
