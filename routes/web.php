@@ -20,12 +20,13 @@ Route::get('/about', function () { return Inertia::render('About'); })->name('ab
 Route::get('/printing', function () { return Inertia::render('Printing'); })->name('printing');
 Route::get('/contact', function () { return Inertia::render('Contact'); })->name('contact');
 Route::get('/other-services', function () { return Inertia::render('Services'); })->name('services');
-Route::get('/portfolio', function () { return Inertia::render('Portfolio'); })->name('portfolio');
+Route::get('/gallery', function () { return Inertia::render('Gallery'); })->name('gallery');
 Route::get('/find', function () { return Inertia::render('Find'); })->name('find');
-
 
 Route::get('/custom-framing', function () { return Inertia::render('Framing/Framing'); })->name('framing');
 Route::get('/custom-framing/memorabilia', function () { return Inertia::render('Framing/Memorabilia'); })->name('memorabilia');
+
+Route::get('/store', function () { return Inertia::render('Find'); })->name('store');
 
 //Route::prefix('framing')->name('framing.')->group(function () {
 //    Route::get('/custom', function () { return Inertia::render('Framing/Custom'); })->name('custom');

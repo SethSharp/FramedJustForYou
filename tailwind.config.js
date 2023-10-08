@@ -24,6 +24,7 @@ export default {
                     600: colors.pink[600],
                     700: colors.pink[700],
                     800: colors.pink[800],
+                    900: colors.pink[900],
                 }
             },
         },

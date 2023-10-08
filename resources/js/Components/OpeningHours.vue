@@ -3,6 +3,13 @@ import {
     ArrowRightOnRectangleIcon
 } from "@heroicons/vue/20/solid/index.js";
 
+defineProps({
+    icon: {
+        type: Boolean,
+        default: true
+    }
+})
+
 let openingHoursConfig = [
     {
         day: "Sunday",
@@ -38,7 +45,7 @@ let openingHoursConfig = [
 <template>
     <div class="my-2">
         <div class="flex gap-x-2">
-            <ArrowRightOnRectangleIcon class="w-8 h-8" />
+            <ArrowRightOnRectangleIcon v-if="icon" class="w-8 h-8" />
             <div class="grid grid-cols-1">
                 <div
                     v-for="day in openingHoursConfig"

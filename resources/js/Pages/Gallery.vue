@@ -4,9 +4,9 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 </script>
 
 <template>
-    <Head title="Portfolio" />
+    <Head title="Gallery" />
 
     <PrimaryLayout>
-        Portfolio
+        Gallery
     </PrimaryLayout>
 </template>

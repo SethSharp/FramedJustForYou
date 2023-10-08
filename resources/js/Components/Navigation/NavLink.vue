@@ -19,14 +19,14 @@ const classes = computed(() =>
 </script>
 
 <template>
-    <div>
+    <div class="text-gray-200 text-lg inline-flex items-center px-1 pt-1 decoration-6 underline-offset-4 transition duration-300 ease-in-out">
         <div v-if="! href">
             <span :class="classes">
                 <slot />
             </span>
         </div>
         <div v-else>
-            <Link :href="href" :class="classes" class="text-gray-200 text-lg inline-flex items-center px-1 pt-1 decoration-6 underline-offset-4 transition duration-300 ease-in-out">
+            <Link :href="href" :class="classes">
                 <slot />
             </Link>
         </div>
