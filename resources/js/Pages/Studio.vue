@@ -19,25 +19,24 @@ const images = [
     <PrimaryLayout>
         <Section>
             <template #header> Art Studio for hire </template>
-            <template #subtitle> we don't just frame... </template>
-            <template #content>
+            <template #subtitle>
                 <Carousel>
                     <SplideSlide v-for="img in images">
                         <img :src="img.src" :alt="img.alt">
                     </SplideSlide>
                 </Carousel>
+            </template>
+            <template #content>
                 <div>
-                    <h1> Studio 122 </h1>
-                    <p>
+                    <h1 class="text-xl"> Studio 122 </h1>
 
-                    </p>
-                    <div class="decoration">
-                        <div> Air Conditioning </div>
-                        <div> Tables </div>
-                        <div> Easels </div>
-                        <div> Kitchen Facilities </div>
-                        <div> Fridge and Microwave </div>
-                    </div>
+                    <ul class="decoration list-disc list-inside">
+                        <li> Air Conditioning </li>
+                        <li> Tables </li>
+                        <li> Easels </li>
+                        <li> Kitchen Facilities </li>
+                        <li> Fridge and Microwave </li>
+                    </ul>
                 </div>
             </template>
         </Section>

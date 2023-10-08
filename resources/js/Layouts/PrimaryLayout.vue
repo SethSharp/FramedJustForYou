@@ -77,9 +77,9 @@ const links = [
         active: "about",
         options: [
             {
-                name: "ArtStudio",
-                href: "services",
-                active: "services",
+                name: "Art Studio",
+                href: "studio",
+                active: "studio",
             },
         ]
     },
