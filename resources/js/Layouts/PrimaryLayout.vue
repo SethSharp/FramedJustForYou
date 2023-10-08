@@ -26,7 +26,7 @@ grid of services with a dedicated page for each, maybe some grouping)
 * Floating frames
 * Canvas
 * Custom Printing
-* Fabric Framing
+* Fabric Services
 * Blank Canvases
 * Fine art
 * Needle works (other options)
@@ -51,23 +51,23 @@ const links = [
     },
     {
         name: "Services",
-        href: "about",
-        active: "about",
+        href: "",
+        active: "services.*",
         options: [
             {
                 name: "Framing",
-                href: "framing",
-                active: "framing",
+                href: "services.framing",
+                active: "services.framing",
             },
             {
                 name: "Memorabilia",
-                href: "memorabilia",
-                active: "memorabilia",
+                href: "services.memorabilia",
+                active: "services.memorabilia",
             },
             {
                 name: "Printing",
-                href: "printing",
-                active: "printing",
+                href: "services.printing",
+                active: "services.printing",
             },
         ]
     },

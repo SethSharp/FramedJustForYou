@@ -9,12 +9,12 @@ const open = ref(false);
 </script>
 
 <template>
-    <div class="">
+    <div>
         <div @click="open = !open" class="cursor-pointer">
             <div class="flex">
                 <slot name="trigger"/>
-                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1.5 animation duration-300 ease-in-out" />
-                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1 animation duration-300 ease-in-out" />
+                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-5 animation duration-300 ease-in-out" />
+                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-5 animation duration-300 ease-in-out" />
             </div>
 
             <Transition

@@ -13,7 +13,7 @@ const navigation = {
         { name: 'Contact(Find us)', href: '#' },
     ],
     framing: [
-        { name: 'Custom Framing', href: '#' },
+        { name: 'Custom Services', href: '#' },
         { name: 'Jersey', href: '#' },
         { name: 'Jigsaw Puzzles', href: '#' },
         { name: 'Mirror', href: '#' },
