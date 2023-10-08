@@ -41,7 +41,6 @@ const socialLinks = [
                     <ul class="list-none list-inside text-lg text-gray-200 space-y-1">
                         <li> <a href="/custom-framing#custom">Custom</a> </li>
                         <li> <a href="/custom-framing#jersey">Jersey</a> </li>
-                        <li> <a href="/custom-framing#memorabilia">Memorabilia</a> </li>
                         <li> <a href="/custom-framing#jig-saw">Jigsaw</a> </li>
                         <li> <a href="/custom-framing#mirror">Mirror</a> </li>
                     </ul>
@@ -49,9 +48,9 @@ const socialLinks = [
                 <div>
                     <h1 class="text-2xl"> Printing </h1>
                     <ul class="list-none list-inside text-gray-200 space-y-1">
-                        <li> <a href="/printing">Photos</a> </li>
-                        <li> <a href="/printing">Custom</a> </li>
-                        <li> <a href="/printing">Printing</a> </li>
+                        <li> <a href="/printing#pri">On Canvas</a> </li>
+                        <li> <a href="/printing#photos-on-canvas">Photos</a> </li>
+                        <li> <a href="/printing#custom">Custom</a> </li>
                     </ul>
                 </div>
             </div>

@@ -46,24 +46,24 @@ const config = [
                 </div>
             </template>
             <template #content>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
-                    <Info
-                        v-for="item in config"
-                        :href="item.href"
-                        class="border-primary-600"
-                    >
-                        <template #header> {{ item.header }} </template>
-                        {{ item.description }}
-                        <template #button>
-                            <NavButton
-                                class="hover:-translate-y-2"
-                                :href="item.href"
-                            >
-                                {{ item.button }}
-                            </NavButton>
-                        </template>
-                    </Info>
-                </div>
+<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
+<!--                    <Info-->
+<!--                        v-for="item in config"-->
+<!--                        :href="item.href"-->
+<!--                        class="border-primary-600"-->
+<!--                    >-->
+<!--                        <template #header> {{ item.header }} </template>-->
+<!--                        {{ item.description }}-->
+<!--                        <template #button>-->
+<!--                            <NavButton-->
+<!--                                class="hover:-translate-y-2"-->
+<!--                                :href="item.href"-->
+<!--                            >-->
+<!--                                {{ item.button }}-->
+<!--                            </NavButton>-->
+<!--                        </template>-->
+<!--                    </Info>-->
+<!--                </div>-->
             </template>
         </Section>
         <Section id="printing-on-canvas">
@@ -76,10 +76,6 @@ const config = [
 
         <Section id="custom-made-canvases">
             <template #header> Custom made Canvases </template>
-        </Section>
-
-        <Section id="printing-on-canvas">
-            <template #header> Printing on Canvas </template>
         </Section>
     </PrimaryLayout>
 </template>
