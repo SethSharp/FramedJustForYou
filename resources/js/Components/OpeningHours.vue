@@ -5,6 +5,10 @@ import {
 
 let openingHoursConfig = [
     {
+        day: "Sunday",
+        hours: "Closed"
+    },
+    {
         day: "Monday",
         hours: "8:30-5:00"
     },
@@ -28,10 +32,6 @@ let openingHoursConfig = [
         day: "Saturday",
         hours: "9:00-4:00"
     },
-    {
-        day: "Sunday",
-        hours: "Closed"
-    }
 ]
 </script>
 
@@ -42,7 +42,7 @@ let openingHoursConfig = [
             <div class="grid grid-cols-1">
                 <div
                     v-for="day in openingHoursConfig"
-                    :class="openingHoursConfig[new Date().getDay()-1].day === day.day ? 'font-bold text-lg' : ''"
+                    :class="openingHoursConfig[new Date().getDay()].day === day.day ? 'font-bold text-lg' : ''"
                 >
                     <span> {{ day.day }}: </span>
                     <span> {{ day.hours }} </span>
