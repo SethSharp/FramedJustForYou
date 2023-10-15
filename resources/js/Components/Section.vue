@@ -6,7 +6,7 @@
                 <slot name="subtitle"/>
             </div>
         </div>
-        <div class="text-md sm:text- leading-relaxed text-gray-500 my-3">
+        <div class="text-md sm:text-lg leading-relaxed text-gray-500 my-3">
             <div class="my-6 text-gray-500 text-2xl font-medium mb-3">
                 <slot name="title" />
             </div>

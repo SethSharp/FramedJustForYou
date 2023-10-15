@@ -2,9 +2,11 @@
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
-import {ArrowDownIcon} from "@heroicons/vue/20/solid/index.js";
+import {PhotoIcon, CameraIcon, BanknotesIcon, AdjustmentsHorizontalIcon, PrinterIcon} from "@heroicons/vue/20/solid/index.js";
 import Info from "@/Components/Card/Info.vue";
 import NavButton from "@/Components/Button/NavButton.vue";
+import Service from "@/Components/Card/Services/Service.vue";
+import PricingTable from "@/Components/Card/PricingTable.vue";
 
 const config = [
     {
@@ -29,6 +31,17 @@ const config = [
         border: "yellow-300"
     },
 ]
+
+const squareCanvas = [
+    { inches: '12"x12"', cm: '30cm x 30cm', pricing: '$70.00' },
+    { inches: '16"x16"', cm: '40cm x 40cm', pricing: '$90.00' },
+    { inches: '20"x20"', cm: '51cm x 51cm', pricing: '$140.00' },
+    { inches: '24"x24"', cm: '61cm x 61cm', pricing: '$150.00' },
+    { inches: '30"x30"', cm: '76cm x 76cm', pricing: '$260.00' },
+    { inches: '36"x36"', cm: '91cm x 91cm', pricing: '$300.00' },
+    { inches: '40"x40"', cm: '102cm x 102cm', pricing: '$330.00' },
+];
+
 </script>
 
 <template>
@@ -41,41 +54,75 @@ const config = [
             </template>
             <template #subtitle>
                 <div class="flex">
-                    <span> View our broad range </span>
-                    <ArrowDownIcon class="w-8 h-8" />
+                    <span> View all our options </span>
+                    <PhotoIcon class="w-8 h-8 ml-2" />
                 </div>
             </template>
             <template #content>
-<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
-<!--                    <Info-->
-<!--                        v-for="item in config"-->
-<!--                        :href="item.href"-->
-<!--                        class="border-primary-600"-->
-<!--                    >-->
-<!--                        <template #header> {{ item.header }} </template>-->
-<!--                        {{ item.description }}-->
-<!--                        <template #button>-->
-<!--                            <NavButton-->
-<!--                                class="hover:-translate-y-2"-->
-<!--                                :href="item.href"-->
-<!--                            >-->
-<!--                                {{ item.button }}-->
-<!--                            </NavButton>-->
-<!--                        </template>-->
-<!--                    </Info>-->
-<!--                </div>-->
+                <div>
+                    We offer a range of services when it comes to printing and canvas. Whether you are a painter,
+                    or wanting to put your favourite photos on your phone on a canvas, we got you covered!
+                </div>
+
+                <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">
+                    <Service
+                        :icon="CameraIcon"
+                        href="#photos-on-canvas"
+                        title="Photos on Canvas"
+                        description="Want your favourite phone photo in a frame? We can achieve that, see below!"
+                    />
+
+                    <Service
+                        :icon="PrinterIcon"
+                        href="#printing-on-canvas"
+                        title="Printing on Canvas"
+                        description="Want your favourite phone photo in a frame? We can achieve that, see below!"
+                    />
+
+                    <Service
+                        :icon="AdjustmentsHorizontalIcon"
+                        href="#custom-made-canvases"
+                        title="Custom made"
+                        description="Want a blank canvas to paint on? Well we have that option here too!"
+                    />
+
+<!--                    <Service-->
+<!--                        :icon="BanknotesIcon"-->
+<!--                        href="#made-to-order"-->
+<!--                        title="Pricing"-->
+<!--                        description="Once special thing about this service is we can directly provide estimates on prices."-->
+<!--                    />-->
+                </div>
             </template>
-        </Section>
-        <Section id="printing-on-canvas">
-            <template #header> Printing on Canvas </template>
         </Section>
 
         <Section id="photos-on-canvas">
             <template #header> Photos on Canvas </template>
         </Section>
 
+        <Section id="printing-on-canvas">
+            <template #header> Printing on Canvas </template>
+        </Section>
+
         <Section id="custom-made-canvases">
             <template #header> Custom made Canvases </template>
+            <template #subtitle> *Note these prices may change and may not represent current retail price. </template>
+            <template #content>
+                <span> We offer the ability to purchase blank canvases to paint on. We only stock the best of the best canvases for your artwork! </span>
+                <div class="mt-8 flow-root">
+                    <PricingTable :data="squareCanvas" />
+                </div>
+            </template>
+        </Section>
+
+        <Section id="made-to-order">
+            <template #header> Pricings </template>
+            <template #subtitle> *Note these prices may change and may not represent current retail price. </template>
+            <template #content>
+                <div class="mt-8 flow-root">
+                    <PricingTable :data="squareCanvas" />
+                </div>
+            </template>
         </Section>
     </PrimaryLayout>
 </template>
