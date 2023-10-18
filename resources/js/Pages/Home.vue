@@ -36,7 +36,7 @@ import { SplideSlide } from "@splidejs/vue-splide"
                     <span> Your Custom Picture Framers! </span>
                 </template>
                 <template #subtitle>
-                    <span> Locally owned and operated for 20+ years </span>
+                    <span> Locally owned and operated for 20+ years. </span>
                 </template>
                 <template #content>
                     <div class="my-6">
