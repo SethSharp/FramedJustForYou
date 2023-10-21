@@ -12,16 +12,17 @@ const navigation = {
         { name: 'Contact', href: '#' },
     ],
     framing: [
-        { name: 'Custom Services', href: '#' },
-        { name: 'Jersey', href: '#' },
-        { name: 'Jigsaw Puzzles', href: '#' },
-        { name: 'Mirror', href: '#' },
-        { name: 'Embroidery', href: '#' },
+        { name: 'Custom', href: route('services.framing') },
+        { name: 'Memorabilia', href: route('services.framing.memorabilia') },
+        { name: 'Jersey', href: route('services.framing.jersey') },
+        { name: 'Jigsaw Puzzles', href: route('services.framing.jigsaw') },
+        { name: 'Mirror', href: route('services.framing.mirror') },
+        { name: 'Embroidery', href: route('services.framing.embroidery') },
     ],
-    generalServices: [
-        { name: 'Printing on Canvas', href: '#' },
-        { name: 'Photos on Canvas', href: '#' },
-        { name: 'Custom made Canvases', href: '#' },
+    printing: [
+        { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },
+        { name: 'Printing on Canvas', href: route('services.printing') + '#printing-on-canvases' },
+        { name: 'Stretched` Canvases', href: route('services.printing') + '#stretched-canvases' },
     ],
 }
 
@@ -78,9 +79,9 @@ const social = [
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-md font-semibold leading-6 text-white">Other</h3>
+                            <h3 class="text-md font-semibold leading-6 text-white">Printing & Canvas</h3>
                             <ul role="list" class="mt-6 space-y-4">
-                                <li v-for="item in navigation.generalServices" :key="item.name">
+                                <li v-for="item in navigation.printing" :key="item.name">
                                     <a :href="item.href" class="text-md leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
                                 </li>
                             </ul>
@@ -97,7 +98,7 @@ const social = [
                 </div>
             </div>
             <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-                <p class="text-xs leading-5 text-gray-400">&copy; 2023 FramedJustForYou, Inc. All rights reserved.</p>
+                <p class="text-xs leading-5 text-gray-200">&copy; 2023 FramedJustForYou, Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>

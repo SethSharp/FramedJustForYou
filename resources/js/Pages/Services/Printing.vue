@@ -53,7 +53,7 @@ const config = [
     {
         header: "Photos on Canvas - Ready to Hang!",
         description: "Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that and fit it to the correct size you want with the canvase sizes below.",
-        href: "photos-on-canvas",
+        href: "photos-on-canvases",
         data: [
             canvasSquares,
             canvasPanoramic,
@@ -63,7 +63,7 @@ const config = [
     {
         header: "Printing on canvas",
         description: "If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.",
-        href: "printing-on-canvas",
+        href: "printing-on-canvases",
         data: [
             printingPaper
         ]
@@ -99,14 +99,14 @@ const config = [
                 <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">
                     <Service
                         :icon="PrinterIcon"
-                        href="#photos-on-canvas"
+                        href="#photos-on-canvases"
                         title="Photos on Canvas"
                         description="Want your favourite phone photo in a frame? We can achieve that, see below!"
                     />
 
                     <Service
                         :icon="PhotoIcon"
-                        href="#printing-on-canvas"
+                        href="#printing-on-canvases"
                         title="Printing on Canvas"
                         description="Want your favourite phone photo in a frame? We can achieve that, see below!"
                     />
