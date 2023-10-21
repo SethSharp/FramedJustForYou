@@ -1,12 +1,15 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
+import Section from "@/Components/Section.vue";
 </script>
 
 <template>
-    <Head title="Mirror" />
+    <Head title="Embroidery" />
 
     <PrimaryLayout>
-        Mirror
+        <Section>
+            <template #header> Embroidery </template>
+        </Section>
     </PrimaryLayout>
 </template>

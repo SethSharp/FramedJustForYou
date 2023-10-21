@@ -13,7 +13,7 @@ defineProps({
             <component :is="icon" class="w-8 h-8 mx-2" />
             <span class="my-auto"> {{ title }} </span>
         </div>
-        <div class="mt-2">
+        <div class="mt-2" v-if="description">
             {{ description }}
         </div>
     </a>

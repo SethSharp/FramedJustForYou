@@ -3,12 +3,12 @@ import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
 import { ArrowDownIcon } from "@heroicons/vue/20/solid/index.js";
-import Info from "@/Components/Card/Info.vue";
-import NavButton from "@/Components/Button/NavButton.vue";
+import {PuzzlePieceIcon, RectangleGroupIcon, PhotoIcon, UserGroupIcon, UserIcon} from "@heroicons/vue/20/solid/index.js";
 import { SplideSlide } from "@splidejs/vue-splide";
 import Carousel from "@/Components/Carousel.vue";
 import SplideContent from "@/Components/Splide/SplideContent.vue";
 import SplideSlider from "@/Components/Splide/SplideSlider.vue";
+import Service from "@/Components/Card/Services/Service.vue";
 
 const config = [
     {
@@ -39,11 +39,11 @@ const splideContentCards = [
             "Non Reflective Glass, " +
             "Conservation Non reflective Glass 97% Non Fading, " +
             "Museum Glass, " +
-            "Ultraview",
+            "Ultra-view",
     },
     {
         image: "/images/framing/matboards.png",
-        title: "Matboards and Cutting",
+        title: "Mat-boards and Cutting",
         content: "Our mat boards are top quality and acid free. We use Crescent - Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique conservation, Archival rag and Museum mats",
     },
     {
@@ -77,88 +77,52 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                 <div class="mb-6">
                     At Framed Just For You, we specialize in custom framing that transforms your cherished memories into timeless works of art. Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve the essence of your precious moments. Whether it's artwork, photographs, memorabilia, or more, we provide personalized framing solutions that elevate the beauty and significance of your keepsakes.
                 </div>
-<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
-<!--                    <Info-->
-<!--                        v-for="item in config"-->
-<!--                        class="border-primary-600"-->
-<!--                    >-->
-<!--                        <template #header> {{ item.header }} </template>-->
-<!--                        {{ item.description }}-->
-<!--                        <template #button>-->
-<!--                            <NavButton-->
-<!--                                class="hover:-translate-y-2"-->
-<!--                                :href="item.href"-->
-<!--                            >-->
-<!--                                {{ item.button }}-->
-<!--                            </NavButton>-->
-<!--                        </template>-->
-<!--                    </Info>-->
-<!--                </div>-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
+                    <Service
+                        :icon="UserGroupIcon"
+                        :href="route('services.framing.memorabilia')"
+                        title="Memorabilia"
+                        description=""
+                    />
+
+                    <Service
+                        :icon="UserIcon"
+                        :href="route('services.framing.jersey')"
+                        title="Jersey"
+                        description=""
+                    />
+
+                    <Service
+                        :icon="PuzzlePieceIcon"
+                        :href="route('services.framing.jigsaw')"
+                        title="Jigsaw"
+                        description=""
+                    />
+
+                    <Service
+                        :icon="RectangleGroupIcon"
+                        :href="route('services.framing.mirror')"
+                        title="Mirror"
+                        description=""
+                    />
+
+                    <Service
+                        :icon="PhotoIcon"
+                        :href="route('services.framing.embroidery')"
+                        title="Embroidery"
+                        description=""
+                    />
+                </div>
             </template>
         </Section>
 
         <Section id="custom">
-            <template #header> Custom </template>
+            <template #header> Our Approach </template>
             <template #content>
-                <Carousel type="fade" :autoPlay="false">
-                    <SplideContent
-                        v-for="spliceContentCard in splideContentCards"
-                        v-bind="spliceContentCard"
-                    />
-                </Carousel>
+                <div class="bg-red-50">
+
+                </div>
             </template>
-        </Section>
-
-        <Section id="jersey">
-            <template #header> Jersey </template>
-            <template #content>
-                <SplideSlider>
-                    <template #content>
-                        Jersey Framing is something we take pride in, we love our sports and love to represent your teams jersey in an amazing frame.
-                    </template>
-                    <template #slides>
-                        <SplideSlide>
-                            <img src="/images/framing/matboards.png" />
-                        </SplideSlide>
-                    </template>
-                </SplideSlider>
-            </template>
-        </Section>
-
-        <Section id="jig-saw">
-            <template #header> Jigsaw Puzzles </template>
-            <template #content>
-                <Carousel type="fade" :autoPlay="false">
-                    <SplideContent
-                        image="/images/framing/framing.png"
-                        title="Enjoy Forever"
-                        content="Jigsaw puzzles are fun, relaxing and provide enjoyment for the whole family. Once complete, there is no better way to preserve and display your jigsaw puzzle than by having it professionally framed, allowing you to hang it on your wall like an artwork."
-                    />
-                    <SplideContent
-                        image="/images/framing/framing.png"
-                        title=""
-                        content="With over 1000 picture frames to choose from you will have no shortage of choice when picking the perfect frame for your jigsaw puzzle. Here at Framed Just For You we take a conservation framing approach to all of our work and our process for jigsaw puzzle framing is no exception."
-                    />
-                    <SplideContent
-                        image="/images/framing/framing.png"
-                        title="The Process"
-                        content="Each step of our jigsaw puzzle framing is completed in house using the best materials and equipment, guaranteeing it is finished to the highest standards. Your jigsaw puzzle is adhered to the backboard using a pH neutral dry mount acid free adhesive. Then we apply an artshield uv heatseal overlay which is put in our heat press at 97 degrees."
-                    />
-                    <SplideContent
-                        image="/images/framing/framing.png"
-                        title="The Results"
-                        content="The result of this process ensures your framed jigsaw puzzle is fade resistant, preserved and easily maintained by simply wiping clean."
-                    />
-                </Carousel>
-            </template>
-        </Section>
-
-        <Section id="mirror">
-            <template #header> Mirror </template>
-        </Section>
-
-        <Section id="embroidery">
-            <template #header> Embroidery </template>
         </Section>
     </PrimaryLayout>
 </template>

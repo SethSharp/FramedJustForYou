@@ -60,11 +60,6 @@ const links = [
                 active: "services.framing",
             },
             {
-                name: "Memorabilia",
-                href: "services.memorabilia",
-                active: "services.memorabilia",
-            },
-            {
                 name: "Printing & Canvas",
                 href: "services.printing",
                 active: "services.printing",
@@ -87,11 +82,6 @@ const links = [
         name: "Gallery",
         href: "gallery",
         active: "gallery",
-    },
-    {
-        name: "Store",
-        href: "store",
-        active: "store",
     },
     {
         name: "Contact",

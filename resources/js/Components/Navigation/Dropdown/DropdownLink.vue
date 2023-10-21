@@ -15,8 +15,8 @@ const props = defineProps({
 
 const classes = computed(() =>
     props.active
-        ? 'block w-full px-2 py-1 border-l-8 border-primary-500 hover:border-primary-300 transition duration-300 ease-in-out'
-        : 'block w-full px-2 py-1 border-l-8 hover:border-primary-500 transition duration-300 ease-in-out'
+        ? 'whitespace-nowrap block w-full px-2 py-1 border-l-8 border-primary-500 hover:border-primary-300 transition duration-300 ease-in-out'
+        : 'whitespace-nowrap block w-full px-2 py-1 border-l-8 hover:border-primary-500 transition duration-300 ease-in-out'
 );
 </script>
 

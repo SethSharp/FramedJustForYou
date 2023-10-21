@@ -53,8 +53,8 @@ const open = ref(false);
         <div @click="open = !open" class="cursor-pointer">
             <div class="flex text-gray-200 ">
                 <slot name="trigger" />
-                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1.5 animation duration-300 ease-in-out" />
-                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1.5 animation duration-300 ease-in-out" />
+                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1.5 transform duration-300" />
+                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1.5 transform duration-300" />
             </div>
 
             <Transition
@@ -67,7 +67,7 @@ const open = ref(false);
             >
                 <div
                     v-show="open"
-                    class="absolute z-50 rounded-md shadow-lg w-fit"
+                    class="absolute z-50 mt-4 rounded-md shadow-lg w-fit"
                     :class="[widthClass, alignmentClasses]"
                     style="display: none"
                     @click="open = false"
