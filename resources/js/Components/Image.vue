@@ -4,6 +4,7 @@ import {ArrowPathIcon} from "@heroicons/vue/20/solid/index.js"
 
 const props = defineProps({
     src: String,
+    alt: String,
 })
 
 let isLoading = ref(true)
@@ -27,6 +28,6 @@ let configPath = 's3 url/' + props.src
                 <ArrowPathIcon class="w-10 h-10 text-gray-300"/>
             </p>
         </div>
-        <img @load="imageLoaded" :src="src" alt="Framing wall #2" />
+        <img @load="imageLoaded" :src="src" :alt="alt" />
     </div>
 </template>

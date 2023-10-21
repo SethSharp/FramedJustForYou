@@ -20,31 +20,6 @@ const props = defineProps({
     },
 });
 
-const closeOnEscape = (e) => {
-    if (open.value && e.key === 'Escape') {
-        open.value = false;
-    }
-};
-
-onMounted(() => document.addEventListener('keydown', closeOnEscape));
-onUnmounted(() => document.removeEventListener('keydown', closeOnEscape));
-
-const widthClass = computed(() => {
-    return {
-        48: 'w-48',
-    }[props.width.toString()];
-});
-
-const alignmentClasses = computed(() => {
-    if (props.align === 'left') {
-        return 'origin-top-left left-0';
-    } else if (props.align === 'right') {
-        return 'origin-top-right right-0';
-    } else {
-        return 'origin-top';
-    }
-});
-
 const open = ref(false);
 </script>
 
@@ -68,7 +43,6 @@ const open = ref(false);
                 <div
                     v-show="open"
                     class="absolute z-50 mt-4 rounded-md shadow-lg w-fit"
-                    :class="[widthClass, alignmentClasses]"
                     style="display: none"
                     @click="open = false"
                 >

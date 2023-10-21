@@ -18,39 +18,6 @@ import {
 import Service from "@/Components/Card/Services/Service.vue";
 import Image from "@/Components/Image.vue";
 
-const splideContentCards = [
-    {
-        image: "/images/framing/flinders.png",
-        title: "Our Approach",
-        content: "Our approach is simple, whether your custom framing project is a valuable artwork by a renowned artist or your grandchild's arts and crafts project it will receive the highest attention to detail while being finished to the finest standards.",
-    },
-    {
-        image: "/images/framing/selection.png",
-        title: "Selection",
-        content: "Our custom framing service, with over 1000 frames to choose from, caters to every customer's unique preferences and needs. Just like a satisfied customer who values quality and variety, we offer an extensive selection of frames that suits any style or project.",
-    },
-    {
-        image: "/images/framing/glassChoices.png",
-        title: "Glassing Options",
-        content: "We offer a comprehensive selection of glass types to compliment your custom frame: Clear Glass, " +
-            "UV Clear Glass 97% Non Fading, " +
-            "Non Reflective Glass, " +
-            "Conservation Non reflective Glass 97% Non Fading, " +
-            "Museum Glass, " +
-            "Ultra-view",
-    },
-    {
-        image: "/images/framing/matboards.png",
-        title: "Mat-boards and Cutting",
-        content: "Our mat boards are top quality and acid free. We use Crescent - Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique conservation, Archival rag and Museum mats",
-    },
-    {
-    image: "/images/framing/framing.png",
-        title: "Frames",
-        content: "At Framed Just For You we use all quality wood and metal picture frames, no synthetics are used. Frames are sourced from all over the world and we have over 1000 samples to choose from. Our huge selection of custom frames include brands such as Larson-Juhl and Antons Mouldings.",
-    }
-]
-
 const scrollToContent = () => document.getElementById('custom').scrollIntoView({ behavior: "smooth" })
 </script>
 
@@ -119,8 +86,8 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
             <template #content>
                 <div class="">
                     <div class="grid">
-                        <div class="flex-wrap md:flex">
-                            <div class="flex my-auto md:w-3/5 px-8">
+                        <div class="flex-wrap md:flex my-4 sm:my-2">
+                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
                                     <ClipboardDocumentListIcon class="w-8 h-8" />
                                 </div>
@@ -131,15 +98,15 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/flinders.png" />
+                                <Image src="/images/framing/flinders.png" alt="flinders range framed" />
                             </div>
                         </div>
 
-                        <div class="flex-wrap md:flex">
+                        <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/selection.png" />
+                                <Image src="/images/framing/selection.png" alt="Over 1000 frames to choose from" />
                             </div>
-                            <div class="flex my-auto md:w-3/5 px-8">
+                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
                                     <ListBulletIcon class="w-8 h-8" />
                                 </div>
@@ -151,27 +118,35 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                             </div>
                         </div>
 
-                        <div class="flex-wrap md:flex">
-                            <div class="flex my-auto md:w-3/5 px-8">
+                        <div class="flex-wrap md:flex my-4 sm:my-2">
+                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
                                     <QueueListIcon class="w-8 h-8" />
                                 </div>
                                 <div>
-                                    <p>
-                                        We offer a comprehensive selection of glass types to compliment your custom frame: Clear Glass,
-                                    </p>
+                                    <div>
+                                        We offer a comprehensive selection of glass types to compliment your custom frame:
+                                        <ul class="list-disc list-inside">
+                                            <li>Clear Glass</li>
+                                            <li>UV Clear Glass 97% Non Fading</li>
+                                            <li>Non Reflective Glass</li>
+                                            <li>Conservation Non reflective Glass 97% Non Fading</li>
+                                            <li>Museum Glass</li>
+                                            <li>Ultra-view</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/glassChoices.png" />
+                                <Image src="/images/framing/glassChoices.png" alt="The difference between clear and ultra vue glass" />
                             </div>
                         </div>
 
-                        <div class="flex-wrap md:flex">
+                        <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/matboards.png" />
+                                <Image src="/images/framing/matboards.png" alt="our massive selection of matboards" />
                             </div>
-                            <div class="flex my-auto md:w-3/5 px-8">
+                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
                                     <QueueListIcon class="w-8 h-8" />
                                 </div>
@@ -183,8 +158,8 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                             </div>
                         </div>
 
-                        <div class="flex-wrap md:flex">
-                            <div class="flex my-auto md:w-3/5 px-8">
+                        <div class="flex-wrap md:flex my-4 sm:my-2">
+                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
                                     <CheckCircleIcon class="w-8 h-8" />
                                 </div>
@@ -195,7 +170,7 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/framing.png" />
+                                <Image src="/images/framing/framing.png" alt="more of our huge range of frames" />
                             </div>
                         </div>
                     </div>

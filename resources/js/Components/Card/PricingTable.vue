@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="-mx-4 -my-2 mt-6 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <h1 class="ml-8 text-xl text-black"> {{ data.title }} </h1>
         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
             <table class="min-w-full divide-y divide-gray-300">
