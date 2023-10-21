@@ -17,9 +17,9 @@ defineProps({
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                <tr v-for="(row, rowIndex) in data.data" :key="rowIndex">
-                    <td v-for="(cell, cellIndex) in row" :key="cellIndex"  class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ cell }}</td>
-                </tr>
+                    <tr v-for="(row, rowIndex) in data.data" :key="rowIndex" class="hover:bg-gray-200">
+                        <td v-for="(cell, cellIndex) in row" :key="cellIndex"  class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ cell }}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
