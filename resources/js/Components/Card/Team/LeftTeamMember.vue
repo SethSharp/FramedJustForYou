@@ -1,5 +1,7 @@
 <script setup>
 
+import Image from "@/Components/Image.vue";
+
 const props = defineProps({
     name: String,
     position: String,
@@ -31,7 +33,7 @@ const props = defineProps({
                 </div>
             </div>
             <div class="w-full md:w-1/2 bg-gray-200 bg-opacity-50 flex">
-                <img
+                <Image
                     class="object-cover w-full"
                     :src="image"
                 />

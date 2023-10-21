@@ -4,11 +4,12 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
 import { SplideSlide } from "@splidejs/vue-splide";
 import Carousel from "@/Components/Carousel.vue";
+import Image from "@/Components/Image.vue";
 
 const images = [
     {
-        src: "/images/art-studio.jpeg",
-        alt: "Art Class "
+        src: "art-studio.jpeg",
+        alt: "Art Class"
     },
 ]
 </script>
@@ -22,7 +23,7 @@ const images = [
             <template #subtitle>
                 <Carousel>
                     <SplideSlide v-for="img in images">
-                        <img :src="img.src" :alt="img.alt">
+                        <Image :src="img.src" :alt="img.alt" />
                     </SplideSlide>
                 </Carousel>
             </template>

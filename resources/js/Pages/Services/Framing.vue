@@ -105,13 +105,13 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/flinders.png" alt="flinders range framed" />
+                                <Image src="framing/flinders.png" alt="flinders range framed" />
                             </div>
                         </div>
 
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/selection.png" alt="Over 1000 frames to choose from" />
+                                <Image src="framing/selection.png" alt="Over 1000 frames to choose from" />
                             </div>
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
@@ -145,13 +145,13 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/glassChoices.png" alt="The difference between clear and ultra vue glass" />
+                                <Image src="framing/glassChoices.png" alt="The difference between clear and ultra vue glass" />
                             </div>
                         </div>
 
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/matboards.png" alt="our massive selection of matboards" />
+                                <Image src="framing/matboards.png" alt="our massive selection of matboards" />
                             </div>
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
@@ -177,7 +177,7 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="/images/framing/framing.png" alt="more of our huge range of frames" />
+                                <Image src="framing/framing.png" alt="more of our huge range of frames" />
                             </div>
                         </div>
                     </div>

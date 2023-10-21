@@ -1,5 +1,7 @@
 <script setup>
 
+import Image from "@/Components/Image.vue";
+
 const props = defineProps({
     name: String,
     position: String,
@@ -22,8 +24,8 @@ const props = defineProps({
     >
         <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden">
             <div class="w-full lg:w-1/2 bg-gray-200 bg-opacity-50 flex">
-                <img
-                    class="object-cover w-full overflow-hidden"
+                <Image
+                    class="object-cover w-full"
                     :src="image"
                 />
             </div>

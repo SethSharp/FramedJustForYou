@@ -18,7 +18,7 @@ const imageError = () => {
 }
 
 // replace img src once setup
-let configPath = 's3 url/' + props.src
+let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
 </script>
 
 <template>
@@ -28,6 +28,6 @@ let configPath = 's3 url/' + props.src
                 <ArrowPathIcon class="w-10 h-10 text-gray-300"/>
             </p>
         </div>
-        <img @load="imageLoaded" :src="src" :alt="alt" />
+        <img @load="imageLoaded" :src="configPath" :alt="alt" class="object-cover w-full" />
     </div>
 </template>

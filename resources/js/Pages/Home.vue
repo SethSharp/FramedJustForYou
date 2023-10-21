@@ -1,7 +1,7 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue"
-import PrimaryButton from "@/Components/Button/PrimaryButton.vue"
+import Image from "@/Components/Image.vue";
 import Section from "@/Components/Section.vue"
 import Carousel from "@/Components/Carousel.vue"
 import Contact from "@/Components/Card/Home/Contact.vue"
@@ -16,16 +16,16 @@ import { SplideSlide } from "@splidejs/vue-splide"
             <template #content>
                 <Carousel>
                     <SplideSlide>
-                        <img src="/images/dianne-temp 1.png" alt="Store Front">
+                        <Image src="dianne-temp-1.png" alt="Store Front" />
                     </SplideSlide>
                     <SplideSlide>
-                        <img src="/images/store/store1.png" alt="Store Image 1">
+                        <Image src="store/store1.png" alt="Store Image 1" />
                     </SplideSlide>
                     <SplideSlide>
-                        <img src="/images/store/store2.png" alt="Store Image 2">
+                        <Image src="store/store2.png" alt="Store Image 2" />
                     </SplideSlide>
                     <SplideSlide>
-                        <img src="/images/store/store3.png" alt="Store Image 3">
+                        <Image src="store/store3.png" alt="Store Image 3" />
                     </SplideSlide>
                 </Carousel>
             </template>

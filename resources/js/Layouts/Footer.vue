@@ -52,7 +52,7 @@ const social = [
                     <div class="flex space-x-6">
                         <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400">
                             <span class="sr-only">{{ item.name }}</span>
-                            <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                            <component :is="item.icon" />
                         </a>
                     </div>
                 </div>
