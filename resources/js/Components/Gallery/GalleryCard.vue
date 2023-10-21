@@ -1,4 +1,6 @@
 <script setup>
+import Image from "@/Components/Image.vue";
+
 defineProps({
     description: String,
     src: String
@@ -8,7 +10,7 @@ defineProps({
 <template>
     <div class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden">
         <div class="w-full md:w-1/2 bg-opacity-50 flex">
-            <img
+            <Image
                 class="object-cover w-full"
                 :src="src"
             />

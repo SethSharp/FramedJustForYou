@@ -4,6 +4,7 @@ import Section from "@/Components/Section.vue";
 import {SplideSlide} from "@splidejs/vue-splide";
 import SplideSlider from "@/Components/Splide/SplideSlider.vue";
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
+import Image from "@/Components/Image.vue";
 </script>
 
 <template>
@@ -19,7 +20,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
                     </template>
                     <template #slides>
                         <SplideSlide>
-                            <img src="/images/framing/matboards.png" />
+                            <Image src="framing/matboards.png" />
                         </SplideSlide>
                     </template>
                 </SplideSlider>

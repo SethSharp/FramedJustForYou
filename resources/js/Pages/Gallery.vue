@@ -6,7 +6,7 @@ import GalleryCard from "@/Components/Gallery/GalleryCard.vue";
 let galleryConfig = [
     {
         description: "This is a testing card for the gallery, testing its capabilities and overall design.",
-        src: "/images/framing/flinders.png"
+        src: "framing/flinders.png"
     }
 ]
 </script>
