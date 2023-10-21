@@ -33,5 +33,6 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/embroidery', function () { return Inertia::render('Services/Framing/Embroidery'); })->name('embroidery');
         Route::get('/mirror', function () { return Inertia::render('Services/Framing/Mirror'); })->name('mirror');
         Route::get('/memorabilia', function () { return Inertia::render('Services/Framing/Memorabilia'); })->name('memorabilia');
+        Route::get('/fixes', function () { return Inertia::render('Services/Framing/Fix'); })->name('fix');
     });
 });

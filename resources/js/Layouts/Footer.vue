@@ -18,6 +18,7 @@ const navigation = {
         { name: 'Jigsaw Puzzles', href: route('services.framing.jigsaw') },
         { name: 'Mirror', href: route('services.framing.mirror') },
         { name: 'Embroidery', href: route('services.framing.embroidery') },
+        { name: 'Fixes', href: route('services.framing.fix') },
     ],
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },

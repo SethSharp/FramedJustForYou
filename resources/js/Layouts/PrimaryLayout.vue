@@ -67,22 +67,15 @@ const links = [
         ]
     },
     {
-        name: "Other",
+        name: "Art Studio",
         href: "studio",
         active: "studio",
-        options: [
-            {
-                name: "Art Studio",
-                href: "studio",
-                active: "studio",
-            },
-        ]
     },
-    {
-        name: "Gallery",
-        href: "gallery",
-        active: "gallery",
-    },
+    // {
+    //     name: "Gallery",
+    //     href: "gallery",
+    //     active: "gallery",
+    // },
     {
         name: "Contact",
         href: "find",

@@ -7,7 +7,7 @@ import {
     ClipboardDocumentListIcon,
     QueueListIcon,
     ListBulletIcon,
-    RectangleStackIcon,
+    WrenchIcon,
     PuzzlePieceIcon,
     RectangleGroupIcon,
     PhotoIcon,
@@ -75,6 +75,13 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                         :icon="PhotoIcon"
                         :href="route('services.framing.embroidery')"
                         title="Embroidery"
+                        description=""
+                    />
+
+                    <Service
+                        :icon="WrenchIcon"
+                        :href="route('services.framing.fix')"
+                        title="Fixes"
                         description=""
                     />
                 </div>
