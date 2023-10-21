@@ -21,7 +21,7 @@ let configPath = 's3 url/' + props.src
 </script>
 
 <template>
-    <div class="lg:w-1/2 relative">
+    <div class="relative">
         <div v-if="isLoading" class="absolute w-full h-full flex flex-col justify-center items-center">
             <p class="animate-spin">
                 <ArrowPathIcon class="w-10 h-10 text-gray-300"/>

@@ -57,7 +57,7 @@ const links = [
             {
                 name: "Framing",
                 href: "services.framing",
-                active: "services.framing",
+                active: "services.framing.*",
             },
             {
                 name: "Printing & Canvas",
