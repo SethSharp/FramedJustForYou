@@ -2,6 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 import Section from "@/Components/Section.vue";
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
+import Image from "@/Components/Image.vue";
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
                     If you have a frame or picture that needs to well deserved tender loving care, then we can
                     provide that.
                 </p>
-                <img src="/images/fixes/fixed-1.png" alt="Store Image 3">
+                <Image src="fixes/fixed-1.png" alt="Fix image 1" />
             </template>
         </Section>
 
