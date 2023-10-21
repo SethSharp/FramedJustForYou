@@ -19,10 +19,10 @@ import {SplideSlide} from "@splidejs/vue-splide";
             <template #content>
                 <Carousel>
                     <SplideSlide>
-                        <img src="/images/memorabilia/memorabilia-1.png" alt="Store Image 1">
+                        <Image src="/images/memorabilia/memorabilia-1.png" alt="Store Image 1"/>
                     </SplideSlide>
                     <SplideSlide>
-                        <img src="/images/memorabilia/memorabilia-3.png" alt="Store Image 3">
+                        <Image src="/images/memorabilia/memorabilia-3.png" alt="Store Image 3"/>
                     </SplideSlide>
                 </Carousel>
                 <div class="mt-4">
