@@ -1,8 +1,6 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import Section from "@/Components/Section.vue";
-import {SplideSlide} from "@splidejs/vue-splide";
-import SplideSlider from "@/Components/Splide/SplideSlider.vue";
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 </script>
 
@@ -12,6 +10,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <PrimaryLayout>
         <Section :back="route('services.framing')">
             <template #header> Mirror </template>
+            <template #content> Photos on Bethany's phone I think... </template>
         </Section>
     </PrimaryLayout>
 </template>

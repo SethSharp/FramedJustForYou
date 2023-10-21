@@ -38,11 +38,6 @@ const social = [
         href: 'https://www.instagram.com/framedjust4u/',
         icon: SocialIcons['Instagram'],
     },
-    {
-        name: 'Shopify',
-        href: 'https://www.facebook.com/framedjustforyou/',
-        icon: SocialIcons['Shopify'],
-    },
 ]
 </script>
 
