@@ -18,12 +18,13 @@ const options = {
     type: props.type,
     perPage: 1,
     autoplay: props.autoPlay,
+    height: '20rem'
 }
 
 </script>
 
 <template>
-    <Splide :options="options" aria-label="Vue Splide Example">
+    <Splide :options="options" aria-label="Carousel">
         <slot />
     </Splide>
 </template>
