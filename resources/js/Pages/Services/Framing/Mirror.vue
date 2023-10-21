@@ -10,6 +10,8 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <Head title="Mirror" />
 
     <PrimaryLayout>
-        Mirror
+        <Section :back="route('services.framing')">
+            <template #header> Mirror </template>
+        </Section>
     </PrimaryLayout>
 </template>

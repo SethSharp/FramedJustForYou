@@ -10,7 +10,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <Head title="Jigsaw" />
 
     <PrimaryLayout>
-        <Section id="jig-saw">
+        <Section :back="route('services.framing')">
             <template #header> Jigsaw Puzzles </template>
             <template #content>
                 <Carousel type="fade" :autoPlay="false">

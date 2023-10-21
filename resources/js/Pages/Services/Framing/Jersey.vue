@@ -10,7 +10,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <Head title="Jersey" />
 
     <PrimaryLayout>
-        <Section id="jersey">
+        <Section :back="route('services.framing')">
             <template #header> Jersey </template>
             <template #content>
                 <SplideSlider>

@@ -68,8 +68,8 @@ const links = [
     },
     {
         name: "Other",
-        href: "about",
-        active: "about",
+        href: "studio",
+        active: "studio",
         options: [
             {
                 name: "Art Studio",
@@ -125,7 +125,9 @@ const links = [
                                     <div v-else>
                                         <Dropdown>
                                             <template #trigger>
-                                                <NavLink>
+                                                <NavLink
+                                                    :active="route().current(link.active)"
+                                                >
                                                     {{ link.name }}
                                                 </NavLink>
                                             </template>

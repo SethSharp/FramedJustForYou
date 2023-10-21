@@ -8,8 +8,10 @@ import Section from "@/Components/Section.vue";
     <Head title="Memorabilia" />
 
     <PrimaryLayout>
-        <Section>
-            <template #header> Memorabilia </template>
+        <Section :back="route('services.framing')">
+            <template #header>
+                Memorabilia
+            </template>
             <template #subtitle> Cherishing your memories in art work </template>
             <template #content>
                 Aliqua tempor irure fugiat non aute officia Lorem nulla esse esse. Do labore ipsum dolore ullamco magna nostrud sit elit amet. Id id ut id voluptate laborum culpa veniam eiusmod. Magna sint minim voluptate labore ex anim qui ad nulla sit eiusmod. Anim excepteur cupidatat amet anim ipsum occaecat est cupidatat consequat elit nulla fugiat qui adipisicing.

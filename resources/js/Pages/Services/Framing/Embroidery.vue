@@ -8,7 +8,7 @@ import Section from "@/Components/Section.vue";
     <Head title="Embroidery" />
 
     <PrimaryLayout>
-        <Section>
+        <Section :back="route('services.framing')">
             <template #header> Embroidery </template>
         </Section>
     </PrimaryLayout>
