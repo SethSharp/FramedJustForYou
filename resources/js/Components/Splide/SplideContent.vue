@@ -11,7 +11,9 @@ const props = defineProps({
 
 <template>
     <SplideSlide class="flex-wrap lg:flex">
-        <Image :src="image" />
+        <div class="lg:w-1/2">
+            <Image :src="image" />
+        </div>
         <div class="lg:w-1/2 p-6">
             <h1 class="text-xl font-bold"> {{ title }} </h1>
             <p>

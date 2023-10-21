@@ -2,6 +2,9 @@
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
+import Image from "@/Components/Image.vue";
+import Carousel from "@/Components/Carousel.vue";
+import {SplideSlide} from "@splidejs/vue-splide";
 </script>
 
 <template>
@@ -12,9 +15,26 @@ import Section from "@/Components/Section.vue";
             <template #header>
                 Memorabilia
             </template>
-            <template #subtitle> Cherishing your memories in art work </template>
+            <template #subtitle> Memorabilia framed the right way </template>
             <template #content>
-                Aliqua tempor irure fugiat non aute officia Lorem nulla esse esse. Do labore ipsum dolore ullamco magna nostrud sit elit amet. Id id ut id voluptate laborum culpa veniam eiusmod. Magna sint minim voluptate labore ex anim qui ad nulla sit eiusmod. Anim excepteur cupidatat amet anim ipsum occaecat est cupidatat consequat elit nulla fugiat qui adipisicing.
+                <Carousel>
+                    <SplideSlide>
+                        <img src="/images/memorabilia/memorabilia-1.png" alt="Store Image 1">
+                    </SplideSlide>
+                    <SplideSlide>
+                        <img src="/images/memorabilia/memorabilia-3.png" alt="Store Image 3">
+                    </SplideSlide>
+                </Carousel>
+                <div class="mt-4">
+                    Your memorabilia is special and deserves to be handled and displayed correctly. Our conservation framing methods mean we take every effort to frame your piece in such a way that your memorabilia can be removed if need be and remain in it's original condition.
+                </div>
+            </template>
+        </Section>
+
+        <Section>
+            <template #header> Collectables </template>
+            <template #content>
+
             </template>
         </Section>
     </PrimaryLayout>
