@@ -1,5 +1,6 @@
 <script setup>
 import {SplideSlide} from "@splidejs/vue-splide";
+import Image from "@/Components/Image.vue";
 
 const props = defineProps({
     image: String,
@@ -10,7 +11,7 @@ const props = defineProps({
 
 <template>
     <SplideSlide class="flex-wrap lg:flex">
-        <img class="lg:w-1/2" :src="image" alt="Framing wall #2">
+        <Image :src="image" />
         <div class="lg:w-1/2 p-6">
             <h1 class="text-xl font-bold"> {{ title }} </h1>
             <p>

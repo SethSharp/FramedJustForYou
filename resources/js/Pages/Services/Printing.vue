@@ -8,30 +8,6 @@ import NavButton from "@/Components/Button/NavButton.vue";
 import Service from "@/Components/Card/Services/Service.vue";
 import PricingTable from "@/Components/Card/PricingTable.vue";
 
-const config = [
-    {
-        header: "Photos on Canvas",
-        description: "Our canvas photo printing service brings your cherished moments to life in a beautiful and lasting way. We carefully transforms your photos onto canvas, creating stunning art pieces that capture the essence of your memories",
-        button: "Click here",
-        href: "photos-on-canvas",
-        border: "red-500"
-    },
-    {
-        header: "Custom made Canvases",
-        description: "With a variety of options and sizes to choose from, our goal is to bring your vision to life on canvas. Whether it's a favorite movie scene, a gaming masterpiece, or a breathtaking outdoor landscape.",
-        button: "Click here",
-        href: "custom-made-canvases",
-        border: "amber-600"
-    },
-    {
-        header: "Printing on Canvas",
-        description: "Our canvas printing service offers a personalized touch to your favorite images, turning them into beautiful art pieces. With various options and sizes available, we ensure your memories and moments are preserved on canvas with precision and care, making them ready to display and cherish.",
-        button: "Click here",
-        href: "printing-on-canvas",
-        border: "yellow-300"
-    },
-]
-
 const squareCanvas = [
     { inches: '12"x12"', cm: '30cm x 30cm', pricing: '$70.00' },
     { inches: '16"x16"', cm: '40cm x 40cm', pricing: '$90.00' },
@@ -42,6 +18,62 @@ const squareCanvas = [
     { inches: '40"x40"', cm: '102cm x 102cm', pricing: '$330.00' },
 ];
 
+const canvasSquares = {
+    title: 'Squares',
+    headings: ['Sizes', '', 'Pricing'],
+    data: [
+        ['12"x12"', '30cmx30cm', '$100']
+    ]
+}
+
+const canvasPanoramic = {
+    title: 'Panoramic',
+    headings: ['Sizes', '', 'Pricing'],
+    data: [
+        ['12"x12"', '30cmx30cm', '$100']
+    ]
+}
+
+const canvasRectangles = {
+    title: 'Rectangles',
+    headings: ['Sizes', '', 'Pricing'],
+    data: [
+        ['12"x12"', '30cmx30cm', '$100']
+    ]
+}
+
+const printingPaper = {
+    headings: ['Sizes', '', 'Photo Paper', 'Art Paper', 'Canvas'],
+    data: [
+        ['6"x4"', '152x102cm', '$8', '$10', '$15'],
+    ]
+}
+
+const config = [
+    {
+        header: "Photos on Canvas - Ready to Hang!",
+        description: "Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that and fit it to the correct size you want with the canvase sizes below.",
+        href: "photos-on-canvas",
+        data: [
+            canvasSquares,
+            canvasPanoramic,
+            canvasRectangles
+        ],
+    },
+    {
+        header: "Printing on canvas",
+        description: "If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.",
+        href: "printing-on-canvas",
+        data: [
+            printingPaper
+        ]
+    },
+    {
+        header: "Stretched canvases (Prices yet to be added)",
+        description: "Stretched canvases give you the option to paint as your heart desires. We offer ",
+        href: "stretched-canvases",
+    }
+]
 </script>
 
 <template>
@@ -52,12 +84,12 @@ const squareCanvas = [
             <template #header>
                 <span> Printing and Canvases </span>
             </template>
-            <template #subtitle>
-                <div class="flex">
-                    <span> View all our options </span>
-                    <PhotoIcon class="w-8 h-8 ml-2" />
-                </div>
-            </template>
+<!--            <template #subtitle>-->
+<!--                <div class="flex">-->
+<!--                    <span> View all our options </span>-->
+<!--                    <PhotoIcon class="w-8 h-8 ml-2" />-->
+<!--                </div>-->
+<!--            </template>-->
             <template #content>
                 <div>
                     We offer a range of services when it comes to printing and canvas. Whether you are a painter,
@@ -66,14 +98,14 @@ const squareCanvas = [
 
                 <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">
                     <Service
-                        :icon="CameraIcon"
+                        :icon="PrinterIcon"
                         href="#photos-on-canvas"
                         title="Photos on Canvas"
                         description="Want your favourite phone photo in a frame? We can achieve that, see below!"
                     />
 
                     <Service
-                        :icon="PrinterIcon"
+                        :icon="PhotoIcon"
                         href="#printing-on-canvas"
                         title="Printing on Canvas"
                         description="Want your favourite phone photo in a frame? We can achieve that, see below!"
@@ -81,8 +113,8 @@ const squareCanvas = [
 
                     <Service
                         :icon="AdjustmentsHorizontalIcon"
-                        href="#custom-made-canvases"
-                        title="Custom made"
+                        href="#stretched-canvases"
+                        title="Stretched Canvases"
                         description="Want a blank canvas to paint on? Well we have that option here too!"
                     />
 
@@ -96,31 +128,12 @@ const squareCanvas = [
             </template>
         </Section>
 
-        <Section id="photos-on-canvas">
-            <template #header> Photos on Canvas </template>
-        </Section>
-
-        <Section id="printing-on-canvas">
-            <template #header> Printing on Canvas </template>
-        </Section>
-
-        <Section id="custom-made-canvases">
-            <template #header> Custom made Canvases </template>
-            <template #subtitle> *Note these prices may change and may not represent current retail price. </template>
+        <Section v-for="item in config" :id="item.href">
+            <template #header> {{ item.header }} </template>
             <template #content>
-                <span> We offer the ability to purchase blank canvases to paint on. We only stock the best of the best canvases for your artwork! </span>
-                <div class="mt-8 flow-root">
-                    <PricingTable :data="squareCanvas" />
-                </div>
-            </template>
-        </Section>
-
-        <Section id="made-to-order">
-            <template #header> Pricings </template>
-            <template #subtitle> *Note these prices may change and may not represent current retail price. </template>
-            <template #content>
-                <div class="mt-8 flow-root">
-                    <PricingTable :data="squareCanvas" />
+                {{ item.description }}
+                <div class="mt-8 flow-root" v-if="item.data">
+                    <PricingTable v-for="data in item.data" :data="data" />
                 </div>
             </template>
         </Section>

@@ -65,7 +65,7 @@ const links = [
                 active: "services.memorabilia",
             },
             {
-                name: "Printing",
+                name: "Printing & Canvas",
                 href: "services.printing",
                 active: "services.printing",
             },
