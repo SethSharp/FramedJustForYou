@@ -18,7 +18,6 @@ const options = {
     type: props.type,
     perPage: 1,
     autoplay: props.autoPlay,
-    height: '20rem'
 }
 
 </script>

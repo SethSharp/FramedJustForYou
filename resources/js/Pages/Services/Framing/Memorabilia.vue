@@ -32,7 +32,7 @@ import {SplideSlide} from "@splidejs/vue-splide";
         <Section>
             <template #header> Collectables </template>
             <template #content>
-                <div class="w-1/2 mx-auto">
+                <div class="sm:w-1/2 mx-auto">
                     <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 3"/>
                 </div>
             </template>
