@@ -14,8 +14,7 @@ const navigation = {
     framing: [
         { name: 'Custom', href: route('services.framing') },
         { name: 'Memorabilia', href: route('services.framing.memorabilia') },
-        { name: 'Jersey', href: route('services.framing.jersey') },
-        { name: 'Jigsaw Puzzles', href: route('services.framing.jigsaw') },
+        { name: 'Jigsaw', href: route('services.framing.jigsaw') },
         { name: 'Mirror', href: route('services.framing.mirror') },
         { name: 'Embroidery', href: route('services.framing.embroidery') },
         { name: 'Fixes', href: route('services.framing.fix') },

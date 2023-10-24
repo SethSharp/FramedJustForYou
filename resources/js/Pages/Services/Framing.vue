@@ -51,13 +51,6 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                     />
 
                     <Service
-                        :icon="UserIcon"
-                        :href="route('services.framing.jersey')"
-                        title="Jersey"
-                        description=""
-                    />
-
-                    <Service
                         :icon="PuzzlePieceIcon"
                         :href="route('services.framing.jigsaw')"
                         title="Jigsaw"

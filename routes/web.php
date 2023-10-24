@@ -28,7 +28,6 @@ Route::prefix('services')->name('services.')->group(function () {
     Route::get('/custom-framing', function () { return Inertia::render('Services/Framing'); })->name('framing');
     Route::get('/printing', function () { return Inertia::render('Services/Printing'); })->name('printing');
     Route::prefix('framing')->name('framing.')->group(function () {
-        Route::get('/jersey', function () { return Inertia::render('Services/Framing/Jersey'); })->name('jersey');
         Route::get('/jigsaw', function () { return Inertia::render('Services/Framing/Jigsaw'); })->name('jigsaw');
         Route::get('/embroidery', function () { return Inertia::render('Services/Framing/Embroidery'); })->name('embroidery');
         Route::get('/mirror', function () { return Inertia::render('Services/Framing/Mirror'); })->name('mirror');
