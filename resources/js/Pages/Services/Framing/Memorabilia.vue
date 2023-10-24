@@ -20,12 +20,11 @@ import {SplideSlide} from "@splidejs/vue-splide";
                 <Carousel>
 
                     <SplideSlide>
-                        <Image src="memorabilia/memorabilia-2.png" alt="Memorabilia 2"/>
+                        <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 2"/>
                     </SplideSlide>
                 </Carousel>
                 <div class="mt-4">
                     Your memorabilia is special and deserves to be handled and displayed correctly. Our conservation framing methods mean we take every effort to frame your piece in such a way that your memorabilia can be removed if need be and remain in it's original condition.
-                    <Image src="memorabilia/memorabilia-1.png" alt="Memorabilia 1"/>
                 </div>
             </template>
         </Section>
@@ -33,6 +32,9 @@ import {SplideSlide} from "@splidejs/vue-splide";
         <Section>
             <template #header> Collectables </template>
             <template #content>
+                <div class="w-1/2 mx-auto">
+                    <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 3"/>
+                </div>
             </template>
         </Section>
 
