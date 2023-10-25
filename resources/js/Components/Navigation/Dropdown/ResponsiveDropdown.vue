@@ -27,7 +27,6 @@ const open = ref(false);
             >
                 <div
                     v-show="open"
-                    class="ml-6"
                     style="display: none"
                     @click="open = false"
                 >

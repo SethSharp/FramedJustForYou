@@ -6,38 +6,10 @@ import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
 import { Link } from '@inertiajs/vue3';
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
 import Footer from "@/Layouts/Footer.vue";
-import DropdownLink from "@/Components/Navigation/Dropdown/DropdownLink.vue";
+import Column from "@/Components/Navigation/MegaMenu/Column.vue";
 import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
-import Dropdown from "@/Components/Navigation/Dropdown/Dropdown.vue";
 import MegaMenu from "@/Components/Navigation/MegaMenu.vue";
 let showingNavigationDropdown = ref(false);
-
-
-/* FRAMING
-* Custom
-* Memorabilia
-* Mirror
-* Jersey
-* */
-
-
-/* Other Services (In links)
-(Not going to be a drop-down but going to go to a
-grid of services with a dedicated page for each, maybe some grouping)
-* Floating frames
-* Canvas
-* Custom Printing
-* Fabric Services
-* Blank Canvases
-* Fine art
-* Needle works (other options)
-* */
-
-/* Canvas, also on links
-* Canvases
-* Stretching
-* Photos on Canvas
-* */
 
 const links = [
     {
@@ -83,6 +55,73 @@ const links = [
         active: "find"
     }
 ]
+
+
+const customFraming = [
+    {
+        name: 'Memorabilia',
+        href: route('services.framing.memorabilia'),
+        active: 'services.framing.memorabilia'
+    },
+    {
+        name: 'Jigsaw',
+        href: route('services.framing.jigsaw'),
+        active: 'services.framing.jigsaw'
+    },
+    {
+        name: 'Mirror',
+        href: route('services.framing.mirror'),
+        active: 'services.framing.mirror'
+    },
+    {
+        name: 'Embroidery',
+        href: route('services.framing.embroidery'),
+        active: 'services.framing.embroidery'
+    },
+]
+
+const printing = [
+    {
+        name: 'Photos on Canvas',
+        href: route('services.printing') + '#photos-on-canvases',
+        link: '#photos-on-canvases',
+        active: 'services.printing'
+    },
+    {
+        name: 'Printing on Canvas',
+        href: route('services.printing') + '#printing-on-canvases',
+        link: '#printing-on-canvases',
+        active: 'services.printing'
+    },
+    {
+        name: 'Stretched Canvases',
+        href: route('services.printing') + '#stretched-canvases',
+        link: '#stretched-canvases',
+        active: 'services.printing'
+    },
+]
+
+const restorations = [
+    {
+        name: "Glass Cutting",
+        href: route('services.restorations.glass-cutting'),
+        active: 'services.restorations.glass-cutting'
+    },
+    {
+        name: "Matboard Cutting",
+        href: route('services.restorations.matboard-cutting'),
+        active: 'services.restorations.matboard-cutting'
+    },
+    {
+        name: "Full revamps",
+        href: route('services.restorations.revamps'),
+        active: 'services.restorations.revamps'
+    }
+]
+
+const accessories = [
+
+]
 </script>
 
 <template>
@@ -124,6 +163,29 @@ const links = [
                                                 >
                                                     {{ link.name }}
                                                 </NavLink>
+                                            </template>
+                                            <template #columns>
+                                                <Column
+                                                    title="Custom Framing"
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming"
+                                                />
+
+                                                <Column
+                                                    title="Printing"
+                                                    :href="route('services.printing')"
+                                                    :links="printing"
+                                                />
+
+                                                <Column
+                                                    title="Restorations"
+                                                    :links="restorations"
+                                                />
+
+                                                <Column
+                                                    title="Accessories"
+                                                    :links="accessories"
+                                                />
                                             </template>
                                         </MegaMenu>
                                     </div>
@@ -182,13 +244,29 @@ const links = [
                                         </ResponsiveNavLink>
                                     </template>
                                     <template #content>
-                                        <ResponsiveNavLink
-                                            v-for="item in link.options"
-                                            :href="route(item.href)"
-                                            :active="route().current(item.active)"
-                                        >
-                                            {{ item.name }}
-                                        </ResponsiveNavLink>
+                                        <div class="grid grid-cols-2 sm:grid-cols-3">
+                                            <Column
+                                                title="Custom Framing"
+                                                :href="route('services.framing')"
+                                                :links="customFraming"
+                                            />
+
+                                            <Column
+                                                title="Printing"
+                                                :href="route('services.printing')"
+                                                :links="printing"
+                                            />
+
+                                            <Column
+                                                title="Restorations"
+                                                :links="restorations"
+                                            />
+
+                                            <Column
+                                                title="Accessories"
+                                                :links="accessories"
+                                            />
+                                        </div>
                                     </template>
                                 </ResponsiveDropdown>
                             </div>

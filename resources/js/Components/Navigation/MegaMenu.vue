@@ -23,72 +23,6 @@ const props = defineProps({
 });
 
 const open = ref(false);
-
-const customFraming = [
-    {
-        name: 'Memorabilia',
-        href: route('services.framing.memorabilia'),
-        active: 'services.framing.memorabilia'
-    },
-    {
-        name: 'Jigsaw',
-        href: route('services.framing.jigsaw'),
-        active: 'services.framing.jigsaw'
-    },
-    {
-        name: 'Mirror',
-        href: route('services.framing.mirror'),
-        active: 'services.framing.mirror'
-    },
-    {
-        name: 'Embroidery',
-        href: route('services.framing.embroidery'),
-        active: 'services.framing.embroidery'
-    },
-]
-
-const printing = [
-    {
-        name: 'Photos on Canvas',
-        href: route('services.printing') + '#photos-on-canvases',
-        link: '#photos-on-canvases',
-        active: 'services.printing'
-    },
-    {
-        name: 'Printing on Canvas',
-        href: route('services.printing') + '#printing-on-canvases',
-        link: '#printing-on-canvases',
-        active: 'services.printing'
-    },
-    {
-        name: 'Stretched Canvases',
-        href: route('services.printing') + '#stretched-canvases',
-        link: '#stretched-canvases',
-        active: 'services.printing'
-    },
-]
-
-const restorations = [
-    {
-        name: "Glass Cutting",
-        href: route('services.restorations.glass-cutting'),
-        active: 'services.restorations.glass-cutting'
-    },
-    {
-        name: "Matboard Cutting",
-        href: route('services.restorations.matboard-cutting'),
-        active: 'services.restorations.matboard-cutting'
-    },
-    {
-        name: "Full revamps",
-        href: route('services.restorations.revamps'),
-        active: 'services.restorations.revamps'
-    }
-]
-
-const accessories = [
-
-]
 </script>
 
 <template>
@@ -102,27 +36,7 @@ const accessories = [
             <div class="bg-white rounded-xl shadow-xl mx-auto mt-2 py-6 md:flex hidden flex-col sm:flex-row max-w-7xl w-full border-2 border-gray-50">
                 <div class="flex w-full">
                     <div class="grid grid-cols-4 w-full border-gray-200">
-                        <Column
-                            title="Custom Framing"
-                            :href="route('services.framing')"
-                            :links="customFraming"
-                        />
-
-                        <Column
-                            title="Printing"
-                            :href="route('services.printing')"
-                            :links="printing"
-                        />
-
-                        <Column
-                            title="Restorations"
-                            :links="restorations"
-                        />
-
-                        <Column
-                            title="Accessories"
-                            :links="accessories"
-                        />
+                        <slot name="columns" />
                     </div>
                 </div>
             </div>
