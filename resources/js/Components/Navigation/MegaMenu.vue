@@ -104,11 +104,13 @@ const accessories = [
                     <div class="grid grid-cols-4 w-full border-gray-200">
                         <Column
                             title="Custom Framing"
+                            :href="route('services.framing')"
                             :links="customFraming"
                         />
 
                         <Column
                             title="Printing"
+                            :href="route('services.printing')"
                             :links="printing"
                         />
 

@@ -3,6 +3,7 @@ import {Link} from "@inertiajs/vue3";
 
 defineProps({
     title: String,
+    href: String,
     links: Array
 })
 
@@ -17,9 +18,9 @@ const isActive = (link) => {
 
 <template>
     <div class="text-xl pl-6 flex-wrap">
-        <div class="mt-4 font-bold">
+        <Link :href="href" class="mt-4 font-bold">
             {{ title }}
-        </div>
+        </Link>
         <ul class="ml-4 mt-2 list-inside">
             <li v-for="link in links" class="my-4">
                 <Link

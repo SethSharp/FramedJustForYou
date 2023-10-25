@@ -70,13 +70,6 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
                         title="Embroidery"
                         description=""
                     />
-
-                    <Service
-                        :icon="WrenchIcon"
-                        :href="route('services.framing.fix')"
-                        title="Fixes"
-                        description=""
-                    />
                 </div>
             </template>
         </Section>

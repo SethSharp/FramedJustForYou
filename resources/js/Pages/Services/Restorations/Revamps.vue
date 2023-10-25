@@ -8,11 +8,24 @@ import Section from "@/Components/Section.vue";
     <Head title="Revamps" />
 
     <PrimaryLayout>
-        <Section>
-            <template #header> Revamps </template>
-
+        <Section :back="route('services.framing')">
+            <template #header> Fixes </template>
+            <template #subtitle> Old frames and pictures needing some love? </template>
             <template #content>
+                <p class="mb-4">
+                    If you have a frame or picture that needs to well deserved tender loving care, then we can
+                    provide that.
+                </p>
+                <Image src="fixes/fixed-1.png" alt="Fix image 1" />
+            </template>
+        </Section>
 
+        <Section>
+            <template #header> Our Process </template>
+            <template #content>
+                <p class="mb-4">
+                    Step 1....
+                </p>
             </template>
         </Section>
     </PrimaryLayout>
