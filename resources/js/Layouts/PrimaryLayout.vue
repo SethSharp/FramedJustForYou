@@ -9,6 +9,7 @@ import Footer from "@/Layouts/Footer.vue";
 import DropdownLink from "@/Components/Navigation/Dropdown/DropdownLink.vue";
 import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
 import Dropdown from "@/Components/Navigation/Dropdown/Dropdown.vue";
+import MegaMenu from "@/Components/Navigation/MegaMenu.vue";
 let showingNavigationDropdown = ref(false);
 
 
@@ -116,7 +117,7 @@ const links = [
                                         </NavLink>
                                     </div>
                                     <div v-else>
-                                        <Dropdown>
+                                        <MegaMenu>
                                             <template #trigger>
                                                 <NavLink
                                                     :active="route().current(link.active)"
@@ -124,16 +125,7 @@ const links = [
                                                     {{ link.name }}
                                                 </NavLink>
                                             </template>
-                                            <template #content>
-                                                <DropdownLink
-                                                    v-for="item in link.options"
-                                                    :href="route(item.href)"
-                                                    :active="route().current(item.active)"
-                                                >
-                                                    {{ item.name }}
-                                                </DropdownLink>
-                                            </template>
-                                        </Dropdown>
+                                        </MegaMenu>
                                     </div>
                                 </div>
                             </div>
