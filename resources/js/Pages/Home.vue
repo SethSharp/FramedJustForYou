@@ -23,13 +23,13 @@ import { SplideSlide } from "@splidejs/vue-splide"
                 <template #content>
                     <Carousel height="25rem">
                         <SplideSlide>
-                            <Image src="store/store-front-1.png" alt="Store Image 1" />
+                            <Image src="store/front-desk.png" alt="Store Image 1" />
                         </SplideSlide>
                         <SplideSlide>
-                            <Image src="store/store-front-2.png" alt="Store Image 2" />
+                            <Image src="store/picture-wall.png" alt="Store Image 2" />
                         </SplideSlide>
                         <SplideSlide>
-                            <Image src="store/store-front-3.png" alt="Store Image 3" />
+                            <Image src="store/framing-desk.png" alt="Store Image 3" />
                         </SplideSlide>
                     </Carousel>
                     <div class="my-6">
