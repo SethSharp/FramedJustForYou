@@ -12,21 +12,6 @@ import { SplideSlide } from "@splidejs/vue-splide"
     <Head title="Home" />
 
     <PrimaryLayout>
-        <Section>
-            <template #content>
-                <Carousel>
-                    <SplideSlide>
-                        <Image src="store/store-front-1.png" alt="Store Image 1" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image src="store/store-front-2.png" alt="Store Image 2" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image src="store/store-front-3.png" alt="Store Image 3" />
-                    </SplideSlide>
-                </Carousel>
-            </template>
-        </Section>
         <div id="intro">
             <Section>
                 <template #header>
@@ -36,6 +21,17 @@ import { SplideSlide } from "@splidejs/vue-splide"
                     <span> Locally owned and operated for 20+ years. </span>
                 </template>
                 <template #content>
+                    <Carousel height="25rem">
+                        <SplideSlide>
+                            <Image src="store/store-front-1.png" alt="Store Image 1" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <Image src="store/store-front-2.png" alt="Store Image 2" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <Image src="store/store-front-3.png" alt="Store Image 3" />
+                        </SplideSlide>
+                    </Carousel>
                     <div class="my-6">
                         <h1 class="text-gray-500 text-2xl font-medium mb-3"> Who are we? </h1>
                         <p>

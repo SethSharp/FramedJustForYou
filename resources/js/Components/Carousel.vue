@@ -10,7 +10,8 @@ const props = defineProps({
     autoPlay: {
         type: Boolean,
         default: true
-    }
+    },
+    height: String,
 })
 
 const options = {
@@ -18,6 +19,7 @@ const options = {
     type: props.type,
     perPage: 1,
     autoplay: props.autoPlay,
+    height: props.height
 }
 
 </script>
