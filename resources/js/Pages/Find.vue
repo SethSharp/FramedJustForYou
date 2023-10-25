@@ -20,23 +20,18 @@ import Map from "@/Components/Map.vue";
             </template>
             <template #content>
                 <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
-                    <div class="w-full p-4 flex-wrap md:flex">
-                        <div class="w-full md:w-3/5">
+                    <div class="w-full p-4 grid sm:grid-cols-2">
+                        <div>
                             <p class="text-gray-600"> Want to get in contact? </p>
                             <ContactDetails />
-                        </div>
-                        <div class="w-full md:w-2/5">
-                            <p class="text-gray-600"> Opening Hours </p>
-                            <OpeningHours />
-                        </div>
-                    </div>
-                    <div class="w-full p-4">
-                        <p class="text-gray-600"> Below you can find our conveniently located store: </p>
-                        <div class="my-2">
-                            <div class="flex gap-x-2">
+                            <div class="flex">
                                 <BuildingStorefrontIcon class="w-8 h-8" />
                                 <span> Unit 1-2, 122 Brisbane Road, Labrador 4215 </span>
                             </div>
+                        </div>
+                        <div>
+                            <p class="text-gray-600"> Opening Hours </p>
+                            <OpeningHours />
                         </div>
                     </div>
                     <div class="w-full">

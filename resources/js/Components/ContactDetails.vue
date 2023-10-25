@@ -23,7 +23,7 @@ import {
         <div class="my-2">
             <div class="flex gap-x-2">
                 <EnvelopeIcon class="w-8 h-8" />
-                <span class="my-auto text-sm sm:text-lg"> framedjust4u@bigpond.com </span>
+                <span class="my-auto text-xs sm:text-sm sm:text-lg"> framedjust4u@bigpond.com </span>
             </div>
         </div>
     </div>
