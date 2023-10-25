@@ -13,10 +13,6 @@ const imageLoaded = () => {
     isLoading.value = false
 }
 
-const imageError = () => {
-    isLoading.value = false
-}
-
 // replace img src once setup
 let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
 </script>
