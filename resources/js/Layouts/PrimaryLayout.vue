@@ -9,6 +9,7 @@ import Footer from "@/Layouts/Footer.vue";
 import Column from "@/Components/Navigation/MegaMenu/Column.vue";
 import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
 import MegaMenu from "@/Components/Navigation/MegaMenu.vue";
+import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 let showingNavigationDropdown = ref(false);
 
 const links = [
@@ -198,6 +199,9 @@ const accessories = [
                                         </MegaMenu>
                                     </div>
                                 </div>
+                                <PrimaryButton as="button" :href="route('locator')" class="my-auto">
+                                    Store Locator
+                                </PrimaryButton>
                             </div>
                         </div>
 
