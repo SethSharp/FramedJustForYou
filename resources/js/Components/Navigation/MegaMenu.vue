@@ -71,18 +71,18 @@ const printing = [
 const restorations = [
     {
         name: "Glass Cutting",
-        href: route('services.printing'),
-        active: 'services.printing'
+        href: route('services.restorations.glass-cutting'),
+        active: 'services.restorations.glass-cutting'
     },
     {
         name: "Matboard Cutting",
-        href: route('services.printing'),
-        active: 'services.printing'
+        href: route('services.restorations.matboard-cutting'),
+        active: 'services.restorations.matboard-cutting'
     },
     {
         name: "Full revamps",
-        href: route('services.printing'),
-        active: 'services.printing'
+        href: route('services.restorations.revamps'),
+        active: 'services.restorations.revamps'
     }
 ]
 

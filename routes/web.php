@@ -34,4 +34,9 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/memorabilia', function () { return Inertia::render('Services/Framing/Memorabilia'); })->name('memorabilia');
         Route::get('/fixes', function () { return Inertia::render('Services/Framing/Fix'); })->name('fix');
     });
+    Route::prefix('restorations')->name('restorations.')->group(function () {
+        Route::get('/glass-cutting', function () { return Inertia::render('Services/Restorations/GlassCutting'); })->name('glass-cutting');
+        Route::get('/matboard-cutting', function () { return Inertia::render('Services/Restorations/MatboardCutting'); })->name('matboard-cutting');
+        Route::get('/revamps', function () { return Inertia::render('Services/Restorations/Revamps'); })->name('revamps');
+    });
 });
