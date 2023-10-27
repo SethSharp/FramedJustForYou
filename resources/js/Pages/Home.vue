@@ -6,6 +6,14 @@ import Section from "@/Components/Section.vue"
 import Carousel from "@/Components/Carousel.vue"
 import Contact from "@/Components/Card/Home/Contact.vue"
 import { SplideSlide } from "@splidejs/vue-splide"
+
+const getCarouselHeight = () => {
+    if (screen.width < 400) {
+        return '10rem'
+    }
+
+    return '20rem'
+}
 </script>
 
 <template>
@@ -21,7 +29,7 @@ import { SplideSlide } from "@splidejs/vue-splide"
                     <span> Locally owned and operated for 20+ years. </span>
                 </template>
                 <template #content>
-                    <Carousel height="25rem">
+                    <Carousel :height="getCarouselHeight()">
                         <SplideSlide>
                             <Image src="store/front-desk.png" alt="Store Image 1" />
                         </SplideSlide>
