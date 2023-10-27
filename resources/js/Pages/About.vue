@@ -8,7 +8,7 @@ const teamMembers = [
     {
         name: "Diane",
         position: "Director",
-        description: "Diane, our founder, embarked on her picture framing journey in 1993. In 1998, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
+        description: "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
         image: "team/dianne-temp.jpeg",
         side: false,
         component: 'RightTeamMember'
@@ -16,14 +16,14 @@ const teamMembers = [
     {
         name: "Karen",
         position: "Senior Framer",
-        description: "With over two decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.",
+        description: "With over three decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.",
         image: "team/dianne-temp.jpeg",
         side: false,
         component: 'LeftTeamMember'
     },
     {
         name: "John",
-        position: "Senior Framer",
+        position: "Framer",
         description: "John has been a valuable addition to our team for more than half a year, making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise and is a valuable asset to FramedJustForYou.",
         image: "team/dianne-temp.jpeg",
         side: false,

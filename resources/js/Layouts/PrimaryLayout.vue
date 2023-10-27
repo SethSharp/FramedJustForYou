@@ -89,15 +89,19 @@ const printing = [
         active: 'services.printing'
     },
     {
-        name: 'Printing on Canvas',
+        // Associated with print on demand with champton
+        // Catalgoue, in store or online
+        // Order on canvas, art paper, photo paper, art board
+        name: 'Printing on Demand',
         href: route('services.printing') + '#printing-on-canvases',
         link: '#printing-on-canvases',
         active: 'services.printing'
     },
     {
-        name: 'Stretched Canvases',
-        href: route('services.printing') + '#stretched-canvases',
-        link: '#stretched-canvases',
+        // any sort of restoration
+        name: 'Photos restorations',
+        href: route('services.printing') + '#photos-on-canvases',
+        link: '#photos-on-canvases',
         active: 'services.printing'
     },
 ]
@@ -120,8 +124,28 @@ const restorations = [
     }
 ]
 
-const accessories = [
+const madeToOrder = [
+    {
+        name: 'Stretched Canvases',
+        href: route('services.printing') + '#stretched-canvases',
+        link: '#stretched-canvases',
+        active: 'services.printing'
+    },
+]
 
+const other = [
+    // ready made frames
+    // canvas ready to paint, offset frame - take picture -> canvases already stretched ready to paint
+
+    // Framing supplies: Moldings, hangers, canvas off the role (DIY)
+
+    // Art Gallery, in-store local artist work
+
+    // Computerised mat cutter (Manchester, gymnastic)
+
+    // Glass type (Booklet)
+
+    // Structure of a picture
 ]
 </script>
 
@@ -192,8 +216,13 @@ const accessories = [
                                                 />
 
                                                 <Column
-                                                    title="Accessories"
-                                                    :links="accessories"
+                                                    title="Other"
+                                                    :links="other"
+                                                />
+
+                                                <Column
+                                                    title="Made to Order"
+                                                    :links="madeToOrder"
                                                 />
                                             </template>
                                         </MegaMenu>

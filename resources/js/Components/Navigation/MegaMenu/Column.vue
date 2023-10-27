@@ -21,7 +21,7 @@ const isActive = (link) => {
         <Link :href="href" class="mt-4 font-bold">
             {{ title }}
         </Link>
-        <ul class="ml-4 mt-2 list-inside">
+        <ul class="ml-2 mt-2 list-inside">
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"

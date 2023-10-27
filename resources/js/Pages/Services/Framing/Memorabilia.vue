@@ -41,6 +41,7 @@ import {SplideSlide} from "@splidejs/vue-splide";
         <Section>
             <template #header> Sports Memorabilia </template>
             <template #content>
+                hats, balls, (Custom image frames)
             </template>
         </Section>
     </PrimaryLayout>

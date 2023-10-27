@@ -10,7 +10,7 @@ import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
     <PrimaryLayout>
         <Section :back="route('services.framing')">
             <template #header> Mirror </template>
-            <template #content> Photos on Bethany's phone I think... </template>
+            <template #content> Photos on Bethany's phone I think... made to order</template>
         </Section>
     </PrimaryLayout>
 </template>

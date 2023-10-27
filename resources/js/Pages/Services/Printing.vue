@@ -98,18 +98,13 @@ const config = [
         ],
     },
     {
-        header: "Printing on canvas",
+        header: "Printing only prices",
         description: "If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.",
         href: "printing-on-canvases",
         data: [
             printingPaper
         ]
     },
-    {
-        header: "Stretched canvases (Prices yet to be added)",
-        description: "Stretched canvases give you the option to paint as your heart desires. We offer ",
-        href: "stretched-canvases",
-    }
 ]
 </script>
 
