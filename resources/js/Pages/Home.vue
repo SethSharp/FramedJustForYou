@@ -6,41 +6,46 @@ import Section from '@/Components/Section.vue'
 import Carousel from '@/Components/Carousel.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import { SplideSlide } from '@splidejs/vue-splide'
+import MainPageCarousel from "@/Components/MainPageCarousel.vue";
 </script>
 
 <template>
     <Head title="Home" />
 
     <PrimaryLayout>
+        <template #carousel>
+            <div class="relative mt-0">
+                <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+                <!-- Content to be placed above the carousel -->
+                <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">
+                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium"> Framed Just For you</h1>
+                    <span class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300"> 60+ years of experience </span>
+                </div>
+
+                <MainPageCarousel>
+                    <!-- Your carousel content here -->
+                    <SplideSlide>
+                        <Image src="store/front-desk.png" alt="Store Image 1" rounded-class="!rounded-none" />
+                    </SplideSlide>
+                    <SplideSlide>
+                        <Image src="store/picture-wall.png" alt="Store Image 2" rounded-class="!rounded-none" />
+                    </SplideSlide>
+                    <SplideSlide>
+                        <Image src="store/framing-desk.png" alt="Store Image 3" rounded-class="!rounded-none" />
+                    </SplideSlide>
+                </MainPageCarousel>
+            </div>
+        </template>
         <div id="intro">
             <Section>
                 <template #header>
                     <span> Your Custom Picture Framers! </span>
                 </template>
                 <template #subtitle>
-                    <span> Locally owned and operated for 20+ years. </span>
+                    <span> Locally owned and operated since 1997 </span>
                 </template>
                 <template #content>
-                    <div class="flex space-x-2">
-                        <div class="w-1/2 border-4 border-gray-400">
-                            <Image rounded-class="!rounded-none" src="store/store-side-right.png" />
-                        </div>
-                        <div class="w-1/2 border-4 border-gray-400">
-                            <Image rounded-class="!rounded-none" src="store/store-side-left.png" />
-                        </div>
-                    </div>
-
-                    <!--                    <Carousel :height="getCarouselHeight()">-->
-                    <!--                        <SplideSlide>-->
-                    <!--                            <Image src="store/front-desk.png" alt="Store Image 1" />-->
-                    <!--                        </SplideSlide>-->
-                    <!--                        <SplideSlide>-->
-                    <!--                            <Image src="store/picture-wall.png" alt="Store Image 2" />-->
-                    <!--                        </SplideSlide>-->
-                    <!--                        <SplideSlide>-->
-                    <!--                            <Image src="store/framing-desk.png" alt="Store Image 3" />-->
-                    <!--                        </SplideSlide>-->
-                    <!--                    </Carousel>-->
                     <div class="my-6">
                         <h1 class="text-gray-500 text-2xl font-medium mb-3">Who are we?</h1>
                         <p>
@@ -56,6 +61,15 @@ import { SplideSlide } from '@splidejs/vue-splide'
                             business, we are deeply rooted in our community, and our commitment to
                             quality and customer satisfaction has remained unwavering since day one.
                         </p>
+                    </div>
+
+                    <div class="flex space-x-2">
+                        <div class="w-1/2 border-4 border-gray-400">
+                            <Image rounded-class="!rounded-none" src="store/store-side-right.png" />
+                        </div>
+                        <div class="w-1/2 border-4 border-gray-400">
+                            <Image rounded-class="!rounded-none" src="store/store-side-left.png" />
+                        </div>
                     </div>
 
                     <div class="my-6">

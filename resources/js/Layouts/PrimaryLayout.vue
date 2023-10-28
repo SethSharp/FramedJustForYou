@@ -10,6 +10,14 @@ import Column from '@/Components/Navigation/MegaMenu/Column.vue'
 import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
 import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
+
+defineProps({
+    padding: {
+        type: Boolean,
+        default: true,
+    },
+})
+
 let showingNavigationDropdown = ref(false)
 
 const links = [
@@ -333,7 +341,8 @@ const other = [
 
             <!-- Page Content -->
             <main>
-                <div class="mx-4 mt-10 min-h-screen">
+                <slot name="carousel"/>
+                <div class="min-h-screen mx-4 mt-10">
                     <slot />
                 </div>
             </main>
