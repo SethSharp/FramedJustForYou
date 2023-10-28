@@ -7,14 +7,6 @@ defineProps({
     href: String,
     links: Array
 })
-
-const isActive = (link) => {
-    if (link.link) {
-        return window.location.href.includes(link.link)
-    }
-
-    return route().current(link.active)
-}
 </script>
 
 <template>
@@ -27,8 +19,8 @@ const isActive = (link) => {
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"
+                    :active="link.href"
                     class="decoration-2 hover:underline hover:underline-offset-2"
-                    :class="{'underline underline-offset-8 ' : isActive(link)}"
                 >
                     {{ link.name  }}
                 </Link>

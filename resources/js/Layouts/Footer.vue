@@ -5,11 +5,11 @@ import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 
 const navigation = {
     pages: [
-        { name: 'Home', href: '#' },
-        { name: 'About', href: '#' },
-        { name: 'Art Studio', href: '#' },
-        { name: 'Gallery', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'Home', href: route('home') },
+        { name: 'About', href: route('about') },
+        { name: 'FAQ', href: route('faq') },
+        { name: 'Art Studio', href: route('studio') },
+        { name: 'Contact', href: route('contact') },
     ],
     framing: [
         { name: 'Custom', href: route('services.framing') },

@@ -2,9 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
 import Section from "@/Components/Section.vue";
-import {PhotoIcon, CameraIcon, BanknotesIcon, AdjustmentsHorizontalIcon, PrinterIcon} from "@heroicons/vue/20/solid/index.js";
-import Info from "@/Components/Card/Info.vue";
-import NavButton from "@/Components/Button/NavButton.vue";
+import {PrinterIcon} from "@heroicons/vue/20/solid/index.js";
 import Service from "@/Components/Card/Services/Service.vue";
 import PricingTable from "@/Components/Card/PricingTable.vue";
 
@@ -114,14 +112,8 @@ const config = [
     <PrimaryLayout>
         <Section>
             <template #header>
-                <span> Printing and Canvases </span>
+                <span> Printing </span>
             </template>
-<!--            <template #subtitle>-->
-<!--                <div class="flex">-->
-<!--                    <span> View all our options </span>-->
-<!--                    <PhotoIcon class="w-8 h-8 ml-2" />-->
-<!--                </div>-->
-<!--            </template>-->
             <template #content>
                 <div>
                     We offer a range of services when it comes to printing and canvas. Whether you are a painter,
@@ -132,30 +124,9 @@ const config = [
                     <Service
                         :icon="PrinterIcon"
                         href="#photos-on-canvases"
-                        title="Photos on Canvas"
+                        title="Photos & Printing on Canvas"
                         description="Want your favourite phone photo in a frame? We can achieve that, see below!"
                     />
-
-                    <Service
-                        :icon="PhotoIcon"
-                        href="#printing-on-canvases"
-                        title="Printing on Canvas"
-                        description="Want your favourite phone photo in a frame? We can achieve that, see below!"
-                    />
-
-                    <Service
-                        :icon="AdjustmentsHorizontalIcon"
-                        href="#stretched-canvases"
-                        title="Stretched Canvases"
-                        description="Want a blank canvas to paint on? Well we have that option here too!"
-                    />
-
-<!--                    <Service-->
-<!--                        :icon="BanknotesIcon"-->
-<!--                        href="#made-to-order"-->
-<!--                        title="Pricing"-->
-<!--                        description="Once special thing about this service is we can directly provide estimates on prices."-->
-<!--                    />-->
                 </div>
             </template>
         </Section>

@@ -52,8 +52,8 @@ const links = [
     },
     {
         name: "Contact",
-        href: "find",
-        active: "find"
+        href: "contact",
+        active: "contact"
     }
 ]
 
@@ -181,9 +181,7 @@ const other = [
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('home')">
-                                    <ApplicationLogo
-                                        class="block"
-                                    />
+                                    <ApplicationLogo class="block" />
                                 </Link>
                             </div>
 
@@ -298,7 +296,13 @@ const other = [
                                             <Column
                                                 title="Custom Framing"
                                                 :href="route('services.framing')"
-                                                :links="customFraming"
+                                                :links="customFraming1"
+                                            />
+
+                                            <Column
+                                                title=""
+                                                :href="route('services.framing')"
+                                                :links="customFraming2"
                                             />
 
                                             <Column
@@ -308,7 +312,7 @@ const other = [
                                             />
 
                                             <Column
-                                                title="Restorations"
+                                                title="Other"
                                                 :links="other"
                                             />
                                         </div>
