@@ -1,5 +1,5 @@
 <script setup>
-import {CheckIcon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
+import { CheckIcon, XMarkIcon } from '@heroicons/vue/20/solid/index.js'
 defineProps({
     data: Object,
 })
@@ -35,8 +35,8 @@ defineProps({
                             :key="cellIndex"
                             class="whitespace-nowrap px-2 py-4 text-sm text-gray-500"
                         >
-                            <CheckIcon v-if="cell" class="w-6 h-6 text-green-500"/>
-                            <XMarkIcon v-if="!cell" class="w-6 h-6 text-red-500"/>
+                            <CheckIcon v-if="cell" class="w-6 h-6 text-green-500" />
+                            <XMarkIcon v-if="!cell" class="w-6 h-6 text-red-500" />
                         </td>
                     </tr>
                 </tbody>

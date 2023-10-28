@@ -4,7 +4,7 @@ import Section from '@/Components/Section.vue'
 import Carousel from '@/Components/Carousel.vue'
 import SplideContent from '@/Components/Splide/SplideContent.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Image from "@/Components/Image.vue";
+import Image from '@/Components/Image.vue'
 </script>
 
 <template>
@@ -37,7 +37,7 @@ import Image from "@/Components/Image.vue";
                     />
                 </Carousel>
 
-                <Image src="jigsaw/giraffe.png"  class="w-1/2"/>
+                <Image src="jigsaw/giraffe.png" class="w-1/2" />
             </template>
         </Section>
     </PrimaryLayout>

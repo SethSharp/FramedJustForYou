@@ -341,7 +341,7 @@ const other = [
 
             <!-- Page Content -->
             <main>
-                <slot name="carousel"/>
+                <slot name="carousel" />
                 <div class="min-h-screen mx-4 mt-10">
                     <slot />
                 </div>

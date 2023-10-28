@@ -6,7 +6,7 @@ import Section from '@/Components/Section.vue'
 import Carousel from '@/Components/Carousel.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import { SplideSlide } from '@splidejs/vue-splide'
-import MainPageCarousel from "@/Components/MainPageCarousel.vue";
+import MainPageCarousel from '@/Components/MainPageCarousel.vue'
 </script>
 
 <template>
@@ -19,20 +19,36 @@ import MainPageCarousel from "@/Components/MainPageCarousel.vue";
 
                 <!-- Content to be placed above the carousel -->
                 <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">
-                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium"> Framed Just For you</h1>
-                    <span class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300"> 60+ years of experience </span>
+                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium">
+                        Framed Just For you
+                    </h1>
+                    <span class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">
+                        60+ years of experience
+                    </span>
                 </div>
 
                 <MainPageCarousel>
                     <!-- Your carousel content here -->
                     <SplideSlide>
-                        <Image src="store/front-desk.png" alt="Store Image 1" rounded-class="!rounded-none" />
+                        <Image
+                            src="store/front-desk.png"
+                            alt="Store Image 1"
+                            rounded-class="!rounded-none"
+                        />
                     </SplideSlide>
                     <SplideSlide>
-                        <Image src="store/picture-wall.png" alt="Store Image 2" rounded-class="!rounded-none" />
+                        <Image
+                            src="store/picture-wall.png"
+                            alt="Store Image 2"
+                            rounded-class="!rounded-none"
+                        />
                     </SplideSlide>
                     <SplideSlide>
-                        <Image src="store/framing-desk.png" alt="Store Image 3" rounded-class="!rounded-none" />
+                        <Image
+                            src="store/framing-desk.png"
+                            alt="Store Image 3"
+                            rounded-class="!rounded-none"
+                        />
                     </SplideSlide>
                 </MainPageCarousel>
             </div>
