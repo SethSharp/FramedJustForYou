@@ -18,6 +18,8 @@ export default {
             },
             colors: {
                 primary: {
+                    100: colors.pink[100],
+                    200: colors.pink[200],
                     300: colors.pink[300],
                     400: colors.pink[400],
                     500: colors.pink[500],
