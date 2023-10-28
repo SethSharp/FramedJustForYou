@@ -95,9 +95,16 @@ const config = [
     {
         header: 'Printing only prices',
         description:
-            'If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.',
+            'If you have a photo but are not after a ready to hang print we can still print that photo out onto some of our high quality photo, art paper or canvas.',
         href: 'printing-on-canvases',
         data: [printingPaper],
+    },
+    {
+        header: 'Giclee Printing',
+        description:
+            'We have a \'state of the art\' printer which can print your prints at the up most quality..',
+        href: 'giclee',
+        data: [],
     },
 ]
 </script>
@@ -122,7 +129,14 @@ const config = [
                         :icon="PrinterIcon"
                         href="#photos-on-canvases"
                         title="Photos & Printing on Canvas"
-                        description="Want your favourite phone photo in a frame? We can achieve that, see below!"
+                        description="Want your favourite phone photo in a frame?"
+                    />
+
+                    <Service
+                        :icon="PrinterIcon"
+                        href="#giclee"
+                        title="Giclee"
+                        description="Got a piece of art you want printed?"
                     />
                 </div>
             </template>

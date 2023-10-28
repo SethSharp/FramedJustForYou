@@ -4,6 +4,7 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Components/Section.vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { ChevronUpIcon } from '@heroicons/vue/20/solid'
+import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 
 const faqs = [
     {
@@ -38,6 +39,11 @@ const faqs = [
         title: 'Can I buy gallery hanging systems from your store?',
         description: '...'
     },
+    {
+        title: 'What is a Giclee?',
+        description: 'A Giclee (gee-clay) or a fine art digital print is a high resolution, high fidelity reproduction done ona special large format printer. Producing a high quality picture of a piece of art work',
+        href: route('services.printing') + '#giclee'
+    },
 ]
 </script>
 
@@ -49,7 +55,7 @@ const faqs = [
             <template #header> FAQ </template>
             <template #content>
                 <div class="w-full px-4">
-                    <div class="mx-auto w-full rounded-2xl bg-white p-2">
+                    <div class="mx-auto w-full rounded-2xl p-2">
                         <Disclosure v-slot="{ open }" v-for="faq in faqs">
                             <DisclosureButton
                                 class="flex my-2 w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-lg font-medium text-primary-900 hover:bg-primary-200"
@@ -63,7 +69,12 @@ const faqs = [
                                 />
                             </DisclosureButton>
                             <DisclosurePanel class="px-4 pt-4 pb-2 text-md text-gray-500">
-                                {{ faq.description }}
+                                <div>
+                                    {{ faq.description }}
+                                </div>
+                                <PrimaryButton as="button" class="mt-4">
+                                    Link to somewhere
+                                </PrimaryButton>
                             </DisclosurePanel>
                         </Disclosure>
                     </div>

@@ -6,14 +6,6 @@ import Section from '@/Components/Section.vue'
 import Carousel from '@/Components/Carousel.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import { SplideSlide } from '@splidejs/vue-splide'
-
-const getCarouselHeight = () => {
-    if (screen.width < 400) {
-        return '10rem'
-    }
-
-    return '20rem'
-}
 </script>
 
 <template>

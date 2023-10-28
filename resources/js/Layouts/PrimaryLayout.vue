@@ -139,6 +139,12 @@ const printing = [
         link: '#printing-on-canvases',
         active: 'services.printing',
     },
+    {
+        name: 'Giclee\'s',
+        href: route('services.printing') + '#giclee',
+        link: '#giclee',
+        active: 'services.printing',
+    },
 ]
 
 const other = [
