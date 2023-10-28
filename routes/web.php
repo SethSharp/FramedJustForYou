@@ -30,7 +30,7 @@ Route::prefix('services')->name('services.')->group(function () {
     Route::prefix('framing')->name('framing.')->group(function () {
         Route::get('/acrylic', function () { return Inertia::render('Services/Framing/Acrylic'); })->name('acrylic');
         Route::get('/australian-made-framing-kits', function () { return Inertia::render('Services/Framing/AusMade'); })->name('australian');
-        Route::get('/canvas-stretching', function () { return Inertia::render('Services/Framing/CanvasStretching'); })->name('canvas-stretching');
+        Route::get('/canvases', function () { return Inertia::render('Services/Framing/CanvasStretching'); })->name('canvases');
         Route::get('/hanging-systems', function () { return Inertia::render('Services/Framing/HangingSystems'); })->name('hanging-systems');
         Route::get('/indigenous-art', function () { return Inertia::render('Services/Framing/Indigenous'); })->name('indigenous-art');
         Route::get('/jigsaws', function () { return Inertia::render('Services/Framing/Jigsaw'); })->name('jigsaws');
@@ -52,5 +52,6 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/glass-cutting', function () { return Inertia::render('Services/Other/GlassCutting'); })->name('glass-cutting');
         Route::get('/matboard-cutting', function () { return Inertia::render('Services/Other/MatboardCutting'); })->name('matboard-cutting');
         Route::get('/ready-made', function () { return Inertia::render('Services/Other/ReadyMade'); })->name('ready-made');
+        Route::get('/framing-supplies', function () { return Inertia::render('Services/Other/FramingSupplies'); })->name('framing-supplies');
     });
 });

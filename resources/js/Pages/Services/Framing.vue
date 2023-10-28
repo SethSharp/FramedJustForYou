@@ -45,35 +45,35 @@ const scrollToContent = () =>
                     provide personalized framing solutions that elevate the beauty and significance
                     of your keepsakes.
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
-                    <Service
-                        :icon="UserGroupIcon"
-                        :href="route('services.framing.memorabilia')"
-                        title="Memorabilia"
-                        description=""
-                    />
+<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
+<!--                    <Service-->
+<!--                        :icon="UserGroupIcon"-->
+<!--                        :href="route('services.framing.medals-memorabilia')"-->
+<!--                        title="Memorabilia"-->
+<!--                        description=""-->
+<!--                    />-->
 
-                    <Service
-                        :icon="PuzzlePieceIcon"
-                        :href="route('services.framing.jigsaw')"
-                        title="Jigsaw"
-                        description=""
-                    />
+<!--                    <Service-->
+<!--                        :icon="PuzzlePieceIcon"-->
+<!--                        :href="route('services.framing.jigsaws')"-->
+<!--                        title="Jigsaw"-->
+<!--                        description=""-->
+<!--                    />-->
 
-                    <Service
-                        :icon="RectangleGroupIcon"
-                        :href="route('services.framing.mirror')"
-                        title="Mirror"
-                        description=""
-                    />
+<!--                    <Service-->
+<!--                        :icon="RectangleGroupIcon"-->
+<!--                        :href="route('services.framing.mirror')"-->
+<!--                        title="Mirror"-->
+<!--                        description=""-->
+<!--                    />-->
 
-                    <Service
-                        :icon="PhotoIcon"
-                        :href="route('services.framing.embroidery')"
-                        title="Embroidery"
-                        description=""
-                    />
-                </div>
+<!--                    <Service-->
+<!--                        :icon="PhotoIcon"-->
+<!--                        :href="route('services.framing.tapestries-and-needlework')"-->
+<!--                        title="Embroidery"-->
+<!--                        description=""-->
+<!--                    />-->
+<!--                </div>-->
             </template>
         </Section>
 
@@ -203,6 +203,16 @@ const scrollToContent = () =>
             </template>
         </Section>
 
-        // Structure of a picture
+        <Section>
+            <template #title> Maximising your frame </template>
+            <template #content>
+                Framing can be so much more then a singular frame and matboard, if you want to further impress your guests and make your frame
+                standout this is the perfect way to do it. This works by attaching multiple frames and matboards which give the frame some great depth.
+            </template>
+        </Section>
+
+        <Section>
+            <template #title> Structure of a frame </template>
+        </Section>
     </PrimaryLayout>
 </template>

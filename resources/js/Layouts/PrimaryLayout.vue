@@ -69,9 +69,9 @@ const customFraming1 = [
         active: 'services.framing.australian',
     },
     {
-        name: 'Canvas Stretching',
-        href: route('services.framing.canvas-stretching'),
-        active: 'services.framing.canvas-stretching',
+        name: 'Canvases',
+        href: route('services.framing.canvases'),
+        active: 'services.framing.canvases',
     },
     {
         name: 'Hanging Systems',
@@ -163,6 +163,11 @@ const other = [
         name: 'Ready Made Frames',
         href: route('services.other.ready-made'),
         active: 'services.other.ready-made',
+    },
+    {
+        name: 'Framing Supplies',
+        href: route('services.other.framing-supplies'),
+        active: 'services.other.framing-supplies',
     },
 ]
 </script>
