@@ -1,5 +1,6 @@
 <script setup>
 import {Link} from "@inertiajs/vue3";
+import {ChevronRightIcon} from "@heroicons/vue/20/solid/index.js";
 
 defineProps({
     title: String,
@@ -18,14 +19,15 @@ const isActive = (link) => {
 
 <template>
     <div class="text-xl pl-6 flex-wrap">
-        <Link :href="href" class="mt-4 font-bold">
+        <Link :href="href" class="font-bold flex hover:underline underline-offset-2">
             {{ title }}
+            <ChevronRightIcon class="w-7 h-7" />
         </Link>
         <ul class="ml-2 mt-2 list-inside">
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"
-                    class="decoration-2 hover:underline hover:underline-offset-8"
+                    class="decoration-2 hover:underline hover:underline-offset-2"
                     :class="{'underline underline-offset-8 ' : isActive(link)}"
                 >
                     {{ link.name  }}

@@ -41,15 +41,15 @@ const links = [
         ]
     },
     {
+        name: "FAQ",
+        href: "faq",
+        active: "faq",
+    },
+    {
         name: "Art Studio",
         href: "studio",
         active: "studio",
     },
-    // {
-    //     name: "Gallery",
-    //     href: "gallery",
-    //     active: "gallery",
-    // },
     {
         name: "Contact",
         href: "find",
@@ -60,9 +60,9 @@ const links = [
 
 const customFraming = [
     {
-        name: 'Memorabilia',
-        href: route('services.framing.memorabilia'),
-        active: 'services.framing.memorabilia'
+        name: 'Embroidery',
+        href: route('services.framing.embroidery'),
+        active: 'services.framing.embroidery'
     },
     {
         name: 'Jigsaw',
@@ -70,14 +70,31 @@ const customFraming = [
         active: 'services.framing.jigsaw'
     },
     {
+        name: 'Memorabilia',
+        href: route('services.framing.memorabilia'),
+        active: 'services.framing.memorabilia'
+    },
+    {
         name: 'Mirror',
         href: route('services.framing.mirror'),
         active: 'services.framing.mirror'
     },
     {
-        name: 'Embroidery',
-        href: route('services.framing.embroidery'),
-        active: 'services.framing.embroidery'
+        name: 'Prints & Posters',
+        href: route('services.framing.memorabilia'),
+        active: 'services.framing.memorabilia'
+    },
+    {
+        name: 'Stretched Canvases',
+        href: route('services.printing') + '#stretched-canvases',
+        link: '#stretched-canvases',
+        active: 'services.printing'
+    },
+    {
+        name: 'Wedding Photos',
+        href: route('services.printing') + '#stretched-canvases',
+        link: '#stretched-canvases',
+        active: 'services.printing'
     },
 ]
 
@@ -97,55 +114,36 @@ const printing = [
         link: '#printing-on-canvases',
         active: 'services.printing'
     },
-    {
-        // any sort of restoration
-        name: 'Photos restorations',
-        href: route('services.printing') + '#photos-on-canvases',
-        link: '#photos-on-canvases',
-        active: 'services.printing'
-    },
-]
-
-const restorations = [
-    {
-        name: "Glass Cutting",
-        href: route('services.restorations.glass-cutting'),
-        active: 'services.restorations.glass-cutting'
-    },
-    {
-        name: "Matboard Cutting",
-        href: route('services.restorations.matboard-cutting'),
-        active: 'services.restorations.matboard-cutting'
-    },
-    {
-        name: "Full revamps",
-        href: route('services.restorations.revamps'),
-        active: 'services.restorations.revamps'
-    }
-]
-
-const madeToOrder = [
-    {
-        name: 'Stretched Canvases',
-        href: route('services.printing') + '#stretched-canvases',
-        link: '#stretched-canvases',
-        active: 'services.printing'
-    },
 ]
 
 const other = [
-    // ready made frames
-    // canvas ready to paint, offset frame - take picture -> canvases already stretched ready to paint
-
-    // Framing supplies: Moldings, hangers, canvas off the role (DIY)
-
-    // Art Gallery, in-store local artist work
-
-    // Computerised mat cutter (Manchester, gymnastic)
-
     // Glass type (Booklet)
-
-    // Structure of a picture
+    {
+        name: "Glass & Glass Cutting",
+        href: route('services.other.glass-cutting'),
+        active: 'services.other.glass-cutting'
+    },
+    {
+        name: "Matboard Cutting",
+        href: route('services.other.matboard-cutting'),
+        active: 'services.other.matboard-cutting'
+    },
+    {
+        name: "Restorations",
+        href: route('services.other.revamps'),
+        active: 'services.other.revamps'
+    },
+    {
+        name: 'Ready Made Frames',
+        href: route('services.other.ready-made'),
+        active: 'services.other.ready-made'
+    },
+    {
+        // Framing supplies: Moldings, hangers, canvas off the role (DIY)
+        name: 'Framing Supplies',
+        href: route('services.other.ready-made'),
+        active: 'services.other.ready-made'
+    }
 ]
 </script>
 
@@ -211,18 +209,8 @@ const other = [
                                                 />
 
                                                 <Column
-                                                    title="Restorations"
-                                                    :links="restorations"
-                                                />
-
-                                                <Column
                                                     title="Other"
                                                     :links="other"
-                                                />
-
-                                                <Column
-                                                    title="Made to Order"
-                                                    :links="madeToOrder"
                                                 />
                                             </template>
                                         </MegaMenu>
@@ -300,12 +288,7 @@ const other = [
 
                                             <Column
                                                 title="Restorations"
-                                                :links="restorations"
-                                            />
-
-                                            <Column
-                                                title="Accessories"
-                                                :links="accessories"
+                                                :links="other"
                                             />
                                         </div>
                                     </template>

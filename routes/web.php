@@ -24,6 +24,8 @@ Route::get('/find', function () { return Inertia::render('Find'); })->name('find
 
 Route::get('/store', function () { return Inertia::render('Store'); })->name('store');
 
+Route::get('/faq', function () { return Inertia::render('FAQ'); })->name('faq');
+
 Route::prefix('services')->name('services.')->group(function () {
     Route::get('/custom-framing', function () { return Inertia::render('Services/Framing'); })->name('framing');
     Route::get('/printing', function () { return Inertia::render('Services/Printing'); })->name('printing');
@@ -34,9 +36,13 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/memorabilia', function () { return Inertia::render('Services/Framing/Memorabilia'); })->name('memorabilia');
         Route::get('/fixes', function () { return Inertia::render('Services/Framing/Fix'); })->name('fix');
     });
-    Route::prefix('restorations')->name('restorations.')->group(function () {
+    Route::prefix('other')->name('other.')->group(function () {
         Route::get('/glass-cutting', function () { return Inertia::render('Services/Restorations/GlassCutting'); })->name('glass-cutting');
         Route::get('/matboard-cutting', function () { return Inertia::render('Services/Restorations/MatboardCutting'); })->name('matboard-cutting');
         Route::get('/revamps', function () { return Inertia::render('Services/Restorations/Revamps'); })->name('revamps');
+    });
+    Route::prefix('other')->name('other.')->group(function () {
+        Route::get('/ready-made', function () { return Inertia::render('Services/Other/ReadyMade'); })->name('ready-made');
+        Route::get('/ready-made', function () { return Inertia::render('Services/Other/ReadyMade'); })->name('ready-made');
     });
 });

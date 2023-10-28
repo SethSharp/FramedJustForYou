@@ -171,11 +171,6 @@ const scrollToContent = () => document.getElementById('custom').scrollIntoView({
             </template>
         </Section>
 
-        <Section id="custom">
-            <template #header> Ready Made Frames </template>
-            <template #content>
-                Perfect for if you want to frame your graduation certificate or some printed photos
-            </template>
-        </Section>
+        // Structure of a picture
     </PrimaryLayout>
 </template>

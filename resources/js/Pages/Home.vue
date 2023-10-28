@@ -29,17 +29,26 @@ const getCarouselHeight = () => {
                     <span> Locally owned and operated for 20+ years. </span>
                 </template>
                 <template #content>
-                    <Carousel :height="getCarouselHeight()">
-                        <SplideSlide>
-                            <Image src="store/front-desk.png" alt="Store Image 1" />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <Image src="store/picture-wall.png" alt="Store Image 2" />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <Image src="store/framing-desk.png" alt="Store Image 3" />
-                        </SplideSlide>
-                    </Carousel>
+                    <div class="flex space-x-2">
+                        <div class="w-1/2 border-4 border-gray-400">
+                            <Image rounded-class="!rounded-none" src="store/store-side-right.png"/>
+                        </div>
+                        <div class="w-1/2 border-4 border-gray-400">
+                            <Image rounded-class="!rounded-none" src="store/store-side-left.png"/>
+                        </div>
+                    </div>
+
+<!--                    <Carousel :height="getCarouselHeight()">-->
+<!--                        <SplideSlide>-->
+<!--                            <Image src="store/front-desk.png" alt="Store Image 1" />-->
+<!--                        </SplideSlide>-->
+<!--                        <SplideSlide>-->
+<!--                            <Image src="store/picture-wall.png" alt="Store Image 2" />-->
+<!--                        </SplideSlide>-->
+<!--                        <SplideSlide>-->
+<!--                            <Image src="store/framing-desk.png" alt="Store Image 3" />-->
+<!--                        </SplideSlide>-->
+<!--                    </Carousel>-->
                     <div class="my-6">
                         <h1 class="text-gray-500 text-2xl font-medium mb-3"> Who are we? </h1>
                         <p>

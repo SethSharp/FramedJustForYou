@@ -5,7 +5,7 @@ import {ArrowPathIcon} from "@heroicons/vue/20/solid/index.js"
 const props = defineProps({
     src: String,
     alt: String,
-    notRounded: Boolean,
+    roundedClass: String,
 })
 
 let isLoading = ref(true)
@@ -25,6 +25,6 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
                 <ArrowPathIcon class="w-10 h-10 text-gray-300"/>
             </p>
         </div>
-        <img @load="imageLoaded" :src="configPath" :alt="alt" :class="notRounded" class="object-cover w-full rounded-2xl" />
+        <img @load="imageLoaded" :src="configPath" :alt="alt" :class="roundedClass" class="object-cover w-full rounded-2xl" />
     </div>
 </template>
