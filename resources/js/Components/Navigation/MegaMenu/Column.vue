@@ -1,12 +1,21 @@
 <script setup>
 import { Link } from '@inertiajs/vue3'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid/index.js'
+import {computed} from "vue";
 
 defineProps({
     title: String,
     href: String,
+    active: String,
     links: Array,
 })
+
+const isActive = (link) => {
+    if (link.link) {
+        return window.location.href.includes(link.link)
+    }
+    return route().current(link.active)
+}
 </script>
 
 <template>
@@ -19,8 +28,8 @@ defineProps({
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"
-                    :active="link.href"
-                    class="decoration-2 hover:underline hover:underline-offset-2"
+                    class="decoration-2 underline-offset-2 hover:underline"
+                    :class="{ 'underline decoration-black' : isActive(link) }"
                 >
                     {{ link.name }}
                 </Link>
