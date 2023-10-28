@@ -140,7 +140,7 @@ const printing = [
         active: 'services.printing',
     },
     {
-        name: 'Giclee\'s',
+        name: "Giclee's",
         href: route('services.printing') + '#giclee',
         link: '#giclee',
         active: 'services.printing',

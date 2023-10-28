@@ -102,7 +102,7 @@ const config = [
     {
         header: 'Giclee Printing',
         description:
-            'We have a \'state of the art\' printer which can print your prints at the up most quality..',
+            "We have a 'state of the art' printer which can print your prints at the up most quality..",
         href: 'giclee',
         data: [],
     },

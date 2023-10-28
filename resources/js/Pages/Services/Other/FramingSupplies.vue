@@ -17,20 +17,17 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 
         <Section>
             <template #header> Canvas off the role </template>
-            <template #content>
-            </template>
+            <template #content> </template>
         </Section>
 
         <Section>
             <template #header> Matboards cut to size </template>
-            <template #content>
-            </template>
+            <template #content> </template>
         </Section>
 
         <Section>
             <template #header> Framing Materials </template>
-            <template #content>
-            </template>
+            <template #content> </template>
         </Section>
     </PrimaryLayout>
 </template>

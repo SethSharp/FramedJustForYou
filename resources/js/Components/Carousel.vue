@@ -1,7 +1,7 @@
 <script setup>
 import { Splide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
-import {getCurrentScope} from "vue";
+import { getCurrentScope } from 'vue'
 
 const props = defineProps({
     type: {

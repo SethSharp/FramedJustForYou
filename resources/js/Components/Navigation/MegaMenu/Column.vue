@@ -1,7 +1,7 @@
 <script setup>
 import { Link } from '@inertiajs/vue3'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid/index.js'
-import {computed} from "vue";
+import { computed } from 'vue'
 
 defineProps({
     title: String,
@@ -29,7 +29,7 @@ const isActive = (link) => {
                 <Link
                     :href="link.href"
                     class="decoration-2 underline-offset-2 hover:underline"
-                    :class="{ 'underline decoration-black' : isActive(link) }"
+                    :class="{ 'underline decoration-black': isActive(link) }"
                 >
                     {{ link.name }}
                 </Link>

@@ -4,45 +4,46 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Components/Section.vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { ChevronUpIcon } from '@heroicons/vue/20/solid'
-import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
+import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 
 const faqs = [
     {
         title: 'How much does custom framing cost?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'Do you offer photo printing services?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'Can you cut glass, mirror, or plexiglass to size?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'Do you provide custom matboard cutting services?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'Can you modernize and reframe my old picture or frame?',
-        description: '...'
+        description: '...',
     },
     {
-        title: 'My picture frame\'s string has broken; can you replace it with a new wire?',
-        description: '...'
+        title: "My picture frame's string has broken; can you replace it with a new wire?",
+        description: '...',
     },
     {
         title: 'Do you have photo frames available for purchase?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'Can I buy gallery hanging systems from your store?',
-        description: '...'
+        description: '...',
     },
     {
         title: 'What is a Giclee?',
-        description: 'A Giclee (gee-clay) or a fine art digital print is a high resolution, high fidelity reproduction done ona special large format printer. Producing a high quality picture of a piece of art work',
-        href: route('services.printing') + '#giclee'
+        description:
+            'A Giclee (gee-clay) or a fine art digital print is a high resolution, high fidelity reproduction done ona special large format printer. Producing a high quality picture of a piece of art work',
+        href: route('services.printing') + '#giclee',
     },
 ]
 </script>
