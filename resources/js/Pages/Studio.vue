@@ -46,7 +46,7 @@ import ListingCard from '@/Components/Card/ListingCard.vue'
                         >
                             framedjust4u@gmail.com
                         </a>
-                        ,the pricing are as below. If you plan to do this on a week to week basis
+                        the prices are as below. If you plan to do this on a week to week basis
                         then the prices are <b> negotiable </b>.
                     </p>
 

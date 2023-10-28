@@ -7,22 +7,23 @@ const navigation = {
     pages: [
         { name: 'Home', href: route('home') },
         { name: 'About', href: route('about') },
+        { name: 'Framing', href: route('services.framing') },
+        { name: 'Printing', href: route('services.printing') },
         { name: 'FAQ', href: route('faq') },
         { name: 'Art Studio', href: route('studio') },
         { name: 'Contact', href: route('contact') },
     ],
     framing: [
-        { name: 'Custom', href: route('services.framing') },
-        { name: 'Memorabilia', href: route('services.framing.medals-memorabilia') },
-        { name: 'Jigsaw', href: route('services.framing.jigsaws') },
-        { name: 'Mirror', href: route('services.framing.mirror') },
         { name: 'Embroidery', href: route('services.framing.tapestries-and-needlework') },
+        { name: 'Jigsaw', href: route('services.framing.jigsaws') },
+        { name: 'Medals & Memorabilia', href: route('services.framing.medals-memorabilia') },
+        { name: 'Mirror', href: route('services.framing.mirror') },
         { name: 'Restorations', href: route('services.framing.restorations') },
     ],
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },
-        { name: 'Printing on Canvas', href: route('services.printing') + '#printing-on-canvases' },
-        { name: 'Stretched` Canvases', href: route('services.printing') + '#stretched-canvases' },
+        { name: 'Printing on Deman', href: route('services.printing') + '#printing-on-canvases' },
+        { name: 'Giclee\'s', href: route('services.printing') + '#giclee' },
     ],
 }
 
@@ -90,7 +91,7 @@ const social = [
                         </div>
                         <div class="mt-10 md:mt-0">
                             <h3 class="text-md font-semibold leading-6 text-white">
-                                Printing & Canvas
+                                Printing
                             </h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li v-for="item in navigation.printing" :key="item.name">
