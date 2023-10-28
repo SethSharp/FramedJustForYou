@@ -52,11 +52,11 @@ import ListingCard from '@/Components/Card/ListingCard.vue'
 
                     <div class="grid md:grid-cols-3 gap-x-2 gap-y-2 my-6">
                         <div class="p-4 rounded-lg shadow w-full text-center">
-                            $160: Half the day -> Which includes all the facilities
+                            $160: Half the day
                         </div>
 
                         <div class="p-4 rounded-lg shadow w-full text-center">
-                            $300: The whole day -> Which includes all the facilities
+                            $300: The whole day
                         </div>
                     </div>
                 </div>

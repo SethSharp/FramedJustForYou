@@ -4,13 +4,14 @@ import Section from '@/Components/Section.vue'
 import Carousel from '@/Components/Carousel.vue'
 import SplideContent from '@/Components/Splide/SplideContent.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import Image from "@/Components/Image.vue";
 </script>
 
 <template>
     <Head title="Jigsaw" />
 
     <PrimaryLayout>
-        <Section :back="route('services.framing')">
+        <Section>
             <template #header> Jigsaw Puzzles </template>
             <template #content>
                 <Carousel type="fade" :autoPlay="false">
@@ -35,6 +36,8 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
                         content="The result of this process ensures your framed jigsaw puzzle is fade resistant, preserved and easily maintained by simply wiping clean."
                     />
                 </Carousel>
+
+                <Image src="jigsaw/giraffe.png"  class="w-1/2"/>
             </template>
         </Section>
     </PrimaryLayout>
