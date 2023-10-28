@@ -1,5 +1,5 @@
 <script setup>
-import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
+import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
 
 defineProps({
     href: {
@@ -10,7 +10,7 @@ defineProps({
         type: Boolean,
         default: false,
     },
-});
+})
 </script>
 
 <template>

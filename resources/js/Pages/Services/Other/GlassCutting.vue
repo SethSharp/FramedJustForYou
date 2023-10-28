@@ -1,7 +1,7 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import Section from "@/Components/Section.vue";
+import { Head } from '@inertiajs/vue3'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import Section from '@/Components/Section.vue'
 </script>
 
 <template>
@@ -11,9 +11,7 @@ import Section from "@/Components/Section.vue";
         <Section>
             <template #header> Glass Cutting </template>
 
-            <template #content>
-
-            </template>
+            <template #content> </template>
         </Section>
     </PrimaryLayout>
 </template>

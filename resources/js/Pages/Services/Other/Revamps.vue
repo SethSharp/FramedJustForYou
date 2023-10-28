@@ -1,7 +1,7 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import Section from "@/Components/Section.vue";
+import { Head } from '@inertiajs/vue3'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import Section from '@/Components/Section.vue'
 </script>
 
 <template>
@@ -13,8 +13,8 @@ import Section from "@/Components/Section.vue";
             <template #subtitle> Old frames and pictures needing some love? </template>
             <template #content>
                 <p class="mb-4">
-                    If you have a frame or picture that needs to well deserved tender loving care, then we can
-                    provide that.
+                    If you have a frame or picture that needs to well deserved tender loving care,
+                    then we can provide that.
                 </p>
                 <Image src="fixes/fixed-1.png" alt="Fix image 1" />
             </template>
@@ -23,9 +23,7 @@ import Section from "@/Components/Section.vue";
         <Section>
             <template #header> Our Process </template>
             <template #content>
-                <p class="mb-4">
-                    Step 1....
-                </p>
+                <p class="mb-4">Step 1....</p>
             </template>
         </Section>
     </PrimaryLayout>

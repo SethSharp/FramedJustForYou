@@ -1,6 +1,6 @@
 <script setup>
-import {ref} from "vue";
-import {ArrowPathIcon} from "@heroicons/vue/20/solid/index.js"
+import { ref } from 'vue'
+import { ArrowPathIcon } from '@heroicons/vue/20/solid/index.js'
 
 const props = defineProps({
     src: String,
@@ -20,11 +20,20 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
 
 <template>
     <div class="relative">
-        <div v-if="isLoading" class="absolute w-full h-full flex flex-col justify-center items-center">
+        <div
+            v-if="isLoading"
+            class="absolute w-full h-full flex flex-col justify-center items-center"
+        >
             <p class="animate-spin">
-                <ArrowPathIcon class="w-10 h-10 text-gray-300"/>
+                <ArrowPathIcon class="w-10 h-10 text-gray-300" />
             </p>
         </div>
-        <img @load="imageLoaded" :src="configPath" :alt="alt" :class="roundedClass" class="object-cover w-full rounded-2xl" />
+        <img
+            @load="imageLoaded"
+            :src="configPath"
+            :alt="alt"
+            :class="roundedClass"
+            class="object-cover w-full rounded-2xl"
+        />
     </div>
 </template>

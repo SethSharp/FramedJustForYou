@@ -1,11 +1,11 @@
 <script setup>
-import {SplideSlide} from "@splidejs/vue-splide";
-import Image from "@/Components/Image.vue";
+import { SplideSlide } from '@splidejs/vue-splide'
+import Image from '@/Components/Image.vue'
 
 const props = defineProps({
     image: String,
     title: String,
-    content: String
+    content: String,
 })
 </script>
 
@@ -15,7 +15,7 @@ const props = defineProps({
             <Image :src="image" />
         </div>
         <div class="lg:w-1/2 p-6">
-            <h1 class="text-xl font-bold"> {{ title }} </h1>
+            <h1 class="text-xl font-bold">{{ title }}</h1>
             <p>
                 {{ content }}
             </p>

@@ -1,9 +1,5 @@
 <script setup>
-import {
-    DevicePhoneMobileIcon,
-    PhoneIcon,
-    EnvelopeIcon,
-} from "@heroicons/vue/20/solid/index.js";
+import { DevicePhoneMobileIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/vue/20/solid/index.js'
 </script>
 
 <template>
@@ -27,5 +23,4 @@ import {
             </div>
         </div>
     </div>
-
 </template>

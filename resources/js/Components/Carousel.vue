@@ -1,15 +1,15 @@
 <script setup>
-import { Splide } from "@splidejs/vue-splide";
-import '@splidejs/vue-splide/css';
+import { Splide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
 
 const props = defineProps({
     type: {
         type: String,
-        default: 'loop'
+        default: 'loop',
     },
     autoPlay: {
         type: Boolean,
-        default: true
+        default: true,
     },
     height: String,
 })
@@ -19,9 +19,8 @@ const options = {
     type: props.type,
     perPage: 1,
     autoplay: props.autoPlay,
-    height: props.height
+    height: props.height,
 }
-
 </script>
 
 <template>

@@ -1,11 +1,11 @@
 <script setup>
-import {Link} from "@inertiajs/vue3";
-import {ChevronRightIcon} from "@heroicons/vue/20/solid/index.js";
+import { Link } from '@inertiajs/vue3'
+import { ChevronRightIcon } from '@heroicons/vue/20/solid/index.js'
 
 defineProps({
     title: String,
     href: String,
-    links: Array
+    links: Array,
 })
 </script>
 
@@ -22,7 +22,7 @@ defineProps({
                     :active="link.href"
                     class="decoration-2 hover:underline hover:underline-offset-2"
                 >
-                    {{ link.name  }}
+                    {{ link.name }}
                 </Link>
             </li>
         </ul>

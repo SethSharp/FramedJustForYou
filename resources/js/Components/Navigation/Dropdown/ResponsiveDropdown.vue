@@ -1,20 +1,23 @@
 <script setup>
-import { ref } from 'vue';
-import {
-    ChevronDownIcon,
-    ChevronUpIcon
-} from "@heroicons/vue/20/solid/index.js";
+import { ref } from 'vue'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/20/solid/index.js'
 
-const open = ref(false);
+const open = ref(false)
 </script>
 
 <template>
     <div>
         <div @click="open = !open" class="cursor-pointer">
             <div class="flex">
-                <slot name="trigger"/>
-                <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-5 animation duration-300 ease-in-out" />
-                <ChevronUpIcon v-if="open" class="w-6 h-6 mt-5 animation duration-300 ease-in-out" />
+                <slot name="trigger" />
+                <ChevronDownIcon
+                    v-if="!open"
+                    class="w-6 h-6 mt-5 animation duration-300 ease-in-out"
+                />
+                <ChevronUpIcon
+                    v-if="open"
+                    class="w-6 h-6 mt-5 animation duration-300 ease-in-out"
+                />
             </div>
 
             <Transition
@@ -25,11 +28,7 @@ const open = ref(false);
                 leave-from-class="opacity-100 scale-100"
                 leave-to-class="opacity-0 scale-95"
             >
-                <div
-                    v-show="open"
-                    style="display: none"
-                    @click="open = false"
-                >
+                <div v-show="open" style="display: none" @click="open = false">
                     <div>
                         <slot name="content" />
                     </div>

@@ -1,93 +1,92 @@
 <script setup>
-import { ref } from 'vue';
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
-import NavLink from '@/Components/Navigation/NavLink.vue';
-import ResponsiveNavLink from "@/Components/Navigation/ResponsiveNavLink.vue";
-import { Link } from '@inertiajs/vue3';
-import {Bars3Icon, XMarkIcon} from "@heroicons/vue/20/solid/index.js";
-import Footer from "@/Layouts/Footer.vue";
-import Column from "@/Components/Navigation/MegaMenu/Column.vue";
-import ResponsiveDropdown from "@/Components/Navigation/Dropdown/ResponsiveDropdown.vue";
-import MegaMenu from "@/Components/Navigation/MegaMenu.vue";
-import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
-let showingNavigationDropdown = ref(false);
+import { ref } from 'vue'
+import ApplicationLogo from '@/Components/ApplicationLogo.vue'
+import NavLink from '@/Components/Navigation/NavLink.vue'
+import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
+import { Link } from '@inertiajs/vue3'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid/index.js'
+import Footer from '@/Layouts/Footer.vue'
+import Column from '@/Components/Navigation/MegaMenu/Column.vue'
+import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
+import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
+import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
+let showingNavigationDropdown = ref(false)
 
 const links = [
     {
-        name: "Home",
-        href: "home",
-        active: "home",
+        name: 'Home',
+        href: 'home',
+        active: 'home',
     },
     {
-        name: "About",
-        href: "about",
-        active: "about",
+        name: 'About',
+        href: 'about',
+        active: 'about',
     },
     {
-        name: "Services",
-        href: "",
-        active: "services.*",
+        name: 'Services',
+        href: '',
+        active: 'services.*',
         options: [
             {
-                name: "Framing",
-                href: "services.framing",
-                active: "services.framing.*",
+                name: 'Framing',
+                href: 'services.framing',
+                active: 'services.framing.*',
             },
             {
-                name: "Printing & Canvas",
-                href: "services.printing",
-                active: "services.printing",
+                name: 'Printing & Canvas',
+                href: 'services.printing',
+                active: 'services.printing',
             },
-        ]
+        ],
     },
     {
-        name: "FAQ",
-        href: "faq",
-        active: "faq",
+        name: 'FAQ',
+        href: 'faq',
+        active: 'faq',
     },
     {
-        name: "Art Studio",
-        href: "studio",
-        active: "studio",
+        name: 'Art Studio',
+        href: 'studio',
+        active: 'studio',
     },
     {
-        name: "Contact",
-        href: "contact",
-        active: "contact"
-    }
+        name: 'Contact',
+        href: 'contact',
+        active: 'contact',
+    },
 ]
-
 
 const customFraming1 = [
     {
         name: 'Acrylic',
         href: route('services.framing.acrylic'),
-        active: 'services.framing.acrylic'
+        active: 'services.framing.acrylic',
     },
     {
         name: 'Australian Framing Kits',
         href: route('services.framing.australian'),
-        active: 'services.framing.australian'
+        active: 'services.framing.australian',
     },
     {
         name: 'Canvas Stretching',
         href: route('services.framing.canvas-stretching'),
-        active: 'services.framing.canvas-stretching'
+        active: 'services.framing.canvas-stretching',
     },
     {
         name: 'Hanging Systems',
         href: route('services.framing.hanging-systems'),
-        active: 'services.framing.hanging-systems'
+        active: 'services.framing.hanging-systems',
     },
     {
         name: 'Indigenous Art',
         href: route('services.framing.indigenous-art'),
-        active: 'services.framing.indigenous-art'
+        active: 'services.framing.indigenous-art',
     },
     {
         name: 'Jigsaws',
         href: route('services.framing.jigsaws'),
-        active: 'services.framing.jigsaws'
+        active: 'services.framing.jigsaws',
     },
 ]
 
@@ -95,32 +94,32 @@ const customFraming2 = [
     {
         name: 'Medals & Memorabilia',
         href: route('services.framing.medals-memorabilia'),
-        active: 'services.framing.medals-memorabilia'
+        active: 'services.framing.medals-memorabilia',
     },
     {
         name: 'Mirror',
         href: route('services.framing.mirror'),
-        active: 'services.framing.mirror'
+        active: 'services.framing.mirror',
     },
     {
         name: 'Original Artwork',
         href: route('services.framing.original-artwork'),
-        active: 'services.framing.original-artwork'
+        active: 'services.framing.original-artwork',
     },
     {
         name: 'Prints, Posters & Photos',
         href: route('services.framing.prints-posters-and-photos'),
-        active: 'services.framing.prints-posters-and-photos'
+        active: 'services.framing.prints-posters-and-photos',
     },
     {
         name: 'Tapestries and Needlework',
         href: route('services.framing.tapestries-and-needlework'),
-        active: 'services.framing.tapestries-and-needlework'
+        active: 'services.framing.tapestries-and-needlework',
     },
     {
         name: 'Restorations',
         href: route('services.framing.restorations'),
-        active: 'services.framing.restorations'
+        active: 'services.framing.restorations',
     },
 ]
 
@@ -129,7 +128,7 @@ const printing = [
         name: 'Photos on Canvas',
         href: route('services.printing') + '#photos-on-canvases',
         link: '#photos-on-canvases',
-        active: 'services.printing'
+        active: 'services.printing',
     },
     {
         // Associated with print on demand with champton
@@ -138,26 +137,26 @@ const printing = [
         name: 'Printing on Demand',
         href: route('services.printing') + '#printing-on-canvases',
         link: '#printing-on-canvases',
-        active: 'services.printing'
+        active: 'services.printing',
     },
 ]
 
 const other = [
     // Glass type (Booklet)
     {
-        name: "Glass & Glass Cutting",
+        name: 'Glass & Glass Cutting',
         href: route('services.other.glass-cutting'),
-        active: 'services.other.glass-cutting'
+        active: 'services.other.glass-cutting',
     },
     {
-        name: "Matboard Cutting",
+        name: 'Matboard Cutting',
         href: route('services.other.matboard-cutting'),
-        active: 'services.other.matboard-cutting'
+        active: 'services.other.matboard-cutting',
     },
     {
         name: 'Ready Made Frames',
         href: route('services.other.ready-made'),
-        active: 'services.other.ready-made'
+        active: 'services.other.ready-made',
     },
 ]
 </script>
@@ -166,8 +165,9 @@ const other = [
     <div>
         <div class="bg-primary-600 text-white text-center justify-center py-1">
             Welcome to our new site! Check out our google reviews
-            <a class="font-bold"
-               href="https://www.google.com/search?client=opera&q=framed+just+for+you&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x6b91104badf99849:0x5081ce9cf421fff2,1,,,,"
+            <a
+                class="font-bold"
+                href="https://www.google.com/search?client=opera&q=framed+just+for+you&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x6b91104badf99849:0x5081ce9cf421fff2,1,,,,"
             >
                 here
             </a>
@@ -186,11 +186,10 @@ const other = [
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full">
-                                <div
-                                    v-for="link in links"
-                                    class="animation duration-300 my-auto"
-                                >
+                            <div
+                                class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full"
+                            >
+                                <div v-for="link in links" class="animation duration-300 my-auto">
                                     <div v-if="!link.options">
                                         <NavLink
                                             :href="route(link.href)"
@@ -202,9 +201,7 @@ const other = [
                                     <div v-else>
                                         <MegaMenu>
                                             <template #trigger>
-                                                <NavLink
-                                                    :active="route().current(link.active)"
-                                                >
+                                                <NavLink :active="route().current(link.active)">
                                                     {{ link.name }}
                                                 </NavLink>
                                             </template>
@@ -227,10 +224,7 @@ const other = [
                                                     :links="printing"
                                                 />
 
-                                                <Column
-                                                    title="Other"
-                                                    :links="other"
-                                                />
+                                                <Column title="Other" :links="other" />
                                             </template>
                                         </MegaMenu>
                                     </div>
@@ -245,9 +239,7 @@ const other = [
                         <div class="-mr-2 w-full flex justify-end lg:hidden">
                             <div class="w-1/2">
                                 <Link :href="route('home')">
-                                    <ApplicationLogo
-                                        class="block"
-                                    />
+                                    <ApplicationLogo class="block" />
                                 </Link>
                             </div>
                             <div class="w-1/2 my-auto flex justify-end">
@@ -311,10 +303,7 @@ const other = [
                                                 :links="printing"
                                             />
 
-                                            <Column
-                                                title="Other"
-                                                :links="other"
-                                            />
+                                            <Column title="Other" :links="other" />
                                         </div>
                                     </template>
                                 </ResponsiveDropdown>

@@ -1,7 +1,7 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import Section from "@/Components/Section.vue";
+import { Head } from '@inertiajs/vue3'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import Section from '@/Components/Section.vue'
 </script>
 
 <template>
@@ -9,9 +9,7 @@ import Section from "@/Components/Section.vue";
 
     <PrimaryLayout>
         <Section>
-            <template #header>
-                Coming soon...
-            </template>
+            <template #header> Coming soon... </template>
         </Section>
     </PrimaryLayout>
 </template>

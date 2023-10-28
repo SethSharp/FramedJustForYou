@@ -1,43 +1,41 @@
 <script setup>
-import {
-    ArrowRightOnRectangleIcon
-} from "@heroicons/vue/20/solid/index.js";
+import { ArrowRightOnRectangleIcon } from '@heroicons/vue/20/solid/index.js'
 
 defineProps({
     icon: {
         type: Boolean,
-        default: true
-    }
+        default: true,
+    },
 })
 
 let openingHoursConfig = [
     {
-        day: "Sunday",
-        hours: "Closed"
+        day: 'Sunday',
+        hours: 'Closed',
     },
     {
-        day: "Monday",
-        hours: "8:30-5:00"
+        day: 'Monday',
+        hours: '8:30-5:00',
     },
     {
-        day: "Tuesday",
-        hours: "8:30-5:00"
+        day: 'Tuesday',
+        hours: '8:30-5:00',
     },
     {
-        day: "Wednesday",
-        hours: "8:30-5:00"
+        day: 'Wednesday',
+        hours: '8:30-5:00',
     },
     {
-        day: "Thursday",
-        hours: "8:30-5:00"
+        day: 'Thursday',
+        hours: '8:30-5:00',
     },
     {
-        day: "Friday",
-        hours: "8:30-5:00"
+        day: 'Friday',
+        hours: '8:30-5:00',
     },
     {
-        day: "Saturday",
-        hours: "9:00-4:00"
+        day: 'Saturday',
+        hours: '9:00-4:00',
     },
 ]
 </script>
@@ -49,7 +47,11 @@ let openingHoursConfig = [
             <div class="grid grid-cols-1">
                 <div
                     v-for="day in openingHoursConfig"
-                    :class="openingHoursConfig[new Date().getDay()].day === day.day ? 'font-bold text-lg' : ''"
+                    :class="
+                        openingHoursConfig[new Date().getDay()].day === day.day
+                            ? 'font-bold text-lg'
+                            : ''
+                    "
                 >
                     <span> {{ day.day }}: </span>
                     <span> {{ day.hours }} </span>

@@ -1,10 +1,10 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import Section from "@/Components/Section.vue";
-import {PrinterIcon} from "@heroicons/vue/20/solid/index.js";
-import Service from "@/Components/Card/Services/Service.vue";
-import PricingTable from "@/Components/Card/PricingTable.vue";
+import { Head } from '@inertiajs/vue3'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import Section from '@/Components/Section.vue'
+import { PrinterIcon } from '@heroicons/vue/20/solid/index.js'
+import Service from '@/Components/Card/Services/Service.vue'
+import PricingTable from '@/Components/Card/PricingTable.vue'
 
 const squareCanvas = [
     { inches: '12"x12"', cm: '30cm x 30cm', pricing: '$70.00' },
@@ -14,7 +14,7 @@ const squareCanvas = [
     { inches: '30"x30"', cm: '76cm x 76cm', pricing: '$260.00' },
     { inches: '36"x36"', cm: '91cm x 91cm', pricing: '$300.00' },
     { inches: '40"x40"', cm: '102cm x 102cm', pricing: '$330.00' },
-];
+]
 
 const canvasSquares = {
     title: 'Squares Canvas',
@@ -27,7 +27,7 @@ const canvasSquares = {
         ['30"x30"', '76cmx76cm', '$304'],
         ['36"x36"', '91cmx91cm', '$374'],
         ['40"x40"', '102cmx102cm', '$408'],
-    ]
+    ],
 }
 
 const canvasPanoramic = {
@@ -41,7 +41,7 @@ const canvasPanoramic = {
         ['20"x40"', '30cmx30cm', '$100'],
         ['16"x48"', '30cmx30cm', '$100'],
         ['24"x48"', '30cmx30cm', '$100'],
-    ]
+    ],
 }
 
 const canvasRectangles = {
@@ -60,7 +60,7 @@ const canvasRectangles = {
         ['30"x40"', '76cmx102cm', '$355'],
         ['32"x48"', '80cmx120cm', '$415'],
         ['36"x48"', '91cmx120cm', '$405'],
-    ]
+    ],
 }
 
 const printingPaper = {
@@ -81,27 +81,23 @@ const printingPaper = {
         ['24"x24"', '61x61cm', '$85', '$96', '$120'],
         ['20"x40"', '50x101cm', '$130', '$160', '$180'],
         ['24"x36"', '61x91cm', '$130', '$160', '$180'],
-    ]
+    ],
 }
 
 const config = [
     {
-        header: "Photos on Canvas - Ready to Hang!",
-        description: "Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that and fit it to the correct size you want with the canvase sizes below.",
-        href: "photos-on-canvases",
-        data: [
-            canvasSquares,
-            canvasPanoramic,
-            canvasRectangles
-        ],
+        header: 'Photos on Canvas - Ready to Hang!',
+        description:
+            "Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that and fit it to the correct size you want with the canvase sizes below.",
+        href: 'photos-on-canvases',
+        data: [canvasSquares, canvasPanoramic, canvasRectangles],
     },
     {
-        header: "Printing only prices",
-        description: "If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.",
-        href: "printing-on-canvases",
-        data: [
-            printingPaper
-        ]
+        header: 'Printing only prices',
+        description:
+            'If you have a photo but are not after a canvas print we can still print that photo out onto some of our high quality photo and art paper. This gives you the ability to send it away to some or stick it in your books. *Note that these are not ready to hang.',
+        href: 'printing-on-canvases',
+        data: [printingPaper],
     },
 ]
 </script>
@@ -116,8 +112,9 @@ const config = [
             </template>
             <template #content>
                 <div>
-                    We offer a range of services when it comes to printing and canvas. Whether you are a painter,
-                    or wanting to put your favourite photos on your phone on a canvas, we got you covered!
+                    We offer a range of services when it comes to printing and canvas. Whether you
+                    are a painter, or wanting to put your favourite photos on your phone on a
+                    canvas, we got you covered!
                 </div>
 
                 <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">

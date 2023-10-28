@@ -1,7 +1,7 @@
 <script setup>
-import * as SocialIcons from "@/Components/Icons/Social"
-import OpeningHours from "@/Components/OpeningHours.vue";
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import * as SocialIcons from '@/Components/Icons/Social'
+import OpeningHours from '@/Components/OpeningHours.vue'
+import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 
 const navigation = {
     pages: [
@@ -47,9 +47,16 @@ const social = [
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <div class="space-y-8">
                     <ApplicationLogo />
-                    <p class="text-md leading-6 text-gray-300">Framing all your needs on the Gold Coast since 1993</p>
+                    <p class="text-md leading-6 text-gray-300">
+                        Framing all your needs on the Gold Coast since 1993
+                    </p>
                     <div class="flex space-x-6">
-                        <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400">
+                        <a
+                            v-for="item in social"
+                            :key="item.name"
+                            :href="item.href"
+                            class="text-gray-500 hover:text-gray-400"
+                        >
                             <span class="sr-only">{{ item.name }}</span>
                             <component :is="item.icon" />
                         </a>
@@ -61,7 +68,11 @@ const social = [
                             <h3 class="text-md font-semibold leading-6 text-white">Pages</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li v-for="item in navigation.pages" :key="item.name">
-                                    <a :href="item.href" class="text-md leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                                    <a
+                                        :href="item.href"
+                                        class="text-md leading-6 text-gray-300 hover:text-white"
+                                        >{{ item.name }}</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -69,15 +80,25 @@ const social = [
                             <h3 class="text-md font-semibold leading-6 text-white">Framing</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li v-for="item in navigation.framing" :key="item.name">
-                                    <a :href="item.href" class="text-md leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                                    <a
+                                        :href="item.href"
+                                        class="text-md leading-6 text-gray-300 hover:text-white"
+                                        >{{ item.name }}</a
+                                    >
                                 </li>
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-md font-semibold leading-6 text-white">Printing & Canvas</h3>
+                            <h3 class="text-md font-semibold leading-6 text-white">
+                                Printing & Canvas
+                            </h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li v-for="item in navigation.printing" :key="item.name">
-                                    <a :href="item.href" class="text-md leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
+                                    <a
+                                        :href="item.href"
+                                        class="text-md leading-6 text-gray-300 hover:text-white"
+                                        >{{ item.name }}</a
+                                    >
                                 </li>
                             </ul>
                         </div>
@@ -93,7 +114,9 @@ const social = [
                 </div>
             </div>
             <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-                <p class="text-xs leading-5 text-gray-200">&copy; 2023 FramedJustForYou, Inc. All rights reserved.</p>
+                <p class="text-xs leading-5 text-gray-200">
+                    &copy; 2023 FramedJustForYou, Inc. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>

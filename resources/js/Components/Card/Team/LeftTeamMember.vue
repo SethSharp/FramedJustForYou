@@ -1,6 +1,5 @@
 <script setup>
-
-import Image from "@/Components/Image.vue";
+import Image from '@/Components/Image.vue'
 
 const props = defineProps({
     name: String,
@@ -10,7 +9,6 @@ const props = defineProps({
     side: Boolean,
     test: Boolean,
 })
-
 </script>
 
 <template>
@@ -22,24 +20,26 @@ const props = defineProps({
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
     >
-        <div v-if="test" class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden">
-            <div class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100">
+        <div
+            v-if="test"
+            class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden"
+        >
+            <div
+                class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100"
+            >
                 <div class="mx-8 my-10 rounded-l-xl transition duration-700 bg-gray-100 p-2">
-                    <h1 class="text-4xl text-gray-600"> {{ name}} </h1>
+                    <h1 class="text-4xl text-gray-600">{{ name }}</h1>
                     <span class="text-2xl text-gray-500"> {{ position }} </span>
                     <p class="mt-4 text-gray-400">
                         {{ description }}
                     </p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200">
-                <Image
-                    class="mx-auto my-auto"
-                    not-rounded
-                    :src="image"
-                />
+            <div
+                class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
+            >
+                <Image class="mx-auto my-auto" not-rounded :src="image" />
             </div>
         </div>
     </Transition>
-
 </template>

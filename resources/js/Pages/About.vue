@@ -1,41 +1,45 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
-import PrimaryLayout from "@/Layouts/PrimaryLayout.vue";
-import * as TeamMemberCards from "@/Components/Card/Team";
-import Section from "@/Components/Section.vue";
+import { Head } from '@inertiajs/vue3'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import * as TeamMemberCards from '@/Components/Card/Team'
+import Section from '@/Components/Section.vue'
 
 const teamMembers = [
     {
-        name: "Diane",
-        position: "Director",
-        description: "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
-        image: "team/dianne-temp.jpeg",
+        name: 'Diane',
+        position: 'Director',
+        description:
+            "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
+        image: 'team/dianne-temp.jpeg',
         side: false,
-        component: 'RightTeamMember'
+        component: 'RightTeamMember',
     },
     {
-        name: "Karen",
-        position: "Senior Framer",
-        description: "With over three decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.",
-        image: "team/dianne-temp.jpeg",
+        name: 'Karen',
+        position: 'Senior Framer',
+        description:
+            'With over three decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
+        image: 'team/dianne-temp.jpeg',
         side: false,
-        component: 'LeftTeamMember'
+        component: 'LeftTeamMember',
     },
     {
-        name: "John",
-        position: "Framer",
-        description: "John has been a valuable addition to our team for more than half a year, making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise and is a valuable asset to FramedJustForYou.",
-        image: "team/dianne-temp.jpeg",
+        name: 'John',
+        position: 'Framer',
+        description:
+            'John has been a valuable addition to our team for more than half a year, making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise and is a valuable asset to FramedJustForYou.',
+        image: 'team/dianne-temp.jpeg',
         side: false,
-        component: 'RightTeamMember'
+        component: 'RightTeamMember',
     },
     {
-        name: "Bethany",
-        position: "Junior Framer",
-        description: "Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.",
-        image: "team/dianne-temp.jpeg",
+        name: 'Bethany',
+        position: 'Junior Framer',
+        description:
+            'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
+        image: 'team/dianne-temp.jpeg',
         side: false,
-        component: 'LeftTeamMember'
+        component: 'LeftTeamMember',
     },
 ]
 </script>
@@ -46,28 +50,23 @@ const teamMembers = [
     <PrimaryLayout>
         <div id="intro">
             <Section>
-                <template #header>
-                    Framed Just For You
-                </template>
-                <template #subtitle>
-                    Nothing but passion
-                </template>
-                <template #title>
-                    How did it all start?
-                </template>
+                <template #header> Framed Just For You </template>
+                <template #subtitle> Nothing but passion </template>
+                <template #title> How did it all start? </template>
                 <template #content>
-                    Picture framing commenced in 1993, leading to the establishment of a dedicated framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142 Brisbane Road, where it served the community for the subsequent two decades. A significant move took place in August 2019, bringing the business to its current location at 122 Brisbane Road. With nearly 60 years of collective experience in the picture framing industry, the journey continues.
+                    Picture framing commenced in 1993, leading to the establishment of a dedicated
+                    framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142
+                    Brisbane Road, where it served the community for the subsequent two decades. A
+                    significant move took place in August 2019, bringing the business to its current
+                    location at 122 Brisbane Road. With nearly 60 years of collective experience in
+                    the picture framing industry, the journey continues.
                 </template>
             </Section>
         </div>
         <div id="team-member">
             <Section>
-                <template #header>
-                    Meet the Team
-                </template>
-                <template #subtitle>
-                    ...with over 55 years of experience
-                </template>
+                <template #header> Meet the Team </template>
+                <template #subtitle> ...with over 55 years of experience </template>
                 <template #content>
                     <component
                         v-for="teamMember in teamMembers"
