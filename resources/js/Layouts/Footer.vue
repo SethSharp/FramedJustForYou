@@ -13,11 +13,11 @@ const navigation = {
     ],
     framing: [
         { name: 'Custom', href: route('services.framing') },
-        { name: 'Memorabilia', href: route('services.framing.memorabilia') },
-        { name: 'Jigsaw', href: route('services.framing.jigsaw') },
+        { name: 'Memorabilia', href: route('services.framing.medals-memorabilia') },
+        { name: 'Jigsaw', href: route('services.framing.jigsaws') },
         { name: 'Mirror', href: route('services.framing.mirror') },
-        { name: 'Embroidery', href: route('services.framing.embroidery') },
-        { name: 'Fixes', href: route('services.framing.fix') },
+        { name: 'Embroidery', href: route('services.framing.tapestries-and-needlework') },
+        { name: 'Restorations', href: route('services.framing.restorations') },
     ],
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },

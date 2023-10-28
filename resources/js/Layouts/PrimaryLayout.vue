@@ -58,21 +58,44 @@ const links = [
 ]
 
 
-const customFraming = [
+const customFraming1 = [
     {
-        name: 'Embroidery',
-        href: route('services.framing.embroidery'),
-        active: 'services.framing.embroidery'
+        name: 'Acrylic',
+        href: route('services.framing.acrylic'),
+        active: 'services.framing.acrylic'
     },
     {
-        name: 'Jigsaw',
-        href: route('services.framing.jigsaw'),
-        active: 'services.framing.jigsaw'
+        name: 'Australian Framing Kits',
+        href: route('services.framing.australian'),
+        active: 'services.framing.australian'
     },
     {
-        name: 'Memorabilia',
-        href: route('services.framing.memorabilia'),
-        active: 'services.framing.memorabilia'
+        name: 'Canvas Stretching',
+        href: route('services.framing.canvas-stretching'),
+        active: 'services.framing.canvas-stretching'
+    },
+    {
+        name: 'Hanging Systems',
+        href: route('services.framing.hanging-systems'),
+        active: 'services.framing.hanging-systems'
+    },
+    {
+        name: 'Indigenous Art',
+        href: route('services.framing.indigenous-art'),
+        active: 'services.framing.indigenous-art'
+    },
+    {
+        name: 'Jigsaws',
+        href: route('services.framing.jigsaws'),
+        active: 'services.framing.jigsaws'
+    },
+]
+
+const customFraming2 = [
+    {
+        name: 'Medals & Memorabilia',
+        href: route('services.framing.medals-memorabilia'),
+        active: 'services.framing.medals-memorabilia'
     },
     {
         name: 'Mirror',
@@ -80,21 +103,24 @@ const customFraming = [
         active: 'services.framing.mirror'
     },
     {
-        name: 'Prints & Posters',
-        href: route('services.framing.memorabilia'),
-        active: 'services.framing.memorabilia'
+        name: 'Original Artwork',
+        href: route('services.framing.original-artwork'),
+        active: 'services.framing.original-artwork'
     },
     {
-        name: 'Stretched Canvases',
-        href: route('services.printing') + '#stretched-canvases',
-        link: '#stretched-canvases',
-        active: 'services.printing'
+        name: 'Prints, Posters & Photos',
+        href: route('services.framing.prints-posters-and-photos'),
+        active: 'services.framing.prints-posters-and-photos'
     },
     {
-        name: 'Wedding Photos',
-        href: route('services.printing') + '#stretched-canvases',
-        link: '#stretched-canvases',
-        active: 'services.printing'
+        name: 'Tapestries and Needlework',
+        href: route('services.framing.tapestries-and-needlework'),
+        active: 'services.framing.tapestries-and-needlework'
+    },
+    {
+        name: 'Restorations',
+        href: route('services.framing.restorations'),
+        active: 'services.framing.restorations'
     },
 ]
 
@@ -129,21 +155,10 @@ const other = [
         active: 'services.other.matboard-cutting'
     },
     {
-        name: "Restorations",
-        href: route('services.other.revamps'),
-        active: 'services.other.revamps'
-    },
-    {
         name: 'Ready Made Frames',
         href: route('services.other.ready-made'),
         active: 'services.other.ready-made'
     },
-    {
-        // Framing supplies: Moldings, hangers, canvas off the role (DIY)
-        name: 'Framing Supplies',
-        href: route('services.other.ready-made'),
-        active: 'services.other.ready-made'
-    }
 ]
 </script>
 
@@ -199,7 +214,13 @@ const other = [
                                                 <Column
                                                     title="Custom Framing"
                                                     :href="route('services.framing')"
-                                                    :links="customFraming"
+                                                    :links="customFraming1"
+                                                />
+
+                                                <Column
+                                                    title=""
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming2"
                                                 />
 
                                                 <Column

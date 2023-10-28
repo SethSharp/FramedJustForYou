@@ -9,8 +9,8 @@ import Image from "@/Components/Image.vue";
     <Head title="Mirror" />
 
     <PrimaryLayout>
-        <Section :back="route('services.framing')">
-            <template #header> Fixes </template>
+        <Section>
+            <template #header> Restorations </template>
             <template #subtitle> Old frames and pictures needing some love? </template>
             <template #content>
                 <p class="mb-4">

@@ -8,6 +8,7 @@ import {
 import OpeningHours from "@/Components/OpeningHours.vue";
 import ContactDetails from "@/Components/ContactDetails.vue";
 import Map from "@/Components/Map.vue";
+import FaqCard from "@/Components/Card/FaqCard.vue";
 </script>
 
 <template>
@@ -19,7 +20,7 @@ import Map from "@/Components/Map.vue";
                 FAQ
             </template>
             <template #content>
-
+                <FaqCard />
             </template>
         </Section>
     </PrimaryLayout>

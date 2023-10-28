@@ -19,7 +19,7 @@ const isActive = (link) => {
 
 <template>
     <div class="text-xl pl-6 flex-wrap">
-        <Link :href="href" class="font-bold flex hover:underline underline-offset-2">
+        <Link v-if="title" :href="href" class="font-bold flex hover:underline underline-offset-2">
             {{ title }}
             <ChevronRightIcon class="w-7 h-7" />
         </Link>
