@@ -32,7 +32,7 @@ const props = defineProps({
             <div
                 class="w-full lg:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
             >
-                <div class="mx-8 my-10 rounded-r-xl transition duration-700 bg-gray-100 p-2">
+                <div class="mx-8 my-10 rounded-r-xl transition duration-700 p-2">
                     <h1 class="text-4xl text-gray-600">{{ name }}</h1>
                     <span class="text-2xl text-gray-500"> {{ position }} </span>
                     <p class="mt-4 text-gray-400">

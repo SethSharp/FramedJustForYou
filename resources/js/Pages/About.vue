@@ -32,20 +32,11 @@ const teamMembers = [
         side: false,
         component: 'RightTeamMember',
     },
-    {
-        name: 'Bethany',
-        position: 'Junior Framer',
-        description:
-            'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills and managing some of our social media sites, consistently delivering outstanding work.',
-        image: 'team/dianne-temp.jpeg',
-        side: false,
-        component: 'LeftTeamMember',
-    },
+    {  },
 ]
 </script>
 
 <template>
-    <Head title="Home" />
 
     <PrimaryLayout>
         <div id="intro">

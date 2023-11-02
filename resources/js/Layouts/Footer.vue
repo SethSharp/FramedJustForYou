@@ -22,21 +22,21 @@ const navigation = {
     ],
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },
-        { name: 'Printing on Deman', href: route('services.printing') + '#printing-on-canvases' },
+        { name: 'Printing on Demand', href: route('services.printing') + '#printing-on-canvases' },
         { name: 'Giclee\'s', href: route('services.printing') + '#giclee' },
     ],
 }
 
 const social = [
     {
-        name: 'Facebook',
-        href: '#',
-        icon: SocialIcons['Facebook'],
-    },
-    {
         name: 'Instagram',
         href: 'https://www.instagram.com/framedjust4u/',
         icon: SocialIcons['Instagram'],
+    },
+    {
+        name: 'Facebook',
+        href: 'https://facebook.com/framedjust4u/',
+        icon: SocialIcons['Facebook'],
     },
 ]
 </script>

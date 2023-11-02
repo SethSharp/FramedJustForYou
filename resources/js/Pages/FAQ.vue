@@ -3,7 +3,7 @@ import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Components/Section.vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ChevronUpIcon } from '@heroicons/vue/20/solid'
+import { PlusIcon, MinusIcon } from '@heroicons/vue/20/solid'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 
 const faqs = [
@@ -64,8 +64,12 @@ const faqs = [
                                 <span>
                                     {{ faq.title }}
                                 </span>
-                                <ChevronUpIcon
-                                    :class="open ? 'rotate-180 transform' : ''"
+                                <PlusIcon
+                                    v-if="!open"
+                                    class="h-7 w-7 text-primary-500"
+                                />
+                                <MinusIcon
+                                    v-if="open"
                                     class="h-7 w-7 text-primary-500"
                                 />
                             </DisclosureButton>

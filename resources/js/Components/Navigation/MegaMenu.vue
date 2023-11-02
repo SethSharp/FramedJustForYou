@@ -28,7 +28,7 @@ const open = ref(false)
         <ChevronDownIcon v-if="!open" class="w-6 h-6 mt-1.5 transform duration-300" />
         <ChevronUpIcon v-if="open" class="w-6 h-6 mt-1.5 transform duration-300" />
     </div>
-    <div class="inset-0 absolute z-20 sm:flex" v-show="open" @click="open = false">
+    <div class="inset-0 absolute z-50 sm:flex" v-show="open" @click="open = false">
         <div class="mt-32 w-3/4 mx-auto">
             <div
                 class="bg-white rounded-xl shadow-xl mx-auto mt-2 py-6 md:flex hidden flex-col sm:flex-row max-w-7xl w-full border-2 border-gray-50"
