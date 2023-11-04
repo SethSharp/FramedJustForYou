@@ -7,9 +7,8 @@ import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
         <h1 class="text-gray-600 text-2xl font-medium mb-3">Lets turn your idea into reality!</h1>
         <p class="mb-12">
             We offer numerous services, and if you don't see a specific service mentioned here, it's
-            possible we may have inadvertently left it out. Please feel free to reach out to us for
-            more information, explore our extensive range of services, or peruse our online store
-            for pre-assembled frames ready to adorn your space.
+            possible we may have inadvertently left it out! Please feel free to reach out to us for
+            more information or explore our extensive range of services.
         </p>
         <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-2 sm:w-3/4 justify-center mx-auto"

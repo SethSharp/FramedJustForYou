@@ -100,12 +100,7 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                             services to offer not just traditional framing but also cutting-edge
                             digital printing and custom acrylic mounting. This means we can provide
                             you with even more options to showcase your artwork and photographs in
-                            unique and contemporary ways. Additionally, we are excited to introduce
-                            an online design tool, making it easier than ever for our customers to
-                            visualize and customize their framing projects from the comfort of their
-                            homes. We're dedicated to enhancing your experience with us, providing
-                            unmatched quality, and continuing to be your trusted partner for all
-                            things framing on the Gold Coast.
+                            unique and contemporary ways.
                         </p>
                     </div>
 
