@@ -6,6 +6,11 @@ const props = defineProps({
     image: String,
     title: String,
     content: String,
+    styles: {
+        type: String,
+        required: false,
+        default: '',
+    },
 })
 </script>
 
@@ -15,6 +20,7 @@ const props = defineProps({
             <img
                 :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
                 class="mx-auto my-auto rounded-2xl"
+                :class="styles"
             />
         </div>
         <div class="lg:w-1/2 p-6">

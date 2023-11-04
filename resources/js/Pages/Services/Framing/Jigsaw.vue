@@ -18,6 +18,7 @@ import Image from '@/Components/Image.vue'
                     <SplideContent
                         image="jigsaw/giraffe.png"
                         title="Enjoy Forever"
+                        styles="w-1/2 my-auto"
                         content="Jigsaw puzzles are fun, relaxing and provide enjoyment for the whole family. Once complete, there is no better way to preserve and display your jigsaw puzzle than by having it professionally framed, allowing you to hang it on your wall like an artwork."
                     />
                     <SplideContent
@@ -26,8 +27,6 @@ import Image from '@/Components/Image.vue'
                         content="With over 1000 picture frames to choose from you will have no shortage of choice when picking the perfect frame for your jigsaw puzzle. Here at Framed Just For You we take a conservation framing approach to all of our work and our process for jigsaw puzzle framing is no exception."
                     />
                 </Carousel>
-
-<!--                <Image src="jigsaw/giraffe.png" class="w-1/2" />-->
             </template>
         </Section>
 
@@ -36,7 +35,6 @@ import Image from '@/Components/Image.vue'
             <template #content>
                 The process we take is very smooth and efficient to ensure your jigsaw is not damaged or messed up
                 and make it stand out within your home.
-
                 <div class="my-6">
                     <Carousel type="fade" :autoPlay="false">
                         <SplideContent

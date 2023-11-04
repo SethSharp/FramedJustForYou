@@ -1,7 +1,11 @@
+<script setup>
+import Image from "@/Components/Image.vue";
+</script>
+
 <template>
     <div class="flex">
-        <img
-            src="/images/logo.png"
+        <Image
+            src="logo.png"
             class="object-cover"
         />
     </div>
