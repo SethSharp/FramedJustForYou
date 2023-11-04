@@ -49,8 +49,7 @@ const teamMembers = [
     <PrimaryLayout>
         <div id="intro">
             <Section>
-                <template #header> Framed Just For You </template>
-                <template #subtitle> Nothing but passion </template>
+                <template #header> About us </template>
                 <template #title> How did it all start? </template>
                 <template #content>
                     Picture framing commenced in 1993, leading to the establishment of a dedicated
@@ -65,7 +64,7 @@ const teamMembers = [
         <div id="team-member">
             <Section>
                 <template #header> Meet the Team </template>
-                <template #subtitle> ...with over 55 years of experience </template>
+                <template #subtitle> ...with over 60 years of experience </template>
                 <template #content>
                     <component
                         v-for="teamMember in teamMembers"
