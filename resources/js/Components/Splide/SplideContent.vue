@@ -10,9 +10,12 @@ const props = defineProps({
 </script>
 
 <template>
-    <SplideSlide class="flex-wrap lg:flex">
+    <SplideSlide class="flex-wrap lg:flex h-fit">
         <div class="lg:w-1/2">
-            <Image :src="image" />
+            <img
+                :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
+                class="mx-auto my-auto rounded-2xl"
+            />
         </div>
         <div class="lg:w-1/2 p-6">
             <h1 class="text-xl font-bold">{{ title }}</h1>

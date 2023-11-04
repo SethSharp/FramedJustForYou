@@ -19,10 +19,9 @@ import Section from '@/Components/Section.vue'
                         Here we are ahead of the game using a computerised matboard cutter. This
                         allows us to cut and make just about any shape, any curve and do it with
                         precision. This is perfect for items requiring multiple items such as a
-                        winning a competition with multiple medals and items or a day out collecting
-                        cool leafs, we can map out the layout and achieve an amazing looking piece
-                        containing multiple items, or if you have a record then we can perfectly map
-                        the correct size to fit the circular shap.
+                        winning a competition with multiple medals and items, we can map out the
+                        layout and achieve an amazing looking piece containing multiple items, or
+                        if you have a record then we can perfectly map the correct size to fit the circular shape.
                     </div>
                     <Image src="restorations/matboard-cutter.png" />
                 </div>
@@ -40,9 +39,9 @@ import Section from '@/Components/Section.vue'
                 If you just need a new matboard that has gone all crusty over the years, then we can
                 grab that and create a brand new one for you!
 
-                <div class="grid grid-cols-3 gap-x-4 mt-8">
-                    <Image src="restorations/gymnastics.png" class="my-auto" />
+                <div class="grid grid-cols-3 gap-x-4 my-12">
                     <Image src="restorations/record.png" class="my-auto" />
+                    <Image src="restorations/gymnastics.png" class="my-auto" />
                     <Image src="restorations/asw-athlete.png" class="my-auto" />
                 </div>
             </template>

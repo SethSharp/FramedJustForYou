@@ -11,7 +11,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
     <Head title="Memorabilia" />
 
     <PrimaryLayout>
-        <Section :back="route('services.framing')">
+        <Section>
             <template #header> Memorabilia </template>
             <template #subtitle> Memorabilia framed the right way </template>
             <template #content>
@@ -32,12 +32,20 @@ import { SplideSlide } from '@splidejs/vue-splide'
 
         <Section>
             <template #header> Collectables </template>
-            <template #content> </template>
+            <template #content>
+                <div class="w-3/4 mx-auto">
+                    <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 3"/>
+                </div>
+            </template>
         </Section>
 
         <Section>
             <template #header> Sports Memorabilia </template>
-            <template #content> hats, balls, (Custom image frames), acrlic cases </template>
+            <template #content>
+                <div class="w-3/4 mx-auto">
+                    <Image src="memorabilia/jerseys.png" alt="Jerseys"/>
+                </div>
+            </template>
         </Section>
     </PrimaryLayout>
 </template>

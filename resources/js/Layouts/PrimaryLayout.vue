@@ -243,7 +243,7 @@ const other = [
                                                     :links="printing"
                                                 />
 
-                                                <Column title="Other" :links="other" />
+                                                <Column title="Other" href='#' :links="other" />
                                             </template>
                                         </MegaMenu>
                                     </div>
@@ -322,7 +322,7 @@ const other = [
                                                 :links="printing"
                                             />
 
-                                            <Column title="Other" :links="other" />
+                                            <Column title="Other" href="#" :links="other" />
                                         </div>
                                     </template>
                                 </ResponsiveDropdown>

@@ -5,11 +5,11 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 </script>
 
 <template>
-    <Head title="Original Artwork" />
+    <Head title="Tapestries and Needlework" />
 
     <PrimaryLayout>
         <Section>
-            <template #header> TapestriesAndNeedlework </template>
+            <template #header> Tapestries and Needlework </template>
             <template #content> </template>
         </Section>
     </PrimaryLayout>

@@ -34,7 +34,8 @@ import ListingCard from '@/Components/Card/ListingCard.vue'
                         <ListingCard title="Tables and chairs" />
                         <ListingCard title="Easels" />
                         <ListingCard title="Kitchen Facilities" />
-                        <ListingCard title="Fridge and Microwave" />
+                        <ListingCard title="Fridge" />
+                        <ListingCard title="Microwave" />
                     </div>
 
                     <h1 class="text-2xl font-medium mt-6">Pricing & Enquiries</h1>
@@ -50,7 +51,7 @@ import ListingCard from '@/Components/Card/ListingCard.vue'
                         then the prices are <b> negotiable </b>.
                     </p>
 
-                    <div class="grid md:grid-cols-3 gap-x-2 gap-y-2 my-6">
+                    <div class="grid md:grid-cols-3 gap-x-2 gap-y-2 my-6 mb-12">
                         <div class="p-4 rounded-lg shadow w-full text-center">
                             $160: Half the day
                         </div>

@@ -10,6 +10,7 @@ import Section from '@/Components/Section.vue'
     <PrimaryLayout>
         <Section>
             <template #header> Coming soon... </template>
+            <template #content> Our online store will become available soon, showing off all our in-store frames where you can easily purchase and pick up in store...</template>
         </Section>
     </PrimaryLayout>
 </template>

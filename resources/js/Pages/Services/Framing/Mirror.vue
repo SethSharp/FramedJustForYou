@@ -8,9 +8,13 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
     <Head title="Mirror" />
 
     <PrimaryLayout>
-        <Section :back="route('services.framing')">
+        <Section>
             <template #header> Mirror </template>
-            <template #content> Photos on Bethany's phone I think... made to order</template>
+
+            <template #content>
+                Framing mirrors is something that can really transform your personal space and reflect your character.
+                We can provide a upfront quote of the mirror itself.
+            </template>
         </Section>
     </PrimaryLayout>
 </template>
