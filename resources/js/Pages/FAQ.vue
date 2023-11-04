@@ -9,7 +9,7 @@ import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 const faqs = [
     {
         title: 'How much does custom framing cost?',
-        description: '...',
+        description: 'Custom Framing isn\'t what everyone expects, it can become pricey depending on the size of your item. But custom framing isn\'t about the money, it\'s about turning your piece into something amazing and giving it the love it deserves.',
         href: route('services.framing'),
         button: 'Custom framing here'
     },
