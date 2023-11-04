@@ -38,7 +38,7 @@ const props = defineProps({
             <div
                 class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
             >
-                <Image class="mx-auto my-auto" not-rounded :src="image" />
+                <Image class="mx-auto my-auto w-1/2" not-rounded :src="image" />
             </div>
         </div>
     </Transition>
