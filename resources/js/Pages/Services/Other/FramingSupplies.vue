@@ -12,22 +12,12 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
             <template #header> Framing Supplies </template>
             <template #content>
                 We offer many framing supplies for you to use in your own projects!
+                <ul class="my-2 space-y-4 list-disc list-inside">
+                    <li> Canvas off the role </li>
+                    <li> Matboards cut to size </li>
+                    <li> Framing Materials </li>
+                </ul>
             </template>
-        </Section>
-
-        <Section>
-            <template #header> Canvas off the role </template>
-            <template #content> </template>
-        </Section>
-
-        <Section>
-            <template #header> Matboards cut to size </template>
-            <template #content> </template>
-        </Section>
-
-        <Section>
-            <template #header> Framing Materials </template>
-            <template #content> </template>
         </Section>
     </PrimaryLayout>
 </template>
