@@ -5,7 +5,7 @@ import Image from "@/Components/Image.vue";
 <template>
     <div class="flex">
         <Image
-            src="app-logo.png"
+            src="application-logo.png"
             class="object-cover"
         />
     </div>
