@@ -13,8 +13,7 @@ import Map from '@/Components/Map.vue'
 
     <PrimaryLayout>
         <Section>
-            <template #header> Come see us today! </template>
-            <template #subtitle> Conveniently located off of Brisbane road</template>
+            <template #header> Conveniently located off of Brisbane road! </template>
             <template #content>
                 <div class="w-full">
                     <Map />

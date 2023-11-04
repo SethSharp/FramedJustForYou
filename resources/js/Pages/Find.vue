@@ -14,7 +14,7 @@ import Map from '@/Components/Map.vue'
     <PrimaryLayout>
         <Section>
             <template #header>
-                <span> Come see us! </span>
+                <span> Come see us today! </span>
             </template>
             <template #content>
                 <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
