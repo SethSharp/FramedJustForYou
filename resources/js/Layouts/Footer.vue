@@ -35,7 +35,7 @@ const social = [
     },
     {
         name: 'Facebook',
-        href: 'https://facebook.com/framedjust4u/',
+        href: 'https://www.facebook.com/framedjustforyou/',
         icon: SocialIcons['Facebook'],
     },
 ]

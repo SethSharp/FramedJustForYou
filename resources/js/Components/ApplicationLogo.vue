@@ -1,9 +1,8 @@
-<script setup>
-import Image from '@/Components/Image.vue'
-</script>
-
 <template>
     <div class="flex">
-        <Image alt="FramedJust4YouLogo" src="logo.png" class="" />
+        <img
+            src="/images/logo.png"
+            class="object-cover"
+        />
     </div>
 </template>

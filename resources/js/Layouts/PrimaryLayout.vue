@@ -182,7 +182,7 @@ const other = [
 
 <template>
     <div>
-        <div class="bg-primary-600 text-white text-center justify-center py-1">
+        <div class="bg-primary-500 text-white text-center justify-center py-1">
             Welcome to our new site! Check out our google reviews
             <a
                 class="font-bold"
@@ -192,15 +192,15 @@ const other = [
             </a>
         </div>
         <div class="min-h-screen bg-gray-100">
+            <!-- Primary Navigation Menu -->
             <nav>
-                <!-- Primary Navigation Menu -->
-                <div class="md:px-4 lg:px-8 bg-primary-700">
+                <div class="md:px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
-                            <div class="shrink-0 flex items-center">
+                            <div class="shrink-0 items-center w-1/5">
                                 <Link :href="route('home')">
-                                    <ApplicationLogo class="block" />
+                                    <ApplicationLogo/>
                                 </Link>
                             </div>
 
@@ -341,7 +341,9 @@ const other = [
 
             <!-- Page Content -->
             <main>
-                <slot name="carousel" />
+                <div class="relative top-0">
+                    <slot name="carousel" />
+                </div>
                 <div class="min-h-screen mx-4 mt-10">
                     <slot />
                 </div>
