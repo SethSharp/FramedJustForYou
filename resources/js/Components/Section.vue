@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="sm:w-3/4 mx-auto">
+    <div class="sm:w-3/4 mx-auto mb-6">
         <div class="text-xl sm:text-3xl py-5 text-gray-700">
             <Link
                 v-if="back"
