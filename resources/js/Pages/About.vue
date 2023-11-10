@@ -33,12 +33,13 @@ const teamMembers = [
         component: 'RightTeamMember',
     },
     {
-        name: "Bethany",
-        position: "Junior Framer",
-        description: "Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.",
-        image: "team/dianne-temp.jpeg",
+        name: 'Bethany',
+        position: 'Junior Framer',
+        description:
+            'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
+        image: 'team/dianne-temp.jpeg',
         side: false,
-        component: 'LeftTeamMember'
+        component: 'LeftTeamMember',
     },
 ]
 </script>

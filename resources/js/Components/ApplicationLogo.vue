@@ -1,12 +1,9 @@
 <script setup>
-import Image from "@/Components/Image.vue";
+import Image from '@/Components/Image.vue'
 </script>
 
 <template>
     <div class="flex">
-        <Image
-            src="application-logo.png"
-            class="object-cover"
-        />
+        <Image src="application-logo.png" class="object-cover" />
     </div>
 </template>

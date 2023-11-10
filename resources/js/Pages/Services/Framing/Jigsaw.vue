@@ -33,8 +33,8 @@ import Image from '@/Components/Image.vue'
         <Section>
             <template #header> The Process </template>
             <template #content>
-                The process we take is very smooth and efficient to ensure your jigsaw is not damaged or messed up
-                and make it stand out within your home.
+                The process we take is very smooth and efficient to ensure your jigsaw is not
+                damaged or messed up and make it stand out within your home.
                 <div class="my-6">
                     <Carousel type="fade" :autoPlay="false">
                         <SplideContent

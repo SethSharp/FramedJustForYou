@@ -10,9 +10,7 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
     <PrimaryLayout>
         <Section>
             <template #header> Tapestries and Needlework </template>
-            <template #content>
-                Need to get a good description here.
-            </template>
+            <template #content> Need to get a good description here. </template>
         </Section>
     </PrimaryLayout>
 </template>

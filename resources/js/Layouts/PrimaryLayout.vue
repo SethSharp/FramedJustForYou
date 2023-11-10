@@ -200,7 +200,7 @@ const other = [
                             <!-- Logo -->
                             <div class="shrink-0 items-center w-1/5">
                                 <Link :href="route('home')">
-                                    <ApplicationLogo/>
+                                    <ApplicationLogo />
                                 </Link>
                             </div>
 
@@ -243,7 +243,7 @@ const other = [
                                                     :links="printing"
                                                 />
 
-                                                <Column title="Other" href='#' :links="other" />
+                                                <Column title="Other" href="#" :links="other" />
                                             </template>
                                         </MegaMenu>
                                     </div>

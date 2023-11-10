@@ -23,7 +23,7 @@ const navigation = {
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },
         { name: 'Printing on Demand', href: route('services.printing') + '#printing-on-canvases' },
-        { name: 'Giclee\'s', href: route('services.printing') + '#giclee' },
+        { name: "Giclee's", href: route('services.printing') + '#giclee' },
     ],
 }
 
@@ -90,9 +90,7 @@ const social = [
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-md font-semibold leading-6 text-white">
-                                Printing
-                            </h3>
+                            <h3 class="text-md font-semibold leading-6 text-white">Printing</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li v-for="item in navigation.printing" :key="item.name">
                                     <a

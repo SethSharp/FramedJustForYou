@@ -12,8 +12,8 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
             <template #header> Mirror </template>
 
             <template #content>
-                Framing mirrors is something that can really transform your personal space and reflect your character.
-                We can provide a upfront quote of the mirror itself.
+                Framing mirrors is something that can really transform your personal space and
+                reflect your character. We can provide a upfront quote of the mirror itself.
             </template>
         </Section>
     </PrimaryLayout>

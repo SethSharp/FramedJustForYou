@@ -5,6 +5,7 @@ import Section from '@/Components/Section.vue'
 import { PrinterIcon } from '@heroicons/vue/20/solid/index.js'
 import Service from '@/Components/Card/Services/Service.vue'
 import PricingTable from '@/Components/Card/PricingTable.vue'
+import Image from '@/Components/Image.vue'
 
 const squareCanvas = [
     { inches: '12"x12"', cm: '30cm x 30cm', pricing: '$70.00' },
@@ -110,7 +111,7 @@ const config = [
 </script>
 
 <template>
-    <Head title="Canvases" />
+    <Head title="Printing" />
 
     <PrimaryLayout>
         <Section>
@@ -122,6 +123,19 @@ const config = [
                     We offer a range of services when it comes to printing and canvas. Whether you
                     are a painter, or wanting to put your favourite photos on your phone on a
                     canvas, we got you covered!
+                </div>
+
+                <div class="sm:flex mt-8">
+                    <div class="sm:w-1/2 sm:w-full my-auto">
+                        We have a specialised printer in store, where we can print just about
+                        anything in the highest quality. As you can see in the image, we have the
+                        ability to print very large images and keep the quality of that image in
+                        tact. Allowing us to just about do photo on printing paper to go perfectly
+                        as a background to your frame.
+                    </div>
+                    <div class="sm:w-1/2 sm:w-full">
+                        <Image src="printing/printer.png" class="w-3/4 mx-auto" />
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">

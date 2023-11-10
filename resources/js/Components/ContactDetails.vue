@@ -19,7 +19,12 @@ import { DevicePhoneMobileIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/vue/2
         <div class="my-2">
             <div class="flex gap-x-2">
                 <EnvelopeIcon class="w-8 h-8" />
-                <a href="mailto:framedjust4u@gmail.com" class="my-auto text-sm md:text-lg font-bold"> framedjust4u@bigpond.com </a>
+                <a
+                    href="mailto:framedjust4u@gmail.com"
+                    class="my-auto text-sm md:text-lg font-bold"
+                >
+                    framedjust4u@bigpond.com
+                </a>
             </div>
         </div>
     </div>
