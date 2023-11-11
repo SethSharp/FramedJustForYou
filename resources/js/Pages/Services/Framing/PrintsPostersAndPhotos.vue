@@ -14,20 +14,23 @@ import Image from '@/Components/Image.vue'
             <template #content>
                 Anything on paper that you have we can put into a frame. Your cherished family
                 photos, posters from your favourite movies we can help you select the perfect
-                frame...
+                frame
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-6 my-8">
+                <div class="grid grid-cols-1 sm:grid-cols-3 w-3/4 mx-auto gap-x-6 gap-y-6 my-8">
                     <Image src="prints-photos/picture-2.png" />
                     <Image src="prints-photos/picture-1.png" class="my-auto" />
                     <Image src="prints-photos/poster-1.png" />
                 </div>
-            </template>
-        </Section>
 
-        <Section>
-            <template #header> Wedding Photos </template>
-            <template #content>
-                Wedding Photos are a important piece of frame and we ensure...
+                <h1 class="text-xl text-gray-700"> Some framing that we do often </h1>
+                <ul class="list-disc list-inside">
+                    <li> Wedding photos </li>
+                    <li> Family Photos </li>
+                    <li> Graduation Photos </li>
+                    <li> School photos </li>
+                    <li> Posters </li>
+                    <li> Paintings </li>
+                </ul>
             </template>
         </Section>
     </PrimaryLayout>
