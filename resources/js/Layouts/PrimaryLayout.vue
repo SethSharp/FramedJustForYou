@@ -194,7 +194,7 @@ const other = [
         <div class="min-h-screen bg-gray-100">
             <!-- Primary Navigation Menu -->
             <nav>
-                <div class="md:px-4 lg:px-8 bg-primary-600">
+                <div class="px-2 md:px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
@@ -265,7 +265,7 @@ const other = [
                                 <Bars3Icon
                                     v-if="!showingNavigationDropdown"
                                     @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
+                                    class="w-16 h-16 text-white cursor-pointer transition duration-400 ease-in-out"
                                 />
                                 <XMarkIcon
                                     v-if="showingNavigationDropdown"

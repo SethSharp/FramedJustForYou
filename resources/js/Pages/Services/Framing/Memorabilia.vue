@@ -15,7 +15,11 @@ import { SplideSlide } from '@splidejs/vue-splide'
             <template #header> Memorabilia </template>
             <template #subtitle> Memorabilia framed the right way </template>
             <template #content>
-                <Image src="memorabilia/suns-jerseys-thin-2.png" alt="Suns Jerseys" />
+                <Image
+                    src="memorabilia/suns-jerseys.png"
+                    alt="Suns Jerseys"
+                    class="w-4/5 mx-auto"
+                />
                 <div class="mt-4">
                     We understand the unique value of your memorabilia, and that's why we take great
                     care in handling and displaying it appropriately. Our conservation framing
