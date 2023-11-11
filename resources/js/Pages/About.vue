@@ -10,7 +10,7 @@ const teamMembers = [
         position: 'Director',
         description:
             "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
-        image: 'team/diane-team-photo.png',
+        image: 'team/diane.png',
         side: false,
         component: 'RightTeamMember',
     },
@@ -37,7 +37,7 @@ const teamMembers = [
         position: 'Junior Framer',
         description:
             'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
-        image: 'team/dianne-temp.jpeg',
+        image: 'team/bethany.png',
         side: false,
         component: 'LeftTeamMember',
     },
