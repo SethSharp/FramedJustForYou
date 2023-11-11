@@ -71,11 +71,6 @@ const customFraming1 = [
         active: 'services.framing.canvases',
     },
     {
-        name: 'Hanging Systems',
-        href: route('services.framing.hanging-systems'),
-        active: 'services.framing.hanging-systems',
-    },
-    {
         name: 'Indigenous Art',
         href: route('services.framing.indigenous-art'),
         active: 'services.framing.indigenous-art',
@@ -85,14 +80,14 @@ const customFraming1 = [
         href: route('services.framing.jigsaws'),
         active: 'services.framing.jigsaws',
     },
-]
-
-const customFraming2 = [
     {
         name: 'Medals & Memorabilia',
         href: route('services.framing.medals-memorabilia'),
         active: 'services.framing.medals-memorabilia',
     },
+]
+
+const customFraming2 = [
     {
         name: 'Mirror',
         href: route('services.framing.mirror'),

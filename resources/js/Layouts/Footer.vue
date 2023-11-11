@@ -12,12 +12,18 @@ const navigation = {
     ],
     customFraming1: [
         {
-            name: 'Canvases',
-            href: route('services.framing.canvases'),
+            name: 'Acrylic',
+            href: route('services.framing.acrylic'),
+            active: 'services.framing.acrylic',
         },
         {
-            name: 'Hanging Systems',
-            href: route('services.framing.hanging-systems'),
+            name: 'Australian Framing Kits',
+            href: route('services.framing.australian'),
+            active: 'services.framing.australian',
+        },
+        {
+            name: 'Canvas Stretching',
+            href: route('services.framing.canvases'),
         },
         {
             name: 'Indigenous Art',
@@ -27,12 +33,12 @@ const navigation = {
             name: 'Jigsaws',
             href: route('services.framing.jigsaws'),
         },
-    ],
-    customFraming2: [
         {
             name: 'Medals & Memorabilia',
             href: route('services.framing.medals-memorabilia'),
         },
+    ],
+    customFraming2: [
         {
             name: 'Mirror',
             href: route('services.framing.mirror'),
