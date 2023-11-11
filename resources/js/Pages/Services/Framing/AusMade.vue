@@ -9,12 +9,17 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 
     <PrimaryLayout>
         <Section>
-            <template #header> Australian Made Framing Kits </template>
+            <template #header> Australian Made </template>
             <template #content>
-                You can display your precious memories in style with our extensive range of
-                Australian-made frames. Framed Just For You even offers a season ranged of photo and
-                poster frames made in-store at the Gold Coast. All frames are made from plantation
-                timber, not mdf and our frames are supplied with acid-free foam-core backings.
+                <div>
+                    <p>
+                        Experience the unmatched longevity of our frames, crafted exclusively with
+                        Australian-sourced materials. By supporting local artisans and harnessing
+                        the durability of native resources, we ensure that your frame becomes a
+                        timeless keepsake, built to last a lifetime. Beyond aesthetics, choosing one
+                        of our frames is an investment in quality and sustainability.
+                    </p>
+                </div>
             </template>
         </Section>
     </PrimaryLayout>

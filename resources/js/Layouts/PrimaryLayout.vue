@@ -61,7 +61,7 @@ const customFraming1 = [
         active: 'services.framing.acrylic',
     },
     {
-        name: 'Australian Framing Kits',
+        name: 'Australian Made',
         href: route('services.framing.australian'),
         active: 'services.framing.australian',
     },
