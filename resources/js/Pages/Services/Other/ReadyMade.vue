@@ -2,7 +2,7 @@
 import { Head } from '@inertiajs/vue3'
 import Section from '@/Components/Section.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Image from "@/Components/Image.vue";
+import Image from '@/Components/Image.vue'
 </script>
 
 <template>
@@ -15,19 +15,26 @@ import Image from "@/Components/Image.vue";
             <template #content>
                 <div class="sm:flex">
                     <div class="w-1/2 sm:w-2/5 relative">
-                        <Image src="readyMade/graduation.png" class="absolute w-full z-10 -rotate-12"/>
+                        <Image
+                            src="readyMade/graduation.png"
+                            class="absolute w-full z-10 -rotate-12"
+                        />
                     </div>
 
                     <div class="sm:w-3/4 bg-gray-100 rounded-lg shadow-sm my-auto z-20 p-4">
                         <p class="z-20">
-                            We have multiple hand made, ready made frames ready to hang in your space.
-                            We stock the most common sizes and is a great option for your photo/prints
-                            without having to go down a possibly more expensive route in custom framing yet still
-                            provides a great look or if you are in a rush for a frame.
-                            If you come and make a decision, we can pop around the back and it all together on the spot.
+                            We have multiple hand made, ready made frames ready to hang in your
+                            space. We stock the most common sizes and is a great option for your
+                            photo/prints without having to go down a possibly more expensive route
+                            in custom framing yet still provides a great look or if you are in a
+                            rush for a frame. If you come and make a decision, we can pop around the
+                            back and it all together on the spot.
                         </p>
                     </div>
-                    <Image src="readyMade/ready-made-1.png" class="z-20 w-1/2 mx-auto sm:w-1/4 absolute rotate-12"/>
+                    <Image
+                        src="readyMade/ready-made-1.png"
+                        class="z-20 w-1/2 mx-auto sm:w-1/4 absolute rotate-12"
+                    />
                 </div>
             </template>
         </Section>

@@ -35,8 +35,7 @@ const links = [
         name: 'Services',
         href: '',
         active: 'services.*',
-        options: [
-        ],
+        options: [],
     },
     {
         name: 'FAQ',
