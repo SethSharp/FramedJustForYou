@@ -11,25 +11,23 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
         <Section>
             <template #header> Canvas Stretching </template>
             <template #content>
-                <p>
-                    Have your canvas's stretched on quality stretcher frames. All canvas's are hand
-                    stretched using stainless steel staples. We give a full guarantee against
-                    warping and sagging.
-                </p>
-                <p>
-                    If you want an artwork or photograph on canvas stretched, make sure you know
-                    what you are paying fo before you choose a framer.
-                </p>
-            </template>
-        </Section>
+                <div>
+                    <p>
+                        Have your canvases stretched on quality stretcher frames. All canvases are hand-stretched using stainless steel staples, using 100% Cotton, 12oz
+                        triple primed canvas, quality timber and stainless steel staples. We offer a full guarantee against warping and sagging.
+                    </p>
+                    <br>
+                    <p>
+                        If you're considering having an artwork or photograph on canvas stretched, it's essential to understand what you're paying for before choosing a framer.
+                    </p>
 
-        <Section>
-            <template #header> Custom Artist Stretched Canvases </template>
-            <template #content>
-                <p>
-                    Framed Just For You makes quality stretched canvases, using 100% Cotton, 12oz
-                    triple primed canvas, quality timber and stainless steel staples.
-                </p>
+                    <div class="mt-4">
+                        <p class="mt-2">
+                            We also stock ready-made canvases, perfect for your painting projects. If you require a specific size not in stock, we can arrange for a custom-stretched canvas using our high-quality materials. These canvases are ready to hang, allowing you to showcase your finished piece instantly in your space.
+                        </p>
+                    </div>
+                </div>
+
             </template>
         </Section>
     </PrimaryLayout>

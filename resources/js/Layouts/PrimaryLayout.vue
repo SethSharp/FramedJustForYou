@@ -36,16 +36,6 @@ const links = [
         href: '',
         active: 'services.*',
         options: [
-            {
-                name: 'Framing',
-                href: 'services.framing',
-                active: 'services.framing.*',
-            },
-            {
-                name: 'Printing & Canvas',
-                href: 'services.printing',
-                active: 'services.printing',
-            },
         ],
     },
     {
@@ -77,7 +67,7 @@ const customFraming1 = [
         active: 'services.framing.australian',
     },
     {
-        name: 'Canvases',
+        name: 'Canvas Stretching',
         href: route('services.framing.canvases'),
         active: 'services.framing.canvases',
     },

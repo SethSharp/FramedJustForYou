@@ -12,14 +12,6 @@ const navigation = {
     ],
     customFraming1: [
         {
-            name: 'Acrylic',
-            href: route('services.framing.acrylic'),
-        },
-        {
-            name: 'Aus Framing Kits',
-            href: route('services.framing.australian'),
-        },
-        {
             name: 'Canvases',
             href: route('services.framing.canvases'),
         },

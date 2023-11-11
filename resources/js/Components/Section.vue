@@ -19,7 +19,7 @@ defineProps({
                 <span class="pr-4"> Back </span>
             </Link>
             <slot name="header" />
-            <div v-if="$slots.subtitle" class="text-gray-400 text-xl mt-2">
+            <div v-if="$slots.subtitle" class="text-gray-400 text-lg mt-2">
                 <slot name="subtitle" />
             </div>
         </div>
