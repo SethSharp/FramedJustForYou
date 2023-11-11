@@ -27,7 +27,7 @@ const props = defineProps({
             <div
                 class="w-full lg:w-1/2 bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100 flex"
             >
-                <Image class="mx-auto my-auto w-1/2" not-rounded="!rounded-lg" :src="image" />
+                <Image class="mx-auto my-auto w-3/5" not-rounded="!rounded-lg" :src="image" />
             </div>
             <div
                 class="w-full lg:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"

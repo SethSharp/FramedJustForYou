@@ -86,15 +86,6 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                         </p>
                     </div>
 
-                    <div class="flex space-x-2">
-                        <div class="w-1/2 border-4 border-gray-400">
-                            <Image rounded-class="!rounded-none" src="store/store-side-right.png" />
-                        </div>
-                        <div class="w-1/2 border-4 border-gray-400">
-                            <Image rounded-class="!rounded-none" src="store/store-side-left.png" />
-                        </div>
-                    </div>
-
                     <div class="my-6">
                         <h1 class="text-gray-500 text-2xl font-medium mb-3">
                             What are we up to now?
