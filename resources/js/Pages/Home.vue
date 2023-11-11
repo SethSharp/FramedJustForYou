@@ -31,22 +31,29 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                     <!-- Your carousel content here -->
                     <SplideSlide>
                         <Image
-                            src="store/front-desk.png"
-                            alt="Store Image 1"
+                            src="store/front.png"
+                            alt="The main desk"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
                     <SplideSlide>
                         <Image
-                            src="store/picture-wall.png"
-                            alt="Store Image 2"
+                            src="store/gallery-side.png"
+                            alt="Gallery"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
                     <SplideSlide>
                         <Image
-                            src="store/framing-desk.png"
-                            alt="Store Image 3"
+                            src="store/framing-bench.png"
+                            alt="Framing bench and available frames"
+                            rounded-class="!rounded-none"
+                        />
+                    </SplideSlide>
+                    <SplideSlide>
+                        <Image
+                            src="store/gallery.png"
+                            alt="Framing bench and available frames"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
