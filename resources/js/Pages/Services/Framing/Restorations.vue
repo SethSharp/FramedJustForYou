@@ -21,12 +21,12 @@ import Image from '@/Components/Image.vue'
 
                 <h1 class="text-2xl mt-5">Our Process</h1>
                 <ul class="mb-4 list-disc list-decimal list-inside space-y-4 my-8">
-                    <li> Make a high quality copy of the photo </li>
-                    <li> Move into photoshop and make necessary adjustments </li>
-                    <li> Print to correct size using our state of the art printing system </li>
-                    <li> Discover the look that you want to go for and put together the items </li>
-                    <li> Combine all pieces together using the new printed photo </li>
-                    <li> Hang Up!</li>
+                    <li>Make a high quality copy of the photo</li>
+                    <li>Move into photoshop and make necessary adjustments</li>
+                    <li>Print to correct size using our state of the art printing system</li>
+                    <li>Discover the look that you want to go for and put together the items</li>
+                    <li>Combine all pieces together using the new printed photo</li>
+                    <li>Hang Up!</li>
                 </ul>
             </template>
         </Section>

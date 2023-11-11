@@ -104,9 +104,9 @@ const customFraming2 = [
         active: 'services.framing.prints-posters-and-photos',
     },
     {
-        name: 'Tapestries and Needlework',
-        href: route('services.framing.tapestries-and-needlework'),
-        active: 'services.framing.tapestries-and-needlework',
+        name: 'Handcrafted Artwork',
+        href: route('services.framing.hand-crafted'),
+        active: 'services.framing.hand-crafted',
     },
     {
         name: 'Restorations',

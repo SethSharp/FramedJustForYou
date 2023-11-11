@@ -52,8 +52,8 @@ const navigation = {
             href: route('services.framing.prints-posters-and-photos'),
         },
         {
-            name: 'Tapestries and Needlework',
-            href: route('services.framing.tapestries-and-needlework'),
+            name: 'Hand Crafted Artwork',
+            href: route('services.framing.hand-crafted'),
         },
         {
             name: 'Restorations',

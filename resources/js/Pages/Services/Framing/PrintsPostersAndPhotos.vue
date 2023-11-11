@@ -12,25 +12,25 @@ import Image from '@/Components/Image.vue'
         <Section>
             <template #header> Prints Posters and Photos </template>
             <template #content>
-                Anything on paper that you have we can put into a frame. Your cherished family
-                photos, posters from your favourite movies we can help you select the perfect
-                frame
+                <div>
+                    <p>
+                        Transform anything on paper into a captivating masterpiece with our expert
+                        framing services. Whether it's your cherished family photos capturing
+                        precious moments or posters from your favorite movies that hold sentimental
+                        value, we specialize in helping you select the perfect frame. Our commitment
+                        goes beyond mere framing; we understand the significance of each piece and
+                        tailor our recommendations to complement the essence of your unique items.
+                        Entrust us with your memories, and let our craftsmanship elevate the visual
+                        impact of your paper treasures, creating timeless displays that tell your
+                        story with elegance and flair.
+                    </p>
+                </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 w-3/4 mx-auto gap-x-6 gap-y-6 my-8">
                     <Image src="prints-photos/picture-2.png" />
                     <Image src="prints-photos/picture-1.png" class="my-auto" />
                     <Image src="prints-photos/poster-1.png" />
                 </div>
-
-                <h1 class="text-xl text-gray-700"> Some framing that we do often </h1>
-                <ul class="list-disc list-inside">
-                    <li> Wedding photos </li>
-                    <li> Family Photos </li>
-                    <li> Graduation Photos </li>
-                    <li> School photos </li>
-                    <li> Posters </li>
-                    <li> Paintings </li>
-                </ul>
             </template>
         </Section>
     </PrimaryLayout>

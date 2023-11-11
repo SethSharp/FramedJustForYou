@@ -43,7 +43,8 @@ const glassingOptions = {
         <Section>
             <template #header> Glassing Options </template>
             <template #content>
-                Glassing is a very important aspect of a frame, here is a list of some of the glass we provide and how they compare.
+                Glassing is a very important aspect of a frame, here is a list of some of the glass
+                we provide and how they compare.
 
                 <IconTable :data="glassingOptions" />
             </template>

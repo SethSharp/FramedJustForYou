@@ -49,7 +49,7 @@ const teamMembers = [
         name: 'Seth',
         position: 'Computer Guy',
         description:
-            'Seth hasn\'t done too much framing but definitely helps out around the store when he isn\'t doing computer work.',
+            "Seth hasn't done too much framing but definitely helps out around the store when he isn't doing computer work.",
         image: 'team/seth.png',
         alt: 'Seth',
         side: false,

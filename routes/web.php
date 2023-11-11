@@ -37,7 +37,7 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/mirror', function () { return Inertia::render('Services/Framing/Mirror'); })->name('mirror');
         Route::get('/original-artwork', function () { return Inertia::render('Services/Framing/OriginalArtwork'); })->name('original-artwork');
         Route::get('/prints-posters-and-photos', function () { return Inertia::render('Services/Framing/PrintsPostersAndPhotos'); })->name('prints-posters-and-photos');
-        Route::get('/tapestries-and-needlework', function () { return Inertia::render('Services/Framing/TapestriesAndNeedlework'); })->name('tapestries-and-needlework');
+        Route::get('/handcrafted', function () { return Inertia::render('Services/Framing/HandCrafted'); })->name('hand-crafted');
 
         Route::get('/restorations', function () { return Inertia::render('Services/Framing/Restorations'); })->name('restorations');
     });

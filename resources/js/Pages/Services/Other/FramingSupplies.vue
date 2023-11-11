@@ -18,13 +18,15 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
                     <li>Glassing</li>
                     <li>Hanging Systems</li>
                 </ul>
-                <h1 class="mt-4 text-xl text-gray-700"> Materials </h1>
+                <h1 class="mt-4 text-xl text-gray-700">Materials</h1>
                 <div>
                     <p>
-                        Explore our comprehensive selection of framing essentials, offering mouldings by the length,
-                        matting by the sheet, and a variety of d-rings in different sizes. Additionally,
-                        we provide screws and an array of framing hardware, tapes, and backing boards available in both
-                        fomecore and MDF. Complete your framing project with our assortment of wire, string, and standbacks.
+                        Explore our comprehensive selection of framing essentials, offering
+                        mouldings by the length, matting by the sheet, and a variety of d-rings in
+                        different sizes. Additionally, we provide screws and an array of framing
+                        hardware, tapes, and backing boards available in both fomecore and MDF.
+                        Complete your framing project with our assortment of wire, string, and
+                        standbacks.
                     </p>
                 </div>
             </template>
