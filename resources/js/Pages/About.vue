@@ -45,16 +45,16 @@ const teamMembers = [
         side: false,
         component: 'LeftTeamMember',
     },
-    {
-        name: 'Seth',
-        position: 'Computer Guy',
-        description:
-            "Seth hasn't done too much framing but definitely helps out around the store when he isn't doing computer work.",
-        image: 'team/seth.png',
-        alt: 'Seth',
-        side: false,
-        component: 'RightTeamMember',
-    },
+    // {
+    //     name: 'Seth',
+    //     position: 'Computer Guy',
+    //     description:
+    //         "Seth hasn't done too much framing but definitely helps out around the store when he isn't doing computer work.",
+    //     image: 'team/seth.png',
+    //     alt: 'Seth',
+    //     side: false,
+    //     component: 'RightTeamMember',
+    // },
 ]
 </script>
 
@@ -68,7 +68,7 @@ const teamMembers = [
                 <template #title> How did it all start? </template>
                 <template #content>
                     Picture framing commenced in 1993, leading to the establishment of a dedicated
-                    framing business in 1998 on Oxley Drive. In 2000, the store was relocated to 142
+                    framing business in 1997 on Oxley Drive. In 2000, the store was relocated to 142
                     Brisbane Road, where it served the community for the subsequent two decades. A
                     significant move took place in August 2019, bringing the business to its current
                     location at 122 Brisbane Road. With nearly 60 years of collective experience in
