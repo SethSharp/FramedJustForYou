@@ -1,4 +1,5 @@
 <script setup>
+import { Link } from '@inertiajs/vue3'
 import * as SocialIcons from '@/Components/Icons/Social'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 
@@ -86,7 +87,9 @@ const social = [
         <div class="lg:flex w-full">
             <div class="sm:w-2/5 lg:my-auto ml-16">
                 <div class="pt-8 lg:pt-0">
-                    <ApplicationLogo class="w-3/4" />
+                    <Link :href="route('home')">
+                        <ApplicationLogo class="w-3/4" />
+                    </Link>
                 </div>
                 <div class="mt-4">
                     <p class="text-md leading-6 text-gray-300">

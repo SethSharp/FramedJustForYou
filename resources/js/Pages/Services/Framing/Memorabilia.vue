@@ -89,8 +89,8 @@ import { SplideSlide } from '@splidejs/vue-splide'
         <Section>
             <template #header> Other Ideas for Memorabilia </template>
             <template #content>
-                Night to remember, an event you will cherish, school or university graduation
-                Insert own graduation cert, maybe that radio star
+                Night to remember, an event you will cherish, school or university graduation Insert
+                own graduation cert and that radio star frame
             </template>
         </Section>
     </PrimaryLayout>

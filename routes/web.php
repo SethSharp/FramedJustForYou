@@ -14,16 +14,13 @@ use Inertia\Inertia;
 |
 */
 
-// Grouped by header
 Route::get('/', function () { return Inertia::render('Home'); })->name('home');
 Route::get('/about', function () { return Inertia::render('About'); })->name('about');
 Route::get('/art-studio', function () { return Inertia::render('Studio'); })->name('studio');
 Route::get('/faq', function () { return Inertia::render('FAQ'); })->name('faq');
 Route::get('/contact', function () { return Inertia::render('Find'); })->name('contact');
 Route::get('/locator', function () { return Inertia::render('Locator'); })->name('locator');
-
 Route::get('/store', function () { return Inertia::render('Store'); })->name('store');
-
 
 Route::prefix('services')->name('services.')->group(function () {
 
@@ -38,14 +35,11 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/original-artwork', function () { return Inertia::render('Services/Framing/OriginalArtwork'); })->name('original-artwork');
         Route::get('/prints-posters-and-photos', function () { return Inertia::render('Services/Framing/PrintsPostersAndPhotos'); })->name('prints-posters-and-photos');
         Route::get('/handcrafted', function () { return Inertia::render('Services/Framing/HandCrafted'); })->name('hand-crafted');
-
         Route::get('/restorations', function () { return Inertia::render('Services/Framing/Restorations'); })->name('restorations');
     });
 
-
     Route::get('/custom-framing', function () { return Inertia::render('Services/Framing'); })->name('framing');
     Route::get('/printing', function () { return Inertia::render('Services/Printing'); })->name('printing');
-
 
     Route::prefix('other')->name('other.')->group(function () {
         Route::get('/glass-cutting', function () { return Inertia::render('Services/Other/GlassCutting'); })->name('glass-cutting');
