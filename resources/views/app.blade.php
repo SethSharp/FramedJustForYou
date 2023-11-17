@@ -7,7 +7,7 @@
 
         <title> Framed Just For You - Custom Picture Framing - Gold Coast </title>
         <meta name="keywords" content="FramedJust4You, Framed Just For you, custom frames, picture framing, Gold Coast framing, framing services">
-        <meta name="description" content="Framed Just For You is Gold Coasts best Picture framing business. We have been locally owned and operated for over 20 years and with 60+ years of experience producing amazing results for our clients all over the Gold Coast and the country.">
+        <meta name="description" content="Framed Just For You is Gold Coasts best picture framing business. We have been locally owned and operated for over 20 years and with 60+ years of experience producing amazing results for our clients all over the Gold Coast and the country.">
 
         <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
