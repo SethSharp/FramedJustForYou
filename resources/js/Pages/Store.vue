@@ -12,8 +12,8 @@ import Section from '@/Components/Section.vue'
             <template #header> Coming soon... </template>
             <template #content>
                 Our online store will become available soon, showing off all our in-store frames
-                where you can easily purchase online and pick up in store. If you are interested in this
-                send us a message so we know people are interested in a feature like this!
+                where you can easily purchase online and pick up in store. If you are interested in
+                this send us a message so we know people are interested in a feature like this!
             </template>
         </Section>
     </PrimaryLayout>

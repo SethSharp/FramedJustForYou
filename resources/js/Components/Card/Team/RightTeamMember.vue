@@ -19,16 +19,19 @@ const props = defineProps({
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
     >
-        <div
-            class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden"
-        >
+        <div class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden">
             <div
                 class="w-full lg:w-1/2 bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100 flex"
             >
-                <Image v-if="image" class="mx-auto my-auto w-3/5" not-rounded="!rounded-lg" :src="image" />
+                <Image
+                    v-if="image"
+                    class="mx-auto my-auto w-3/5"
+                    not-rounded="!rounded-lg"
+                    :src="image"
+                />
             </div>
             <div
-                :class="{'lg:w-full' : !image, 'lg:w-1/2' : image}"
+                :class="{ 'lg:w-full': !image, 'lg:w-1/2': image }"
                 class="w-full flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
             >
                 <div class="mx-8 my-10 rounded-r-xl transition duration-700 p-2">

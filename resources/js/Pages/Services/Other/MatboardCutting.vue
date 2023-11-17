@@ -37,8 +37,9 @@ import Section from '@/Components/Section.vue'
             <template #header> Just need a matboard? </template>
 
             <template #content>
-                If you just need a new matboard that has gone all crusty over the years, then we can get the measurement of your frame
-                and cut a brand new one with your selection of colour.
+                If you just need a new matboard that has gone all crusty over the years, then we can
+                get the measurement of your frame and cut a brand new one with your selection of
+                colour.
 
                 <div class="grid grid-cols-3 gap-x-4 my-12">
                     <Image src="restorations/record.png" class="my-auto" />

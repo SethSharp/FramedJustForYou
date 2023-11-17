@@ -67,11 +67,11 @@ const teamMembers = [
                 <template #header> About us </template>
                 <template #title> How did it all start? </template>
                 <template #content>
-                   Framed Just For You was established in 1997 on Oxley Drive. In 2000, the store was relocated to 142
-                    Brisbane Road, where it served the community for the subsequent two decades. A
-                    significant move took place in August 2019, bringing the business to its current
-                    location at 122 Brisbane Road. With nearly 60 years of collective experience in
-                    the picture framing industry, the journey continues.
+                    Framed Just For You was established in 1997 on Oxley Drive. In 2000, the store
+                    was relocated to 142 Brisbane Road, where it served the community for the
+                    subsequent two decades. A significant move took place in August 2019, bringing
+                    the business to its current location at 122 Brisbane Road. With nearly 60 years
+                    of collective experience in the picture framing industry, the journey continues.
                 </template>
             </Section>
         </div>

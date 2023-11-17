@@ -25,7 +25,7 @@ const props = defineProps({
             class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden"
         >
             <div
-                :class="{'lg:w-full' : !image, 'lg:w-1/2' : image}"
+                :class="{ 'lg:w-full': !image, 'lg:w-1/2': image }"
                 class="w-full md:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100"
             >
                 <div class="mx-8 my-10 rounded-l-xl transition duration-700 p-2">

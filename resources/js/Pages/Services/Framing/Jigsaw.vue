@@ -16,9 +16,9 @@ import Image from '@/Components/Image.vue'
                     <div class="sm:w-1/2 sm:w-full my-auto">
                         At Framed Just For You, you'll find a vast selection of over 1000 picture
                         frames, ensuring you have abundant options to find the ideal frame for your
-                        jigsaw puzzle. Our commitment to conservation framing is evident in every aspect
-                        of our work, and this dedication extends to our meticulous process for framing
-                        jigsaw puzzles.
+                        jigsaw puzzle. Our commitment to conservation framing is evident in every
+                        aspect of our work, and this dedication extends to our meticulous process
+                        for framing jigsaw puzzles.
                     </div>
                     <div class="sm:w-1/2 sm:w-full">
                         <Image src="jigsaw/giraffe.png" class="w-1/2 mx-auto" />
