@@ -19,8 +19,8 @@ const teamMembers = [
         name: 'Karen',
         position: 'Senior Framer',
         description:
-            'With over three decades of framing experience, Karen has been an integral part of our team for approximately three years. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
-        image: 'team/dianne-temp.jpeg',
+            'With over three decades of framing experience, Karen has been an integral part of our team. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
+        //image: 'team/dianne-temp.jpeg',
         alt: 'Karen',
         side: false,
         component: 'LeftTeamMember',
@@ -29,8 +29,8 @@ const teamMembers = [
         name: 'John',
         position: 'Framer',
         description:
-            'John has been a valuable addition to our team for more than half a year, making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise and is a valuable asset to FramedJustForYou.',
-        image: 'team/dianne-temp.jpeg',
+            'John has been a valuable addition to our team and making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise.',
+        //image: 'team/dianne-temp.jpeg',
         alt: 'John',
         side: false,
         component: 'RightTeamMember',
@@ -67,8 +67,7 @@ const teamMembers = [
                 <template #header> About us </template>
                 <template #title> How did it all start? </template>
                 <template #content>
-                    Picture framing commenced in 1993, leading to the establishment of a dedicated
-                    framing business in 1997 on Oxley Drive. In 2000, the store was relocated to 142
+                   Framed Just For You was established in 1997 on Oxley Drive. In 2000, the store was relocated to 142
                     Brisbane Road, where it served the community for the subsequent two decades. A
                     significant move took place in August 2019, bringing the business to its current
                     location at 122 Brisbane Road. With nearly 60 years of collective experience in

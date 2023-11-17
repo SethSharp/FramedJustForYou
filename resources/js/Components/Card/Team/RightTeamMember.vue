@@ -7,7 +7,6 @@ const props = defineProps({
     description: String,
     image: String,
     side: Boolean,
-    test: Boolean,
 })
 </script>
 
@@ -21,16 +20,16 @@ const props = defineProps({
         leave-to-class="opacity-0 scale-95"
     >
         <div
-            v-if="test"
             class="w-full flex-wrap md:flex-no-wrap flex my-6 rounded-xl overflow-hidden"
         >
             <div
                 class="w-full lg:w-1/2 bg-gradient-to-l md:bg-gradient-to-r from-gray-200 to-gray-100 flex"
             >
-                <Image class="mx-auto my-auto w-3/5" not-rounded="!rounded-lg" :src="image" />
+                <Image v-if="image" class="mx-auto my-auto w-3/5" not-rounded="!rounded-lg" :src="image" />
             </div>
             <div
-                class="w-full lg:w-1/2 flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
+                :class="{'lg:w-full' : !image, 'lg:w-1/2' : image}"
+                class="w-full flex bg-gradient-to-l md:bg-gradient-to-r from-gray-100 to-gray-200"
             >
                 <div class="mx-8 my-10 rounded-r-xl transition duration-700 p-2">
                     <h1 class="text-4xl text-gray-600">{{ name }}</h1>

@@ -14,23 +14,16 @@ import Image from '@/Components/Image.vue'
             <template #content>
                 <div class="sm:flex mt-8">
                     <div class="sm:w-1/2 sm:w-full my-auto">
-                        We have a specialised printer in store, where we can print just about
-                        anything in the highest quality. As you can see in the image, we have the
-                        ability to print very large images and keep the quality of that image in
-                        tact. Allowing us to just about do photo on printing paper to go perfectly
-                        as a background to your frame.
+                        At Framed Just For You, you'll find a vast selection of over 1000 picture
+                        frames, ensuring you have abundant options to find the ideal frame for your
+                        jigsaw puzzle. Our commitment to conservation framing is evident in every aspect
+                        of our work, and this dedication extends to our meticulous process for framing
+                        jigsaw puzzles.
                     </div>
                     <div class="sm:w-1/2 sm:w-full">
                         <Image src="jigsaw/giraffe.png" class="w-1/2 mx-auto" />
                     </div>
                 </div>
-                <p class="my-6">
-                    At Framed Just For You, you'll find a vast selection of over 1000 picture
-                    frames, ensuring you have abundant options to find the ideal frame for your
-                    jigsaw puzzle. Our commitment to conservation framing is evident in every aspect
-                    of our work, and this dedication extends to our meticulous process for framing
-                    jigsaw puzzles.
-                </p>
             </template>
         </Section>
 
@@ -58,7 +51,7 @@ import Image from '@/Components/Image.vue'
                     </div>
                     <div class="sm:flex my-4">
                         <div class="sm:w-1/2 sm:w-full p-6">
-                            <h1 class="text-xl font-bold">First Steps</h1>
+                            <h1 class="text-xl font-bold">Second Step</h1>
                             <p>
                                 Bring the complete jigsaw in, this is where we will help you decide
                                 on the right frame that best suits the jigsaw. In this case we have
