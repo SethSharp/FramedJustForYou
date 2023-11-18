@@ -22,9 +22,9 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                     <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium">
                         Framed Just For you
                     </h1>
-                    <span class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">
+                    <h2 class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">
                         60+ years of experience
-                    </span>
+                    </h2>
                 </div>
 
                 <MainPageCarousel>

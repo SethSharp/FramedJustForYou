@@ -43,7 +43,7 @@ let openingHoursConfig = [
 <template>
     <div class="my-2">
         <div class="flex gap-x-2">
-            <ArrowRightOnRectangleIcon v-if="icon" class="w-8 h-8" />
+            <ArrowRightOnRectangleIcon v-if="icon" class="w-8 h-8 text-gray-400" />
             <div class="grid grid-cols-1">
                 <div
                     v-for="day in openingHoursConfig"

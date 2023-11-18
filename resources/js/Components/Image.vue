@@ -32,6 +32,7 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
             @load="imageLoaded"
             :src="configPath"
             :alt="alt"
+            :aria-label="alt"
             :class="roundedClass"
             class="object-cover w-full rounded-2xl"
         />

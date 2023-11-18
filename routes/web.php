@@ -23,7 +23,6 @@ Route::get('/locator', function () { return Inertia::render('Locator'); })->name
 Route::get('/store', function () { return Inertia::render('Store'); })->name('store');
 
 Route::prefix('services')->name('services.')->group(function () {
-
     Route::prefix('framing')->name('framing.')->group(function () {
         Route::get('/acrylic', function () { return Inertia::render('Services/Framing/Acrylic'); })->name('acrylic');
         Route::get('/australian-made-framing-kits', function () { return Inertia::render('Services/Framing/AusMade'); })->name('australian');

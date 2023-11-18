@@ -100,6 +100,7 @@ const social = [
                             v-for="item in social"
                             :key="item.name"
                             :href="item.href"
+                            :aria-label="item.name"
                             class="text-gray-500 hover:text-gray-400"
                         >
                             <span class="sr-only">{{ item.name }}</span>
@@ -111,11 +112,12 @@ const social = [
             <div class="lg:w-3/5 text-sm">
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 mx-4 py-12">
                     <div>
-                        <h3 class="text-md font-semibold leading-6 text-white">Pages</h3>
+                        <h1 class="text-md font-semibold leading-6 text-white">Pages</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.pages" :key="item.name">
                                 <a
                                     :href="item.href"
+                                    :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
@@ -124,11 +126,12 @@ const social = [
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-md font-semibold leading-6 text-white">Services</h3>
+                        <h1 class="text-md font-semibold leading-6 text-white">Services</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.customFraming1" :key="item.name">
                                 <a
                                     :href="item.href"
+                                    :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
@@ -141,6 +144,7 @@ const social = [
                             <li v-for="item in navigation.customFraming2" :key="item.name">
                                 <a
                                     :href="item.href"
+                                    :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
@@ -149,11 +153,12 @@ const social = [
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-md font-semibold leading-6 text-white">Printing</h3>
+                        <h1 class="text-md font-semibold leading-6 text-white">Printing</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.printing" :key="item.name">
                                 <a
                                     :href="item.href"
+                                    :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
