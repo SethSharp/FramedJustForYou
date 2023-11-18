@@ -24,7 +24,9 @@ import Map from '@/Components/Map.vue'
                             <ContactDetails />
                             <div class="flex">
                                 <BuildingStorefrontIcon class="w-8 h-8 text-gray-400" />
-                                <span class=" text-gray-500 font-bold"> Unit 1-2, 122 Brisbane Road, Labrador 4215 </span>
+                                <span class="text-gray-500 font-bold">
+                                    Unit 1-2, 122 Brisbane Road, Labrador 4215
+                                </span>
                             </div>
                         </div>
                         <div>
