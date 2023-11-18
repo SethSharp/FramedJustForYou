@@ -17,7 +17,7 @@ import Image from '@/Components/Image.vue'
                     If you have a frame or picture that needs to well deserved tender loving care,
                     then we can provide that.
                 </p>
-                <Image src="restorations/reprint-and-frame.png" alt="Reprinted and framed photo" />
+                <Image src="restorations/reprint-and-frame.webp" alt="Reprinted and framed photo" />
 
                 <h1 class="text-2xl mt-5">Our Process</h1>
                 <ul class="mb-4 list-disc list-decimal list-inside space-y-4 my-8">
