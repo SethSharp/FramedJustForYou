@@ -15,6 +15,10 @@ class User extends Authenticatable
     use Notifiable;
     use HasRoles;
 
+    const ROLE_ADMIN = 'admin';
+    const ROLE_MANAGER = 'manager';
+    const ROLE_USER = 'user';
+
     protected $fillable = [
         'name',
         'email',
