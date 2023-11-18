@@ -134,7 +134,7 @@ const config = [
                         as a background to your frame.
                     </div>
                     <div class="sm:w-1/2 sm:w-full">
-                        <Image src="printing/printer.png" class="w-3/4 mx-auto" />
+                        <Image src="printing/printer.png" alt="Instore specialisated printer" class="w-3/4 mx-auto" />
                     </div>
                 </div>
 
