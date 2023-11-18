@@ -20,10 +20,15 @@ const isActive = (link) => {
 
 <template>
     <div class="text-xl pl-6 flex-wrap">
-        <Link v-if="title" :href="href" class="font-bold flex hover:underline underline-offset-2">
-            {{ title }}
+        <div v-if="title" class="font-bold flex">
+            <a v-if="href" :href="href" class="hover:underline underline-offset-2">
+                {{ title }}
+            </a>
+            <div v-else>
+                {{ title }}
+            </div>
             <ChevronRightIcon class="w-7 h-7" />
-        </Link>
+        </div>
         <ul class="ml-2 mt-2 list-inside">
             <li v-for="link in links" class="my-4">
                 <Link

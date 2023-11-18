@@ -170,6 +170,7 @@ const other = [
             Welcome to our new site! Check out our google reviews
             <a
                 class="font-bold underline"
+                aria-label="Announcement bar"
                 href="https://www.google.com/search?client=opera&q=framed+just+for+you&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x6b91104badf99849:0x5081ce9cf421fff2,1,,,,"
             >
                 here
@@ -227,7 +228,7 @@ const other = [
                                                     :links="printing"
                                                 />
 
-                                                <Column title="Other" href="#" :links="other" />
+                                                <Column title="Other" :links="other" />
                                             </template>
                                         </MegaMenu>
                                     </div>

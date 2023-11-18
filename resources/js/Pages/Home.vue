@@ -31,28 +31,28 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                     <!-- Your carousel content here -->
                     <SplideSlide>
                         <Image
-                            src="store/front.png"
+                            src="store/front.webp"
                             alt="The main desk"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
                     <SplideSlide>
                         <Image
-                            src="store/gallery-side.png"
+                            src="store/gallery-side.webp"
                             alt="Gallery"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
                     <SplideSlide>
                         <Image
-                            src="store/framing-bench.png"
+                            src="store/framing-bench.webp"
                             alt="Framing bench and available frames"
                             rounded-class="!rounded-none"
                         />
                     </SplideSlide>
                     <SplideSlide>
                         <Image
-                            src="store/gallery.png"
+                            src="store/gallery.webp"
                             alt="Framing bench and available frames"
                             rounded-class="!rounded-none"
                         />
