@@ -202,19 +202,5 @@ const scrollToContent = () =>
                 </div>
             </template>
         </Section>
-
-        <Section>
-            <template #title> Maximising your frame </template>
-            <template #content>
-                Framing can be so much more then a singular frame and matboard, if you want to
-                further impress your guests and make your frame standout this is the perfect way to
-                do it. This works by attaching multiple frames and matboards which give the frame
-                some great depth.
-            </template>
-        </Section>
-
-        <Section>
-            <template #title> Structure of a frame </template>
-        </Section>
     </PrimaryLayout>
 </template>

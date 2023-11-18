@@ -10,7 +10,7 @@ const teamMembers = [
         position: 'Director',
         description:
             "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
-        image: 'team/diane.png',
+        src: 'team/diane.png',
         alt: 'Diane',
         side: false,
         component: 'RightTeamMember',
@@ -20,7 +20,7 @@ const teamMembers = [
         position: 'Senior Framer',
         description:
             'With over three decades of framing experience, Karen has been an integral part of our team. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
-        //image: 'team/dianne-temp.jpeg',
+        //src: 'team/dianne-temp.jpeg',
         alt: 'Karen',
         side: false,
         component: 'LeftTeamMember',
@@ -30,7 +30,7 @@ const teamMembers = [
         position: 'Framer',
         description:
             'John has been a valuable addition to our team and making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise.',
-        //image: 'team/dianne-temp.jpeg',
+        //src: 'team/dianne-temp.jpeg',
         alt: 'John',
         side: false,
         component: 'RightTeamMember',
@@ -40,7 +40,7 @@ const teamMembers = [
         position: 'Framer',
         description:
             'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
-        image: 'team/bethany.png',
+        src: 'team/bethany.png',
         alt: 'Bethany',
         side: false,
         component: 'LeftTeamMember',
@@ -83,7 +83,6 @@ const teamMembers = [
                     <component
                         v-for="teamMember in teamMembers"
                         v-bind="teamMember"
-                        :test="true"
                         :is="TeamMemberCards[teamMember.component]"
                     />
                 </template>
