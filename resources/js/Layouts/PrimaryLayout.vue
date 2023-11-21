@@ -23,12 +23,12 @@ let showingNavigationDropdown = ref(false)
 const links = [
     {
         name: 'Home',
-        href: '/',
+        href: 'home',
         active: 'home',
     },
     {
         name: 'About',
-        href: '/about',
+        href: 'about',
         active: 'about',
     },
     {
@@ -39,17 +39,17 @@ const links = [
     },
     {
         name: 'FAQ',
-        href: '/faq',
+        href: 'faq',
         active: 'faq',
     },
     {
         name: 'Art Studio',
-        href: '/art-studio',
+        href: 'studio',
         active: 'studio',
     },
     {
         name: 'Contact',
-        href: '/contact',
+        href: 'contact',
         active: 'contact',
     },
 ]
@@ -196,7 +196,8 @@ const other = [
                                 <div v-for="link in links" class="animation duration-300 my-auto">
                                     <div v-if="!link.options">
                                         <NavLink
-                                            :href="link.href"
+                                            :href="route(link.href)"
+                                            :active="route().current(link.active)"
                                         >
                                             {{ link.name }}
                                         </NavLink>
