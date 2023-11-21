@@ -21,9 +21,9 @@ const isActive = (link) => {
 <template>
     <div class="text-xl pl-6 flex-wrap">
         <div v-if="title" class="font-bold flex">
-            <a v-if="href" :href="href" class="hover:underline underline-offset-2">
+            <Link v-if="href" :href="href" class="hover:underline underline-offset-2">
                 {{ title }}
-            </a>
+            </Link>
             <div v-else>
                 {{ title }}
             </div>
