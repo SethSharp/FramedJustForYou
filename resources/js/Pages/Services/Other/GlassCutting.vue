@@ -33,21 +33,21 @@ const glassingOptions = {
 
             <template #content>
                 Many of us make the mistake of dropping a frame while moving or from our kids
-                playing a bit too rough! Well we got you sorted, bring in your frame and we will fit
-                it with some of our high quality glass options as mentioned above. We can provide a
-                quote over the phone but make sure to visit us to check out the different kinds of
-                glass up close.
+                playing a bit too rough! Well we have you sorted, bring in your frame and we will
+                fit it with some of our high quality glass options as mentioned above. We can
+                provide a quote over the phone but make sure to visit us to check out the different
+                kinds of glass up close.
             </template>
         </Section>
 
-        <Section>
-            <template #header> Glassing Options </template>
-            <template #content>
-                Glassing is a very important aspect of a frame, here is a list of some of the glass
-                we provide and how they compare.
+        <!--        <Section>-->
+        <!--            <template #header> Glassing Options </template>-->
+        <!--            <template #content>-->
+        <!--                Glassing is a very important aspect of a frame, here is a list of some of the glass-->
+        <!--                we provide and how they compare.-->
 
-                <IconTable :data="glassingOptions" />
-            </template>
-        </Section>
+        <!--                <IconTable :data="glassingOptions" />-->
+        <!--            </template>-->
+        <!--        </Section>-->
     </PrimaryLayout>
 </template>

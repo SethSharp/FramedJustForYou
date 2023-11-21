@@ -122,7 +122,7 @@ const config = [
                 <div>
                     We offer a range of services when it comes to printing and canvas. Whether you
                     are a painter, or wanting to put your favourite photos on your phone on a
-                    canvas, we got you covered!
+                    canvas, we have you covered!
                 </div>
 
                 <div class="md:flex mt-8">

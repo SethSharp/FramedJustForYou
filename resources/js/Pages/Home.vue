@@ -95,11 +95,7 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                             In our ever-evolving journey, Framed Just For You continues to embrace
                             innovation and creativity in the world of custom framing. We understand
                             that art and design are constantly evolving, and we strive to stay at
-                            the forefront of industry trends. Recently, we've expanded our range of
-                            services to offer not just traditional framing but also cutting-edge
-                            digital printing and custom acrylic mounting. This means we can provide
-                            you with even more options to showcase your artwork and photographs in
-                            unique and contemporary ways.
+                            the forefront of industry trends.
                         </p>
                     </div>
 
