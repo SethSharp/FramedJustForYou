@@ -96,7 +96,7 @@ const social = [
                         Framing all your needs on the Gold Coast since 1997
                     </p>
                     <div class="flex space-x-6 mt-4">
-                        <a
+                        <Link
                             v-for="item in social"
                             :key="item.name"
                             :href="item.href"
@@ -105,7 +105,7 @@ const social = [
                         >
                             <span class="sr-only">{{ item.name }}</span>
                             <component :is="item.icon" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -115,13 +115,13 @@ const social = [
                         <h1 class="text-md font-semibold leading-6 text-white">Pages</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.pages" :key="item.name">
-                                <a
+                                <Link
                                     :href="item.href"
                                     :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -129,26 +129,26 @@ const social = [
                         <h1 class="text-md font-semibold leading-6 text-white">Services</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.customFraming1" :key="item.name">
-                                <a
+                                <Link
                                     :href="item.href"
                                     :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul role="list" class="mt-12 space-y-4">
                             <li v-for="item in navigation.customFraming2" :key="item.name">
-                                <a
+                                <Link
                                     :href="item.href"
                                     :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -156,13 +156,13 @@ const social = [
                         <h1 class="text-md font-semibold leading-6 text-white">Printing</h1>
                         <ul role="list" class="mt-6 space-y-4">
                             <li v-for="item in navigation.printing" :key="item.name">
-                                <a
+                                <Link
                                     :href="item.href"
                                     :aria-label="item.name"
                                     class="text-md leading-6 text-gray-300 hover:text-white"
                                 >
                                     {{ item.name }}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
