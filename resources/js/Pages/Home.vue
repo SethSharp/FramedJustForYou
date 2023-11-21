@@ -78,11 +78,12 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                             decades of experience, we have been the go-to destination for custom
                             framing on the Gold Coast. Our team is comprised of skilled artisans who
                             understand the value of your keepsakes, whether it's artwork,
-                            photographs, or memorabilia. We take pride in our craftsmanship and
-                            attention to detail, ensuring that each piece we frame becomes a work of
-                            art in itself. As an Australian-based, family-owned and operated
-                            business, we are deeply rooted in our community, and our commitment to
-                            quality and customer satisfaction has remained unwavering since day one.
+                            photographs, needlework, or memorabilia. We take pride in our
+                            craftsmanship and attention to detail, ensuring that each piece we frame
+                            becomes a work of art in itself. As an Australian-based, family-owned
+                            and operated business, we are deeply rooted in our community, and our
+                            commitment to quality and customer satisfaction has remained unwavering
+                            since day one.
                         </p>
                     </div>
 

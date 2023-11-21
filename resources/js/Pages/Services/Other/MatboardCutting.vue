@@ -18,11 +18,11 @@ import Section from '@/Components/Section.vue'
                         <h1 class="font-bold">Computerised Matboard Cutter</h1>
                         Here we are ahead of the game using a computerised matboard cutter. This
                         allows us to cut and make just about any shape, any curve and do it with
-                        precision. This is perfect for items requiring multiple items such as a
-                        winning a competition with multiple medals and items, we can map out the
-                        layout and achieve an amazing looking piece containing multiple items, or if
-                        you have a record then we can perfectly map the correct size to fit the
-                        circular shape.
+                        precision. This is perfect for items requiring multiple cutouts such as a
+                        winning a competition with multiple medals and items or a collection of
+                        items, we can map out the layout and achieve an amazing looking piece
+                        containing multiple items, or if you have a record then we can perfectly map
+                        the correct size to fit the circular shape.
                     </div>
                     <Image src="restorations/matboard-cutter.png" />
                 </div>

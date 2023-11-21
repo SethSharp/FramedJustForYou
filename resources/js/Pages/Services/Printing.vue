@@ -100,13 +100,13 @@ const config = [
         href: 'printing-on-canvases',
         data: [printingPaper],
     },
-    {
-        header: 'Giclee Printing',
-        description:
-            "We have a 'state of the art' printer which can print your prints at the up most quality..",
-        href: 'giclee',
-        data: [],
-    },
+    // {
+    //     header: 'Giclee Printing',
+    //     description:
+    //         "We have a 'state of the art' printer which can print your prints at the up most quality.",
+    //     href: 'giclee',
+    //     data: [],
+    // },
 ]
 </script>
 
@@ -129,33 +129,15 @@ const config = [
                     <div class="md:w-1/2 my-auto">
                         We have a specialised printer in store, where we can print just about
                         anything in the highest quality. As you can see in the image, we have the
-                        ability to print very large images and keep the quality of that image in
-                        tact. Allowing us to just about do photo on printing paper to go perfectly
-                        as a background to your frame.
+                        ability to print very large images and keep the quality of that image in tact. Allowing us to just about do photo on printing paper to go perfectly as a background to your frame.
                     </div>
                     <div class="md:w-1/2">
                         <Image
                             src="printing/printer.png"
-                            alt="Instore specialisated printer"
+                            alt="In-store specialised printer"
                             class="w-3/4 mx-auto"
                         />
                     </div>
-                </div>
-
-                <div class="grid grid-cols-3 my-12 gap-x-4 gap-y-4">
-                    <Service
-                        :icon="PrinterIcon"
-                        href="#photos-on-canvases"
-                        title="Photos & Printing on Canvas"
-                        description="Want your favourite phone photo in a frame?"
-                    />
-
-                    <Service
-                        :icon="PrinterIcon"
-                        href="#giclee"
-                        title="Giclee"
-                        description="Got a piece of art you want printed?"
-                    />
                 </div>
             </template>
         </Section>
