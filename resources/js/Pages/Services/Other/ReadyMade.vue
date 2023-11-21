@@ -27,8 +27,7 @@ import Image from '@/Components/Image.vue'
                             space. We stock the most common sizes and is a great option for your
                             photo/prints without having to go down a possibly more expensive route
                             in custom framing yet still provides a great look or if you are in a
-                            rush for a frame. If you come and make a decision, we can pop around the
-                            back and it all together on the spot.
+                            rush for a frame.
                         </p>
                     </div>
                     <Image
