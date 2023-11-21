@@ -197,7 +197,6 @@ const other = [
                                     <div v-if="!link.options">
                                         <NavLink
                                             :href="link.href"
-                                            :active="route().current(link.active)"
                                         >
                                             {{ link.name }}
                                         </NavLink>
