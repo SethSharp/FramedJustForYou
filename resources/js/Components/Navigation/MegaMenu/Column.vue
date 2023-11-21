@@ -1,5 +1,5 @@
 <script setup>
-import {Link} from "@inertiajs/vue3";
+import { Link } from '@inertiajs/vue3'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid/index.js'
 
 defineProps({
