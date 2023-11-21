@@ -22,6 +22,8 @@ jobs:
 
       - name: Install composer dependencies
         run: composer install --no-cache --no-ansi --no-interaction --no-progress
+        env:
+          APP_URL: https://framedjustforyou.com.au
 
       - name: Install node dependencies
         run: npm ci
