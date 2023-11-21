@@ -195,9 +195,7 @@ const other = [
                             >
                                 <div v-for="link in links" class="animation duration-300 my-auto">
                                     <div v-if="!link.options">
-                                        <NavLink
-                                            :href="link.href"
-                                        >
+                                        <NavLink :href="link.href">
                                             {{ link.name }}
                                         </NavLink>
                                     </div>
