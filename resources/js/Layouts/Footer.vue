@@ -64,7 +64,6 @@ const navigation = {
     printing: [
         { name: 'Photos on Canvas', href: route('services.printing') + '#photos-on-canvases' },
         { name: 'Printing on Demand', href: route('services.printing') + '#printing-on-canvases' },
-        { name: "Giclee's", href: route('services.printing') + '#giclee' },
     ],
 }
 
