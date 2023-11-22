@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Framed Just For You'),
+    'name' => env('APP_NAME', 'Framed Just For You: Gold Coast Picture Framing'),
 
     /*
     |--------------------------------------------------------------------------
