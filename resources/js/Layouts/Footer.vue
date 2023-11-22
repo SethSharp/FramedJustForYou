@@ -95,7 +95,7 @@ const social = [
                         Framing all your needs on the Gold Coast since 1997
                     </p>
                     <div class="flex space-x-6 mt-4">
-                        <Link
+                        <a
                             v-for="item in social"
                             :key="item.name"
                             :href="item.href"
@@ -104,7 +104,7 @@ const social = [
                         >
                             <span class="sr-only">{{ item.name }}</span>
                             <component :is="item.icon" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
