@@ -15,7 +15,7 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
     <PrimaryLayout>
         <template #carousel>
             <div class="relative mt-0">
-                <div class="absolute inset-0 bg-black bg-opacity-25 z-10"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
                 <!-- Content to be placed above the carousel -->
                 <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">
