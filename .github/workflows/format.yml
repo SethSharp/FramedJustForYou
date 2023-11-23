@@ -1,9 +1,4 @@
-name: Format Code
-
-on:
-  push:
-#    branches-ignore:
-#      - main
+name: Prettify Code
 
 jobs:
   test:
