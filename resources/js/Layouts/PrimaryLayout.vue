@@ -307,7 +307,7 @@ const other = [
                                                 :links="printing"
                                             />
 
-                                            <Column title="Other" href="#" :links="other" />
+                                            <Column title="Other" :links="other" />
                                         </div>
                                     </template>
                                 </ResponsiveDropdown>
