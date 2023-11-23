@@ -8,7 +8,10 @@ import { Head } from '@inertiajs/vue3'
 
     <AuthenticatedLayout>
         <div class="py-12">
-            <div class="p-6 text-gray-900">Dashboard</div>
+            <div class="text-gray-900 text-xl">Dashboard</div>
+            <div>
+                This is where you can manage your online store
+            </div>
         </div>
     </AuthenticatedLayout>
 </template>

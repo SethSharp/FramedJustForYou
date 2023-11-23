@@ -22,11 +22,11 @@ const links = [
     <div>
         <div class="min-h-screen bg-gray-100">
             <nav>
-                <div class="px-2 md:px-4 lg:px-8 bg-primary-600">
+                <div class="px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
-                        <div class="hidden lg:flex flex h-fit w-full">
+                        <div class="hidden sm:flex flex h-fit w-full">
                             <div
-                                class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end w-full"
+                                class="hidden space-x-4 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex w-full"
                             >
                                 <div v-for="link in links" class="animation duration-300 my-auto">
                                     <NavLink
@@ -40,12 +40,7 @@ const links = [
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 w-full flex justify-end lg:hidden">
-                            <div class="w-1/2">
-                                <Link :href="route('home')">
-                                    <ApplicationLogo class="block" />
-                                </Link>
-                            </div>
+                        <div class="-mr-2 w-full flex justify-end sm:hidden">
                             <div class="w-1/2 my-auto flex justify-end">
                                 <Bars3Icon
                                     v-if="!showingNavigationDropdown"
@@ -85,24 +80,12 @@ const links = [
                 </div>
             </nav>
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow" v-if="$slots.header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <slot name="header" />
-                </div>
-            </header>
-
             <!-- Page Content -->
             <main>
-                <div class="relative top-0">
-                    <slot name="carousel" />
-                </div>
-                <div class="min-h-screen mx-4 mt-10">
+                <div class="min-h-screen mx-8">
                     <slot />
                 </div>
             </main>
-
-            <Footer />
         </div>
     </div>
 </template>
