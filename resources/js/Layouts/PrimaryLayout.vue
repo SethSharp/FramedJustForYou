@@ -37,11 +37,11 @@ const links = [
         active: 'services.*',
         options: [],
     },
-    {
-        name: 'FAQ',
-        href: 'faq',
-        active: 'faq',
-    },
+    // {
+    //     name: 'FAQ',
+    //     href: 'faq',
+    //     active: 'faq',
+    // },
     {
         name: 'Art Studio',
         href: 'studio',

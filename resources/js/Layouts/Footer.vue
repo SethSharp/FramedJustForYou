@@ -7,7 +7,7 @@ const navigation = {
     pages: [
         { name: 'Home', href: route('home') },
         { name: 'About', href: route('about') },
-        { name: 'FAQ', href: route('faq') },
+        // { name: 'FAQ', href: route('faq') },
         { name: 'Art Studio', href: route('studio') },
         { name: 'Contact', href: route('contact') },
     ],
