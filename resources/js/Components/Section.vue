@@ -9,25 +9,17 @@ defineProps({
 
 <template>
     <div class="sm:w-3/4 mx-auto mb-6">
-        <div class="text-xl sm:text-3xl py-5 text-gray-700">
-            <Link
-                v-if="back"
-                :href="back"
-                class="bg-gray-200 mb-10 rounded-xl w-fit px-2 py-2 text-xl flex hover:bg-gray-300"
-            >
-                <ChevronLeftIcon class="w-7 h-7" />
-                <span class="pr-4"> Back </span>
-            </Link>
+        <div class="text-xl sm:text-3xl  text-gray-700">
             <slot name="header" />
             <div v-if="$slots.subtitle" class="text-gray-400 text-lg mt-2">
                 <slot name="subtitle" />
             </div>
         </div>
-        <div class="text-md sm:text-lg leading-relaxed text-gray-500 my-3">
-            <div class="my-6 text-gray-500 text-2xl font-medium mb-3">
+        <div class="text-md sm:text-lg leading-relaxed text-gray-500">
+            <div class="text-gray-500 text-lg font-medium">
                 <slot name="title" />
             </div>
-            <div>
+            <div class="mt-2">
                 <slot name="content" />
             </div>
         </div>

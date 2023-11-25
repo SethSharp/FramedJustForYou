@@ -131,12 +131,6 @@ const printing = [
         link: '#printing-on-canvases',
         active: 'services.printing',
     },
-    {
-        name: "Giclee's",
-        href: route('services.printing') + '#giclee',
-        link: '#giclee',
-        active: 'services.printing',
-    },
 ]
 
 const other = [
@@ -329,7 +323,7 @@ const other = [
                 <div class="relative top-0">
                     <slot name="carousel" />
                 </div>
-                <div class="min-h-screen mx-4 mt-10">
+                <div class="min-h-screen mx-8 mt-10">
                     <slot />
                 </div>
             </main>

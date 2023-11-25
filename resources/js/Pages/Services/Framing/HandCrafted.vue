@@ -25,7 +25,7 @@ import Image from '@/Components/Image.vue'
                             our handcrafted art collection is a testament to the beauty of
                             traditional craftsmanship.
                         </div>
-                        <div class="sm:w-1/2 sm:w-full">
+                        <div class="sm:w-1/2 sm:w-full mt-4 sm:mt-0">
                             <Image src="handcrafted/pressed.png" class="w-3/4 mx-auto" />
                         </div>
                     </div>

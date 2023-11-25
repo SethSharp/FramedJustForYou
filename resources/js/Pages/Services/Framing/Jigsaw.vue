@@ -20,7 +20,7 @@ import Image from '@/Components/Image.vue'
                         aspect of our work, and this dedication extends to our meticulous process
                         for framing jigsaw puzzles.
                     </div>
-                    <div class="sm:w-1/2 sm:w-full">
+                    <div class="sm:w-1/2 sm:w-full mt-4 sm:mt-0">
                         <Image src="jigsaw/giraffe.png" class="w-1/2 mx-auto" />
                     </div>
                 </div>
@@ -60,7 +60,7 @@ import Image from '@/Components/Image.vue'
                             </p>
                         </div>
                         <div class="sm:w-1/2 sm:w-full my-auto">
-                            <Image src="jigsaw/frame.png" class="w-1/2 mx-auto" />
+                            <Image src="jigsaw/frame.png" class="sm:w-3/4 mx-auto" />
                         </div>
                     </div>
                     <div class="sm:flex my-4">
@@ -86,7 +86,7 @@ import Image from '@/Components/Image.vue'
                     </div>
                     <div class="sm:flex my-4">
                         <div class="sm:w-1/2 sm:w-full my-auto">
-                            <Image src="jigsaw/final-product.png" class="w-1/2 mx-auto" />
+                            <Image src="jigsaw/final-product.png" class="sm:w-3/4 mx-auto" />
                         </div>
                         <div class="sm:w-1/2 sm:w-full p-6">
                             <h1 class="text-xl font-bold">Final Product</h1>

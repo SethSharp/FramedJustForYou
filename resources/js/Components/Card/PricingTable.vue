@@ -10,7 +10,7 @@ defineProps({
         <h3 class="ml-8 text-md text-gray-400">
             Prices do change often so make sure to call to double check!
         </h3>
-        <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+        <div class="inline-block min-w-full py-2 align-middle px-8 lg:px-12">
             <table class="min-w-full divide-y divide-gray-300">
                 <thead>
                     <tr>

@@ -29,7 +29,7 @@ import ListingCard from '@/Components/Card/ListingCard.vue'
                     </p>
 
                     <h1 class="text-2xl font-medium mt-6">Facilities</h1>
-                    <div class="grid grid-cols-3 gap-x-4 gap-y-4 my-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-4 my-6">
                         <ListingCard title="Air Conditioning" />
                         <ListingCard title="Tables and chairs" />
                         <ListingCard title="Easels" />

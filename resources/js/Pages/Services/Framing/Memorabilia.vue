@@ -18,7 +18,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                 <Image
                     src="memorabilia/suns-jerseys.png"
                     alt="Suns Jerseys"
-                    class="w-4/5 mx-auto"
+                    class="sm:w-4/5 mx-auto"
                 />
                 <div class="mt-4">
                     We understand the unique value of your memorabilia, and that's why we take great
@@ -39,7 +39,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     extensive experience framing various celebrity-related treasures, including
                     autographed garments, costumes, and rare signed correspondence.
                 </p>
-                <div class="w-3/4 mx-auto my-2">
+                <div class="sm:w-3/4 mx-auto my-2">
                     <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 3" />
                 </div>
             </template>
@@ -60,7 +60,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     represent, making it a compelling and coveted category within the world of
                     memorabilia.
                 </p>
-                <div class="w-3/4 mx-auto my-2 grid grid-cols-2 gap-x-2">
+                <div class="w-3/4 mx-auto my-2 grid sm:grid-cols-2 gap-x-2 gap-y-2">
                     <Image src="restorations/gymnastics.png" class="my-auto" />
                     <Image src="restorations/asw-athlete.png" class="my-auto" />
                 </div>
@@ -80,7 +80,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     have your sports memorabilia expertly framed and ready to adorn your walls
                     within just one week.
                 </p>
-                <div class="w-3/4 mx-auto my-2">
+                <div class="sm:w-3/4 mx-auto my-2">
                     <Image src="memorabilia/jerseys.png" alt="Framed Jerseys" />
                 </div>
             </template>

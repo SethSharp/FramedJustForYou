@@ -7,7 +7,9 @@ const navigation = {
     pages: [
         { name: 'Home', href: route('home') },
         { name: 'About', href: route('about') },
+        { name: 'Custom Framing', href: route('services.framing') },
         // { name: 'FAQ', href: route('faq') },
+        { name: 'Printing', href: route('services.printing') },
         { name: 'Art Studio', href: route('studio') },
         { name: 'Contact', href: route('contact') },
     ],
@@ -84,7 +86,7 @@ const social = [
 <template>
     <footer class="bg-primary-700">
         <div class="lg:flex w-full">
-            <div class="sm:w-2/5 lg:my-auto ml-16">
+            <div class="sm:w-2/5 lg:my-auto mx-6">
                 <div class="pt-8 lg:pt-0">
                     <Link :href="route('home')">
                         <ApplicationLogo class="w-3/4" />
@@ -100,7 +102,7 @@ const social = [
                             :key="item.name"
                             :href="item.href"
                             :aria-label="item.name"
-                            class="text-gray-500 hover:text-gray-400"
+                            class="text-gray-500 hover:text-gray-400 cursor-pointer"
                         >
                             <span class="sr-only">{{ item.name }}</span>
                             <component :is="item.icon" />
@@ -117,7 +119,7 @@ const social = [
                                 <Link
                                     :href="item.href"
                                     :aria-label="item.name"
-                                    class="text-md leading-6 text-gray-300 hover:text-white"
+                                    class="text-md leading-6 text-gray-300 hover:text-white cursor-pointer"
                                 >
                                     {{ item.name }}
                                 </Link>
@@ -172,7 +174,7 @@ const social = [
         <div class="grid sm:grid-cols-2 border-t border-white/10 flex p-12">
             <div class="flex justify-start items-center">
                 <p class="text-xs leading-5 text-gray-200">
-                    &copy; 2023 FramedJustForYou. All rights reserved.
+                    &copy; 2023 Framed Just For You. All rights reserved.
                 </p>
             </div>
             <div></div>
