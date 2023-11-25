@@ -40,7 +40,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     autographed garments, costumes, and rare signed correspondence.
                 </p>
                 <div class="sm:w-3/4 mx-auto my-2">
-                    <Image src="memorabilia/memorabilia-3.png" alt="Memorabilia 3" />
+                    <Image src="memorabilia/memorabilia-3.png" alt="Collectables" />
                 </div>
             </template>
         </Section>
@@ -61,8 +61,8 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     memorabilia.
                 </p>
                 <div class="w-3/4 mx-auto my-2 grid sm:grid-cols-2 gap-x-2 gap-y-2">
-                    <Image src="restorations/gymnastics.png" class="my-auto" />
-                    <Image src="restorations/asw-athlete.png" class="my-auto" />
+                    <Image src="restorations/gymnastics.png" alt="Gymnastics frame with multiple cutouts for medals" class="my-auto" />
+                    <Image src="restorations/asw-athlete.png" alt="ASW frame with multiple cutouts for medals and photos" class="my-auto" />
                 </div>
             </template>
         </Section>
@@ -81,7 +81,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
                     within just one week.
                 </p>
                 <div class="sm:w-3/4 mx-auto my-2">
-                    <Image src="memorabilia/jerseys.png" alt="Framed Jerseys" />
+                    <Image src="memorabilia/jerseys.png" alt="Framed Sport Jerseys" />
                 </div>
             </template>
         </Section>
