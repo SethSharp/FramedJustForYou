@@ -25,7 +25,11 @@ import Image from '@/Components/Image.vue'
                         </p>
                     </div>
                     <div>
-                        <Image src="acrylic/golf-ball-display.png" alt="Golf Ball display in example home space" class="w-3/4 mx-auto" />
+                        <Image
+                            src="acrylic/golf-ball-display.png"
+                            alt="Golf Ball display in example home space"
+                            class="w-3/4 mx-auto"
+                        />
                     </div>
                 </div>
 
