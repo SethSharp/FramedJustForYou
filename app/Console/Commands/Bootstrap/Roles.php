@@ -2,9 +2,8 @@
 
 namespace App\Console\Commands\Bootstrap;
 
-use App\Domain\Iam\Actions\SyncRolesAction;
 use Illuminate\Console\Command;
-use Spatie\Multitenancy\Commands\Concerns\TenantAware;
+use App\Domain\Iam\Actions\SyncRolesAction;
 
 class Roles extends Command
 {

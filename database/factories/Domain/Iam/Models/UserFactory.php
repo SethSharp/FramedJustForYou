@@ -2,12 +2,11 @@
 
 namespace Database\Factories\Domain\Iam\Models;
 
+use Illuminate\Support\Str;
 use App\Domain\Iam\Models\Role;
 use App\Domain\Iam\Models\User;
-use App\Domain\Specialisation\Models\Specialisation;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFactory extends Factory
 {

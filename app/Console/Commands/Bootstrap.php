@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Console\Commands\Bootstrap\Roles;
 use Illuminate\Console\Command;
+use App\Console\Commands\Bootstrap\Roles;
 
 class Bootstrap extends Command
 {
