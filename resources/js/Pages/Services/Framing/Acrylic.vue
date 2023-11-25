@@ -25,14 +25,14 @@ import Image from '@/Components/Image.vue'
                         </p>
                     </div>
                     <div>
-                        <Image src="acrylic/golf-ball-display.png" class="w-3/4 mx-auto" />
+                        <Image src="acrylic/golf-ball-display.png" alt="Golf Ball display in example home space" class="w-3/4 mx-auto" />
                     </div>
                 </div>
 
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2 mx-8 my-8">
-                    <Image src="acrylic/football.png" class="my-auto" />
-                    <Image src="acrylic/boot.png" class="my-auto" />
-                    <Image src="acrylic/shovel.png" class="my-auto" />
+                    <Image src="acrylic/football.png" alt="Football in case" class="my-auto" />
+                    <Image src="acrylic/boot.png" alt="Boot in case" class="my-auto" />
+                    <Image src="acrylic/shovel.png" alt="Golden Shovel in case" class="my-auto" />
                 </div>
             </template>
         </Section>

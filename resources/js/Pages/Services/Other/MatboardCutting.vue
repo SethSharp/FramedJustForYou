@@ -24,12 +24,12 @@ import Section from '@/Components/Section.vue'
                         containing multiple items, or if you have a record then we can perfectly map
                         the correct size to fit the circular shape.
                     </div>
-                    <Image src="restorations/matboard-cutter.png" />
+                    <Image src="restorations/matboard-cutter.png" alt="Computerised matboard cutter"/>
                 </div>
                 <div class="grid grid-cols-3 gap-x-4 mt-8">
-                    <Image src="restorations/multiple-squares-and-circles.png" class="my-auto" />
-                    <Image src="restorations/shape-red.png" />
-                    <Image src="restorations/tools.png" class="my-auto" />
+                    <Image src="restorations/multiple-squares-and-circles.png" alt="2 Rows of 6 cut outs, side by side" class="my-auto" />
+                    <Image src="restorations/shape-red.png" alt="Corner square shapes with a internal mat" />
+                    <Image src="restorations/tools.png" alt="3 different sized cutouts holding different items" class="my-auto" />
                 </div>
             </template>
         </Section>
@@ -42,9 +42,9 @@ import Section from '@/Components/Section.vue'
                 colours.
 
                 <div class="grid grid-cols-3 gap-x-4 my-12">
-                    <Image src="restorations/record.png" class="my-auto" />
-                    <Image src="restorations/gymnastics.png" class="my-auto" />
-                    <Image src="restorations/asw-athlete.png" class="my-auto" />
+                    <Image src="restorations/record.png" alt="Metallica Record" class="my-auto" />
+                    <Image src="restorations/gymnastics.png" alt="Gymnastics frame with multiple cutouts for medals" class="my-auto" />
+                    <Image src="restorations/asw-athlete.png" alt="ASW frame with multiple cutouts for medals and photos" class="my-auto" />
                 </div>
             </template>
         </Section>
