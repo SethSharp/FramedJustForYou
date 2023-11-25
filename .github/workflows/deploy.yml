@@ -43,6 +43,12 @@ jobs:
         run: |
           npm run build
 
+      - name: Execute tests
+        env:
+          DB_USERNAME: root
+          DB_PASSWORD: root
+        run: php artisan test
+
       - name: Clear Cache
         run: |
           php artisan cache:clear
