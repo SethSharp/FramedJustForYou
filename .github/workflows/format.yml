@@ -49,6 +49,9 @@ jobs:
           echo "running prettier..."
           npm run prettier
 
+          echo "running php-cs-fixer..."
+          vendor/bin/php-cs-fixer fix
+
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply prettier fixes
