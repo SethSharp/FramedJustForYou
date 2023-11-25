@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use App\Domain\Iam\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ProfileTest extends TestCase
 {
@@ -28,7 +28,7 @@ class ProfileTest extends TestCase
         $response = $this
             ->actingAs($user)
             ->patch('/profile', [
-                'name' => 'Test User',
+                'name' => 'Test Iam',
                 'email' => 'test@example.com',
             ]);
 
@@ -38,7 +38,7 @@ class ProfileTest extends TestCase
 
         $user->refresh();
 
-        $this->assertSame('Test User', $user->name);
+        $this->assertSame('Test Iam', $user->name);
         $this->assertSame('test@example.com', $user->email);
         $this->assertNull($user->email_verified_at);
     }
@@ -50,7 +50,7 @@ class ProfileTest extends TestCase
         $response = $this
             ->actingAs($user)
             ->patch('/profile', [
-                'name' => 'Test User',
+                'name' => 'Test Iam',
                 'email' => $user->email,
             ]);
 

@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +47,6 @@ Route::prefix('services')->name('services.')->group(function () {
         Route::get('/framing-supplies', function () { return Inertia::render('Services/Other/FramingSupplies'); })->name('framing-supplies');
     });
 });
+
+require __DIR__ . '/auth.php';
+require __DIR__ . '/store.php';
