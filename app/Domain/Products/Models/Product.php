@@ -9,6 +9,6 @@ class Product extends \Illuminate\Database\Eloquent\Model
 {
     public function files(): BelongsToMany
     {
-        return $this->belongsToMany(File::class, 'file_products');
+        return $this->belongsToMany(File::class, 'file_products')->withTimestamps();
     }
 }

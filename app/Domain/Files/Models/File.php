@@ -12,6 +12,6 @@ class File extends Model
 
     public function products(): BelongsToMany
     {
-        return $this->belongsToMany(Product::class, 'file_products');
+        return $this->belongsToMany(Product::class, 'file_products')->withTimestamps();
     }
 }
