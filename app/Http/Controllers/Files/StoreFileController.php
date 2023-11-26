@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Files;
 
 use App\Domain\Files\Models\File;
 use App\Http\Controllers\Controller;
+use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\Files\StoreFileRequest;
-use Intervention\Image\Facades\Image;
 
 class StoreFileController extends Controller
 {

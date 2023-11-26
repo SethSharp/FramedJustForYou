@@ -5,7 +5,8 @@ import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
 import { ref } from 'vue';
 
 const props = defineProps({
-    files: Object
+    files: Object,
+    product: Object
 })
 
 const formData = ref({
@@ -44,10 +45,6 @@ const submit = () => {
                 <input type="file" @change="handleFileChange">
                 <PrimaryButton type="submit" as="button">Upload</PrimaryButton>
             </form>
-        </div>
-
-        <div>
-            <img v-for="img in files" :src="img.path"/>
         </div>
     </AuthenticatedLayout>
 </template>

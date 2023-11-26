@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Domain\Files\Models\File;
 use Inertia\Inertia;
+use App\Domain\Products\Models\Product;
 
 class ShowDashboardController extends Controller
 {
     public function __invoke()
     {
-        $files = File::all();
+        $product = Product::first()->with('files')->first();
 
         return Inertia::render('Management/Dashboard', [
-            'files' => $files
+            'product' => $product
         ]);
     }
 }

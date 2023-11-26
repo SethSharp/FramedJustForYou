@@ -10,10 +10,10 @@ return new class() extends Migration {
      */
     public function up(): void
     {
-        Schema::create('files', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            //            $table->foreignId('product_id');
-            $table->string('path');
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('description');
             $table->timestamps();
         });
     }
