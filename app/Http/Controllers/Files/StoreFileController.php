@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Http\Controllers\Files;
+
+use App\Domain\Files\Models\File;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Files\StoreFileRequest;
+use Intervention\Image\Facades\Image;
+
+class StoreFileController extends Controller
+{
+    public function __invoke(StoreFileRequest $request)
+    {
+        $img = Image::make($request->file('file'))
+            ->fit(300)
+            ->encode();
+
+        $path = $request->file('file')->hashName(path: 'development/products');
+
+        Storage::disk('s3')->put($path, $img, 'public');
+
+        File::create([
+            'path' => Storage::url($path)
+        ]);
+
+        return back()->with('success', 'Image Successfully Saved');
+    }
+}

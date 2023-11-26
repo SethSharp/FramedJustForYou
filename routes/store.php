@@ -10,4 +10,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::patch('/profile', \App\Http\Controllers\Profile\UpdateProfileController::class)->name('update');
         Route::delete('/profile', \App\Http\Controllers\Profile\DeleteProfileController::class)->name('destroy');
     });
+
+    Route::post('/store/file', \App\Http\Controllers\Files\StoreFileController::class)->name('file.store');
 });
