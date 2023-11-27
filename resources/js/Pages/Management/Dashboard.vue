@@ -1,35 +1,38 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
-import {Head, router} from '@inertiajs/vue3'
-import PrimaryButton from "@/Components/Button/PrimaryButton.vue";
-import { ref } from 'vue';
+import { Head, router } from '@inertiajs/vue3'
+import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
+import { ref } from 'vue'
 
 const props = defineProps({
     files: Object,
-    product: Object
+    product: Object,
 })
 
 const formData = ref({
-    file:  null,
-});
+    file: null,
+})
 
 const handleFileChange = (event) => {
-    formData.value.file = event.target.files[0];
-
-};
+    formData.value.file = event.target.files[0]
+}
 
 const submit = () => {
     console.log('submit')
-    router.post(route('file.store'), {
-        file: formData.value.file
-    }, {
-        onError: (err) => {
-            console.log(err)
+    router.post(
+        route('file.store'),
+        {
+            file: formData.value.file,
         },
-        onSuccess: (msg) => {
-            console.log(msg)
-        }
-    })
+        {
+            onError: (err) => {
+                console.log(err)
+            },
+            onSuccess: (msg) => {
+                console.log(msg)
+            },
+        },
+    )
 }
 </script>
 
@@ -42,7 +45,7 @@ const submit = () => {
             <div>This is where you can manage your online store</div>
 
             <form @submit.prevent="submit">
-                <input type="file" @change="handleFileChange">
+                <input type="file" @change="handleFileChange" />
                 <PrimaryButton type="submit" as="button">Upload</PrimaryButton>
             </form>
         </div>
