@@ -2,8 +2,6 @@
 
 namespace App\Http\Requests\Files;
 
-use Illuminate\Validation\Validator;
-
 class StoreFileRequest extends \Illuminate\Foundation\Http\FormRequest
 {
     public function authorize()
@@ -14,18 +12,7 @@ class StoreFileRequest extends \Illuminate\Foundation\Http\FormRequest
     public function rules()
     {
         return [
-            'file' => 'nullable'
+            'file' => 'required|image|max:2000'
         ];
-    }
-
-    public function withValidator($validator): void
-    {
-        $validator->validate();
-
-        $validator->after(function (Validator $validator) {
-            if (is_null($this->input('file'))) {
-                $validator->errors()->add('file', 'Is required');
-            }
-        });
     }
 }

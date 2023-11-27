@@ -1,9 +1,10 @@
 <script setup>
-import {ref, watch, computed} from 'vue'
+import { ref, watch, computed } from 'vue'
+import { XMarkIcon, CheckCircleIcon } from '@heroicons/vue/20/solid/index.js'
 
 const props = defineProps({
     success: String,
-    errors: String,
+    errors: Object,
 })
 
 let notifications = ref([])
@@ -14,7 +15,8 @@ watch(
     (newVal) => {
         if (newVal) {
             notifications.value.push({
-                heading: "FYI",
+                icon: CheckCircleIcon,
+                heading: "Success",
                 messages: [props.success],
                 iconClasses: "text-green-400",
             })
@@ -29,11 +31,11 @@ watch(
     () => props.errors,
     (newVal) => {
         if (newVal) {
-            console.log(newVal)
             notifications.value.push({
+                icon: XMarkIcon,
                 heading: "Error",
-                messages: [props.success],
-                iconClasses: "text-green-400",
+                messages: Object.values(props.errors),
+                iconClasses: "text-red-400",
             })
         }
     },
@@ -46,7 +48,7 @@ watch(
     notificationsLength,
     (newValue, oldValue) => {
         if (typeof oldValue === "undefined" || newValue >= oldValue) {
-            setTimeout(() => notifications.value.shift(), 7000)
+            setTimeout(() => notifications.value.shift(), 3000)
         }
     },
     {
@@ -54,7 +56,6 @@ watch(
         immediate: true,
     }
 )
-
 </script>
 
 <template>
@@ -79,11 +80,11 @@ watch(
                         <div class="p-4">
                             <div class="flex items-start">
                                 <div class="shrink-0">
-<!--                                    <component-->
-<!--                                        :is="notification.icon"-->
-<!--                                        :class="['h-6 w-6', notification.iconClasses]"-->
-<!--                                        aria-hidden="true"-->
-<!--                                    />-->
+                                    <component
+                                        :is="notification.icon"
+                                        :class="['h-6 w-6', notification.iconClasses]"
+                                        aria-hidden="true"
+                                    />
                                 </div>
 
                                 <div class="ml-3 w-0 flex-1 pt-0.5">
