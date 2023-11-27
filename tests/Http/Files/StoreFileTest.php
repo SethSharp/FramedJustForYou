@@ -2,11 +2,10 @@
 
 namespace Tests\Http\Files;
 
-use App\Domain\Files\Models\File;
+use Tests\TestCase;
 use App\Domain\Iam\Models\User;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Tests\TestCase;
 
 class StoreFileTest extends TestCase
 {
