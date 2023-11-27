@@ -18,7 +18,6 @@ const handleFileChange = (event) => {
 }
 
 const submit = () => {
-    console.log('submit')
     router.post(
         route('file.store'),
         {
