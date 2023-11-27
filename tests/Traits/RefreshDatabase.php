@@ -10,7 +10,7 @@ trait RefreshDatabase
 {
     use BaseRefreshDatabase;
 
-    protected function refreshTestDatabase(): void
+    public function refreshTestDatabase(): void
     {
         if (! RefreshDatabaseState::$migrated) {
             $this->artisan('migrate:fresh', ['--path' => 'database/migrations']);
