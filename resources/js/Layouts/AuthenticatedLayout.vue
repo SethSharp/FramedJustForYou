@@ -6,6 +6,7 @@ import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
 import { Link } from '@inertiajs/vue3'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid/index.js'
 import Footer from '@/Layouts/Footer.vue'
+import Notification from '@/Components/Notification.vue'
 
 let showingNavigationDropdown = ref(false)
 
@@ -88,4 +89,6 @@ const links = [
             </main>
         </div>
     </div>
+
+    <Notification :success="$page.props.success" :errors="$page.props.errors" />
 </template>
