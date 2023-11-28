@@ -11,5 +11,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::delete('/profile', \App\Http\Controllers\Profile\DeleteProfileController::class)->name('destroy');
     });
 
+    Route::prefix('categories')->name('categories.')->group(function () {
+       Route::get('/', \App\Http\Controllers\Categories\IndexCategoriesController::class)->name('index');
+    });
+
     Route::post('/store/file', \App\Http\Controllers\Files\StoreFileController::class)->name('file.store');
 });

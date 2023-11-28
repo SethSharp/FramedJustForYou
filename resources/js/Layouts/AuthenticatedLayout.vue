@@ -84,7 +84,9 @@ const links = [
             <!-- Page Content -->
             <main>
                 <div class="min-h-screen mx-8">
-                    <slot />
+                    <div class="mt-12 mx-8">
+                        <slot />
+                    </div>
                 </div>
             </main>
         </div>

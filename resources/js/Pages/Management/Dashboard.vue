@@ -1,7 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
-import { Head, router } from '@inertiajs/vue3'
-import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
+import { Link, Head, router } from '@inertiajs/vue3'
 import { ref } from 'vue'
 
 const props = defineProps({
@@ -38,16 +37,14 @@ const submit = () => {
     <Head title="Dashboard" />
 
     <AuthenticatedLayout>
-        <div class="py-12">
-            <div class="text-gray-900 text-xl">Dashboard</div>
-            <div>This is where you can manage your online store</div>
+        <div class="text-gray-900 text-xl">Dashboard</div>
+        <div>This is where you can manage your online store</div>
 
-            <form @submit.prevent="submit">
-                <input type="text" v-model="formData.description" />
-                <br />
-                <input type="file" @change="handleFileChange" />
-                <PrimaryButton type="submit" as="button">Upload</PrimaryButton>
-            </form>
+        <h1> Categories and Products </h1>
+        <div class="grid grid-cols-6 mt-6">
+            <Link :href="route('categories.index')" class="rounded-xl shadow-md flex justify-center h-48 bg-gray-200 hover:bg-gray-300">
+                <span class="my-auto text-xl"> Categories </span >
+            </Link>
         </div>
     </AuthenticatedLayout>
 </template>
