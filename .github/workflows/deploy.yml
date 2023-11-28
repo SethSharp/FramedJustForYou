@@ -47,7 +47,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: php -r "file_exists('.env') || copy('.env.production.example', '.env');"
 
-      - name: Copy production .env
+      - name: Copy example .env
         if: github.ref != 'refs/heads/main'
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
