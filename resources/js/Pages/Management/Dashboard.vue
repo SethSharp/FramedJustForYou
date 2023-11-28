@@ -1,36 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
-import { Link, Head, router } from '@inertiajs/vue3'
-import { ref } from 'vue'
-
-const props = defineProps({
-    files: Object,
-    product: Object,
-})
-
-const formData = ref({
-    file: null,
-    description: '',
-})
-
-const handleFileChange = (event) => {
-    formData.value.file = event.target.files[0]
-}
-
-const submit = () => {
-    router.post(
-        route('file.store'),
-        {
-            file: formData.value.file,
-            description: formData.value.description,
-        },
-        {
-            onError: (err) => {
-                console.log(err)
-            },
-        },
-    )
-}
+import { Link, Head } from '@inertiajs/vue3'
 </script>
 
 <template>

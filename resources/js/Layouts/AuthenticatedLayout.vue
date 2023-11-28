@@ -87,10 +87,10 @@ const links = [
                     <div class="mx-8 mt-12 mb-8 h-20">
                         <div class="bg-white rounded-md w-full h-full flex items-center">
                             <div class="flex-grow ml-6 text-3xl font-medium">
-                                <slot name="header"/>
+                                <slot name="header" />
                             </div>
                             <div class="flex items-center space-x-4 mr-8">
-                                <slot name="headerActions"/>
+                                <slot name="headerActions" />
                             </div>
                         </div>
                     </div>

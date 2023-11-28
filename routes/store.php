@@ -12,7 +12,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 
     Route::prefix('categories')->name('categories.')->group(function () {
-       Route::get('/', \App\Http\Controllers\Categories\IndexCategoriesController::class)->name('index');
+        Route::get('/', \App\Http\Controllers\Categories\IndexCategoryController::class)->name('index');
+        Route::get('/create', \App\Http\Controllers\Categories\CreateCategoryController::class)->name('create');
+        Route::get('/store', \App\Http\Controllers\Categories\StoreCategoryController::class)->name('store');
     });
 
     Route::post('/store/file', \App\Http\Controllers\Files\StoreFileController::class)->name('file.store');
