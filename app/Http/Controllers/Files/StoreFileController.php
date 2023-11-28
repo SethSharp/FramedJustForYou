@@ -18,10 +18,16 @@ class StoreFileController extends Controller
 
         $path = $request->file('file')->hashName(path: 'development/products');
 
-        Storage::disk('s3')->put($path, $img, 'public');
+        Storage::disk(
+            app()->environment('local')
+                ? 'public'
+                : config('filesystems.default')
+        )->put($path, $img, 'public');
 
         File::create([
-            'path' => Storage::url($path)
+            'path' => app()->environment('local')
+                ? $path
+                : Storage::url($path)
         ]);
 
         return back()->with('success', 'Image Successfully Saved');
