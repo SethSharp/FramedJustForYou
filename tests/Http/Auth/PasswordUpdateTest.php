@@ -1,16 +1,13 @@
 <?php
 
-namespace Tests\Feature\Auth;
+namespace Tests\Http\Auth;
 
 use Tests\TestCase;
 use App\Domain\Iam\Models\User;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class PasswordUpdateTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_password_can_be_updated(): void
     {
         $user = User::factory()->create();
