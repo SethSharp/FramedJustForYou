@@ -1,15 +1,12 @@
 <?php
 
-namespace Tests\Feature\Auth;
+namespace Tests\Http\Auth;
 
 use Tests\TestCase;
 use App\Domain\Iam\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class PasswordConfirmationTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_confirm_password_screen_can_be_rendered(): void
     {
         $user = User::factory()->create();
