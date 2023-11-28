@@ -21,7 +21,7 @@ const links = [
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-50">
             <nav>
                 <div class="px-4 lg:px-8 bg-primary-600">
                     <div class="flex h-16 h-fit py-4">
@@ -83,8 +83,18 @@ const links = [
 
             <!-- Page Content -->
             <main>
-                <div class="min-h-screen mx-8">
-                    <div class="mt-12 mx-8">
+                <div class="min-h-screen">
+                    <div class="mx-8 mt-12 mb-8 h-20">
+                        <div class="bg-white rounded-md w-full h-full flex items-center">
+                            <div class="flex-grow ml-6 text-3xl font-medium">
+                                <slot name="header"/>
+                            </div>
+                            <div class="flex items-center space-x-4 mr-8">
+                                <slot name="headerActions"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-12">
                         <slot />
                     </div>
                 </div>
