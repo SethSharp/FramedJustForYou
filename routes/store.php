@@ -15,6 +15,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/', \App\Http\Controllers\Categories\IndexCategoryController::class)->name('index');
         Route::get('/create', \App\Http\Controllers\Categories\CreateCategoryController::class)->name('create');
         Route::post('/store', \App\Http\Controllers\Categories\StoreCategoryController::class)->name('store');
+        Route::get('/edit/{category}', \App\Http\Controllers\Categories\EditCategoryController::class)->name('edit');
+        Route::post('/update/{category}', \App\Http\Controllers\Categories\StoreCategoryController::class)->name('update');
     });
 
     Route::post('/store/file', \App\Http\Controllers\Files\StoreFileController::class)->name('file.store');

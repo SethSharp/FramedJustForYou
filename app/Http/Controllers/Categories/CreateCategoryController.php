@@ -9,6 +9,6 @@ class CreateCategoryController extends Controller
 {
     public function __invoke()
     {
-        return Inertia::render('Categories/Create');
+        return Inertia::render('Categories/CreateEdit');
     }
 }

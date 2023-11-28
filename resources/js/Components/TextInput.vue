@@ -25,7 +25,7 @@ defineExpose({ focus: () => input.value.focus() })
 </script>
 
 <template>
-    <InputLabel>
+    <InputLabel v-if="label">
         {{ label }}
     </InputLabel>
     <input

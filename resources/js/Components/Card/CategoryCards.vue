@@ -20,7 +20,10 @@ defineProps({
                 </div>
             </div>
 
-            <Link class="absolute inset-0 flex justify-end z-40" href="#">
+            <Link
+                class="absolute inset-0 flex justify-end z-40"
+                :href="route('categories.edit', category)"
+            >
                 <div
                     class="bg-white hover:bg-primary-100 rounded-full p-2 border-2 border-primary-500 h-fit"
                 >
