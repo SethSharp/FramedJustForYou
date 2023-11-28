@@ -1,11 +1,13 @@
 <script setup>
 import { onMounted, ref } from 'vue'
+import InputLabel from '@/Components/InputLabel.vue'
 
 defineProps({
     modelValue: {
-        type: String,
+        type: [String, null],
         required: true,
     },
+    label: String,
 })
 
 defineEmits(['update:modelValue'])
@@ -22,6 +24,9 @@ defineExpose({ focus: () => input.value.focus() })
 </script>
 
 <template>
+    <InputLabel>
+        {{ label }}
+    </InputLabel>
     <textarea
         ref="input"
         class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm"

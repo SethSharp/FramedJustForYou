@@ -12,13 +12,13 @@ defineProps({
 })
 
 const form = useForm({
-    name: '',
-    description: '',
+    name: null,
+    description: null,
     file: null,
 })
 
 const submit = () => {
-    form.post(route('file.store'))
+    form.post(route('categories.store'))
 }
 </script>
 
@@ -28,13 +28,17 @@ const submit = () => {
     <AuthenticatedLayout>
         <template #header> Create </template>
 
-        <div>
-            <form @submit.prevent="submit">
+        <div class="bg-gray-100 flex justify-center">
+            <form @submit.prevent="submit" class="w-3/4 sm:w-1/2 my-10">
                 <Seperator>
-                    <TextInput v-model="form.name" />
+                    <TextInput v-model="form.name" label="Name" placeholder="Category name" />
                 </Seperator>
                 <Seperator>
-                    <TextAreaInput v-model="form.description" />
+                    <TextAreaInput
+                        v-model="form.description"
+                        label="Description"
+                        placeholder="A short description of this cateogry."
+                    />
                 </Seperator>
                 <Seperator>
                     <ImageUpload v-model="form.file" />

@@ -1,18 +1,49 @@
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import SecondaryButton from '@/Components/Button/SecondaryButton.vue'
+
+const props = defineProps({
     modelValue: {
-        type: String,
+        type: [String, null, File],
         required: true,
+    },
+    currentImage: {
+        type: String,
+        required: false,
     },
 })
 
 const emits = defineEmits(['update:modelValue'])
 
+const inputVal = computed({
+    get: () => props.modelValue,
+    set: (value) => emits('update:modelValue', value),
+})
+
+const newImage = computed(() => (inputVal.value ? URL.createObjectURL(inputVal.value) : null))
+
 const handleFileChange = (event) => {
-    emits('update:modelValue', event.target.files[0])
+    inputVal.value = event.target.files[0]
+}
+
+const fileUpload = () => {
+    document.getElementById('file-upload').click()
 }
 </script>
 
 <template>
-    <input type="file" @change="handleFileChange" />
+    <div class="flex items-center space-x-2">
+        <img :src="newImage ?? currentImage" class="h-24 w-24 rounded-full" />
+
+        <input
+            id="file-upload"
+            ref="image"
+            type="file"
+            accept="image/gif, image/jpeg, image/png"
+            @input="handleFileChange"
+            hidden
+        />
+
+        <SecondaryButton type="button" @click="fileUpload"> Upload</SecondaryButton>
+    </div>
 </template>

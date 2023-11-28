@@ -17,6 +17,9 @@ defineProps({
             <PrimaryButton :href="route('categories.create')"> Create </PrimaryButton>
         </template>
 
-        Some content here
+        <div v-for="cat in categories">
+            <span>Name: {{ cat.name }} </span>
+            <img :src="cat.file.path" />
+        </div>
     </AuthenticatedLayout>
 </template>
