@@ -11,7 +11,7 @@ const props = defineProps({
 
 const formData = ref({
     file: null,
-    description: ''
+    description: '',
 })
 
 const handleFileChange = (event) => {
@@ -23,7 +23,7 @@ const submit = () => {
         route('file.store'),
         {
             file: formData.value.file,
-            description: formData.value.description
+            description: formData.value.description,
         },
         {
             onError: (err) => {
@@ -43,8 +43,8 @@ const submit = () => {
             <div>This is where you can manage your online store</div>
 
             <form @submit.prevent="submit">
-                <input type="text" v-model="formData.description"/>
-                <br>
+                <input type="text" v-model="formData.description" />
+                <br />
                 <input type="file" @change="handleFileChange" />
                 <PrimaryButton type="submit" as="button">Upload</PrimaryButton>
             </form>
