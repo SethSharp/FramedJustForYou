@@ -9,10 +9,6 @@ class ShowDashboardController extends Controller
 {
     public function __invoke()
     {
-        $product = Product::first()->with('files')->first();
-
-        return Inertia::render('Management/Dashboard', [
-            'product' => $product
-        ]);
+        return Inertia::render('Management/Dashboard');
     }
 }
