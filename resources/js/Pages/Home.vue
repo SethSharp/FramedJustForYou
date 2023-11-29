@@ -3,10 +3,9 @@ import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Image from '@/Components/Image.vue'
 import Section from '@/Components/Section.vue'
-import Carousel from '@/Components/Carousel.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import { SplideSlide } from '@splidejs/vue-splide'
-import MainPageCarousel from '@/Components/MainPageCarousel.vue'
+import MainPageCarousel from '@/Components/Splide/MainPageCarousel.vue'
 </script>
 
 <template>
@@ -28,7 +27,6 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                 </div>
 
                 <MainPageCarousel>
-                    <!-- Your carousel content here -->
                     <SplideSlide>
                         <Image
                             src="store/front.webp"
