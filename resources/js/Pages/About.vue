@@ -2,7 +2,7 @@
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import * as TeamMemberCards from '@/Components/Card/Team'
-import Section from '@/Components/Section.vue'
+import Section from '@/Layouts/Section.vue'
 
 const teamMembers = [
     {

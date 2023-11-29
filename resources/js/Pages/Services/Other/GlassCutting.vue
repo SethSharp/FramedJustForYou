@@ -1,8 +1,7 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Section from '@/Components/Section.vue'
-import IconTable from '@/Components/Card/IconTable.vue'
+import Section from '@/Layouts/Section.vue'
 
 const glassingOptions = {
     title: '',
