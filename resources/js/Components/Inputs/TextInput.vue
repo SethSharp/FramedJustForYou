@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import InputLabel from '@/Components/InputLabel.vue'
+import InputLabel from '@/Components/Inputs/InputLabel.vue'
 
 defineProps({
     modelValue: {
