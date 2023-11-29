@@ -1,9 +1,7 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Section from '@/Components/Section.vue'
-import { PrinterIcon } from '@heroicons/vue/20/solid/index.js'
-import Service from '@/Components/Card/Services/Service.vue'
+import Section from '@/Layouts/Section.vue'
 import PricingTable from '@/Components/Card/PricingTable.vue'
 import Image from '@/Components/Image.vue'
 

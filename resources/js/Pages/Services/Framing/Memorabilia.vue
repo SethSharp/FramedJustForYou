@@ -1,10 +1,8 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Section from '@/Components/Section.vue'
+import Section from '@/Layouts/Section.vue'
 import Image from '@/Components/Image.vue'
-import Carousel from '@/Components/Carousel.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
 </script>
 
 <template>

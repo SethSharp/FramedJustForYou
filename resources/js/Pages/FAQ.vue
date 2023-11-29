@@ -1,7 +1,7 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Section from '@/Components/Section.vue'
+import Section from '@/Layouts/Section.vue'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { PlusIcon, MinusIcon } from '@heroicons/vue/20/solid'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
