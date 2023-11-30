@@ -1,6 +1,6 @@
 <script setup>
-import { useForm } from '@inertiajs/vue3'
-import { computed, onMounted } from 'vue'
+import {useForm} from '@inertiajs/vue3'
+import {computed, onMounted} from 'vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 import TextInput from '@/Components/Inputs/TextInput.vue'
 import TextAreaInput from '@/Components/Inputs/TextAreaInput.vue'
@@ -36,17 +36,16 @@ onMounted(() => {
     <div class="bg-gray-100 flex justify-center">
         <form @submit.prevent="submit" class="w-3/4 sm:w-1/2 my-10">
             <Seperator>
-                <TextInput v-model="form.name" label="Name" placeholder="Category name" />
+                <TextInput v-model="form.name" label="Name" placeholder="Category name"/>
             </Seperator>
             <Seperator>
                 <TextAreaInput
                     v-model="form.description"
                     label="Description"
-                    placeholder="A short description of this cateogry."
                 />
             </Seperator>
             <Seperator>
-                <ImageUpload v-model="form.file" />
+                <ImageUpload v-model="form.file"/>
             </Seperator>
             <PrimaryButton type="submit" as="button">Upload</PrimaryButton>
         </form>

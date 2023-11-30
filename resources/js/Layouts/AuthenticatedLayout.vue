@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue'
-import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import {ref} from 'vue'
+import {Dialog, DialogPanel, TransitionChild, TransitionRoot} from '@headlessui/vue'
 import {
     Bars3Icon,
     TagIcon,
@@ -19,15 +19,15 @@ const navigation = [
         icon: HomeIcon,
         current: route().current('dashboard'),
     },
-    { name: 'Products', href: '#', icon: RectangleGroupIcon, current: false },
+    {name: 'Products', href: '#', icon: RectangleGroupIcon, current: false},
     {
         name: 'Categories',
         href: route('categories.index'),
         icon: TagIcon,
         current: route().current('categories.*'),
     },
-    { name: 'Sales', href: '#', icon: FolderIcon, current: false },
-    { name: 'Users', href: '#', icon: UsersIcon, current: false },
+    {name: 'Sales', href: '#', icon: FolderIcon, current: false},
+    {name: 'Users', href: '#', icon: UsersIcon, current: false},
 ]
 </script>
 
@@ -44,7 +44,7 @@ const navigation = [
                     leave-from="opacity-100"
                     leave-to="opacity-0"
                 >
-                    <div class="fixed inset-0 bg-gray-900/80" />
+                    <div class="fixed inset-0 bg-gray-900/80"/>
                 </TransitionChild>
 
                 <div class="fixed inset-0 flex">
@@ -74,13 +74,13 @@ const navigation = [
                                         @click="sidebarOpen = false"
                                     >
                                         <span class="sr-only">Close sidebar</span>
-                                        <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                                        <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true"/>
                                     </button>
                                 </div>
                             </TransitionChild>
                             <!-- Sidebar component, swap this element with another sidebar if you like -->
                             <div
-                                class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2"
+                                class="flex grow flex-col gap-y-5 overflow-y-auto bg-primary-500 px-6 pb-2"
                             >
                                 <div class="flex h-16 shrink-0 items-center"></div>
                                 <nav class="flex flex-1 flex-col">
@@ -122,7 +122,7 @@ const navigation = [
         </TransitionRoot>
 
         <!-- Static sidebar for desktop -->
-        <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+        <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col bg-primary-500">
             <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 px-6">
                 <div class="flex h-16 shrink-0 items-center"></div>
                 <nav class="flex flex-1 flex-col">
@@ -134,8 +134,8 @@ const navigation = [
                                         :href="item.href"
                                         :class="[
                                             item.current
-                                                ? 'bg-gray-50 text-black'
-                                                : 'text-gray-400 hover:text-black hover:bg-gray-50',
+                                                ? 'bg-gray-300 text-black'
+                                                : 'text-gray-200 hover:text-black hover:bg-gray-50',
                                             'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold',
                                         ]"
                                     >
@@ -166,13 +166,13 @@ const navigation = [
                 @click="sidebarOpen = true"
             >
                 <span class="sr-only">Open sidebar</span>
-                <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon class="h-6 w-6" aria-hidden="true"/>
             </button>
         </div>
 
         <main class="py-10 lg:pl-72">
             <div class="px-4 sm:px-6 lg:px-8">
-                <slot />
+                <slot/>
             </div>
         </main>
     </div>

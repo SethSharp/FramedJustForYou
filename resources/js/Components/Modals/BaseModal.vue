@@ -1,5 +1,5 @@
 <script setup>
-import { XMarkIcon } from '@heroicons/vue/24/outline'
+import {XMarkIcon} from '@heroicons/vue/24/outline'
 import {
     TransitionRoot,
     TransitionChild,
@@ -32,7 +32,7 @@ const closeModal = () => {
                 leave-from="opacity-100"
                 leave-to="opacity-0"
             >
-                <div class="fixed inset-0 bg-black/25" />
+                <div class="fixed inset-0 bg-black/25"/>
             </TransitionChild>
 
             <div class="fixed inset-0 overflow-y-auto">
@@ -55,15 +55,18 @@ const closeModal = () => {
                                         as="h3"
                                         class="text-lg font-medium leading-6 text-gray-900"
                                     >
-                                        <slot name="title" />
+                                        <div class="flex">
+                                            <slot name="title"/>
 
-                                        <div class="justify-end" @click="closeModal">
-                                            <XMarkIcon class="w-8 h-8 text-black" />
+                                            <div class="ml-auto" @click="closeModal">
+                                                <XMarkIcon class="w-8 h-8 text-black"/>
+                                            </div>
                                         </div>
+
                                     </DialogTitle>
 
                                     <DialogDescription>
-                                        <slot name="content" />
+                                        <slot name="content"/>
                                     </DialogDescription>
                                 </DialogPanel>
                             </div>
