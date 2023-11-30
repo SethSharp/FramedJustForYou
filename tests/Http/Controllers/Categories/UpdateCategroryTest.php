@@ -2,13 +2,12 @@
 
 namespace Tests\Http\Controllers\Categories;
 
-
-use App\Domain\Categories\Models\Category;
-use App\Domain\Files\Models\File;
+use Tests\TestCase;
 use App\Domain\Iam\Models\User;
+use App\Domain\Files\Models\File;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Tests\TestCase;
+use App\Domain\Categories\Models\Category;
 
 class UpdateCategroryTest extends TestCase
 {
