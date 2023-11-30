@@ -11,7 +11,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::delete('/profile', \App\Http\Controllers\Profile\DeleteProfileController::class)->name('destroy');
     });
 
-    Route::prefix('categories')->name('categories.')->group(function () {
+    Route::middleware('role:admin,manager')->prefix('categories')->name('categories.')->group(function () {
         Route::get('/', \App\Http\Controllers\Categories\IndexCategoryController::class)->name('index');
         Route::get('/create', \App\Http\Controllers\Categories\CreateCategoryController::class)->name('create');
         Route::post('/store', \App\Http\Controllers\Categories\StoreCategoryController::class)->name('store');
