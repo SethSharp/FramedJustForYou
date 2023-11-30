@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue'
-import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import {ref} from 'vue'
+import {Dialog, DialogPanel, TransitionChild, TransitionRoot} from '@headlessui/vue'
 import {
     Bars3Icon,
     TagIcon,
@@ -20,15 +20,15 @@ const navigation = [
         icon: HomeIcon,
         current: route().current('dashboard'),
     },
-    { name: 'Products', href: '#', icon: RectangleGroupIcon, current: false },
+    {name: 'Products', href: '#', icon: RectangleGroupIcon, current: false},
     {
         name: 'Categories',
         href: route('categories.index'),
         icon: TagIcon,
         current: route().current('categories.*'),
     },
-    { name: 'Sales', href: '#', icon: FolderIcon, current: false },
-    { name: 'Users', href: '#', icon: UsersIcon, current: false },
+    {name: 'Sales', href: '#', icon: FolderIcon, current: false},
+    {name: 'Users', href: '#', icon: UsersIcon, current: false},
 ]
 </script>
 
@@ -45,7 +45,7 @@ const navigation = [
                     leave-from="opacity-100"
                     leave-to="opacity-0"
                 >
-                    <div class="fixed inset-0 bg-gray-900/80" />
+                    <div class="fixed inset-0 bg-gray-900/80"/>
                 </TransitionChild>
 
                 <div class="fixed inset-0 flex">
@@ -75,7 +75,7 @@ const navigation = [
                                         @click="sidebarOpen = false"
                                     >
                                         <span class="sr-only">Close sidebar</span>
-                                        <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                                        <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true"/>
                                     </button>
                                 </div>
                             </TransitionChild>
@@ -124,7 +124,7 @@ const navigation = [
 
         <!-- Static sidebar for desktop -->
         <div
-            class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col bg-primary-500"
+            class="hidden lg:fixed lg:inset-y-0 lg:z-40 lg:flex lg:w-72 lg:flex-col bg-primary-500"
         >
             <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 px-6">
                 <div class="flex h-16 shrink-0 items-center"></div>
@@ -161,7 +161,7 @@ const navigation = [
         </div>
 
         <div
-            class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden"
+            class="sticky top-0 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden"
         >
             <button
                 type="button"
@@ -169,7 +169,7 @@ const navigation = [
                 @click="sidebarOpen = true"
             >
                 <span class="sr-only">Open sidebar</span>
-                <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon class="h-6 w-6" aria-hidden="true"/>
             </button>
         </div>
 
@@ -178,19 +178,19 @@ const navigation = [
                 <div class="mb-8 h-20 rounded-t-lg">
                     <div class="rounded-md w-full h-full flex items-center">
                         <div class="flex-grow ml-6 text-3xl sm:text-5xl font-medium">
-                            <slot name="header" />
+                            <slot name="header"/>
                         </div>
                         <div class="flex items-center space-x-4 mr-8">
-                            <slot name="headerActions" />
+                            <slot name="headerActions"/>
                         </div>
                     </div>
                 </div>
                 <div class="mx-8">
-                    <slot />
+                    <slot/>
                 </div>
             </div>
         </main>
     </div>
 
-    <Notification :errors="$page.props.errors" :success="$page.props.success" />
+    <Notification :errors="$page.props.errors" :success="$page.props.success"/>
 </template>

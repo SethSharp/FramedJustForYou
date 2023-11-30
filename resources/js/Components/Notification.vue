@@ -1,6 +1,6 @@
 <script setup>
-import { ref, watch, computed } from 'vue'
-import { XMarkIcon, CheckCircleIcon } from '@heroicons/vue/20/solid/index.js'
+import {ref, watch, computed} from 'vue'
+import {XMarkIcon, CheckCircleIcon} from '@heroicons/vue/20/solid/index.js'
 
 const props = defineProps({
     success: String,
