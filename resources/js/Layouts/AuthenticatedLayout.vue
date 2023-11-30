@@ -20,7 +20,12 @@ const navigation = [
         current: route().current('dashboard'),
     },
     { name: 'Products', href: '#', icon: RectangleGroupIcon, current: false },
-    { name: 'Categories', href: route('categories.index'), icon: TagIcon, current: route().current('categories.*') },
+    {
+        name: 'Categories',
+        href: route('categories.index'),
+        icon: TagIcon,
+        current: route().current('categories.*'),
+    },
     { name: 'Sales', href: '#', icon: FolderIcon, current: false },
     { name: 'Users', href: '#', icon: UsersIcon, current: false },
 ]
