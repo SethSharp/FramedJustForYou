@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import InputLabel from '@/Components/Inputs/InputLabel.vue'
+import InputError from '@/Components/Inputs/InputError.vue'
 
 defineProps({
     modelValue: {
@@ -8,6 +9,7 @@ defineProps({
         required: true,
     },
     label: String,
+    error: [String, null],
 })
 
 defineEmits(['update:modelValue'])
@@ -33,4 +35,5 @@ defineExpose({ focus: () => input.value.focus() })
         :value="modelValue"
         @input="$emit('update:modelValue', $event.target.value)"
     />
+    <InputError :message="error" />
 </template>

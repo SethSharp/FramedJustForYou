@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Categories;
 use App\Http\Controllers\Controller;
 use App\Domain\Categories\Models\Category;
 use App\Domain\Files\Actions\StoreFileAction;
-use App\Http\Requests\Categories\StoreCategoryRequest;
 use App\Http\Requests\Categories\UpdateCategoryRequest;
 
 class UpdateCategoryController extends Controller

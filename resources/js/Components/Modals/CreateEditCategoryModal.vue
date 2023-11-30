@@ -22,7 +22,7 @@ const closeModal = () => {
             {{ title }}
         </template>
         <template #content>
-            <CreateEditCategoryForm :category="category" @close="closeModal"/>
+            <CreateEditCategoryForm :category="category" @close="closeModal" />
         </template>
     </BaseModal>
 </template>

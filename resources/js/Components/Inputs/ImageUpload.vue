@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import SecondaryButton from '@/Components/Button/SecondaryButton.vue'
+import InputError from '@/Components/Inputs/InputError.vue'
 
 const props = defineProps({
     modelValue: {
@@ -11,6 +12,7 @@ const props = defineProps({
         type: String,
         required: false,
     },
+    error: [String, null],
 })
 
 const emits = defineEmits(['update:modelValue'])
@@ -46,4 +48,5 @@ const fileUpload = () => {
 
         <SecondaryButton type="button" @click="fileUpload"> Upload</SecondaryButton>
     </div>
+    <InputError :message="error" />
 </template>
