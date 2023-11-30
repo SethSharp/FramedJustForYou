@@ -2,7 +2,7 @@
 import { useForm } from '@inertiajs/vue3'
 import { computed, onMounted } from 'vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
-import TextInput from '@/Components/TextInput.vue'
+import TextInput from '@/Components/Inputs/TextInput.vue'
 import TextAreaInput from '@/Components/Inputs/TextAreaInput.vue'
 import ImageUpload from '@/Components/Inputs/ImageUpload.vue'
 import Seperator from '@/Components/Form/Seperator.vue'

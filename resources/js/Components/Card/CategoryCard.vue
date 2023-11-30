@@ -1,16 +1,22 @@
 <script setup>
-import {ref} from 'vue'
-import {PencilIcon} from '@heroicons/vue/24/outline/index.js'
-import CategoryCreateEditModal from "@/Components/Modals/CategoryCreateEditModal.vue";
+import { ref } from 'vue'
+import { PencilIcon, EyeIcon } from '@heroicons/vue/24/outline/index.js'
+import CreateEditCategoryModal from '@/Components/Modals/CreateEditCategoryModal.vue'
+import ShowCategoryModal from '@/Components/Modals/ShowCategoryModal.vue'
 
 defineProps({
     category: Object,
 })
 
-const dialogState = ref(false)
+const createEditState = ref(false)
+const showState = ref(false)
 
-const toggleDialog = () => {
-    dialogState.value = !dialogState.value
+const toggleCreateEdit = () => {
+    createEditState.value = !createEditState.value
+}
+
+const toggleShow = () => {
+    showState.value = !showState.value
 }
 </script>
 
@@ -28,11 +34,12 @@ const toggleDialog = () => {
                 </div>
             </div>
 
-            <div class="absolute inset-0 flex justify-end z-40" @click="toggleDialog">
-                <div
-                    class="bg-white hover:bg-primary-100 rounded-full p-2 border-2 border-primary-500 h-fit"
-                >
-                    <PencilIcon class="w-6 h-6"/>
+            <div class="absolute inset-0 flex justify-end z-30 gap-x-2">
+                <div @click="toggleCreateEdit" class="bg-white hover:bg-primary-100 p-2 h-fit">
+                    <PencilIcon class="w-6 h-6" />
+                </div>
+                <div @click="toggleShow" class="bg-white hover:bg-primary-100 p-2 h-fit">
+                    <EyeIcon class="w-6 h-6" />
                 </div>
             </div>
             <div class="absolute inset-0 flex flex-col justify-end z-20">
@@ -45,5 +52,11 @@ const toggleDialog = () => {
         </div>
     </div>
 
-    <CategoryCreateEditModal :state="dialogState" @close="toggleDialog" :category="category"/>
+    <CreateEditCategoryModal
+        :state="createEditState"
+        @close="toggleCreateEdit"
+        :category="category"
+    />
+
+    <ShowCategoryModal :state="showState" @close="toggleShow" :category="category" />
 </template>
