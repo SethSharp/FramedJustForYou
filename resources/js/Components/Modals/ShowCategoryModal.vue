@@ -16,11 +16,11 @@ const closeModal = () => {
 <template>
     <BaseModal :state="state" @close="closeModal">
         <template #content>
-            <div class="grid sm:grid-cols-2 gap-x-6 mt-4">
-                <div class="p-6">
-                    <img :src="category.file.path" class="shadow-md"/>
+            <div class="grid sm:grid-cols-2 gap-x-6 mt-2">
+                <div class="px-6">
+                    <img :src="category.file.path" class="shadow-md rounded-md" />
                 </div>
-                <div>
+                <div class="mt-4">
                     <h1 class="text-2xl text-black font-medium">{{ category.name }}</h1>
                     <p class="text-gray-400 leading-6">{{ category.description }}</p>
                 </div>

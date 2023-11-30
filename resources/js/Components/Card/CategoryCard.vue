@@ -34,7 +34,7 @@ const toggleShow = () => {
                 </div>
             </div>
 
-            <div class="absolute inset-0 flex justify-end z-30 gap-x-2">
+            <div class="absolute inset-0 flex justify-end z-30">
                 <div @click="toggleCreateEdit" class="bg-white hover:bg-primary-100 p-2 h-fit">
                     <PencilIcon class="w-6 h-6" />
                 </div>

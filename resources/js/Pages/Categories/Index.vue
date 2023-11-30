@@ -1,6 +1,6 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
-import { PlusCircleIcon } from '@heroicons/vue/24/outline/index.js'
+import { PlusIcon } from '@heroicons/vue/24/outline/index.js'
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 import CategoryCard from '@/Components/Card/CategoryCard.vue'
@@ -23,17 +23,17 @@ const toggleDialog = () => {
 
     <AuthenticatedLayout>
         <template #header> Categories</template>
-        <template #headerActions>
-            <PrimaryButton :href="route('categories.create')"> Create</PrimaryButton>
-        </template>
 
-        <div class="grid grid-cols-4">
-            <div class="bg-gray-200 justify-center hover:bg-gray-50" @click="toggleDialog">
-                <PlusCircleIcon class="w-24 h-24 text-gray-400 hover:text-gray-600" />
+        <div class="grid grid-cols-6">
+            <div
+                class="bg-gray-50 text-gray-400 rounded-lg p-4 justify-center hover:bg-gray-100 hover:text-gray-600 cursor-pointer"
+                @click="toggleDialog"
+            >
+                <PlusIcon class="" />
             </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-x-4">
+        <div class="grid grid-cols-4 gap-x-4 my-6">
             <CategoryCard v-for="category in categories" :category="category" />
         </div>
 
