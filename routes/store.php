@@ -11,5 +11,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::delete('/profile', \App\Http\Controllers\Profile\DeleteProfileController::class)->name('destroy');
     });
 
+    Route::middleware('role:admin,manager')->prefix('categories')->name('categories.')->group(function () {
+        Route::get('/', \App\Http\Controllers\Categories\IndexCategoryController::class)->name('index');
+        Route::get('/create', \App\Http\Controllers\Categories\CreateCategoryController::class)->name('create');
+        Route::post('/store', \App\Http\Controllers\Categories\StoreCategoryController::class)->name('store');
+        Route::get('/edit/{category}', \App\Http\Controllers\Categories\EditCategoryController::class)->name('edit');
+        Route::post('/update/{category}', \App\Http\Controllers\Categories\UpdateCategoryController::class)->name('update');
+        Route::delete('/delete/{category}', \App\Http\Controllers\Categories\DeleteCategoryController::class)->name('delete');
+    });
+
     Route::post('/store/file', \App\Http\Controllers\Files\StoreFileController::class)->name('file.store');
 });

@@ -10,6 +10,7 @@ import {
     UsersIcon,
     XMarkIcon,
 } from '@heroicons/vue/24/outline'
+import Notification from '@/Components/Notification.vue'
 
 const sidebarOpen = ref(false)
 const navigation = [
@@ -20,7 +21,12 @@ const navigation = [
         current: route().current('dashboard'),
     },
     { name: 'Products', href: '#', icon: RectangleGroupIcon, current: false },
-    { name: 'Categories', href: '#', icon: TagIcon, current: false },
+    {
+        name: 'Categories',
+        href: route('categories.index'),
+        icon: TagIcon,
+        current: route().current('categories.*'),
+    },
     { name: 'Sales', href: '#', icon: FolderIcon, current: false },
     { name: 'Users', href: '#', icon: UsersIcon, current: false },
 ]
@@ -75,7 +81,7 @@ const navigation = [
                             </TransitionChild>
                             <!-- Sidebar component, swap this element with another sidebar if you like -->
                             <div
-                                class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2"
+                                class="flex grow flex-col gap-y-5 overflow-y-auto bg-primary-500 px-6 pb-2"
                             >
                                 <div class="flex h-16 shrink-0 items-center"></div>
                                 <nav class="flex flex-1 flex-col">
@@ -117,7 +123,9 @@ const navigation = [
         </TransitionRoot>
 
         <!-- Static sidebar for desktop -->
-        <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+        <div
+            class="hidden lg:fixed lg:inset-y-0 lg:z-40 lg:flex lg:w-72 lg:flex-col bg-primary-500"
+        >
             <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 px-6">
                 <div class="flex h-16 shrink-0 items-center"></div>
                 <nav class="flex flex-1 flex-col">
@@ -129,8 +137,8 @@ const navigation = [
                                         :href="item.href"
                                         :class="[
                                             item.current
-                                                ? 'bg-gray-50 text-black'
-                                                : 'text-gray-400 hover:text-black hover:bg-gray-50',
+                                                ? 'bg-gray-300 text-black'
+                                                : 'text-gray-200 hover:text-black hover:bg-gray-50',
                                             'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold',
                                         ]"
                                     >
@@ -153,7 +161,7 @@ const navigation = [
         </div>
 
         <div
-            class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden"
+            class="sticky top-0 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden"
         >
             <button
                 type="button"
@@ -167,8 +175,22 @@ const navigation = [
 
         <main class="py-10 lg:pl-72">
             <div class="px-4 sm:px-6 lg:px-8">
-                <slot />
+                <div class="mb-8 h-20 rounded-t-lg">
+                    <div class="rounded-md w-full h-full flex items-center">
+                        <div class="flex-grow ml-6 text-3xl sm:text-5xl font-medium">
+                            <slot name="header" />
+                        </div>
+                        <div class="flex items-center space-x-4 mr-8">
+                            <slot name="headerActions" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-8">
+                    <slot />
+                </div>
             </div>
         </main>
     </div>
+
+    <Notification :errors="$page.props.errors" :success="$page.props.success" />
 </template>
