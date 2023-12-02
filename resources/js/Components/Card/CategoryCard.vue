@@ -35,10 +35,10 @@ const toggleShow = () => {
             </div>
 
             <div class="absolute inset-0 flex justify-end z-30">
-                <div @click="toggleCreateEdit" class="bg-white hover:bg-primary-100 p-2 h-fit">
+                <div @click="toggleCreateEdit" class="bg-white/50 hover:bg-primary-100 p-2 h-fit">
                     <PencilIcon class="w-6 h-6" />
                 </div>
-                <div @click="toggleShow" class="bg-white hover:bg-primary-100 p-2 h-fit">
+                <div @click="toggleShow" class="bg-white/50 hover:bg-primary-100 p-2 h-fit">
                     <EyeIcon class="w-6 h-6" />
                 </div>
             </div>

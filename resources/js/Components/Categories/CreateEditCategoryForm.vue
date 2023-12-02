@@ -40,6 +40,7 @@ const submit = () => {
 
 const deleteCategory = () => {
     router.delete(route('categories.delete', props.category), {
+        onBefore: () => confirm('Are you sure you want to delete this category?'),
         onSuccess: () => handleSuccess(),
     })
 }
@@ -65,14 +66,9 @@ onMounted(() => {
 
 <template>
     <div class="flex justify-center">
-        <form @submit.prevent="submit" class="w-3/4 sm:w-1/2 my-10">
+        <form @submit.prevent="submit" class="w-3/4 my-10">
             <Seperator>
-                <TextInput
-                    v-model="form.name"
-                    label="Name"
-                    placeholder="Category name"
-                    :error="errors['name']"
-                />
+                <TextInput v-model="form.name" type="text" label="Name" :error="errors['name']" />
             </Seperator>
             <Seperator>
                 <TextAreaInput
@@ -84,12 +80,15 @@ onMounted(() => {
             <Seperator>
                 <ImageUpload v-model="form.file" :current-image="path" :error="errors['file']" />
             </Seperator>
-            <DangerButton v-if="isEditing" as="button" @click.prevent="deleteCategory">
-                Delete
-            </DangerButton>
-            <PrimaryButton type="submit" as="button">
-                {{ isEditing ? 'Update' : 'Add' }}
-            </PrimaryButton>
+
+            <div class="gap-x-2 flex">
+                <PrimaryButton type="submit" as="button">
+                    {{ isEditing ? 'Update' : 'Add' }}
+                </PrimaryButton>
+                <DangerButton v-if="isEditing" as="button" @click.prevent="deleteCategory">
+                    Delete
+                </DangerButton>
+            </div>
         </form>
     </div>
 </template>
