@@ -1,29 +1,22 @@
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import {Head} from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Components/Section.vue'
-import { ArrowDownIcon } from '@heroicons/vue/20/solid/index.js'
+import {ArrowDownIcon} from '@heroicons/vue/20/solid/index.js'
 import {
     ClipboardDocumentListIcon,
     QueueListIcon,
     ListBulletIcon,
-    WrenchIcon,
-    PuzzlePieceIcon,
-    RectangleGroupIcon,
-    PhotoIcon,
-    UserGroupIcon,
-    UserIcon,
     CheckCircleIcon,
 } from '@heroicons/vue/20/solid/index.js'
-import Service from '@/Components/Card/Services/Service.vue'
 import Image from '@/Components/Image.vue'
 
 const scrollToContent = () =>
-    document.getElementById('custom').scrollIntoView({ behavior: 'smooth' })
+    document.getElementById('custom').scrollIntoView({behavior: 'smooth'})
 </script>
 
 <template>
-    <Head title="Framing" />
+    <Head title="Framing"/>
 
     <PrimaryLayout>
         <Section>
@@ -33,7 +26,7 @@ const scrollToContent = () =>
             <template #subtitle>
                 <div @click="scrollToContent()" class="flex cursor-pointer">
                     <span> View our broad range </span>
-                    <ArrowDownIcon class="w-8 h-8" />
+                    <ArrowDownIcon class="w-8 h-8"/>
                 </div>
             </template>
             <template #content>
@@ -45,47 +38,18 @@ const scrollToContent = () =>
                     provide personalized framing solutions that elevate the beauty and significance
                     of your keepsakes.
                 </div>
-                <!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">-->
-                <!--                    <Service-->
-                <!--                        :icon="UserGroupIcon"-->
-                <!--                        :href="route('services.framing.medals-memorabilia')"-->
-                <!--                        title="Memorabilia"-->
-                <!--                        description=""-->
-                <!--                    />-->
-
-                <!--                    <Service-->
-                <!--                        :icon="PuzzlePieceIcon"-->
-                <!--                        :href="route('services.framing.jigsaws')"-->
-                <!--                        title="Jigsaw"-->
-                <!--                        description=""-->
-                <!--                    />-->
-
-                <!--                    <Service-->
-                <!--                        :icon="RectangleGroupIcon"-->
-                <!--                        :href="route('services.framing.mirror')"-->
-                <!--                        title="Mirror"-->
-                <!--                        description=""-->
-                <!--                    />-->
-
-                <!--                    <Service-->
-                <!--                        :icon="PhotoIcon"-->
-                <!--                        :href="route('services.framing.tapestries-and-needlework')"-->
-                <!--                        title="Embroidery"-->
-                <!--                        description=""-->
-                <!--                    />-->
-                <!--                </div>-->
             </template>
         </Section>
 
         <Section id="custom">
-            <template #header> Our Approach </template>
+            <template #header> Our Approach</template>
             <template #content>
                 <div class="">
                     <div class="grid">
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
-                                    <ClipboardDocumentListIcon class="w-8 h-8" />
+                                    <ClipboardDocumentListIcon class="w-8 h-8"/>
                                 </div>
                                 <div>
                                     <p>
@@ -98,20 +62,20 @@ const scrollToContent = () =>
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="framing/flinders.png" alt="flinders range framed" />
+                                <Image src="framing/converted/flinders.webp" alt="flinders range framed"/>
                             </div>
                         </div>
 
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
                                 <Image
-                                    src="framing/selection.png"
+                                    src="framing/converted/selection.webp"
                                     alt="Over 1000 frames to choose from"
                                 />
                             </div>
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
-                                    <ListBulletIcon class="w-8 h-8" />
+                                    <ListBulletIcon class="w-8 h-8"/>
                                 </div>
                                 <div>
                                     <p>
@@ -128,7 +92,7 @@ const scrollToContent = () =>
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
-                                    <QueueListIcon class="w-8 h-8" />
+                                    <QueueListIcon class="w-8 h-8"/>
                                 </div>
                                 <div>
                                     <div>
@@ -149,7 +113,7 @@ const scrollToContent = () =>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
                                 <Image
-                                    src="framing/glassChoices.png"
+                                    src="framing/converted/glassChoices.webp"
                                     alt="The difference between clear and ultra vue glass"
                                 />
                             </div>
@@ -158,13 +122,13 @@ const scrollToContent = () =>
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
                                 <Image
-                                    src="framing/matboards.png"
+                                    src="framing/converted/matboards.webp"
                                     alt="our massive selection of matboards"
                                 />
                             </div>
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
-                                    <QueueListIcon class="w-8 h-8" />
+                                    <QueueListIcon class="w-8 h-8"/>
                                 </div>
                                 <div>
                                     <p>
@@ -179,7 +143,7 @@ const scrollToContent = () =>
                         <div class="flex-wrap md:flex my-4 sm:my-2">
                             <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
                                 <div class="p-4">
-                                    <CheckCircleIcon class="w-8 h-8" />
+                                    <CheckCircleIcon class="w-8 h-8"/>
                                 </div>
                                 <div>
                                     <p>
@@ -193,7 +157,7 @@ const scrollToContent = () =>
                             </div>
                             <div class="w-1/2 md:w-2/5 mx-auto my-6">
                                 <Image
-                                    src="framing/framing.png"
+                                    src="framing/converted/framing.webp"
                                     alt="more of our huge range of frames"
                                 />
                             </div>
