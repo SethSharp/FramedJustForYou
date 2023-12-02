@@ -1,5 +1,5 @@
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import {Head} from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import * as TeamMemberCards from '@/Components/Card/Team'
 import Section from '@/Layouts/Section.vue'
@@ -10,7 +10,7 @@ const teamMembers = [
         position: 'Director',
         description:
             "Diane, our founder, embarked on her picture framing journey in 1993. In 1997, she realized her dream by opening her framing business on Oxley Drive. With her vision and dedication, the business thrived and has continued to this day. With over 30 years of experience in the industry, Diane's passion for framing continues to drive our business forward.",
-        src: 'team/diane.png',
+        src: 'team/diane.webp',
         alt: 'Diane',
         side: false,
         component: 'RightTeamMember',
@@ -40,7 +40,7 @@ const teamMembers = [
         position: 'Framer',
         description:
             'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
-        src: 'team/bethany.png',
+        src: 'team/bethany.webp',
         alt: 'Bethany',
         side: false,
         component: 'LeftTeamMember',
@@ -50,7 +50,7 @@ const teamMembers = [
     //     position: 'Computer Guy',
     //     description:
     //         "Seth hasn't done too much framing but definitely helps out around the store when he isn't doing computer work.",
-    //     image: 'team/seth.png',
+    //     image: 'team/seth.webp',
     //     alt: 'Seth',
     //     side: false,
     //     component: 'RightTeamMember',
@@ -59,13 +59,13 @@ const teamMembers = [
 </script>
 
 <template>
-    <Head title="About" />
+    <Head title="About"/>
 
     <PrimaryLayout>
         <div id="intro">
             <Section>
-                <template #header> About us </template>
-                <template #title> How did it all start? </template>
+                <template #header> About us</template>
+                <template #title> How did it all start?</template>
                 <template #content>
                     Framed Just For You was established in 1997 on Oxley Drive. In 2000, the store
                     was relocated to 142 Brisbane Road, where it served the community for the
@@ -77,8 +77,8 @@ const teamMembers = [
         </div>
         <div id="team-member">
             <Section>
-                <template #header> Meet the Team </template>
-                <template #subtitle> ...with over 60 years of experience </template>
+                <template #header> Meet the Team</template>
+                <template #subtitle> ...with over 60 years of experience</template>
                 <template #content>
                     <component
                         v-for="teamMember in teamMembers"

@@ -1,20 +1,20 @@
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import {Head} from '@inertiajs/vue3'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Layouts/Section.vue'
 import Image from '@/Components/Image.vue'
 </script>
 
 <template>
-    <Head title="Memorabilia" />
+    <Head title="Memorabilia"/>
 
     <PrimaryLayout>
         <Section>
-            <template #header> Memorabilia </template>
-            <template #subtitle> Memorabilia framed the right way </template>
+            <template #header> Memorabilia</template>
+            <template #subtitle> Memorabilia framed the right way</template>
             <template #content>
                 <Image
-                    src="memorabilia/suns-jerseys.png"
+                    src="memorabilia/suns-jerseys.webp"
                     alt="Suns Jerseys"
                     class="sm:w-4/5 mx-auto"
                 />
@@ -29,7 +29,7 @@ import Image from '@/Components/Image.vue'
         </Section>
 
         <Section>
-            <template #header> Collectables </template>
+            <template #header> Collectables</template>
             <template #content>
                 <p>
                     Framed memorabilia encompasses a wide range of items, spanning from quirky
@@ -38,13 +38,13 @@ import Image from '@/Components/Image.vue'
                     autographed garments, costumes, and rare signed correspondence.
                 </p>
                 <div class="sm:w-3/4 mx-auto my-2">
-                    <Image src="memorabilia/memorabilia-3.png" alt="Collectables" />
+                    <Image src="memorabilia/memorabilia-3.webp" alt="Collectables"/>
                 </div>
             </template>
         </Section>
 
         <Section>
-            <template #header> Medals </template>
+            <template #header> Medals</template>
             <template #content>
                 <p>
                     Medal memorabilia holds a significant place in the world of collectibles. These
@@ -60,12 +60,12 @@ import Image from '@/Components/Image.vue'
                 </p>
                 <div class="w-3/4 mx-auto my-2 grid sm:grid-cols-2 gap-x-2 gap-y-2">
                     <Image
-                        src="restorations/gymnastics.png"
+                        src="matboards/gymnastics.webp"
                         alt="Gymnastics frame with multiple cutouts for medals"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/asw-athlete.png"
+                        src="matboards/asw-athlete.webp"
                         alt="ASW frame with multiple cutouts for medals and photos"
                         class="my-auto"
                     />
@@ -74,7 +74,7 @@ import Image from '@/Components/Image.vue'
         </Section>
 
         <Section>
-            <template #header> Sports Memorabilia </template>
+            <template #header> Sports Memorabilia</template>
             <template #content>
                 <p>
                     At Framed Just For You, we specialize in framing a wide array of sports
@@ -87,7 +87,7 @@ import Image from '@/Components/Image.vue'
                     within just one week.
                 </p>
                 <div class="sm:w-3/4 mx-auto my-2">
-                    <Image src="memorabilia/jerseys.png" alt="Framed Sport Jerseys" />
+                    <Image src="memorabilia/jerseys.webp" alt="Framed Sport Jerseys"/>
                 </div>
             </template>
         </Section>
