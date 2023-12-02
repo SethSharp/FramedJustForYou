@@ -13,9 +13,8 @@ import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
         <div
             class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-2 sm:w-3/4 justify-center mx-auto"
         >
-            <PrimaryButton :href="route('services.framing')"> Framing </PrimaryButton>
-            <PrimaryButton :href="route('faq')"> FAQ </PrimaryButton>
-            <PrimaryButton :href="route('contact')"> Contact </PrimaryButton>
+            <PrimaryButton :href="route('services.framing')"> Framing</PrimaryButton>
+            <PrimaryButton :href="route('contact')"> Contact</PrimaryButton>
         </div>
     </div>
 </template>
