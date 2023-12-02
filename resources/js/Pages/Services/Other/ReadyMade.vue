@@ -1,22 +1,22 @@
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import {Head} from '@inertiajs/vue3'
 import Section from '@/Components/Section.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Image from '@/Components/Image.vue'
 </script>
 
 <template>
-    <Head title="Ready Made" />
+    <Head title="Ready Made"/>
 
     <PrimaryLayout>
         <Section>
-            <template #header> Ready Made Frames </template>
-            <template #subtitle> Ready to hang </template>
+            <template #header> Ready Made Frames</template>
+            <template #subtitle> Ready to hang</template>
             <template #content>
                 <div class="sm:flex">
                     <div class="w-1/2 sm:w-2/5 relative">
                         <Image
-                            src="readyMade/graduation.png"
+                            src="readyMade/graduation.webp"
                             class="absolute w-full z-10 -rotate-12"
                         />
                     </div>
@@ -31,7 +31,7 @@ import Image from '@/Components/Image.vue'
                         </p>
                     </div>
                     <Image
-                        src="readyMade/ready-made-1.png"
+                        src="readyMade/ready-made-1.webp"
                         class="z-20 w-1/2 mx-auto sm:w-1/4 absolute rotate-12"
                     />
                 </div>

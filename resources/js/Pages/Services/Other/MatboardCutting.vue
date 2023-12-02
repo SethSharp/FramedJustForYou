@@ -1,16 +1,16 @@
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import {Head} from '@inertiajs/vue3'
 import Image from '@/Components/Image.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Section from '@/Components/Section.vue'
 </script>
 
 <template>
-    <Head title="Matboard Cutting" />
+    <Head title="Matboard Cutting"/>
 
     <PrimaryLayout>
         <Section>
-            <template #header> Matboard Cutting </template>
+            <template #header> Matboard Cutting</template>
 
             <template #content>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-2">
@@ -25,22 +25,22 @@ import Section from '@/Components/Section.vue'
                         the correct size to fit the circular shape.
                     </div>
                     <Image
-                        src="restorations/matboard-cutter.png"
+                        src="restorations/matboard-cutter.webp"
                         alt="Computerised matboard cutter"
                     />
                 </div>
                 <div class="grid grid-cols-3 gap-x-4 mt-8">
                     <Image
-                        src="restorations/multiple-squares-and-circles.png"
+                        src="restorations/multiple-squares-and-circles.webp"
                         alt="2 Rows of 6 cut outs, side by side"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/shape-red.png"
+                        src="restorations/shape-red.webp"
                         alt="Corner square shapes with a internal mat"
                     />
                     <Image
-                        src="restorations/tools.png"
+                        src="restorations/tools.webp"
                         alt="3 different sized cutouts holding different items"
                         class="my-auto"
                     />
@@ -48,7 +48,7 @@ import Section from '@/Components/Section.vue'
             </template>
         </Section>
         <Section>
-            <template #header> Just need a matboard? </template>
+            <template #header> Just need a matboard?</template>
 
             <template #content>
                 If you just need a new matboard that has gone all crusty over the years, then we can
@@ -56,14 +56,14 @@ import Section from '@/Components/Section.vue'
                 colours.
 
                 <div class="grid grid-cols-3 gap-x-4 my-12">
-                    <Image src="restorations/record.png" alt="Metallica Record" class="my-auto" />
+                    <Image src="restorations/record.webp" alt="Metallica Record" class="my-auto"/>
                     <Image
-                        src="restorations/gymnastics.png"
+                        src="restorations/gymnastics.webp"
                         alt="Gymnastics frame with multiple cutouts for medals"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/asw-athlete.png"
+                        src="restorations/asw-athlete.webp"
                         alt="ASW frame with multiple cutouts for medals and photos"
                         class="my-auto"
                     />
