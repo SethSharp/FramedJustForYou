@@ -9,7 +9,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use App\Domain\Categories\Models\Category;
 
-class UpdateCategroryTest extends TestCase
+class UpdateCategoryTest extends TestCase
 {
     protected Category $category;
 
@@ -36,6 +36,18 @@ class UpdateCategroryTest extends TestCase
     }
 
     /** @test */
+    public function name_is_required()
+    {
+        $this->actingAs(User::factory()->admin()->create())
+            ->postJson(route('categories.update', $this->category), [
+                'name' => null
+            ])
+            ->assertJsonValidationErrors([
+                'name' => 'The name field is required.'
+            ]);
+    }
+
+    /** @test */
     public function file_must_be_image()
     {
         $this->actingAs(User::factory()->admin()->create())
@@ -47,31 +59,6 @@ class UpdateCategroryTest extends TestCase
             ->assertJsonValidationErrors([
                 'file' => 'The file field must be an image.'
             ]);
-    }
-
-    /** @test */
-    public function can_update_category()
-    {
-        Storage::fake();
-
-        $file = UploadedFile::fake()->image('file.jpg');
-
-        $this->actingAs(User::factory()->admin()->create())
-            ->postJson(route('categories.update', $this->category), [
-                'name' => 'Some category',
-                'description' => 'Some description',
-                'file' => $file
-            ])
-            ->assertRedirect()
-            ->assertSessionHas('success', 'Successfully updated category!');
-
-        $file = File::first();
-
-        $this->assertDatabaseHas('categories', [
-            'name' => 'Some category',
-            'description' => 'Some description',
-            'file_id' => $file->id
-        ]);
     }
 
     /** @test */

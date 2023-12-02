@@ -26,6 +26,18 @@ class StoreCategroryTest extends TestCase
     }
 
     /** @test */
+    public function name_is_required()
+    {
+        $this->actingAs(User::factory()->admin()->create())
+            ->postJson(route('categories.store'), [
+                'name' => null
+            ])
+            ->assertJsonValidationErrors([
+                'name' => 'The name field is required.'
+            ]);
+    }
+
+    /** @test */
     public function file_must_be_image()
     {
         $this->actingAs(User::factory()->admin()->create())
