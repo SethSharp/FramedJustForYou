@@ -13,7 +13,7 @@ class ConvertImagesToWebp extends Command
 
     public function handle(): void
     {
-        $folderPath = 'images/framing';
+        $folderPath = 'images/team';
         $files = Storage::disk('s3')->files($folderPath);
 
         foreach ($files as $file) {
@@ -25,7 +25,9 @@ class ConvertImagesToWebp extends Command
                 $img = Image::make($imageContent)
                     ->encode('webp');
 
-                $convertedPath = $folderPath . '/converted/' . pathinfo($file, PATHINFO_FILENAME) . '.webp';
+                $convertedPath = $folderPath . '/' . pathinfo($file, PATHINFO_FILENAME) . '.webp';
+
+                $this->info('Storing and converting: ' . $file);
                 Storage::disk('s3')->put($convertedPath, $img, 'public');
             }
         }
