@@ -62,12 +62,12 @@ import {SplideSlide} from '@splidejs/vue-splide'
                 </p>
                 <div class="w-3/4 mx-auto my-2 grid sm:grid-cols-2 gap-x-2 gap-y-2">
                     <Image
-                        src="restorations/gymnastics.webp"
+                        src="matboards/gymnastics.webp"
                         alt="Gymnastics frame with multiple cutouts for medals"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/asw-athlete.webp"
+                        src="matboards/asw-athlete.webp"
                         alt="ASW frame with multiple cutouts for medals and photos"
                         class="my-auto"
                     />

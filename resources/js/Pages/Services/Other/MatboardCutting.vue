@@ -25,22 +25,22 @@ import Section from '@/Components/Section.vue'
                         the correct size to fit the circular shape.
                     </div>
                     <Image
-                        src="restorations/matboard-cutter.webp"
+                        src="matboards/matboard-cutter.webp"
                         alt="Computerised matboard cutter"
                     />
                 </div>
                 <div class="grid grid-cols-3 gap-x-4 mt-8">
                     <Image
-                        src="restorations/multiple-squares-and-circles.webp"
+                        src="matboards/multiple-squares-and-circles.webp"
                         alt="2 Rows of 6 cut outs, side by side"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/shape-red.webp"
+                        src="matboards/shape-red.webp"
                         alt="Corner square shapes with a internal mat"
                     />
                     <Image
-                        src="restorations/tools.webp"
+                        src="matboards/tools.webp"
                         alt="3 different sized cutouts holding different items"
                         class="my-auto"
                     />
@@ -56,14 +56,14 @@ import Section from '@/Components/Section.vue'
                 colours.
 
                 <div class="grid grid-cols-3 gap-x-4 my-12">
-                    <Image src="restorations/record.webp" alt="Metallica Record" class="my-auto"/>
+                    <Image src="matboards/record.webp" alt="Metallica Record" class="my-auto"/>
                     <Image
-                        src="restorations/gymnastics.webp"
+                        src="matboards/gymnastics.webp"
                         alt="Gymnastics frame with multiple cutouts for medals"
                         class="my-auto"
                     />
                     <Image
-                        src="restorations/asw-athlete.webp"
+                        src="matboards/asw-athlete.webp"
                         alt="ASW frame with multiple cutouts for medals and photos"
                         class="my-auto"
                     />
