@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         Artisan::call('bootstrap');
 
         $this->call(UserTableSeeder::class);
+        $this->call(ProductTableSeeder::class);
     }
 }
