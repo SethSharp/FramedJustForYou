@@ -12,7 +12,8 @@ class ProductTableSeeder extends Seeder
     {
         Product::factory()->create([
             'title' => 'Test Product #1',
-            'description' => 'Testing product description'
+            'description' => 'Testing product description',
+            'price' => 123
         ]);
     }
 }

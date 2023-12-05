@@ -1,7 +1,7 @@
 <script setup>
 import {Head} from '@inertiajs/vue3'
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
-import AdminCard from "@/Components/Products/AdminCard.vue";
+import ProductAdminCard from "@/Components/Card/Products/ProductAdminCard.vue";
 
 defineProps({
     products: Object,
@@ -15,8 +15,7 @@ defineProps({
         <template #header> Products</template>
 
         <div class="grid grid-cols-5">
-            <AdminCard v-for="product in products" :product="product"/>
+            <ProductAdminCard v-for="product in products" :product="product"/>
         </div>
-
     </AuthenticatedLayout>
 </template>

@@ -13,10 +13,11 @@ return new class() extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('file_id')->nullable();
-            $table->foreignId('category_id')->nullable();
+            $table->foreignId('file_id');
+            $table->foreignId('category_id');
             $table->string('title');
             $table->text('description');
+            $table->integer('price');
             $table->timestamps();
         });
     }

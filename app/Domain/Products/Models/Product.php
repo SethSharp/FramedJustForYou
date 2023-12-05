@@ -2,18 +2,25 @@
 
 namespace App\Domain\Products\Models;
 
+use App\Domain\Categories\Models\Category;
 use App\Domain\Files\Models\File;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 
-class Product extends \Illuminate\Database\Eloquent\Model
+class Product extends Model
 {
     use HasFactory;
 
-    public function mainFile(): HasOne
+    public function category(): BelongsTo
     {
-        return $this->hasOne(File::class, 'file_id');
+        return $this->belongsTo(Category::class);
+    }
+
+    public function file(): BelongsTo
+    {
+        return $this->belongsTo(File::class);
     }
 
     public function files(): BelongsToMany
