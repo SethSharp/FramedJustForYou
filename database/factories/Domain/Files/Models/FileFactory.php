@@ -2,7 +2,6 @@
 
 namespace Database\Factories\Domain\Files\Models;
 
-use App\Domain\Categories\Models\Category;
 use App\Domain\Files\Models\File;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

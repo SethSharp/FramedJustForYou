@@ -1,6 +1,6 @@
 <script setup>
-import {ref} from 'vue'
-import {PencilIcon, EyeIcon} from '@heroicons/vue/24/outline/index.js'
+import { ref } from 'vue'
+import { PencilIcon, EyeIcon } from '@heroicons/vue/24/outline/index.js'
 import CreateEditCategoryModal from '@/Components/Modals/CreateEditCategoryModal.vue'
 import ShowCategoryModal from '@/Components/Modals/ShowCategoryModal.vue'
 
@@ -36,10 +36,10 @@ const toggleShow = () => {
 
             <div class="absolute inset-0 flex justify-end z-30">
                 <div @click="toggleCreateEdit" class="bg-white/50 hover:bg-primary-100 p-2 h-fit">
-                    <PencilIcon class="w-6 h-6"/>
+                    <PencilIcon class="w-6 h-6" />
                 </div>
                 <div @click="toggleShow" class="bg-white/50 hover:bg-primary-100 p-2 h-fit">
-                    <EyeIcon class="w-6 h-6"/>
+                    <EyeIcon class="w-6 h-6" />
                 </div>
             </div>
             <div class="absolute inset-0 flex flex-col justify-end z-20">
@@ -58,5 +58,5 @@ const toggleShow = () => {
         :category="category"
     />
 
-    <ShowCategoryModal :state="showState" @close="toggleShow" :category="category"/>
+    <ShowCategoryModal :state="showState" @close="toggleShow" :category="category" />
 </template>

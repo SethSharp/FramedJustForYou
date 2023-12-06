@@ -1,6 +1,6 @@
 <script setup>
-import {useForm, router} from '@inertiajs/vue3'
-import {computed, onMounted, ref} from 'vue'
+import { useForm, router } from '@inertiajs/vue3'
+import { computed, onMounted, ref } from 'vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 import TextInput from '@/Components/Inputs/TextInput.vue'
 import TextAreaInput from '@/Components/Inputs/TextAreaInput.vue'
@@ -29,13 +29,13 @@ const form = useForm({
 const submit = () => {
     !isEditing.value
         ? form.post(route('categories.store'), {
-            onError: (errors) => handleError(errors),
-            onSuccess: () => handleSuccess(),
-        })
+              onError: (errors) => handleError(errors),
+              onSuccess: () => handleSuccess(),
+          })
         : form.post(route('categories.update', props.product), {
-            onError: (errors) => handleError(errors),
-            onSuccess: () => handleSuccess(),
-        })
+              onError: (errors) => handleError(errors),
+              onSuccess: () => handleSuccess(),
+          })
 }
 
 const deleteCategory = () => {
@@ -67,7 +67,7 @@ onMounted(() => {
     <div class="flex justify-center">
         <form @submit.prevent="submit" class="w-3/4 my-10">
             <Seperator>
-                <TextInput v-model="form.title" type="text" label="Name" :error="errors['title']"/>
+                <TextInput v-model="form.title" type="text" label="Name" :error="errors['title']" />
             </Seperator>
             <Seperator>
                 <TextAreaInput
@@ -77,7 +77,7 @@ onMounted(() => {
                 />
             </Seperator>
             <Seperator>
-                <ImageUpload v-model="form.file" :current-image="path" :error="errors['file']"/>
+                <ImageUpload v-model="form.file" :current-image="path" :error="errors['file']" />
             </Seperator>
 
             <div class="gap-x-2 flex">

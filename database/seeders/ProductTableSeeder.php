@@ -2,10 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Domain\Files\Models\File;
-use App\Domain\Iam\Models\User;
-use App\Domain\Products\Models\Product;
 use Illuminate\Database\Seeder;
+use App\Domain\Files\Models\File;
+use App\Domain\Products\Models\Product;
 
 class ProductTableSeeder extends Seeder
 {
@@ -19,7 +18,8 @@ class ProductTableSeeder extends Seeder
             $product->update([
                 'file_id' => File::factory()->create([
                     'path' => '/images/seeding/categories/' . $index + 1 . '.webp'
-                ])->id
+                ])->id,
+                'category_id' => $index + 1
             ]);
         }
     }

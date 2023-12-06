@@ -2,11 +2,11 @@
 
 namespace App\Domain\Products\Models;
 
-use App\Domain\Categories\Models\Category;
 use App\Domain\Files\Models\File;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Domain\Categories\Models\Category;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Product extends Model

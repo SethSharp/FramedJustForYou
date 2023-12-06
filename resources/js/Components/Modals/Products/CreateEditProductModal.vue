@@ -1,7 +1,7 @@
 <script setup>
 import CreateEditCategoryForm from '@/Components/Categories/CreateEditCategoryForm.vue'
 import BaseModal from '@/Components/Modals/BaseModal.vue'
-import CreateEditProductForm from "@/Components/Products/CreateEditProductForm.vue";
+import CreateEditProductForm from '@/Components/Products/CreateEditProductForm.vue'
 
 const props = defineProps({
     state: Boolean,
@@ -23,7 +23,7 @@ const closeModal = () => {
             {{ title }}
         </template>
         <template #content>
-            <CreateEditProductForm :product="product" @close="closeModal"/>
+            <CreateEditProductForm :product="product" @close="closeModal" />
         </template>
     </BaseModal>
 </template>
