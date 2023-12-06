@@ -14,10 +14,8 @@ defineProps({
     <AuthenticatedLayout>
         <template #header> Products</template>
 
-        <div class="grid grid-cols-5">
+        <div class="grid grid-cols-5 gap-x-4 gap-y-4">
             <ProductAdminCard v-for="product in products" :product="product"/>
         </div>
-
-        <img src="/images/seeding/products/1.png"/>
     </AuthenticatedLayout>
 </template>
