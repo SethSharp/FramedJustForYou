@@ -33,7 +33,7 @@ const toggleShow = () => {
             <div class="absolute inset-x-0 top-0 flex h-64 items-end justify-end overflow-hidden rounded-lg p-4">
                 <div aria-hidden="true"
                      class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"/>
-                <p class="relative text-lg font-semibold text-white">{{ product.price }}</p>
+                <p class="relative text-lg font-semibold text-white">${{ product.price }}</p>
             </div>
         </div>
         <div class="mt-6">
