@@ -1,11 +1,10 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
-import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
+import { SplideSlide } from '@splidejs/vue-splide'
 import Image from '@/Components/Image.vue'
 import Section from '@/Components/Section.vue'
-import Carousel from '@/Components/Carousel.vue'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
 import MainPageCarousel from '@/Components/MainPageCarousel.vue'
 </script>
 
