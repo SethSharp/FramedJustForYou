@@ -1,7 +1,5 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
-import { SplideSlide } from '@splidejs/vue-splide'
-import Image from '@/Components/Image.vue'
 import Section from '@/Components/Section.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
@@ -26,40 +24,32 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                     </h2>
                 </div>
 
-                <MainPageCarousel>
-                    <!-- Your carousel content here -->
-                    <SplideSlide>
-                        <Image
-                            src="store/front.webp"
-                            alt="The main desk"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/gallery-side.webp"
-                            alt="Gallery"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/framing-bench.webp"
-                            alt="Framing bench and available frames"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/gallery.webp"
-                            alt="Framing bench and available frames"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                </MainPageCarousel>
+                <MainPageCarousel />
             </div>
         </template>
         <div id="intro">
+            <Section>
+                <template #header>
+                    <div class="mx-auto">
+                        <span class="text-green-700 font-bold !text-4xl !sm:text-6xl"> Merry </span>
+                        <span class="text-red-700 font-bold !text-4xl !sm:text-6xl">
+                            Christmas
+                        </span>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="text-center">
+                        Its that time of year again! The team at Framed Just For You Wish a very
+                        Merry Christmas and a Happy New Year!
+
+                        <br />
+                        <br />
+
+                        Our hours are changing over the christmas break so lock these in your memory
+                        so you don't catch us on our days off!
+                    </div>
+                </template>
+            </Section>
             <Section>
                 <template #header>
                     <span> Your Custom Picture Framers! </span>

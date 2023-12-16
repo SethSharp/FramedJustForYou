@@ -10,7 +10,10 @@ defineProps({
 <template>
     <div class="sm:w-3/4 mx-auto mb-6">
         <div class="text-xl sm:text-3xl text-gray-700">
-            <slot name="header" />
+            <div class="flex">
+                <slot name="header" />
+            </div>
+
             <div v-if="$slots.subtitle" class="text-gray-400 text-lg mt-2">
                 <slot name="subtitle" />
             </div>
