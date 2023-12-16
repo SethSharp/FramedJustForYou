@@ -12,7 +12,7 @@ import Section from '@/Components/Section.vue'
                     class="w-6 sm:w-14 h-6 sm:h-14 inset-0 ml-2.5"
                 />
 
-                <span class="text-red-700 font-bold !text-4xl !sm:text-6xl">
+                <span class="text-red-700 font-bold !text-2xl !sm:text-6xl">
                     Merry Christmas!
                 </span>
 

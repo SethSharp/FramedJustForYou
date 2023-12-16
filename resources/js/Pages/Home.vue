@@ -5,12 +5,15 @@ import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import MainPageCarousel from '@/Components/MainPageCarousel.vue'
 import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
+import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 </script>
 
 <template>
     <Head title="Home" />
 
     <PrimaryLayout>
+        <SnowFlakes />
+
         <template #carousel>
             <div class="relative mt-0">
                 <div class="absolute inset-0 bg-black/40 z-10"></div>

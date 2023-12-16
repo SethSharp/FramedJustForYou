@@ -15,7 +15,6 @@ const options = {
 </script>
 
 <template>
-    <SnowFlakes />
     <Splide :options="options" aria-label="Carousel">
         <SplideSlide>
             <Image src="store/front.webp" alt="The main desk" rounded-class="!rounded-none" />
