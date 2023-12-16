@@ -20,16 +20,29 @@ export default {
         <template #content>
             <div class="relative sm:w-3/4 mx-auto">
                 <div class="text-center z-20 relative">
-                    Its that time of year again! The team at Framed Just For You Wish you a very
-                    Merry Christmas and a Happy New Year!
+                    It's that joyous time of year again! The entire team at Framed Just For You
+                    extends warm wishes for a Merry Christmas and a Happy New Year filled with love,
+                    laughter, and unforgettable moments!
                     <br />
                     <br />
-                    Our hours are changing over the Christmas break so lock these in your memory so
-                    you don't catch us on our days off!
+                    As the festive season unfolds, please be aware that our business hours are
+                    undergoing a temporary change during the Christmas break. Kindly take note of
+                    these adjustments to ensure you don't miss us on our well-deserved days off!
+                </div>
+
+                <hr class="mt-4" />
+
+                <div class="text-center grid gap-y-4 mt-6">
+                    <span> Closing Friday the 23rd @5pm </span>
+                    Reopening on
+                    <span> Wednesday 27th 9am-4pm </span>
+                    <span> Thursday 28th 9am-4pm </span>
+                    <span> Friday 29th 9am-4pm </span>
+                    <span> Saturday 30th 9am-1pm </span>
+                    <span> Close Sunday 31st </span>
+                    <span> Reopening Tuesday 2nd January 2024! </span>
                 </div>
             </div>
-
-            <div></div>
         </template>
     </Section>
 </template>

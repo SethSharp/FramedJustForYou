@@ -29,7 +29,7 @@ import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
             </div>
         </template>
         <div id="intro">
-            <div class="my-24">
+            <div class="my-12">
                 <ChristmasSection />
             </div>
 
