@@ -4,6 +4,7 @@ import Section from '@/Components/Section.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
 import MainPageCarousel from '@/Components/MainPageCarousel.vue'
+import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
 </script>
 
 <template>
@@ -28,28 +29,10 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
             </div>
         </template>
         <div id="intro">
-            <Section>
-                <template #header>
-                    <div class="mx-auto">
-                        <span class="text-green-700 font-bold !text-4xl !sm:text-6xl"> Merry </span>
-                        <span class="text-red-700 font-bold !text-4xl !sm:text-6xl">
-                            Christmas
-                        </span>
-                    </div>
-                </template>
-                <template #content>
-                    <div class="text-center">
-                        Its that time of year again! The team at Framed Just For You Wish a very
-                        Merry Christmas and a Happy New Year!
+            <div class="my-24">
+                <ChristmasSection />
+            </div>
 
-                        <br />
-                        <br />
-
-                        Our hours are changing over the christmas break so lock these in your memory
-                        so you don't catch us on our days off!
-                    </div>
-                </template>
-            </Section>
             <Section>
                 <template #header>
                     <span> Your Custom Picture Framers! </span>
