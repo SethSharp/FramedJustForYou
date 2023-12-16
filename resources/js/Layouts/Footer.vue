@@ -102,7 +102,7 @@ const social = [
                             :key="item.name"
                             :href="item.href"
                             :aria-label="item.name"
-                            class="text-gray-500 hover:text-gray-400 cursor-pointer"
+                            class="text-white cursor-pointer"
                         >
                             <span class="sr-only">{{ item.name }}</span>
                             <component :is="item.icon" />

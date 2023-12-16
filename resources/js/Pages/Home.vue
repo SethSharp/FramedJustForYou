@@ -1,18 +1,19 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
-import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
-import Image from '@/Components/Image.vue'
 import Section from '@/Components/Section.vue'
-import Carousel from '@/Components/Carousel.vue'
+import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
 import MainPageCarousel from '@/Components/MainPageCarousel.vue'
+import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
+import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 </script>
 
 <template>
     <Head title="Home" />
 
     <PrimaryLayout>
+        <SnowFlakes />
+
         <template #carousel>
             <div class="relative mt-0">
                 <div class="absolute inset-0 bg-black/40 z-10"></div>
@@ -27,40 +28,15 @@ import MainPageCarousel from '@/Components/MainPageCarousel.vue'
                     </h2>
                 </div>
 
-                <MainPageCarousel>
-                    <!-- Your carousel content here -->
-                    <SplideSlide>
-                        <Image
-                            src="store/front.webp"
-                            alt="The main desk"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/gallery-side.webp"
-                            alt="Gallery"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/framing-bench.webp"
-                            alt="Framing bench and available frames"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <Image
-                            src="store/gallery.webp"
-                            alt="Framing bench and available frames"
-                            rounded-class="!rounded-none"
-                        />
-                    </SplideSlide>
-                </MainPageCarousel>
+                <MainPageCarousel />
             </div>
         </template>
+
         <div id="intro">
+            <div class="my-12">
+                <ChristmasSection />
+            </div>
+
             <Section>
                 <template #header>
                     <span> Your Custom Picture Framers! </span>
