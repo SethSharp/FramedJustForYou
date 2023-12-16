@@ -28,6 +28,7 @@ import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
                 <MainPageCarousel />
             </div>
         </template>
+
         <div id="intro">
             <div class="my-12">
                 <ChristmasSection />

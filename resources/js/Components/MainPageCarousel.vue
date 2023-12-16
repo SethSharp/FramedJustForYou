@@ -2,6 +2,7 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 import Image from '@/Components/Image.vue'
+import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 
 const options = {
     focus: 'center',
@@ -14,6 +15,7 @@ const options = {
 </script>
 
 <template>
+    <SnowFlakes />
     <Splide :options="options" aria-label="Carousel">
         <SplideSlide>
             <Image src="store/front.webp" alt="The main desk" rounded-class="!rounded-none" />

@@ -1,20 +1,26 @@
-<script>
+<script setup>
 import Section from '@/Components/Section.vue'
-
-export default {
-    name: 'ChristmasSection',
-    components: { Section },
-}
 </script>
 
 <template>
     <Section>
         <template #header>
             <div class="mx-auto flex space-x-2.5">
-                <img src="images/holly.png" class="w-6 sm:w-14 h-6 sm:h-14 inset-0 ml-2.5" />
-                <span class="text-green-700 font-bold !text-4xl !sm:text-6xl"> Merry </span>
-                <span class="text-red-700 font-bold !text-4xl !sm:text-6xl"> Christmas! </span>
-                <img src="images/holly.png" class="w-6 sm:w-14 h-6 sm:h-14 inset-0 ml-2.5" />
+                <img
+                    src="images/holly.png"
+                    alt="holly"
+                    class="w-6 sm:w-14 h-6 sm:h-14 inset-0 ml-2.5"
+                />
+
+                <span class="text-red-700 font-bold !text-4xl !sm:text-6xl">
+                    Merry Christmas!
+                </span>
+
+                <img
+                    src="images/holly.png"
+                    alt="holly"
+                    class="w-6 sm:w-14 h-6 sm:h-14 inset-0 ml-2.5"
+                />
             </div>
         </template>
         <template #content>
