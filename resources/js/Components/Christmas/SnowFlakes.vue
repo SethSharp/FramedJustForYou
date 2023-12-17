@@ -43,7 +43,7 @@ setInterval(moveSnowflakes, 25)
         <div
             v-for="(snowflake, index) in snowflakes"
             :key="index"
-            class="absolute"
+            class="absolute rounded-full"
             :style="{
                 left: `${snowflake.x}px`,
                 top: `${snowflake.y}px`,
@@ -51,7 +51,6 @@ setInterval(moveSnowflakes, 25)
                 height: `${snowflake.size}px`,
                 opacity: snowflake.opacity,
                 background: 'white',
-                clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)',
             }"
         />
     </div>
