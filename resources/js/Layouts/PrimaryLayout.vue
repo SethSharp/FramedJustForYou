@@ -170,7 +170,7 @@ const other = [
                     <div class="flex h-16 h-fit py-4">
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
-                            <div class="shrink-0 items-center lg:w-2/5">
+                            <div class="shrink-0 items-center w-1/5">
                                 <Link :href="route('home')" class="">
                                     <ApplicationLogo />
                                 </Link>
@@ -178,7 +178,7 @@ const other = [
 
                             <!-- Navigation Links -->
                             <div
-                                class="hidden space-x-4 lg:w-3/5 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end"
+                                class="hidden space-x-4 w-4/5 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end"
                             >
                                 <div v-for="link in links" class="animation duration-300 my-auto">
                                     <div v-if="!link.options">
