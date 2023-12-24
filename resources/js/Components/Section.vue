@@ -18,11 +18,11 @@ defineProps({
                 <slot name="subtitle" />
             </div>
         </div>
-        <div class="text-md sm:text-lg leading-relaxed text-gray-500">
+        <div class="text-md sm:text-lg text-gray-500">
             <div class="text-gray-500 text-lg font-medium">
                 <slot name="title" />
             </div>
-            <div class="mt-2">
+            <div class="mt-2 leading-loose">
                 <slot name="content" />
             </div>
         </div>

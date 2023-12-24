@@ -45,7 +45,7 @@ import Section from '@/Components/Section.vue'
                     <span> Thursday 28th 9am-4pm </span>
                     <span> Friday 29th 9am-4pm </span>
                     <span> Saturday 30th 9am-1pm </span>
-                    <span> Close Sunday 31st </span>
+                    <span> Closed Sunday 31st </span>
                     <span> Reopening Tuesday 2nd January 2024! </span>
                 </div>
             </div>
