@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="sm:w-3/4 mx-auto mb-6">
+    <div class="sm:w-4/5 mx-auto mb-6">
         <div class="text-xl sm:text-3xl text-gray-700">
             <div class="flex">
                 <slot name="header" />

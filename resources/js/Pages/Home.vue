@@ -11,31 +11,31 @@ import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 <template>
     <Head title="Home" />
 
-    <PrimaryLayout>
-        <SnowFlakes />
+    <PrimaryLayout title="Framed Just For You">
+        <!--        <SnowFlakes />-->
 
-        <template #carousel>
-            <div class="relative mt-0">
-                <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <!--        <template #carousel>-->
+        <!--            <div class="relative mt-0">-->
+        <!--                <div class="absolute inset-0 bg-black/40 z-10"></div>-->
 
-                <!-- Content to be placed above the carousel -->
-                <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">
-                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium">
-                        Framed Just For you
-                    </h1>
-                    <h2 class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">
-                        60+ years of experience
-                    </h2>
-                </div>
+        <!--                &lt;!&ndash; Content to be placed above the carousel &ndash;&gt;-->
+        <!--                <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">-->
+        <!--                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium">-->
+        <!--                        Framed Just For you-->
+        <!--                    </h1>-->
+        <!--                    <h2 class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">-->
+        <!--                        60+ years of experience-->
+        <!--                    </h2>-->
+        <!--                </div>-->
 
-                <MainPageCarousel />
-            </div>
-        </template>
+        <!--                <MainPageCarousel />-->
+        <!--            </div>-->
+        <!--        </template>-->
 
         <div id="intro">
-            <div class="my-12">
-                <ChristmasSection />
-            </div>
+            <!--            <div class="my-12">-->
+            <!--                <ChristmasSection />-->
+            <!--            </div>-->
 
             <Section>
                 <template #header>

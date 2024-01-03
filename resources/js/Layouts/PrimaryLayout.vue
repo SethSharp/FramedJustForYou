@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { DisclosurePanel, Disclosure, DisclosureButton } from '@headlessui/vue'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 import NavLink from '@/Components/Navigation/NavLink.vue'
 import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
@@ -11,14 +12,20 @@ import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropd
 import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 import ChristmasBanner from '@/Components/Christmas/ChristmasBanner.vue'
+import MainBanner from '@/Components/Banners/MainBanner.vue'
 
 defineProps({
     padding: {
         type: Boolean,
         default: true,
     },
+    title: {
+        type: String,
+        default: '',
+    },
 })
 
+let open = ref(false)
 let showingNavigationDropdown = ref(false)
 
 const links = [
@@ -160,168 +167,100 @@ const other = [
 </script>
 
 <template>
-    <div>
-        <ChristmasBanner />
-
-        <div class="min-h-screen bg-gray-100">
-            <!-- Primary Navigation Menu -->
-            <nav>
-                <div class="bg-primary-600 px-4">
-                    <div class="flex h-16 h-fit py-4">
-                        <div class="hidden lg:flex flex h-fit w-full">
-                            <!-- Logo -->
-                            <div class="shrink-0 items-center w-1/5">
-                                <Link :href="route('home')" class="">
-                                    <ApplicationLogo />
-                                </Link>
+    <div class="min-h-full">
+        <div class="bg-primary-600 pb-32">
+            <Disclosure
+                as="nav"
+                class="border-b border-primary-300 border-opacity-25 bg-primary-600 lg:border-none"
+                v-slot="{ open }"
+            >
+                <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                    <div
+                        class="relative flex h-16 items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25"
+                    >
+                        <div class="flex items-center px-2 lg:px-0">
+                            <div class="flex-shrink-0 w-44">
+                                <ApplicationLogo />
                             </div>
-
-                            <!-- Navigation Links -->
-                            <div
-                                class="hidden space-x-4 w-4/5 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end"
-                            >
-                                <div v-for="link in links" class="animation duration-300 my-auto">
-                                    <div v-if="!link.options">
-                                        <NavLink
-                                            :href="route(link.href)"
-                                            :active="route().current(link.active)"
-                                        >
-                                            {{ link.name }}
-                                        </NavLink>
-                                    </div>
-                                    <div v-else>
-                                        <MegaMenu>
-                                            <template #trigger>
-                                                <NavLink :active="route().current(link.active)">
-                                                    {{ link.name }}
-                                                </NavLink>
-                                            </template>
-                                            <template #columns>
-                                                <Column
-                                                    title="Custom Framing"
-                                                    :href="route('services.framing')"
-                                                    :links="customFraming1"
-                                                />
-
-                                                <Column
-                                                    title=""
-                                                    :href="route('services.framing')"
-                                                    :links="customFraming2"
-                                                />
-
-                                                <Column
-                                                    title="Printing"
-                                                    :href="route('services.printing')"
-                                                    :links="printing"
-                                                />
-
-                                                <Column title="Other" :links="other" />
-                                            </template>
-                                        </MegaMenu>
-                                    </div>
+                            <div class="hidden lg:ml-10 lg:block">
+                                <div class="flex space-x-4">
+                                    <a
+                                        v-for="item in links"
+                                        :key="item.name"
+                                        :href="item.href"
+                                        :class="[
+                                            item.current
+                                                ? 'bg-indigo-700 text-white'
+                                                : 'text-white hover:bg-indigo-500 hover:bg-opacity-75',
+                                            'rounded-md py-2 px-3 text-sm font-medium',
+                                        ]"
+                                        :aria-current="item.current ? 'page' : undefined"
+                                        >{{ item.name }}</a
+                                    >
                                 </div>
-                                <PrimaryButton as="button" :href="route('locator')" class="my-auto">
-                                    Store Locator
-                                </PrimaryButton>
                             </div>
                         </div>
-
-                        <!-- Hamburger -->
-                        <div class="-mr-2 w-full flex justify-end lg:hidden">
-                            <div class="w-1/2">
-                                <Link :href="route('home')">
-                                    <ApplicationLogo class="block" />
-                                </Link>
-                            </div>
-                            <div class="w-1/2 my-auto flex justify-end">
-                                <Bars3Icon
-                                    v-if="!showingNavigationDropdown"
-                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-16 h-16 text-white cursor-pointer transition duration-400 ease-in-out"
-                                />
-                                <XMarkIcon
-                                    v-if="showingNavigationDropdown"
-                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
-                                />
-                            </div>
+                        <div class="flex lg:hidden">
+                            <!-- Mobile menu button -->
+                            <DisclosureButton
+                                class="relative inline-flex items-center justify-center rounded-md bg-indigo-600 p-2 text-indigo-200 hover:bg-indigo-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                            >
+                                <span class="absolute -inset-0.5" />
+                                <span class="sr-only">Open main menu</span>
+                                <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+                                <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
+                            </DisclosureButton>
                         </div>
                     </div>
                 </div>
 
-                <!-- Responsive Navigation Menu -->
-                <div
-                    :class="{
-                        block: showingNavigationDropdown,
-                        hidden: !showingNavigationDropdown,
-                    }"
-                    class="lg:hidden"
-                >
-                    <div class="pt-2 pb-3 space-y-1">
-                        <div v-for="link in links">
-                            <div v-if="!link.options" class="border-b-2">
-                                <ResponsiveNavLink
-                                    :href="route(link.href)"
-                                    :active="route().current(link.active)"
-                                >
-                                    {{ link.name }}
-                                </ResponsiveNavLink>
-                            </div>
-                            <div v-else>
-                                <ResponsiveDropdown>
-                                    <template #trigger>
-                                        <ResponsiveNavLink :active="route().current(link.active)">
-                                            {{ link.name }}
-                                        </ResponsiveNavLink>
-                                    </template>
-                                    <template #content>
-                                        <div class="grid grid-cols-2 sm:grid-cols-3">
-                                            <Column
-                                                title="Custom Framing"
-                                                :href="route('services.framing')"
-                                                :links="customFraming1"
-                                            />
-
-                                            <Column
-                                                title=""
-                                                :href="route('services.framing')"
-                                                :links="customFraming2"
-                                            />
-
-                                            <Column
-                                                title="Printing"
-                                                :href="route('services.printing')"
-                                                :links="printing"
-                                            />
-
-                                            <Column title="Other" :links="other" />
-                                        </div>
-                                    </template>
-                                </ResponsiveDropdown>
-                            </div>
+                <DisclosurePanel class="lg:hidden">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                        <DisclosureButton
+                            v-for="item in navigation"
+                            :key="item.name"
+                            as="a"
+                            :href="item.href"
+                            :class="[
+                                item.current
+                                    ? 'bg-indigo-700 text-white'
+                                    : 'text-white hover:bg-indigo-500 hover:bg-opacity-75',
+                                'block rounded-md py-2 px-3 text-base font-medium',
+                            ]"
+                            :aria-current="item.current ? 'page' : undefined"
+                            >{{ item.name }}
+                        </DisclosureButton>
+                    </div>
+                    <div class="border-t border-indigo-700 pb-3 pt-4">
+                        <div class="mt-3 space-y-1 px-2">
+                            <DisclosureButton
+                                v-for="item in links"
+                                :key="item.name"
+                                as="a"
+                                :href="item.href"
+                                class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500 hover:bg-opacity-75"
+                            >
+                                {{ item.name }}
+                            </DisclosureButton>
                         </div>
                     </div>
-                </div>
-            </nav>
-
-            <!-- Page Heading -->
-            <header class="bg-white shadow" v-if="$slots.header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <slot name="header" />
+                </DisclosurePanel>
+            </Disclosure>
+            <header class="py-5" :class="{ 'py-10': title }">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-3xl font-bold tracking-tight text-white">
+                        {{ title }}
+                    </h1>
                 </div>
             </header>
+        </div>
 
-            <!-- Page Content -->
-            <main>
-                <div class="relative top-0">
-                    <slot name="carousel" />
-                </div>
-                <div class="min-h-screen mx-8 mt-10">
+        <main class="-mt-32">
+            <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+                <div class="rounded-lg bg-white py-6 shadow">
                     <slot />
                 </div>
-            </main>
-
-            <Footer />
-        </div>
+            </div>
+        </main>
     </div>
 </template>
