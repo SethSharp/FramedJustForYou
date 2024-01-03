@@ -1,7 +1,3 @@
-<script setup>
-import { Link } from '@inertiajs/vue3'
-</script>
-
 <template>
     <div class="bg-primary-500 text-white text-center justify-center py-1">
         Welcome to 2024! Check out our
