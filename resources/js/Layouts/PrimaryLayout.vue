@@ -11,6 +11,7 @@ import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropd
 import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
 import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
 import ChristmasBanner from '@/Components/Christmas/ChristmasBanner.vue'
+import MainBanner from '@/Components/Banners/MainBanner.vue'
 
 defineProps({
     padding: {
@@ -37,16 +38,6 @@ const links = [
         href: '',
         active: 'services.*',
         options: [],
-    },
-    // {
-    //     name: 'FAQ',
-    //     href: 'faq',
-    //     active: 'faq',
-    // },
-    {
-        name: 'Art Studio',
-        href: 'studio',
-        active: 'studio',
     },
     {
         name: 'Contact',
@@ -161,7 +152,7 @@ const other = [
 
 <template>
     <div>
-        <ChristmasBanner />
+        <MainBanner />
 
         <div class="min-h-screen bg-gray-100">
             <!-- Primary Navigation Menu -->
@@ -171,7 +162,7 @@ const other = [
                         <div class="hidden lg:flex flex h-fit w-full">
                             <!-- Logo -->
                             <div class="shrink-0 items-center w-1/5">
-                                <Link :href="route('home')" class="">
+                                <Link :href="route('home')">
                                     <ApplicationLogo />
                                 </Link>
                             </div>
@@ -237,7 +228,7 @@ const other = [
                                 <Bars3Icon
                                     v-if="!showingNavigationDropdown"
                                     @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-16 h-16 text-white cursor-pointer transition duration-400 ease-in-out"
+                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
                                 />
                                 <XMarkIcon
                                     v-if="showingNavigationDropdown"

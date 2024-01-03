@@ -4,7 +4,7 @@ import { Link } from '@inertiajs/vue3'
 
 <template>
     <div class="bg-primary-500 text-white text-center justify-center py-1">
-        Welcome to our new site! Check out our
+        Welcome to 2024! Check out our
         <Link
             class="font-bold underline"
             aria-label="Announcement bar"
