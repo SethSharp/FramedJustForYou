@@ -34,7 +34,7 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
             :alt="alt"
             :aria-label="alt"
             :class="roundedClass"
-            class="object-cover w-full rounded-xl"
+            class="object-fill w-full rounded-xl"
         />
     </div>
 </template>

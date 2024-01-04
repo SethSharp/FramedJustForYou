@@ -10,6 +10,7 @@ import MainBanner from '@/Components/Banners/MainBanner.vue'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 import Column from '@/Components/Navigation/MegaMenu/Column.vue'
 import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
+import MainPageCarousel from '@/Components/MainPageCarousel.vue'
 
 defineProps({
     padding: {
@@ -19,6 +20,10 @@ defineProps({
     image: {
         type: String,
         default: '',
+    },
+    carousel: {
+        type: Boolean,
+        default: false,
     },
 })
 
@@ -170,7 +175,7 @@ const other = [
                             </div>
 
                             <div class="hidden lg:block my-auto">
-                                <div class="flex space-x-4 justify-end">
+                                <div class="flex space-x-6 justify-end">
                                     <div v-for="link in links" :key="link.name">
                                         <NavLink
                                             v-if="!link.megaMenu"
@@ -271,26 +276,34 @@ const other = [
                 </DisclosurePanel>
             </Disclosure>
 
-            <div class="z-20 h-[300px] bg-primary-500">
-                <div v-if="image" class="relative">
-                    <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="z-20">
+                <div class="absolute w-full">
+                    <div v-if="image" class="h-[275px] relative z-10">
+                        <div class="absolute inset-0 bg-black/40"></div>
 
-                    <img
-                        :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
-                        class="object-cover w-full h-[300px]"
-                    />
+                        <img
+                            :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
+                            class="object-cover w-full h-400px]"
+                        />
+                    </div>
+
+                    <div v-if="carousel" class="relative z-20">
+                        <!--                        <div class="absolute inset-0 bg-black/40"></div>-->
+
+                        <MainPageCarousel />
+                    </div>
                 </div>
+
+                <main class="relative z-30" :class="{ '': !image && !carousel }">
+                    <div class="max-w-7xl pt-32 px-4 pb-12 sm:px-6 lg:px-8 relative z-30">
+                        <div class="rounded-lg bg-white py-6 shadow">
+                            <slot />
+                        </div>
+                    </div>
+
+                    <Footer />
+                </main>
             </div>
         </div>
-
-        <main class="-mt-48 relative z-20">
-            <div class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-                <div class="rounded-lg bg-white py-6 shadow">
-                    <slot />
-                </div>
-            </div>
-
-            <Footer />
-        </main>
     </div>
 </template>

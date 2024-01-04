@@ -17,21 +17,21 @@ const options = {
 <template>
     <Splide :options="options" aria-label="Carousel">
         <SplideSlide>
-            <Image src="store/front.webp" alt="The main desk" rounded-class="!rounded-none" />
+            <Image src="store/front.png" alt="The main desk" rounded-class="!rounded-none" />
         </SplideSlide>
         <SplideSlide>
-            <Image src="store/gallery-side.webp" alt="Gallery" rounded-class="!rounded-none" />
+            <Image src="store/gallery-side.png" alt="Gallery" rounded-class="!rounded-none" />
         </SplideSlide>
         <SplideSlide>
             <Image
-                src="store/framing-bench.webp"
+                src="store/framing-bench.png"
                 alt="Framing bench and available frames"
                 rounded-class="!rounded-none"
             />
         </SplideSlide>
         <SplideSlide>
             <Image
-                src="store/gallery.webp"
+                src="store/gallery.png"
                 alt="Framing bench and available frames"
                 rounded-class="!rounded-none"
             />

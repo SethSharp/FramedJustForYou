@@ -49,7 +49,7 @@ const teamMembers = [
 <template>
     <Head title="About" />
 
-    <PrimaryLayout>
+    <PrimaryLayout image="store/gallery-side.webp">
         <div id="intro">
             <Section>
                 <template #header> About us</template>

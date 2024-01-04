@@ -11,7 +11,7 @@ import Map from '@/Components/Map.vue'
 <template>
     <Head title="Find us" />
 
-    <PrimaryLayout>
+    <PrimaryLayout image="store/framing-bench.webp">
         <Section>
             <template #header>
                 <span> Come see us today! </span>

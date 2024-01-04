@@ -8,7 +8,7 @@ import Contact from '@/Components/Card/Home/Contact.vue'
 <template>
     <Head title="Home" />
 
-    <PrimaryLayout image="store/front.webp">
+    <PrimaryLayout carousel>
         <div id="intro">
             <Section>
                 <template #header>
