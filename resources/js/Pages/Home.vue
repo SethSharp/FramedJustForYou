@@ -3,47 +3,22 @@ import { Head } from '@inertiajs/vue3'
 import Section from '@/Components/Section.vue'
 import PrimaryLayout from '@/Layouts/PrimaryLayout.vue'
 import Contact from '@/Components/Card/Home/Contact.vue'
-import MainPageCarousel from '@/Components/MainPageCarousel.vue'
-import ChristmasSection from '@/Components/Christmas/ChristmasSection.vue'
-import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 </script>
 
 <template>
     <Head title="Home" />
 
-    <PrimaryLayout title="Framed Just For You">
-        <!--        <SnowFlakes />-->
-
-        <!--        <template #carousel>-->
-        <!--            <div class="relative mt-0">-->
-        <!--                <div class="absolute inset-0 bg-black/40 z-10"></div>-->
-
-        <!--                &lt;!&ndash; Content to be placed above the carousel &ndash;&gt;-->
-        <!--                <div class="absolute sm:top-10 md:top-20 left-10 md:left-40 z-20 text-white p-4">-->
-        <!--                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-medium">-->
-        <!--                        Framed Just For you-->
-        <!--                    </h1>-->
-        <!--                    <h2 class="text-left text-xl sm:text-2xl md:text-3xl text-gray-300">-->
-        <!--                        60+ years of experience-->
-        <!--                    </h2>-->
-        <!--                </div>-->
-
-        <!--                <MainPageCarousel />-->
-        <!--            </div>-->
-        <!--        </template>-->
-
+    <PrimaryLayout>
         <div id="intro">
-            <!--            <div class="my-12">-->
-            <!--                <ChristmasSection />-->
-            <!--            </div>-->
-
             <Section>
                 <template #header>
                     <span> Your Custom Picture Framers! </span>
                 </template>
+
                 <template #subtitle>
                     <span> Locally owned and operated since 1997 </span>
                 </template>
+
                 <template #content>
                     <div class="my-6">
                         <h1 class="text-gray-500 text-2xl font-medium mb-3">Who are we?</h1>
@@ -67,6 +42,7 @@ import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
                         <h1 class="text-gray-500 text-2xl font-medium mb-3">
                             What are we up to now?
                         </h1>
+
                         <p>
                             In our ever-evolving journey, Framed Just For You continues to embrace
                             innovation and creativity in the world of custom framing. We understand

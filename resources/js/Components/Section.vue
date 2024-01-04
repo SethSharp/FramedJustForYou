@@ -9,7 +9,7 @@ defineProps({
 
 <template>
     <div class="sm:w-4/5 mx-auto mb-6">
-        <div class="text-xl sm:text-3xl text-gray-700">
+        <div class="text-xl sm:text-3xl text-gray-700 px-6 sm:px-0">
             <div class="flex">
                 <slot name="header" />
             </div>
@@ -19,10 +19,10 @@ defineProps({
             </div>
         </div>
         <div class="text-md sm:text-lg text-gray-500">
-            <div class="text-gray-500 text-lg font-medium">
+            <div class="text-gray-500 px-8 sm:px-0 text-lg font-medium">
                 <slot name="title" />
             </div>
-            <div class="mt-2 leading-loose">
+            <div class="mt-2 px-8 sm:px-4 leading-loose">
                 <slot name="content" />
             </div>
         </div>

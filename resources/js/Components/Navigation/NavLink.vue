@@ -18,7 +18,7 @@ const classes = computed(() =>
 
 <template>
     <div
-        class="text-gray-200 text-lg inline-flex items-center px-1 pt-1 decoration-6 underline-offset-4 transition duration-300 ease-in-out"
+        class="text-gray-200 flex text-lg items-center px-2 decoration-6 underline-offset-4 transition duration-300 ease-in-out"
     >
         <div v-if="!href">
             <span :class="classes">

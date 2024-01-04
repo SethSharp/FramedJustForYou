@@ -1,18 +1,16 @@
 <script setup>
 import { ref } from 'vue'
-import { DisclosurePanel, Disclosure, DisclosureButton } from '@headlessui/vue'
-import ApplicationLogo from '@/Components/ApplicationLogo.vue'
-import NavLink from '@/Components/Navigation/NavLink.vue'
-import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
 import { Link } from '@inertiajs/vue3'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid/index.js'
+import { DisclosurePanel, Disclosure, DisclosureButton } from '@headlessui/vue'
 import Footer from '@/Layouts/Footer.vue'
-import Column from '@/Components/Navigation/MegaMenu/Column.vue'
-import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
+import NavLink from '@/Components/Navigation/NavLink.vue'
 import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
-import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
-import ChristmasBanner from '@/Components/Christmas/ChristmasBanner.vue'
 import MainBanner from '@/Components/Banners/MainBanner.vue'
+import ApplicationLogo from '@/Components/ApplicationLogo.vue'
+import Column from '@/Components/Navigation/MegaMenu/Column.vue'
+import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
+import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
 
 defineProps({
     padding: {
@@ -26,7 +24,6 @@ defineProps({
 })
 
 let open = ref(false)
-let showingNavigationDropdown = ref(false)
 
 const links = [
     {
@@ -43,17 +40,7 @@ const links = [
         name: 'Services',
         href: '',
         active: 'services.*',
-        options: [],
-    },
-    // {
-    //     name: 'FAQ',
-    //     href: 'faq',
-    //     active: 'faq',
-    // },
-    {
-        name: 'Art Studio',
-        href: 'studio',
-        active: 'studio',
+        megaMenu: true,
     },
     {
         name: 'Contact',
@@ -131,9 +118,6 @@ const printing = [
         active: 'services.printing',
     },
     {
-        // Associated with print on demand with champton
-        // Catalgoue, in store or online
-        // Order on canvas, art paper, photo paper, art board
         name: 'Printing on Demand',
         href: route('services.printing') + '#printing-on-canvases',
         link: '#printing-on-canvases',
@@ -142,7 +126,6 @@ const printing = [
 ]
 
 const other = [
-    // Glass type (Booklet)
     {
         name: 'Glass & Glass Cutting',
         href: route('services.other.glass-cutting'),
@@ -188,22 +171,47 @@ const other = [
                             </div>
                             <div class="hidden lg:ml-10 lg:block">
                                 <div class="flex space-x-4">
-                                    <a
-                                        v-for="item in links"
-                                        :key="item.name"
-                                        :href="item.href"
-                                        :class="[
-                                            item.current
-                                                ? 'bg-primary-700 text-white'
-                                                : 'text-white hover:bg-primary-500 hover:bg-opacity-75',
-                                            'rounded-md py-2 px-3 text-sm font-medium',
-                                        ]"
-                                        :aria-current="item.current ? 'page' : undefined"
-                                        >{{ item.name }}</a
-                                    >
+                                    <div v-for="item in links" :key="item.name">
+                                        <NavLink
+                                            v-if="!item.megaMenu"
+                                            :key="item.name"
+                                            :href="route(item.href)"
+                                        >
+                                            {{ item.name }}
+                                        </NavLink>
+
+                                        <MegaMenu v-else>
+                                            <template #trigger>
+                                                {{ item.name }}
+                                            </template>
+
+                                            <template #columns>
+                                                <Column
+                                                    title="Custom Framing"
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming1"
+                                                />
+
+                                                <Column
+                                                    title=""
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming2"
+                                                />
+
+                                                <Column
+                                                    title="Printing"
+                                                    :href="route('services.printing')"
+                                                    :links="printing"
+                                                />
+
+                                                <Column title="Other" :links="other" />
+                                            </template>
+                                        </MegaMenu>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="flex lg:hidden">
                             <!-- Mobile menu button -->
                             <DisclosureButton
@@ -221,19 +229,47 @@ const other = [
                 <DisclosurePanel class="lg:hidden">
                     <div class="border-t border-primary-700 pb-3 pt-4">
                         <div class="mt-3 space-y-1 px-2">
-                            <DisclosureButton
-                                v-for="item in links"
-                                :key="item.name"
-                                as="a"
-                                :href="item.href"
-                                class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-primary-500 hover:bg-opacity-75"
-                            >
-                                {{ item.name }}
-                            </DisclosureButton>
+                            <div v-for="link in links" :key="link.name">
+                                <NavLink
+                                    v-if="!link.megaMenu"
+                                    :key="link.name"
+                                    :href="route(link.href)"
+                                >
+                                    {{ link.name }}
+                                </NavLink>
+
+                                <div v-else>
+                                    <ResponsiveDropdown>
+                                        <template #trigger>
+                                            {{ link.name }}
+                                        </template>
+                                        <template #content>
+                                            <div class="grid grid-cols-2 sm:grid-cols-3 mt-4">
+                                                <Column
+                                                    title="Custom Framing"
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming1"
+                                                />
+
+                                                <Column title="" :links="customFraming2" />
+
+                                                <Column
+                                                    title="Printing"
+                                                    :href="route('services.printing')"
+                                                    :links="printing"
+                                                />
+
+                                                <Column title="Other" :links="other" />
+                                            </div>
+                                        </template>
+                                    </ResponsiveDropdown>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </DisclosurePanel>
             </Disclosure>
+
             <header class="py-5" :class="{ 'py-10': title }">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <h1 class="text-3xl font-bold tracking-tight text-white">
@@ -244,7 +280,7 @@ const other = [
         </div>
 
         <main class="-mt-32">
-            <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+            <div class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
                 <div class="rounded-lg bg-white py-6 shadow">
                     <slot />
                 </div>
