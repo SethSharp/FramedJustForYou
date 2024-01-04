@@ -8,9 +8,7 @@ const navigation = {
         { name: 'Home', href: route('home') },
         { name: 'About', href: route('about') },
         { name: 'Custom Framing', href: route('services.framing') },
-        // { name: 'FAQ', href: route('faq') },
         { name: 'Printing', href: route('services.printing') },
-        { name: 'Art Studio', href: route('studio') },
         { name: 'Contact', href: route('contact') },
     ],
     customFraming1: [
