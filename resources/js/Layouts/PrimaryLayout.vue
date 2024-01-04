@@ -9,8 +9,8 @@ import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
 import MainBanner from '@/Components/Banners/MainBanner.vue'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 import Column from '@/Components/Navigation/MegaMenu/Column.vue'
-import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
 import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
+import Image from '@/Components/Image.vue'
 
 defineProps({
     padding: {
@@ -19,7 +19,7 @@ defineProps({
     },
     title: {
         type: String,
-        default: '',
+        default: 'Heading',
     },
 })
 
@@ -153,7 +153,7 @@ const other = [
     <div class="min-h-screen">
         <MainBanner />
 
-        <div class="bg-primary-600 pb-32">
+        <div class="">
             <Disclosure
                 as="nav"
                 class="border-b border-primary-300 border-opacity-25 bg-primary-600 lg:border-none"
@@ -161,28 +161,30 @@ const other = [
             >
                 <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
                     <div
-                        class="relative flex h-16 items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
+                        class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
                     >
-                        <div class="flex items-center px-2 lg:px-0">
-                            <div class="flex-shrink-0 w-44">
-                                <Link :href="route('home')">
+                        <div class="grid grid-cols-2 w-full">
+                            <div class="flex-shrink-0 w-48">
+                                <Link :href="route('home')" class="w-44">
                                     <ApplicationLogo />
                                 </Link>
                             </div>
-                            <div class="hidden lg:ml-10 lg:block">
-                                <div class="flex space-x-4">
-                                    <div v-for="item in links" :key="item.name">
+
+                            <div class="hidden lg:block my-auto">
+                                <div class="flex space-x-4 justify-end">
+                                    <div v-for="link in links" :key="link.name">
                                         <NavLink
-                                            v-if="!item.megaMenu"
-                                            :key="item.name"
-                                            :href="route(item.href)"
+                                            v-if="!link.megaMenu"
+                                            :key="link.name"
+                                            :href="route(link.href)"
+                                            :active="route().current(link.href)"
                                         >
-                                            {{ item.name }}
+                                            {{ link.name }}
                                         </NavLink>
 
                                         <MegaMenu v-else>
                                             <template #trigger>
-                                                {{ item.name }}
+                                                {{ link.name }}
                                             </template>
 
                                             <template #columns>
@@ -270,16 +272,19 @@ const other = [
                 </DisclosurePanel>
             </Disclosure>
 
-            <header class="py-5" :class="{ 'py-10': title }">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <h1 class="text-3xl font-bold tracking-tight text-white">
-                        {{ title }}
-                    </h1>
+            <div class="z-20 h-[300px] bg-red-50">
+                <div class="relative mt-0">
+                    <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+                    <img
+                        src="https://d2bq6z9lholfa6.cloudfront.net/images/store/framing-bench.webp"
+                        class="object-cover w-full h-[300px]"
+                    />
                 </div>
-            </header>
+            </div>
         </div>
 
-        <main class="-mt-32">
+        <main class="-mt-48 relative z-20">
             <div class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
                 <div class="rounded-lg bg-white py-6 shadow">
                     <slot />
