@@ -10,16 +10,15 @@ import MainBanner from '@/Components/Banners/MainBanner.vue'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 import Column from '@/Components/Navigation/MegaMenu/Column.vue'
 import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
-import Image from '@/Components/Image.vue'
 
 defineProps({
     padding: {
         type: Boolean,
         default: true,
     },
-    title: {
+    image: {
         type: String,
-        default: 'Heading',
+        default: '',
     },
 })
 
@@ -153,7 +152,7 @@ const other = [
     <div class="min-h-screen">
         <MainBanner />
 
-        <div class="">
+        <div>
             <Disclosure
                 as="nav"
                 class="border-b border-primary-300 border-opacity-25 bg-primary-600 lg:border-none"
@@ -272,12 +271,12 @@ const other = [
                 </DisclosurePanel>
             </Disclosure>
 
-            <div class="z-20 h-[300px] bg-red-50">
-                <div class="relative mt-0">
+            <div class="z-20 h-[300px] bg-primary-500">
+                <div v-if="image" class="relative">
                     <div class="absolute inset-0 bg-black/40 z-10"></div>
 
                     <img
-                        src="https://d2bq6z9lholfa6.cloudfront.net/images/store/framing-bench.webp"
+                        :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
                         class="object-cover w-full h-[300px]"
                     />
                 </div>
