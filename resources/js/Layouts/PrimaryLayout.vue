@@ -21,7 +21,7 @@ defineProps({
         type: String,
         default: '',
     },
-    carousel: {
+    home: {
         type: Boolean,
         default: false,
     },
@@ -287,7 +287,7 @@ const other = [
                         />
                     </div>
 
-                    <div v-if="carousel" class="relative z-20">
+                    <div v-if="home" class="relative z-20">
                         <MainPageCarousel />
                     </div>
                 </div>
@@ -295,9 +295,9 @@ const other = [
                 <main class="relative z-30">
                     <div
                         class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
-                        :class="{ 'pt-12': !image, '!pt-52': carousel }"
+                        :class="{ 'pt-12': !image, '!pt-32 sm:!pt-52': home }"
                     >
-                        <div class="rounded-lg bg-white py-6 shadow">
+                        <div class="rounded-lg bg-white py-6 px-2 shadow">
                             <slot />
                         </div>
                     </div>
