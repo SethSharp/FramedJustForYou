@@ -6,7 +6,7 @@ defineProps({
 
 <template>
     <div class="sm:w-4/5 mx-auto mb-6">
-        <div class="text-xl sm:text-3xl text-gray-700 px-6 sm:px-0">
+        <div class="text-xl sm:text-3xl text-gray-700 px-2 sm:px-0">
             <div class="flex">
                 <slot name="header" />
             </div>
@@ -21,7 +21,7 @@ defineProps({
                 <slot name="title" />
             </div>
 
-            <div class="leading-loose">
+            <div class="leading-loose text-md px-2">
                 <slot name="content" />
             </div>
         </div>

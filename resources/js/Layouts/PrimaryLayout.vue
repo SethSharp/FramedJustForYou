@@ -233,9 +233,9 @@ const other = [
                 </div>
 
                 <DisclosurePanel class="lg:hidden">
-                    <div class="border-t border-primary-700 pb-3 pt-4">
-                        <div class="mt-3 space-y-1 px-2">
-                            <div v-for="link in links" :key="link.name">
+                    <div class="border-t border-primary-700">
+                        <div class="space-y-3 px-2 my-4">
+                            <div v-for="link in links" :key="link.name" class="">
                                 <NavLink
                                     v-if="!link.megaMenu"
                                     :key="link.name"
