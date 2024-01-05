@@ -294,8 +294,8 @@ const other = [
 
                 <main class="relative z-30">
                     <div
-                        class="max-w-7xl pt-32 px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
-                        :class="{ '!pt-12': !image && !carousel }"
+                        class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
+                        :class="{ 'pt-12': !image, '!pt-52': carousel }"
                     >
                         <div class="rounded-lg bg-white py-6 shadow">
                             <slot />
