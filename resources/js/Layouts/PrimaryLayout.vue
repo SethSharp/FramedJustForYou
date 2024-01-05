@@ -9,8 +9,8 @@ import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
 import MainBanner from '@/Components/Banners/MainBanner.vue'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue'
 import Column from '@/Components/Navigation/MegaMenu/Column.vue'
-import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
 import MainPageCarousel from '@/Components/MainPageCarousel.vue'
+import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
 
 defineProps({
     padding: {
@@ -288,8 +288,6 @@ const other = [
                     </div>
 
                     <div v-if="carousel" class="relative z-20">
-                        <!--                        <div class="absolute inset-0 bg-black/40"></div>-->
-
                         <MainPageCarousel />
                     </div>
                 </div>

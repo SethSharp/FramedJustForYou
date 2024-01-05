@@ -28,6 +28,7 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
                 <ArrowPathIcon class="w-10 h-10 text-gray-200" />
             </p>
         </div>
+
         <img
             @load="imageLoaded"
             :src="configPath"
