@@ -278,7 +278,7 @@ const other = [
 
             <div class="z-20">
                 <div class="absolute w-full">
-                    <div v-if="image" class="h-[275px] relative z-10">
+                    <div v-if="image" class="relative z-10">
                         <div class="absolute inset-0 bg-black/40"></div>
 
                         <img
@@ -295,7 +295,7 @@ const other = [
                 <main class="relative z-30">
                     <div
                         class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
-                        :class="{ 'pt-12': !image, '!pt-32 sm:!pt-52': home }"
+                        :class="{ 'pt-12': !image, '!pt-44 sm:!pt-64': home, 'pt-16': image }"
                     >
                         <div class="rounded-lg bg-white py-6 px-2 shadow">
                             <slot />

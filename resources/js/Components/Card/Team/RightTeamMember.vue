@@ -17,10 +17,10 @@ const props = defineProps({
         </div>
 
         <div :class="{ 'lg:w-full': !src, 'lg:w-1/2': src }" class="w-full flex">
-            <div class="sm:mx-8 rounded-r-xl transition duration-700 p-2">
-                <h1 class="text-3xl text-gray-600">{{ name }}</h1>
+            <div class="rounded-r-xl transition duration-700 p-2">
+                <h1 class="text-2xl text-gray-600">{{ name }}</h1>
 
-                <span class="text-xl text-gray-400"> {{ position }} </span>
+                <span class="text-lg text-gray-400"> {{ position }} </span>
 
                 <p class="mt-4 text-gray-400">
                     {{ description }}

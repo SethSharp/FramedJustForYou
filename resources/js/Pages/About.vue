@@ -41,7 +41,7 @@ const teamMembers = [
         src: 'team/bethany.webp',
         alt: 'Bethany',
         side: false,
-        component: 'RightTeamMember',
+        component: 'LeftTeamMember',
     },
 ]
 </script>
