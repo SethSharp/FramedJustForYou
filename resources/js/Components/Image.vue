@@ -25,7 +25,7 @@ let configPath = 'https://d2bq6z9lholfa6.cloudfront.net/images/' + props.src
             class="absolute w-full h-full flex flex-col justify-center items-center"
         >
             <p class="animate-spin">
-                <ArrowPathIcon class="w-10 h-10 text-gray-300" />
+                <ArrowPathIcon class="w-10 h-10 text-gray-200" />
             </p>
         </div>
         <img
