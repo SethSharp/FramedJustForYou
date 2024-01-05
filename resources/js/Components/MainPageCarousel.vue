@@ -2,7 +2,6 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 import Image from '@/Components/Image.vue'
-import SnowFlakes from '@/Components/Christmas/SnowFlakes.vue'
 
 const options = {
     focus: 'center',
@@ -15,26 +14,41 @@ const options = {
 </script>
 
 <template>
-    <Splide :options="options" aria-label="Carousel">
-        <SplideSlide>
-            <Image src="store/front.webp" alt="The main desk" rounded-class="!rounded-none" />
-        </SplideSlide>
-        <SplideSlide>
-            <Image src="store/gallery-side.webp" alt="Gallery" rounded-class="!rounded-none" />
-        </SplideSlide>
-        <SplideSlide>
-            <Image
-                src="store/framing-bench.webp"
-                alt="Framing bench and available frames"
-                rounded-class="!rounded-none"
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <Image
-                src="store/gallery.webp"
-                alt="Framing bench and available frames"
-                rounded-class="!rounded-none"
-            />
-        </SplideSlide>
-    </Splide>
+    <div>
+        <div class="absolute inset-0 bg-black/40 z-30"></div>
+
+        <div class="absolute top-5 md:top-14 left-0 sm:left-5 z-40 pl-4 sm:pl-6">
+            <h1 class="text-3xl sm:text-6xl text-white font-medium">Framed Just For you</h1>
+
+            <h2 class="text-left text-xl sm:text-2xl md:text-3xl text-gray-200">
+                60+ years of experience
+            </h2>
+        </div>
+
+        <Splide :options="options" aria-label="Carousel">
+            <SplideSlide>
+                <Image src="store/front.png" alt="The main desk" rounded-class="!rounded-none" />
+            </SplideSlide>
+
+            <SplideSlide>
+                <Image src="store/gallery-side.png" alt="Gallery" rounded-class="!rounded-none" />
+            </SplideSlide>
+
+            <SplideSlide>
+                <Image
+                    src="store/framing-bench.png"
+                    alt="Framing bench and available frames"
+                    rounded-class="!rounded-none"
+                />
+            </SplideSlide>
+
+            <SplideSlide>
+                <Image
+                    src="store/gallery.png"
+                    alt="Framing bench and available frames"
+                    rounded-class="!rounded-none"
+                />
+            </SplideSlide>
+        </Splide>
+    </div>
 </template>

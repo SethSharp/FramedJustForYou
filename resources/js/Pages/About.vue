@@ -13,7 +13,7 @@ const teamMembers = [
         src: 'team/diane.webp',
         alt: 'Diane',
         side: false,
-        component: 'RightTeamMember',
+        component: 'LeftTeamMember',
     },
     {
         name: 'Karen',
@@ -22,7 +22,7 @@ const teamMembers = [
             'With over three decades of framing experience, Karen has been an integral part of our team. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
         alt: 'Karen',
         side: false,
-        component: 'LeftTeamMember',
+        component: 'RightTeamMember',
     },
     {
         name: 'John',
@@ -31,7 +31,7 @@ const teamMembers = [
             'John has been a valuable addition to our team and making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise.',
         alt: 'John',
         side: false,
-        component: 'RightTeamMember',
+        component: 'LeftTeamMember',
     },
     {
         name: 'Bethany',
@@ -49,7 +49,7 @@ const teamMembers = [
 <template>
     <Head title="About" />
 
-    <PrimaryLayout>
+    <PrimaryLayout image="store/gallery-side.webp">
         <div id="intro">
             <Section>
                 <template #header> About us</template>
@@ -63,6 +63,7 @@ const teamMembers = [
                 </template>
             </Section>
         </div>
+
         <div id="team-member">
             <Section>
                 <template #header> Meet the Team</template>

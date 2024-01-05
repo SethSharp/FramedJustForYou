@@ -11,13 +11,13 @@ import Map from '@/Components/Map.vue'
 <template>
     <Head title="Find us" />
 
-    <PrimaryLayout>
+    <PrimaryLayout image="store/framing-bench.webp">
         <Section>
             <template #header>
                 <span> Come see us today! </span>
             </template>
             <template #content>
-                <div class="rounded-xl flex-wrap sm:flex bg-gray-200">
+                <div class="rounded-xl flex-wrap sm:flex bg-gray-100">
                     <div class="w-full p-4 grid sm:grid-cols-2">
                         <div>
                             <p class="text-gray-600">Want to get in contact?</p>

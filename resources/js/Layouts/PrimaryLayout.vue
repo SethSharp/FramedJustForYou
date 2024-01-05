@@ -1,26 +1,33 @@
 <script setup>
 import { ref } from 'vue'
-import ApplicationLogo from '@/Components/ApplicationLogo.vue'
-import NavLink from '@/Components/Navigation/NavLink.vue'
-import ResponsiveNavLink from '@/Components/Navigation/ResponsiveNavLink.vue'
 import { Link } from '@inertiajs/vue3'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/20/solid/index.js'
+import { DisclosurePanel, Disclosure, DisclosureButton } from '@headlessui/vue'
 import Footer from '@/Layouts/Footer.vue'
-import Column from '@/Components/Navigation/MegaMenu/Column.vue'
-import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
+import NavLink from '@/Components/Navigation/NavLink.vue'
 import MegaMenu from '@/Components/Navigation/MegaMenu.vue'
-import PrimaryButton from '@/Components/Button/PrimaryButton.vue'
-import ChristmasBanner from '@/Components/Christmas/ChristmasBanner.vue'
 import MainBanner from '@/Components/Banners/MainBanner.vue'
+import ApplicationLogo from '@/Components/ApplicationLogo.vue'
+import Column from '@/Components/Navigation/MegaMenu/Column.vue'
+import MainPageCarousel from '@/Components/MainPageCarousel.vue'
+import ResponsiveDropdown from '@/Components/Navigation/Dropdown/ResponsiveDropdown.vue'
 
 defineProps({
     padding: {
         type: Boolean,
         default: true,
     },
+    image: {
+        type: String,
+        default: '',
+    },
+    home: {
+        type: Boolean,
+        default: false,
+    },
 })
 
-let showingNavigationDropdown = ref(false)
+let open = ref(false)
 
 const links = [
     {
@@ -37,7 +44,7 @@ const links = [
         name: 'Services',
         href: '',
         active: 'services.*',
-        options: [],
+        megaMenu: true,
     },
     {
         name: 'Contact',
@@ -115,9 +122,6 @@ const printing = [
         active: 'services.printing',
     },
     {
-        // Associated with print on demand with champton
-        // Catalgoue, in store or online
-        // Order on canvas, art paper, photo paper, art board
         name: 'Printing on Demand',
         href: route('services.printing') + '#printing-on-canvases',
         link: '#printing-on-canvases',
@@ -126,7 +130,6 @@ const printing = [
 ]
 
 const other = [
-    // Glass type (Booklet)
     {
         name: 'Glass & Glass Cutting',
         href: route('services.other.glass-cutting'),
@@ -151,42 +154,43 @@ const other = [
 </script>
 
 <template>
-    <div>
+    <div class="min-h-screen">
         <MainBanner />
 
-        <div class="min-h-screen bg-gray-100">
-            <!-- Primary Navigation Menu -->
-            <nav>
-                <div class="bg-primary-600 px-4">
-                    <div class="flex h-16 h-fit py-4">
-                        <div class="hidden lg:flex flex h-fit w-full">
-                            <!-- Logo -->
-                            <div class="shrink-0 items-center w-1/5">
-                                <Link :href="route('home')">
+        <div>
+            <Disclosure
+                as="nav"
+                class="border-b border-primary-300 border-opacity-25 bg-primary-600 lg:border-none"
+                v-slot="{ open }"
+            >
+                <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                    <div
+                        class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
+                    >
+                        <div class="grid grid-cols-2 w-full">
+                            <div class="flex-shrink-0 w-48">
+                                <Link :href="route('home')" class="w-44">
                                     <ApplicationLogo />
                                 </Link>
                             </div>
 
-                            <!-- Navigation Links -->
-                            <div
-                                class="hidden space-x-4 w-4/5 lg:space-x-8 sm:-my-px sm:ml-10 sm:flex justify-end"
-                            >
-                                <div v-for="link in links" class="animation duration-300 my-auto">
-                                    <div v-if="!link.options">
+                            <div class="hidden lg:block my-auto">
+                                <div class="flex space-x-6 justify-end">
+                                    <div v-for="link in links" :key="link.name">
                                         <NavLink
+                                            v-if="!link.megaMenu"
+                                            :key="link.name"
                                             :href="route(link.href)"
-                                            :active="route().current(link.active)"
+                                            :active="route().current(link.href)"
                                         >
                                             {{ link.name }}
                                         </NavLink>
-                                    </div>
-                                    <div v-else>
-                                        <MegaMenu>
+
+                                        <MegaMenu v-else>
                                             <template #trigger>
-                                                <NavLink :active="route().current(link.active)">
-                                                    {{ link.name }}
-                                                </NavLink>
+                                                {{ link.name }}
                                             </template>
+
                                             <template #columns>
                                                 <Column
                                                     title="Custom Framing"
@@ -211,108 +215,96 @@ const other = [
                                         </MegaMenu>
                                     </div>
                                 </div>
-                                <PrimaryButton as="button" :href="route('locator')" class="my-auto">
-                                    Store Locator
-                                </PrimaryButton>
                             </div>
                         </div>
 
-                        <!-- Hamburger -->
-                        <div class="-mr-2 w-full flex justify-end lg:hidden">
-                            <div class="w-1/2">
-                                <Link :href="route('home')">
-                                    <ApplicationLogo class="block" />
-                                </Link>
-                            </div>
-                            <div class="w-1/2 my-auto flex justify-end">
-                                <Bars3Icon
-                                    v-if="!showingNavigationDropdown"
-                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
-                                />
-                                <XMarkIcon
-                                    v-if="showingNavigationDropdown"
-                                    @click="showingNavigationDropdown = !showingNavigationDropdown"
-                                    class="w-12 h-12 text-white cursor-pointer transition duration-400 ease-in-out"
-                                />
-                            </div>
+                        <div class="flex lg:hidden">
+                            <!-- Mobile menu button -->
+                            <DisclosureButton
+                                class="relative inline-flex items-center justify-center rounded-md bg-primary-600 p-2 text-primary-200 hover:bg-primary-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
+                            >
+                                <span class="absolute -inset-0.5" />
+                                <span class="sr-only">Open main menu</span>
+                                <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+                                <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
+                            </DisclosureButton>
                         </div>
                     </div>
                 </div>
 
-                <!-- Responsive Navigation Menu -->
-                <div
-                    :class="{
-                        block: showingNavigationDropdown,
-                        hidden: !showingNavigationDropdown,
-                    }"
-                    class="lg:hidden"
-                >
-                    <div class="pt-2 pb-3 space-y-1">
-                        <div v-for="link in links">
-                            <div v-if="!link.options" class="border-b-2">
-                                <ResponsiveNavLink
+                <DisclosurePanel class="lg:hidden">
+                    <div class="border-t border-primary-700">
+                        <div class="space-y-4 px-2 my-4">
+                            <div v-for="link in links" :key="link.name" class="">
+                                <NavLink
+                                    v-if="!link.megaMenu"
+                                    :key="link.name"
                                     :href="route(link.href)"
-                                    :active="route().current(link.active)"
                                 >
                                     {{ link.name }}
-                                </ResponsiveNavLink>
-                            </div>
-                            <div v-else>
-                                <ResponsiveDropdown>
-                                    <template #trigger>
-                                        <ResponsiveNavLink :active="route().current(link.active)">
+                                </NavLink>
+
+                                <div v-else>
+                                    <ResponsiveDropdown>
+                                        <template #trigger>
                                             {{ link.name }}
-                                        </ResponsiveNavLink>
-                                    </template>
-                                    <template #content>
-                                        <div class="grid grid-cols-2 sm:grid-cols-3">
-                                            <Column
-                                                title="Custom Framing"
-                                                :href="route('services.framing')"
-                                                :links="customFraming1"
-                                            />
+                                        </template>
+                                        <template #content>
+                                            <div class="grid grid-cols-2 sm:grid-cols-3 mt-4">
+                                                <Column
+                                                    title="Custom Framing"
+                                                    :href="route('services.framing')"
+                                                    :links="customFraming1"
+                                                />
 
-                                            <Column
-                                                title=""
-                                                :href="route('services.framing')"
-                                                :links="customFraming2"
-                                            />
+                                                <Column title="" :links="customFraming2" />
 
-                                            <Column
-                                                title="Printing"
-                                                :href="route('services.printing')"
-                                                :links="printing"
-                                            />
+                                                <Column
+                                                    title="Printing"
+                                                    :href="route('services.printing')"
+                                                    :links="printing"
+                                                />
 
-                                            <Column title="Other" :links="other" />
-                                        </div>
-                                    </template>
-                                </ResponsiveDropdown>
+                                                <Column title="Other" :links="other" />
+                                            </div>
+                                        </template>
+                                    </ResponsiveDropdown>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </DisclosurePanel>
+            </Disclosure>
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow" v-if="$slots.header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <slot name="header" />
-                </div>
-            </header>
+            <div class="z-20">
+                <div class="absolute w-full">
+                    <div v-if="image" class="relative z-10">
+                        <div class="absolute inset-0 bg-black/40"></div>
 
-            <!-- Page Content -->
-            <main>
-                <div class="relative top-0">
-                    <slot name="carousel" />
-                </div>
-                <div class="min-h-screen mx-8 mt-10">
-                    <slot />
-                </div>
-            </main>
+                        <img
+                            :src="'https://d2bq6z9lholfa6.cloudfront.net/images/' + image"
+                            class="object-cover w-full h-400px]"
+                        />
+                    </div>
 
-            <Footer />
+                    <div v-if="home" class="relative z-20">
+                        <MainPageCarousel />
+                    </div>
+                </div>
+
+                <main class="relative z-30">
+                    <div
+                        class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
+                        :class="{ 'pt-12': !image, '!pt-44 sm:!pt-64': home, 'pt-16': image }"
+                    >
+                        <div class="rounded-lg bg-white py-6 px-2 shadow">
+                            <slot />
+                        </div>
+                    </div>
+
+                    <Footer />
+                </main>
+            </div>
         </div>
     </div>
 </template>

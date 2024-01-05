@@ -1,28 +1,27 @@
 <script setup>
-import { Link } from '@inertiajs/vue3'
-import { ChevronLeftIcon } from '@heroicons/vue/20/solid/index.js'
-
 defineProps({
     back: String,
 })
 </script>
 
 <template>
-    <div class="sm:w-3/4 mx-auto mb-6">
-        <div class="text-xl sm:text-3xl text-gray-700">
-            <div class="flex">
+    <div class="sm:w-4/5 mx-auto mb-6">
+        <div class="text-gray-700 px-2 sm:px-0">
+            <div class="flex text-xl sm:text-3xl">
                 <slot name="header" />
             </div>
 
-            <div v-if="$slots.subtitle" class="text-gray-400 text-lg mt-2">
+            <div v-if="$slots.subtitle" class="text-gray-400 text-md sm:text-lg">
                 <slot name="subtitle" />
             </div>
         </div>
-        <div class="text-md sm:text-lg leading-relaxed text-gray-500">
-            <div class="text-gray-500 text-lg font-medium">
+
+        <div class="text-md sm:text-lg text-gray-500 mt-4">
+            <div class="text-gray-500 px-2 sm:px-0 text-lg font-medium">
                 <slot name="title" />
             </div>
-            <div class="mt-2">
+
+            <div class="leading-loose text-md px-2">
                 <slot name="content" />
             </div>
         </div>

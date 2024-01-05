@@ -19,7 +19,7 @@ const classes = computed(() =>
 </script>
 
 <template>
-    <div class="text-gray-600 text-2xl py-4 px-4 my-0.5">
+    <div class="text-gray-600">
         <div v-if="!href">
             <span :class="classes" class="px-2">
                 <slot />

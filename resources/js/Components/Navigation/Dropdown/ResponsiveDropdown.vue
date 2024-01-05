@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/20/solid/index.js'
+import { ChevronDownIcon } from '@heroicons/vue/20/solid/index.js'
+import NavLink from '@/Components/Navigation/NavLink.vue'
 
 const open = ref(false)
 </script>
@@ -8,15 +9,14 @@ const open = ref(false)
 <template>
     <div>
         <div @click="open = !open" class="cursor-pointer">
-            <div class="flex">
-                <slot name="trigger" />
+            <div class="flex text-gray-300">
+                <NavLink>
+                    <slot name="trigger" />
+                </NavLink>
+
                 <ChevronDownIcon
-                    v-if="!open"
-                    class="w-6 h-6 mt-5 animation duration-300 ease-in-out"
-                />
-                <ChevronUpIcon
-                    v-if="open"
-                    class="w-6 h-6 mt-5 animation duration-300 ease-in-out"
+                    class="w-6 h-6 mt-0.5 animation duration-300 ease-in-out"
+                    :class="{ 'rotate-180': open }"
                 />
             </div>
 
