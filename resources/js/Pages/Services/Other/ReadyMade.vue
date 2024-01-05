@@ -11,7 +11,9 @@ import Image from '@/Components/Image.vue'
     <PrimaryLayout>
         <Section>
             <template #header> Ready Made Frames</template>
+
             <template #subtitle> Ready to hang</template>
+
             <template #content>
                 <div class="sm:flex">
                     <div class="w-1/2 sm:w-2/5 relative">
@@ -21,7 +23,7 @@ import Image from '@/Components/Image.vue'
                         />
                     </div>
 
-                    <div class="sm:w-3/4 bg-gray-100 rounded-lg shadow-sm my-auto z-20 p-4">
+                    <div class="sm:w-3/4 rounded-lg shadow-sm my-auto z-20 p-4">
                         <p class="z-20">
                             We have multiple hand made, ready made frames ready to hang in your
                             space. We stock the most common sizes and is a great option for your
@@ -30,6 +32,7 @@ import Image from '@/Components/Image.vue'
                             rush for a frame.
                         </p>
                     </div>
+
                     <Image
                         src="readyMade/ready-made-1.webp"
                         class="z-20 w-1/2 mx-auto sm:w-1/4 absolute rotate-12"

@@ -10,8 +10,8 @@ import Image from '@/Components/Image.vue'
 
     <PrimaryLayout>
         <Section>
-            <template #header> Restorations </template>
-            <template #subtitle> Old frames and pictures needing some love? </template>
+            <template #header> Restorations</template>
+            <template #subtitle> Old frames and pictures needing some love?</template>
             <template #content>
                 <p class="mb-4">
                     If you have a frame or picture that needs to well deserved tender loving care,
@@ -19,8 +19,8 @@ import Image from '@/Components/Image.vue'
                 </p>
                 <Image src="restorations/reprint-and-frame.webp" alt="Reprinted and framed photo" />
 
-                <h1 class="text-2xl mt-5">Our Process</h1>
-                <ul class="mb-4 list-disc list-decimal list-inside space-y-4 my-8">
+                <h1 class="text-xl mt-5">Our Process</h1>
+                <ul class="px-4 list-disc list-decimal list-inside space-y-4 mt-2">
                     <li>Make a high quality copy of the photo</li>
                     <li>Move into photoshop and make necessary adjustments</li>
                     <li>Print to correct size using our state of the art printing system</li>
