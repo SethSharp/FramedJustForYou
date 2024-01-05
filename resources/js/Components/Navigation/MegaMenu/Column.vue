@@ -18,9 +18,13 @@ const isActive = (link) => {
 </script>
 
 <template>
-    <div class="text-xl pl-6 flex-wrap">
+    <div class="text-md pl-3 flex-wrap text-gray-100 lg:text-black">
         <div v-if="title" class="font-bold flex">
-            <Link v-if="href" :href="href" class="hover:underline underline-offset-2 flex">
+            <Link
+                v-if="href"
+                :href="href"
+                class="decoration-2 hover:underline underline-offset-4 flex"
+            >
                 {{ title }}
                 <ChevronRightIcon class="w-7 h-7 my-auto" />
             </Link>
@@ -32,8 +36,8 @@ const isActive = (link) => {
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"
-                    class="decoration-2 underline-offset-2 hover:underline"
-                    :class="{ 'underline decoration-black': isActive(link) }"
+                    class="decoration-2 decoration-white underline-offset-4 hover:underline"
+                    :class="{ underline: isActive(link) }"
                 >
                     {{ link.name }}
                 </Link>
