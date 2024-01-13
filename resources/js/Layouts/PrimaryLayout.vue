@@ -294,7 +294,7 @@ const other = [
 
                 <main class="relative z-30">
                     <div
-                        class="max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
+                        class="px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
                         :class="{ 'pt-12': !image, '!pt-44 sm:!pt-64': home, 'pt-16': image }"
                     >
                         <div class="rounded-lg bg-white py-6 px-2 shadow">
