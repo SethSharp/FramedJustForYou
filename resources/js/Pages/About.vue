@@ -53,7 +53,9 @@ const teamMembers = [
         <div id="intro">
             <Section>
                 <template #header> About us</template>
+
                 <template #title> How did it all start?</template>
+
                 <template #content>
                     Framed Just For You was established in 1997 on Oxley Drive. In 2000, the store
                     was relocated to 142 Brisbane Road, where it served the community for the
@@ -67,7 +69,9 @@ const teamMembers = [
         <div id="team-member">
             <Section>
                 <template #header> Meet the Team</template>
+
                 <template #subtitle> ...with over 60 years of experience</template>
+
                 <template #content>
                     <component
                         v-for="teamMember in teamMembers"

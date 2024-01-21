@@ -17,7 +17,7 @@ defineProps({
         </div>
 
         <div class="text-md sm:text-lg text-gray-500 mt-4">
-            <div class="text-gray-500 px-2 sm:px-0 text-lg font-medium">
+            <div class="text-gray-500 px-2 sm:px-0 text-xl font-medium">
                 <slot name="title" />
             </div>
 

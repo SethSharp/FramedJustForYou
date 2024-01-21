@@ -3,8 +3,15 @@ import { Link } from '@inertiajs/vue3'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid/index.js'
 
 defineProps({
-    title: String,
+    title: {
+        type: String,
+        default: null,
+    },
     href: String,
+    link: {
+        type: String,
+        default: null,
+    },
     active: String,
     links: Array,
 })
@@ -13,6 +20,7 @@ const isActive = (link) => {
     if (link.link) {
         return window.location.href.includes(link.link)
     }
+
     return route().current(link.active)
 }
 </script>
@@ -24,6 +32,7 @@ const isActive = (link) => {
                 v-if="href"
                 :href="href"
                 class="decoration-2 hover:underline underline-offset-4 flex"
+                :class="{ '!underline': route().current(link) }"
             >
                 {{ title }}
                 <ChevronRightIcon class="w-7 h-7 my-auto" />
@@ -36,8 +45,8 @@ const isActive = (link) => {
             <li v-for="link in links" class="my-4">
                 <Link
                     :href="link.href"
-                    class="decoration-2 decoration-white underline-offset-4 hover:underline"
-                    :class="{ underline: isActive(link) }"
+                    class="decoration-2 lg:decoration-black underline-offset-4 hover:underline"
+                    :class="{ '!underline': isActive(link) }"
                 >
                     {{ link.name }}
                 </Link>

@@ -195,17 +195,15 @@ const other = [
                                                 <Column
                                                     title="Custom Framing"
                                                     :href="route('services.framing')"
+                                                    link="services.framing"
                                                     :links="customFraming1"
                                                 />
 
-                                                <Column
-                                                    title=""
-                                                    :href="route('services.framing')"
-                                                    :links="customFraming2"
-                                                />
+                                                <Column :links="customFraming2" />
 
                                                 <Column
                                                     title="Printing"
+                                                    link="services.printing"
                                                     :href="route('services.printing')"
                                                     :links="printing"
                                                 />
@@ -254,14 +252,16 @@ const other = [
                                                 <Column
                                                     title="Custom Framing"
                                                     :href="route('services.framing')"
+                                                    link="services.framing"
                                                     :links="customFraming1"
                                                 />
 
-                                                <Column title="" :links="customFraming2" />
+                                                <Column :links="customFraming2" />
 
                                                 <Column
                                                     title="Printing"
                                                     :href="route('services.printing')"
+                                                    link="services.printing"
                                                     :links="printing"
                                                 />
 
@@ -297,7 +297,7 @@ const other = [
                         class="px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
                         :class="{ 'pt-12': !image, '!pt-44 sm:!pt-64': home, 'pt-16': image }"
                     >
-                        <div class="rounded-lg bg-white py-6 px-2 shadow">
+                        <div class="rounded-lg bg-white py-6 px-8 sm:px-2 shadow">
                             <slot />
                         </div>
                     </div>

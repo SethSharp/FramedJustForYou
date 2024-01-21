@@ -21,7 +21,7 @@ import Contact from '@/Components/Card/Home/Contact.vue'
 
                 <template #content>
                     <div class="my-6">
-                        <h1 class="text-gray-500 text-lg font-medium mb-3">Who are we?</h1>
+                        <h1 class="text-gray-500 !text-xl font-medium mb-3">Who are we?</h1>
 
                         <p>
                             At Framed Just For You, we are more than just a framing business; we are
