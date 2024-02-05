@@ -36,7 +36,6 @@ class Handler extends ExceptionHandler
 
         return match ($status) {
             404 => Inertia::render('Errors/404')->toResponse($request)->setStatusCode($status),
-            419 => redirect()->back()->withErrors(['status' => __('The page expired, please try again.')]),
             default => $response
         };
     }
