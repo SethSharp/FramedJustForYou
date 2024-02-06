@@ -21,7 +21,7 @@ defineProps({
                 <slot name="title" />
             </div>
 
-            <div class="leading-loose text-md px-2">
+            <div class="leading-loose text-md sm:px-2">
                 <slot name="content" />
             </div>
         </div>

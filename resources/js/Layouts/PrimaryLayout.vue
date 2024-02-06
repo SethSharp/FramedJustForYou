@@ -238,6 +238,7 @@ const other = [
                                     v-if="!link.megaMenu"
                                     :key="link.name"
                                     :href="route(link.href)"
+                                    :active="route().current(link.href)"
                                 >
                                     {{ link.name }}
                                 </NavLink>

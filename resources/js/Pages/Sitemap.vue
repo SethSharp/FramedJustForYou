@@ -18,7 +18,7 @@ import Section from '@/Components/Section.vue'
                                 <ul class="list-inside ml-2">
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('home')"
                                         >
                                             Home
@@ -26,7 +26,7 @@ import Section from '@/Components/Section.vue'
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('about')"
                                         >
                                             About
@@ -34,7 +34,7 @@ import Section from '@/Components/Section.vue'
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('faq')"
                                         >
                                             FAQ
@@ -42,7 +42,7 @@ import Section from '@/Components/Section.vue'
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('contact')"
                                         >
                                             Find
@@ -50,7 +50,7 @@ import Section from '@/Components/Section.vue'
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('locator')"
                                         >
                                             Locator
@@ -66,14 +66,14 @@ import Section from '@/Components/Section.vue'
                                 <ul class="list-inside ml-2">
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing')"
                                             >Framing</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.printing')"
                                             >Printing</a
                                         >
@@ -88,35 +88,35 @@ import Section from '@/Components/Section.vue'
                                 <ul class="list-inside ml-2">
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.acrylic')"
                                             >Acrylic Framing</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.australian')"
                                             >Australian Made Framing Kits</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.canvases')"
                                             >Canvases</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.indigenous-art')"
                                             >Indigenous Art</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.jigsaws')"
                                             >Jigsaws</a
                                         >
@@ -130,28 +130,28 @@ import Section from '@/Components/Section.vue'
                                 <ul class="list-inside ml-2">
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.medals-memorabilia')"
                                             >Medals and Memorabilia</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.mirror')"
                                             >Mirror</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.original-artwork')"
                                             >Original Artwork</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="
                                                 route('services.framing.prints-posters-and-photos')
                                             "
@@ -160,14 +160,14 @@ import Section from '@/Components/Section.vue'
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.hand-crafted')"
                                             >Handcrafted</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.framing.restorations')"
                                             >Restorations</a
                                         >
@@ -182,28 +182,28 @@ import Section from '@/Components/Section.vue'
                                 <ul class="list-inside ml-2">
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.other.glass-cutting')"
                                             >Glass Cutting</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.other.matboard-cutting')"
                                             >Matboard Cutting</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.other.ready-made')"
                                             >Ready Made</a
                                         >
                                     </li>
                                     <li>
                                         <a
-                                            class="text-primary-600 font-medium"
+                                            class="text-primary-600 hover:text-primary-400 font-medium"
                                             :href="route('services.other.framing-supplies')"
                                             >Framing Supplies</a
                                         >
