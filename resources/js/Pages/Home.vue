@@ -35,13 +35,13 @@ import { DevicePhoneMobileIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/2
 
                         <div class="w-full md:w-1/2 flex justify-center">
                             <div
-                                class="w-3/4 mt-6 sm:mt-0 text-center overflow-hidden bg-gray-100 rounded-xl"
+                                class="w-full sm:w-3/4 mt-6 sm:mt-0 text-center overflow-hidden bg-gray-100 rounded-xl"
                             >
                                 <div class="w-full bg-primary-600 text-white">
                                     Our Specialisations
                                 </div>
 
-                                <div class="text-left ml-8 font-bold py-4">
+                                <div class="text-left ml-4 sm:ml-8 font-bold py-4">
                                     <ol>
                                         <li class="my-2">Everything Custom Framing</li>
 
@@ -69,7 +69,7 @@ import { DevicePhoneMobileIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/2
                     <div class="w-full gap-6 justify-center lg:flex">
                         <div class="w-full lg:w-1/2 flex justify-center">
                             <div
-                                class="my-2 w-3/4 text-center overflow-hidden bg-gray-100 rounded-xl"
+                                class="my-2 w-full sm:w-3/4 text-center overflow-hidden bg-gray-100 rounded-xl"
                             >
                                 <div class="w-full bg-primary-600 text-white">Contact us</div>
 
