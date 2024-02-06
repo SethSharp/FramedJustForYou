@@ -169,13 +169,14 @@ const social = [
             </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 border-t border-white/10 flex p-12">
-            <div class="flex justify-start items-center">
-                <p class="text-xs leading-5 text-gray-200">
-                    &copy; 2023 Framed Just For You. All rights reserved.
-                </p>
+        <div class="border-t border-white flex p-12 justify-between">
+            <div class="text-xs text-gray-200">
+                <p>&copy; 2023 Framed Just For You. All rights reserved.</p>
             </div>
-            <div></div>
+
+            <div class="text-xs text-gray-200">
+                <a :href="route('sitemap')">sitemap</a>
+            </div>
         </div>
     </footer>
 </template>
