@@ -5,9 +5,9 @@ defineProps({
 </script>
 
 <template>
-    <div class="sm:w-4/5 mx-auto mb-6">
-        <div class="text-gray-700 px-2 sm:px-0">
-            <div class="flex text-xl sm:text-3xl">
+    <div class="w-full sm:w-4/5 mx-auto mb-6">
+        <div class="text-gray-700">
+            <div class="flex text-2xl sm:text-3xl">
                 <slot name="header" />
             </div>
 
@@ -17,7 +17,7 @@ defineProps({
         </div>
 
         <div class="text-md sm:text-lg text-gray-500 mt-4">
-            <div class="text-gray-500 px-2 sm:px-0 text-xl font-medium">
+            <div class="text-gray-500 text-xl font-medium">
                 <slot name="title" />
             </div>
 

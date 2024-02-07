@@ -23,12 +23,14 @@ const scrollToContent = () =>
             <template #header>
                 <span> Framing </span>
             </template>
+
             <template #subtitle>
                 <div @click="scrollToContent()" class="flex cursor-pointer">
                     <span> View our broad range </span>
                     <ArrowDownIcon class="w-8 h-8" />
                 </div>
             </template>
+
             <template #content>
                 <div class="mb-6">
                     At Framed Just For You, we specialize in custom framing that transforms your
@@ -43,124 +45,120 @@ const scrollToContent = () =>
 
         <Section id="custom">
             <template #header> Our Approach</template>
+
             <template #content>
-                <div class="">
-                    <div class="grid">
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
-                                <div class="p-4">
-                                    <ClipboardDocumentListIcon class="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <p>
-                                        Our approach is simple, whether your custom framing project
-                                        is a valuable artwork by a renowned artist or your
-                                        grandchild's arts and crafts project it will receive the
-                                        highest attention to detail while being finished to the
-                                        finest standards.
-                                    </p>
-                                </div>
+                <div class="grid">
+                    <div class="flex-wrap md:flex my-4 sm:my-2">
+                        <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            <div class="p-4">
+                                <ClipboardDocumentListIcon class="w-8 h-8" />
                             </div>
-                            <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image src="framing/flinders.webp" alt="flinders range framed" />
+                            <div>
+                                <p>
+                                    Our approach is simple, whether your custom framing project is a
+                                    valuable artwork by a renowned artist or your grandchild's arts
+                                    and crafts project it will receive the highest attention to
+                                    detail while being finished to the finest standards.
+                                </p>
                             </div>
                         </div>
+                        <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                            <Image src="framing/flinders.webp" alt="flinders range framed" />
+                        </div>
+                    </div>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image
-                                    src="framing/selection.webp"
-                                    alt="Over 1000 frames to choose from"
-                                />
+                    <div class="flex-wrap md:flex my-4 sm:my-2">
+                        <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                            <Image
+                                src="framing/selection.webp"
+                                alt="Over 1000 frames to choose from"
+                            />
+                        </div>
+                        <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            <div class="p-4">
+                                <ListBulletIcon class="w-8 h-8" />
                             </div>
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
-                                <div class="p-4">
-                                    <ListBulletIcon class="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <p>
-                                        Our custom framing service, with over 1000 frames to choose
-                                        from, caters to every customer's unique preferences and
-                                        needs. Just like a satisfied customer who values quality and
-                                        variety, we offer an extensive selection of frames that
-                                        suits any style or project.
-                                    </p>
-                                </div>
+                            <div>
+                                <p>
+                                    Our custom framing service, with over 1000 frames to choose
+                                    from, caters to every customer's unique preferences and needs.
+                                    Just like a satisfied customer who values quality and variety,
+                                    we offer an extensive selection of frames that suits any style
+                                    or project.
+                                </p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
-                                <div class="p-4">
-                                    <QueueListIcon class="w-8 h-8" />
-                                </div>
+                    <div class="flex-wrap md:flex my-4 sm:my-2">
+                        <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            <div class="p-4">
+                                <QueueListIcon class="w-8 h-8" />
+                            </div>
+                            <div>
                                 <div>
-                                    <div>
-                                        We offer a comprehensive selection of glass types to
-                                        compliment your custom frame:
-                                        <ul class="list-disc list-inside">
-                                            <li>Clear Glass</li>
-                                            <li>UV Clear Glass 97% Non Fading</li>
-                                            <li>Non Reflective Glass</li>
-                                            <li>
-                                                Conservation Non reflective Glass 97% Non Fading
-                                            </li>
-                                            <li>Museum Glass</li>
-                                            <li>Ultra-view</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image
-                                    src="framing/glassChoices.webp"
-                                    alt="The difference between clear and ultra vue glass"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image
-                                    src="framing/matboards.webp"
-                                    alt="our massive selection of matboards"
-                                />
-                            </div>
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
-                                <div class="p-4">
-                                    <QueueListIcon class="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <p>
-                                        Our mat boards are top quality and acid free. We use
-                                        Crescent - Neilsen, Bainbridge, Alpha, Peterborough Museum
-                                        Core, Artique conservation, Archival rag and Museum mats
-                                    </p>
+                                    We offer a comprehensive selection of glass types to compliment
+                                    your custom frame:
+                                    <ul class="list-disc list-inside">
+                                        <li>Clear Glass</li>
+                                        <li>UV Clear Glass 97% Non Fading</li>
+                                        <li>Non Reflective Glass</li>
+                                        <li>Conservation Non reflective Glass 97% Non Fading</li>
+                                        <li>Museum Glass</li>
+                                        <li>Ultra-view</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                            <Image
+                                src="framing/glassChoices.webp"
+                                alt="The difference between clear and ultra vue glass"
+                            />
+                        </div>
+                    </div>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
-                                <div class="p-4">
-                                    <CheckCircleIcon class="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <p>
-                                        At Framed Just For You we use all quality wood and metal
-                                        picture frames, no synthetics are used. Frames are sourced
-                                        from all over the world and we have over 1000 samples to
-                                        choose from. Our huge selection of custom frames include
-                                        brands such as Larson-Juhl and Antons Mouldings.
-                                    </p>
-                                </div>
+                    <div class="flex-wrap md:flex my-4 sm:my-2">
+                        <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                            <Image
+                                src="framing/matboards.webp"
+                                alt="our massive selection of matboards"
+                            />
+                        </div>
+                        <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            <div class="p-4">
+                                <QueueListIcon class="w-8 h-8" />
                             </div>
-                            <div class="w-1/2 md:w-2/5 mx-auto my-6">
-                                <Image
-                                    src="framing/framing.webp"
-                                    alt="more of our huge range of frames"
-                                />
+                            <div>
+                                <p>
+                                    Our mat boards are top quality and acid free. We use Crescent -
+                                    Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique
+                                    conservation, Archival rag and Museum mats
+                                </p>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-wrap md:flex my-4 sm:my-2">
+                        <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            <div class="p-4">
+                                <CheckCircleIcon class="w-8 h-8" />
+                            </div>
+                            <div>
+                                <p>
+                                    At Framed Just For You we use all quality wood and metal picture
+                                    frames, no synthetics are used. Frames are sourced from all over
+                                    the world and we have over 1000 samples to choose from. Our huge
+                                    selection of custom frames include brands such as Larson-Juhl
+                                    and Antons Mouldings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                            <Image
+                                src="framing/framing.webp"
+                                alt="more of our huge range of frames"
+                            />
                         </div>
                     </div>
                 </div>
