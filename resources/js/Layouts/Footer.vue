@@ -84,12 +84,13 @@ const social = [
 <template>
     <footer class="bg-primary-700">
         <div class="lg:flex w-full">
-            <div class="sm:w-2/5 lg:my-auto mx-6">
+            <div class="w-full lg:w-1/5 lg:my-auto mx-6">
                 <div class="pt-8 lg:pt-0">
                     <Link :href="route('home')">
-                        <ApplicationLogo class="w-3/4" />
+                        <ApplicationLogo class="w-1/2 lg:w-full" />
                     </Link>
                 </div>
+
                 <div class="mt-4">
                     <p class="text-md leading-6 text-gray-300">
                         Framing all your needs on the Gold Coast since 1997
@@ -108,7 +109,8 @@ const social = [
                     </div>
                 </div>
             </div>
-            <div class="lg:w-3/5 text-sm">
+
+            <div class="w-full lg:w-4/5 text-sm">
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 mx-4 py-12">
                     <div>
                         <h1 class="text-md font-semibold leading-6 text-white">Pages</h1>
