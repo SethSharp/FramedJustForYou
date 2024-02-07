@@ -35,19 +35,19 @@ import { DevicePhoneMobileIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/2
 
                         <div class="w-full md:w-1/2 flex justify-center">
                             <div
-                                class="w-full sm:w-3/4 mt-6 sm:mt-0 text-center overflow-hidden bg-gray-100 rounded-xl"
+                                class="w-full sm:w-3/4 mt-6 md:mt-0 text-center overflow-hidden bg-gray-100 rounded-xl"
                             >
                                 <div class="w-full bg-primary-600 text-white">
                                     Our Specialisations
                                 </div>
 
-                                <div class="text-left ml-4 sm:ml-8 font-bold py-4">
+                                <div class="text-left ml-4 md:ml-6 font-bold py-4">
                                     <ol>
                                         <li class="my-2">Everything Custom Framing</li>
 
-                                        <li class="my-2">Printing and Cannvases</li>
+                                        <li class="my-2">Printing and Canvases</li>
 
-                                        <li class="my-2">Glass and Matboard Cutting</li>
+                                        <li class="my-2">Glass and Mat board Cutting</li>
 
                                         <li class="my-2">Supplies</li>
                                     </ol>
