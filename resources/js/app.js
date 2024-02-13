@@ -11,7 +11,6 @@ window.Alpine = Alpine
 
 Alpine.start()
 
-
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel'
 
 createInertiaApp({
