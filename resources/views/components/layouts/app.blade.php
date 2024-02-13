@@ -38,14 +38,17 @@
             >
                 <div class="grid grid-cols-2 w-full">
                     <div class="flex-shrink-0 w-48">
-                        <a :href="route('home')" class="w-44">
+                        <a href="{{route('new.home')}}" class="w-44">
                             <x-app-logo/>
                         </a>
                     </div>
 
                     <div class="hidden lg:block my-auto">
                         <div class="flex space-x-6 justify-end">
-                            <x-links.nav href="{{route('new.home')}}">
+                            <x-links.nav
+                                href="{{route('new.home')}}"
+                                active="{{true}}"
+                            >
                                 Home
                             </x-links.nav>
 
@@ -68,8 +71,14 @@
                         class="relative inline-flex items-center justify-center rounded-md bg-primary-600 p-2 text-primary-200 hover:bg-primary-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
                     >
                         <span class="sr-only">Open main menu</span>
-                        <x-icons.bars-3 x-show="!sidebarOpen" @click="sidebarOpen = true"/>
-                        <x-icons.x-mark x-show="sidebarOpen" @click="sidebarOpen = false"/>
+
+                        <div x-show="!sidebarOpen" x-on:click="sidebarOpen = true">
+                            <x-icons.bars-3/>
+                        </div>
+
+                        <div x-show="sidebarOpen" x-on:click="sidebarOpen = false">
+                            <x-icons.x-mark/>
+                        </div>
                     </button>
                 </div>
             </div>

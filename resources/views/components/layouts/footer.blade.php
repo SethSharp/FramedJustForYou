@@ -2,7 +2,7 @@
     <div class="lg:flex w-full">
         <div class="w-full lg:w-1/5 lg:my-auto mx-6">
             <div class="pt-8 lg:pt-0">
-                <a :href="{{route('new.home')}}">
+                <a href="{{route('new.home')}}">
                     <x-app-logo class="w-1/2 lg:w-full"/>
                 </a>
             </div>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="text-xs text-gray-200">
-            <a :href="{{route('sitemap')}}">sitemap</a>
+            <a href="{{route('sitemap')}}">sitemap</a>
         </div>
     </div>
 </footer>
