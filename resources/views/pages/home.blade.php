@@ -1,1 +1,3 @@
-This is home
+<div>
+    <x-app-logo />
+</div>
