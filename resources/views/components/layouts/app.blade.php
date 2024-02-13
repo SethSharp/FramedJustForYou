@@ -13,8 +13,6 @@
     <meta name="description"
           content="Framed Just For You is Gold Coasts best picture framing business. We have been locally owned and operated for over 20 years and with 60+ years of experience we produce amazing results for our customers all over the Gold Coast and the country!">
 
-    @vite('resources/js/public.js')
-
     @routes
 </head>
 <body class="font-sans antialiased">
