@@ -20,8 +20,6 @@
 <body class="font-sans antialiased">
 
 <div class="min-h-screen">
-    <x-banners.main/>
-
     Testing just this
 </div>
 </body>
