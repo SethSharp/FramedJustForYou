@@ -47,7 +47,7 @@ jobs:
 
       - name: Production Optimisations
         run: |
-          php artisan cache:cache
+          php artisan cache:clear
           php artisan route:cache
           php artisan view:cache
           php artisan config:cache
