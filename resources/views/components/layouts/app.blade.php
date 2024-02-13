@@ -20,7 +20,7 @@
 
     @vite('resources/js/public.js')
 
-    @routes('public')
+    @routes
 </head>
 <body class="font-sans antialiased">
 
