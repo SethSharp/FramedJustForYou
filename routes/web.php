@@ -109,3 +109,5 @@ Route::prefix('services')->name('services.')->group(function () {
         })->name('framing-supplies');
     });
 });
+
+require __DIR__ . '/public.php';
