@@ -32,15 +32,13 @@
             sidebarOpen: false
         }"
     >
-        <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 ">
+        <div class="px-8 bg-primary-600">
             <div
                 class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >
                 <div class="grid grid-cols-2 w-full">
-                    <div class="flex-shrink-0 w-48">
-                        <a href="{{route('new.home')}}" class="w-44">
-                            <x-app-logo/>
-                        </a>
+                    <div class="w-72">
+                        <x-app-logo/>
                     </div>
 
                     <div class="hidden lg:block my-auto">
@@ -105,11 +103,11 @@
         </div>
 
         <div class="z-20">
-            <main class="relative z-30">
+            <main class="relative z- my-8">
                 <div
-                    class="px-4 pb-12 sm:px-6 lg:px-8 relative z-30"
+                    class="relative z-30 px-12"
                 >
-                    <div class="rounded-lg bg-white py-6 px-8 sm:px-2 shadow">
+                    <div class="rounded-lg bg-white shadow">
                         {{ $slot }}
                     </div>
                 </div>
