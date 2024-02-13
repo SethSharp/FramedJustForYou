@@ -8,6 +8,10 @@ export default defineConfig({
             input: 'resources/js/app.js',
             refresh: true,
         }),
+        laravel({
+            input: 'resources/js/public.js',
+            refresh: true,
+        }),
         vue({
             template: {
                 transformAssetUrls: {
