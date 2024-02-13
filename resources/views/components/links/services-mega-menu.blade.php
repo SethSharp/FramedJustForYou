@@ -1,7 +1,7 @@
 <div
     x-data="{open: false}"
 >
-    <div x-on:click="open = !open" class="cursor-pointer flex text-gray-300">
+    <div x-on:click="open = !open" x-transition class="cursor-pointer flex text-gray-300">
         <span>
             <div class="flex text-2xl md:text-xl">
                 Services

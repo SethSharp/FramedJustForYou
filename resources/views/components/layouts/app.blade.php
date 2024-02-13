@@ -120,11 +120,9 @@
         <div class="z-20">
             <main class="relative z- my-8">
                 <div
-                    class="relative z-30 px-12"
+                    class="relative z-30 leading-loose"
                 >
-                    <div class="rounded-lg bg-white shadow">
-                        {{ $slot }}
-                    </div>
+                    {{ $slot }}
                 </div>
             </main>
 
