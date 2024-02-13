@@ -7,6 +7,8 @@ jobs:
 
     runs-on: ubuntu-20.04
 
+    if: github.ref == 'refs/heads/main'
+
     steps:
       - uses: actions/checkout@v3
 
@@ -43,19 +45,17 @@ jobs:
         run: |
           npm run build
 
-      - name: Clear Cache
+      - name: Production Optimisations
         run: |
-          php artisan cache:clear
-          php artisan route:clear
-          php artisan view:clear
-          php artisan config:clear
+          php artisan cache:cache
+          php artisan route:cache
+          php artisan view:cache
+          php artisan config:cache
 
       - name: Build ZIP Deployment Package
-        if: github.ref == 'refs/heads/main'
         run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
 
       - name: Deploy to Elastic Beanstalk
-        if: github.ref == 'refs/heads/main'
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
