@@ -32,12 +32,12 @@
             sidebarOpen: false
         }"
     >
-        <div class="px-8 bg-primary-600">
+        <div class="px-8 bg-primary-500">
             <div
                 class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >
                 <div class="grid grid-cols-2 w-full">
-                    <div class="w-72">
+                    <div class="w-52 md:w-72">
                         <x-app-logo/>
                     </div>
 
@@ -45,18 +45,24 @@
                         <div class="flex space-x-6 justify-end">
                             <x-links.nav
                                 href="{{route('new.home')}}"
-                                active="{{true}}"
+                                active="{{ request()->route()->getName() === 'new.home' }}"
                             >
                                 Home
                             </x-links.nav>
 
-                            <x-links.nav href="{{route('new.about')}}">
+                            <x-links.nav
+                                href="{{route('new.about')}}"
+                                active="{{ request()->route()->getName() === 'new.about' }}"
+                            >
                                 About
                             </x-links.nav>
 
                             <x-links.services-mega-menu/>
 
-                            <x-links.nav href="{{route('new.contact')}}">
+                            <x-links.nav
+                                href="{{route('new.contact')}}"
+                                active="{{ request()->route()->getName() === 'new.contact' }}"
+                            >
                                 Contact
                             </x-links.nav>
                         </div>
@@ -70,11 +76,11 @@
                     >
                         <span class="sr-only">Open main menu</span>
 
-                        <div x-show="!sidebarOpen" x-on:click="sidebarOpen = true">
+                        <div x-show="!sidebarOpen" x-on:click="sidebarOpen = true" class="transition">
                             <x-icons.bars-3/>
                         </div>
 
-                        <div x-show="sidebarOpen" x-on:click="sidebarOpen = false">
+                        <div x-show="sidebarOpen" x-on:click="sidebarOpen = false" class="transition">
                             <x-icons.x-mark/>
                         </div>
                     </button>
@@ -82,20 +88,29 @@
             </div>
         </div>
 
-        <div class="lg:hidden">
+        <div x-show="sidebarOpen" x-transition class="lg:hidden bg-primary-600">
             <div class="border-t border-primary-700">
                 <div class="space-y-4 px-2 my-4">
-                    <x-links.nav href="{{route('new.home')}}">
-                        Home
+                    <x-links.nav
+                        href="{{route('new.home')}}"
+                        active="{{ request()->route()->getName() === 'new.home' }}"
+                    >
+                        Home here
                     </x-links.nav>
 
-                    <x-links.nav href="{{route('new.about')}}">
+                    <x-links.nav
+                        href="{{route('new.about')}}"
+                        active="{{ request()->route()->getName() === 'new.about' }}"
+                    >
                         About
                     </x-links.nav>
 
                     <x-links.services-mega-menu/>
 
-                    <x-links.nav href="{{route('new.contact')}}">
+                    <x-links.nav
+                        href="{{route('new.contact')}}"
+                        active="{{ request()->route()->getName() === 'new.contact' }}"
+                    >
                         Contact
                     </x-links.nav>
                 </div>
