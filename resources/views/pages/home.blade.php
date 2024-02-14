@@ -19,18 +19,40 @@
 
         <div class="bg-primary-600">
             <div class="w-3/4 mx-auto">
+                <h1 class="text-4xl text-white pt-6"> Our Services </h1>
                 <div class="flex justify-between text-center gap-x-6 py-6">
-                    <div class="bg-white rounded-lg w-44 h-44">
-                        Custom Framing
-                    </div>
+                    <a :href="{{route('new.custom-framing')}}" class="bg-white rounded-lg overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <x-image
+                            src="framing/flinders.webp"
+                            alt="flinders range framed"
+                            additionalClass="w-44 h-44 object-cover"
+                        />
+                        <div class="absolute bg-black/50 top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white">
+                            Custom Framing
+                        </div>
+                    </a>
 
-                    <div class="bg-white rounded-lg w-44 h-44">
-                        Printing
-                    </div>
+                    <a href="{{route('new.about')}}" class="bg-white rounded-lg overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <x-image
+                            src="printing/printer.webp"
+                            alt="In-store specialised printer"
+                            additionalClass="w-44 h-44 object-cover"
+                        />
+                        <div class="absolute bg-black/50 top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white">
+                            Printing
+                        </div>
+                    </a>
 
-                    <div class="bg-white rounded-lg w-44 h-44">
-                        Assets
-                    </div>
+                    <a href="{{route('new.about')}}" class="bg-white rounded-lg overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <x-image
+                            src="matboards/matboard-cutter.webp"
+                            alt="Computerised matboard cutter"
+                            additionalClass="w-44 h-44 object-cover"
+                        />
+                        <div class="absolute bg-black/50 top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white">
+                            Supplies
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -43,7 +65,7 @@
                     </x-cards.quote>
 
                     <x-cards.quote user="Seth">
-                        Really well done work, can find the exact frame and matting that matched by graduate certificate!
+                        Really good work, they found the exact frame and matting that matched my graduate certificate!
                     </x-cards.quote>
                 </div>
             </div>
