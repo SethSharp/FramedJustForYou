@@ -38,9 +38,9 @@
             </div>
         </div>
 
-        <hr class="my-6 w-3/4 mx-auto" />
+        <hr class="my-32 w-3/4 mx-auto" />
 
-        <div>
+        <x-section.wrapper>
             <div class="w-3/4 mx-auto">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 text-center">
                     <a href="{{route('new.custom-framing')}}" class="bg-white rounded-lg overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer">
@@ -77,7 +77,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </x-section.wrapper>
 
         <hr class="my-6 w-3/4 mx-auto" />
 
