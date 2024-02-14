@@ -1,9 +1,9 @@
 <footer class="bg-primary-700">
     <div class="lg:flex w-full">
-        <div class="w-full lg:w-1/5 mx-6 mt-8">
+        <div class="w-1/2 lg:w-1/5 mx-6 mt-8">
             <div class="pt-8 lg:pt-0">
                 <a href="{{route('new.home')}}">
-                    <x-app-logo class="w-1/2 lg:w-full"/>
+                    <x-app-logo class="w-1/4 sm:w-1/2 lg:w-full"/>
                 </a>
             </div>
         </div>

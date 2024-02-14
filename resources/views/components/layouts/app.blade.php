@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     @vite('resources/js/app.js')
 
     @routes('public')
@@ -118,7 +121,7 @@
         </div>
 
         <div class="z-20">
-            <main class="relative z- my-8">
+            <main class="relative">
                 <div
                     class="relative z-30 leading-loose"
                 >
