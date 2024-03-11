@@ -10,6 +10,7 @@
 
     <meta name="keywords"
           content="Gold Coast Picture Framing, Framed Just For you, custom picture framing, Gold Coast, Framing Services, Queensland Framing">
+
     <meta name="description"
           content="Framed Just For You is Gold Coasts best picture framing business. We have been locally owned and operated for over 20 years and with 60+ years of experience we produce amazing results for our customers all over the Gold Coast and the country!">
 
@@ -31,14 +32,13 @@
     @routes('public')
 </head>
 <body class="font-sans antialiased">
-
 <div class="min-h-screen">
     <x-banners.main/>
 
     <div
         x-data="{
-            sidebarOpen: false
-        }"
+                sidebarOpen: false
+            }"
     >
         <div class="px-8 bg-primary-500">
             <div
@@ -63,6 +63,20 @@
                                 active="{{ request()->route()->getName() === 'new.about' }}"
                             >
                                 About
+                            </x-links.nav>
+
+                            <x-links.nav
+                                href="{{route('new.custom-framing')}}"
+                                active="{{ request()->route()->getName() === 'new.custom-framing' }}"
+                            >
+                                Custom Framing
+                            </x-links.nav>
+
+                            <x-links.nav
+                                href="{{route('new.custom-framing')}}"
+                                active="{{ request()->route()->getName() === 'new.custom-framing' }}"
+                            >
+                                Framing
                             </x-links.nav>
 
                             <x-links.services-mega-menu/>
@@ -103,7 +117,7 @@
                         href="{{route('new.home')}}"
                         active="{{ request()->route()->getName() === 'new.home' }}"
                     >
-                        Home here
+                        Home
                     </x-links.nav>
 
                     <x-links.nav
@@ -127,9 +141,7 @@
 
         <div class="z-20">
             <main class="relative">
-                <div
-                    class="relative z-30 leading-loose"
-                >
+                <div class="relative z-30 leading-loose bg-gray-100 min-h-screen">
                     {{ $slot }}
                 </div>
             </main>
