@@ -141,8 +141,10 @@
 
         <div class="z-20">
             <main class="relative">
-                <div class="relative z-30 leading-loose bg-gray-100 min-h-screen">
-                    {{ $slot }}
+                <div class="relative z-30 leading-loose bg-gray-100 min-h-screen bg-gray-100">
+                    <div class="p-12">
+                        {{ $slot }}
+                    </div>
                 </div>
             </main>
 

@@ -1,16 +1,17 @@
 <x-layouts.app>
     <x-section.wrapper>
-        <div class="mt-12">
-            <h1 class="text-4xl font-medium">
-                Framed Just For You
-            </h1>
-        </div>
+        <h1 class="text-6xl tracking-tight font-extrabold">
+            Framed Just For You
+        </h1>
     </x-section.wrapper>
 
     <x-section.wrapper>
-        <div>
-            <h1>Who are we?</h1>
-            <div>
+        <x-section.content>
+            <x-slot name="title">
+                Who are we
+            </x-slot>
+
+            <x-slot name="content">
                 <x-cards.right>
                     Small piece of the company
                 </x-cards.right>
@@ -18,8 +19,8 @@
                 <x-cards.left>
                     Popular services with some big name clients
                 </x-cards.left>
-            </div>
-        </div>
+            </x-slot>
+        </x-section.content>
     </x-section.wrapper>
 
     <x-section.wrapper>
