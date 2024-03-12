@@ -11,10 +11,10 @@ trait GoogleApi
     public function getRecentReviews(): Collection
     {
         if (app()->environment('local')) {
-            return collect($this->getLocalReviews()['reviews']);
+            return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
         }
 
-        return cache()->remember(CacheKeys::googleReviews(), 24*60, fn () => collect($this->retrieveReviews()));
+        return cache()->remember(CacheKeys::googleReviews(), 24*60, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
     }
 
     protected function retrieveReviews(): array
@@ -37,6 +37,18 @@ trait GoogleApi
     {
         return  [
             'reviews' => [
+                [
+                    "author_name" => "Tony Sowter",
+                    "author_url" => "https://www.google.com/maps/contrib/116044518142124566028/reviews",
+                    "language" => "en",
+                    "original_language" => "en",
+                    "profile_photo_url" => "https://lh3.googleusercontent.com/a/ACg8ocLH20OM3TGkVCoqppDBrbBe1JTwt18WbsAjfCV82amI=s128-c0x00000000-cc-rp-mo",
+                    "rating" => 5,
+                     "relative_time_description" => "2 months ago",
+                    "text" => "Great service and very friendly. Nice fish also.",
+                    "time" => 1702885837,
+                    "translated" => false
+                ],
                 [
                     "author_name" => "D S",
                     "author_url" => "https://www.google.com/maps/contrib/115920777016598339648/reviews",
@@ -71,6 +83,18 @@ trait GoogleApi
                     "relative_time_description" => "4 months ago",
                     "text" => "Absolutely brilliant service! A great Gold Coast service provider. I'll be back in future when I need other special items framed",
                     "time" => 1698211286,
+                    "translated" => false,
+                ],
+                [
+                    "author_name" => "Shannon ELLEMS",
+                    "author_url" => "https://www.google.com/maps/contrib/114923384328287712720/reviews",
+                    "language" => "en",
+                    "original_language" => "en",
+                    "profile_photo_url" => "https://lh3.googleusercontent.com/a-/ALV-UjVHeC9xk9RHrgoLra1TqvvEb2DU0dnVFQ6fg_JwpD-ZRg=s128-c0x00000000-cc-rp-mo",
+                    "rating" => 5,
+                    "relative_time_description" => "5 months ago",
+                    "text" => "Di and her team did a wonderful job on framing T shirt and wedding photo! Beautifully and professionally done ✔️ Thankyou",
+                    "time" => 1694948001,
                     "translated" => false,
                 ]
             ]
