@@ -14,7 +14,7 @@
     </div>
 
     <div class="inset-0 absolute z-50 sm:flex" x-show="open" x-on:click="open = false">
-        <div class="mt-16 w-4/5 mx-auto">
+        <div class="mt-16 w-4/5 mx-auto shadow-2xl">
             <div
                 class="bg-white rounded-xl shadow-xl px-4 mx-auto mt-2 py-6 md:flex hidden flex-col sm:flex-row max-w-7xl w-full border-2 border-gray-50"
             >

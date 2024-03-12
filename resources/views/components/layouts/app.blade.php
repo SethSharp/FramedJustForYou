@@ -44,12 +44,12 @@
             <div
                 class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >
-                <div class="grid grid-cols-2 w-full">
-                    <div class="w-52 md:w-72">
+                <div class="grid grid-cols-3 w-full">
+                    <div class="w-52 md:w-72 col-span-1">
                         <x-app-logo/>
                     </div>
 
-                    <div class="hidden lg:block my-auto">
+                    <div class="hidden lg:block my-auto col-span-2">
                         <div class="flex space-x-6 justify-end">
                             <x-links.nav
                                 href="{{route('new.home')}}"
@@ -69,7 +69,7 @@
                                 href="{{route('new.custom-framing')}}"
                                 active="{{ request()->route()->getName() === 'new.custom-framing' }}"
                             >
-                                Custom Framing
+                                Framing
                             </x-links.nav>
 
                             <x-links.nav
@@ -110,7 +110,7 @@
             </div>
         </div>
 
-        <div x-show="sidebarOpen" x-transition class="lg:hidden bg-primary-600">
+        <div x-show="sidebarOpen" x-transition class="lg:hidden absolute w-full z-30 bg-primary-600">
             <div class="border-t border-primary-700">
                 <div class="space-y-4 px-2 my-4">
                     <x-links.nav
@@ -146,7 +146,7 @@
                 @endif
 
                 <div class="relative z-10 leading-loose min-h-screen bg-gray-100">
-                    <div class="w-3/4 mx-auto">
+                    <div class="w-4/5 sm:w-3/4 mx-auto">
                         {{ $slot }}
                     </div>
                 </div>
