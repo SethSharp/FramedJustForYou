@@ -18,6 +18,9 @@ return [
 
     'name' => env('APP_NAME', 'Framed Just For You: Gold Coast Picture Framing'),
 
+    'google_api' => env('GOOGLE_API_KEY'),
+    'google_place_id' => env('GOOGLE_PLACE_ID'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

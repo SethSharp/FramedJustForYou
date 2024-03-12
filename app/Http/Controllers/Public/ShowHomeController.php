@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers\Public;
 
-use App\Http\Controllers\Controller;
 use Illuminate\View\View;
+use App\Support\Traits\GoogleApi;
+use App\Http\Controllers\Controller;
+
 
 class ShowHomeController extends Controller
 {
+    use GoogleApi;
+
     public function __invoke(): View
     {
         return view('pages/home', [
-            'reviews' => []
+            'reviews' => $this->getRecentReviews()
         ]);
     }
 }

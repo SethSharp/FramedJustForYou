@@ -86,14 +86,12 @@
         </x-section.wrapper>
 
         <x-section.wrapper>
-            <div class="w-3/4 mx-auto py-4">
-                <x-section.grid>
-                    <x-cards.google-review rating="{{5}}" reviewer="Someone" review="Amazing"/>
-
-                    <x-cards.google-review rating="{{4.5}}" reviewer="Someone" review="Awesome"/>
-
-                    <x-cards.google-review rating="{{4.5}}" reviewer="Someone" review="Astonished!"/>
-                </x-section.grid>
+            <div class="mx-auto py-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    @foreach($reviews as $review)
+                        <x-cards.google-review :review="$review" />
+                    @endforeach
+                </div>
             </div>
         </x-section.wrapper>
     </div>
