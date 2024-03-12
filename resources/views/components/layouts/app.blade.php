@@ -141,8 +141,12 @@
 
         <div class="z-20">
             <main class="relative">
-                <div class="relative z-30 leading-loose bg-gray-100 min-h-screen bg-gray-100">
-                    <div class="p-12">
+                @if ($header)
+                    {{ $header }}
+                @endif
+
+                <div class="relative z-10 leading-loose min-h-screen bg-gray-100">
+                    <div class="w-3/4 mx-auto">
                         {{ $slot }}
                     </div>
                 </div>
