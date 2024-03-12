@@ -1,4 +1,4 @@
-<div class="h-full my-auto p-8 rounded bg-white text-center hover:translate-y-2 transition">
+<div class="h-full my-auto p-8 rounded bg-white text-center hover:-translate-y-2 transition">
     <div>
         <h1 class="text-lg"> {{ $review['author_name'] }} </h1>
 
