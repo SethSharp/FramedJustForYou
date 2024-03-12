@@ -146,7 +146,7 @@
                 @endif
 
                 <div class="relative z-10 leading-loose min-h-screen bg-gray-100">
-                    <div class="w-4/5 sm:w-3/4 mx-auto">
+                    <div class="">
                         {{ $slot }}
                     </div>
                 </div>

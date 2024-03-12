@@ -35,7 +35,7 @@
         </div>
     </x-slot>
 
-    <div class="rounded p-4">
+    <div class="">
         <x-section.wrapper>
             <div>
                 <h1> What we offer </h1>
@@ -45,32 +45,18 @@
                     Lets
                     see what we offer to allow this </p>
 
-                <div class="w-3/4 mx-auto">
-                    <x-section.grid cols="{{4}}">
-                        <x-cards.arch title="1000 Frames to choose from">
-                            This is some content here
-                        </x-cards.arch>
+                <div class="bg-secondary_2-200 p-6">
+                    <div class="w-3/4 mx-auto">
+                        <x-section.grid cols="{{4}}">
+                            <x-cards.arch image="framing/flinders.webp" title="Custom Framing" />
 
-                        <x-cards.arch title="Thousands of matboard to select">
-                            This is some content here
-                        </x-cards.arch>
+                            <x-cards.arch image="printing/printer.webp" title="Printing Services" />
 
-                        <x-cards.arch title="Advanced Matboard Cutting">
-                            This is some content here
-                        </x-cards.arch>
+                            <x-cards.arch image="matboards/matboard-cutter.webp" title="Computerised Matboard Cutting" />
 
-                        <x-cards.arch title="Advanced Printing Service">
-                            This is some content here
-                        </x-cards.arch>
-
-                        <x-cards.arch title="Ready Made Frames">
-                            This is some content here
-                        </x-cards.arch>
-
-                        <x-cards.arch title="Gallery">
-                            This is some content here
-                        </x-cards.arch>
-                    </x-section.grid>
+                            <x-cards.arch image="restorations/reprint-and-frame.webp" title="Restorations and Repairs" />
+                        </x-section.grid>
+                    </div>
                 </div>
             </div>
         </x-section.wrapper>
