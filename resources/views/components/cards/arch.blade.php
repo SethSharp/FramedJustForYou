@@ -1,4 +1,4 @@
-<div class="bg-black/25 rounded-t-full p-8">
+<div class="bg-black/25 p-4">
     <h1> {{ $title }} </h1>
     <p class="text-sm text-white">
         {{ $slot }}

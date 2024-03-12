@@ -30,8 +30,12 @@
                 see what we offer to allow this </p>
 
             <div class="w-3/4 mx-auto">
-                <x-section.grid>
+                <x-section.grid cols="{{4}}">
                     <x-cards.arch title="1000 Frames to choose from">
+                        This is some content here
+                    </x-cards.arch>
+
+                    <x-cards.arch title="Thousands of matboard to select">
                         This is some content here
                     </x-cards.arch>
 
