@@ -1,4 +1,4 @@
-<div>
+<a href="{{$href}}">
     <div class="bg-black/25 rounded-t-full h-56 border-4 border-white overflow-hidden">
         <x-image
             src="{{ $image }}"
@@ -10,4 +10,4 @@
     <div class="text-secondary-800 text-lg text-center">
         {{ $title }}
     </div>
-</div>
+</a>

@@ -48,13 +48,29 @@
                 <div class="bg-secondary_2-200 p-6">
                     <div class="w-3/4 mx-auto">
                         <x-section.grid cols="{{4}}">
-                            <x-cards.arch image="framing/flinders.webp" title="Custom Framing" />
+                            <x-cards.arch
+                                image="framing/flinders.webp"
+                                title="Custom Framing"
+                                href="{{ route('services.framing') }}"
+                            />
 
-                            <x-cards.arch image="printing/printer.webp" title="Printing Services" />
+                            <x-cards.arch
+                                image="printing/printer.webp"
+                                title="Printing Services"
+                                href="{{ route('services.printing') }}"
+                            />
 
-                            <x-cards.arch image="matboards/matboard-cutter.webp" title="Computerised Matboard Cutting" />
+                            <x-cards.arch
+                                image="matboards/matboard-cutter.webp"
+                                title="Computerised Matboard Cutting"
+                                href="{{ route('services.other.matboard-cutting') }}"
+                            />
 
-                            <x-cards.arch image="restorations/reprint-and-frame.webp" title="Restorations and Repairs" />
+                            <x-cards.arch
+                                image="restorations/reprint-and-frame.webp"
+                                title="Restorations and Repairs"
+                                href="{{ route('services.framing.restorations') }}"
+                            />
                         </x-section.grid>
                     </div>
                 </div>
