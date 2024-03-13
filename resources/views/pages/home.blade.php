@@ -47,7 +47,7 @@
 
                 <div class="bg-secondary_2-200 p-6">
                     <div class="w-3/4 mx-auto">
-                        <x-section.grid cols="{{4}}">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <x-cards.arch
                                 image="framing/flinders.webp"
                                 title="Custom Framing"
@@ -71,7 +71,7 @@
                                 title="Restorations and Repairs"
                                 href="{{ route('services.framing.restorations') }}"
                             />
-                        </x-section.grid>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,11 +88,17 @@
         </x-section.wrapper>
 
         <x-section.wrapper>
-            <div class="mx-auto py-4">
+            <div class="mx-auto justify-center py-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     @foreach($reviews as $review)
                         <x-cards.google-review :review="$review" />
                     @endforeach
+                </div>
+
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="p-2 border-2 border-secondary_2-400 text-secondary_2-400 hover:border-transparent hover:text-secondary_2-600 hover:bg-secondary_2-400 transition duration-300">
+                        View All
+                    </a>
                 </div>
             </div>
         </x-section.wrapper>
