@@ -4,7 +4,7 @@
             sidebarOpen: false
         }"
     >
-        <div class="bg-primary-600">
+        <div class="bg-gradient-to-r from-primary-600 to-primary-500">
             <div
                 class="relative flex w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >

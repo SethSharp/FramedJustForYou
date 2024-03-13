@@ -7,7 +7,7 @@
         />
     </div>
 
-    <div class="text-secondary-800 text-lg text-center">
+    <div class="text-secondary-600 text-md text-center">
         {{ $title }}
     </div>
 </a>
