@@ -11,7 +11,7 @@
                     <div class="w-full md:w-1/2">
                         <x-title title="Your Custom Framers" />
 
-                        <h1 class="text-3xl sm:text-5xl md:text-6xl text-white"> Framed Just <br> For You</h1>
+                        <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
 
                     <div class="w-full md:w-1/2">
@@ -35,7 +35,7 @@
                     </x-cards.right>
 
                     <x-cards.left>
-                        At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast.
+                        Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
                     </x-cards.left>
                 </x-slot>
             </x-section.content>
@@ -54,36 +54,32 @@
                         Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
                     </p>
 
-                    <div class="p-6">
-                        <div class="w-3/4 mx-auto">
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <x-cards.arch
-                                    image="framing/flinders.webp"
-                                    title="Custom Framing"
-                                    href="{{ route('services.framing') }}"
-                                />
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <x-cards.arch
+                            image="framing/flinders.webp"
+                            title="Custom Framing"
+                            href="{{ route('services.framing') }}"
+                        />
 
-                                <x-cards.arch
-                                    image="printing/printer.webp"
-                                    title="Printing Services"
-                                    href="{{ route('services.printing') }}"
-                                />
+                        <x-cards.arch
+                            image="printing/printer.webp"
+                            title="Printing Services"
+                            href="{{ route('services.printing') }}"
+                        />
 
-                                {{--   TODO: Canvases and updating the images here   --}}
+                        {{--   TODO: Canvases and updating the images here   --}}
 
-                                <x-cards.arch
-                                    image="matboards/matboard-cutter.webp"
-                                    title="Computerised Matboard Cutting"
-                                    href="{{ route('services.other.matboard-cutting') }}"
-                                />
+                        <x-cards.arch
+                            image="matboards/matboard-cutter.webp"
+                            title="Computerised Matboard Cutting"
+                            href="{{ route('services.other.matboard-cutting') }}"
+                        />
 
-                                <x-cards.arch
-                                    image="restorations/reprint-and-frame.webp"
-                                    title="Restorations and Repairs"
-                                    href="{{ route('services.framing.restorations') }}"
-                                />
-                            </div>
-                        </div>
+                        <x-cards.arch
+                            image="restorations/reprint-and-frame.webp"
+                            title="Restorations and Repairs"
+                            href="{{ route('services.framing.restorations') }}"
+                        />
                     </div>
                 </x-slot>
             </x-section.content>
@@ -105,21 +101,31 @@
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
+    </x-section.section>
 
+    <x-section.section>
         <x-section.wrapper>
-            <div class="mx-auto w-4/5 justify-center py-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    @foreach($reviews as $review)
-                        <x-cards.google-review :review="$review" />
-                    @endforeach
-                </div>
+            <x-section.content>
+                <x-slot name="title">
+                    Our Service
+                </x-slot>
 
-                <div class="flex justify-center mt-4">
-                    <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-600 hover:bg-secondary-400 transition duration-300">
-                        View All
-                    </a>
-                </div>
-            </div>
+                <x-slot name="content">
+                    <div class="mx-auto w-4/5 justify-center py-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            @foreach($reviews as $review)
+                                <x-cards.google-review :review="$review" />
+                            @endforeach
+                        </div>
+
+                        <div class="flex justify-center mt-4">
+                            <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-600 hover:bg-secondary-400 transition duration-300">
+                                View All
+                            </a>
+                        </div>
+                    </div>
+                </x-slot>
+            </x-section.content>
         </x-section.wrapper>
     </x-section.section>
 </x-layouts.app>

@@ -1,4 +1,4 @@
-<div>
-    <div class="w-32 h-1 mb-2 bg-primary-500"></div>
+<div class="flex">
+    <div class="w-16 h-0.5 mr-2 bg-primary-500 my-auto"></div>
     <div class="text-primary-500 text-lg md:text-2xl"> {{ $title }} </div>
 </div>
