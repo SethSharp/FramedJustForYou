@@ -1,7 +1,7 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-image src="store/framing-bench.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
+            <x-image src="store/gallery-side.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
             <div class="absolute inset-0 bg-black/75">
                 <div class="flex justify-end pt-6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
                     Call us at <a href="tel:0412068330" class="pl-1 text-primary-400"> 07 5563 9799 </a>
@@ -22,30 +22,32 @@
         </div>
     @endsection
 
-    <x-section.section class="mt-[100px] sm:mt-[100px] !bg-secondary-200">
+    <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
-            <x-section.content>
-                <x-slot name="title">
-                    Why Us?
-                </x-slot>
+            <div class="relative">
+                <div class="w-1/2 relative">
+                    <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                </div>
 
-                <x-slot name="content">
-                    <x-cards.right>
-                        At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your
-                        cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination
-                        for custom framing on the Gold Coast.
-                    </x-cards.right>
+                <x-section.content class="!bg-secondary-200 absolute top-16 left-1/3 z-10 border-2 border-secondary-100">
+                    <x-slot name="title">
+                        Why Us?
+                    </x-slot>
 
-                    <x-cards.left>
-                        Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia.
-                        We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself.
-                    </x-cards.left>
-                </x-slot>
-            </x-section.content>
+                    <x-slot name="content">
+                        <x-cards.right>
+                            At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your
+                            cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination
+                            for custom framing on the Gold Coast.
+                        </x-cards.right>
+                    </x-slot>
+                </x-section.content>
+            </div>
+
         </x-section.wrapper>
     </x-section.section>
 
-    <x-section.section class="!bg-secondary-100">
+    <x-section.section class="!bg-secondary-100 mt-12">
         <x-section.wrapper>
             <x-section.content>
                 <x-slot name="title">
@@ -91,6 +93,27 @@
                     </div>
                 </x-slot>
             </x-section.content>
+        </x-section.wrapper>
+    </x-section.section>
+
+    <x-section.section class="mt-[50px] !bg-secondary-50">
+        <x-section.wrapper>
+            <div class="relative">
+                <x-section.content class="!bg-secondary-200 absolute top-16 right-1/3 z-10 border-2 border-secondary-100">
+
+                    <x-slot name="content">
+                        <x-cards.right>
+                            Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia.
+                            We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself.
+                        </x-cards.right>
+                    </x-slot>
+                </x-section.content>
+
+                <div class="w-1/2 ml-auto relative">
+                    <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                </div>
+            </div>
+
         </x-section.wrapper>
     </x-section.section>
 
