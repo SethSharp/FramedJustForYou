@@ -3,7 +3,9 @@
 >
     <div x-on:click="open = !open" x-transition class="cursor-pointer text-white">
         <div class="flex text-2xl md:text-xl mt-1.5">
-            Services
+            <x-links.underline>
+                Services
+            </x-links.underline>
 
             <div x-bind:class="{ 'rotate-180': open }" class=" ml-0.5 transform duration-300">
                 <x-icons.chevron-down/>

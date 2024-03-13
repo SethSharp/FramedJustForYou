@@ -24,12 +24,12 @@
 
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
-            <div class="relative">
-                <div class="w-1/2 relative">
+            <div class="lg:relative">
+                <div class="lg:w-1/2 lg:relative">
                     <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
                 </div>
 
-                <x-section.content class="!bg-secondary-50 absolute top-16 left-1/3 z-10 border-none">
+                <x-section.content class="!bg-secondary-50 lg:absolute top-16 left-1/3 z-10 border-none">
                     <x-slot name="title">
                         Why Us?
                     </x-slot>
@@ -98,21 +98,20 @@
 
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
-            <div class="relative">
-                <x-section.content class="!bg-secondary-50 absolute top-16 right-1/3 z-10 border-none">
+            <div class="lg:relative">
+                <x-section.content class="!bg-secondary-50 lg:absolute top-16 right-1/3 z-10 border-none">
                     <x-slot name="content">
                         <x-cards.right class="!bg-secondary-50">
-                            Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia.
-                            We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself.
+                            In our ever-evolving journey, Framed Just For You continues to embrace innovation and creativity in the world of custom framing.
+                            We understand that art and design are constantly evolving, and we strive to stay at the forefront of industry trends.
                         </x-cards.right>
                     </x-slot>
                 </x-section.content>
 
-                <div class="w-1/2 ml-auto relative">
+                <div class="lg:w-1/2 lg:ml-auto lg:relative">
                     <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
                 </div>
             </div>
-
         </x-section.wrapper>
     </x-section.section>
 
@@ -130,18 +129,18 @@
                     frames, allowing you to....
 
                     <div>
-                        <x-image src="store/gallery.png" additionalClass="object-cover mt-12 h-[200px] md:h-[350px] w-full border border-secondary-400 rounded" alt="Framed Just For You Restored Gallery"/>
+                        <x-image src="store/gallery.png" additionalClass="object-cover mt-12 h-[200px] md:h-[400px] w-full border border-secondary-400 rounded" alt="Framed Just For You Restored Gallery"/>
                     </div>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
     </x-section.section>
 
-    <x-section.section class="!bg-primary-50">
+    <x-section.section class="!bg-white">
         <x-section.wrapper>
             <x-section.content>
                 <x-slot name="title">
-                    Our Service
+                    What our customers say
                 </x-slot>
 
                 <x-slot name="content">
