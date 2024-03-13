@@ -3,7 +3,7 @@
         {{ $title }}
     </h1>
 
-    <div>
+    <div class="space-y-4">
         {{ $content }}
     </div>
 </div>

@@ -23,7 +23,7 @@ import { DevicePhoneMobileIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/2
                             <div>
                                 <h1 class="text-gray-500 !text-xl font-medium mb-3">Who are we?</h1>
 
-                                <p>
+                                <p class="font-Montserrat">
                                     At Framed Just For You, we are more than just a framing
                                     business; we are a local institution with a passion for
                                     preserving your cherished memories in the most beautiful and

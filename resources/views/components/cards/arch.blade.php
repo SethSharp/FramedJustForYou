@@ -1,5 +1,5 @@
 <a href="{{$href}}">
-    <div class="bg-black/25 rounded-t-full h-56 border-4 border-white overflow-hidden">
+    <div class="bg-black/25 rounded-t-full h-64 border-4 border-white overflow-hidden">
         <x-image
             src="{{ $image }}"
             alt="In-store specialised printer"
