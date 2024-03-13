@@ -40,7 +40,7 @@
 
                             <a
                                 href="{{route('new.contact')}}"
-                                class="bg-primary-500 p-2 rounded text-white hover:bg-primary-700"
+                                class="bg-primary-500 p-2 rounded text-white hover:bg-primary-700 transition"
                             >
                                 Contact
                             </a>

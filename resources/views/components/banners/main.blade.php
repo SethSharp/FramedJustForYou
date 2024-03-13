@@ -1,4 +1,4 @@
-<div class="bg-secondary-500 text-sm text-white text-center justify-center py-1">
+<div class="bg-primary-700 text-sm text-white text-center justify-center py-1">
     Rate us on
     <a
         class="font-bold underline"

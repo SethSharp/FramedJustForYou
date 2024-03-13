@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-slot name="header">
+    @section("header")
         <div class="relative z-20">
             <x-image src="store/framing-bench.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
             <div class="absolute inset-0 bg-black/75">
@@ -9,8 +9,7 @@
 
                 <div class="md:flex px-6 md:px-16">
                     <div class="w-full md:w-1/2">
-                        <div class="w-32 h-1 mb-6 bg-primary-500"></div>
-                        <div class="text-primary-500 text-lg md:text-2xl"> Custom Picture Framers</div>
+                        <x-title title="Your Custom Framers" />
 
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white"> Framed Just <br> For You</h1>
                     </div>
@@ -21,58 +20,90 @@
                 </div>
             </div>
         </div>
-    </x-slot>
+    @endsection
 
-    <div class="mt-[100px] sm:mt-[100px]">
+    <x-section.section class="mt-[100px] sm:mt-[100px] !bg-secondary-200">
         <x-section.wrapper>
-            <div>
-                <h1> What we offer </h1>
-                <p>
-                    Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
-                </p>
+            <x-section.content>
+                <x-slot name="title">
+                    Who are we
+                </x-slot>
 
-                <div class="bg-secondary-200 p-6">
-                    <div class="w-3/4 mx-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <x-cards.arch
-                                image="framing/flinders.webp"
-                                title="Custom Framing"
-                                href="{{ route('services.framing') }}"
-                            />
+                <x-slot name="content">
+                    <x-cards.right>
+                        At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast.
+                    </x-cards.right>
 
-                            <x-cards.arch
-                                image="printing/printer.webp"
-                                title="Printing Services"
-                                href="{{ route('services.printing') }}"
-                            />
+                    <x-cards.left>
+                        At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast.
+                    </x-cards.left>
+                </x-slot>
+            </x-section.content>
+        </x-section.wrapper>
+    </x-section.section>
 
-                            {{--   TODO: Canvases and updating the images here   --}}
+    <x-section.section class="!bg-secondary-100">
+        <x-section.wrapper>
+            <x-section.content>
+                <x-slot name="title">
+                    What we offer
+                </x-slot>
 
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
-                                title="Computerised Matboard Cutting"
-                                href="{{ route('services.other.matboard-cutting') }}"
-                            />
+                <x-slot name="content">
+                    <p>
+                        Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
+                    </p>
 
-                            <x-cards.arch
-                                image="restorations/reprint-and-frame.webp"
-                                title="Restorations and Repairs"
-                                href="{{ route('services.framing.restorations') }}"
-                            />
+                    <div class="p-6">
+                        <div class="w-3/4 mx-auto">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <x-cards.arch
+                                    image="framing/flinders.webp"
+                                    title="Custom Framing"
+                                    href="{{ route('services.framing') }}"
+                                />
+
+                                <x-cards.arch
+                                    image="printing/printer.webp"
+                                    title="Printing Services"
+                                    href="{{ route('services.printing') }}"
+                                />
+
+                                {{--   TODO: Canvases and updating the images here   --}}
+
+                                <x-cards.arch
+                                    image="matboards/matboard-cutter.webp"
+                                    title="Computerised Matboard Cutting"
+                                    href="{{ route('services.other.matboard-cutting') }}"
+                                />
+
+                                <x-cards.arch
+                                    image="restorations/reprint-and-frame.webp"
+                                    title="Restorations and Repairs"
+                                    href="{{ route('services.framing.restorations') }}"
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </x-slot>
+            </x-section.content>
         </x-section.wrapper>
+    </x-section.section>
 
+    <x-section.section class="!bg-secondary-200">
         <x-section.wrapper>
-            <div>
-                <h1>Our New Gallery!</h1>
-                <p> We have recently renovated and modernised our gallery. This is where we hold some
+            <x-section.content>
+                <x-slot name="title">
+                    Our New Gallery!
+                </x-slot>
+
+                <x-slot name="content">
+                    We have recently renovated and modernised our gallery. This is where we hold some
                     absolutely
                     magnificent
-                    frames, allowing you to.... </p>
-            </div>
+                    frames, allowing you to....
+                </x-slot>
+            </x-section.content>
         </x-section.wrapper>
 
         <x-section.wrapper>
@@ -84,11 +115,11 @@
                 </div>
 
                 <div class="flex justify-center mt-4">
-                    <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-400 hover:border-transparent hover:text-secondary-600 hover:bg-secondary-400 transition duration-300">
+                    <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-600 hover:bg-secondary-400 transition duration-300">
                         View All
                     </a>
                 </div>
             </div>
         </x-section.wrapper>
-    </div>
+    </x-section.section>
 </x-layouts.app>

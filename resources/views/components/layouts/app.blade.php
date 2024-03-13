@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        @yield('title', config('app.name'))
+        @yield('title.blade.php', config('app.name'))
     </title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
@@ -36,8 +36,8 @@
     @routes('public')
 </head>
 <body class="font-mont font-medium antialiased">
-<main class="min-h-screen">
-{{--    <x-banners.main/>--}}
+<main class="min-h-screen bg-secondary-100">
+    <x-banners.main/>
 
     <div>
         <x-navigation />
@@ -45,15 +45,11 @@
         <div class="z-20">
             <div class="relative">
                 <header>
-                    @if ($header)
-                        {{ $header }}
-                    @endif
+                    @yield('header')
                 </header>
 
-                <section class="relative z-10 leading-loose min-h-screen bg-gray-100">
-                    <div>
-                        {{ $slot }}
-                    </div>
+                <section class="relative z-10 leading-loose min-h-screen">
+                    {{ $slot }}
                 </section>
             </div>
 

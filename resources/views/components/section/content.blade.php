@@ -1,7 +1,5 @@
 <div>
-    <h1 class="text-black font-bold text-3xl">
-        {{ $title }}
-    </h1>
+    <x-title title="{{$title}}" />
 
     <div class="space-y-4 leading-loose">
         {{ $content }}
