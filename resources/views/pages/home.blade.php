@@ -29,13 +29,13 @@
                     <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
                 </div>
 
-                <x-section.content class="!bg-secondary-200 absolute top-16 left-1/3 z-10 border-2 border-secondary-100">
+                <x-section.content class="!bg-secondary-50 absolute top-16 left-1/3 z-10 border-none">
                     <x-slot name="title">
                         Why Us?
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.right>
+                        <x-cards.right class="!bg-secondary-50">
                             At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your
                             cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination
                             for custom framing on the Gold Coast.
@@ -99,10 +99,9 @@
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
             <div class="relative">
-                <x-section.content class="!bg-secondary-200 absolute top-16 right-1/3 z-10 border-2 border-secondary-100">
-
+                <x-section.content class="!bg-secondary-50 absolute top-16 right-1/3 z-10 border-none">
                     <x-slot name="content">
-                        <x-cards.right>
+                        <x-cards.right class="!bg-secondary-50">
                             Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia.
                             We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself.
                         </x-cards.right>
