@@ -6,9 +6,9 @@
             </div>
 
             <div class="absolute inset-0 z-20">
-                <div class="bg-secondary_2-50 w-3/4 mx-auto mt-[150px] p-4 rounded">
+                <div class="bg-secondary-50 w-3/4 mx-auto mt-[150px] p-4 rounded">
                     <x-section.wrapper>
-                        <h1 class="text-6xl tracking-tight font-extrabold">
+                        <h1 class="text-6xl tracking-tighter font-bold">
                             Framed Just For You
                         </h1>
                     </x-section.wrapper>
@@ -43,7 +43,7 @@
                     Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia. We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself. As an Australian-based, family-owned and operated business, we are deeply rooted in our community, and our commitment to quality and customer satisfaction has remained unwavering since day one.
                 </p>
 
-                <div class="bg-secondary_2-200 p-6">
+                <div class="bg-secondary-200 p-6">
                     <div class="w-3/4 mx-auto">
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <x-cards.arch
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="flex justify-center mt-4">
-                    <a href="#" class="p-2 border-2 rounded border-secondary_2-400 text-secondary_2-400 hover:border-transparent hover:text-secondary_2-600 hover:bg-secondary_2-400 transition duration-300">
+                    <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-400 hover:border-transparent hover:text-secondary-600 hover:bg-secondary-400 transition duration-300">
                         View All
                     </a>
                 </div>

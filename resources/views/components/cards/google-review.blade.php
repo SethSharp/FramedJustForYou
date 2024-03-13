@@ -2,7 +2,7 @@
     <div class="h-3/4">
         <h1 class="text-lg"> {{ $review['author_name'] }} </h1>
 
-        <div class="text-secondary_2-400 inline-block">
+        <div class="text-secondary-400 inline-block">
             <div class="rotate-180 flex justify-start transform origin-left">
                 <x-icons.quotation-mark />
             </div>
@@ -23,7 +23,7 @@
             @endforeach
         </div>
 
-        <span class="text-xs text-secondary_2-500">
+        <span class="text-xs text-secondary-500">
             {{ $review['relative_time_description'] }}
         </span>
     </div>

@@ -46,17 +46,6 @@ export default {
                     900: colors.pink[900],
                 },
                 secondary: {
-                    100: colors.slate[100],
-                    200: colors.slate[200],
-                    300: colors.slate[300],
-                    400: colors.slate[400],
-                    500: colors.slate[500],
-                    600: colors.slate[600],
-                    700: colors.slate[700],
-                    800: colors.slate[800],
-                    900: colors.slate[900],
-                },
-                secondary_2: {
                     50: colors.stone[50],
                     100: colors.stone[100],
                     200: colors.stone[200],
