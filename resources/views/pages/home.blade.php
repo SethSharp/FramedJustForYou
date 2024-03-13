@@ -1,41 +1,29 @@
 <x-layouts.app>
     <x-slot name="header">
-        <div class="relative">
-            <div class="w-full">
-                <x-image src="store/framing-bench.png" additionalClass="object-cover h-[400px] w-full" alt="TODO"/>
-            </div>
+        <div class="relative z-20">
+            <x-image src="store/framing-bench.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
+            <div class="absolute inset-0 bg-black/75">
+                <div class="flex justify-end pt-6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
+                    Call us at <a href="tel:0412068330" class="pl-1 text-primary-400"> 07 5563 9799 </a>
+                </div>
 
-            <div class="absolute inset-0 z-20">
-                <div class="bg-secondary-50 w-3/4 mx-auto mt-[150px] p-4 rounded">
-                    <x-section.wrapper>
-                        <h1 class="text-6xl tracking-tighter font-bold">
-                            Framed Just For You
-                        </h1>
-                    </x-section.wrapper>
+                <div class="md:flex px-6 md:px-16">
+                    <div class="w-full md:w-1/2">
+                        <div class="w-32 h-1 mb-6 bg-primary-500"></div>
+                        <div class="text-primary-500 text-lg md:text-2xl"> Custom Picture Framers</div>
 
-                    <x-section.wrapper>
-                        <x-section.content>
-                            <x-slot name="title">
-                                Who are we
-                            </x-slot>
+                        <h1 class="text-3xl sm:text-5xl md:text-6xl text-white"> Framed Just <br> For You</h1>
+                    </div>
 
-                            <x-slot name="content">
-                                <x-cards.right>
-                                    At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast.
-                                </x-cards.right>
-
-                                <x-cards.left>
-                                    At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination for custom framing on the Gold Coast.
-                                </x-cards.left>
-                            </x-slot>
-                        </x-section.content>
-                    </x-section.wrapper>
+                    <div class="w-full md:w-1/2">
+                        <x-image src="store/framing-bench.png" additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-2 border-secondary-400 rounded" alt="Framed Just For You Team Photo"/>
+                    </div>
                 </div>
             </div>
         </div>
     </x-slot>
 
-    <div>
+    <div class="mt-[100px] sm:mt-[100px]">
         <x-section.wrapper>
             <div>
                 <h1> What we offer </h1>
@@ -57,6 +45,8 @@
                                 title="Printing Services"
                                 href="{{ route('services.printing') }}"
                             />
+
+                            {{--   TODO: Canvases and updating the images here   --}}
 
                             <x-cards.arch
                                 image="matboards/matboard-cutter.webp"

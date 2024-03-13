@@ -37,7 +37,7 @@
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="min-h-screen">
-    <x-banners.main/>
+{{--    <x-banners.main/>--}}
 
     <div>
         <x-navigation />

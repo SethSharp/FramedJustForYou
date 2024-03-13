@@ -4,17 +4,17 @@
             sidebarOpen: false
         }"
     >
-        <div class="px-8 bg-primary-500">
+        <div class="bg-primary-600">
             <div
-                class="relative flex h-24 w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
+                class="relative flex w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >
                 <div class="grid grid-cols-3 w-full">
-                    <div class="w-52 md:w-72 col-span-1">
+                    <div class="w-52 md:w-72 col-span-1 p-4 px-6">
                         <x-app-logo/>
                     </div>
 
                     <div class="hidden lg:block my-auto col-span-2">
-                        <div class="flex space-x-6 justify-end">
+                        <div class="flex gap-x-8 justify-end pr-8">
                             <x-links.nav
                                 href="{{route('new.home')}}"
                                 active="{{ request()->route()->getName() === 'new.home' }}"
@@ -36,26 +36,19 @@
                                 Framing
                             </x-links.nav>
 
-                            <x-links.nav
-                                href="{{route('new.custom-framing')}}"
-                                active="{{ request()->route()->getName() === 'new.custom-framing' }}"
-                            >
-                                Framing
-                            </x-links.nav>
-
                             <x-links.services-mega-menu/>
 
-                            <x-links.nav
+                            <a
                                 href="{{route('new.contact')}}"
-                                active="{{ request()->route()->getName() === 'new.contact' }}"
+                                class="bg-primary-500 p-2 rounded text-white hover:bg-primary-700"
                             >
                                 Contact
-                            </x-links.nav>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex lg:hidden">
+                <div class="flex lg:hidden pr-5">
                     <!-- Mobile menu button -->
                     <button
                         class="relative inline-flex items-center justify-center rounded-md bg-primary-600 p-2 text-primary-200 hover:bg-primary-500 hover:bg-opacity-75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
