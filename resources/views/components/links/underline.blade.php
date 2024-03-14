@@ -21,7 +21,7 @@
     }
 
     .link-underline-secondary {
-        background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(168, 162, 158), #ffffff)
+        background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(168, 162, 158), rgb(168, 162, 158))
     }
 
     .link-underline:hover {

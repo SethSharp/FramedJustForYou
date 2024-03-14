@@ -1,8 +1,6 @@
-@props(['href' => '#', 'active' => false])
-
 <a
-    href="{{ $href }}"
-    class="text-gray-200 my-2 flex text-md items-center hover:underline decoration-gray-200 px-2 decoration-6 underline-offset-4 transition duration-300 ease-in-out {{ $active ? '!underline' : '' }}"
+    href="{{$href}}"
+    class="text-secondary-300 flex text-sm my-2 items-center decoration-6 underline-offset-4 transition duration-300 ease-in-out {{ $active ? '!underline' : '' }}"
 >
-    {{ $slot }}
+    <x-links.underline underline="link-underline-secondary"> {{ $slot }}</x-links.underline>
 </a>
