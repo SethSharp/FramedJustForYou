@@ -8,10 +8,6 @@
             </div>
 
             {{ $review['text'] }}
-
-            <div class="flex justify-end">
-                <x-icons.quotation-mark />
-            </div>
         </div>
 
     </div>

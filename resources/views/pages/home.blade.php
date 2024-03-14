@@ -63,7 +63,7 @@
 
                         <x-section.divider/>
 
-                        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                             <x-cards.arch
                                 image="framing/flinders.webp"
                                 title="Custom Framing"
@@ -123,13 +123,10 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    We have recently renovated and modernised our gallery. This is where we hold some
-                    absolutely
-                    magnificent
-                    frames, allowing you to....
+                    One of our most recent projects was restoring our gallery. This is the centerpiece of our store showing off some awesome frames - these are also available for sale!
 
-                    <div>
-                        <x-image src="store/gallery.png" additionalClass="object-cover mt-12 h-[200px] md:h-[400px] w-full border border-secondary-400 rounded" alt="Framed Just For You Restored Gallery"/>
+                    <div class="mx-auto flex w-3/4">
+                        <x-image src="store/gallery.png" additionalClass="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded" alt="Framed Just For You Restored Gallery"/>
                     </div>
                 </x-slot>
             </x-section.content>
@@ -152,7 +149,10 @@
                         </div>
 
                         <div class="flex justify-center mt-4">
-                            <a href="#" class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-100 hover:bg-secondary-400 transition duration-300">
+                            <a
+                                href="https://www.google.com/search?q=framed+just+for+you&rlz=1C1VDKB_enAU1092AU1092&oq=framed+just+for+you&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAuGK8BGMcBGIAEMgYIAhAjGCcyBwgDEAAYgAQyCAgEEAAYFhgeMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg80gEIMjY2M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x6b91104badf99849:0x5081ce9cf421fff2,1,,,,"
+                                class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-100 hover:bg-secondary-400 transition duration-300"
+                            >
                                 View All
                             </a>
                         </div>
