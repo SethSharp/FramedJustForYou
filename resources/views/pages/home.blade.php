@@ -29,13 +29,13 @@
                     <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
                 </div>
 
-                <x-section.content class="!bg-secondary-50 lg:absolute top-16 left-1/3 z-10 border-none">
+                <x-section.content class="!bg-secondary-100 lg:absolute top-16 left-1/3 z-10 border-none">
                     <x-slot name="title">
                         Why Us?
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.right class="!bg-secondary-50">
+                        <x-cards.right class="!bg-secondary-100">
                             At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your
                             cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination
                             for custom framing on the Gold Coast.
@@ -99,9 +99,9 @@
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
             <div class="lg:relative">
-                <x-section.content class="!bg-secondary-50 lg:absolute top-16 right-1/3 z-10 border-none">
+                <x-section.content class="!bg-secondary-100 lg:absolute top-16 right-1/3 z-10 border-none">
                     <x-slot name="content">
-                        <x-cards.right class="!bg-secondary-50">
+                        <x-cards.right class="!bg-secondary-100">
                             In our ever-evolving journey, Framed Just For You continues to embrace innovation and creativity in the world of custom framing.
                             We understand that art and design are constantly evolving, and we strive to stay at the forefront of industry trends.
                         </x-cards.right>
