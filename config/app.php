@@ -18,6 +18,9 @@ return [
 
     'name' => env('APP_NAME', 'Framed Just For You: Gold Coast Picture Framing'),
 
+    'google_api' => env('GOOGLE_API_KEY'),
+    'google_place_id' => env('GOOGLE_PLACE_ID'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -42,7 +45,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,6 +61,8 @@ return [
     'url' => env('APP_URL'),
 
     'asset_url' => env('ASSET_URL'),
+
+    'cloudfront_url' => env('CLOUDFRONT_URL'),
 
     /*
     |--------------------------------------------------------------------------

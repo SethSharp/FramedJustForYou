@@ -5,11 +5,13 @@ import { createInertiaApp } from '@inertiajs/vue3'
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m'
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers'
 
-import Alpine from 'alpinejs'
-
-window.Alpine = Alpine
-
-Alpine.start()
+// import Alpine from 'alpinejs'
+// import intersect from '@alpinejs/intersect'
+//
+// window.Alpine = Alpine
+//
+// Alpine.start()
+// Alpine.plugin(intersect)
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel'
 
