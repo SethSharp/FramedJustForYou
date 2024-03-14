@@ -1,4 +1,10 @@
-<span class="link link-underline link-underline-black"> {{ $slot }}</span>
+@props(['underline' => 'link-underline-black'])
+
+<span
+    {{ $attributes->merge(['class' => 'link link-underline ' . $underline]) }}
+>
+    {{ $slot }}
+</span>
 
 <style>
     .link-underline {
@@ -12,6 +18,10 @@
 
     .link-underline-black {
         background-image: linear-gradient(transparent, transparent), linear-gradient(#ffffff, #ffffff)
+    }
+
+    .link-underline-secondary {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(168, 162, 158), #ffffff)
     }
 
     .link-underline:hover {

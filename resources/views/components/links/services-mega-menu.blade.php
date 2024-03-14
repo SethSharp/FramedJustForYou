@@ -110,40 +110,40 @@
                 <div class="flex w-full">
                     <div class="grid grid-cols-4 gap-y-4 w-full border-gray-200">
                         <div>
-                            <h3> Custom Framing </h3>
+                            <h3 class="text-xl"> Custom Framing </h3>
 
                             @foreach ($customLinks_1 as $link)
-                                <x-links.nav class="!text-black !text-md" href="{{$link['href']}}" active="{{$link['active']}}">
+                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
-                                </x-links.nav>
+                                </x-links.mega-menu-link>
                             @endforeach
                         </div>
 
                         <div>
                             @foreach ($customLinks_2 as $link)
-                                <x-links.nav class="!text-black !text-md" href="{{$link['href']}}" active="{{$link['active']}}">
+                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
-                                </x-links.nav>
+                                </x-links.mega-menu-link>
                             @endforeach
                         </div>
 
                         <div>
-                            <h3> Printing </h3>
+                            <h3 class="text-xl"> Printing </h3>
 
                             @foreach ($printingLinks as $link)
-                                <x-links.nav class="!text-black !text-md" href="{{$link['href']}}" active="{{$link['active']}}">
+                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
-                                </x-links.nav>
+                                </x-links.mega-menu-link>
                             @endforeach
                         </div>
 
                         <div>
-                            <h3> Other </h3>
+                            <h3 class="text-xl"> Other </h3>
 
                             @foreach ($otherLinks as $link)
-                                <x-links.nav class="!text-black !text-md" href="{{$link['href']}}" active="{{$link['active']}}">
+                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
-                                </x-links.nav>
+                                </x-links.mega-menu-link>
                             @endforeach
                         </div>
                     </div>
