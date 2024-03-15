@@ -4,14 +4,16 @@
             <x-image src="store/gallery-side.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
             <div class="absolute inset-0 bg-black/75">
                 <div
-                    class="flex justify-end pt-6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
+                    class="flex justify-end pt- 6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
                     Call us at <a href="tel:0412068330"
                                   class="pl-1 text-primary-400"> {{ config('framed.contact.telephone')  }} </a>
                 </div>
 
                 <div class="md:flex px-6 md:px-16">
                     <div class="w-full md:w-1/2">
-                        <x-title title="Your Custom Framers"/>
+                        <x-headings.title-overline>
+                            Your Custom Framers
+                        </x-headings.title-overline>
 
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
