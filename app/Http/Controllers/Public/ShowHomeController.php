@@ -14,7 +14,7 @@ class ShowHomeController extends Controller
     public function __invoke(): View
     {
         return view('pages/home', [
-            'reviews' => collect()
+            'reviews' => $this->getRecentReviews()
         ]);
     }
 }

@@ -51,9 +51,6 @@ jobs:
           php artisan view:cache
           php artisan config:cache
 
-      - name: Build ZIP Deployment Package
-        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
-
       - name: Echo information to .env
         if: github.ref == 'refs/heads/main'
         run: |
@@ -61,6 +58,9 @@ jobs:
           echo "CLOUDFRONT_URL=${{ secrets.CLOUDFRONT_URL }}" >> .env
           echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
           echo "GOOGLE_PLACE_ID=${{ secrets.GOOGLE_PLACE_ID }}" >> .env
+          
+      - name: Build ZIP Deployment Package
+        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v18
