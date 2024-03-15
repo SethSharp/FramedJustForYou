@@ -20,7 +20,7 @@ return [
         ],
         [
             'name' => 'Karen',
-            'position' => 'Senior Framer',
+            'position' => 'Framer',
             'description' => 'With over three decades of framing experience, Karen has been an integral part of our team. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
             'alt' => 'Karen Team Photo',
         ],
@@ -33,9 +33,15 @@ return [
         [
             'name' => 'Bethany',
             'position' => 'Framer',
-            'description' => 'Bethany, our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
+            'description' => 'Bethany, one of our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
             'src' => 'team/bethany.webp',
             'alt' => 'Bethany Team Photo',
+        ],
+        [
+            'name' => 'Danielle',
+            'position' => 'Framer',
+            'description' => 'Danielle, our newest team member..',
+            'alt' => 'Danielle Team Photo',
         ]
     ]
 ];

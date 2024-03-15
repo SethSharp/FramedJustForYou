@@ -1,11 +1,11 @@
 <div>
     <div>
         @if (isset($member['src']) )
-            <x-image src="{{$member['src']}}" alt="{{$member['alt']}}" additionalClass="shadow rounded-2xl overflow-hidden" />
+            <x-image src="{{$member['src']}}" alt="{{$member['alt']}}" additionalClass="shadow mx-auto rounded-2xl overflow-hidden" />
         @endif
     </div>
 
-    <div class="flex">
+    <div class="flex max-w-2xl mx-auto">
         <div class="rounded-r-xl transition duration-700 p-2">
             <h1 class="text-xl text-secondary-800 font-semibold">{{ $member['name'] }}</h1>
 
