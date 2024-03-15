@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-section.section>
+    <x-section.section class="!bg-gradient-to-tl !from-white !to-primary-50">
         <x-section.wrapper>
             <x-section.content>
                 <x-slot name="title">
@@ -12,6 +12,8 @@
             </x-section.content>
         </x-section.wrapper>
 
+        <x-section.divider />
+
         <x-section.wrapper>
             <x-section.content>
                 <x-slot name="title">
@@ -19,9 +21,11 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    @foreach($team as $member)
-                        <x-cards.member.right :member="$member" />
-                    @endforeach
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        @foreach($team as $member)
+                            <x-cards.member.card :member="$member" />
+                        @endforeach
+                    </div>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
