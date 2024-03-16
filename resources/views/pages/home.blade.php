@@ -1,21 +1,33 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
+            <x-local-image
+                src="/store/store-front-right.webp"
+                additionalClass="object-cover h-[500px] w-full"
+                alt="Store Front Image"
+            />
             <div class="absolute inset-0 bg-black/75">
-                <div class="flex justify-end pt-6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
-                    Call us at <a href="tel:0412068330" class="pl-1 text-primary-400"> 07 5563 9799 </a>
+                <div
+                    class="flex justify-end pt- 6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
+                    Call us at <a href="tel:0412068330"
+                                  class="pl-1 text-primary-400"> {{ config('framed.contact.telephone')  }} </a>
                 </div>
 
                 <div class="md:flex px-6 md:px-16">
                     <div class="w-full md:w-1/2">
-                        <x-title title="Your Custom Framers" />
+                        <x-headings.title-overline>
+                            Your Custom Framers
+                        </x-headings.title-overline>
 
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
 
                     <div class="w-full md:w-1/2">
-                        <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                        <x-local-image
+                            src="/store/store-front-right.webp"
+                            additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                            alt="Framed Just For You Team Photo"
+                        />
                     </div>
                 </div>
             </div>
@@ -26,7 +38,9 @@
         <x-section.wrapper>
             <div class="lg:relative">
                 <div class="lg:w-1/2 lg:relative">
-                    <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                    <x-image src="store/front.png"
+                             additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                             alt="Framed Just For You Team Photo"/>
                 </div>
 
                 <x-section.content class="!bg-secondary-100 lg:absolute top-16 left-1/3 z-10 border-none">
@@ -36,8 +50,10 @@
 
                     <x-slot name="content">
                         <x-cards.right class="!bg-secondary-100">
-                            At Framed Just For You, we are more than just a framing business; we are a local institution with a passion for preserving your
-                            cherished memories in the most beautiful and meaningful way. With over three decades of experience, we have been the go-to destination
+                            At Framed Just For You, we are more than just a framing business; we are a local institution
+                            with a passion for preserving your
+                            cherished memories in the most beautiful and meaningful way. With over three decades of
+                            experience, we have been the go-to destination
                             for custom framing on the Gold Coast.
                         </x-cards.right>
                     </x-slot>
@@ -57,8 +73,10 @@
                 <x-slot name="content">
                     <div>
                         <p>
-                            Our team is comprised of skilled artisans who understand the value of your keepsakes, whether it's artwork, photographs, needlework, or memorabilia.
-                            We take pride in our craftsmanship and attention to detail, ensuring that each piece we frame becomes a work of art in itself.
+                            Our team is comprised of skilled artisans who understand the value of your keepsakes,
+                            whether it's artwork, photographs, needlework, or memorabilia.
+                            We take pride in our craftsmanship and attention to detail, ensuring that each piece we
+                            frame becomes a work of art in itself.
                         </p>
 
                         <x-section.divider/>
@@ -102,14 +120,18 @@
                 <x-section.content class="!bg-secondary-100 lg:absolute top-16 right-1/3 z-10 border-none">
                     <x-slot name="content">
                         <x-cards.right class="!bg-secondary-100">
-                            In our ever-evolving journey, Framed Just For You continues to embrace innovation and creativity in the world of custom framing.
-                            We understand that art and design are constantly evolving, and we strive to stay at the forefront of industry trends.
+                            In our ever-evolving journey, Framed Just For You continues to embrace innovation and
+                            creativity in the world of custom framing.
+                            We understand that art and design are constantly evolving, and we strive to stay at the
+                            forefront of industry trends.
                         </x-cards.right>
                     </x-slot>
                 </x-section.content>
 
                 <div class="lg:w-1/2 lg:ml-auto lg:relative">
-                    <x-image src="store/front.png" additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                    <x-image src="store/front.png"
+                             additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                             alt="Framed Just For You Team Photo"/>
                 </div>
             </div>
         </x-section.wrapper>
@@ -123,10 +145,13 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    One of our most recent projects was restoring our gallery. This is the centerpiece of our store showing off some awesome frames - these are also available for sale!
+                    One of our most recent projects was restoring our gallery. This is the centerpiece of our store
+                    showing off some awesome frames - these are also available for sale!
 
                     <div class="mx-auto flex w-3/4">
-                        <x-image src="store/gallery.png" additionalClass="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded" alt="Framed Just For You Restored Gallery"/>
+                        <x-image src="store/gallery.png"
+                                 additionalClass="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded"
+                                 alt="Framed Just For You Restored Gallery"/>
                     </div>
                 </x-slot>
             </x-section.content>
@@ -144,7 +169,7 @@
                     <div class="justify-center py-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             @foreach($reviews as $review)
-                                <x-cards.google-review :review="$review" />
+                                <x-cards.google-review :review="$review"/>
                             @endforeach
                         </div>
 
