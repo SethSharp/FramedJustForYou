@@ -1,7 +1,7 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-image src="store/gallery-side.png" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
+            <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
             <div class="absolute inset-0 bg-black/75">
                 <div class="flex justify-end pt-6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
                     Call us at <a href="tel:0412068330" class="pl-1 text-primary-400"> 07 5563 9799 </a>
@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="w-full md:w-1/2">
-                        <x-image src="store/framing-bench.png" additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                        <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
                     </div>
                 </div>
             </div>
