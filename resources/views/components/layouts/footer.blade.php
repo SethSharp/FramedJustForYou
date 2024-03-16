@@ -11,7 +11,7 @@
         <div class="w-full lg:w-4/5">
             <div class="grid grid-cols-3 my-4">
                 <div>
-                    <h3 class="text-lg text-secondary-400"> Pages </h3>
+                    <h3 class="text-md text-white font-bold"> Pages </h3>
                     <div>
                         <x-links.footer-nav href="{{route('new.home')}}"
                                             active="{{request()->route()->getName() === 'new.home'}}">
@@ -41,7 +41,7 @@
                 </div>
 
                 <div>
-                    <h3 class="text-lg text-secondary-400"> Services </h3>
+                    <h3 class="text-md text-white font-bold"> Services </h3>
                     <div>
                         <x-links.footer-nav href="{{route('new.home')}}"
                                             active="{{request()->route()->getName() === 'new.home'}}">
