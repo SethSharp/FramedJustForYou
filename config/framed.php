@@ -64,38 +64,32 @@ return [
         [
             'value' => 1,
             'name' => 'Monday',
-            'open' => '8:30',
-            'close' => '5:00'
+            'time' => '8:30-5:00',
         ],
         [
             'value' => 2,
             'name' => 'Tuesday',
-            'open' => '8:30',
-            'close' => '5:00'
+            'time' => '8:30-5:00',
         ],
         [
             'value' => 3,
             'name' => 'Wednesday',
-            'open' => '8:30',
-            'close' => '5:00'
+            'time' => '8:30-5:00',
         ],
         [
             'value' => 4,
             'name' => 'Thursday',
-            'open' => '8:30',
-            'close' => '5:00'
+            'time' => '8:30-5:00',
         ],
         [
             'value' => 5,
             'name' => 'Friday',
-            'open' => '8:30',
-            'close' => '5:00'
+            'time' => '8:30-5:00',
         ],
         [
             'value' => 6,
             'name' => 'Saturday',
-            'open' => '9:00',
-            'close' => '4:00'
+            'time' => '9:00-4:00',
         ]
     ],
 

@@ -4,9 +4,9 @@
 {{--            {{ \Carbon\Carbon::now()->dayOfWeek  }}--}}
 
             <div class="bg-gradient-to-br from-white to-gray-200 rounded p-4">
-                <div class="flex gap-4 mt-6">
-                    <div class="w-1/2">
-                        <div class="p-8 h-full">
+                <div class="md:flex gap-4 p-8">
+                    <div class="md:w-1/2">
+                        <div class="h-full">
                             <div>
                                 <x-headings.title> Get in touch </x-headings.title>
 
@@ -48,9 +48,28 @@
                         </div>
                     </div>
 
-                    <div class="w-1/2 shadow">
-                        <x-contact.map/>
+                    <div class="md:w-1.2">
+                        <x-headings.title> Opening Hours </x-headings.title>
+
+                        <div class="mt-5 space-y-3">
+                            @foreach(config('framed.times') as $time)
+                                @php
+                                    $day = \Carbon\Carbon::now()->dayOfWeek;
+                                @endphp
+
+                                <div class="flex">
+                                    <span class="my-auto {{ $day === $time['value'] ? 'font-semibold text-lg' : ''  }}"> {{ $time['name'] }}</span>
+                                    <div class="text-secondary-700 bg-secondary-200 ml-2 p-1 rounded-lg {{ $day === $time['value'] ? 'font-semibold text-lg' : ''  }}">
+                                        <p> {{ $time['time'] }} </p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
+                </div>
+
+                <div class="m-6">
+                    <x-contact.map/>
                 </div>
             </div>
         </x-section.wrapper>
