@@ -1,7 +1,11 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover h-[500px] w-full" alt="TODO"/>
+            <x-local-image
+                src="/store/store-front-right.webp"
+                additionalClass="object-cover h-[500px] w-full"
+                alt="Store Front Image"
+            />
             <div class="absolute inset-0 bg-black/75">
                 <div
                     class="flex justify-end pt- 6 md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
@@ -19,7 +23,11 @@
                     </div>
 
                     <div class="w-full md:w-1/2">
-                        <x-local-image src="/store/store-front-right.webp" additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded" alt="Framed Just For You Team Photo"/>
+                        <x-local-image
+                            src="/store/store-front-right.webp"
+                            additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                            alt="Framed Just For You Team Photo"
+                        />
                     </div>
                 </div>
             </div>
