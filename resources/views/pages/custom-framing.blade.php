@@ -136,13 +136,6 @@
                             <x-cards.item
                                 image="matboards/matboard-cutter.webp"
                                 alt="TODO"
-                                title="Original Artwork"
-                                href="{{ route('services.other.matboard-cutting') }}"
-                            />
-
-                            <x-cards.item
-                                image="matboards/matboard-cutter.webp"
-                                alt="TODO"
                                 title="Prints, Posters & Photos"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
