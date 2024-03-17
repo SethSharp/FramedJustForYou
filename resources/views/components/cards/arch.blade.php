@@ -1,9 +1,11 @@
+@props(['href', 'image', 'title', 'alt' => ''])
+
 <a href="{{$href}}">
     <div>
         <div class="relative rounded-t-full h-64 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
             <x-image
                 src="{{ $image }}"
-                alt="In-store specialised printer"
+                alt="{{ $alt }}"
                 additionalClass="object-cover h-full"
             />
 

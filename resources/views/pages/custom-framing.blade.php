@@ -26,21 +26,36 @@
                                 <div class="ml-2">
                                     <uL>
                                         <li class="my-4">
-                                            <a href="#services" class="flex">
-                                                <x-icons.plus />
-                                                Custom Framing Services
+                                            <a href="#services" class="flex w-fit">
+                                                <span class="my-auto">
+                                                    <x-icons.plus />
+                                                </span>
+
+                                                <p class="ml-4 my-auto">
+                                                    Custom Framing Services
+                                                </p>
                                             </a>
                                         </li>
                                         <li class="my-4">
-                                            <a href="#approach" class="flex">
-                                                <x-icons.plus />
-                                                Our Approach
+                                            <a href="#approach" class="flex w-fit">
+                                                <span class="my-auto">
+                                                    <x-icons.plus />
+                                                </span>
+
+                                                <p class="ml-4 my-auto">
+                                                    Our Approach
+                                                </p>
                                             </a>
                                         </li>
                                         <li class="my-4">
-                                            <a href="#faq" class="flex">
-                                                <x-icons.plus />
-                                                FAQ
+                                            <a href="#faq" class="flex w-fit">
+                                                <span class="my-auto">
+                                                    <x-icons.plus />
+                                                </span>
+
+                                                <p class="ml-4 my-auto">
+                                                    FAQ
+                                                </p>
                                             </a>
                                         </li>
                                     </uL>
@@ -73,63 +88,73 @@
 
                     <div>
                         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                            <x-cards.arch
+                            <x-cards.item
                                 image="acrylic/shovel.webp"
+                                alt="TODO"
                                 title="Acrylic"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
+                            <x-cards.item
                                 image="matboards/matboard-cutter.webp"
-                                title="Australian Made Framing Kits"
-                                href="{{ route('services.other.matboard-cutting') }}"
-                            />
-
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
+                                alt="TODO"
                                 title="Canvas"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
+                            <x-cards.item
+                                image="Indigenous/indigenous.webp"
+                                alt="TODO"
                                 title="Indigenous Art"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
+                            <x-cards.item
+                                image="jigsaw/giraffe.webp"
+                                alt="TODO"
                                 title="Jigsaws"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
+                            <x-cards.item
+                                image="matboards/asw-athlete.webp"
+                                alt="TODO"
                                 title="Medals & Memorabilia"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
+                            <x-cards.item
                                 image="matboards/matboard-cutter.webp"
+                                alt="TODO"
                                 title="Mirror"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
+                            <x-cards.item
                                 image="matboards/matboard-cutter.webp"
+                                alt="TODO"
                                 title="Original Artwork"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
+                            <x-cards.item
                                 image="matboards/matboard-cutter.webp"
+                                alt="TODO"
                                 title="Prints, Posters & Photos"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
+                            <x-cards.item
+                                image="handcrafted/pressed.webp"
+                                alt="TODO"
                                 title="Handcrafted"
+                                href="{{ route('services.other.matboard-cutting') }}"
+                            />
+
+                            <x-cards.item
+                                image="restorations/reprint-and-frame.webp"
+                                alt="TODO"
+                                title="Restorations"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
                         </div>
