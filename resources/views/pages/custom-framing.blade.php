@@ -13,18 +13,6 @@
                     of your keepsakes.
                 </x-slot>
             </x-section.content>
-
-            <x-section.content>
-                <x-slot name="title">
-                    So what is custom framing exactly?
-                </x-slot>
-
-                <x-slot name="content">
-                    Most people when they think of custom framing, believe they do not need it and a cheap frame
-                    from kmart will suffice. Custom Framing is for those pieces of art work that deserve the best Australian
-                    Made materials and a frame that will be custom fit and designed to the art works needs.
-                </x-slot>
-            </x-section.content>
         </x-section.wrapper>
     </x-section.section>
 </x-layouts.app>
