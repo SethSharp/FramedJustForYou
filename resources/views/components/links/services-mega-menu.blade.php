@@ -6,14 +6,9 @@
             'active' => request()->route()->getName() === 'new.services.framing.acrylic'
         ],
         [
-            'href' => route('services.framing.australian'),
-            'name' => 'Australian Made Framing Kits',
-            'active' => request()->route()->getName() === 'services.framing.australian'
-        ],
-        [
-            'href' => route('services.framing.canvases'),
-            'name' => 'Canvases',
-            'active' => request()->route()->getName() === 'services.framing.canvases'
+            'href' => route('new.services.framing.canvas'),
+            'name' => 'Canvas',
+            'active' => request()->route()->getName() === 'new.services.framing.canvas'
         ],
         [
             'href' => route('services.framing.indigenous-art'),

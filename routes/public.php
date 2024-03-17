@@ -33,7 +33,7 @@ Route::prefix('new/services')->name('new.services.')->group(function () {
         * Restorations
         */
        Route::get('/acrylic', fn () => view('pages/services/acrylic'))->name('acrylic');
-
+       Route::get('/canvas', fn () => view('pages/services/canvas'))->name('canvas');
    });
 
    Route::prefix('new.other')->name('new.other.')->group(function () {
