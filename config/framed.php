@@ -147,6 +147,50 @@ return [
     */
 
     'pricing' => [
+        'squareCanvas' => [
+            'title' => 'Squares Canvas',
+            'headings' => ['Sizes', '', 'Pricing'],
+            'data' => [
+                ['12"x12"', '30cmx30cm', '$100'],
+                ['16"x16"', '40cmx40cm', '$140'],
+                ['20"x20"', '50cmx50cm', '$191'],
+                ['24"x24"', '60cmx60cm', '$229'],
+                ['30"x30"', '76cmx76cm', '$304'],
+                ['36"x36"', '91cmx91cm', '$374'],
+                ['40"x40"', '102cmx102cm', '$408'],
+            ],
+        ],
+        'canvasPanaromic' => [
+            'title' => 'Panoramic Canvas',
+            'headings' => ['Sizes', '', 'Pricing'],
+            'data' => [
+                ['12"x12"', '30cmx30cm', '$100'],
+                ['12"x12"', '30cmx30cm', '$100'],
+                ['12"x36"', '30cmx30cm', '$100'],
+                ['18"x36"', '30cmx30cm', '$100'],
+                ['20"x40"', '30cmx30cm', '$100'],
+                ['16"x48"', '30cmx30cm', '$100'],
+                ['24"x48"', '30cmx30cm', '$100'],
+            ],
+        ],
+        'canvasRectangle' => [
+            'title' => 'Rectangles Canvas',
+            'headings' => ['Sizes', '', 'Pricing'],
+            'data' => [
+                ['12"x16"', '30cmx40cm', '$100'],
+                ['14"x20"', '35cmx50cm', '$135'],
+                ['16"x20"', '40cmx50cm', '$145'],
+                ['16"x24"', '40cmx60cm', '$168'],
+                ['20"x24"', '50cmx60cm', '$198'],
+                ['20"x30"', '50cmx75cm', '$190'],
+                ['24"x30"', '61cmx76cm', '$270'],
+                ['24"x36"', '60cmx91cm', '$280'],
+                ['28"x40"', '70cmx100cm', '$345'],
+                ['30"x40"', '76cmx102cm', '$355'],
+                ['32"x48"', '80cmx120cm', '$415'],
+                ['36"x48"', '91cmx120cm', '$405'],
+            ],
+        ],
         'printingPaper' => [
             'title' => 'Printing',
             'headings' => ['Sizes', '', 'Photo Paper', 'Art Paper', 'Canvas'],

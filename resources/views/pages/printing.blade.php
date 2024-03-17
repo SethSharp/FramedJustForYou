@@ -35,19 +35,33 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie
-                    of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that
-                    and fit it to the correct size you want with the canvas sizes below.
+                    <div>
+                        Let's say you went on a really nice holiday to Hawaii or to Fraser Island and managed to snap the perfect sunset or the perfect selfie
+                        of you and your partner. Well, we can print that for you on a ready to hang canvas, any photo you have on a device we can download that
+                        and fit it to the correct size you want with the canvas sizes below.
 
-                   <div class="my-6">
-                       <x-alerts.warning>
-                           Prices can/do change often so please call us up to double check this information.
-                       </x-alerts.warning>
-                   </div>
+                        <div class="my-6">
+                            <x-alerts.warning>
+                                Prices can/do change so please call us up to double check that we have this information up to date.
+                            </x-alerts.warning>
+                        </div>
 
-                    <div class="p-8">
-                        <x-table.standard :data="config('framed.pricing.printingPaper')" />
+                        <p> These prices are fully printed and framed items </p>
+                        <div>
+                            <x-table.standard :data="config('framed.pricing.squareCanvas')" />
+                            <x-table.standard :data="config('framed.pricing.canvasPanaromic')" />
+                            <x-table.standard :data="config('framed.pricing.canvasRectangle')" />
+                        </div>
                     </div>
+                </x-slot>
+            </x-section.content>
+
+            <x-section.content>
+                <x-slot name="title"> Standard Printing</x-slot>
+
+                <x-slot name="content">
+                    <p> Prices of just standard printing and no framing. </p>
+                    <x-table.standard :data="config('framed.pricing.printingPaper')" />
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>

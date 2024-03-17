@@ -1,5 +1,5 @@
-<div class="-mx-4 -my-2 mt-6 overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <x-headings.title class="ml-8 text-xl text-black">{{ $data['title'] }}</x-headings.title>
+<div class="mt-6 overflow-x-auto">
+    <x-headings.secondary>{{ $data['title'] }}</x-headings.secondary>
 
     <div class="inline-block min-w-full py-2 align-middle">
         <table class="min-w-full divide-y divide-gray-300">
