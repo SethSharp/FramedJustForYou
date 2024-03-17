@@ -1,9 +1,9 @@
 @php
     $customLinks_1 = [
         [
-            'href' => route('services.framing.acrylic'),
+            'href' => route('new.services.framing.acrylic'),
             'name' => 'Acrylic',
-            'active' => request()->route()->getName() === 'services.framing.acrylic'
+            'active' => request()->route()->getName() === 'new.services.framing.acrylic'
         ],
         [
             'href' => route('services.framing.australian'),

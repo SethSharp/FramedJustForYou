@@ -18,8 +18,8 @@ Route::get('/new/custom-framing', fn () => view('pages/custom-framing'))->name('
 Route::get('/new/printing', fn () => view('pages/printing'))->name('new.printing');
 
 
-Route::prefix('new/services')->name('new.services')->group(function () {
-   Route::prefix('new/custom-framing')->name('new.framing.')->group(function () {
+Route::prefix('new/services')->name('new.services.')->group(function () {
+   Route::prefix('new/custom-framing')->name('framing.')->group(function () {
        /**
         * Acrylic
         * Canvases
@@ -32,6 +32,8 @@ Route::prefix('new/services')->name('new.services')->group(function () {
         * HandCrafted
         * Restorations
         */
+       Route::get('/acrylic', fn () => view('pages/services/acrylic'))->name('acrylic');
+
    });
 
    Route::prefix('new.other')->name('new.other.')->group(function () {
