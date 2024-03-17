@@ -129,9 +129,11 @@
                 </x-section.content>
 
                 <div class="lg:w-1/2 lg:ml-auto lg:relative">
-                    <x-image src="store/front.png"
-                             additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
-                             alt="Framed Just For You Team Photo"/>
+                    <x-image
+                        src="store/front.png"
+                         additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                         alt="Framed Just For You Team Photo"
+                    />
                 </div>
             </div>
         </x-section.wrapper>

@@ -22,7 +22,6 @@ Route::prefix('new/services')->name('new.services')->group(function () {
    Route::prefix('new/custom-framing')->name('new.framing.')->group(function () {
        /**
         * Acrylic
-        * Australian made
         * Canvases
         * Indigenous Art
         * Jigsaws
@@ -32,7 +31,6 @@ Route::prefix('new/services')->name('new.services')->group(function () {
         * Prints, Posters & Photos
         * HandCrafted
         * Restorations
-        * Canvas (NEW))
         */
    });
 
