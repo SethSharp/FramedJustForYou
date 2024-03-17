@@ -55,14 +55,6 @@
         ],
     ];
 
-    $printingLinks = [
-        [
-            'href' => route('services.printing'),
-            'name' => 'Printing',
-            'active' => request()->route()->getName() === 'services.printing'
-        ]
-    ];
-
     $otherLinks = [
         [
             'href' => route('services.other.glass-cutting'),
@@ -108,7 +100,7 @@
                 class="bg-secondary-50 rounded-xl shadow-xl px-4 mx-auto mt-2 py-6 md:flex hidden max-w-7xl w-full"
             >
                 <div class="flex w-full">
-                    <div class="grid grid-cols-4 gap-y-4 w-full border-gray-200">
+                    <div class="grid grid-cols-3 gap-y-4 w-full border-gray-200">
                         <div>
                             <h3 class="text-xl"> Custom Framing </h3>
 
@@ -121,16 +113,6 @@
 
                         <div>
                             @foreach ($customLinks_2 as $link)
-                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
-                                    {{ $link['name'] }}
-                                </x-links.mega-menu-link>
-                            @endforeach
-                        </div>
-
-                        <div>
-                            <h3 class="text-xl"> Printing </h3>
-
-                            @foreach ($printingLinks as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
                                 </x-links.mega-menu-link>
