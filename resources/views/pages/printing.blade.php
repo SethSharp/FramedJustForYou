@@ -8,7 +8,7 @@
 
                 <x-slot name="content">
                     <div class="lg:relative">
-                        <x-section.content class="!bg-secondary-100 lg:absolute top-16 left-0 w-3/5 z-10 border-none">
+                        <x-section.content class="!bg-secondary-100 lg:absolute top-16 left-0 lg:w-3/5 z-10 border-none">
                             <x-slot name="content">
                                 <x-cards.right class="!bg-secondary-100">
                                     We have a specialised printer in store, where we can print just about anything in the highest quality.
@@ -18,10 +18,12 @@
                             </x-slot>
                         </x-section.content>
 
-                        <div class="lg:w-1/2 lg:ml-auto lg:relative">
-                            <x-image src="printing/printer.webp"
-                                     additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
-                                     alt="Our Specialised printer, printing a background for a frame."/>
+                        <div class="w-3/4 lg:w-1/2 mx-auto lg:m-0 lg:ml-auto lg:relative">
+                            <x-image
+                                src="printing/printer.webp"
+                                 additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                                 alt="Our Specialised printer, printing a background for a frame."
+                            />
                         </div>
                     </div>
                 </x-slot>
