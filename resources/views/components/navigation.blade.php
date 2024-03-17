@@ -36,6 +36,13 @@
                                 Framing
                             </x-links.nav>
 
+                            <x-links.nav
+                                href="{{route('new.printing')}}"
+                                active="{{ request()->route()->getName() === 'new.printing' }}"
+                            >
+                                Printing
+                            </x-links.nav>
+
                             <x-links.services-mega-menu/>
 
                             <a
