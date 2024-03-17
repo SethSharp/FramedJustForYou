@@ -186,8 +186,62 @@
                 <x-slot name="content">
                     <p></p>
 
-                    <div>
+                    <div class="grid grid-cols-3 gap4">
+                        <div class="p-4 text-center">
+                            <h4 class="text-black font-semibold">
+                                Much much does Custom Framing cost?
+                            </h4>
 
+                            <p class="mt-4">
+                                There is no special formula that allows us to estimate the cost of custom framing.
+                                Custom Framing has a lot of different factors which affects the total in the end.
+                            </p>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h4 class="text-black font-semibold">
+                                Can it be expensive?
+                            </h4>
+
+                            <p class="mt-4">
+                                It all depends on your item, but please consider that this is more then just purchasing a product.
+                                We supply high quality materials and have our framers put it together by hand. So in the end it can be,
+                                but its what you are paying for.
+                            </p>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h4 class="text-black font-semibold">
+                                How do I decide what is best considering the options?
+                            </h4>
+
+                            <p class="mt-4">
+                                With our vast selection of frames, matboard and glass choices it can be tough to come to a decision. but luckily
+                                that process is made easy with our staff who have an eye for design and can help you decide.
+                            </p>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h4 class="text-black font-semibold">
+                                What is a matboard and these other framing materials?
+                            </h4>
+
+                            <p class="mt-4">
+                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It adds extra depth and
+                                with the correct colour selection style to your frame. 2. It prevents the item from being damaged from behind.
+                            </p>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h4 class="text-black font-semibold">
+                                Does glass choice matter?
+                            </h4>
+
+                            <p class="mt-4">
+                                Yes glass choice does matter. Glass that we stock each have their own benefits and advantages, its down to
+                                what is being framed and how much you are willing to spend.
+                            </p>
+                        </div>
                     </div>
                 </x-slot>
             </x-section.content>
