@@ -1,4 +1,4 @@
-@section('title', 'Indigenous Art - ' . config('app.name'))
+@section('title', 'Jigsaws - ' . config('app.name'))
 
 <x-layouts.app>
     <x-section.wrapper>

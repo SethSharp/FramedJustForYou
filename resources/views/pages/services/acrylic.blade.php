@@ -1,3 +1,5 @@
+@section('title', 'Acrylic - ' . config('app.name'))
+
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>

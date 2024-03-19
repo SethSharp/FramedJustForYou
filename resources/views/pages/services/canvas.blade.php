@@ -1,3 +1,5 @@
+@section('title', 'Canvas - ' . config('app.name'))
+
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>

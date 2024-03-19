@@ -16,9 +16,9 @@
             'active' => request()->route()->getName() === 'new.services.framing.indigenous'
         ],
         [
-            'href' => route('services.framing.jigsaws'),
+            'href' => route('new.services.framing.jigsaw'),
             'name' => 'Jigsaws',
-            'active' => request()->route()->getName() === 'services.framing.jigsaws'
+            'active' => request()->route()->getName() === 'new.services.framing.jigsaw'
         ],
     ];
 

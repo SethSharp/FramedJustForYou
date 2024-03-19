@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        @yield('title.blade.php', config('app.name'))
+        @yield('title', 'Framed Just For You')
     </title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
