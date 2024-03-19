@@ -13,15 +13,29 @@
                         stainless steel staples. We offer a full guarantee against warping and sagging.
                     </p>
 
-                    <p>
-                        If you're considering having an artwork or photograph on canvas stretched, it's essential to
-                        understand what you're paying for before choosing a framer.
+                    <div class="md:flex gap-4">
+                        <div class="md:w-1/2 flex justify-center">
+                            <p class="my-auto p-6">
+                                If you're considering having an artwork or photograph on canvas stretched, it's
+                                essential to
+                                understand what you're paying for before choosing a framer.
 
-                        We also stock ready-made canvases, perfect for your painting projects. If you require a specific
-                        size not in stock, we can arrange for a custom-stretched canvas using our high-quality
-                        materials. These canvases are ready to hang, allowing you to showcase your finished piece
-                        instantly in your space.
-                    </p>
+                                We also stock ready-made canvases, perfect for your painting projects. If you require a
+                                specific
+                                size not in stock, we can arrange for a custom-stretched canvas using our high-quality
+                                materials. These canvases are ready to hang, allowing you to showcase your finished
+                                piece
+                                instantly in your space.
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <x-image
+                                src="canvas/tiger-canvas.webp"
+                                alt="Golf Ball display in example home space"
+                                additionalClass="h-96 mx-auto object-center object-cover"
+                            />
+                        </div>
+                    </div>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
@@ -45,6 +59,7 @@
                                 additionalClass="h-full object-fit"
                                 caption="Hang a standard canvas."
                             />
+
                             <x-image
                                 src="canvas/canvas-inset.webp"
                                 alt="Golf Ball display in example home space"

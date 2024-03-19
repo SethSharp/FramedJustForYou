@@ -11,9 +11,9 @@
             'active' => request()->route()->getName() === 'new.services.framing.canvas'
         ],
         [
-            'href' => route('services.framing.indigenous-art'),
+            'href' => route('new.services.framing.indigenous'),
             'name' => 'Indigenous Art',
-            'active' => request()->route()->getName() === 'services.framing.indigenous-art'
+            'active' => request()->route()->getName() === 'new.services.framing.indigenous'
         ],
         [
             'href' => route('services.framing.jigsaws'),
