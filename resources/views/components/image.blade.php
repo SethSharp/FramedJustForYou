@@ -9,7 +9,7 @@
     />
 
     @if ($caption)
-        <p class="text-center px-4">
+        <p class="text-center text-sm px-4">
             {{ $caption }}
         </p>
     @endif
