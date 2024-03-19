@@ -48,7 +48,7 @@
                     @yield('header')
                 </header>
 
-                <section class="relative z-10 leading-loose min-h-screen">
+                <section class="relative z-10 leading-loose">
                     {{ $slot }}
                 </section>
             </div>

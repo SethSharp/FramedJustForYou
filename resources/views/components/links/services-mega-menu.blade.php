@@ -34,11 +34,6 @@
             'active' => request()->route()->getName() === 'services.framing.mirror'
         ],
         [
-            'href' => route('services.framing.original-artwork'),
-            'name' => 'Original Artwork',
-            'active' => request()->route()->getName() === 'services.framing.original-artwork'
-        ],
-        [
             'href' => route('services.framing.prints-posters-and-photos'),
             'name' => 'Prints, Posters, and Photos',
             'active' => request()->route()->getName() === 'services.framing.prints-posters-and-photos'
@@ -106,7 +101,7 @@
                             @endforeach
                         </div>
 
-                        <div>
+                        <div class="mt-4">
                             @foreach ($customLinks_2 as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
