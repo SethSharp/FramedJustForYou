@@ -1,3 +1,6 @@
+@section('title', 'Custom Framing - ' . config('app.name'))
+@section('description', 'Custom Framing has been our specialty for over 20 years & with 60+ years of experience we offer amazing results! With our extensive range there is nothing we cannot frame')
+
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>
@@ -9,15 +12,19 @@
                 <x-slot name="content">
                     <div class="md:flex gap-4">
                         <div class="md:w-3/5">
-                            <b>Custom Picture Framing </b> has so many branches, lucky for you, we pretty much cover everything. From Jerseys, Medals
-                            Posters and Photos. Right through to physical objects such as Footballs, golf balls and even shovels. Whatever means a lot to
+                            <b>Custom Picture Framing </b> has so many branches, lucky for you, we pretty much cover
+                            everything. From Jerseys, Medals
+                            Posters and Photos. Right through to physical objects such as Footballs, golf balls and even
+                            shovels. Whatever means a lot to
                             you, we can frame it!
 
-                            <br />
-                            <br />
+                            <br/>
+                            <br/>
 
-                            At Framed Just For You, we specialize in custom framing that transforms your cherished memories into timeless works of art.
-                            Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve the essence of your precious moments.
+                            At Framed Just For You, we specialize in custom framing that transforms your cherished
+                            memories into timeless works of art.
+                            Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve
+                            the essence of your precious moments.
                         </div>
                         <div class="md:w-2/5 px-4 flex justify-center">
                             <div class="my-auto">
@@ -28,7 +35,7 @@
                                         <li class="my-4">
                                             <a href="#services" class="flex w-fit">
                                                 <span class="my-auto">
-                                                    <x-icons.plus />
+                                                    <x-icons.plus/>
                                                 </span>
 
                                                 <p class="ml-4 my-auto">
@@ -39,7 +46,7 @@
                                         <li class="my-4">
                                             <a href="#approach" class="flex w-fit">
                                                 <span class="my-auto">
-                                                    <x-icons.plus />
+                                                    <x-icons.plus/>
                                                 </span>
 
                                                 <p class="ml-4 my-auto">
@@ -50,7 +57,7 @@
                                         <li class="my-4">
                                             <a href="#faq" class="flex w-fit">
                                                 <span class="my-auto">
-                                                    <x-icons.plus />
+                                                    <x-icons.plus/>
                                                 </span>
 
                                                 <p class="ml-4 my-auto">
@@ -65,7 +72,7 @@
                     </div>
 
                     <div>
-                        <x-headings.secondary> Australian Made </x-headings.secondary>
+                        <x-headings.secondary> Australian Made</x-headings.secondary>
 
                         <div>
                             Experience the unmatched longevity of our frames, crafted exclusively with
@@ -81,11 +88,12 @@
 
         <x-section.wrapper>
             <x-section.content id="services">
-                <x-slot name="title"> Services </x-slot>
+                <x-slot name="title"> Services</x-slot>
 
                 <x-slot name="content">
                     <p>
-                        What we offer is <b> limitless </b> these are a handful of the most common services we provide for our customers. If you
+                        What we offer is <b> limitless </b> these are a handful of the most common services we provide
+                        for our customers. If you
                         have something different, we are still more then capable of making something amazing for it.
                     </p>
 
@@ -168,7 +176,7 @@
 
         <x-section.wrapper>
             <x-section.content id="approach">
-                <x-slot name="title"> Our Approach </x-slot>
+                <x-slot name="title"> Our Approach</x-slot>
 
                 <x-slot name="content">
                     <p>
@@ -282,8 +290,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                It all depends on your item, but please consider that this is more then just purchasing a product.
-                                We supply high quality materials and have our framers put it together by hand. So in the end it can be,
+                                It all depends on your item, but please consider that this is more then just purchasing
+                                a product.
+                                We supply high quality materials and have our framers put it together by hand. So in the
+                                end it can be,
                                 but its what you are paying for.
                             </p>
                         </div>
@@ -294,8 +304,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                With our vast selection of frames, matboard and glass choices it can be tough to come to a decision. but luckily
-                                that process is made easy with our staff who have an eye for design and can help you decide.
+                                With our vast selection of frames, matboard and glass choices it can be tough to come to
+                                a decision. but luckily
+                                that process is made easy with our staff who have an eye for design and can help you
+                                decide.
                             </p>
                         </div>
 
@@ -305,8 +317,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It adds extra depth and
-                                with the correct colour selection style to your frame. 2. It prevents the item from being damaged from behind.
+                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It
+                                adds extra depth and
+                                with the correct colour selection style to your frame. 2. It prevents the item from
+                                being damaged from behind.
                             </p>
                         </div>
 
@@ -316,7 +330,8 @@
                             </h4>
 
                             <p class="mt-4">
-                                Yes glass choice does matter. Glass that we stock each have their own benefits and advantages, its down to
+                                Yes glass choice does matter. Glass that we stock each have their own benefits and
+                                advantages, its down to
                                 what is being framed and how much you are willing to spend.
                             </p>
                         </div>

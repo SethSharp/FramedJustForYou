@@ -2,21 +2,21 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <!-- Meta -->
-    <meta name="keywords"
-          content="Gold Coast Picture Framing, Framed Just For you, custom picture framing, Gold Coast, Framing Services, Queensland Framing">
-
-    <meta name="description"
-          content="Framed Just For You is Gold Coasts best picture framing business. We have been locally owned and operated for over 20 years and with 60+ years of experience we produce amazing results for our customers all over the Gold Coast and the country!">
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>
         @yield('title', 'Framed Just For You')
     </title>
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="keywords"
+          content="{{config('framed.keywords')}}">
+
+    <meta name="keywords"
+          content="@yield('keywords', '')">
+
+    <meta name="description"
+          content="@yield('description', config('framed.description'))">
 
     <!-- Fonts -->
     <style>
@@ -24,7 +24,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
     </style>
 
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
     <!-- Alpine -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -40,7 +40,7 @@
     <x-banners.main/>
 
     <div>
-        <x-navigation />
+        <x-navigation/>
 
         <div class="z-20">
             <div class="relative">

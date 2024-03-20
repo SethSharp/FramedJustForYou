@@ -1,4 +1,5 @@
 @section('title', 'Canvas - ' . config('app.name'))
+@section('description', 'What most people do not know is that there are many ways to frame a canvas, here we will show you.')
 
 <x-layouts.app>
     <x-section.section>
