@@ -12,9 +12,8 @@
                 <x-cards.image-content-right>
                     <x-slot name="image">
                         <x-image
-                            src="Indigenous/indigenous.webp"
                             src="Indigenous/canvas.webp"
-                            alt="Framed Just For You Team Photo"
+                            alt="Indigenous Canvas"
                         />
                     </x-slot>
 
