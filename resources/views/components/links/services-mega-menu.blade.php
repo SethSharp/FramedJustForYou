@@ -24,24 +24,24 @@
 
     $customLinks_2 = [
         [
-            'href' => route('services.framing.medals-memorabilia'),
+            'href' => route('new.services.framing.medals-memorabilia'),
             'name' => 'Medals and Memorabilia',
-            'active' => request()->route()->getName() === 'services.framing.medals-memorabilia'
+            'active' => request()->route()->getName() === 'new.services.framing.medals-memorabilia'
         ],
         [
-            'href' => route('services.framing.mirror'),
+            'href' => route('new.services.framing.mirror'),
             'name' => 'Mirror',
-            'active' => request()->route()->getName() === 'services.framing.mirror'
+            'active' => request()->route()->getName() === 'new.services.framing.mirror'
         ],
         [
-            'href' => route('services.framing.prints-posters-and-photos'),
-            'name' => 'Prints, Posters, and Photos',
-            'active' => request()->route()->getName() === 'services.framing.prints-posters-and-photos'
+            'href' => route('new.services.framing.prints-posters'),
+            'name' => 'Prints Posters & Photos',
+            'active' => request()->route()->getName() === 'new.services.framing.prints-posters'
         ],
         [
-            'href' => route('services.framing.hand-crafted'),
+            'href' => route('new.services.framing.handcrafted'),
             'name' => 'Handcrafted',
-            'active' => request()->route()->getName() === 'services.framing.hand-crafted'
+            'active' => request()->route()->getName() === 'new.services.framing.handcrafted'
         ],
     ];
 
@@ -92,8 +92,6 @@
                 <div class="flex w-full">
                     <div class="grid grid-cols-3 gap-y-4 w-full border-gray-200">
                         <div>
-                            <h3 class="text-xl"> Custom Framing </h3>
-
                             @foreach ($customLinks_1 as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
@@ -101,7 +99,7 @@
                             @endforeach
                         </div>
 
-                        <div class="mt-4">
+                        <div>
                             @foreach ($customLinks_2 as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
@@ -110,8 +108,6 @@
                         </div>
 
                         <div>
-                            <h3 class="text-xl"> Other </h3>
-
                             @foreach ($otherLinks as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
