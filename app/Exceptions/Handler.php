@@ -35,7 +35,8 @@ class Handler extends ExceptionHandler
         $status = $response->status();
 
         return match ($status) {
-            404 => response()->view('errors.404', [], 404),
+            404 => Inertia::render('Errors/404')->toResponse($request)->setStatusCode($status),
+//            404 => response()->view('errors.404', [], 404),
             default => $response
         };
     }
