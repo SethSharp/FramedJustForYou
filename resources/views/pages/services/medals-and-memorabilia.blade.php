@@ -1,5 +1,5 @@
 @section('title', 'Medals & Memorabilia - ' . config('app.name'))
-@section('description', '')
+@section('description', 'Medals & Other Memorabilia are our most popular items to frame and we have gotten pretty good at it! Providing much experience across all kinds of memorabilia items.')
 
 @php
     $links = [
