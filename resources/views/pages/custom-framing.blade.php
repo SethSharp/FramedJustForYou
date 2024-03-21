@@ -1,3 +1,24 @@
+@section('title', 'Custom Framing - ' . config('app.name'))
+@section('description', 'Custom Framing has been our specialty for over 20 years & with 60+ years of experience we offer amazing results! With our extensive range there is nothing we cannot frame')
+
+@php
+    $links = [
+        [
+            'href' => '#services',
+            'title' => 'Custom Framing Services'
+        ],
+        [
+            'href' => '#approach',
+            'title' => 'Approach'
+        ],
+        [
+            'href' => '#faq',
+            'title' => 'FAQ'
+        ]
+    ];
+@endphp
+
+
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>
@@ -9,63 +30,27 @@
                 <x-slot name="content">
                     <div class="md:flex gap-4">
                         <div class="md:w-3/5">
-                            <b>Custom Picture Framing </b> has so many branches, lucky for you, we pretty much cover everything. From Jerseys, Medals
-                            Posters and Photos. Right through to physical objects such as Footballs, golf balls and even shovels. Whatever means a lot to
+                            <b>Custom Picture Framing </b> has so many branches, lucky for you, we pretty much cover
+                            everything. From Jerseys, Medals
+                            Posters and Photos. Right through to physical objects such as Footballs, golf balls and even
+                            shovels. Whatever means a lot to
                             you, we can frame it!
 
-                            <br />
-                            <br />
+                            <br/>
+                            <br/>
 
-                            At Framed Just For You, we specialize in custom framing that transforms your cherished memories into timeless works of art.
-                            Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve the essence of your precious moments.
+                            At Framed Just For You, we specialize in custom framing that transforms your cherished
+                            memories into timeless works of art.
+                            Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve
+                            the essence of your precious moments.
                         </div>
                         <div class="md:w-2/5 px-4 flex justify-center">
-                            <div class="my-auto">
-                                <x-headings.secondary> Whats on this page</x-headings.secondary>
-
-                                <div class="ml-2">
-                                    <uL>
-                                        <li class="my-4">
-                                            <a href="#services" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus />
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    Custom Framing Services
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="my-4">
-                                            <a href="#approach" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus />
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    Our Approach
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="my-4">
-                                            <a href="#faq" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus />
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    FAQ
-                                                </p>
-                                            </a>
-                                        </li>
-                                    </uL>
-                                </div>
-                            </div>
+                            <x-section.whats-on-this-page :links="$links" />
                         </div>
                     </div>
 
                     <div>
-                        <x-headings.secondary> Australian Made </x-headings.secondary>
+                        <x-headings.secondary> Australian Made</x-headings.secondary>
 
                         <div>
                             Experience the unmatched longevity of our frames, crafted exclusively with
@@ -81,16 +66,17 @@
 
         <x-section.wrapper>
             <x-section.content id="services">
-                <x-slot name="title"> Services </x-slot>
+                <x-slot name="title"> Services</x-slot>
 
                 <x-slot name="content">
                     <p>
-                        What we offer is <b> limitless </b> these are a handful of the most common services we provide for our customers. If you
+                        What we offer is <b> limitless </b> these are a handful of the most common services we provide
+                        for our customers. If you
                         have something different, we are still more then capable of making something amazing for it.
                     </p>
 
                     <div>
-                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                             <x-cards.item
                                 image="acrylic/shovel.webp"
                                 alt="TODO"
@@ -161,7 +147,7 @@
 
         <x-section.wrapper>
             <x-section.content id="approach">
-                <x-slot name="title"> Our Approach </x-slot>
+                <x-slot name="title"> Our Approach</x-slot>
 
                 <x-slot name="content">
                     <p>
@@ -171,25 +157,34 @@
                         detail while being finished to the finest standards.
                     </p>
 
-                    <div class="grid">
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                    <div class="space-y-12">
+                        <x-cards.image-content-left>
+                            <x-slot name="image">
                                 <x-image
                                     src="framing/selection.webp"
                                     alt="Over 1000 frames to choose from"
+                                    class="h-96 mx-auto"
                                 />
-                            </div>
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            </x-slot>
+
+                            <x-slot name="content">
                                 Our custom framing service, with over 1000 frames to choose
                                 from, caters to every customer's unique preferences and needs.
                                 Just like a satisfied customer who values quality and variety,
                                 we offer an extensive selection of frames that suits any style
                                 or project.
-                            </div>
-                        </div>
+                            </x-slot>
+                        </x-cards.image-content-left>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="my-auto md:w-3/5 px-0 sm:px-8">
+                        <x-cards.image-content-right>
+                            <x-slot name="image">
+                                <x-image
+                                    src="framing/glassChoices.webp"
+                                    alt="The difference between clear and ultra vue glass"
+                                />
+                            </x-slot>
+
+                            <x-slot name="content">
                                 We offer a comprehensive selection of glass types to compliment
                                 your custom frame:
                                 <ul class="list-disc list-inside">
@@ -200,44 +195,40 @@
                                     <li>Museum Glass</li>
                                     <li>Ultra-view</li>
                                 </ul>
-                            </div>
-                            <div class="w-3/4 md:w-2/5 mx-auto my-6">
-                                <x-image
-                                    src="framing/glassChoices.webp"
-                                    alt="The difference between clear and ultra vue glass"
-                                />
-                            </div>
-                        </div>
+                            </x-slot>
+                        </x-cards.image-content-right>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="w-3/4 md:w-2/5 mx-auto my-6">
+                        <x-cards.image-content-left>
+                            <x-slot name="image">
                                 <x-image
                                     src="framing/matboards.webp"
                                     alt="our massive selection of matboards"
                                 />
-                            </div>
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                            </x-slot>
+
+                            <x-slot name="content">
                                 Our mat boards are top quality and acid free. We use Crescent -
                                 Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique
                                 conservation, Archival rag and Museum mats
-                            </div>
-                        </div>
+                            </x-slot>
+                        </x-cards.image-content-left>
 
-                        <div class="flex-wrap md:flex my-4 sm:my-2">
-                            <div class="flex my-auto md:w-3/5 px-0 sm:px-8">
+                        <x-cards.image-content-right>
+                            <x-slot name="image">
+                                <x-image
+                                    src="framing/framing.webp"
+                                    alt="more of our huge range of frames"
+                                />
+                            </x-slot>
+
+                            <x-slot name="content">
                                 At Framed Just For You we use all quality wood and metal picture
                                 frames, no synthetics are used. Frames are sourced from all over
                                 the world and we have over 1000 samples to choose from. Our huge
                                 selection of custom frames include brands such as Larson-Juhl
                                 and Antons Mouldings.
-                            </div>
-                            <div class="w-3/4 md:w-2/5 mx-auto my-6">
-                                <x-image
-                                    src="framing/framing.webp"
-                                    alt="more of our huge range of frames"
-                                />
-                            </div>
-                        </div>
+                            </x-slot>
+                        </x-cards.image-content-right>
                     </div>
                 </x-slot>
             </x-section.content>
@@ -252,7 +243,7 @@
                 <x-slot name="content">
                     <p></p>
 
-                    <div class="grid grid-cols-3 gap4">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap4">
                         <div class="p-4 text-center">
                             <h4 class="text-black font-semibold">
                                 Much much does Custom Framing cost?
@@ -270,8 +261,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                It all depends on your item, but please consider that this is more then just purchasing a product.
-                                We supply high quality materials and have our framers put it together by hand. So in the end it can be,
+                                It all depends on your item, but please consider that this is more then just purchasing
+                                a product.
+                                We supply high quality materials and have our framers put it together by hand. So in the
+                                end it can be,
                                 but its what you are paying for.
                             </p>
                         </div>
@@ -282,8 +275,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                With our vast selection of frames, matboard and glass choices it can be tough to come to a decision. but luckily
-                                that process is made easy with our staff who have an eye for design and can help you decide.
+                                With our vast selection of frames, matboard and glass choices it can be tough to come to
+                                a decision. but luckily
+                                that process is made easy with our staff who have an eye for design and can help you
+                                decide.
                             </p>
                         </div>
 
@@ -293,8 +288,10 @@
                             </h4>
 
                             <p class="mt-4">
-                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It adds extra depth and
-                                with the correct colour selection style to your frame. 2. It prevents the item from being damaged from behind.
+                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It
+                                adds extra depth and
+                                with the correct colour selection style to your frame. 2. It prevents the item from
+                                being damaged from behind.
                             </p>
                         </div>
 
@@ -304,7 +301,8 @@
                             </h4>
 
                             <p class="mt-4">
-                                Yes glass choice does matter. Glass that we stock each have their own benefits and advantages, its down to
+                                Yes glass choice does matter. Glass that we stock each have their own benefits and
+                                advantages, its down to
                                 what is being framed and how much you are willing to spend.
                             </p>
                         </div>

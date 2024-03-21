@@ -1,57 +1,52 @@
 @php
     $customLinks_1 = [
         [
-            'href' => route('services.framing.acrylic'),
+            'href' => route('new.services.framing.acrylic'),
             'name' => 'Acrylic',
-            'active' => request()->route()->getName() === 'services.framing.acrylic'
+            'active' => request()->route()?->getName() === 'new.services.framing.acrylic'
         ],
         [
-            'href' => route('services.framing.australian'),
-            'name' => 'Australian Made Framing Kits',
-            'active' => request()->route()->getName() === 'services.framing.australian'
+            'href' => route('new.services.framing.canvas'),
+            'name' => 'Canvas',
+            'active' => request()->route()?->getName() === 'new.services.framing.canvas'
         ],
         [
-            'href' => route('services.framing.canvases'),
-            'name' => 'Canvases',
-            'active' => request()->route()->getName() === 'services.framing.canvases'
-        ],
-        [
-            'href' => route('services.framing.indigenous-art'),
+            'href' => route('new.services.framing.indigenous'),
             'name' => 'Indigenous Art',
-            'active' => request()->route()->getName() === 'services.framing.indigenous-art'
+            'active' => request()->route()?->getName() === 'new.services.framing.indigenous'
         ],
         [
-            'href' => route('services.framing.jigsaws'),
+            'href' => route('new.services.framing.jigsaw'),
             'name' => 'Jigsaws',
-            'active' => request()->route()->getName() === 'services.framing.jigsaws'
+            'active' => request()->route()?->getName() === 'new.services.framing.jigsaw'
+        ],
+        [
+            'href' => route('new.services.framing.medals-memorabilia'),
+            'name' => 'Medals and Memorabilia',
+            'active' => request()->route()?->getName() === 'new.services.framing.medals-memorabilia'
         ],
     ];
 
     $customLinks_2 = [
         [
-            'href' => route('services.framing.medals-memorabilia'),
-            'name' => 'Medals and Memorabilia',
-            'active' => request()->route()->getName() === 'services.framing.medals-memorabilia'
-        ],
-        [
-            'href' => route('services.framing.mirror'),
+            'href' => route('new.services.framing.mirror'),
             'name' => 'Mirror',
-            'active' => request()->route()->getName() === 'services.framing.mirror'
+            'active' => request()->route()?->getName() === 'new.services.framing.mirror'
         ],
         [
-            'href' => route('services.framing.original-artwork'),
-            'name' => 'Original Artwork',
-            'active' => request()->route()->getName() === 'services.framing.original-artwork'
+            'href' => route('new.services.framing.prints-posters'),
+            'name' => 'Prints Posters & Photos',
+            'active' => request()->route()?->getName() === 'new.services.framing.prints-posters'
         ],
         [
-            'href' => route('services.framing.prints-posters-and-photos'),
-            'name' => 'Prints, Posters, and Photos',
-            'active' => request()->route()->getName() === 'services.framing.prints-posters-and-photos'
-        ],
-        [
-            'href' => route('services.framing.hand-crafted'),
+            'href' => route('new.services.framing.handcrafted'),
             'name' => 'Handcrafted',
-            'active' => request()->route()->getName() === 'services.framing.hand-crafted'
+            'active' => request()->route()?->getName() === 'new.services.framing.handcrafted'
+        ],
+        [
+            'href' => route('new.services.framing.restorations'),
+            'name' => 'Restorations',
+            'active' => request()->route()?->getName() === 'new.services.framing.restorations'
         ],
     ];
 
@@ -59,22 +54,22 @@
         [
             'href' => route('services.other.glass-cutting'),
             'name' => 'Glass Cutting',
-            'active' => request()->route()->getName() === 'services.other.glass-cutting'
+            'active' => request()->route()?->getName() === 'services.other.glass-cutting'
         ],
         [
             'href' => route('services.other.matboard-cutting'),
             'name' => 'Matboard Cutting',
-            'active' => request()->route()->getName() === 'services.other.matboard-cutting'
+            'active' => request()->route()?->getName() === 'services.other.matboard-cutting'
         ],
         [
             'href' => route('services.other.ready-made'),
             'name' => 'Ready Made',
-            'active' => request()->route()->getName() === 'services.other.ready-made'
+            'active' => request()->route()?->getName() === 'services.other.ready-made'
         ],
         [
             'href' => route('services.other.framing-supplies'),
             'name' => 'Framing Supplies',
-            'active' => request()->route()->getName() === 'services.other.framing-supplies'
+            'active' => request()->route()?->getName() === 'services.other.framing-supplies'
         ]
     ];
 @endphp
@@ -102,8 +97,6 @@
                 <div class="flex w-full">
                     <div class="grid grid-cols-3 gap-y-4 w-full border-gray-200">
                         <div>
-                            <h3 class="text-xl"> Custom Framing </h3>
-
                             @foreach ($customLinks_1 as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
@@ -120,8 +113,6 @@
                         </div>
 
                         <div>
-                            <h3 class="text-xl"> Other </h3>
-
                             @foreach ($otherLinks as $link)
                                 <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
                                     {{ $link['name'] }}
