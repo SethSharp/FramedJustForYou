@@ -33,7 +33,7 @@
                         <x-slot name="image">
                             <x-image
                                 src="canvas/tiger-canvas.webp"
-                                alt="Golf Ball display in example home space"
+                                alt="Tiger painting on a rectangle canvas"
                                 class="h-96 mx-auto object-center object-cover"
                             />
                         </x-slot>

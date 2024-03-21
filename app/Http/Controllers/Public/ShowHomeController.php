@@ -6,7 +6,6 @@ use Illuminate\View\View;
 use App\Support\Traits\GoogleApi;
 use App\Http\Controllers\Controller;
 
-
 class ShowHomeController extends Controller
 {
     use GoogleApi;

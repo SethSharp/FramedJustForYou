@@ -18,7 +18,6 @@
     ];
 @endphp
 
-
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>
@@ -44,8 +43,9 @@
                             Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve
                             the essence of your precious moments.
                         </div>
+
                         <div class="md:w-2/5 px-4 flex justify-center">
-                            <x-section.whats-on-this-page :links="$links" />
+                            <x-section.whats-on-this-page :links="$links"/>
                         </div>
                     </div>
 
@@ -78,66 +78,73 @@
                     <div>
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                             <x-cards.item
-                                image="acrylic/shovel.webp"
-                                alt="TODO"
+                                src="acrylic/football.webp"
+                                alt="Football in case"
                                 title="Acrylic"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.acrylic') }}"
                             />
 
                             <x-cards.item
-                                image="matboards/matboard-cutter.webp"
-                                alt="TODO"
+                                src="canvas/tiger-canvas.webp"
+                                alt="Tiger painting on a rectangle canvas"
                                 title="Canvas"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.canvas') }}"
                             />
 
                             <x-cards.item
-                                image="Indigenous/indigenous.webp"
-                                alt="TODO"
+                                src="Indigenous/indigenous.webp"
+                                alt="Indigenous print"
                                 title="Indigenous Art"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.indigenous') }}"
                             />
 
                             <x-cards.item
                                 image="jigsaw/giraffe.webp"
-                                alt="TODO"
+                                alt="Completed Giraffe Jigsaw - not framed"
                                 title="Jigsaws"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.jigsaw') }}"
                             />
 
                             <x-cards.item
-                                image="matboards/asw-athlete.webp"
-                                alt="TODO"
+                                src="matboards/gymnastics.webp"
+                                alt="Gymnastics frame with multiple cutouts for medals"
                                 title="Medals & Memorabilia"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.medals-memorabilia') }}"
                             />
 
                             <x-cards.item
-                                image="matboards/matboard-cutter.webp"
-                                alt="TODO"
+                                src="matboards/multiple-squares-and-circles.webp"
+                                alt="Mirror Framed"
                                 title="Mirror"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.mirror') }}"
                             />
 
                             <x-cards.item
-                                image="matboards/matboard-cutter.webp"
-                                alt="TODO"
+                                src="prints-photos/picture-2.webp"
+                                alt="Print of a mother & child in the safari"
                                 title="Prints, Posters & Photos"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.prints-posters') }}"
                             />
 
                             <x-cards.item
-                                image="handcrafted/pressed.webp"
-                                alt="TODO"
+                                src="handcrafted/pressed.webp"
+                                alt="Handcrafted piece of a person holding an umbrella with a light post & a couple in the background"
                                 title="Handcrafted"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.handcrafted') }}"
                             />
 
                             <x-cards.item
-                                image="restorations/reprint-and-frame.webp"
-                                alt="TODO"
+                                src="restorations/reprint-and-frame.webp"
+                                alt="Reprinted and Frame of a old wedding photo"
                                 title="Restorations"
-                                href="{{ route('services.other.matboard-cutting') }}"
+                                href="{{ route('new.services.framing.restorations') }}"
+                            />
+
+                            <x-cards.item
+                                src="readyMade/graduation.webp"
+                                alt="Graduation frame"
+                                title="Other"
+                                href="{{ route('new.services.other') }}"
                             />
                         </div>
                     </div>
@@ -241,9 +248,7 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    <p></p>
-
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap4">
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="p-4 text-center">
                             <h4 class="text-black font-semibold">
                                 Much much does Custom Framing cost?
@@ -265,7 +270,7 @@
                                 a product.
                                 We supply high quality materials and have our framers put it together by hand. So in the
                                 end it can be,
-                                but its what you are paying for.
+                                but you get what you are paying for.
                             </p>
                         </div>
 
@@ -276,40 +281,14 @@
 
                             <p class="mt-4">
                                 With our vast selection of frames, matboard and glass choices it can be tough to come to
-                                a decision. but luckily
+                                a decision. But luckily
                                 that process is made easy with our staff who have an eye for design and can help you
                                 decide.
-                            </p>
-                        </div>
-
-                        <div class="p-4 text-center">
-                            <h4 class="text-black font-semibold">
-                                What is a matboard and these other framing materials?
-                            </h4>
-
-                            <p class="mt-4">
-                                A matboard allows your keepsake to sit on something providing multiple benefits. 1. It
-                                adds extra depth and
-                                with the correct colour selection style to your frame. 2. It prevents the item from
-                                being damaged from behind.
-                            </p>
-                        </div>
-
-                        <div class="p-4 text-center">
-                            <h4 class="text-black font-semibold">
-                                Does glass choice matter?
-                            </h4>
-
-                            <p class="mt-4">
-                                Yes glass choice does matter. Glass that we stock each have their own benefits and
-                                advantages, its down to
-                                what is being framed and how much you are willing to spend.
                             </p>
                         </div>
                     </div>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
-
     </x-section.section>
 </x-layouts.app>

@@ -113,11 +113,10 @@
                         </div>
 
                         <div>
-                            @foreach ($otherLinks as $link)
-                                <x-links.mega-menu-link href="{{$link['href']}}" active="{{$link['active']}}">
-                                    {{ $link['name'] }}
-                                </x-links.mega-menu-link>
-                            @endforeach
+                            <x-links.mega-menu-link href="{{route('new.services.other')}}"
+                                                    active="{{request()->route()?->getName() === 'new.services.other'}}">
+                                Other
+                            </x-links.mega-menu-link>
                         </div>
                     </div>
                 </div>
