@@ -1,6 +1,24 @@
 @section('title', 'Custom Framing - ' . config('app.name'))
 @section('description', 'Custom Framing has been our specialty for over 20 years & with 60+ years of experience we offer amazing results! With our extensive range there is nothing we cannot frame')
 
+@php
+    $links = [
+        [
+            'href' => '#services',
+            'title' => 'Custom Framing Services'
+        ],
+        [
+            'href' => '#approach',
+            'title' => 'Approach'
+        ],
+        [
+            'href' => '#faq',
+            'title' => 'FAQ'
+        ]
+    ];
+@endphp
+
+
 <x-layouts.app>
     <x-section.section>
         <x-section.wrapper>
@@ -27,47 +45,7 @@
                             the essence of your precious moments.
                         </div>
                         <div class="md:w-2/5 px-4 flex justify-center">
-                            <div class="my-auto">
-                                <x-headings.secondary> Whats on this page</x-headings.secondary>
-
-                                <div class="ml-2">
-                                    <uL>
-                                        <li class="my-4">
-                                            <a href="#services" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus/>
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    Custom Framing Services
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="my-4">
-                                            <a href="#approach" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus/>
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    Our Approach
-                                                </p>
-                                            </a>
-                                        </li>
-                                        <li class="my-4">
-                                            <a href="#faq" class="flex w-fit">
-                                                <span class="my-auto">
-                                                    <x-icons.plus/>
-                                                </span>
-
-                                                <p class="ml-4 my-auto">
-                                                    FAQ
-                                                </p>
-                                            </a>
-                                        </li>
-                                    </uL>
-                                </div>
-                            </div>
+                            <x-section.whats-on-this-page :links="$links" />
                         </div>
                     </div>
 
