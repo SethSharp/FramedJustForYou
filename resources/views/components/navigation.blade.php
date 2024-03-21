@@ -17,28 +17,28 @@
                         <div class="flex gap-x-8 justify-end pr-8">
                             <x-links.nav
                                 href="{{route('new.home')}}"
-                                active="{{ request()->route()->getName() === 'new.home' }}"
+                                active="{{ request()->route()?->getName() === 'new.home' }}"
                             >
                                 Home
                             </x-links.nav>
 
                             <x-links.nav
                                 href="{{route('new.about')}}"
-                                active="{{ request()->route()->getName() === 'new.about' }}"
+                                active="{{ request()->route()?->getName() === 'new.about' }}"
                             >
                                 About
                             </x-links.nav>
 
                             <x-links.nav
                                 href="{{route('new.custom-framing')}}"
-                                active="{{ request()->route()->getName() === 'new.custom-framing' }}"
+                                active="{{ request()->route()?->getName() === 'new.custom-framing' }}"
                             >
                                 Framing
                             </x-links.nav>
 
                             <x-links.nav
                                 href="{{route('new.printing')}}"
-                                active="{{ request()->route()->getName() === 'new.printing' }}"
+                                active="{{ request()->route()?->getName() === 'new.printing' }}"
                             >
                                 Printing
                             </x-links.nav>
@@ -79,14 +79,14 @@
                 <div class="space-y-4 px-2 my-4">
                     <x-links.nav
                         href="{{route('new.home')}}"
-                        active="{{ request()->route()->getName() === 'new.home' }}"
+                        active="{{ request()->route()?->getName() === 'new.home' }}"
                     >
                         Home
                     </x-links.nav>
 
                     <x-links.nav
                         href="{{route('new.about')}}"
-                        active="{{ request()->route()->getName() === 'new.about' }}"
+                        active="{{ request()->route()?->getName() === 'new.about' }}"
                     >
                         About
                     </x-links.nav>
@@ -95,7 +95,7 @@
 
                     <x-links.nav
                         href="{{route('new.contact')}}"
-                        active="{{ request()->route()->getName() === 'new.contact' }}"
+                        active="{{ request()->route()?->getName() === 'new.contact' }}"
                     >
                         Contact
                     </x-links.nav>

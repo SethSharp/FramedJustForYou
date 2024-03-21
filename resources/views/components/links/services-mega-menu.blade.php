@@ -3,27 +3,27 @@
         [
             'href' => route('new.services.framing.acrylic'),
             'name' => 'Acrylic',
-            'active' => request()->route()->getName() === 'new.services.framing.acrylic'
+            'active' => request()->route()?->getName() === 'new.services.framing.acrylic'
         ],
         [
             'href' => route('new.services.framing.canvas'),
             'name' => 'Canvas',
-            'active' => request()->route()->getName() === 'new.services.framing.canvas'
+            'active' => request()->route()?->getName() === 'new.services.framing.canvas'
         ],
         [
             'href' => route('new.services.framing.indigenous'),
             'name' => 'Indigenous Art',
-            'active' => request()->route()->getName() === 'new.services.framing.indigenous'
+            'active' => request()->route()?->getName() === 'new.services.framing.indigenous'
         ],
         [
             'href' => route('new.services.framing.jigsaw'),
             'name' => 'Jigsaws',
-            'active' => request()->route()->getName() === 'new.services.framing.jigsaw'
+            'active' => request()->route()?->getName() === 'new.services.framing.jigsaw'
         ],
         [
             'href' => route('new.services.framing.medals-memorabilia'),
             'name' => 'Medals and Memorabilia',
-            'active' => request()->route()->getName() === 'new.services.framing.medals-memorabilia'
+            'active' => request()->route()?->getName() === 'new.services.framing.medals-memorabilia'
         ],
     ];
 
@@ -31,22 +31,22 @@
         [
             'href' => route('new.services.framing.mirror'),
             'name' => 'Mirror',
-            'active' => request()->route()->getName() === 'new.services.framing.mirror'
+            'active' => request()->route()?->getName() === 'new.services.framing.mirror'
         ],
         [
             'href' => route('new.services.framing.prints-posters'),
             'name' => 'Prints Posters & Photos',
-            'active' => request()->route()->getName() === 'new.services.framing.prints-posters'
+            'active' => request()->route()?->getName() === 'new.services.framing.prints-posters'
         ],
         [
             'href' => route('new.services.framing.handcrafted'),
             'name' => 'Handcrafted',
-            'active' => request()->route()->getName() === 'new.services.framing.handcrafted'
+            'active' => request()->route()?->getName() === 'new.services.framing.handcrafted'
         ],
         [
             'href' => route('new.services.framing.restorations'),
             'name' => 'Restorations',
-            'active' => request()->route()->getName() === 'new.services.framing.restorations'
+            'active' => request()->route()?->getName() === 'new.services.framing.restorations'
         ],
     ];
 
@@ -54,22 +54,22 @@
         [
             'href' => route('services.other.glass-cutting'),
             'name' => 'Glass Cutting',
-            'active' => request()->route()->getName() === 'services.other.glass-cutting'
+            'active' => request()->route()?->getName() === 'services.other.glass-cutting'
         ],
         [
             'href' => route('services.other.matboard-cutting'),
             'name' => 'Matboard Cutting',
-            'active' => request()->route()->getName() === 'services.other.matboard-cutting'
+            'active' => request()->route()?->getName() === 'services.other.matboard-cutting'
         ],
         [
             'href' => route('services.other.ready-made'),
             'name' => 'Ready Made',
-            'active' => request()->route()->getName() === 'services.other.ready-made'
+            'active' => request()->route()?->getName() === 'services.other.ready-made'
         ],
         [
             'href' => route('services.other.framing-supplies'),
             'name' => 'Framing Supplies',
-            'active' => request()->route()->getName() === 'services.other.framing-supplies'
+            'active' => request()->route()?->getName() === 'services.other.framing-supplies'
         ]
     ];
 @endphp

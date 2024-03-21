@@ -19,7 +19,7 @@ Route::get('/new/printing', fn () => view('pages/printing'))->name('new.printing
 
 
 Route::prefix('new/services')->name('new.services.')->group(function () {
-    Route::prefix('new/custom-framing')->name('framing.')->group(function () {
+    Route::prefix('/custom-framing')->name('framing.')->group(function () {
         /**
          * Acrylic
          * Canvases
