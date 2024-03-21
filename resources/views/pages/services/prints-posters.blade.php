@@ -1,5 +1,5 @@
 @section('title', 'Prints, Posters & Photos - ' . config('app.name'))
-@section('description', '')
+@section('description', 'Our most popular service is framing either a print, photo or a poster. We love seeing all the different pieces that you bring in and love building something amazing for them.')
 
 <x-layouts.app>
     <x-section.wrapper>

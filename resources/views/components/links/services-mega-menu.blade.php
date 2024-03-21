@@ -20,14 +20,14 @@
             'name' => 'Jigsaws',
             'active' => request()->route()->getName() === 'new.services.framing.jigsaw'
         ],
-    ];
-
-    $customLinks_2 = [
         [
             'href' => route('new.services.framing.medals-memorabilia'),
             'name' => 'Medals and Memorabilia',
             'active' => request()->route()->getName() === 'new.services.framing.medals-memorabilia'
         ],
+    ];
+
+    $customLinks_2 = [
         [
             'href' => route('new.services.framing.mirror'),
             'name' => 'Mirror',
@@ -42,6 +42,11 @@
             'href' => route('new.services.framing.handcrafted'),
             'name' => 'Handcrafted',
             'active' => request()->route()->getName() === 'new.services.framing.handcrafted'
+        ],
+        [
+            'href' => route('new.services.framing.restorations'),
+            'name' => 'Restorations',
+            'active' => request()->route()->getName() === 'new.services.framing.restorations'
         ],
     ];
 

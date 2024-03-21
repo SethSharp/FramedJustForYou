@@ -40,6 +40,7 @@ Route::prefix('new/services')->name('new.services.')->group(function () {
         Route::get('/mirror', fn () => view('pages/services/mirror'))->name('mirror');
         Route::get('/prints-posters', fn () => view('pages/services/prints-posters'))->name('prints-posters');
         Route::get('/handcrafted', fn () => view('pages/services/handcrafted'))->name('handcrafted');
+        Route::get('/restorations', fn () => view('pages/services/restorations'))->name('restorations');
     });
 
     Route::prefix('new.other')->name('new.other.')->group(function () {

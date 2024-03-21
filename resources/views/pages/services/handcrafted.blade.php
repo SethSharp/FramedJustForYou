@@ -1,5 +1,5 @@
 @section('title', 'Handcrafted - ' . config('app.name'))
-@section('description', '')
+@section('description', 'Handcrafted artwork is always something special for us, as we know a lot of work has been put into them. Which ensures us to be careful as well!')
 
 <x-layouts.app>
     <x-section.wrapper>
