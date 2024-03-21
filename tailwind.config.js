@@ -30,8 +30,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                mont: ['Montserrat', ...defaultTheme.fontFamily.mono],
-                quick: ['Quicksand', ...defaultTheme.fontFamily.mono]
+                mont: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                quick: ['Quicksand', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 primary: {
