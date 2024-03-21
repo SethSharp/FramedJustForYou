@@ -12,8 +12,8 @@
             'title' => 'Medals'
         ],
         [
-            'href' => '#faq',
-            'title' => 'Sports & Memorabilia'
+            'href' => '#sports',
+            'title' => 'Sports'
         ]
     ];
 @endphp
@@ -35,6 +35,79 @@
                     <div class="md:w-2/5 px-4 flex justify-center">
                         <x-section.whats-on-this-page :links="$links" />
                     </div>
+                </div>
+            </x-slot>
+        </x-section.content>
+    </x-section.wrapper>
+
+    <x-section.wrapper>
+        <x-section.content id="collectables">
+            <x-slot name="title"> Collectables</x-slot>
+
+            <x-slot name="content">
+                <p>
+                    Framed memorabilia encompasses a wide range of items, spanning from quirky
+                    novelties to highly valuable collectibles. At Framed Just For You, we have
+                    extensive experience framing various celebrity-related treasures, including
+                    autographed garments, costumes, and rare signed correspondence.
+                </p>
+                <div class="sm:w-3/4 mx-auto my-2">
+                    <x-image
+                        src="memorabilia/memorabilia-3.webp"
+                        alt="Collectables"
+                    />
+                </div>
+            </x-slot>
+        </x-section.content>
+    </x-section.wrapper>
+
+    <x-section.wrapper>
+        <x-section.content id="medals">
+            <x-slot name="title"> Medals</x-slot>
+
+            <x-slot name="content">
+                <p>
+                    Medal memorabilia holds a significant place in the world of collectibles. These
+                    distinguished awards, often earned through acts of bravery, excellence in
+                    sports, or other exceptional achievements, carry with them not only historical
+                    significance but also personal stories of triumph and honor. Whether it's
+                    military medals, Sporting medals, or medals from various fields of
+                    accomplishment, they serve as tangible reminders of individuals' dedication and
+                    accomplishments.
+                </p>
+                <div class="w-3/4 mx-auto my-2 grid sm:grid-cols-2 gap-4">
+                    <x-image
+                        src="matboards/gymnastics.webp"
+                        alt="Gymnastics frame with multiple cutouts for medals"
+                        additionalClass="h-full"
+                    />
+                    <x-image
+                        src="matboards/asw-athlete.webp"
+                        alt="ASW frame with multiple cutouts for medals and photos"
+                        additionalClass="h-full"
+                    />
+                </div>
+            </x-slot>
+        </x-section.content>
+    </x-section.wrapper>
+
+    <x-section.wrapper>
+        <x-section.content id="sports">
+            <x-slot name="title"> Sports</x-slot>
+
+            <x-slot name="content">
+                <p>
+                    At Framed Just For You, we specialize in framing a wide array of sports
+                    memorabilia, from NRL, AFL, and A-League jerseys to footballs, cricket bats,
+                    golf clubs, helmets, and more! Located on the Gold Coast, we bring our expertise
+                    to the world of sports collectibles. Showcasing your cherished sports
+                    memorabilia in your home, home bar, or office is bound to spark conversations.
+                </p>
+                <div class="sm:w-3/4 mx-auto my-2">
+                    <x-image
+                        src="memorabilia/jerseys.webp"
+                        alt="Framed Sport Jerseys"
+                    />
                 </div>
             </x-slot>
         </x-section.content>
