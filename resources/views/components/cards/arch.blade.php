@@ -6,11 +6,10 @@
             <x-image
                 src="{{ $image }}"
                 alt="{{ $alt }}"
-                class="object-cover h-full !rounded-none"
+                class="object-cover h-64 object-center !rounded-none"
             />
 
-            <div class=" size-full inset-0 bg-black/50">
-            </div>
+            <div class="absolute size-full inset-0 bg-black/50"></div>
         </div>
     </div>
 
