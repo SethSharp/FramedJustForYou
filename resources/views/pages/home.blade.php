@@ -3,7 +3,7 @@
         <div class="relative z-20">
             <x-local-image
                 src="/store/store-front-right.webp"
-                additionalClass="object-cover h-[500px] w-full"
+                class="object-cover h-[500px] w-full"
                 alt="Store Front Image"
             />
             <div class="absolute inset-0 bg-black/75">
@@ -25,7 +25,7 @@
                     <div class="w-full md:w-1/2">
                         <x-local-image
                             src="/store/store-front-right.webp"
-                            additionalClass="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                            class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
                             alt="Framed Just For You Team Photo"
                         />
                     </div>
@@ -44,7 +44,7 @@
                 <x-slot name="image">
                     <x-image
                         src="store/front.png"
-                        additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                        class="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
                         alt="Framed Just For You Team Photo"
                     />
                 </x-slot>
@@ -82,12 +82,14 @@
                             <x-cards.arch
                                 image="framing/flinders.webp"
                                 title="Custom Framing"
+                                alt="TODO"
                                 href="{{ route('services.framing') }}"
                             />
 
                             <x-cards.arch
                                 image="printing/printer.webp"
                                 title="Printing Services"
+                                alt="TODO"
                                 href="{{ route('services.printing') }}"
                             />
 
@@ -96,12 +98,14 @@
                             <x-cards.arch
                                 image="matboards/matboard-cutter.webp"
                                 title="Computerised Matboard Cutting"
+                                alt="TODO"
                                 href="{{ route('services.other.matboard-cutting') }}"
                             />
 
                             <x-cards.arch
                                 image="restorations/reprint-and-frame.webp"
                                 title="Restorations and Repairs"
+                                alt="TODO"
                                 href="{{ route('services.framing.restorations') }}"
                             />
                         </div>
@@ -118,7 +122,7 @@
                     <x-slot name="image">
                         <x-image
                             src="store/front.png"
-                            additionalClass="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
+                            class="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
                             alt="Framed Just For You Team Photo"
                         />
                     </x-slot>
@@ -146,9 +150,11 @@
                     showing off some awesome frames - these are also available for sale!
 
                     <div class="mx-auto flex w-3/4">
-                        <x-image src="store/gallery.png"
-                                 additionalClass="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded"
-                                 alt="Framed Just For You Restored Gallery"/>
+                        <x-image
+                            src="store/gallery.png"
+                            class="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded"
+                            alt="Framed Just For You Restored Gallery"
+                        />
                     </div>
                 </x-slot>
             </x-section.content>

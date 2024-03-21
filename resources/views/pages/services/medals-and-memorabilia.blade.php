@@ -79,12 +79,12 @@
                     <x-image
                         src="matboards/gymnastics.webp"
                         alt="Gymnastics frame with multiple cutouts for medals"
-                        additionalClass="h-full"
+                        class="h-full"
                     />
                     <x-image
                         src="matboards/asw-athlete.webp"
                         alt="ASW frame with multiple cutouts for medals and photos"
-                        additionalClass="h-full"
+                        class="h-full"
                     />
                 </div>
             </x-slot>

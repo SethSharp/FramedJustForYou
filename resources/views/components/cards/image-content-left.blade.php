@@ -1,5 +1,5 @@
 @props(['content', 'image', 'title' => null])
-<div class="lg:relative flex items-center justify-center">
+<div class="space-y-4 lg:relative lg:flex items-center justify-center">
     <x-section.content class="!bg-secondary-100 lg:absolute right-1/3 z-10 border-none">
         @if ($title)
             <x-slot name="title">

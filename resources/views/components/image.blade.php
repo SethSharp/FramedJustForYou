@@ -1,11 +1,11 @@
-@props(['src', 'alt', 'additionalClass' => '', 'caption' => null])
+@props(['src', 'alt', 'caption' => null])
 
 <div class="{{ $caption ? 'm-4' : '' }}">
     <img
         src="{{ config('app.cloudfront_url') .'/images/' . $src }}"
         alt="{{ $alt }}"
         aria-label="{{ $alt }}"
-        class="{{ $additionalClass }} rounded-md"
+        {{ $attributes->merge(['class' => 'rounded-md']) }}
     />
 
     @if ($caption)

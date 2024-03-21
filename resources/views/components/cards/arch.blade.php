@@ -1,4 +1,4 @@
-@props(['href', 'image', 'title', 'alt' => ''])
+@props(['href', 'image', 'title', 'alt'])
 
 <a href="{{$href}}">
     <div>
@@ -6,10 +6,10 @@
             <x-image
                 src="{{ $image }}"
                 alt="{{ $alt }}"
-                additionalClass="object-cover h-full"
+                class="object-cover h-full !rounded-none"
             />
 
-            <div class="absolute inset-0 bg-black/10">
+            <div class=" size-full inset-0 bg-black/50">
             </div>
         </div>
     </div>

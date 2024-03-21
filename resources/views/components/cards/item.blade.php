@@ -6,7 +6,7 @@
             <x-image
                 src="{{ $image }}"
                 alt="{{ $alt }}"
-                additionalClass="object-cover w-full h-full"
+                class="object-cover w-full h-full"
             />
 
             <div class="absolute inset-0 bg-black/25">

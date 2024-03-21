@@ -1,6 +1,6 @@
 @props(['image', 'content', 'title' => null])
 
-<div class="lg:relative flex items-center justify-center">
+<div class="space-y-4 lg:relative lg:flex items-center justify-center">
     <div class="lg:w-1/2 lg:relative mr-auto">
         {{ $image }}
     </div>

@@ -1,8 +1,8 @@
-@props(['src', 'alt', 'additionalClass' => ''])
+@props(['src', 'alt'])
 
 <img
     src="{{ asset('/images') . $src }}"
     alt="{{ $alt }}"
     aria-label="{{ $alt }}"
-    class="{{ $additionalClass }}"
+    {{ $attributes->merge(['class' => 'rounded-md']) }}
 />

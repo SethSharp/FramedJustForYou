@@ -2,13 +2,13 @@
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide">
-                <x-image src="store/front.png" additionalClass="object-none w-full h-[400px] w-full" alt="" />
+                <x-image src="store/front.png" class="object-none w-full h-[400px] w-full" alt="" />
             </li>
             <li class="splide__slide">
-                <x-image src="store/gallery-side.png" additionalClass="object-none w-full h-[400px] w-full" alt="" />
+                <x-image src="store/gallery-side.png" class="object-none w-full h-[400px] w-full" alt="" />
             </li>
             <li class="splide__slide">
-                <x-image src="store/framing-bench.png" additionalClass="object-none w-full h-[400px] w-full" alt="" />
+                <x-image src="store/framing-bench.png" class="object-none w-full h-[400px] w-full" alt="" />
             </li>
         </ul>
     </div>

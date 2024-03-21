@@ -34,7 +34,7 @@
                             <x-image
                                 src="canvas/tiger-canvas.webp"
                                 alt="Golf Ball display in example home space"
-                                additionalClass="h-96 mx-auto object-center object-cover"
+                                class="h-96 mx-auto object-center object-cover"
                             />
                         </x-slot>
                     </x-cards.image-content-left>
@@ -58,28 +58,28 @@
                             <x-image
                                 src="canvas/canvas-raw.webp"
                                 alt="Golf Ball display in example home space"
-                                additionalClass="h-full object-fit"
+                                class="h-full object-fit"
                                 caption="Hang a standard canvas."
                             />
 
                             <x-image
                                 src="canvas/canvas-inset.webp"
                                 alt="Golf Ball display in example home space"
-                                additionalClass="h-full object-fit"
+                                class="h-full object-fit"
                                 caption="Place your canvas within an inset frame."
                             />
 
                             <x-image
                                 src="canvas/canvas-standard.webp"
                                 alt="Golf Ball display in example home space"
-                                additionalClass="h-full object-fit"
+                                class="h-full object-fit"
                                 caption="We can fit a standard frame as well."
                             />
 
                             <x-image
                                 src="canvas/canvas-old.webp"
                                 alt="Golf Ball display in example home space"
-                                additionalClass="h-full object-fit"
+                                class="h-full object-fit"
                                 caption="Or we can fit a older style frame."
                             />
                         </div>

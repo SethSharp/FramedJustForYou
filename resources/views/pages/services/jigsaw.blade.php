@@ -14,7 +14,7 @@
                         <x-image
                             src="jigsaw/giraffe.webp"
                             alt="Giraffe Jigsaw Framed"
-                            additionalClass="h-96 mx-auto"
+                            class="h-96 mx-auto"
                         />
                     </x-slot>
 
@@ -51,7 +51,7 @@
                             <x-image
                                 src="jigsaw/initial-stage.webp"
                                 alt="Step 1: Acquire and solve the jigsaw"
-                                additionalClass="h-96 mx-auto"
+                                class="h-96 mx-auto"
                             />
                         </x-slot>
 
@@ -71,7 +71,7 @@
                             <x-image
                                 src="jigsaw/frame.webp"
                                 alt="Step 2: Choose a frame"
-                                additionalClass="h-96 mx-auto"
+                                class="h-96 mx-auto"
                             />
                         </x-slot>
 
@@ -115,7 +115,7 @@
                             <x-image
                                 src="jigsaw/final-product.webp"
                                 alt="Step 4: The final product"
-                                additionalClass="h-96 mx-auto"
+                                class="h-96 mx-auto"
                             />
                         </x-slot>
 

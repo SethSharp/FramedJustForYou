@@ -170,7 +170,7 @@
                                 <x-image
                                     src="framing/selection.webp"
                                     alt="Over 1000 frames to choose from"
-                                    additionalClass="h-96 mx-auto"
+                                    class="h-96 mx-auto"
                                 />
                             </x-slot>
 
@@ -250,7 +250,7 @@
                 <x-slot name="content">
                     <p></p>
 
-                    <div class="grid grid-cols-3 gap4">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap4">
                         <div class="p-4 text-center">
                             <h4 class="text-black font-semibold">
                                 Much much does Custom Framing cost?
