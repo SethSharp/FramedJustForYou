@@ -16,6 +16,7 @@ Route::get('/new/about', \App\Http\Controllers\Public\ShowAboutController::class
 Route::get('/new/custom-framing', fn () => view('pages/custom-framing'))->name('new.custom-framing');
 Route::get('/new/printing', fn () => view('pages/printing'))->name('new.printing');
 Route::get('/new/contact', fn () => view('pages/contact'))->name('new.contact');
+Route::get('/new/sitemap', fn () => view('pages/sitemap'))->name('new.sitemap');
 
 Route::prefix('new/services')->name('new.services.')->group(function () {
     Route::prefix('/custom-framing')->name('framing.')->group(function () {
