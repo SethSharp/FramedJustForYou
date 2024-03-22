@@ -31,12 +31,12 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="md:flex gap-4">
-                    <div class="md:w-3/5">
+                <div class="lg:flex gap-4">
+                    <div class="lg:w-3/5">
                         Among everything that we do, there is also other small things you may need. Such as a simple
                         matboard, glass cutout, framing supplies or our ready made frames.
                     </div>
-                    <div class="md:w-2/5 px-4 flex justify-center">
+                    <div class="lg:w-2/5 mt-6 lg:mt-0 flex justify-center">
                         <x-section.whats-on-this-page :links="$links"/>
                     </div>
                 </div>

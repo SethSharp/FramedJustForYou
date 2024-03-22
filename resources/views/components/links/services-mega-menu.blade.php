@@ -22,7 +22,7 @@
         ],
         [
             'href' => route('new.services.framing.medals-memorabilia'),
-            'name' => 'Medals and Memorabilia',
+            'name' => 'Medals & Memorabilia',
             'active' => request()->route()?->getName() === 'new.services.framing.medals-memorabilia'
         ],
     ];
@@ -48,29 +48,6 @@
             'name' => 'Restorations',
             'active' => request()->route()?->getName() === 'new.services.framing.restorations'
         ],
-    ];
-
-    $otherLinks = [
-        [
-            'href' => route('services.other.glass-cutting'),
-            'name' => 'Glass Cutting',
-            'active' => request()->route()?->getName() === 'services.other.glass-cutting'
-        ],
-        [
-            'href' => route('services.other.matboard-cutting'),
-            'name' => 'Matboard Cutting',
-            'active' => request()->route()?->getName() === 'services.other.matboard-cutting'
-        ],
-        [
-            'href' => route('services.other.ready-made'),
-            'name' => 'Ready Made',
-            'active' => request()->route()?->getName() === 'services.other.ready-made'
-        ],
-        [
-            'href' => route('services.other.framing-supplies'),
-            'name' => 'Framing Supplies',
-            'active' => request()->route()?->getName() === 'services.other.framing-supplies'
-        ]
     ];
 @endphp
 
@@ -130,13 +107,13 @@
         </div>
     </div>
 
-    <div class="inset-0 absolute z-50 hidden lg:flex" x-show="open" x-on:click="open = false">
-        <div class="mt-16 w-4/5 mx-auto shadow-2xl">
+    <div class="inset-0 absolute right-24 z-50 hidden lg:flex" x-show="open" x-on:click="open = false">
+        <div class="mt-20 w-fit ml-auto shadow-2xl">
             <div
-                class="bg-secondary-50 rounded-xl shadow-xl px-4 mx-auto mt-2 py-6 md:flex hidden max-w-7xl w-full"
+                class="bg-secondary-50 rounded-xl shadow-xl px-4 mx-auto py-6 md:flex hidden max-w-7xl w-full"
             >
                 <div class="flex w-full">
-                    <div class="grid grid-cols-3 gap-y-4 w-full border-gray-200">
+                    <div class="grid grid-cols-2 gap-y-4 w-full border-gray-200">
                         <div>
                             @foreach ($customLinks_1 as $link)
                                 <x-links.mega-menu-link
@@ -159,16 +136,13 @@
                                     {{ $link['name'] }}
                                 </x-links.mega-menu-link>
                             @endforeach
-                        </div>
-
-                        <div>
-                            <x-links.mega-menu-link
-                                href="{{route('new.services.other')}}"
-                                active="{{request()->route()?->getName() === 'new.services.other'}}"
-                                underline="link-underline-secondary"
-                            >
-                                Other
-                            </x-links.mega-menu-link>
+                                <x-links.mega-menu-link
+                                    href="{{route('new.services.other')}}"
+                                    active="{{request()->route()?->getName() === 'new.services.other'}}"
+                                    underline="link-underline-secondary"
+                                >
+                                    Other
+                                </x-links.mega-menu-link>
                         </div>
                     </div>
                 </div>
