@@ -9,7 +9,7 @@
                 class="object-cover h-64 object-center !rounded-none"
             />
 
-            <div class="absolute size-full inset-0 bg-black/50"></div>
+            <div class="absolute size-full inset-0 bg-black/30"></div>
         </div>
     </div>
 

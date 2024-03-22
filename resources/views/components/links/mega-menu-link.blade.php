@@ -3,5 +3,5 @@
     href="{{$href}}"
     class="{{ $active ? '!underline' : '' }}"
 >
-    <x-links.underline underline="link-underline-secondary"> {{ $slot }} </x-links.underline>
+    <x-links.underline underline="{{$underline}}"> {{ $slot }} </x-links.underline>
 </a>

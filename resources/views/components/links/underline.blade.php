@@ -1,4 +1,4 @@
-@props(['underline' => 'link-underline-black'])
+@props(['underline' => 'link-underline-white'])
 
 <span
     {{ $attributes->merge(['class' => 'link link-underline ' . $underline]) }}
@@ -16,7 +16,7 @@
         transition: background-size .5s ease-in-out;
     }
 
-    .link-underline-black {
+    .link-underline-white {
         background-image: linear-gradient(transparent, transparent), linear-gradient(#ffffff, #ffffff)
     }
 

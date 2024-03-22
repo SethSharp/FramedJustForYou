@@ -88,7 +88,7 @@
 
                             <x-cards.arch
                                 image="printing/printer.webp"
-                                title="Printing Services"
+                                title="Printing"
                                 alt="TODO"
                                 href="{{ route('services.printing') }}"
                             />
