@@ -78,25 +78,25 @@
 
                         <x-section.divider/>
 
-                        <div class="grid sm:grid-cols-2 md:grid-cols-3 w-3/4 mx-auto gap-4">
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:w-3/4 mx-auto gap-4">
                             <x-cards.arch
-                                image="framing/flinders.webp"
+                                src="framing/flinders.webp"
                                 title="Custom Framing"
-                                alt="TODO"
+                                alt="Custom Framing: Flinders Range"
                                 href="{{ route('services.framing') }}"
                             />
 
                             <x-cards.arch
-                                image="printing/printer.webp"
+                                src="printing/printer.webp"
                                 title="Printing & Canvas"
-                                alt="TODO"
+                                alt="Printing & Canvas: Advanced Printer"
                                 href="{{ route('services.printing') }}"
                             />
 
                             <x-cards.arch
-                                image="restorations/reprint-and-frame.webp"
-                                title="Restorations and Repairs"
-                                alt="TODO"
+                                src="restorations/reprint-and-frame.webp"
+                                title="Restorations & Repairs"
+                                alt="Restorations & Repairs: Restored wedding photo"
                                 href="{{ route('services.framing.restorations') }}"
                             />
                         </div>

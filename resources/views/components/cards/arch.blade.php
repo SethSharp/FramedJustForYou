@@ -1,19 +1,19 @@
-@props(['href', 'image', 'title', 'alt'])
+@props(['href', 'src', 'title', 'alt'])
 
-<a href="{{$href}}">
-    <div>
-        <div class="relative rounded-t-full h-64 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
-            <x-image
-                src="{{ $image }}"
-                alt="{{ $alt }}"
-                class="object-cover h-64 object-center !rounded-none"
-            />
+<a href="{{ $href }}" class="block w-full">
+    <div class="relative rounded-3xl h-64 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
+        <x-image
+            src="{{ $src }}"
+            alt="{{ $alt }}"
+            class="object-cover h-64 w-full rounded-none"
+        />
 
-            <div class="absolute size-full inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 flex flex-col justify-end">
+            <div class="bg-black/50">
+                <div class="text-white text-md text-center p-2">
+                    {{ $title }}
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="text-secondary-600 text-md text-center">
-        {{ $title }}
     </div>
 </a>
