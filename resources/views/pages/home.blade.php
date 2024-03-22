@@ -78,7 +78,7 @@
 
                         <x-section.divider/>
 
-                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 w-3/4 mx-auto gap-4">
                             <x-cards.arch
                                 image="framing/flinders.webp"
                                 title="Custom Framing"
@@ -88,18 +88,9 @@
 
                             <x-cards.arch
                                 image="printing/printer.webp"
-                                title="Printing"
+                                title="Printing & Canvas"
                                 alt="TODO"
                                 href="{{ route('services.printing') }}"
-                            />
-
-                            {{--   TODO: Canvases and updating the images here   --}}
-
-                            <x-cards.arch
-                                image="matboards/matboard-cutter.webp"
-                                title="Computerised Matboard Cutting"
-                                alt="TODO"
-                                href="{{ route('services.other.matboard-cutting') }}"
                             />
 
                             <x-cards.arch
@@ -108,6 +99,10 @@
                                 alt="TODO"
                                 href="{{ route('services.framing.restorations') }}"
                             />
+                        </div>
+
+                        <div class="text-secondary-500 text-center mt-6">
+                            and so much more...
                         </div>
                     </div>
                 </x-slot>
