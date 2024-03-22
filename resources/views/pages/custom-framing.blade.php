@@ -99,7 +99,7 @@
                             />
 
                             <x-cards.item
-                                image="jigsaw/giraffe.webp"
+                                src="jigsaw/giraffe.webp"
                                 alt="Completed Giraffe Jigsaw - not framed"
                                 title="Jigsaws"
                                 href="{{ route('new.services.framing.jigsaw') }}"

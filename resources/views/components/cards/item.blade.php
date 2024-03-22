@@ -1,12 +1,12 @@
-@props(['href', 'image', 'title', 'alt' => ''])
+@props(['href', 'src', 'title', 'alt' => ''])
 
 <a href="{{$href}}">
     <div>
         <div class="relative rounded-lg h-32 hover:opacity-75 transition duration-1000 border border-secondary-300 overflow-hidden">
             <x-image
-                src="{{ $image }}"
+                src="{{ $src }}"
                 alt="{{ $alt }}"
-                class="object-cover w-full h-full"
+                class="object-cover object-center h-32 w-full"
             />
 
             <div class="absolute inset-0 bg-black/25">
