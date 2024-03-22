@@ -3,9 +3,9 @@
         <div class="min-h-screen">
             <div class="grid lg:grid-cols-4 xl:grid-cols-4 gap-6">
                 <div>
-                    <h1 class="text-lg font-bold">Main Pages</h1>
+                    <h3 class="text-lg font-semibold text-secondary-800">Main Pages</h3>
 
-                    <ul class="list-inside ml-2">
+                    <ul class="list-inside">
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
                                href="{{route('new.home')}}">
@@ -21,7 +21,7 @@
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
                                href="{{route('new.custom-framing')}}">
-                                Custom Framing
+                                Framing
                             </a>
                         </li>
                         <li>
@@ -41,9 +41,9 @@
 
                 <!-- For /services/custom-framing parent route -->
                 <div>
-                    <h1 class="text-lg font-bold">Framing Services</h1>
+                    <h3 class="text-lg font-semibold text-secondary-800">Framing Services</h3>
 
-                    <ul class="list-inside ml-2">
+                    <ul class="list-inside">
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
                                href="{{route('new.services.framing.acrylic')}}">
@@ -68,11 +68,6 @@
                                 Jigsaws
                             </a>
                         </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul class="list-inside ml-2">
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
                                href="{{route('new.services.framing.medals-memorabilia')}}">

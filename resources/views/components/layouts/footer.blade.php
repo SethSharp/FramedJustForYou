@@ -13,28 +13,23 @@
                 <div>
                     <h6 class="text-md text-white font-bold"> Pages </h6>
                     <div>
-                        <x-links.footer-nav href="{{route('new.home')}}"
-                                            active="{{request()->route()?->getName() === 'new.home'}}">
+                        <x-links.footer-nav href="{{route('new.home')}}">
                             Home
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.about')}}"
-                                            active="{{request()->route()?->getName() === 'new.about'}}">
+                        <x-links.footer-nav href="{{route('new.about')}}">
                             About
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.custom-framing')}}"
-                                            active="{{request()->route()?->getName() === 'new.custom-framing'}}">
-                            Custom Framing
+                        <x-links.footer-nav href="{{route('new.custom-framing')}}">
+                            Framing
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.printing')}}"
-                                            active="{{request()->route()?->getName() === 'new.printing'}}">
+                        <x-links.footer-nav href="{{route('new.printing')}}">
                             Printing
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.contact')}}"
-                                            active="{{request()->route()?->getName() === 'new.contact'}}">
+                        <x-links.footer-nav href="{{route('new.contact')}}">
                             Contact
                         </x-links.footer-nav>
                     </div>
@@ -43,57 +38,39 @@
                 <div>
                     <h6 class="text-md text-white font-bold"> Services </h6>
                     <div>
-                        <x-links.footer-nav href="{{route('new.home')}}"
-                                            active="{{request()->route()?->getName() === 'new.home'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.acrylic')}}">
                             Acrylic
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.about')}}"
-                                            active="{{request()->route()?->getName() === 'new.about'}}">
-                            Australian Made
-                        </x-links.footer-nav>
-
-                        <x-links.footer-nav href="{{route('new.custom-framing')}}"
-                                            active="{{request()->route()?->getName() === 'new.custom-framing'}}">
-                            Canvas Stretching
-                        </x-links.footer-nav>
-
-                        <x-links.footer-nav href="{{route('new.printing')}}"
-                                            active="{{request()->route()?->getName() === 'new.printing'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.indigenous')}}">
                             Indigenous Art
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.contact')}}"
-                                            active="{{request()->route()?->getName() === 'new.contact'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.jigsaw')}}">
                             Jigsaws
+                        </x-links.footer-nav>
+
+                        <x-links.footer-nav href="{{route('new.services.framing.medals-memorabilia')}}">
+                            Medals & Memorabilia
                         </x-links.footer-nav>
                     </div>
                 </div>
 
                 <div>
                     <div>
-                        <x-links.footer-nav href="{{route('new.home')}}"
-                                            active="{{request()->route()?->getName() === 'new.home'}}">
-                            Medals & Memorabilia
+                        <x-links.footer-nav href="{{route('new.services.framing.mirror')}}">
+                            Mirror
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.about')}}"
-                                            active="{{request()->route()?->getName() === 'new.about'}}">
-                            Original Artwork
-                        </x-links.footer-nav>
-
-                        <x-links.footer-nav href="{{route('new.custom-framing')}}"
-                                            active="{{request()->route()?->getName() === 'new.custom-framing'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.prints-posters')}}">
                             Prints, Posters & Photos
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.printing')}}"
-                                            active="{{request()->route()?->getName() === 'new.printing'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.handcrafted')}}">
                             Hand Crafted Artwork
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.contact')}}"
-                                            active="{{request()->route()?->getName() === 'new.contact'}}">
+                        <x-links.footer-nav href="{{route('new.services.framing.restorations')}}">
                             Restorations
                         </x-links.footer-nav>
                     </div>
@@ -106,7 +83,7 @@
         <div class="text-sm flex text-gray-200 gap-x-6 my-auto">
             <p>&copy; 2023 Framed Just For You. All rights reserved.</p>
 
-            <a href="{{route('sitemap')}}"> sitemap</a>
+            <a href="{{route('new.sitemap')}}"> sitemap</a>
         </div>
 
         <div class="text-xs text-gray-200">
