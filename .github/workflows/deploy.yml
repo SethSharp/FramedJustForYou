@@ -15,7 +15,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.2'
           extensions: zip, sqlite3
           coverage: none
 
@@ -58,7 +58,7 @@ jobs:
           echo "CLOUDFRONT_URL=${{ secrets.CLOUDFRONT_URL }}" >> .env
           echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
           echo "GOOGLE_PLACE_ID=${{ secrets.GOOGLE_PLACE_ID }}" >> .env
-          
+
       - name: Build ZIP Deployment Package
         run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
 
