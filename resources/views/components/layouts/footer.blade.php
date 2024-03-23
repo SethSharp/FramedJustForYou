@@ -83,7 +83,7 @@
         <div class="text-sm flex text-gray-200 gap-x-6 my-auto">
             <p>&copy; 2023 Framed Just For You. All rights reserved.</p>
 
-            <a href="{{route('sitemap')}}"> sitemap</a>
+            <a href="{{route('sitemap')}}" class="hidden sm:flex"> sitemap</a>
         </div>
 
         <div class="text-xs text-gray-200">
