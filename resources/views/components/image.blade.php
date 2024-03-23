@@ -5,7 +5,7 @@
         src="{{ config('app.cloudfront_url') .'/images/' . $src }}"
         alt="{{ $alt }}"
         aria-label="{{ $alt }}"
-        {{ $attributes->merge(['class' => 'rounded-md']) }}
+        {{ $attributes->merge(['class' => 'rounded-md max-h-64']) }}
     />
 
     @if ($caption)
