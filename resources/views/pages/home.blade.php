@@ -173,12 +173,44 @@
                         </div>
 
                         <div class="flex justify-center mt-4">
-                            <a
+                            <x-links.other-secondary
                                 href="https://www.google.com/search?q=framed+just+for+you&rlz=1C1VDKB_enAU1092AU1092&oq=framed+just+for+you&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAuGK8BGMcBGIAEMgYIAhAjGCcyBwgDEAAYgAQyCAgEEAAYFhgeMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg80gEIMjY2M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x6b91104badf99849:0x5081ce9cf421fff2,1,,,,"
-                                class="p-2 border-2 rounded border-secondary-400 text-secondary-500 hover:border-transparent hover:text-secondary-100 hover:bg-secondary-400 transition duration-300"
                             >
                                 View All
-                            </a>
+                            </x-links.other-secondary>
+                        </div>
+                    </div>
+
+                    <div class="bg-secondary-50 rounded">
+                        <div class="lg:w-3/4 mx-auto p-2 md:p-8">
+                            <h4 class="text-xl text-secondary-700"> Let us turn your idea into reality!</h4>
+
+                            <p>
+                                We have a passion for framing and can't wait to work with you to build something amazing.
+                            </p>
+
+                            <div class="mt-4 gap-4 grid grid-cols-2 sm:grid-cols-3">
+                                <x-links.secondary href="{{ route('contact')  }}">
+                                    Contact Us
+                                </x-links.secondary>
+                                <x-links.primary href="{{ route('contact')  }}">
+                                    Custom Framing
+                                </x-links.primary>
+                                <x-links.primary href="{{ route('contact')  }}">
+                                    Printing
+                                </x-links.primary>
+                            </div>
+
+                            <x-section.divider />
+
+                            <div class="justify-center flex gap-4">
+                                <x-links.other-secondary href="{{ route('about')  }}">
+                                    Meet the team
+                                </x-links.other-secondary>
+                                <x-links.other-secondary href="{{ route('services.other')  }}">
+                                    Other Services
+                                </x-links.other-secondary>
+                            </div>
                         </div>
                     </div>
                 </x-slot>
