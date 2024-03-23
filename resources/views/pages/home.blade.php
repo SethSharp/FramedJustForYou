@@ -87,9 +87,9 @@
                             />
 
                             <x-cards.arch
-                                src="printing/printer.webp"
+                                src="canvas/tiger-canvas.webp"
                                 title="Printing & Canvas"
-                                alt="Printing & Canvas: Advanced Printer"
+                                alt="Printing & Canvas: Tiger on a canvas"
                                 href="{{ route('printing') }}"
                             />
 
