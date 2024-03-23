@@ -9,10 +9,22 @@
             </x-slot>
 
             <x-slot name="content">
-                Framing mirrors is something that can really transform your personal space and
-                reflect your character. Mirrors can be so bland so why not frame one? We can frame all sizes of mirrors
-                you have and can even order in one to your sze requirements - meaning we can provide a upfront quote of
-                the mirror as well!
+                <x-cards.image-content-left>
+                    <x-slot name="image">
+                        <x-image
+                            src="mirror/frame-bethany.webp"
+                            alt="A very large framed mirror"
+                            class="h-96 mx-auto"
+                        />
+                    </x-slot>
+
+                    <x-slot name="content">
+                        Framing mirrors is something that can really transform your personal space and
+                        reflect your character. Mirrors can be so bland so why not frame one? We can frame all sizes of mirrors
+                        you have and can even order in one to your sze requirements - meaning we can provide a upfront quote of
+                        the mirror as well!
+                    </x-slot>
+                </x-cards.image-content-left>
             </x-slot>
         </x-section.content>
     </x-section.wrapper>

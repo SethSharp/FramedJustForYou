@@ -5,7 +5,7 @@
         <x-image
             src="{{ $src }}"
             alt="{{ $alt }}"
-            class="object-cover h-64 w-full rounded-none"
+            class="object-cover object-center h-64 w-full rounded-none"
         />
 
         <div class="absolute inset-0 flex flex-col justify-end">

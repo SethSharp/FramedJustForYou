@@ -43,7 +43,7 @@
 
                 <x-slot name="image">
                     <x-image
-                        src="store/front.png"
+                        src="store/store-front-new.webp"
                         class="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
                         alt="Framed Just For You Team Photo"
                     />
@@ -146,7 +146,7 @@
 
                     <div class="mx-auto flex w-3/4">
                         <x-image
-                            src="store/gallery.png"
+                            src="store/gallery.webp"
                             class="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded"
                             alt="Framed Just For You Restored Gallery"
                         />

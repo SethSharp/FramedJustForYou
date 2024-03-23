@@ -113,7 +113,7 @@
                             />
 
                             <x-cards.item
-                                src="matboards/multiple-squares-and-circles.webp"
+                                src="mirror/small-mirror.webp"
                                 alt="Mirror Framed"
                                 title="Mirror"
                                 href="{{ route('new.services.framing.mirror') }}"
