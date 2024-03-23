@@ -2,7 +2,7 @@
     <div class="lg:flex w-full">
         <div class="w-1/2 lg:w-1/5 mx-6 mt-8">
             <div class="pt-8 lg:pt-0">
-                <a href="{{route('new.home')}}">
+                <a href="{{route('home')}}">
                     <x-app-logo class="w-1/4 sm:w-1/2 lg:w-full"/>
                 </a>
             </div>
@@ -13,23 +13,23 @@
                 <div>
                     <h6 class="text-md text-white font-bold"> Pages </h6>
                     <div>
-                        <x-links.footer-nav href="{{route('new.home')}}">
+                        <x-links.footer-nav href="{{route('home')}}">
                             Home
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.about')}}">
+                        <x-links.footer-nav href="{{route('about')}}">
                             About
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.custom-framing')}}">
+                        <x-links.footer-nav href="{{route('custom-framing')}}">
                             Framing
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.printing')}}">
+                        <x-links.footer-nav href="{{route('printing')}}">
                             Printing
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.contact')}}">
+                        <x-links.footer-nav href="{{route('contact')}}">
                             Contact
                         </x-links.footer-nav>
                     </div>
@@ -38,19 +38,19 @@
                 <div>
                     <h6 class="text-md text-white font-bold"> Services </h6>
                     <div>
-                        <x-links.footer-nav href="{{route('new.services.framing.acrylic')}}">
+                        <x-links.footer-nav href="{{route('services.framing.acrylic')}}">
                             Acrylic
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.indigenous')}}">
+                        <x-links.footer-nav href="{{route('services.framing.indigenous')}}">
                             Indigenous Art
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.jigsaw')}}">
+                        <x-links.footer-nav href="{{route('services.framing.jigsaw')}}">
                             Jigsaws
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.medals-memorabilia')}}">
+                        <x-links.footer-nav href="{{route('services.framing.medals-memorabilia')}}">
                             Medals & Memorabilia
                         </x-links.footer-nav>
                     </div>
@@ -58,19 +58,19 @@
 
                 <div>
                     <div>
-                        <x-links.footer-nav href="{{route('new.services.framing.mirror')}}">
+                        <x-links.footer-nav href="{{route('services.framing.mirror')}}">
                             Mirror
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.prints-posters')}}">
+                        <x-links.footer-nav href="{{route('services.framing.prints-posters')}}">
                             Prints, Posters & Photos
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.handcrafted')}}">
+                        <x-links.footer-nav href="{{route('services.framing.handcrafted')}}">
                             Hand Crafted Artwork
                         </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('new.services.framing.restorations')}}">
+                        <x-links.footer-nav href="{{route('services.framing.restorations')}}">
                             Restorations
                         </x-links.footer-nav>
                     </div>
@@ -83,7 +83,7 @@
         <div class="text-sm flex text-gray-200 gap-x-6 my-auto">
             <p>&copy; 2023 Framed Just For You. All rights reserved.</p>
 
-            <a href="{{route('new.sitemap')}}"> sitemap</a>
+            <a href="{{route('sitemap')}}"> sitemap</a>
         </div>
 
         <div class="text-xs text-gray-200">

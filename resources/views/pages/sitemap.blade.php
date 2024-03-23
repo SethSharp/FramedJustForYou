@@ -8,31 +8,31 @@
                     <ul class="list-inside">
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.home')}}">
+                               href="{{route('home')}}">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.about')}}">
+                               href="{{route('about')}}">
                                 About
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.custom-framing')}}">
+                               href="{{route('custom-framing')}}">
                                 Framing
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.printing')}}">
+                               href="{{route('printing')}}">
                                 Printing
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.contact')}}">
+                               href="{{route('contact')}}">
                                 Contact
                             </a>
                         </li>
@@ -46,61 +46,61 @@
                     <ul class="list-inside">
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.acrylic')}}">
+                               href="{{route('services.framing.acrylic')}}">
                                 Acrylic
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.canvas')}}">
+                               href="{{route('services.framing.canvas')}}">
                                 Canvas
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.indigenous')}}">
+                               href="{{route('services.framing.indigenous')}}">
                                 Indigenous Art
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.jigsaw')}}">
+                               href="{{route('services.framing.jigsaw')}}">
                                 Jigsaws
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.medals-memorabilia')}}">
+                               href="{{route('services.framing.medals-memorabilia')}}">
                                 Medals & Memorabilia
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.mirror')}}">
+                               href="{{route('services.framing.mirror')}}">
                                 Mirror
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.prints-posters')}}">
+                               href="{{route('services.framing.prints-posters')}}">
                                 Prints, Posters, and Photos
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.handcrafted')}}">
+                               href="{{route('services.framing.handcrafted')}}">
                                 Handcrafted
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.framing.restorations')}}">
+                               href="{{route('services.framing.restorations')}}">
                                 Restorations
                             </a>
                         </li>
                         <li>
                             <a class="text-primary-600 hover:text-primary-400 font-medium"
-                               href="{{route('new.services.other')}}">
+                               href="{{route('services.other')}}">
                                 Other
                             </a>
                         </li>

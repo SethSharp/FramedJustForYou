@@ -69,70 +69,70 @@
                                 src="acrylic/football.webp"
                                 alt="Football in case"
                                 title="Acrylic"
-                                href="{{ route('new.services.framing.acrylic') }}"
+                                href="{{ route('services.framing.acrylic') }}"
                             />
 
                             <x-cards.item
                                 src="canvas/tiger-canvas.webp"
                                 alt="Tiger painting on a rectangle canvas"
                                 title="Canvas"
-                                href="{{ route('new.services.framing.canvas') }}"
+                                href="{{ route('services.framing.canvas') }}"
                             />
 
                             <x-cards.item
                                 src="Indigenous/indigenous.webp"
                                 alt="Indigenous print"
                                 title="Indigenous Art"
-                                href="{{ route('new.services.framing.indigenous') }}"
+                                href="{{ route('services.framing.indigenous') }}"
                             />
 
                             <x-cards.item
                                 src="jigsaw/giraffe.webp"
                                 alt="Completed Giraffe Jigsaw - not framed"
                                 title="Jigsaws"
-                                href="{{ route('new.services.framing.jigsaw') }}"
+                                href="{{ route('services.framing.jigsaw') }}"
                             />
 
                             <x-cards.item
                                 src="matboards/gymnastics.webp"
                                 alt="Gymnastics frame with multiple cutouts for medals"
                                 title="Medals & Memorabilia"
-                                href="{{ route('new.services.framing.medals-memorabilia') }}"
+                                href="{{ route('services.framing.medals-memorabilia') }}"
                             />
 
                             <x-cards.item
                                 src="mirror/small-mirror.webp"
                                 alt="Mirror Framed"
                                 title="Mirror"
-                                href="{{ route('new.services.framing.mirror') }}"
+                                href="{{ route('services.framing.mirror') }}"
                             />
 
                             <x-cards.item
                                 src="prints-photos/picture-2.webp"
                                 alt="Print of a mother & child in the safari"
                                 title="Prints, Posters & Photos"
-                                href="{{ route('new.services.framing.prints-posters') }}"
+                                href="{{ route('services.framing.prints-posters') }}"
                             />
 
                             <x-cards.item
                                 src="handcrafted/pressed.webp"
                                 alt="Handcrafted piece of a person holding an umbrella with a light post & a couple in the background"
                                 title="Handcrafted"
-                                href="{{ route('new.services.framing.handcrafted') }}"
+                                href="{{ route('services.framing.handcrafted') }}"
                             />
 
                             <x-cards.item
                                 src="restorations/reprint-and-frame.webp"
                                 alt="Reprinted and Frame of a old wedding photo"
                                 title="Restorations"
-                                href="{{ route('new.services.framing.restorations') }}"
+                                href="{{ route('services.framing.restorations') }}"
                             />
 
                             <x-cards.item
                                 src="readyMade/graduation.webp"
                                 alt="Graduation frame"
                                 title="Other"
-                                href="{{ route('new.services.other') }}"
+                                href="{{ route('services.other') }}"
                             />
                         </div>
                     </div>

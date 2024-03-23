@@ -1,4 +1,4 @@
-<a href="{{route('new.home')}}">
+<a href="{{route('home')}}">
     <img
         src="{{ asset('images/logo.png') }}"
         alt="FramedJustForYou logo"

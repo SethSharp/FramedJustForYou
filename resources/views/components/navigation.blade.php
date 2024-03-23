@@ -16,29 +16,29 @@
                     <div class="hidden lg:block my-auto col-span-2">
                         <div class="flex gap-x-8 justify-end pr-8">
                             <x-links.nav
-                                href="{{route('new.home')}}"
-                                active="{{ request()->route()?->getName() === 'new.home' }}"
+                                href="{{route('home')}}"
+                                active="{{ request()->route()?->getName() === 'home' }}"
                             >
                                 Home
                             </x-links.nav>
 
                             <x-links.nav
-                                href="{{route('new.about')}}"
-                                active="{{ request()->route()?->getName() === 'new.about' }}"
+                                href="{{route('about')}}"
+                                active="{{ request()->route()?->getName() === 'about' }}"
                             >
                                 About
                             </x-links.nav>
 
                             <x-links.nav
-                                href="{{route('new.custom-framing')}}"
-                                active="{{ request()->route()?->getName() === 'new.custom-framing' }}"
+                                href="{{route('custom-framing')}}"
+                                active="{{ request()->route()?->getName() === 'custom-framing' }}"
                             >
                                 Framing
                             </x-links.nav>
 
                             <x-links.nav
-                                href="{{route('new.printing')}}"
-                                active="{{ request()->route()?->getName() === 'new.printing' }}"
+                                href="{{route('printing')}}"
+                                active="{{ request()->route()?->getName() === 'printing' }}"
                             >
                                 Printing
                             </x-links.nav>
@@ -46,7 +46,7 @@
                             <x-links.services-mega-menu/>
 
                             <a
-                                href="{{route('new.contact')}}"
+                                href="{{route('contact')}}"
                                 class="bg-primary-500 p-2 rounded text-white hover:bg-primary-700 transition"
                             >
                                 Contact
@@ -78,29 +78,29 @@
             <div class="border-t border-primary-700">
                 <div class="space-y-4 px-2 my-4">
                     <x-links.nav
-                        href="{{route('new.home')}}"
-                        active="{{ request()->route()?->getName() === 'new.home' }}"
+                        href="{{route('home')}}"
+                        active="{{ request()->route()?->getName() === 'home' }}"
                     >
                         Home
                     </x-links.nav>
 
                     <x-links.nav
-                        href="{{route('new.about')}}"
-                        active="{{ request()->route()?->getName() === 'new.about' }}"
+                        href="{{route('about')}}"
+                        active="{{ request()->route()?->getName() === 'about' }}"
                     >
                         About
                     </x-links.nav>
 
                     <x-links.nav
-                        href="{{route('new.custom-framing')}}"
-                        active="{{ request()->route()?->getName() === 'new.custom-framing' }}"
+                        href="{{route('custom-framing')}}"
+                        active="{{ request()->route()?->getName() === 'custom-framing' }}"
                     >
                         Framing
                     </x-links.nav>
 
                     <x-links.nav
-                        href="{{route('new.printing')}}"
-                        active="{{ request()->route()?->getName() === 'new.printing' }}"
+                        href="{{route('printing')}}"
+                        active="{{ request()->route()?->getName() === 'printing' }}"
                     >
                         Printing
                     </x-links.nav>
@@ -108,8 +108,8 @@
                     <x-links.services-mega-menu/>
 
                     <x-links.nav
-                        href="{{route('new.contact')}}"
-                        active="{{ request()->route()?->getName() === 'new.contact' }}"
+                        href="{{route('contact')}}"
+                        active="{{ request()->route()?->getName() === 'contact' }}"
                     >
                         Contact
                     </x-links.nav>

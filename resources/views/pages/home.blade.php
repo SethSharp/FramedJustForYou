@@ -83,14 +83,14 @@
                                 src="framing/flinders.webp"
                                 title="Custom Framing"
                                 alt="Custom Framing: Flinders Range"
-                                href="{{ route('services.framing') }}"
+                                href="{{ route('custom-framing') }}"
                             />
 
                             <x-cards.arch
                                 src="printing/printer.webp"
                                 title="Printing & Canvas"
                                 alt="Printing & Canvas: Advanced Printer"
-                                href="{{ route('services.printing') }}"
+                                href="{{ route('printing') }}"
                             />
 
                             <x-cards.arch
