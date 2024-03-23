@@ -19,7 +19,7 @@
                 impact of your paper treasures, creating timeless displays that tell your
                 story with elegance and flair.
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 w-3/4 mx-auto gap-6 my-8">
+                <div class="grid grid-cols-1 sm:grid-cols-3 sm:w-3/4 mx-auto gap-6 my-8">
                     <x-image
                         src="prints-photos/picture-2.webp"
                         alt="Print of a mother & child in the safari"

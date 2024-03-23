@@ -42,6 +42,10 @@
                             Acrylic
                         </x-links.footer-nav>
 
+                        <x-links.footer-nav href="{{route('services.framing.canvas')}}">
+                            Canvas
+                        </x-links.footer-nav>
+
                         <x-links.footer-nav href="{{route('services.framing.indigenous')}}">
                             Indigenous Art
                         </x-links.footer-nav>
@@ -49,31 +53,29 @@
                         <x-links.footer-nav href="{{route('services.framing.jigsaw')}}">
                             Jigsaws
                         </x-links.footer-nav>
-
-                        <x-links.footer-nav href="{{route('services.framing.medals-memorabilia')}}">
-                            Medals & Memorabilia
-                        </x-links.footer-nav>
                     </div>
                 </div>
 
                 <div>
-                    <div>
-                        <x-links.footer-nav href="{{route('services.framing.mirror')}}">
-                            Mirror
-                        </x-links.footer-nav>
+                    <x-links.footer-nav href="{{route('services.framing.medals-memorabilia')}}">
+                        Medals & Memorabilia
+                    </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('services.framing.prints-posters')}}">
-                            Prints, Posters & Photos
-                        </x-links.footer-nav>
+                    <x-links.footer-nav href="{{route('services.framing.mirror')}}">
+                        Mirror
+                    </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('services.framing.handcrafted')}}">
-                            Hand Crafted Artwork
-                        </x-links.footer-nav>
+                    <x-links.footer-nav href="{{route('services.framing.prints-posters')}}">
+                        Prints, Posters & Photos
+                    </x-links.footer-nav>
 
-                        <x-links.footer-nav href="{{route('services.framing.restorations')}}">
-                            Restorations
-                        </x-links.footer-nav>
-                    </div>
+                    <x-links.footer-nav href="{{route('services.framing.handcrafted')}}">
+                        Hand Crafted Artwork
+                    </x-links.footer-nav>
+
+                    <x-links.footer-nav href="{{route('services.framing.restorations')}}">
+                        Restorations
+                    </x-links.footer-nav>
                 </div>
             </div>
         </div>

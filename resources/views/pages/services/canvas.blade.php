@@ -50,8 +50,8 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    <div class="!bg-secondary-200 p-10 md:p-6">
-                        <p>
+                    <div class="!bg-secondary-200 text-center md:p-6">
+                        <p class="p-2 sm:p-0">
                             We offer multiple different ways to frame canvas's each with a select taste and style.
                         </p>
 
@@ -85,7 +85,7 @@
                             />
                         </div>
 
-                        <div class="text-secondary-500 text-center mt-6">
+                        <div class="text-secondary-500 text-center mt-6 p-2 sm:p-0">
                             Canvases can be framed in just about anything, these are just some things to take inspiration for.
                         </div>
                     </div>

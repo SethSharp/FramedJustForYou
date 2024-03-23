@@ -51,7 +51,6 @@
                             <x-image
                                 src="jigsaw/initial-stage.webp"
                                 alt="Step 1: Acquire and solve the jigsaw"
-                                class="h-96 mx-auto"
                             />
                         </x-slot>
 
@@ -71,7 +70,7 @@
                             <x-image
                                 src="jigsaw/frame.webp"
                                 alt="Step 2: Choose a frame"
-                                class="h-96 mx-auto"
+                                class="h-96"
                             />
                         </x-slot>
 
@@ -115,7 +114,7 @@
                             <x-image
                                 src="jigsaw/final-product.webp"
                                 alt="Step 4: The final product"
-                                class="h-96 mx-auto"
+                                class="h-96"
                             />
                         </x-slot>
 

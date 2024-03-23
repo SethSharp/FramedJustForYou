@@ -14,7 +14,6 @@
                         <x-image
                             src="handcrafted/pressed.webp"
                             alt="Handcrafted piece of a person holding an umbrella with a light post & a couple in the background"
-                            class="mx-auto"
                         />
                     </x-slot>
 

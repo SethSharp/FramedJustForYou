@@ -189,7 +189,7 @@
                                 We have a passion for framing and can't wait to work with you to build something amazing.
                             </p>
 
-                            <div class="mt-4 gap-4 grid grid-cols-2 sm:grid-cols-3">
+                            <div class="mt-4 gap-4 grid sm:grid-cols-3">
                                 <x-links.secondary href="{{ route('contact')  }}">
                                     Contact Us
                                 </x-links.secondary>
@@ -203,7 +203,7 @@
 
                             <x-section.divider />
 
-                            <div class="justify-center flex gap-4">
+                            <div class="gap-4 sm:w-3/4 md:w-1/2 mx-auto grid sm:grid-cols-2">
                                 <x-links.other-secondary href="{{ route('about')  }}">
                                     Meet the team
                                 </x-links.other-secondary>
