@@ -4,7 +4,7 @@
             <x-local-image
                 src="{{$member['src']}}"
                 alt="{{$member['alt']}}"
-                class="shadow mx-auto rounded-2xl overflow-hidden"
+                class="shadow mx-auto rounded-2xl overflow-hidden h-full"
             />
         @endif
     </div>

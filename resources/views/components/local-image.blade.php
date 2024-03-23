@@ -4,5 +4,5 @@
     src="{{ asset('/images') . $src }}"
     alt="{{ $alt }}"
     aria-label="{{ $alt }}"
-    {{ $attributes->merge(['class' => 'rounded-md']) }}
+    {{ $attributes->merge(['class' => 'rounded-md h-full']) }}
 />
