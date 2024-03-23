@@ -48,18 +48,6 @@
                             <x-section.whats-on-this-page :links="$links"/>
                         </div>
                     </div>
-
-                    <div>
-                        <x-headings.secondary> Australian Made</x-headings.secondary>
-
-                        <div>
-                            Experience the unmatched longevity of our frames, crafted exclusively with
-                            Australian-sourced materials. By supporting local artisans and harnessing
-                            the durability of native resources, we ensure that your frame becomes a
-                            timeless keepsake, built to last a lifetime. Beyond aesthetics, choosing one
-                            of our frames is an investment in quality and sustainability.
-                        </div>
-                    </div>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
