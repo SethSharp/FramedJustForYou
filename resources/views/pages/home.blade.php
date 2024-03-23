@@ -144,12 +144,14 @@
                     One of our most recent projects was restoring our gallery. This is the centerpiece of our store
                     showing off some awesome frames - these are also available for sale!
 
-                    <div class="mx-auto bg-red-500 mt-12 flex w-1/2">
+                    <div class="mx-auto mt-12 w-3/4 sm:w-1/2">
                         <x-image
                             src="store/gallery.webp"
+                            class="mx-auto"
                             alt="Framed Just For You Restored Gallery"
                         />
                     </div>
+
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>
