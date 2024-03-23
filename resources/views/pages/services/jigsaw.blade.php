@@ -120,7 +120,7 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            The result of this process ensures your framed jigsaw puzzle is fade
+                            The result of this process helps ensure your framed jigsaw is fade
                             resistant, preserved and easily maintained by simply wiping clean.
                         </x-slot>
                     </x-cards.image-content-right>

@@ -266,11 +266,7 @@
                             </h4>
 
                             <p class="mt-4">
-                                It all depends on your item, but please consider that this is more then just purchasing
-                                a product.
-                                We supply high quality materials and have our framers put it together by hand. So in the
-                                end it can be,
-                                but you get what you are paying for.
+                                Custom Framing is your choice, you are not subjected to abc items, you have a-z and more - so it depends on your selection of high quality materials that we stock.
                             </p>
                         </div>
 

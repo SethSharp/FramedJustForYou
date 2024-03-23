@@ -12,8 +12,9 @@
                 <x-slot name="content">
                     <p>
                         Have your canvases stretched on quality stretcher frames. All canvases are hand-stretched using
-                        stainless steel staples, using 100% Cotton, 12oz triple primed canvas, quality timber and
-                        stainless steel staples. We offer a full guarantee against warping and sagging.
+                        stainless steel staples, using 100% Indian Cotton, 12oz triple primed canvas, quality timber and
+                        stainless steel staples. We also offer cotton polyester blend smooth canvas and black canvas.
+                        *We offer a full guarantee against warping and sagging.
                     </p>
 
                     <x-cards.image-content-left>
@@ -66,7 +67,7 @@
                                 src="canvas/canvas-inset.webp"
                                 alt="Golf Ball display in example home space"
                                 class="h-full object-fit"
-                                caption="Place your canvas within an inset frame."
+                                caption="Place your canvas within an offset frame."
                             />
 
                             <x-image
@@ -80,8 +81,12 @@
                                 src="canvas/canvas-old.webp"
                                 alt="Golf Ball display in example home space"
                                 class="h-full object-fit"
-                                caption="Or we can fit a older style frame."
+                                caption="Or we can fit a vintage style frame."
                             />
+                        </div>
+
+                        <div class="text-secondary-500 text-center mt-6">
+                            Canvases can be framed in just about anything, these are just some things to take inspiration for.
                         </div>
                     </div>
                 </x-slot>
