@@ -9,7 +9,7 @@
         </div>
 
         <div class="w-full lg:w-4/5">
-            <div class="grid grid-cols-3 my-4">
+            <div class="grid grid-cols-3 my-4 mx-2">
                 <div>
                     <h6 class="text-md text-white font-bold"> Pages </h6>
                     <div>
