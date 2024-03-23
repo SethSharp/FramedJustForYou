@@ -144,10 +144,9 @@
                     One of our most recent projects was restoring our gallery. This is the centerpiece of our store
                     showing off some awesome frames - these are also available for sale!
 
-                    <div class="mx-auto flex w-3/4">
+                    <div class="mx-auto bg-red-500 mt-12 flex w-1/2">
                         <x-image
                             src="store/gallery.webp"
-                            class="object-cover mt-12 h-[200px] md:h-[500px] w-full border border-secondary-400 rounded"
                             alt="Framed Just For You Restored Gallery"
                         />
                     </div>
