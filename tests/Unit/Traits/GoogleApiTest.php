@@ -20,7 +20,9 @@ class GoogleApiTest extends TestCase
 
         $reviews = $this->getRecentReviews();
 
-        $this->assertEquals($this->getLocalReviews()['reviews'], $reviews);
+        $expected = collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
+        
+        $this->assertEquals($expected, $reviews);
     }
 
     /** @test */
