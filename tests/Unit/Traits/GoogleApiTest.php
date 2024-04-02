@@ -6,7 +6,6 @@ use Tests\TestCase;
 use App\Support\CacheKeys;
 use App\Support\Traits\GoogleApi;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Cache;
 
 class GoogleApiTest extends TestCase
 {
