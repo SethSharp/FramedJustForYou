@@ -45,6 +45,9 @@ jobs:
         run: |
           npm run build
 
+      - name: Run Tests
+        run: php artisan test
+
       - name: Production Optimisations
         run: |
           php artisan route:cache

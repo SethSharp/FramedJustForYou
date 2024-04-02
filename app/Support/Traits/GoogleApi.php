@@ -14,26 +14,10 @@ trait GoogleApi
             return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
         }
 
-        return cache()->remember(CacheKeys::googleReviews(), 24*60, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
+        return cache()->remember(CacheKeys::googleReviews(), (24 * 60) * 7, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
     }
 
-    protected function retrieveReviews(): array
-    {
-        $apiUrl = 'https://maps.googleapis.com/maps/api/place/details/json';
-
-        $queryParams = [
-            'place_id' => config('app.google_place_id'),
-            'fields' => 'reviews',
-            'reviews_sort' => 'newest',
-            'key' => config('app.google_api')
-        ];
-
-        $response = Http::get($apiUrl, $queryParams);
-
-        return $response->json()['result']['reviews'];
-    }
-
-    private function getLocalReviews(): array
+    protected function getLocalReviews(): array
     {
         return  [
             'reviews' => [
@@ -99,5 +83,25 @@ trait GoogleApi
                 ]
             ]
         ];
+    }
+
+    protected function retrieveReviews(): array
+    {
+        $apiUrl = 'https://maps.googleapis.com/maps/api/place/details/json';
+
+        $queryParams = [
+            'place_id' => config('app.google_place_id'),
+            'fields' => 'reviews',
+            'reviews_sort' => 'newest',
+            'key' => config('app.google_api')
+        ];
+
+        $response = Http::get($apiUrl, $queryParams);
+
+        if ($response->status() === 200) {
+            return $response->json()['result']['reviews'];
+        }
+
+        return $this->getLocalReviews()['reviews'];
     }
 }
