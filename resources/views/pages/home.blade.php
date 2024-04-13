@@ -193,10 +193,10 @@
                                 <x-links.secondary href="{{ route('contact')  }}">
                                     Contact Us
                                 </x-links.secondary>
-                                <x-links.primary href="{{ route('contact')  }}">
+                                <x-links.primary href="{{ route('custom-framing')  }}">
                                     Custom Framing
                                 </x-links.primary>
-                                <x-links.primary href="{{ route('contact')  }}">
+                                <x-links.primary href="{{ route('printing')  }}">
                                     Printing
                                 </x-links.primary>
                             </div>
