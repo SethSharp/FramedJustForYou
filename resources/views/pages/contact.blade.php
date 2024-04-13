@@ -42,6 +42,27 @@
                                     class="my-auto text-sm sm:text-base"> {{ config('framed.contact.email')  }} </span>
                             </li>
                         </ul>
+                        <div class="text-xs mt-4">
+                            <div class="flex space-x-4">
+                                <a
+                                    href="https://www.facebook.com/framedjustforyou/"
+                                    aria-label="Framed Just For You Facebook"
+                                    class="text-white cursor-pointer"
+                                >
+                                    <span class="sr-only"> Facebook </span>
+                                    <x-icons.socials.facebook class="!fill-primary-600"/>
+                                </a>
+
+                                <a
+                                    href="https://www.instagram.com/framedjust4u/"
+                                    aria-label="Framed Just For You Instagram"
+                                    class="text-white cursor-pointer"
+                                >
+                                    <span class="sr-only"> Instagram </span>
+                                    <x-icons.socials.instagram class="!fill-primary-600"/>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -58,7 +79,7 @@
                                 <span
                                     class="my-auto {{ $day === $time['value'] ? 'font-semibold text-lg' : ''  }}"> {{ $time['name'] }}</span>
                                 <div
-                                    class="text-secondary-700 bg-secondary-200 ml-2 p-1 rounded-lg {{ $day === $time['value'] ? 'font-semibold text-lg' : ''  }}">
+                                    class="text-secondary-700 bg-secondary-200 ml-2 text-sm my-auto p-1.5 rounded-lg {{ $day === $time['value'] ? 'font-semibold text-lg' : ''  }}">
                                     <p> {{ $time['time'] }} </p>
                                 </div>
                             </div>
