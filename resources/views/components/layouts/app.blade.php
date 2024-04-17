@@ -13,7 +13,7 @@
           content="{{config('framed.keywords')}}">
 
     <meta name="keywords"
-          content="@yield('keywords', '')">
+          content="@yield('keywords', 'gold coast framing, custom framing gold coast')">
 
     <meta name="description"
           content="@yield('description', config('framed.description'))">
