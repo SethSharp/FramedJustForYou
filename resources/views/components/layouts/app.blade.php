@@ -30,7 +30,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    @vite('resources/js/app.js')
+    @vite('resources/cs/app.css')
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="min-h-screen bg-secondary-100">
