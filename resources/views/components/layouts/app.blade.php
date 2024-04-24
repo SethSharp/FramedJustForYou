@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <!-- Meta -->
     <title>
         @yield('title', 'Framed Just For You')
     </title>
@@ -18,7 +17,6 @@
     <meta name="description"
           content="@yield('description', config('framed.description'))">
 
-    <!-- Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
