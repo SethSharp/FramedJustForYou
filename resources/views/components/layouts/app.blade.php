@@ -32,7 +32,7 @@
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="min-h-screen bg-secondary-100">
-    <x-banners.main/>
+    <x-banners.relay/>
 
     <div>
         <x-navigation/>

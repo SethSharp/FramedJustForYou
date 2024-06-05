@@ -36,6 +36,36 @@
 
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
+            <div class="text-center mb-12">
+                <h2 class="font-bold text-3xl">
+                    Relay For Life: 2024
+                </h2>
+
+                <div class="lg:w-1/2 mx-auto text-secondary-500">
+                    <div class="py-4">
+                        <p>
+                            Framed Just For You is excited to participate in Relay For Life this year! As a team, we've all been impacted by cancer in some way, and we're coming together to honor our loved ones who have been affected. This event is a powerful way to remember those we've lost, support those who are fighting, and celebrate those who have overcome cancer. Your support would mean the world to us! Join us in the fight against cancer!
+                        </p>
+
+                        <p class="font-semibold">
+                            To sponsor our team this year you can follow this QR code
+                        </p>
+                    </div>
+
+                    <x-local-image
+                        src="/relay-2024-qr-code.jpg"
+                        alt="QR code for our Relay for Life team in 2024"
+                        class="mx-auto mb-6"
+                    />
+
+                    <a href="https://www.relayforlife.org.au/fundraisers/framedjustforyou" class="bg-yellow-500 rounded px-2 py-4 text-[#0f1e64] font-semibold hover:text-white hover:bg-purple-600 transition">
+                      or click here
+                    </a>
+                </div>
+            </div>
+        </x-section.wrapper>
+
+        <x-section.wrapper>
             <x-cards.image-content-right>
                 <x-slot name="title">
                     Why Us?
