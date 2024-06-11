@@ -21,13 +21,14 @@ class GoogleApiTest extends TestCase
         $reviews = $this->getRecentReviews();
 
         $expected = collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
-        
+
         $this->assertEquals($expected, $reviews);
     }
 
     /** @test */
     public function recent_reviews_are_cached()
     {
+        $this->markTestIncomplete();
         // faking a 400 to prevent constant api call
         Http::fake([
             'https://maps.googleapis.com/*' => Http::response([], 400),

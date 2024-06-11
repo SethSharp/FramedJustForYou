@@ -10,11 +10,9 @@ trait GoogleApi
 {
     public function getRecentReviews(): Collection
     {
-        if (app()->environment('local')) {
-            return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
-        }
+        return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
 
-        return cache()->remember(CacheKeys::googleReviews(), (24 * 60) * 7, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
+//        return cache()->remember(CacheKeys::googleReviews(), (24 * 60) * 7, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
     }
 
     protected function getLocalReviews(): array
