@@ -15,6 +15,7 @@ class GoogleApiTest extends TestCase
     #[Attributes\Test]
     public function handles_a_non_200()
     {
+        // faking a 400 to prevent constant api call
         Http::fake([
             'https://maps.googleapis.com/*' => Http::response([], 400),
         ]);
