@@ -1,7 +1,8 @@
 @props(['href', 'src', 'title', 'alt'])
 
 <a href="{{ $href }}" class="block w-full">
-    <div class="relative rounded-3xl h-44 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
+    <div
+        class="relative rounded-3xl h-44 hover:scale-105 transition duration-500 border border-secondary-300 overflow-hidden">
         <x-image
             src="{{ $src }}"
             alt="{{ $alt }}"
@@ -14,6 +15,9 @@
                     {{ $title }}
                 </div>
             </div>
+        </div>
+
+        <div class="absolute inset-0 hover:bg-black/10 transition duration-500">
         </div>
     </div>
 </a>

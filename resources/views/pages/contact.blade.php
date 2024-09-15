@@ -9,10 +9,6 @@
                     <div class="h-full">
                         <x-headings.title> Get in touch</x-headings.title>
 
-                        <p class="text-secondary-400 font-medium text-sm sm:text-md mt-6">
-                            We would love to know about your enquiries
-                        </p>
-
                         <ul class="mt-6 text-secondary-600 space-y-6">
                             <li class="flex gap-1 sm:gap-4">
                                 <x-icons.store-front/>

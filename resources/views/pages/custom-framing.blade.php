@@ -30,15 +30,14 @@
                     <div class="lg:flex gap-4">
                         <div class="lg:w-3/5">
                             <b>Custom Picture Framing </b> has so many branches, lucky for you, we pretty much cover
-                            everything. From Jerseys, Medals
+                            everything. From Jerseys, Medals,
                             Posters and Photos. Right through to physical objects such as Footballs, golf balls and even
-                            shovels. Whatever means a lot to
-                            you, we can frame it!
+                            shovels - anything that has significant value to you we can frame it!
 
                             <br/>
                             <br/>
 
-                            At Framed Just For You, we specialize in custom framing that transforms your cherished
+                            At Framed Just For You, we specialise in custom framing that transforms your cherished
                             memories into timeless works of art.
                             Our expert craftsmen meticulously tailor each frame to suit your unique style and preserve
                             the essence of your precious moments.
@@ -254,7 +253,8 @@
                             </h4>
 
                             <p class="mt-4">
-                                Custom Framing is your choice, you are not subjected to abc items, you have a-z and more - so it depends on your selection of high quality materials that we stock.
+                                Custom Framing is your choice, you are not subjected to abc items, you have a-z and more
+                                - so it depends on your selection of high quality materials that we stock.
                             </p>
                         </div>
 

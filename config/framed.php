@@ -87,32 +87,32 @@ return [
         [
             'value' => 1,
             'name' => 'Monday',
-            'time' => '8:30-5:00',
+            'time' => '8:30am - 5:00pm',
         ],
         [
             'value' => 2,
             'name' => 'Tuesday',
-            'time' => '8:30-5:00',
+            'time' => '8:30am - 5:00pm',
         ],
         [
             'value' => 3,
             'name' => 'Wednesday',
-            'time' => '8:30-5:00',
+            'time' => '8:30am - 5:00pm',
         ],
         [
             'value' => 4,
             'name' => 'Thursday',
-            'time' => '8:30-5:00',
+            'time' => '8:30am - 5:00pm',
         ],
         [
             'value' => 5,
             'name' => 'Friday',
-            'time' => '8:30-5:00',
+            'time' => '8:30am - 5:00pm',
         ],
         [
             'value' => 6,
             'name' => 'Saturday',
-            'time' => '9:00-1:00',
+            'time' => '9:00am - 1:00pm',
         ]
     ],
 
