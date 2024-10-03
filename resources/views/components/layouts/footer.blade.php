@@ -11,7 +11,7 @@
         <div class="w-full lg:w-3/5">
             <div class="grid grid-cols-3 p-4">
                 <div>
-                    <h6 class="text-md text-white font-bold"> Pages </h6>
+                    <h6 class="text-lg text-white font-medium"> Pages </h6>
                     <div>
                         <x-links.footer-nav href="{{route('home')}}">
                             Home
@@ -36,7 +36,7 @@
                 </div>
 
                 <div>
-                    <h6 class="text-md text-white font-bold"> Services </h6>
+                    <h6 class="text-lg text-white font-medium"> Services </h6>
                     <div>
                         <x-links.footer-nav href="{{route('services.framing.acrylic')}}">
                             Acrylic
@@ -86,26 +86,24 @@
             {!! config('framed.copyright')  !!}
         </div>
 
-        <div class="text-xs text-gray-200">
-            <div class="flex space-x-4">
-                <a
-                    href="https://www.facebook.com/framedjustforyou/"
-                    aria-label="Framed Just For You Facebook"
-                    class="text-white cursor-pointer"
-                >
-                    <span class="sr-only"> Facebook </span>
-                    <x-icons.socials.facebook/>
-                </a>
+        <div class="flex space-x-4">
+            <a
+                href="https://www.facebook.com/framedjustforyou/"
+                aria-label="Framed Just For You Facebook"
+                class="text-white cursor-pointer"
+            >
+                <span class="sr-only"> Facebook </span>
+                <x-icons.socials.facebook/>
+            </a>
 
-                <a
-                    href="https://www.instagram.com/framedjust4u/"
-                    aria-label="Framed Just For You Instagram"
-                    class="text-white cursor-pointer"
-                >
-                    <span class="sr-only"> Instagram </span>
-                    <x-icons.socials.instagram/>
-                </a>
-            </div>
+            <a
+                href="https://www.instagram.com/framedjust4u/"
+                aria-label="Framed Just For You Instagram"
+                class="text-white cursor-pointer"
+            >
+                <span class="sr-only"> Instagram </span>
+                <x-icons.socials.instagram/>
+            </a>
         </div>
     </div>
 </footer>
