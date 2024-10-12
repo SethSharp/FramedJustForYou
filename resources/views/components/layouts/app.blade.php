@@ -31,14 +31,14 @@
     @vite('resources/css/app.css')
 </head>
 <body class="font-mont font-medium antialiased">
-<main class="min-h-screen bg-secondary-100">
+<main class="bg-secondary-100">
     <x-banners.main/>
 
     <div>
         <x-navigation/>
 
         <div class="z-20">
-            <div class="relative">
+            <div class="relative min-h-screen">
                 <header>
                     @yield('header')
                 </header>
