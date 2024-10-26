@@ -1,6 +1,9 @@
 name: Deployment
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deployment:
@@ -8,8 +11,6 @@ jobs:
     runs-on: ubuntu-22.04
 
     environment: production
-
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - uses: actions/checkout@v4
