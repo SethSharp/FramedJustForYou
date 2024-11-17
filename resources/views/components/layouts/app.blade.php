@@ -36,7 +36,7 @@
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="bg-secondary-100">
-    <x-banners.main/>
+    <x-banners.christmas/>
 
     <div>
         <x-navigation/>
