@@ -20,11 +20,13 @@
                         You goto for Custom Framing on the Gold Coast.
                     </div>
                     <div class="flex space-x-2">
-                        <a href="" target="_blank" class="text-gray-200 hover:text-gray-200">
+                        <a href="https://www.instagram.com/framedjust4u/" target="_blank"
+                           class="text-gray-200 hover:text-gray-200">
                             <span class="sr-only">Instagram</span>
                             <x-icons.socials.instagram/>
                         </a>
-                        <a href="" target="_blank" class="text-gray-200 hover:text-gray-200">
+                        <a href="https://www.facebook.com/framedjustforyou/" target="_blank"
+                           class="text-gray-200 hover:text-gray-200">
                             <span class="sr-only">Facebook</span>
                             <x-icons.socials.facebook/>
                         </a>
