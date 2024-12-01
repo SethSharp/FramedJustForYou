@@ -17,7 +17,7 @@
                         </a>
                     </div>
                     <div class="max-w-md pr-16 text-md text-gray-200">
-                        You goto for Custom Framing on the Gold Coast.
+                        Your goto for Custom Framing on the Gold Coast.
                     </div>
                     <div class="flex space-x-2">
                         <a href="https://www.instagram.com/framedjust4u/" target="_blank"
