@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'copyright' => '&copy; 1997-2024 Framed Just For You. All rights reserved.',
+    'copyright' => '&copy; 1997-2024 All rights reserved.',
 
     /*
     |--------------------------------------------------------------------------
