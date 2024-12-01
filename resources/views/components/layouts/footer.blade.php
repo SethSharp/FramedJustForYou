@@ -10,14 +10,14 @@
                                     <img src="{{ asset('images/christmas-logo.png') }}"
                                          alt="FramedJustForYou logo"
                                          aria-label="Application logo"
-                                         width="72" height="72" class="w-44">
+                                         width="72" height="72" class="w-64">
                                 </span>
                             </div>
 
                         </a>
                     </div>
                     <div class="max-w-md pr-16 text-md text-gray-200">
-                        Custom Framing - Your one-stop shop to frame anything.
+                        You goto for Custom Framing on the Gold Coast.
                     </div>
                     <div class="flex space-x-2">
                         <a href="" target="_blank" class="text-gray-200 hover:text-gray-200">
