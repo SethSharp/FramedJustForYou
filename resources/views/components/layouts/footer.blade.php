@@ -6,12 +6,17 @@
                     <div>
                         <a href="/">
                             <div class="flex items-center space-x-2 text-2xl font-medium">
-                                <span>
+                                @if (now()->month === 12)
                                     <img src="{{ asset('images/christmas-logo.png') }}"
                                          alt="FramedJustForYou logo"
                                          aria-label="Application logo"
                                          width="72" height="72" class="w-64">
-                                </span>
+                                @else
+                                    <img src="{{ asset('images/logo.png') }}"
+                                         alt="FramedJustForYou logo"
+                                         aria-label="Application logo"
+                                         width="72" height="72" class="w-64">
+                                @endif
                             </div>
 
                         </a>
