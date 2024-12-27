@@ -54,29 +54,27 @@
 <div
     x-data="{open: false}"
 >
-    <div x-on:click="open = !open" x-transition class="cursor-pointer text-white">
-        <div class="flex text-2xl md:text-xl mt-1.5">
-            <x-links.underline>
-                Services
-            </x-links.underline>
-
-            <div x-bind:class="{ 'rotate-180': open }" class="ml-0.5 transform duration-300">
+    <div x-on:click="open = !open" x-transition>
+        <span
+            class="text-white mt-1.5 flex text-lg cursor-pointer decoration-2 items-center hover:underline underline-offset-4"
+        >
+            Services
+            <div x-bind:class="{ 'rotate-180': open }" class="ml-0.5 mt-0.5 transform duration-300">
                 <x-icons.chevron-down/>
             </div>
-        </div>
+        </span>
     </div>
 
     {{--  Mobile  --}}
     <div class="flex lg:hidden" x-show="open" x-on:click="open = false">
-        <div class="flex w-full mx-4 md:mx-8">
+        <div class="flex w-full pl-2">
             <div class="grid sm:grid-cols-2 w-full border-gray-200">
                 <div>
                     @foreach ($customLinks_1 as $link)
                         <x-links.mega-menu-link
                             href="{{$link['href']}}"
                             active="{{$link['active']}}"
-                            class="!text-secondary-200"
-                            underline="link-underline-white"
+                            class="!text-secondary-200 !decoration-secondary-200"
                         >
                             {{ $link['name'] }}
                         </x-links.mega-menu-link>
@@ -88,8 +86,7 @@
                         <x-links.mega-menu-link
                             href="{{$link['href']}}"
                             active="{{$link['active']}}"
-                            class="!text-secondary-200"
-                            underline="link-underline-white"
+                            class="!text-secondary-200 !decoration-secondary-200"
                         >
                             {{ $link['name'] }}
                         </x-links.mega-menu-link>
@@ -97,8 +94,7 @@
                     <x-links.mega-menu-link
                         href="{{route('services.other')}}"
                         active="{{request()->route()?->getName() === 'services.other'}}"
-                        class="!text-secondary-200"
-                        underline="link-underline-white"
+                        class="!text-secondary-200 !decoration-secondary-200"
                     >
                         Other
                     </x-links.mega-menu-link>
@@ -108,9 +104,9 @@
     </div>
 
     <div class="inset-0 absolute right-24 z-50 hidden lg:flex" x-show="open" x-on:click="open = false">
-        <div class="mt-20 w-fit ml-auto shadow-2xl">
+        <div class="mt-16 w-fit ml-auto shadow-2xl">
             <div
-                class="bg-secondary-50 rounded-xl shadow-xl px-4 mx-auto py-6 md:flex hidden max-w-7xl w-full"
+                class="bg-secondary-50 rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full"
             >
                 <div class="flex w-full">
                     <div class="grid grid-cols-2 gap-y-4 w-full border-gray-200">
@@ -119,7 +115,6 @@
                                 <x-links.mega-menu-link
                                     href="{{$link['href']}}"
                                     active="{{$link['active']}}"
-                                    underline="link-underline-secondary"
                                 >
                                     {{ $link['name'] }}
                                 </x-links.mega-menu-link>
@@ -131,18 +126,16 @@
                                 <x-links.mega-menu-link
                                     href="{{$link['href']}}"
                                     active="{{$link['active']}}"
-                                    underline="link-underline-secondary"
                                 >
                                     {{ $link['name'] }}
                                 </x-links.mega-menu-link>
                             @endforeach
-                                <x-links.mega-menu-link
-                                    href="{{route('services.other')}}"
-                                    active="{{request()->route()?->getName() === 'services.other'}}"
-                                    underline="link-underline-secondary"
-                                >
-                                    Other
-                                </x-links.mega-menu-link>
+                            <x-links.mega-menu-link
+                                href="{{route('services.other')}}"
+                                active="{{request()->route()?->getName() === 'services.other'}}"
+                            >
+                                Other
+                            </x-links.mega-menu-link>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@
                 class="relative flex w-full items-center justify-between lg:border-b lg:border-primary-400 lg:border-opacity-25"
             >
                 <div class="grid grid-cols-3 w-full">
-                    <div class="w-52 md:w-72 col-span-1 p-4 px-6">
+                    <div class="w-52 md:w-72 col-span-1 px-2 pb-2">
                         <x-app-logo/>
                     </div>
 
@@ -47,7 +47,7 @@
 
                             <a
                                 href="{{route('contact')}}"
-                                class="bg-primary-500 p-2 rounded text-white hover:bg-primary-700 transition"
+                                class="bg-primary-600 p-2 rounded text-white hover:bg-primary-700 transition"
                             >
                                 Contact
                             </a>

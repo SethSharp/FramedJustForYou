@@ -1,7 +1,10 @@
 <a
-    {{ $attributes->merge(['class' => 'text-secondary-500 flex text-md my-4 items-center decoration-6 underline-offset-4 transition duration-300 ease-in-out ']) }}
+    {{
+        $attributes->merge([
+            'class' => 'text-secondary-500 flex text-md my-4 items-center hover:underline decoration-secondary-500 underline-offset-2 ' .  ($active ? '!underline' : '')
+        ])
+    }}
     href="{{$href}}"
-    class="{{ $active ? '!underline' : '' }}"
 >
-    <x-links.underline underline="{{$underline}}"> {{ $slot }} </x-links.underline>
+    {{ $slot }}
 </a>

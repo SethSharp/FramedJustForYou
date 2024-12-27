@@ -112,7 +112,7 @@ return [
         [
             'value' => 6,
             'name' => 'Saturday',
-            'time' => '9:00am - 1:00pm',
+            'time' => '9:00am - 4:00pm',
         ],
         [
             'value' => 7,
