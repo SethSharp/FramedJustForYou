@@ -55,8 +55,8 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            First step is to acquire a jigsaw and completing it. This can be any
-                            jigsaw you currently own or from the store for 10 bucks, we can make
+                            First step is to acquire & complete a jigsaw - how easy! This can be any
+                            jigsaw you currently own or a brand new one from the shops, we can make
                             any jigsaw look like a million dollars!
                         </x-slot>
                     </x-cards.image-content-left>
