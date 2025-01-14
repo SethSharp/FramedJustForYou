@@ -131,7 +131,7 @@
                 <ul class="my-2 space-y-2 list-disc list-inside">
                     <li>Canvas off the role</li>
                     <li>Matboards</li>
-                    <li>Glassing</li>
+                    <li>Glass</li>
                     <li>Hanging Systems</li>
                 </ul>
 
