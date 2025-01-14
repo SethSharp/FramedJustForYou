@@ -176,7 +176,7 @@ return [
 
     'pricing' => [
         'squareCanvas' => [
-            'title' => 'Squares Canvas',
+            'title' => 'Square Canvas',
             'headings' => ['Sizes', '', 'Pricing'],
             'data' => [
                 ['12"x12"', '30cmx30cm', '$100'],
@@ -202,7 +202,7 @@ return [
             ],
         ],
         'canvasRectangle' => [
-            'title' => 'Rectangles Canvas',
+            'title' => 'Rectangle Canvas',
             'headings' => ['Sizes', '', 'Pricing'],
             'data' => [
                 ['12"x16"', '30cmx40cm', '$100'],
