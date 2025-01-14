@@ -3,18 +3,18 @@
 
 <x-layouts.app>
     <x-section.wrapper>
-        <div class="bg-gradient-to-br from-white to-gray-200 rounded p-2">
-            <div class="md:flex gap-4 space-y-4 sm:p-8">
+        <div class="bg-gradient-to-br from-white to-gray-200 rounded p-1 sm:p-2">
+            <div class="md:flex gap-4 space-y-2 sm:space-y-0 sm:p-8">
                 <div class="md:w-1/2">
                     <div class="h-full">
                         <x-headings.title> Get in touch</x-headings.title>
 
-                        <ul class="mt-6 text-secondary-600 space-y-6">
-                            <li class="flex gap-1 sm:gap-4">
+                        <ul class="mt-6 text-sm sm:text-base text-secondary-600 space-y-6">
+                            <li class="flex gap-1 sm:gap-2">
                                 <x-icons.store-front/>
                                 <span class="my-auto"> {{ config('framed.address')  }} </span>
                             </li>
-                            <li class="flex gap-1 sm:gap-4">
+                            <li class="flex gap-1 sm:gap-2">
                                 <div class="flex my-auto">
                                     <x-icons.telephone/>
                                 </div>
@@ -22,7 +22,7 @@
                                     {{ config('framed.contact.telephone')  }}
                                 </span>
                             </li>
-                            <li class="flex gap-1 sm:gap-4">
+                            <li class="flex gap-1 sm:gap-2">
                                 <div class="flex my-auto">
                                     <x-icons.mobile/>
                                 </div>
@@ -30,42 +30,42 @@
                                     {{ config('framed.contact.mobile')  }}
                                 </span>
                             </li>
-                            <li class="flex gap-1 sm:gap-4">
+                            <li class="flex gap-1 sm:gap-2">
                                 <div class="flex my-auto">
                                     <x-icons.envelope/>
                                 </div>
                                 <span
                                     class="my-auto text-sm sm:text-base"> {{ config('framed.contact.email')  }} </span>
                             </li>
-                        </ul>
-                        <div class="text-xs mt-4">
-                            <div class="flex space-x-4">
-                                <a
-                                    href="https://www.facebook.com/framedjustforyou/"
-                                    aria-label="Framed Just For You Facebook"
-                                    class="text-white cursor-pointer"
-                                >
-                                    <span class="sr-only"> Facebook </span>
-                                    <x-icons.socials.facebook class="!fill-primary-600"/>
-                                </a>
+                            <li>
+                                <div class="flex gap-1">
+                                    <a
+                                        href="https://www.facebook.com/framedjustforyou/"
+                                        aria-label="Framed Just For You Facebook"
+                                        class="text-white cursor-pointer"
+                                    >
+                                        <span class="sr-only"> Facebook </span>
+                                        <x-icons.socials.facebook class="!fill-primary-600"/>
+                                    </a>
 
-                                <a
-                                    href="https://www.instagram.com/framedjust4u/"
-                                    aria-label="Framed Just For You Instagram"
-                                    class="text-white cursor-pointer"
-                                >
-                                    <span class="sr-only"> Instagram </span>
-                                    <x-icons.socials.instagram class="!fill-primary-600"/>
-                                </a>
-                            </div>
-                        </div>
+                                    <a
+                                        href="https://www.instagram.com/framedjust4u/"
+                                        aria-label="Framed Just For You Instagram"
+                                        class="text-white cursor-pointer"
+                                    >
+                                        <span class="sr-only"> Instagram </span>
+                                        <x-icons.socials.instagram class="!fill-primary-600"/>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="md:w-1.2">
+                <div class="md:w-1/2">
                     <x-headings.title> Opening Hours</x-headings.title>
 
-                    <div class="mt-5 space-y-3">
+                    <div class="mt-5 space-y-3 text-sm sm:text-base">
                         @foreach(config('framed.times') as $time)
                             @php
                                 $day = \Carbon\Carbon::now()->dayOfWeek;

@@ -188,6 +188,7 @@
                                     <li>Conservation Non reflective Glass 97% Non Fading</li>
                                     <li>Museum Glass</li>
                                     <li>Ultra-view</li>
+                                    <li>True Vue Classic Art Glass</li>
                                 </ul>
                             </x-slot>
                         </x-cards.image-content-right>
