@@ -132,7 +132,7 @@
                     <li>Canvas off the roll</li>
                     <li>Matboards</li>
                     <li>Glass</li>
-                    <li>Hanging Systems</li>
+                    <li>Artiteq Hanging Systems</li>
                 </ul>
 
                 Explore our comprehensive selection of framing essentials, offering
