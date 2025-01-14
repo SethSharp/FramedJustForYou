@@ -122,7 +122,7 @@
                             </ul>
                         </div>
                         <div class="mt-10 md:mt-0">
-                            <h3 class="text-md font-semibold leading-6 text-white">The Company</h3>
+                            <h3 class="text-md font-semibold leading-6 text-white">The Business</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
                                     <a href="{{route('about')}}"
