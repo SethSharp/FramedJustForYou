@@ -1,7 +1,7 @@
 @props(['breadcrumbs' => []])
 <div
 >
-    <div class="ml-20 text-gray-500 mt-8">
+    <div class="ml-2 md:ml-10 lg:ml-16 text-gray-500 mt-8">
         <x-breadcrumbs.breadcrumb>
             <x-breadcrumbs.breadcrumb-list>
                 @foreach($breadcrumbs as $index => $breadcrumb)

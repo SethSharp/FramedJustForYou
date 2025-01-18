@@ -8,7 +8,7 @@
             'href' => route('custom-framing')
         ],
         [
-            'name' => 'Canvas',
+            'name' => 'Canvases',
             'href' => route('services.framing.canvas')
         ]
     ];
