@@ -29,6 +29,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     @vite('resources/css/app.css')
+
+    <script src="{{ asset('js/analytics.js') }}"></script>
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="bg-secondary-100">
@@ -52,5 +54,7 @@
         </div>
     </div>
 </main>
+
+<script src="{{ asset('js/webchat.js') }}"></script>
 </body>
 </html>
