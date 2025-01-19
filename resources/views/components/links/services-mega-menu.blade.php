@@ -52,9 +52,10 @@
 @endphp
 
 <div
+    x-on:mouseleave="open = false"
     x-data="{open: false}"
 >
-    <div x-on:click="open = !open" x-transition>
+    <div x-on:click="open = !open" x-on:mouseenter="open = true">
         <span
             class="text-white mt-1.5 flex text-lg cursor-pointer decoration-2 items-center hover:underline underline-offset-4"
         >
@@ -103,8 +104,9 @@
         </div>
     </div>
 
-    <div class="inset-0 absolute right-24 z-50 hidden lg:flex" x-show="open" x-on:click="open = false">
-        <div class="mt-16 w-fit ml-auto shadow-2xl">
+    <div class=" absolute right-24 z-50 hidden bg-red-500 lg:flex" x-show="open"
+         x-on:click="open = false">
+        <div class="w-fit ml-auto shadow-2xl">
             <div
                 class="bg-secondary-50 rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full"
             >
