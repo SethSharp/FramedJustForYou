@@ -33,7 +33,7 @@
                                 href="{{route('custom-framing')}}"
                                 active="{{ request()->route()?->getName() === 'custom-framing' }}"
                             >
-                                Framing
+                                Custom Framing
                             </x-links.nav>
 
                             <x-links.nav
