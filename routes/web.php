@@ -21,6 +21,7 @@ Route::get('/custom-framing', fn () => view('pages/custom-framing'))->name('cust
 Route::get('/printing', fn () => view('pages/printing'))->name('printing');
 Route::get('/contact', fn () => view('pages/contact'))->name('contact');
 Route::get('/sitemap', fn () => view('pages/sitemap'))->name('sitemap');
+Route::get('/privacy-policy', fn () => view('pages/privacy'))->name('privacy-policy');
 
 Route::prefix('/services')->name('services.')->group(function () {
     Route::prefix('/custom-framing')->name('framing.')->group(function () {
@@ -40,7 +41,8 @@ Route::prefix('/services')->name('services.')->group(function () {
         Route::get('/canvas', fn () => view('pages/services/canvas'))->name('canvas');
         Route::get('/indigenous', fn () => view('pages/services/indigenous'))->name('indigenous');
         Route::get('/jigsaw', fn () => view('pages/services/jigsaw'))->name('jigsaw');
-        Route::get('/medals-and-memorabilia', fn () => view('pages/services/medals-and-memorabilia'))->name('medals-memorabilia');
+        Route::get('/medals-and-memorabilia',
+            fn () => view('pages/services/medals-and-memorabilia'))->name('medals-memorabilia');
         Route::get('/mirror', fn () => view('pages/services/mirror'))->name('mirror');
         Route::get('/prints-posters', fn () => view('pages/services/prints-posters'))->name('prints-posters');
         Route::get('/handcrafted', fn () => view('pages/services/handcrafted'))->name('handcrafted');
