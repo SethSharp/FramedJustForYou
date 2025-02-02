@@ -136,6 +136,12 @@
                                         Contact us
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{route('privacy-policy')}}"
+                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                        Privacy Policy
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
