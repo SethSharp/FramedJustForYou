@@ -1,4 +1,4 @@
-name: Deployment
+name: Deploy
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
+          php-version: '8.3'
           extensions: zip, sqlite3
           coverage: none
 
@@ -52,7 +52,7 @@ jobs:
         run: ./vendor/bin/phpunit
 
       - name: Deploy to Laravel Cloud
-        if: success() && github.ref == 'refs/heads/main'
+        if: success()
         run: |
-            curl -X POST ${{ secrets.CLOUD_DEPLOY_HOOK }} \
-            -H "Content-Type: application/json" \
+          curl -X POST ${{ secrets.CLOUD_DEPLOY_HOOK }} \
+          -H "Content-Type: application/json" \
