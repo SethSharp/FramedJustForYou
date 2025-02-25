@@ -51,25 +51,25 @@ jobs:
       - name: Run Tests
         run: ./vendor/bin/phpunit
 
-      - name: Echo information to .env
-        if: github.ref == 'refs/heads/main'
-        run: |
-          echo "APP_ENV=production" >> .env
-          echo "CLOUDFRONT_URL=${{ secrets.CLOUDFRONT_URL }}" >> .env
-          echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
-          echo "GOOGLE_PLACE_ID=${{ secrets.GOOGLE_PLACE_ID }}" >> .env
-
-      - name: Build ZIP Deployment Package
-        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
-
-      - name: Deploy to Elastic Beanstalk
-        uses: einaregilsson/beanstalk-deploy@v22
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: "FramedJust4You"
-          environment_name: FramedJust4You-env
-          existing_bucket_name: ${{ secrets.AWS_BUCKET_NAME }}
-          region: ap-southeast-2
-          version_label: ${{ github.sha }}
-          deployment_package: deploy.zip
+#      - name: Echo information to .env
+#        if: github.ref == 'refs/heads/main'
+#        run: |
+#          echo "APP_ENV=production" >> .env
+#          echo "CLOUDFRONT_URL=${{ secrets.CLOUDFRONT_URL }}" >> .env
+#          echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
+#          echo "GOOGLE_PLACE_ID=${{ secrets.GOOGLE_PLACE_ID }}" >> .env
+#
+##      - name: Build ZIP Deployment Package
+##        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
+##
+##      - name: Deploy to Elastic Beanstalk
+##        uses: einaregilsson/beanstalk-deploy@v22
+##        with:
+##          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+##          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+##          application_name: "FramedJust4You"
+##          environment_name: FramedJust4You-env
+##          existing_bucket_name: ${{ secrets.AWS_BUCKET_NAME }}
+##          region: ap-southeast-2
+##          version_label: ${{ github.sha }}
+##          deployment_package: deploy.zip
