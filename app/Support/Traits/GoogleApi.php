@@ -10,16 +10,17 @@ trait GoogleApi
 {
     public function getRecentReviews(): Collection
     {
-        if (app()->environment('local') || is_null(config('app.google_place_id'))) {
+        if (app()->environment('local')) {
             return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
         }
 
-        return cache()->remember(CacheKeys::googleReviews(), (24 * 60) * 7, fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
+        return cache()->remember(CacheKeys::googleReviews(), (24 * 60) * 7,
+            fn () => collect($this->retrieveReviews())->sortByDesc('rating')->take(3)->values());
     }
 
     protected function getLocalReviews(): array
     {
-        return  [
+        return [
             'reviews' => [
                 [
                     "author_name" => "Tony Sowter",
@@ -28,7 +29,7 @@ trait GoogleApi
                     "original_language" => "en",
                     "profile_photo_url" => "https://lh3.googleusercontent.com/a/ACg8ocLH20OM3TGkVCoqppDBrbBe1JTwt18WbsAjfCV82amI=s128-c0x00000000-cc-rp-mo",
                     "rating" => 5,
-                     "relative_time_description" => "2 months ago",
+                    "relative_time_description" => "2 months ago",
                     "text" => "Great service and very friendly. Nice fish also.",
                     "time" => 1702885837,
                     "translated" => false
