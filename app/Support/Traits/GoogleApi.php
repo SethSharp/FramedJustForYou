@@ -10,7 +10,7 @@ trait GoogleApi
 {
     public function getRecentReviews(): Collection
     {
-        if (app()->environment('local')) {
+        if (app()->environment('local') || is_null(config('app.google_place_id'))) {
             return collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
         }
 
