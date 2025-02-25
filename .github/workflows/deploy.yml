@@ -1,55 +1,55 @@
-name: Deployment
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deployment:
-
-    runs-on: ubuntu-22.04
-
-    environment: production
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          extensions: zip, sqlite3
-          coverage: none
-
-      - name: Check composer compatability
-        run: composer check-platform-reqs
-
-      - name: Install composer dependencies
-        run: composer install --no-cache --no-ansi --no-interaction --no-progress
-        env:
-          APP_URL: https://www.framedjustforyou.com.au
-
-      - name: Install node dependencies
-        run: npm ci
-
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Copy .env
-        run: php -r "file_exists('.env') || copy('.env.production.example', '.env');"
-
-      - name: Generate key
-        run: php artisan key:generate
-
-      - name: Build frontend
-        run: |
-          npm run build
-
-      - name: Run Tests
-        run: ./vendor/bin/phpunit
+#name: Deployment
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#jobs:
+#  deployment:
+#
+#    runs-on: ubuntu-22.04
+#
+#    environment: production
+#
+#    steps:
+#      - uses: actions/checkout@v4
+#
+#      - name: Setup PHP
+#        uses: shivammathur/setup-php@v2
+#        with:
+#          php-version: '8.3'
+#          extensions: zip, sqlite3
+#          coverage: none
+#
+#      - name: Check composer compatability
+#        run: composer check-platform-reqs
+#
+#      - name: Install composer dependencies
+#        run: composer install --no-cache --no-ansi --no-interaction --no-progress
+#        env:
+#          APP_URL: https://www.framedjustforyou.com.au
+#
+#      - name: Install node dependencies
+#        run: npm ci
+#
+#      - name: Setup node
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: 20
+#
+#      - name: Copy .env
+#        run: php -r "file_exists('.env') || copy('.env.production.example', '.env');"
+#
+#      - name: Generate key
+#        run: php artisan key:generate
+#
+#      - name: Build frontend
+#        run: |
+#          npm run build
+#
+#      - name: Run Tests
+#        run: ./vendor/bin/phpunit
 
 #      - name: Echo information to .env
 #        if: github.ref == 'refs/heads/main'
