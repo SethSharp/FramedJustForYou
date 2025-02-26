@@ -1,29 +1,24 @@
-name: Deployment
+name: Deploy
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deployment:
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
-    env:
-      DB_DATABASE: testing
-      DB_USER: root
-      DB_PASSWORD: root
+    environment: production
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up MySQL
-        run: |
-          sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }}
+      - uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.3'
           extensions: zip, sqlite3
           coverage: none
 
@@ -39,20 +34,11 @@ jobs:
         run: npm ci
 
       - name: Setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
 
-      - name: Copy standard .env
-        if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/develop'
-        run: php -r "file_exists('.env') || copy('.env.production.example', '.env');"
-
-      - name: Copy staging example .env
-        if: github.ref == 'refs/heads/develop'
-        run: php -r "file_exists('.env') || copy('.env.staging.example', '.env');"
-
-      - name: Copy production .env
-        if: github.ref == 'refs/heads/main'
+      - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.production.example', '.env');"
 
       - name: Generate key
@@ -62,53 +48,11 @@ jobs:
         run: |
           npm run build
 
-      - name: Execute tests
-        env:
-          DB_USERNAME: root
-          DB_PASSWORD: root
-        run: php artisan test
+      - name: Run Tests
+        run: ./vendor/bin/phpunit
 
-      - name: Echo information to env
-        if: github.ref == 'refs/heads/develop'
+      - name: Deploy to Laravel Cloud
+        if: success()
         run: |
-          echo "DB_HOST=${{ secrets.STAGING_DB_HOST}}" >> .env
-          echo "DB_DATABASE=${{ secrets.STAGING_DB_DATABASE}}" >> .env
-          echo "DB_USERNAME=${{ secrets.STAGING_DB_USERNAME}}" >> .env
-          echo "DB_PASSWORD=${{ secrets.STAGING_DB_PASSWORD}}" >> .env
-          echo "AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}" >> .env
-          echo "AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> .env
-
-      - name: Build ZIP Deployment Package
-        if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
-        run: zip -r deploy.zip ./ -x "node_modules/*" -x "vendor/*" -x "tests/*"
-
-      - name: Deploy to Staging Environment
-        if: github.ref == 'refs/heads/develop'
-        uses: einaregilsson/beanstalk-deploy@v18
-        with:
-          aws_access_key: ${{ secrets.STAGING_AWS_ACCESS_KEY }}
-          aws_secret_key: ${{ secrets.STAGING_AWS_SECRET_KEY }}
-          application_name: "FramedJustForYou"
-          environment_name: FramedJustForYou-env
-          existing_bucket_name: ${{ secrets.STAGING_AWS_BUCKET_NAME }}
-          region: ap-southeast-2
-          version_label: ${{ github.sha }}
-          deployment_package: deploy.zip
-
-      - name: Notify Slack
-        if: github.ref == 'refs/heads/develop'
-        run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Staging has been updated!"}' https://hooks.slack.com/services/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
-
-      - name: Deploy to Production Environment
-        if: github.ref == 'refs/heads/main'
-        uses: einaregilsson/beanstalk-deploy@v18
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: "FramedJust4You"
-          environment_name: FramedJust4You-env
-          existing_bucket_name: ${{ secrets.AWS_BUCKET_NAME }}
-          region: ap-southeast-2
-          version_label: ${{ github.sha }}
-          deployment_package: deploy.zip
+          curl -X POST ${{ secrets.CLOUD_DEPLOY_HOOK }} \
+          -H "Content-Type: application/json" \

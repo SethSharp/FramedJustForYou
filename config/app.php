@@ -20,6 +20,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Google API
+    |--------------------------------------------------------------------------
+    |
+    | Defines the Google information for the API and the Place ID of Framed
+    | Just For You within Googles systems.
+    |
+    */
+
+    'google_api' => env('GOOGLE_API_KEY'),
+    'google_place_id' => env('GOOGLE_PLACE_ID'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
@@ -42,7 +55,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -59,6 +72,8 @@ return [
 
     'asset_url' => env('ASSET_URL'),
 
+    'cloudfront_url' => env('CLOUDFRONT_URL'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -70,7 +85,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Australia/Brisbane',
 
     /*
     |--------------------------------------------------------------------------

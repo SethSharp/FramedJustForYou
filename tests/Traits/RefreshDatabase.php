@@ -12,13 +12,14 @@ trait RefreshDatabase
 
     public function refreshTestDatabase(): void
     {
-        if (! RefreshDatabaseState::$migrated) {
+        if (!RefreshDatabaseState::$migrated) {
             $this->artisan('migrate:fresh', ['--path' => 'database/migrations']);
 
             $this->app[Kernel::class]->setArtisan(null);
 
             RefreshDatabaseState::$migrated = true;
         }
+        
         $this->beginDatabaseTransaction();
     }
 }

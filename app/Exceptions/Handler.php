@@ -2,8 +2,9 @@
 
 namespace App\Exceptions;
 
-use Throwable;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Inertia\Inertia;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -26,5 +27,16 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    public function render($request, Throwable $e)
+    {
+        $response = parent::render($request, $e);
+        $status = $response->status();
+
+        return match ($status) {
+            404 => response()->view('errors.404', [], 404),
+            default => $response
+        };
     }
 }
