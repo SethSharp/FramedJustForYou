@@ -104,7 +104,7 @@
         </div>
     </div>
 
-    <div class=" absolute right-24 z-50 hidden bg-red-500 lg:flex" x-show="open"
+    <div class=" absolute right-24 z-50 hidden lg:flex" x-show="open"
          x-on:click="open = false">
         <div class="w-fit ml-auto shadow-2xl">
             <div
