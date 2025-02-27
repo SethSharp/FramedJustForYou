@@ -12,7 +12,7 @@
                 <x-slot name="content">
                     <x-cards.image-content-left>
                         <x-slot name="image">
-                            <x-local-image
+                            <x-image
                                 src="/printing/printer.webp"
                                 class="object-cover h-[200px] md:h-[350px] hover:scale-105 transition duration-1000 w-full border-4 border-secondary-100 rounded"
                                 alt="Our Specialised printer, printing a background for a frame."

@@ -115,19 +115,22 @@
                             <x-image
                                 src="/matboards/multiple-squares-and-circles.webp"
                                 alt="2 Rows of 6 cut outs, side by side"
-                                class="h-auto objecct-cover object-center"
+                                class="h-auto object-cover object-center"
+                                loading="lazy"
                             />
 
                             <x-image
                                 src="/matboards/shape-red.webp"
                                 alt="Corner square shapes with a internal mat"
-                                class="h-auto objecct-cover object-center"
+                                class="h-auto object-cover object-center"
+                                loading="lazy"
                             />
 
                             <x-image
                                 src="/matboards/tools.webp"
                                 alt="3 different sized cutouts holding different items"
-                                class="h-auto objecct-cover object-center"
+                                class="h-auto object-cover object-center"
+                                loading="lazy"
                             />
                         </div>
                     </x-slot>

@@ -88,6 +88,7 @@
                                 title="Custom Framing"
                                 alt="Custom Framing: Flinders Range"
                                 href="{{ route('custom-framing') }}"
+                                loading="lazy"
                             />
 
                             <x-cards.arch
@@ -95,6 +96,7 @@
                                 title="Printing & Canvas"
                                 alt="Printing & Canvas: Tiger on a canvas"
                                 href="{{ route('printing') }}"
+                                loading="lazy"
                             />
 
                             <x-cards.arch
@@ -102,6 +104,7 @@
                                 title="Restorations & Repairs"
                                 alt="Restorations & Repairs: Restored wedding photo"
                                 href="{{ route('services.framing.restorations') }}"
+                                loading="lazy"
                             />
                         </div>
 
@@ -123,6 +126,7 @@
                             src="/store/front.png"
                             class="object-cover w-full border-4 border-secondary-100 rounded"
                             alt="Inside Framed Just For You"
+                            loading="lazy"
                         />
                     </x-slot>
 
@@ -187,6 +191,7 @@
                             src="/store/gallery.webp"
                             class="mx-auto"
                             alt="Framed Just For You Restored Gallery"
+                            loading="lazy"
                         />
                     </div>
 

@@ -78,6 +78,7 @@
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="Hang a standard canvas."
+                                    loading="lazy"
                                 />
 
                                 <x-image
@@ -85,6 +86,7 @@
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="Place your canvas within an offset frame."
+                                    loading="lazy"
                                 />
 
                                 <x-image
@@ -92,6 +94,7 @@
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="We can fit a standard frame as well."
+                                    loading="lazy"
                                 />
 
                                 <x-image
@@ -99,6 +102,7 @@
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="Or we can fit a vintage style frame."
+                                    loading="lazy"
                                 />
                             </div>
 

@@ -133,6 +133,7 @@
                                         src="/jigsaw/final-product.webp"
                                         alt="Step 4: The final product"
                                         class="h-96"
+                                        loading="lazy"
                                     />
                                 </x-slot>
 

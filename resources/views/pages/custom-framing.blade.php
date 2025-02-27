@@ -158,6 +158,7 @@
                                     src="/framing/selection.webp"
                                     alt="Over 1000 frames to choose from"
                                     class="h-96 mx-auto"
+                                    loading="lazy"
                                 />
                             </x-slot>
 
@@ -175,6 +176,7 @@
                                 <x-image
                                     src="/framing/glassChoices.webp"
                                     alt="The difference between clear and ultra vue glass"
+                                    loading="lazy"
                                 />
                             </x-slot>
 
@@ -198,6 +200,7 @@
                                 <x-image
                                     src="/framing/matboards.webp"
                                     alt="our massive selection of matboards"
+                                    loading="lazy"
                                 />
                             </x-slot>
 
@@ -213,6 +216,7 @@
                                 <x-image
                                     src="/framing/framing.webp"
                                     alt="more of our huge range of frames"
+                                    loading="lazy"
                                 />
                             </x-slot>
 
@@ -239,7 +243,7 @@
                     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="p-4 text-center">
                             <h4 class="text-black font-semibold">
-                                Much much does Custom Framing cost?
+                                How much does Custom Framing cost?
                             </h4>
 
                             <p class="mt-4">

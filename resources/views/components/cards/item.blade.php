@@ -1,4 +1,4 @@
-@props(['href', 'src', 'title', 'alt'])
+@props(['href', 'src', 'title', 'alt', 'loading' => 'eager'])
 
 <a href="{{ $href }}" class="block w-full">
     <div
@@ -6,6 +6,7 @@
         <x-image
             src="{{ $src }}"
             alt="{{ $alt }}"
+            loading="{{ $loading }}"
             class="object-cover object-center h-64 w-full rounded-none"
         />
 
