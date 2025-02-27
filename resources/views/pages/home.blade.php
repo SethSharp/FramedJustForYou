@@ -3,7 +3,7 @@
         <div class="relative z-20">
             <x-image
                 src="/store/store-front-right.webp"
-                class="object-cover min-h-[300px] sm:min-h-[400px] w-full"
+                class="object-cover min-h-[300px] sm:min-h-[400px] md:min-h-[500px] w-full"
                 alt="Store Front Image"
             />
             <div class="absolute inset-0 bg-black/75">
