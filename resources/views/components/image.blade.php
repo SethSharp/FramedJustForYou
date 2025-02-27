@@ -6,7 +6,7 @@
         alt="{{ $alt }}"
         aria-label="{{ $alt }}"
         loading="{{ $loading }}"
-        {{ $attributes->merge(['class' => 'rounded-md max-h-64 mx-auto']) }}
+        {{ $attributes->merge(['class' => 'rounded-md max-h-64']) }}
     />
 
     @if ($caption)

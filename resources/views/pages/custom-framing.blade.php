@@ -176,6 +176,7 @@
                                 <x-image
                                     src="/framing/glassChoices.webp"
                                     alt="The difference between clear and ultra vue glass"
+                                    class="mx-auto"
                                     loading="lazy"
                                 />
                             </x-slot>
@@ -199,7 +200,8 @@
                             <x-slot name="image">
                                 <x-image
                                     src="/framing/matboards.webp"
-                                    alt="our massive selection of matboards"
+                                    alt="Our massive selection of matboards"
+                                    class="mx-auto"
                                     loading="lazy"
                                 />
                             </x-slot>
@@ -216,6 +218,7 @@
                                 <x-image
                                     src="/framing/framing.webp"
                                     alt="more of our huge range of frames"
+                                    class="mx-auto"
                                     loading="lazy"
                                 />
                             </x-slot>

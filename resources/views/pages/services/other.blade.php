@@ -111,25 +111,25 @@
                         items, or if you have a record then we can perfectly map the correct
                         circular shape to fit the circular shape.
 
-                        <div class="grid sm:grid-cols-3 gap-x-4 gap-y-4 mt-8">
+                        <div class="grid md:grid-cols-3 gap-x-4 gap-y-4 mt-8">
                             <x-image
                                 src="/matboards/multiple-squares-and-circles.webp"
                                 alt="2 Rows of 6 cut outs, side by side"
-                                class="h-auto object-cover object-center"
+                                class="mx-auto"
                                 loading="lazy"
                             />
 
                             <x-image
                                 src="/matboards/shape-red.webp"
                                 alt="Corner square shapes with a internal mat"
-                                class="h-auto object-cover object-center"
+                                class="mx-auto"
                                 loading="lazy"
                             />
 
                             <x-image
                                 src="/matboards/tools.webp"
                                 alt="3 different sized cutouts holding different items"
-                                class="h-auto object-cover object-center"
+                                class="mx-auto"
                                 loading="lazy"
                             />
                         </div>

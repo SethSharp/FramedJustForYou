@@ -29,6 +29,7 @@
                                 <x-image
                                     src="/indigenous/indigenous.webp"
                                     alt="Indigenous Canvas"
+                                    class="mx-auto"
                                 />
                             </x-slot>
 

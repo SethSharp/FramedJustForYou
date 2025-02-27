@@ -38,17 +38,17 @@
                             <x-image
                                 src="/prints-photos/picture-2.webp"
                                 alt="Print of a mother & child in the safari"
-                                class="h-full object-cover object-center"
+                                class="mx-auto"
                             />
                             <x-image
                                 src="/prints-photos/picture-1.webp"
                                 alt="Print of a turtle surrounded by sea grass"
-                                class="h-full object-cover object-center"
+                                class="mx-auto"
                             />
                             <x-image
                                 src="/prints-photos/poster-1.webp"
                                 alt="A Rocky Horror Picture Show Poster signed by the cast"
-                                class="h-full object-cover object-center"
+                                class="mx-auto"
                             />
                         </div>
                     </x-slot>
