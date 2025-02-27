@@ -6,9 +6,9 @@
         <x-section.wrapper>
             <div class="space-y-4 max-w-3xl mx-auto">
                 <p>
-                    Framed Just For You respects the privacy of every individual who visits our Web sites, responds to
+                    Framed Just For You respects the privacy of every individual who visits our website, responds to
                     our
-                    interactive advertisements or sends us e-mail. This Privacy Statement outlines the information
+                    interactive advertisements or sends an email. This Privacy Statement outlines the information
                     Framed
                     Just
                     For You will collect and how we will use that information. This Statement will also instruct you on
@@ -17,7 +17,7 @@
                     do if you do not want your personal information collected or shared when you visit the Framed Just
                     For
                     You
-                    Website, respond to our Web-based advertisements or send us email.
+                    website, respond to our web-based advertisements or send us email.
                 </p>
 
                 <p>
