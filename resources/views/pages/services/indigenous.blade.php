@@ -26,8 +26,8 @@
                     <x-slot name="content">
                         <x-cards.image-content-right>
                             <x-slot name="image">
-                                <x-image
-                                    src="Indigenous/canvas.webp"
+                                <x-local-image
+                                    src="/indigenous/indigenous.webp"
                                     alt="Indigenous Canvas"
                                 />
                             </x-slot>

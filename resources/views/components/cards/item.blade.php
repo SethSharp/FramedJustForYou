@@ -3,7 +3,7 @@
 <a href="{{ $href }}" class="block w-full">
     <div
         class="relative rounded-3xl h-44 hover:scale-105 transition duration-500 border border-secondary-300 overflow-hidden">
-        <x-image
+        <x-local-image
             src="{{ $src }}"
             alt="{{ $alt }}"
             class="object-cover object-center h-64 w-full rounded-none"

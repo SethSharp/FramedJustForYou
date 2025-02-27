@@ -73,8 +73,8 @@
                             autographed garments, costumes, and rare signed correspondence.
                         </p>
                         <div class="mx-auto my-2">
-                            <x-image
-                                src="memorabilia/memorabilia-3.webp"
+                            <x-local-image
+                                src="/memorabilia/memorabilia-3.webp"
                                 alt="Collectables"
                                 class="w-full max-h-[450px]"
                             />
@@ -98,13 +98,13 @@
                             accomplishments.
                         </p>
                         <div class="mx-auto my-2 grid md:grid-cols-2 gap-2">
-                            <x-image
-                                src="matboards/gymnastics.webp"
+                            <x-local-image
+                                src="/matboards/gymnastics.webp"
                                 alt="Gymnastics frame with multiple cutouts for medals"
                                 class="min-h-[400px]"
                             />
-                            <x-image
-                                src="matboards/asw-athlete.webp"
+                            <x-local-image
+                                src="/matboards/asw-athlete.webp"
                                 alt="ASW frame with multiple cutouts for medals and photos"
                                 class="min-h-[400px]"
                             />
@@ -126,8 +126,8 @@
                             memorabilia in your home, home bar, or office is bound to spark conversations.
                         </p>
                         <div class="mx-auto my-2">
-                            <x-image
-                                src="memorabilia/jerseys.webp"
+                            <x-local-image
+                                src="/memorabilia/jerseys.webp"
                                 alt="Framed Sport Jerseys"
                                 class="w-full max-h-[450px]"
                             />

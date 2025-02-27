@@ -9,8 +9,12 @@
             <div class="absolute inset-0 bg-black/75">
                 <div
                     class="flex justify-end md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
-                    Call us at <a href="tel:0412068330"
-                                  class="pl-2 text-primary-400"> {{ config('framed.contact.telephone')  }} </a>
+                    Call us at
+                    <a
+                        href="tel:0412068330"
+                        class="pl-2 text-primary-400">
+                        {{ config('framed.contact.telephone') }}
+                    </a>
                 </div>
 
                 <div class="md:flex px-6 md:px-16">
@@ -42,8 +46,8 @@
                 </x-slot>
 
                 <x-slot name="image">
-                    <x-image
-                        src="store/store-front-new.webp"
+                    <x-local-image
+                        src="/store/store-front-new.webp"
                         class="object-cover w-full border-4 border-secondary-100 rounded"
                         alt="Framed Just For You Team Photo"
                     />
@@ -80,21 +84,21 @@
 
                         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:w-3/4 mx-auto gap-4">
                             <x-cards.arch
-                                src="framing/flinders.webp"
+                                src="/framing/flinders.webp"
                                 title="Custom Framing"
                                 alt="Custom Framing: Flinders Range"
                                 href="{{ route('custom-framing') }}"
                             />
 
                             <x-cards.arch
-                                src="canvas/tiger-canvas.webp"
+                                src="/canvas/tiger-canvas.webp"
                                 title="Printing & Canvas"
                                 alt="Printing & Canvas: Tiger on a canvas"
                                 href="{{ route('printing') }}"
                             />
 
                             <x-cards.arch
-                                src="restorations/reprint-and-frame.webp"
+                                src="/restorations/reprint-and-frame.webp"
                                 title="Restorations & Repairs"
                                 alt="Restorations & Repairs: Restored wedding photo"
                                 href="{{ route('services.framing.restorations') }}"
@@ -115,8 +119,8 @@
             <div class="lg:relative">
                 <x-cards.image-content-left>
                     <x-slot name="image">
-                        <x-image
-                            src="store/front.png"
+                        <x-local-image
+                            src="/store/front.png"
                             class="object-cover w-full border-4 border-secondary-100 rounded"
                             alt="Inside Framed Just For You"
                         />
@@ -179,8 +183,8 @@
                     showing off some awesome frames - these are also available for sale!
 
                     <div class="mx-auto mt-12 w-3/4 sm:w-1/2">
-                        <x-image
-                            src="store/gallery.webp"
+                        <x-local-image
+                            src="/store/gallery.webp"
                             class="mx-auto"
                             alt="Framed Just For You Restored Gallery"
                         />

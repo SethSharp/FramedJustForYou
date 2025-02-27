@@ -26,8 +26,8 @@
                     <x-slot name="content">
                         <x-cards.image-content-left>
                             <x-slot name="image">
-                                <x-image
-                                    src="jigsaw/giraffe.webp"
+                                <x-local-image
+                                    src="/jigsaw/giraffe.webp"
                                     alt="Giraffe Jigsaw Framed"
                                     class="h-96 mx-auto"
                                 />
@@ -66,8 +66,8 @@
                                 </x-slot>
 
                                 <x-slot name="image">
-                                    <x-image
-                                        src="jigsaw/initial-stage.webp"
+                                    <x-local-image
+                                        src="/jigsaw/initial-stage.webp"
                                         alt="Step 1: Acquire and solve the jigsaw"
                                     />
                                 </x-slot>
@@ -85,8 +85,8 @@
                                 </x-slot>
 
                                 <x-slot name="image">
-                                    <x-image
-                                        src="jigsaw/frame.webp"
+                                    <x-local-image
+                                        src="/jigsaw/frame.webp"
                                         alt="Step 2: Choose a frame"
                                         class="h-96"
                                     />
@@ -129,8 +129,8 @@
                                 </x-slot>
 
                                 <x-slot name="image">
-                                    <x-image
-                                        src="jigsaw/final-product.webp"
+                                    <x-local-image
+                                        src="/jigsaw/final-product.webp"
                                         alt="Step 4: The final product"
                                         class="h-96"
                                     />
