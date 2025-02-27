@@ -1,16 +1,20 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-local-image
+            <x-image
                 src="/store/store-front-right.webp"
-                class="object-cover h-[500px] w-full"
+                class="object-cover min-h-[300px] sm:min-h-[400px] md:min-h-[500px] w-full"
                 alt="Store Front Image"
             />
             <div class="absolute inset-0 bg-black/75">
                 <div
                     class="flex justify-end md:pt-12 pr-12 md:pr-24 text-white text-md md:text-xl uppercase py-4 md:py-0">
-                    Call us at <a href="tel:0412068330"
-                                  class="pl-2 text-primary-400"> {{ config('framed.contact.telephone')  }} </a>
+                    Call us at
+                    <a
+                        href="tel:0412068330"
+                        class="pl-2 text-primary-400">
+                        {{ config('framed.contact.telephone') }}
+                    </a>
                 </div>
 
                 <div class="md:flex px-6 md:px-16">
@@ -22,8 +26,8 @@
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
 
-                    <div class="w-full md:w-1/2">
-                        <x-local-image
+                    <div class="w-full md:w-1/2 hidden md:block">
+                        <x-image
                             src="/store/store-front-right.webp"
                             class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] w-full border-4 border-secondary-100 rounded"
                             alt="Framed Just For You Team Photo"
@@ -43,7 +47,7 @@
 
                 <x-slot name="image">
                     <x-image
-                        src="store/store-front-new.webp"
+                        src="/store/store-front-new.webp"
                         class="object-cover w-full border-4 border-secondary-100 rounded"
                         alt="Framed Just For You Team Photo"
                     />
@@ -80,24 +84,27 @@
 
                         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:w-3/4 mx-auto gap-4">
                             <x-cards.arch
-                                src="framing/flinders.webp"
+                                src="/framing/flinders.webp"
                                 title="Custom Framing"
                                 alt="Custom Framing: Flinders Range"
                                 href="{{ route('custom-framing') }}"
+                                loading="lazy"
                             />
 
                             <x-cards.arch
-                                src="canvas/tiger-canvas.webp"
+                                src="/canvas/tiger-canvas.webp"
                                 title="Printing & Canvas"
                                 alt="Printing & Canvas: Tiger on a canvas"
                                 href="{{ route('printing') }}"
+                                loading="lazy"
                             />
 
                             <x-cards.arch
-                                src="restorations/reprint-and-frame.webp"
+                                src="/restorations/reprint-and-frame.webp"
                                 title="Restorations & Repairs"
                                 alt="Restorations & Repairs: Restored wedding photo"
                                 href="{{ route('services.framing.restorations') }}"
+                                loading="lazy"
                             />
                         </div>
 
@@ -116,9 +123,10 @@
                 <x-cards.image-content-left>
                     <x-slot name="image">
                         <x-image
-                            src="store/front.png"
+                            src="/store/front.png"
                             class="object-cover w-full border-4 border-secondary-100 rounded"
                             alt="Inside Framed Just For You"
+                            loading="lazy"
                         />
                     </x-slot>
 
@@ -152,7 +160,7 @@
                                 </p>
                             </div>
 
-                            <x-local-image
+                            <x-image
                                 src="/relay-2024-qr-code.jpg"
                                 alt="QR code for our Relay for Life team in 2024"
                                 class="mx-auto mb-6 size-44"
@@ -180,9 +188,10 @@
 
                     <div class="mx-auto mt-12 w-3/4 sm:w-1/2">
                         <x-image
-                            src="store/gallery.webp"
+                            src="/store/gallery.webp"
                             class="mx-auto"
                             alt="Framed Just For You Restored Gallery"
+                            loading="lazy"
                         />
                     </div>
 

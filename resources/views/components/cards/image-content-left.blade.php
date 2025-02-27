@@ -6,6 +6,7 @@
                 {{ $title }}
             </x-slot>
         @endif
+
         <x-slot name="content">
             <div class="w-full border-l-4 border-primary-500 py-2 pl-4">
                 {{$content}}
@@ -13,7 +14,7 @@
         </x-slot>
     </x-section.content>
 
-    <div class="lg:w-1/2 lg:ml-auto lg:relative">
+    <div class="lg:w-1/3 lg:ml-auto lg:relative">
         {{ $image }}
     </div>
 </div>

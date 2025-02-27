@@ -1,7 +1,7 @@
 @props(['image', 'content', 'title' => null])
 
 <div class="space-y-4 lg:relative lg:flex items-center justify-center">
-    <div class="lg:w-1/2 lg:relative mr-auto">
+    <div class="lg:w-1/3 lg:relative mr-auto">
         {{ $image }}
     </div>
 

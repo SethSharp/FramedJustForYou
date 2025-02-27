@@ -1,10 +1,12 @@
-@props(['href', 'src', 'title', 'alt'])
+@props(['href', 'src', 'title', 'alt', 'loading' => 'eager'])
 
 <a href="{{ $href }}" class="block w-full">
-    <div class="relative rounded-3xl h-64 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
+    <div
+        class="relative rounded-3xl h-64 hover:scale-105 transition duration-1000 border border-secondary-300 overflow-hidden">
         <x-image
             src="{{ $src }}"
             alt="{{ $alt }}"
+            loading="{{ $loading }}"
             class="object-cover h-64 w-full rounded-none"
         />
 

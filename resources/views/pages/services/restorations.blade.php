@@ -40,7 +40,7 @@
                         </ul>
 
                         <x-image
-                            src="restorations/reprint-and-frame.webp"
+                            src="/restorations/reprint-and-frame.webp"
                             alt="Reprinted and framed photo"
                         />
                     </x-slot>

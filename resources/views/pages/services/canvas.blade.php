@@ -50,9 +50,9 @@
 
                             <x-slot name="image">
                                 <x-image
-                                    src="canvas/tiger-canvas.webp"
+                                    src="/canvas/tiger-canvas.webp"
                                     alt="Tiger painting on a rectangle canvas"
-                                    class="h-96 mx-auto object-center object-cover"
+                                    class="mx-auto z-20 object-center object-cover"
                                 />
                             </x-slot>
                         </x-cards.image-content-left>
@@ -74,31 +74,35 @@
 
                             <div class="grid md:grid-cols-2 gap-6">
                                 <x-image
-                                    src="canvas/canvas-raw.webp"
+                                    src="/canvas/canvas-raw.webp"
                                     alt="Golf Ball display in example home space"
-                                    class="h-full object-fit"
+                                    class="mx-auto"
                                     caption="Hang a standard canvas."
+                                    loading="lazy"
                                 />
 
                                 <x-image
-                                    src="canvas/canvas-inset.webp"
+                                    src="/canvas/canvas-inset.webp"
                                     alt="Golf Ball display in example home space"
-                                    class="h-full object-fit"
+                                    class="mx-auto"
                                     caption="Place your canvas within an offset frame."
+                                    loading="lazy"
                                 />
 
                                 <x-image
-                                    src="canvas/canvas-standard.webp"
+                                    src="/canvas/canvas-standard.webp"
                                     alt="Golf Ball display in example home space"
-                                    class="h-full object-fit"
+                                    class="mx-auto"
                                     caption="We can fit a standard frame as well."
+                                    loading="lazy"
                                 />
 
                                 <x-image
-                                    src="canvas/canvas-old.webp"
+                                    src="/canvas/canvas-old.webp"
                                     alt="Golf Ball display in example home space"
-                                    class="h-full object-fit"
+                                    class="mx-auto"
                                     caption="Or we can fit a vintage style frame."
+                                    loading="lazy"
                                 />
                             </div>
 

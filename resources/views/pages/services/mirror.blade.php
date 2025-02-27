@@ -27,7 +27,7 @@
                         <x-cards.image-content-left>
                             <x-slot name="image">
                                 <x-image
-                                    src="mirror/frame-bethany.webp"
+                                    src="/mirror/frame-bethany.webp"
                                     alt="A very large framed mirror"
                                     class="h-96 mx-auto"
                                 />

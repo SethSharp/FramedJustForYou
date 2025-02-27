@@ -74,7 +74,7 @@
                         </p>
                         <div class="mx-auto my-2">
                             <x-image
-                                src="memorabilia/memorabilia-3.webp"
+                                src="/memorabilia/memorabilia-3.webp"
                                 alt="Collectables"
                                 class="w-full max-h-[450px]"
                             />
@@ -99,14 +99,16 @@
                         </p>
                         <div class="mx-auto my-2 grid md:grid-cols-2 gap-2">
                             <x-image
-                                src="matboards/gymnastics.webp"
+                                src="/matboards/gymnastics.webp"
                                 alt="Gymnastics frame with multiple cutouts for medals"
                                 class="min-h-[400px]"
+                                loading="lazy"
                             />
                             <x-image
-                                src="matboards/asw-athlete.webp"
+                                src="/matboards/asw-athlete.webp"
                                 alt="ASW frame with multiple cutouts for medals and photos"
                                 class="min-h-[400px]"
+                                loading="lazy"
                             />
                         </div>
                     </x-slot>
@@ -127,9 +129,10 @@
                         </p>
                         <div class="mx-auto my-2">
                             <x-image
-                                src="memorabilia/jerseys.webp"
+                                src="/memorabilia/jerseys.webp"
                                 alt="Framed Sport Jerseys"
                                 class="w-full max-h-[450px]"
+                                loading="lazy"
                             />
                         </div>
                     </x-slot>

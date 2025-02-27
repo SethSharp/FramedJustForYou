@@ -1,7 +1,7 @@
 <div>
     <div>
         @if (isset($member['src']) )
-            <x-local-image
+            <x-image
                 src="{{$member['src']}}"
                 alt="{{$member['alt']}}"
                 class="shadow mx-auto rounded-2xl overflow-hidden max-h-64"
