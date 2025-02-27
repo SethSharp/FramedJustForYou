@@ -64,7 +64,7 @@
                     <x-slot name="content">
                         <x-cards.image-content-left>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/readyMade/graduation.webp"
                                     alt="Graduation frame"
                                     class="absolute w-full z-10 -rotate-12"
@@ -112,19 +112,19 @@
                         circular shape to fit the circular shape.
 
                         <div class="grid sm:grid-cols-3 gap-x-4 gap-y-4 mt-8">
-                            <x-local-image
+                            <x-image
                                 src="/matboards/multiple-squares-and-circles.webp"
                                 alt="2 Rows of 6 cut outs, side by side"
                                 class="h-auto objecct-cover object-center"
                             />
 
-                            <x-local-image
+                            <x-image
                                 src="/matboards/shape-red.webp"
                                 alt="Corner square shapes with a internal mat"
                                 class="h-auto objecct-cover object-center"
                             />
 
-                            <x-local-image
+                            <x-image
                                 src="/matboards/tools.webp"
                                 alt="3 different sized cutouts holding different items"
                                 class="h-auto objecct-cover object-center"

@@ -154,7 +154,7 @@
                     <div class="space-y-12">
                         <x-cards.image-content-left>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/framing/selection.webp"
                                     alt="Over 1000 frames to choose from"
                                     class="h-96 mx-auto"
@@ -172,7 +172,7 @@
 
                         <x-cards.image-content-right>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/framing/glassChoices.webp"
                                     alt="The difference between clear and ultra vue glass"
                                 />
@@ -195,7 +195,7 @@
 
                         <x-cards.image-content-left>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/framing/matboards.webp"
                                     alt="our massive selection of matboards"
                                 />
@@ -210,7 +210,7 @@
 
                         <x-cards.image-content-right>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/framing/framing.webp"
                                     alt="more of our huge range of frames"
                                 />

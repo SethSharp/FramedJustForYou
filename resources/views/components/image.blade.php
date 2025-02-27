@@ -1,10 +1,11 @@
-@props(['src', 'alt', 'caption' => null])
+@props(['src', 'alt', 'caption' => null, 'loading' => 'eager'])
 
 <div class="{{ $caption ? 'm-4' : '' }}">
     <img
-        src="{{ config('app.cloudfront_url') .'/images/' . $src }}"
+        src="{{ asset('/images') . $src }}"
         alt="{{ $alt }}"
         aria-label="{{ $alt }}"
+        loading="{{ $loading }}"
         {{ $attributes->merge(['class' => 'rounded-md max-h-64 mx-auto']) }}
     />
 

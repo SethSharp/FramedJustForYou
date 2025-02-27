@@ -35,17 +35,17 @@
                         story with elegance and flair.
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 sm:w-3/4 mx-auto gap-6 my-8">
-                            <x-local-image
+                            <x-image
                                 src="/prints-photos/picture-2.webp"
                                 alt="Print of a mother & child in the safari"
                                 class="h-full object-cover object-center"
                             />
-                            <x-local-image
+                            <x-image
                                 src="/prints-photos/picture-1.webp"
                                 alt="Print of a turtle surrounded by sea grass"
                                 class="h-full object-cover object-center"
                             />
-                            <x-local-image
+                            <x-image
                                 src="/prints-photos/poster-1.webp"
                                 alt="A Rocky Horror Picture Show Poster signed by the cast"
                                 class="h-full object-cover object-center"

@@ -49,7 +49,7 @@
                             </x-slot>
 
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/canvas/tiger-canvas.webp"
                                     alt="Tiger painting on a rectangle canvas"
                                     class="h-96 mx-auto object-center object-cover"
@@ -73,28 +73,28 @@
                             </p>
 
                             <div class="grid md:grid-cols-2 gap-6">
-                                <x-local-image
+                                <x-image
                                     src="/canvas/canvas-raw.webp"
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="Hang a standard canvas."
                                 />
 
-                                <x-local-image
+                                <x-image
                                     src="/canvas/canvas-inset.webp"
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="Place your canvas within an offset frame."
                                 />
 
-                                <x-local-image
+                                <x-image
                                     src="/canvas/canvas-standard.webp"
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"
                                     caption="We can fit a standard frame as well."
                                 />
 
-                                <x-local-image
+                                <x-image
                                     src="/canvas/canvas-old.webp"
                                     alt="Golf Ball display in example home space"
                                     class="h-full object-fit"

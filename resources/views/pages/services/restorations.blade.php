@@ -39,7 +39,7 @@
                             <li>Hang Up!</li>
                         </ul>
 
-                        <x-local-image
+                        <x-image
                             src="/restorations/reprint-and-frame.webp"
                             alt="Reprinted and framed photo"
                         />

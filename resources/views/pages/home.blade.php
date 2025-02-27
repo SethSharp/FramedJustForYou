@@ -1,7 +1,7 @@
 <x-layouts.app>
     @section("header")
         <div class="relative z-20">
-            <x-local-image
+            <x-image
                 src="/store/store-front-right.webp"
                 class="object-cover h-[500px] w-full"
                 alt="Store Front Image"
@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="w-full md:w-1/2">
-                        <x-local-image
+                        <x-image
                             src="/store/store-front-right.webp"
                             class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] w-full border-4 border-secondary-100 rounded"
                             alt="Framed Just For You Team Photo"
@@ -46,7 +46,7 @@
                 </x-slot>
 
                 <x-slot name="image">
-                    <x-local-image
+                    <x-image
                         src="/store/store-front-new.webp"
                         class="object-cover w-full border-4 border-secondary-100 rounded"
                         alt="Framed Just For You Team Photo"
@@ -119,7 +119,7 @@
             <div class="lg:relative">
                 <x-cards.image-content-left>
                     <x-slot name="image">
-                        <x-local-image
+                        <x-image
                             src="/store/front.png"
                             class="object-cover w-full border-4 border-secondary-100 rounded"
                             alt="Inside Framed Just For You"
@@ -156,7 +156,7 @@
                                 </p>
                             </div>
 
-                            <x-local-image
+                            <x-image
                                 src="/relay-2024-qr-code.jpg"
                                 alt="QR code for our Relay for Life team in 2024"
                                 class="mx-auto mb-6 size-44"
@@ -183,7 +183,7 @@
                     showing off some awesome frames - these are also available for sale!
 
                     <div class="mx-auto mt-12 w-3/4 sm:w-1/2">
-                        <x-local-image
+                        <x-image
                             src="/store/gallery.webp"
                             class="mx-auto"
                             alt="Framed Just For You Restored Gallery"

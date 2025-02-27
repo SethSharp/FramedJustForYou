@@ -33,25 +33,25 @@
                         </p>
 
                         <div class="grid sm:grid-cols-2 sm:w-3/4 mx-auto gap-4">
-                            <x-local-image
+                            <x-image
                                 src="/acrylic/golf-ball-display.webp"
                                 alt="Golf Ball display in example home space"
                                 class="h-full object-cover"
                             />
 
-                            <x-local-image
+                            <x-image
                                 src="/acrylic/football.webp"
                                 alt="Football in case"
                                 class="h-full object-cover"
                             />
 
-                            <x-local-image
+                            <x-image
                                 src="/acrylic/boot.webp"
                                 alt="Boot in case"
                                 class="h-full object-cover"
                             />
 
-                            <x-local-image
+                            <x-image
                                 src="/acrylic/shovel.webp"
                                 alt="Golden Shovel in case"
                                 class="h-full object-cover"

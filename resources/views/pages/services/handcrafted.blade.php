@@ -26,7 +26,7 @@
                     <x-slot name="content">
                         <x-cards.image-content-left>
                             <x-slot name="image">
-                                <x-local-image
+                                <x-image
                                     src="/handcrafted/pressed.webp"
                                     alt="Handcrafted piece of a person holding an umbrella with a light post & a couple in the background"
                                 />
