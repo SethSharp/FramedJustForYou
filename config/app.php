@@ -72,8 +72,6 @@ return [
 
     'asset_url' => env('ASSET_URL'),
 
-    'cloudfront_url' => env('CLOUDFRONT_URL'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
