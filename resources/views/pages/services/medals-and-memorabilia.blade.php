@@ -101,13 +101,13 @@
                             <x-image
                                 src="/matboards/gymnastics.webp"
                                 alt="Gymnastics frame with multiple cutouts for medals"
-                                class="min-h-[400px]"
+                                class="min-h-[400px] mx-auto"
                                 loading="lazy"
                             />
                             <x-image
                                 src="/matboards/asw-athlete.webp"
                                 alt="ASW frame with multiple cutouts for medals and photos"
-                                class="min-h-[400px]"
+                                class="min-h-[400px] mx-auto"
                                 loading="lazy"
                             />
                         </div>

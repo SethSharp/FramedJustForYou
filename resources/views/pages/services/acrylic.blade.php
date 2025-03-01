@@ -36,25 +36,25 @@
                             <x-image
                                 src="/acrylic/golf-ball-display.webp"
                                 alt="Golf Ball display in example home space"
-                                class="h-full object-cover"
+                                class="mx-auto"
                             />
 
                             <x-image
                                 src="/acrylic/football.webp"
                                 alt="Football in case"
-                                class="h-full object-cover"
+                                class="mx-auto"
                             />
 
                             <x-image
                                 src="/acrylic/boot.webp"
                                 alt="Boot in case"
-                                class="h-full object-cover"
+                                class="mx-auto"
                             />
 
                             <x-image
                                 src="/acrylic/shovel.webp"
                                 alt="Golden Shovel in case"
-                                class="h-full object-cover"
+                                class="mx-auto"
                             />
                         </div>
 
