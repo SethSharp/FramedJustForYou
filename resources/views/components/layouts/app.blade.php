@@ -45,7 +45,7 @@
                     @yield('header')
                 </header>
 
-                <section class="relative z-10 leading-loose">
+                <section class="relative z-10 leading-loose max-w-7xl mx-auto flex flex-col justify-center">
                     {{ $slot }}
                 </section>
             </div>
