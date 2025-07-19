@@ -3,7 +3,7 @@
         <div class="relative z-20">
             <x-image
                 src="/store/store-front-right.webp"
-                class="object-cover min-h-[300px] sm:min-h-[400px] md:min-h-[500px] w-full"
+                class="object-cover min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px] xl:min-h-[700px] w-full object-bottom xl:object-center"
                 alt="Store Front Image"
             />
             <div class="absolute inset-0 bg-black/75">
@@ -26,13 +26,13 @@
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
 
-                    <div class="w-full md:w-1/2 hidden md:block">
-                        <x-image
-                            src="/store/store-front-right.webp"
-                            class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] w-full border-4 border-secondary-100 rounded"
-                            alt="Framed Just For You Team Photo"
-                        />
-                    </div>
+{{--                    <div class="w-full md:w-1/2 hidden md:block">--}}
+{{--                        <x-image--}}
+{{--                            src="/store/store-front-right.webp"--}}
+{{--                            class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] w-full border-4 border-secondary-100 rounded"--}}
+{{--                            alt="Framed Just For You Team Photo"--}}
+{{--                        />--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
