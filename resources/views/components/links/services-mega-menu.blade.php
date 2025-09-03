@@ -67,7 +67,7 @@
     </div>
 
     {{--  Mobile  --}}
-    <div class="flex lg:hidden" x-show="open" x-on:click="open = false">
+    <div x-show="open" x-on:click="open = false" x-cloak class="flex lg:hidden">
         <div class="flex w-full pl-2">
             <div class="grid sm:grid-cols-2 w-full border-gray-200">
                 <div>
@@ -104,8 +104,12 @@
         </div>
     </div>
 
-    <div class=" absolute right-24 z-50 hidden lg:flex" x-show="open"
-         x-on:click="open = false">
+    <div
+        x-show="open"
+        x-cloak
+        class="absolute right-24 z-50 hidden lg:flex"
+        x-on:click="open = false"
+    >
         <div class="w-fit ml-auto shadow-2xl">
             <div
                 class="bg-secondary-50 rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full"
