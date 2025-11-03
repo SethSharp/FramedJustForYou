@@ -59,7 +59,7 @@
                         using
                         the best materials and equipment, guaranteeing it is finished to the highest standards.
 
-                        <div class="space-y-12">
+                        <div class="space-y-12 mt-4">
                             <x-cards.image-content-left>
                                 <x-slot name="title">
                                     Step 1: Acquire & Solve a Jigsaw
