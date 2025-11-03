@@ -1,6 +1,5 @@
 <?php
 
-use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', \App\Http\Controllers\Public\ShowHomeController::class)->name('home');
-Route::get('/about', \App\Http\Controllers\Public\ShowAboutController::class)->name('about');
+Route::get('/', App\Http\Controllers\Public\ShowHomeController::class)->name('home');
+Route::get('/about', App\Http\Controllers\Public\ShowAboutController::class)->name('about');
 Route::get('/custom-framing', fn () => view('pages/custom-framing'))->name('custom-framing');
 Route::get('/printing', fn () => view('pages/printing'))->name('printing');
 Route::get('/contact', fn () => view('pages/contact'))->name('contact');
