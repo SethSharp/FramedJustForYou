@@ -14,5 +14,4 @@
             class="object-cover w-full"
         />
     @endif
-
 </a>

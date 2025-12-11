@@ -34,7 +34,7 @@
 </head>
 <body class="font-mont font-medium antialiased">
 <main class="bg-secondary-100">
-    <x-banners.main/>
+    <x-banners.container />
 
     <div>
         <x-navigation/>
