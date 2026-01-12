@@ -38,7 +38,7 @@
         </div>
     @endsection
 
-    <x-contact.open-times />
+{{--    <x-contact.open-times />--}}
 
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
