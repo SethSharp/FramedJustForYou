@@ -138,6 +138,21 @@ return [
             'src' => '/team/diane.webp',
             'alt' => 'Diane Team Photo',
         ],
+        // todo
+        [
+            'name' => '',
+            'position' => 'Owner',
+            'description' => "",
+            'src' => '/team/diane.webp',
+            'alt' => 'Team Photo',
+        ],
+        [
+            'name' => '',
+            'position' => 'Owner',
+            'description' => "",
+            'src' => '/team/diane.webp',
+            'alt' => 'Team Photo',
+        ],
         [
             'name' => 'Karen',
             'position' => 'Senior Framer',
