@@ -4,13 +4,13 @@
             <x-image
                 src="{{$member['src']}}"
                 alt="{{$member['alt']}}"
-                class="shadow mx-auto rounded-2xl overflow-hidden max-h-64"
+                class="shadow rounded-lg mx-auto overflow-hidden max-h-64"
             />
         @endif
     </div>
 
     <div class="flex max-w-2xl mx-auto">
-        <div class="rounded-r-xl transition duration-700 p-2">
+        <div class="p-2">
             <h3 class="text-xl text-secondary-800 font-semibold">{{ $member['name'] }}</h3>
 
             <span class="text-base text-secondary-400"> {{ $member['position'] }} </span>
