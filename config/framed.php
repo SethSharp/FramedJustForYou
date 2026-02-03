@@ -58,7 +58,7 @@ return [
     'contact' => [
         'mobile' => '0412 068 330',
         'telephone' => '07 5563 9799',
-        'email' => 'framedjust4u@bigpond.com'
+        'email' => 'framedjust4u@bigpond.com',
     ],
 
 
@@ -139,13 +139,6 @@ return [
             'alt' => 'Diane Team Photo',
         ],
         [
-            'name' => 'Bethany',
-            'position' => 'Framer',
-            'description' => 'Bethany, one of our newest team member, successfully juggles her university studies with her passion for picture framing. Her enthusiasm shines through as she continues to make impressive strides in her framing skills, consistently delivering outstanding work.',
-            'src' => '/team/bethany.webp',
-            'alt' => 'Bethany Team Photo',
-        ],
-        [
             'name' => 'Karen',
             'position' => 'Senior Framer',
             'description' => 'With over three decades of framing experience, Karen has been an integral part of our team. Her exceptional artistic flair enables her to assist our customers in making challenging choices, delivering outstanding results.',
@@ -157,12 +150,6 @@ return [
             'description' => 'John has been a valuable addition to our team and making significant contributions. With approximately six years of prior experience running his own picture framing business and a background in engineering, he brings a wealth of expertise.',
             'alt' => 'John Team Photo',
         ],
-//        [
-//            'name' => 'Danielle',
-//            'position' => 'Framer',
-//            'description' => 'Danielle, our newest team member..',
-//            'alt' => 'Danielle Team Photo',
-//        ]
     ],
 
     /*
