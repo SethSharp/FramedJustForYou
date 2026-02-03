@@ -21,17 +21,17 @@
 
                         </a>
                     </div>
-                    <div class="max-w-md pr-16 text-md text-gray-200">
+                    <div class="max-w-md pr-16 text-md text-secondary-200">
                         Your go to for Custom Framing on the Gold Coast.
                     </div>
                     <div class="flex space-x-2">
                         <a href="https://www.instagram.com/framedjust4u/" target="_blank"
-                           class="text-gray-200 hover:text-gray-200">
+                           class="text-secondary-200 hover:text-secondary-200">
                             <span class="sr-only">Instagram</span>
                             <x-icons.socials.instagram/>
                         </a>
                         <a href="https://www.facebook.com/framedjustforyou/" target="_blank"
-                           class="text-gray-200 hover:text-gray-200">
+                           class="text-secondary-200 hover:text-secondary-200">
                             <span class="sr-only">Facebook</span>
                             <x-icons.socials.facebook/>
                         </a>
@@ -44,13 +44,13 @@
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
                                     <a href="{{route('custom-framing')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Custom Framing
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('printing')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Printing
                                     </a>
                                 </li>
@@ -61,31 +61,31 @@
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
                                     <a href="{{route('services.framing.acrylic')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Acrylic
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.canvas')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Canvas
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.indigenous')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Indigenous Art
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.jigsaw')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Jigsaws
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.medals-memorabilia')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Medals & Memorabilia
                                     </a>
                                 </li>
@@ -97,25 +97,25 @@
                             <ul role="list" class="mt-12 space-y-4">
                                 <li>
                                     <a href="{{route('services.framing.mirror')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Mirror
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.prints-posters')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Prints Posters & Photos
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.handcrafted')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Handcrafted Artwork
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('services.framing.restorations')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Restorations
                                     </a>
                                 </li>
@@ -126,19 +126,19 @@
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
                                     <a href="{{route('about')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         About us
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('contact')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Contact us
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route('privacy-policy')}}"
-                                       class="text-md leading-6 text-gray-300 hover:text-gray-50">
+                                       class="text-md leading-6 text-secondary-300 hover:text-secondary-50">
                                         Privacy Policy
                                     </a>
                                 </li>
@@ -147,10 +147,10 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-16 border-t border-gray-400/30 pt-8 sm:mt-20 lg:mt-24">
+            <div class="mt-16 border-t border-secondary-400/30 pt-8 sm:mt-20 lg:mt-24">
                 <div class="text-md text-center text-white">
                     {!! config('framed.copyright')  !!}
-                    <span class="text-gray-50">♥</span> by Framing enthusiasts at
+                    <span class="text-secondary-50">♥</span> by Framing enthusiasts at
                     <a rel="noopener" href="/">
                         Framed Just For You.
                     </a>

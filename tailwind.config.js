@@ -30,7 +30,6 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 mont: ['Montserrat', ...defaultTheme.fontFamily.sans],
-                quick: ['Quicksand', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 primary: {
@@ -58,6 +57,7 @@ export default {
                     900: colors.stone[900],
                 },
                 accent: {
+                    50: colors.yellow[50],
                     100: colors.yellow[100],
                     200: colors.yellow[200],
                     300: colors.yellow[300],
@@ -67,6 +67,14 @@ export default {
                     700: colors.yellow[700],
                     800: colors.yellow[800],
                     900: colors.yellow[900],
+                },
+                relay: {
+                    DEFAULT: colors.yellow[500],
+                    hover: colors.purple[600],
+                    text: '#0f1e64',
+                },
+                seasonal: {
+                    christmas: colors.green[700],
                 },
             },
         },

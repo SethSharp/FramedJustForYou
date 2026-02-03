@@ -1,4 +1,4 @@
-<div class="max-w-4xl w-full p-8 mx-auto bg-gray-100">
+<div class="max-w-4xl w-full p-8 mx-auto bg-secondary-100">
     <!-- Header -->
     <div class="text-center mb-8">
         <h1 class="text-3xl font-semibold mb-4">

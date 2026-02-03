@@ -69,7 +69,7 @@
     {{--  Mobile  --}}
     <div x-show="open" x-on:click="open = false" x-cloak class="flex lg:hidden">
         <div class="flex w-full pl-2">
-            <div class="grid sm:grid-cols-2 w-full border-gray-200">
+            <div class="grid sm:grid-cols-2 w-full border-secondary-200">
                 <div>
                     @foreach ($customLinks_1 as $link)
                         <x-links.mega-menu-link
@@ -115,7 +115,7 @@
                 class="bg-secondary-50 rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full"
             >
                 <div class="flex w-full">
-                    <div class="grid grid-cols-2 gap-y-4 w-full border-gray-200">
+                    <div class="grid grid-cols-2 gap-y-4 w-full border-secondary-200">
                         <div>
                             @foreach ($customLinks_1 as $link)
                                 <x-links.mega-menu-link
