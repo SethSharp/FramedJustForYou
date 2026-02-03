@@ -40,7 +40,7 @@
 
 {{--    <x-contact.open-times />--}}
 
-    <x-section.section class="mt-[50px] !bg-secondary-50">
+    <x-section.section class="mt-12 !bg-secondary-50">
         <x-section.wrapper>
             <x-cards.image-content-right>
                 <x-slot name="title">
@@ -119,7 +119,7 @@
         </x-section.wrapper>
     </x-section.section>
 
-    <x-section.section class="mt-[50px] !bg-secondary-50">
+    <x-section.section class="mt-12 !bg-secondary-50">
         <x-section.wrapper>
             <div class="lg:relative">
                 <x-cards.image-content-left>
