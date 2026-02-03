@@ -31,6 +31,12 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 mont: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
+            fontSize: {
+                // Typography Scale (documentation only - use standard Tailwind classes)
+                // Hero: text-3xl sm:text-5xl md:text-6xl
+                // Section: text-lg md:text-2xl
+                // Subsection: text-md md:text-xl
+            },
             colors: {
                 primary: {
                     50: colors.pink[50],
