@@ -3,7 +3,7 @@
 
 <x-layouts.app>
     <x-section.wrapper>
-        <div class="bg-gradient-to-br from-white to-gray-200 rounded p-1 sm:p-2">
+        <div class="bg-gradient-to-br from-white to-secondary-200 rounded p-1 sm:p-2">
             <div class="md:flex gap-4 space-y-2 sm:space-y-0 sm:p-8">
                 <div class="md:w-1/2">
                     <div class="h-full">
