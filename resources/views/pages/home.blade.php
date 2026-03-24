@@ -26,13 +26,6 @@
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
 
-{{--                    <div class="w-full md:w-1/2 hidden md:block">--}}
-{{--                        <x-image--}}
-{{--                            src="/store/store-front-right.webp"--}}
-{{--                            class="object-cover mt-[25px] md:mt-[100px] h-[200px] md:h-[350px] w-full border-4 border-secondary-100 rounded"--}}
-{{--                            alt="Framed Just For You Team Photo"--}}
-{{--                        />--}}
-{{--                    </div>--}}
                 </div>
             </div>
         </div>
@@ -40,7 +33,7 @@
 
 {{--    <x-contact.open-times />--}}
 
-    <x-section.section class="mt-[50px] !bg-secondary-50">
+    <x-section.section class="mt-12 !bg-secondary-50">
         <x-section.wrapper>
             <x-cards.image-content-right>
                 <x-slot name="title">
@@ -119,7 +112,7 @@
         </x-section.wrapper>
     </x-section.section>
 
-    <x-section.section class="mt-[50px] !bg-secondary-50">
+    <x-section.section class="mt-12 !bg-secondary-50">
         <x-section.wrapper>
             <div class="lg:relative">
                 <x-cards.image-content-left>
@@ -169,7 +162,7 @@
                             />
 
                             <a href="https://www.relayforlife.org.au/fundraisers/framedjustforyou"
-                               class="bg-yellow-500 rounded px-2 py-4 text-[#0f1e64] font-semibold hover:text-white hover:bg-purple-600 transition">
+                               class="bg-relay rounded px-2 py-4 text-relay-text font-semibold hover:text-white hover:bg-relay-hover transition">
                                 or click here
                             </a>
                         </div>

@@ -1,6 +1,6 @@
 <div class="h-full my-auto p-8 rounded-lg bg-secondary-50 text-center hover:-translate-y-2 transition">
     <div class="">
-        <h1 class="text-lg"> {{ $review['author_name'] }} </h1>
+        <p class="text-lg font-medium">{{ $review['author_name'] }}</p>
 
         <div class="text-secondary-400 inline-block">
             <div class="rotate-180 flex justify-start transform origin-left">

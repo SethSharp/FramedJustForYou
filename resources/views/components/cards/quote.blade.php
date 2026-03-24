@@ -7,7 +7,7 @@
         </span>
     </div>
 
-    <div class="flex-grow text-gray-400">
+    <div class="flex-grow text-secondary-400">
         <div class="h-full flex">
             <span class="my-auto mx-auto">
                 - {{ $user }}
