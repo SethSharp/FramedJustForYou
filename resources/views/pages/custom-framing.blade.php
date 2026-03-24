@@ -44,7 +44,19 @@
                         </div>
 
                         <div class="lg:w-2/5 mt-6 lg:mt-0 flex justify-center">
-                            <x-section.whats-on-this-page :links="$links"/>
+                            <nav class="bg-white rounded-xl border border-secondary-200 p-4 w-full">
+                                <x-heading variant="secondary">What's on this page</x-heading>
+                                <ul class="mt-3 space-y-2">
+                                    @foreach($links as $link)
+                                        <li>
+                                            <a href="{{ $link['href'] }}" class="text-secondary-600 hover:text-primary-500 transition flex items-center gap-2">
+                                                <x-icons.plus class="size-4" />
+                                                {{ $link['title'] }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </x-slot>
@@ -64,70 +76,70 @@
 
                     <div>
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/acrylic/football.webp"
                                 alt="Football in case"
                                 title="Acrylic"
                                 href="{{ route('services.framing.acrylic') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/canvas/tiger-canvas.webp"
                                 alt="Tiger painting on a rectangle canvas"
                                 title="Canvas"
                                 href="{{ route('services.framing.canvas') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/indigenous/indigenous.webp"
                                 alt="Indigenous print"
                                 title="Indigenous Art"
                                 href="{{ route('services.framing.indigenous') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/jigsaw/giraffe.webp"
                                 alt="Completed Giraffe Jigsaw - not framed"
                                 title="Jigsaws"
                                 href="{{ route('services.framing.jigsaw') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/matboards/gymnastics.webp"
                                 alt="Gymnastics frame with multiple cutouts for medals"
                                 title="Medals & Memorabilia"
                                 href="{{ route('services.framing.medals-memorabilia') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/mirror/small-mirror.webp"
                                 alt="Mirror Framed"
                                 title="Mirror"
                                 href="{{ route('services.framing.mirror') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/prints-photos/picture-2.webp"
                                 alt="Print of a mother & child in the safari"
                                 title="Prints, Posters & Photos"
                                 href="{{ route('services.framing.prints-posters') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/handcrafted/pressed.webp"
                                 alt="Handcrafted piece of a person holding an umbrella with a light post & a couple in the background"
                                 title="Handcrafted"
                                 href="{{ route('services.framing.handcrafted') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/restorations/reprint-and-frame.webp"
                                 alt="Reprinted and Frame of a old wedding photo"
                                 title="Restorations"
                                 href="{{ route('services.framing.restorations') }}"
                             />
 
-                            <x-cards.item
+                            <x-cards.image-link size="sm"
                                 src="/readyMade/graduation.webp"
                                 alt="Graduation frame"
                                 title="Other"
@@ -152,7 +164,7 @@
                     </p>
 
                     <div class="space-y-12">
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/framing/selection.webp"
@@ -169,9 +181,9 @@
                                 we offer an extensive selection of frames that suits any style
                                 or project.
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
 
-                        <x-cards.image-content-right>
+                        <x-cards.feature image-position="right">
                             <x-slot name="image">
                                 <x-image
                                     src="/framing/glassChoices.webp"
@@ -194,9 +206,9 @@
                                     <li>True Vue Classic Art Glass</li>
                                 </ul>
                             </x-slot>
-                        </x-cards.image-content-right>
+                        </x-cards.feature>
 
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/framing/matboards.webp"
@@ -211,9 +223,9 @@
                                 Neilsen, Bainbridge, Alpha, Peterborough Museum Core, Artique
                                 conservation, Archival rag and Museum mats
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
 
-                        <x-cards.image-content-right>
+                        <x-cards.feature image-position="right">
                             <x-slot name="image">
                                 <x-image
                                     src="/framing/framing.webp"
@@ -230,7 +242,7 @@
                                 selection of custom frames include brands such as Larson-Juhl
                                 and Antons Mouldings.
                             </x-slot>
-                        </x-cards.image-content-right>
+                        </x-cards.feature>
                     </div>
                 </x-slot>
             </x-section.content>

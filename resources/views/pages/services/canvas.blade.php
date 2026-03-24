@@ -34,7 +34,7 @@
                             *We offer a full guarantee against warping and sagging.
                         </p>
 
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="content">
                                 If you're considering having an artwork or photograph on canvas stretched, it's
                                 essential to
@@ -55,7 +55,7 @@
                                     class="mx-auto z-20 object-center object-cover"
                                 />
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>

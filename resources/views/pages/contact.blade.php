@@ -7,7 +7,7 @@
             <div class="md:flex gap-4 space-y-2 sm:space-y-0 sm:p-8">
                 <div class="md:w-1/2">
                     <div class="h-full">
-                        <x-headings.title> Get in touch</x-headings.title>
+                        <x-heading> Get in touch</x-heading>
 
                         <ul class="mt-6 text-sm sm:text-base text-secondary-600 space-y-6">
                             <li class="flex gap-1 sm:gap-2">
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="md:w-1/2">
-                    <x-headings.title> Opening Hours</x-headings.title>
+                    <x-heading> Opening Hours</x-heading>
 
                     <div class="mt-5 space-y-3 text-sm sm:text-base">
                         @foreach(config('framed.times') as $time)

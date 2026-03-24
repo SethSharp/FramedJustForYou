@@ -50,7 +50,19 @@
                                 matboard, glass cutout, framing supplies or our ready made frames.
                             </div>
                             <div class="lg:w-2/5 mt-6 lg:mt-0 flex justify-center">
-                                <x-section.whats-on-this-page :links="$links"/>
+                                <nav class="bg-white rounded-xl border border-secondary-200 p-4 w-full">
+                                    <x-heading variant="secondary">What's on this page</x-heading>
+                                    <ul class="mt-3 space-y-2">
+                                        @foreach($links as $link)
+                                            <li>
+                                                <a href="{{ $link['href'] }}" class="text-secondary-600 hover:text-primary-500 transition flex items-center gap-2">
+                                                    <x-icons.plus class="size-4" />
+                                                    {{ $link['title'] }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </x-slot>
@@ -62,7 +74,7 @@
                     <x-slot name="title"> Ready Made Frames</x-slot>
 
                     <x-slot name="content">
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/readyMade/graduation.webp"
@@ -79,7 +91,7 @@
                                 in custom framing yet still provides a great look or if you are in a
                                 rush for a frame.
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>

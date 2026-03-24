@@ -24,7 +24,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.image-content-right>
+                        <x-cards.feature image-position="right">
                             <x-slot name="image">
                                 <x-image
                                     src="/indigenous/indigenous.webp"
@@ -43,7 +43,7 @@
                                 framing
                                 transforms pictures into timeless masterpieces.
                             </x-slot>
-                        </x-cards.image-content-right>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>

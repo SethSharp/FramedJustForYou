@@ -19,9 +19,9 @@
 
                 <div class="md:flex px-6 md:px-16">
                     <div class="w-full md:w-1/2">
-                        <x-headings.title-overline>
+                        <x-heading variant="overline">
                             Your Custom Framers
-                        </x-headings.title-overline>
+                        </x-heading>
 
                         <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2"> Framed Just <br> For You</h1>
                     </div>
@@ -42,7 +42,7 @@
 
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
-            <x-cards.image-content-right>
+            <x-cards.feature image-position="right">
                 <x-slot name="title">
                     Why Us?
                 </x-slot>
@@ -62,7 +62,7 @@
                     experience, we have been the go-to destination
                     for custom framing on the Gold Coast.
                 </x-slot>
-            </x-cards.image-content-right>
+            </x-cards.feature>
         </x-section.wrapper>
     </x-section.section>
 
@@ -85,7 +85,7 @@
                         <x-section.divider/>
 
                         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:w-3/4 mx-auto gap-4">
-                            <x-cards.arch
+                            <x-cards.image-link
                                 src="/framing/flinders.webp"
                                 title="Custom Framing"
                                 alt="Custom Framing: Flinders Range"
@@ -93,7 +93,7 @@
                                 loading="lazy"
                             />
 
-                            <x-cards.arch
+                            <x-cards.image-link
                                 src="/canvas/tiger-canvas.webp"
                                 title="Printing & Canvas"
                                 alt="Printing & Canvas: Tiger on a canvas"
@@ -101,7 +101,7 @@
                                 loading="lazy"
                             />
 
-                            <x-cards.arch
+                            <x-cards.image-link
                                 src="/restorations/reprint-and-frame.webp"
                                 title="Restorations & Repairs"
                                 alt="Restorations & Repairs: Restored wedding photo"
@@ -122,7 +122,7 @@
     <x-section.section class="mt-[50px] !bg-secondary-50">
         <x-section.wrapper>
             <div class="lg:relative">
-                <x-cards.image-content-left>
+                <x-cards.feature image-position="left">
                     <x-slot name="image">
                         <x-image
                             src="/store/front.png"
@@ -138,7 +138,7 @@
                         We understand that art and design are constantly evolving, and we strive to stay at the
                         forefront of industry trends.
                     </x-slot>
-                </x-cards.image-content-left>
+                </x-cards.feature>
             </div>
         </x-section.wrapper>
         <!--        <x-section.wrapper>

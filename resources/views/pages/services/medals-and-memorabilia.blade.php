@@ -54,7 +54,19 @@
                                 choose our services.
                             </div>
                             <div class="lg:w-2/5 mt-6 lg:mt-0 flex justify-center">
-                                <x-section.whats-on-this-page :links="$links"/>
+                                <nav class="bg-white rounded-xl border border-secondary-200 p-4 w-full">
+                                    <x-heading variant="secondary">What's on this page</x-heading>
+                                    <ul class="mt-3 space-y-2">
+                                        @foreach($links as $link)
+                                            <li>
+                                                <a href="{{ $link['href'] }}" class="text-secondary-600 hover:text-primary-500 transition flex items-center gap-2">
+                                                    <x-icons.plus class="size-4" />
+                                                    {{ $link['title'] }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </x-slot>
