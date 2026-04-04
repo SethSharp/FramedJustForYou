@@ -10,7 +10,7 @@
                 </x-slot>
 
                 <x-slot name="content">
-                    <x-cards.image-content-left>
+                    <x-cards.feature image-position="left">
                         <x-slot name="image">
                             <x-image
                                 src="/printing/printer.webp"
@@ -27,7 +27,7 @@
                             Allowing us to just about do photo on printing paper to go perfectly as a background to your
                             frame.
                         </x-slot>
-                    </x-cards.image-content-left>
+                    </x-cards.feature>
                 </x-slot>
             </x-section.content>
         </x-section.wrapper>

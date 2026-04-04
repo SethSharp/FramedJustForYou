@@ -24,7 +24,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/mirror/frame-bethany.webp"
@@ -42,7 +42,7 @@
                                 upfront quote of
                                 the mirror as well!
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>

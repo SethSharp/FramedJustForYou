@@ -24,7 +24,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/jigsaw/giraffe.webp"
@@ -40,7 +40,7 @@
                                 aspect of our work, and this dedication extends to our meticulous process
                                 for framing jigsaw puzzles.
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>
@@ -60,7 +60,7 @@
                         the best materials and equipment, guaranteeing it is finished to the highest standards.
 
                         <div class="space-y-12 mt-4">
-                            <x-cards.image-content-left>
+                            <x-cards.feature image-position="left">
                                 <x-slot name="title">
                                     Step 1: Acquire & Solve a Jigsaw
                                 </x-slot>
@@ -78,9 +78,9 @@
                                     jigsaw you currently own or a brand new one from the shops, we can make
                                     any jigsaw look like a million dollars!
                                 </x-slot>
-                            </x-cards.image-content-left>
+                            </x-cards.feature>
 
-                            <x-cards.image-content-right>
+                            <x-cards.feature image-position="right">
                                 <x-slot name="title">
                                     Step 2: Choose a frame
                                 </x-slot>
@@ -99,7 +99,7 @@
                                     chosen a double frame, with a nice blue colour to accent the ocean
                                     waves a thicker frame to match the colour scheme.
                                 </x-slot>
-                            </x-cards.image-content-right>
+                            </x-cards.feature>
 
                             <x-section.content>
                                 <x-slot name="title">
@@ -124,7 +124,7 @@
                                 </x-slot>
                             </x-section.content>
 
-                            <x-cards.image-content-right>
+                            <x-cards.feature image-position="right">
                                 <x-slot name="title">
                                     The final product
                                 </x-slot>
@@ -142,7 +142,7 @@
                                     The result of this process helps ensure your framed jigsaw is fade
                                     resistant, preserved and easily maintained by simply wiping clean.
                                 </x-slot>
-                            </x-cards.image-content-right>
+                            </x-cards.feature>
                         </div>
                     </x-slot>
                 </x-section.content>

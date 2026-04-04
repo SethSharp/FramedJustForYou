@@ -24,7 +24,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-cards.image-content-left>
+                        <x-cards.feature image-position="left">
                             <x-slot name="image">
                                 <x-image
                                     src="/handcrafted/pressed.webp"
@@ -44,7 +44,7 @@
                                 our handcrafted art collection is a testament to the beauty of
                                 traditional craftsmanship.
                             </x-slot>
-                        </x-cards.image-content-left>
+                        </x-cards.feature>
                     </x-slot>
                 </x-section.content>
             </x-section.wrapper>

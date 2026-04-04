@@ -1,5 +1,5 @@
 <div class="mt-6 overflow-x-auto">
-    <x-headings.secondary>{{ $data['title'] }}</x-headings.secondary>
+    <x-heading variant="secondary">{{ $data['title'] }}</x-heading>
 
     <div class="inline-block min-w-full py-2 align-middle">
         <table class="min-w-full divide-y divide-secondary-300">
