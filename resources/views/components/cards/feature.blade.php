@@ -2,7 +2,7 @@
 
 <div class="space-y-4 lg:relative lg:flex items-center justify-center">
     @if ($imagePosition === 'right')
-        <x-section.content class="backdrop-blur-sm bg-white/90 lg:absolute right-1/3 z-10 rounded-xl border border-secondary-200">
+        <x-section.content class="lg:absolute right-1/3 z-10">
             @if ($title)
                 <x-slot name="title">
                     {{ $title }}
@@ -24,7 +24,7 @@
             {{ $image }}
         </div>
 
-        <x-section.content class="backdrop-blur-sm bg-white/90 lg:absolute left-1/3 z-10 rounded-xl border border-secondary-200">
+        <x-section.content class="lg:absolute left-1/3 z-10">
             @if ($title)
                 <x-slot name="title">
                     {{ $title }}
