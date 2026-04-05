@@ -45,7 +45,7 @@
     <script src="{{ asset('js/analytics.js') }}"></script>
 </head>
 <body class="font-mont font-medium antialiased">
-<main class="bg-secondary-100">
+<main class="bg-white">
     <x-banners.container />
 
     <div>

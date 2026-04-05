@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'copyright' => '&copy; 1997-2025 All rights reserved.',
+    'copyright' => '&copy; 1997-2026 All rights reserved.',
 
     /*
     |--------------------------------------------------------------------------

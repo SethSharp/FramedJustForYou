@@ -2,7 +2,7 @@
 @section('description', 'Meet the team of Framed Just For You and find out how this Australian owned & operated business started.')
 
 <x-layouts.app>
-    <x-section.section class="!bg-gradient-to-tl !from-white !to-primary-50">
+    <x-section.section class="py-16">
         <x-section.wrapper>
             <x-section.content>
                 <x-slot name="title">
