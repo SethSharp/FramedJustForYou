@@ -49,11 +49,22 @@
             'active' => request()->route()?->getName() === 'services.framing.restorations'
         ],
     ];
+
+    $links = [
+        ...$customLinks_1,
+        ...$customLinks_2,
+        [
+            'href' => route('services.other'),
+            'name' => 'Other',
+            'active' => request()->route()?->getName() === 'services.other'
+        ],
+    ];
 @endphp
 
 <div
     x-on:mouseleave="open = false"
     x-data="{open: false}"
+    class="relative"
 >
     <div x-on:click="open = !open" x-on:mouseenter="open = true">
         <span
@@ -66,10 +77,34 @@
         </span>
     </div>
 
-    {{--  Mobile  --}}
-    <div x-show="open" x-on:click="open = false" x-cloak class="flex lg:hidden">
-        <div class="flex w-full pl-2">
-            <div class="grid sm:grid-cols-2 w-full">
+    {{-- Mobile --}}
+    <div x-show="open" x-cloak class="lg:hidden">
+        <div class="pl-2 grid sm:grid-cols-2">
+            @foreach ($links as $link)
+                <x-links.mega-menu-link
+                    href="{{$link['href']}}"
+                    active="{{$link['active']}}"
+                >
+                    {{ $link['name'] }}
+                </x-links.mega-menu-link>
+            @endforeach
+        </div>
+    </div>
+
+    {{-- Desktop --}}
+    <div
+        x-show="open"
+        x-cloak
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 -translate-y-1"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-1"
+        class="hidden lg:block absolute top-full left-1/2 -translate-x-1/2 z-50 mt-2 min-w-[380px]"
+    >
+        <div class="bg-white rounded-lg shadow-xl border border-secondary-200 px-6 py-4">
+            <div class="grid grid-cols-2 gap-x-8">
                 <div>
                     @foreach ($customLinks_1 as $link)
                         <x-links.mega-menu-link
@@ -96,51 +131,6 @@
                     >
                         Other
                     </x-links.mega-menu-link>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div
-        x-show="open"
-        x-cloak
-        class="absolute right-24 z-50 hidden lg:flex"
-        x-on:click="open = false"
-    >
-        <div class="w-fit ml-auto shadow-2xl">
-            <div
-                class="bg-white rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full border border-secondary-200"
-            >
-                <div class="flex w-full">
-                    <div class="grid grid-cols-2 gap-y-4 w-full">
-                        <div>
-                            @foreach ($customLinks_1 as $link)
-                                <x-links.mega-menu-link
-                                    href="{{$link['href']}}"
-                                    active="{{$link['active']}}"
-                                >
-                                    {{ $link['name'] }}
-                                </x-links.mega-menu-link>
-                            @endforeach
-                        </div>
-
-                        <div>
-                            @foreach ($customLinks_2 as $link)
-                                <x-links.mega-menu-link
-                                    href="{{$link['href']}}"
-                                    active="{{$link['active']}}"
-                                >
-                                    {{ $link['name'] }}
-                                </x-links.mega-menu-link>
-                            @endforeach
-                            <x-links.mega-menu-link
-                                href="{{route('services.other')}}"
-                                active="{{request()->route()?->getName() === 'services.other'}}"
-                            >
-                                Other
-                            </x-links.mega-menu-link>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
