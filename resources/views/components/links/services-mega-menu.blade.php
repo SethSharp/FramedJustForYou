@@ -57,7 +57,7 @@
 >
     <div x-on:click="open = !open" x-on:mouseenter="open = true">
         <span
-            class="text-white mt-1.5 flex text-lg cursor-pointer decoration-2 items-center hover:underline underline-offset-4"
+            class="flex text-base font-medium items-center cursor-pointer transition-colors text-secondary-700 hover:text-primary-500"
         >
             Services
             <div x-bind:class="{ 'rotate-180': open }" class="ml-0.5 mt-0.5 transform duration-300">
@@ -69,13 +69,12 @@
     {{--  Mobile  --}}
     <div x-show="open" x-on:click="open = false" x-cloak class="flex lg:hidden">
         <div class="flex w-full pl-2">
-            <div class="grid sm:grid-cols-2 w-full border-secondary-200">
+            <div class="grid sm:grid-cols-2 w-full">
                 <div>
                     @foreach ($customLinks_1 as $link)
                         <x-links.mega-menu-link
                             href="{{$link['href']}}"
                             active="{{$link['active']}}"
-                            class="!text-secondary-200 !decoration-secondary-200"
                         >
                             {{ $link['name'] }}
                         </x-links.mega-menu-link>
@@ -87,7 +86,6 @@
                         <x-links.mega-menu-link
                             href="{{$link['href']}}"
                             active="{{$link['active']}}"
-                            class="!text-secondary-200 !decoration-secondary-200"
                         >
                             {{ $link['name'] }}
                         </x-links.mega-menu-link>
@@ -95,7 +93,6 @@
                     <x-links.mega-menu-link
                         href="{{route('services.other')}}"
                         active="{{request()->route()?->getName() === 'services.other'}}"
-                        class="!text-secondary-200 !decoration-secondary-200"
                     >
                         Other
                     </x-links.mega-menu-link>
@@ -112,10 +109,10 @@
     >
         <div class="w-fit ml-auto shadow-2xl">
             <div
-                class="bg-secondary-50 rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full"
+                class="bg-white rounded-lg shadow-xl px-4 mx-auto md:flex hidden max-w-7xl w-full border border-secondary-200"
             >
                 <div class="flex w-full">
-                    <div class="grid grid-cols-2 gap-y-4 w-full border-secondary-200">
+                    <div class="grid grid-cols-2 gap-y-4 w-full">
                         <div>
                             @foreach ($customLinks_1 as $link)
                                 <x-links.mega-menu-link

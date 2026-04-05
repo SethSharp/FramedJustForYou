@@ -1,7 +1,7 @@
 <a
     {{
         $attributes->merge([
-            'class' => 'text-secondary-500 flex text-md my-4 items-center hover:underline decoration-secondary-500 underline-offset-2 ' .  ($active ? '!underline' : '')
+            'class' => 'flex text-sm my-3 items-center transition-colors ' . ($active ? 'text-primary-500 font-medium' : 'text-secondary-600 hover:text-primary-500')
         ])
     }}
     href="{{$href}}"

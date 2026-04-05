@@ -22,7 +22,7 @@ class GoogleApiTest extends TestCase
 
         $reviews = $this->getRecentReviews();
 
-        $expected = collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(3)->values();
+        $expected = collect($this->getLocalReviews()['reviews'])->sortByDesc('rating')->take(5)->values();
 
         $this->assertEquals($expected, $reviews);
     }
