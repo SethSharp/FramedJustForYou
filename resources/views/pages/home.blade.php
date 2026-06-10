@@ -1,63 +1,50 @@
 <x-layouts.app>
     @section("header")
-        <div class="relative z-20">
-            <x-image
-                src="/store/store-front-right.webp"
-                class="object-cover min-h-[400px] sm:min-h-[400px] md:min-h-[400px] lg:min-h-[450px] xl:min-h-[500px] w-full" style="object-position: center 65%"
-                alt="Store Front Image"
-            />
-            <div class="absolute inset-0 bg-black/70">
-                <div class="flex flex-col justify-center h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <x-heading variant="overline">
-                        Your Custom Framers
-                    </x-heading>
+        <x-hero
+            src="/store/store-front-right.webp"
+            alt="Store Front Image"
+            imageStyle="object-position: center 65%"
+            overline="Your Custom Framers"
+        >
+            <x-slot name="title">Framed Just <br> For You</x-slot>
 
-                    <h1 class="text-3xl sm:text-5xl md:text-6xl text-white mt-2 font-bold">
-                        Framed Just <br> For You
-                    </h1>
+            <x-slot name="subtitle">
+                Over three decades of craftsmanship on the Gold Coast. Preserving your cherished memories, beautifully.
+            </x-slot>
 
-                    <p class="text-secondary-300 mt-3 text-base sm:text-lg max-w-lg">
-                        Over three decades of craftsmanship on the Gold Coast. Preserving your cherished memories, beautifully.
-                    </p>
-
-                    <div class="flex flex-wrap gap-3 mt-6 sm:mt-8">
-                        <a
-                            href="{{ route('contact') }}"
-                            class="bg-primary-500 px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-primary-600 transition-colors"
-                        >
-                            Get a Quote
-                        </a>
-                        <a
-                            href="{{ route('custom-framing') }}"
-                            class="border-2 border-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-white hover:text-secondary-800 transition-colors"
-                        >
-                            Our Services
-                        </a>
-                    </div>
-
-                    <a
-                        href="tel:0412068330"
-                        class="mt-6 text-secondary-400 text-sm hover:text-white transition-colors"
-                    >
-                        Or call us at {{ config('framed.contact.telephone') }}
-                    </a>
-                </div>
+            <div class="flex flex-wrap gap-3 mt-6 sm:mt-8">
+                <a
+                    href="{{ route('contact') }}"
+                    class="bg-primary-500 px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-primary-600 transition-colors"
+                >
+                    Get a Quote
+                </a>
+                <a
+                    href="{{ route('custom-framing') }}"
+                    class="border-2 border-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-white text-sm sm:text-base font-semibold hover:bg-white hover:text-secondary-800 transition-colors"
+                >
+                    Our Services
+                </a>
             </div>
-        </div>
+
+            <a
+                href="tel:0412068330"
+                class="mt-6 text-secondary-400 text-sm hover:text-white transition-colors"
+            >
+                Or call us at {{ config('framed.contact.telephone') }}
+            </a>
+        </x-hero>
     @endsection
 
     {{-- Why Us — stat row + brief intro --}}
     <x-section.section class="py-16">
         <x-section.wrapper>
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <x-heading variant="strikethrough">
-                    Why Us?
-                </x-heading>
+            <x-section.intro title="Why Us?">
                 <p class="text-secondary-500 mt-6 leading-relaxed">
                     At Framed Just For You, we're more than a framing business — we're a local institution
                     with a passion for preserving your cherished memories in the most beautiful way.
                 </p>
-            </div>
+            </x-section.intro>
 
             <div
                 class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:w-3/4 mx-auto"
@@ -159,11 +146,7 @@
     {{-- How it works --}}
     <x-section.section class="py-16">
         <x-section.wrapper>
-            <div class="text-center mb-12">
-                <x-heading variant="strikethrough">
-                    How it works
-                </x-heading>
-            </div>
+            <x-section.intro title="How it works" />
 
             <div class="grid md:grid-cols-3 gap-8 lg:w-4/5 mx-auto">
                 <div class="text-center px-4">
