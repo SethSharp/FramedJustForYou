@@ -24,14 +24,6 @@
                             </li>
                             <li class="flex gap-1 sm:gap-2">
                                 <div class="flex my-auto">
-                                    <x-icons.mobile/>
-                                </div>
-                                <span class="my-auto">
-                                    {{ config('framed.contact.mobile')  }}
-                                </span>
-                            </li>
-                            <li class="flex gap-1 sm:gap-2">
-                                <div class="flex my-auto">
                                     <x-icons.envelope/>
                                 </div>
                                 <span

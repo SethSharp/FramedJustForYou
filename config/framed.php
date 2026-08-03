@@ -56,7 +56,6 @@ return [
     */
 
     'contact' => [
-        'mobile' => '0412 068 330',
         'telephone' => '07 5563 9799',
         'email' => 'framedjust4u@bigpond.com'
     ],
