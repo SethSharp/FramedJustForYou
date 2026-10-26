@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', App\Http\Controllers\Public\ShowHomeController::class)->name('home');
 Route::get('/about', App\Http\Controllers\Public\ShowAboutController::class)->name('about');
 Route::get('/custom-framing', fn () => view('pages/custom-framing'))->name('custom-framing');
+Route::get('/frame-builder', App\Http\Controllers\Public\ShowFrameBuilderController::class)->name('frame-builder');
+Route::get('/frame-builder/quote', App\Http\Controllers\Public\ShowFrameQuoteController::class)->name('frame-builder.quote');
 Route::get('/printing', fn () => view('pages/printing'))->name('printing');
 Route::get('/contact', fn () => view('pages/contact'))->name('contact');
 Route::get('/sitemap', fn () => view('pages/sitemap'))->name('sitemap');
